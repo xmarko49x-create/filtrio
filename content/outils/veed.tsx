@@ -1,0 +1,305 @@
+import Link from "next/link";
+import type { FicheData } from "@/components/fiche/FicheOutilLayout";
+
+export const veedFiche: FicheData = {
+  slug: "veed",
+  hero: {
+    h1: "Veed : l'avis complet en 2026",
+    tagline:
+      "Éditeur vidéo web tout-en-un pensé pour les pros. Sous-titres auto, transcription, redimensionnement, enregistrement webcam. Voici pour qui c'est le bon compromis.",
+    badges: [
+      { label: "Éditeur web tout-en-un", tone: "primary" },
+      { label: "Basé à Londres", tone: "accent" },
+      { label: "Pas d'installation", tone: "neutral" },
+    ],
+    origine: "Royaume-Uni",
+    depuis: "2018",
+    tempsLecture: 7,
+    lastCheck: "20/04/2026",
+  },
+  verdict30s: [
+    {
+      question: "C'est quoi ?",
+      answer:
+        "Éditeur vidéo tout-en-un accessible via navigateur, lancé en 2018 depuis Londres. Positionnement : couvrir tous les besoins vidéo courants (montage, sous-titres, transcription, redimensionnement) dans une seule interface web sans installation.",
+    },
+    {
+      question: "Pour qui ?",
+      answer:
+        "Créateurs qui veulent un éditeur web fiable, marketeurs qui font des vidéos B2B, équipes qui travaillent depuis plusieurs machines, freelances qui alternent entre plusieurs clients sans logiciel dédié.",
+    },
+    {
+      question: "Pas pour qui ?",
+      answer: (
+        <>
+          Créateurs de shorts viraux FR (→{" "}
+          <Link href="/outils/submagic" className="text-amber-400 hover:underline">
+            Submagic
+          </Link>
+          ). Vidéastes qui veulent du montage pro (→{" "}
+          <Link href="/outils/davinci" className="text-red-400 hover:underline">
+            DaVinci
+          </Link>
+          ). Budgets zéro (→{" "}
+          <Link href="/outils/capcut" className="text-sky-400 hover:underline">
+            CapCut
+          </Link>
+          ).
+        </>
+      ),
+    },
+    {
+      question: "Combien ?",
+      answer:
+        "Plan gratuit limité (vidéos courtes avec watermark). Basic à 12 $/mois, Pro à 24 $/mois, Business à 59 $/mois. Tarification correcte pour un outil polyvalent, pas le moins cher si tu veux une seule fonctionnalité.",
+    },
+    {
+      question: "Meilleure alternative ?",
+      answer: (
+        <>
+          <Link href="/outils/kapwing" className="text-green-400 hover:underline">
+            Kapwing
+          </Link>{" "}
+          pour un usage collaboratif équivalent.{" "}
+          <Link href="/outils/capcut" className="text-sky-400 hover:underline">
+            CapCut
+          </Link>{" "}
+          si budget zéro. Spécialistes pour chaque tâche spécifique (
+          <Link href="/outils/submagic" className="text-amber-400 hover:underline">
+            Submagic
+          </Link>
+          ,{" "}
+          <Link href="/outils/descript" className="text-violet-400 hover:underline">
+            Descript
+          </Link>
+          ).
+        </>
+      ),
+    },
+    {
+      question: "Est-ce qu'on le recommande ?",
+      answer: (
+        <>
+          <strong className="text-yellow-400">Oui, en couteau suisse web</strong>
+          . Pas le meilleur sur un point précis mais solide sur beaucoup, sans
+          installation, accessible équipe. Compromis valide.
+        </>
+      ),
+    },
+  ],
+  porQui: [
+    "Tu veux un éditeur 100% web sans installation",
+    "Tu travailles depuis plusieurs ordinateurs différents",
+    "Tu fais des vidéos B2B, formation, interne, explicatives",
+    "Tu veux un seul outil pour couvrir plusieurs besoins",
+    "Tu préfères un tarif pro prévisible à 12-24 $/mois",
+    "Tu veux tester avec un plan gratuit (même limité)",
+  ],
+  pasPourQui: [
+    <>
+      Tu veux des sous-titres stylés viraux FR (→{" "}
+      <Link href="/outils/submagic" className="text-amber-400 hover:underline">
+        Submagic
+      </Link>
+      )
+    </>,
+    "Tu veux du montage pro avec color grading (→ DaVinci)",
+    "Tu as un budget zéro (CapCut plus adapté)",
+    <>
+      Tu fais surtout du long format podcast (→{" "}
+      <Link href="/outils/descript" className="text-violet-400 hover:underline">
+        Descript
+      </Link>
+      )
+    </>,
+    "Tu veux une connexion offline (Veed est online only)",
+    "Ta priorité est la vitesse (outils spécialisés plus rapides)",
+  ],
+  scoring: [
+    {
+      label: "Qualité en français",
+      poids: 20,
+      score: 7.5,
+      commentaire:
+        "Interface partiellement traduite en français. Sous-titres auto FR corrects mais en retrait par rapport à Submagic sur le rendu visuel. Support anglais principalement. Documentation multilingue correcte.",
+    },
+    {
+      label: "Rapport qualité/prix",
+      poids: 20,
+      score: 7.8,
+      commentaire:
+        "Basic à 12 $/mois correct pour un éditeur web tout-en-un. Pro à 24 $/mois pour les besoins croissants. Moins cher qu'un abonnement Premiere, plus cher qu'un CapCut gratuit. Bon équilibre polyvalence/prix.",
+    },
+    {
+      label: "Profondeur des fonctionnalités IA",
+      poids: 20,
+      score: 7.5,
+      commentaire:
+        "IA intégrée pour sous-titres auto, transcription, suppression bruit, suppression fond vidéo, B-roll automatique. Moins spécialisé qu'un Submagic ou Descript mais couvre les cas standards correctement.",
+    },
+    {
+      label: "Interface et prise en main",
+      poids: 15,
+      score: 8.0,
+      commentaire:
+        "Interface web propre, prise en main rapide pour un non-technicien. Courbe d'apprentissage plus courte que DaVinci Resolve mais plus chargée que CapCut. Compromis accessible.",
+    },
+    {
+      label: "Support et documentation FR",
+      poids: 15,
+      score: 7.0,
+      commentaire:
+        "Support principalement anglais. Base de connaissances accessible, quelques tutos YouTube FR de la communauté. Moins établi que Canva ou CapCut sur ce volet.",
+    },
+    {
+      label: "Intégrations",
+      poids: 10,
+      score: 8.5,
+      commentaire:
+        "API disponible sur plans pro. Intégrations Zapier, Make, Google Drive, Dropbox. Import direct depuis YouTube, Zoom, Teams. Bonne ouverture pour des workflows automatisés, plus poussé que CapCut.",
+    },
+  ],
+  fonctionnalites: [
+    {
+      titre: "Éditeur vidéo web complet",
+      description:
+        "Timeline multi-pistes, transitions, effets, texte animé, musique. Pas au niveau d'un DaVinci mais suffisant pour 80% des besoins vidéo courants.",
+    },
+    {
+      titre: "Sous-titres auto multilingues",
+      description:
+        "Reconnaissance vocale en 100+ langues dont le français. Personnalisation du style, animation. Moins soigné que Submagic mais fonctionnel pour la majorité des usages.",
+    },
+    {
+      titre: "Transcription et traduction",
+      description:
+        "Transcription automatique convertie en texte éditable. Traduction vers d'autres langues. Utile pour créer du contenu multilingue à partir d'une source.",
+    },
+    {
+      titre: "Redimensionnement automatique",
+      description:
+        "Conversion entre formats (16:9, 9:16, 1:1) avec recadrage intelligent automatique. Parfait pour republier une vidéo sur plusieurs plateformes.",
+    },
+    {
+      titre: "Enregistrement webcam et screen",
+      description:
+        "Capture d'écran, webcam, ou les deux en simultané directement dans l'outil. Utile pour démos, tutos, contenus explicatifs sans logiciel tiers.",
+    },
+    {
+      titre: "IA : clean audio, suppression fond",
+      description:
+        "Nettoyage audio IA (bruit de fond), suppression automatique du fond vidéo. Bonne qualité pour un outil généraliste, moins aboutie qu'un Descript ou Submagic dédié.",
+    },
+  ],
+  plans: [
+    {
+      nom: "Gratuit",
+      prix: "0 $",
+      cible: "Pour tester",
+      features: [
+        "10 min max par vidéo",
+        "720p max",
+        "Watermark Veed",
+        "Sous-titres limités",
+      ],
+    },
+    {
+      nom: "Basic",
+      prix: "12 $/mois",
+      cible: "Créateurs occasionnels",
+      features: [
+        "Vidéos jusqu'à 1h",
+        "1080p sans watermark",
+        "Sous-titres auto illimités",
+        "50 Go de stockage",
+      ],
+    },
+    {
+      nom: "Pro",
+      prix: "24 $/mois",
+      cible: "Créateurs réguliers",
+      features: [
+        "Export 4K",
+        "Features IA complètes",
+        "Brand kit",
+        "500 Go de stockage",
+        "Support prioritaire",
+      ],
+    },
+    {
+      nom: "Business",
+      prix: "59 $/mois",
+      cible: "Agences et équipes",
+      features: [
+        "Collaboration équipe",
+        "API et SSO",
+        "Stockage illimité",
+        "Support dédié",
+      ],
+    },
+  ],
+  alternatives: [
+    {
+      slug: "kapwing",
+      comment:
+        "Alternative collaborative similaire, plus fort sur la collaboration temps réel. Même niveau de qualité IA, workflow d'équipe plus poussé.",
+    },
+    {
+      slug: "capcut",
+      comment:
+        "Alternative gratuite beaucoup plus accessible. Moins polyvalente pour usages pros mais imbattable côté prix.",
+    },
+    {
+      slug: "invideo",
+      comment:
+        "Si tu cherches un générateur script-to-video avec stock intégré. Moins d'édition, plus de génération rapide.",
+    },
+  ],
+  faq: [
+    {
+      question: "Veed ou Kapwing pour une agence ?",
+      answer: (
+        <>
+          Pour la collaboration temps réel pure,{" "}
+          <Link href="/outils/kapwing" className="text-green-400 hover:underline">
+            Kapwing
+          </Link>{" "}
+          est en avance. Pour un éditeur web polyvalent avec plus de features
+          IA intégrées en solo/petite équipe, Veed est un meilleur compromis.
+          La différence se joue sur l&apos;intensité du travail collaboratif.
+        </>
+      ),
+    },
+    {
+      question: "Sous-titres FR : Veed ou Submagic ?",
+      answer: (
+        <>
+          Submagic sur la qualité FR et le rendu viral, sans discussion.
+          Veed pour un workflow plus complet qui englobe aussi édition + stock
+          + transcription. Si ton besoin est uniquement les sous-titres FR
+          stylés, Submagic reste la référence.
+        </>
+      ),
+    },
+    {
+      question: "Peut-on monter une vidéo longue sur Veed ?",
+      answer:
+        "Oui jusqu'à plusieurs heures sur le plan Basic+. Pour du vrai long format avec beaucoup de pistes, l'expérience reste plus fluide sur un éditeur desktop (DaVinci, Premiere). Veed est optimal sur le court à moyen format (2-60 min).",
+    },
+    {
+      question: "L'enregistrement webcam et screen est-il utilisable pro ?",
+      answer:
+        "Correct pour des tutos, démos produit, présentations. Pour du podcast vidéo sérieux avec invités distants, Riverside reste supérieur. Veed fait le job sur les usages B2B courants.",
+    },
+    {
+      question: "Compatible avec les workflows d'automatisation ?",
+      answer:
+        "Oui via API (plans pro+) et intégrations natives Zapier/Make. Permet d'automatiser la création de vidéos à partir de données (ex : fiches produit → vidéos). Plus ouvert que CapCut sur ce plan.",
+    },
+  ],
+  ctaFinal: {
+    headline: "Prêt à tester Veed ?",
+    sub: "Le plan gratuit (10 min max par vidéo) permet de tester l'interface et les sous-titres auto. Bon compromis avant de s'engager sur le Basic.",
+    buttonText: "Essayer Veed",
+  },
+};

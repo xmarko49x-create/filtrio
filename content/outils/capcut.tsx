@@ -1,0 +1,285 @@
+import Link from "next/link";
+import type { FicheData } from "@/components/fiche/FicheOutilLayout";
+
+export const capcutFiche: FicheData = {
+  slug: "capcut",
+  hero: {
+    h1: "CapCut : l'avis complet en 2026",
+    tagline:
+      "Le leader gratuit du montage vidéo mobile et desktop. Édition complète, sous-titres auto, features IA, bibliothèque massive. Voici pour qui c'est suffisant et pour qui c'est trop limité.",
+    badges: [
+      { label: "Gratuit", tone: "primary" },
+      { label: "Mobile-first", tone: "accent" },
+      { label: "ByteDance (TikTok)", tone: "neutral" },
+    ],
+    origine: "Chine (ByteDance)",
+    depuis: "2020",
+    tempsLecture: 7,
+    lastCheck: "20/04/2026",
+  },
+  verdict30s: [
+    {
+      question: "C'est quoi ?",
+      answer:
+        "Éditeur vidéo gratuit (mobile iOS/Android + desktop + web) développé par ByteDance, maison mère de TikTok. Probablement l'outil de montage vidéo grand public le plus utilisé au monde. Features IA intégrées en 2024-2026.",
+    },
+    {
+      question: "Pour qui ?",
+      answer:
+        "Débutants sans budget, créateurs mobile-first, TikTokeurs qui éditent sur smartphone, créateurs occasionnels qui ne veulent pas s'engager sur un abonnement, étudiants, tous ceux qui découvrent le montage vidéo.",
+    },
+    {
+      question: "Pas pour qui ?",
+      answer: (
+        <>
+          Créateurs sérieux qui veulent un style signature (→{" "}
+          <Link href="/outils/submagic" className="text-amber-400 hover:underline">
+            Submagic
+          </Link>
+          ). Agences qui ont besoin d&apos;API ou d&apos;automatisation.
+          Professionnels sensibles à la question ByteDance/données personnelles.
+        </>
+      ),
+    },
+    {
+      question: "Combien ?",
+      answer:
+        "100% gratuit pour la majorité des features. Plan Pro à environ 10 $/mois pour : export 4K sans watermark sur certains assets, stock premium, features IA illimitées, cloud storage. Pour 90% des créateurs solo, le plan gratuit suffit.",
+    },
+    {
+      question: "Meilleure alternative ?",
+      answer: (
+        <>
+          <Link href="/outils/submagic" className="text-amber-400 hover:underline">
+            Submagic
+          </Link>{" "}
+          si tu veux des sous-titres stylés FR pros.{" "}
+          <Link href="/outils/davinci" className="text-red-400 hover:underline">
+            DaVinci Resolve
+          </Link>{" "}
+          si tu veux un éditeur pro gratuit.{" "}
+          <Link
+            href="/comparatifs/submagic-vs-capcut"
+            className="text-sky-400 hover:underline"
+          >
+            Comparatif Submagic vs CapCut
+          </Link>
+          .
+        </>
+      ),
+    },
+    {
+      question: "Est-ce qu'on le recommande ?",
+      answer: (
+        <>
+          <strong className="text-sky-400">Oui, pour démarrer</strong>. Rapport
+          valeur/prix imbattable (c&apos;est gratuit). Mais pour un usage pro
+          régulier, les outils spécialisés font mieux sur leur niche.
+        </>
+      ),
+    },
+  ],
+  porQui: [
+    "Tu débutes et ton budget est zéro",
+    "Tu montes principalement sur mobile (app iOS/Android leader du marché)",
+    "Tu veux un éditeur vidéo complet + sous-titres auto en un seul outil",
+    "Tu publies ponctuellement plutôt que professionnellement",
+    "Tu es TikTokeur (intégration native avec TikTok)",
+    "Tu veux tester le montage vidéo sans t'engager",
+  ],
+  pasPourQui: [
+    <>
+      Tu produis beaucoup de shorts et veux un style signature (→{" "}
+      <Link href="/outils/submagic" className="text-amber-400 hover:underline">
+        Submagic
+      </Link>
+      )
+    </>,
+    "Tu es sensible à la question des données personnelles (ByteDance)",
+    "Tu veux un éditeur pro avec color grading avancé (→ DaVinci Resolve)",
+    "Tu as besoin d'API ou d'automatisation pour scaler",
+    "Tu veux un outil européen ou US pour des raisons de conformité",
+    <>
+      Tu fais du long format podcast/interview (→{" "}
+      <Link href="/outils/descript" className="text-violet-400 hover:underline">
+        Descript
+      </Link>
+      )
+    </>,
+  ],
+  scoring: [
+    {
+      label: "Qualité en français",
+      poids: 20,
+      score: 7.5,
+      commentaire:
+        "Interface 100% traduite en français. Sous-titres auto FR corrects mais moins précis qu'un outil FR natif comme Submagic. Support en ligne disponible en français via base de connaissances.",
+    },
+    {
+      label: "Rapport qualité/prix",
+      poids: 20,
+      score: 9.8,
+      commentaire:
+        "Le point fort absolu. Rapport qualité/prix imbattable puisque le plan gratuit couvre 90% des besoins d'un créateur solo. Aucun concurrent ne propose un éditeur aussi complet gratuitement.",
+    },
+    {
+      label: "Profondeur des fonctionnalités IA",
+      poids: 20,
+      score: 7.2,
+      commentaire:
+        "Features IA ajoutées progressivement en 2024-2026 : sous-titres auto, effets IA, suppression fond, upscaling. Moins spécialisé que Submagic ou Descript mais couvre les usages courants correctement.",
+    },
+    {
+      label: "Interface et prise en main",
+      poids: 15,
+      score: 8.5,
+      commentaire:
+        "Interface mobile et desktop particulièrement bien pensée, surtout pour les TikTokeurs. Courbe d'apprentissage courte. Moins intuitive sur les features vidéo avancées que sur les shorts.",
+    },
+    {
+      label: "Support et documentation FR",
+      poids: 15,
+      score: 7.5,
+      commentaire:
+        "Base de connaissances en français correcte. Support client limité (principalement via formulaires). Communauté francophone massive sur YouTube et TikTok avec tutos gratuits de qualité.",
+    },
+    {
+      label: "Intégrations",
+      poids: 10,
+      score: 7.5,
+      commentaire:
+        "Intégration native avec TikTok (export direct, templates communs). Pas d'API publique. Export vers tous les formats standards, mais pas de publication programmée vers autres plateformes.",
+    },
+  ],
+  fonctionnalites: [
+    {
+      titre: "Éditeur vidéo complet",
+      description:
+        "Timeline multi-pistes, transitions, effets visuels, color grading basique, keyframes, green screen, multicam. Fonctionnalités qu'on trouve normalement dans des logiciels payants à 20+ $/mois.",
+    },
+    {
+      titre: "Sous-titres automatiques",
+      description:
+        "Génération automatique de sous-titres en français et autres langues. Précision correcte (moins fine que Submagic mais acceptable). Personnalisation manuelle du style possible.",
+    },
+    {
+      titre: "Features IA intégrées",
+      description:
+        "Suppression fond vidéo, upscaling qualité, génération avatars, voix off IA, effets automatiques. Écosystème IA en croissance constante, ajouts réguliers.",
+    },
+    {
+      titre: "Bibliothèque d'assets massive",
+      description:
+        "Musiques libres de droits, effets sonores, stickers, transitions, fonts, templates TikTok viraux. Une des bibliothèques les plus riches du marché, surtout en gratuit.",
+    },
+    {
+      titre: "Apps multi-plateformes",
+      description:
+        "iOS, Android, Mac, Windows, version web. Synchronisation cloud sur le plan Pro permet de continuer son montage sur n'importe quel appareil.",
+    },
+    {
+      titre: "Intégration TikTok native",
+      description:
+        "Export direct vers TikTok avec formats adaptés, templates identiques à ceux de l'app TikTok. Workflow TikTokeur le plus fluide du marché.",
+    },
+  ],
+  plans: [
+    {
+      nom: "Gratuit",
+      prix: "0 $",
+      cible: "Créateurs solo et débutants",
+      features: [
+        "Éditeur complet sans limite",
+        "Sous-titres auto illimités",
+        "Export 1080p",
+        "Bibliothèque basique",
+        "Features IA de base",
+      ],
+    },
+    {
+      nom: "Pro",
+      prix: "10 $/mois",
+      cible: "Créateurs réguliers",
+      features: [
+        "Export 4K sans watermark",
+        "Stock premium illimité",
+        "Features IA avancées",
+        "Cloud storage 100 Go",
+        "Support prioritaire",
+      ],
+    },
+    {
+      nom: "Business",
+      prix: "Sur devis",
+      cible: "Agences et marques",
+      features: [
+        "Comptes équipe",
+        "Stockage illimité",
+        "Gestion centralisée",
+        "Support dédié",
+      ],
+    },
+  ],
+  alternatives: [
+    {
+      slug: "submagic",
+      comment:
+        "Payant spécialisé sur les sous-titres viraux FR. Beaucoup plus stylé pour le rendu final, surtout sur audience francophone.",
+    },
+    {
+      slug: "davinci",
+      comment:
+        "Éditeur pro gratuit avec color grading avancé. Plus puissant mais courbe d'apprentissage plus longue. Pour ceux qui veulent monter sérieusement.",
+    },
+    {
+      slug: "canva",
+      comment:
+        "Si tu fais surtout du design (miniatures, posts) et un peu de vidéo. Canva est plus polyvalent sur le design que CapCut.",
+    },
+  ],
+  faq: [
+    {
+      question: "CapCut vaut-il le coup en 2026 même gratuit ?",
+      answer:
+        "Oui, sans discussion pour débuter. C'est l'éditeur vidéo gratuit le plus complet du marché. Pour un usage régulier et pro, les outils spécialisés (Submagic pour shorts, DaVinci pour montage pro) font mieux sur leur niche.",
+    },
+    {
+      question: "Le plan Pro vaut-il 10 $/mois ?",
+      answer:
+        "Dépend de ton usage. Si tu exportes régulièrement en 4K, utilises les features IA avancées et le stock premium, oui. Sinon le plan gratuit suffit largement pour 90% des créateurs solo. Je recommande plutôt d'ajouter Submagic à 14 $ pour un meilleur rendu qu'un Pro CapCut.",
+    },
+    {
+      question: "La question ByteDance pose-t-elle problème ?",
+      answer:
+        "Les préoccupations sur ByteDance (maison mère de TikTok) portent sur la collecte de données et les possibles accès par des autorités chinoises. Pour un créateur grand public, risque négligeable. Pour un pro qui édite du contenu sensible (entreprise, public, juridique), privilégier DaVinci Resolve ou Adobe Premiere.",
+    },
+    {
+      question: "Sous-titres auto FR vs Submagic ?",
+      answer: (
+        <>
+          CapCut fait le job sur un audio propre. Submagic est plus précis en FR
+          et surtout propose des styles viraux prêts à l&apos;emploi que CapCut
+          n&apos;a pas. Pour un créateur sérieux qui publie plusieurs shorts
+          par semaine, la différence se voit. Voir le{" "}
+          <Link
+            href="/comparatifs/submagic-vs-capcut"
+            className="text-sky-400 hover:underline"
+          >
+            comparatif direct
+          </Link>
+          .
+        </>
+      ),
+    },
+    {
+      question: "Compatible avec les autres logiciels vidéo ?",
+      answer:
+        "Export vers tous les formats standards (MP4, MOV, etc.). Compatible avec Premiere Pro, DaVinci Resolve, Final Cut pour aller-retour. Pas d'API publique pour automatiser, contrainte si tu veux scaler.",
+    },
+  ],
+  ctaFinal: {
+    headline: "Prêt à tester CapCut ?",
+    sub: "100% gratuit, pas d'engagement. Télécharge l'app ou ouvre la version web et teste en 5 minutes sur une vidéo existante.",
+    buttonText: "Télécharger CapCut",
+  },
+};

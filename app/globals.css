@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Polices --- */
+html,
+body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: #020617; /* slate-950 */
+  color: #f1f5f9; /* slate-100 */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- Barres de score par critère (utilisées dans comparatifs) --- */
+.bar {
+  background: linear-gradient(90deg, var(--bar-color, #10b981) calc(var(--w) * 1%), #1e293b 0);
+  height: 0.5rem;
+  border-radius: 9999px;
+}
+
+/* --- FAQ chevron rotation quand <details> ouvert --- */
+details[open] summary .faq-chevron {
+  transform: rotate(45deg);
+}

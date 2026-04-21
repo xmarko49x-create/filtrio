@@ -60,7 +60,7 @@ export const OUTILS: Outil[] = [
     category: "shorts",
     priceFrom: "14 $/mois",
     freeTier: "Essai 3 vidéos",
-    affiliateLink: "#aff-submagic",
+    affiliateLink: "https://submagic.co/?via=marc38",
     ficheAvailable: true,
     commission: "30% récurrent à vie",
   },

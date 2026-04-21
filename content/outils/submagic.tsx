@@ -37,8 +37,8 @@ export const submagicFiche: FicheData = {
       question: "Combien ?",
       answer: (
         <>
-          Abonnement mensuel à partir de 19 €/mois en facturation mensuelle.
-          Une option annuelle moins chère est également proposée. Essai
+          Abonnement mensuel à partir de 19 $/mois en facturation mensuelle
+          (USD). Une option annuelle moins chère est également proposée. Essai
           gratuit limité disponible. Les plans et tarifs exacts sont à jour
           sur la{" "}
           <a
@@ -187,7 +187,7 @@ export const submagicFiche: FicheData = {
   plans: [
     {
       nom: "Plans Submagic",
-      prix: "À partir de 19 €/mois",
+      prix: "À partir de 19 $/mois (USD)",
       cible: "Créateurs, indépendants, équipes",
       features: [
         "Facturation mensuelle ou annuelle (annuelle moins chère)",

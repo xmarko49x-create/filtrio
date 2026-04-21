@@ -34,10 +34,10 @@ export default function AProposPage() {
         </h1>
         <p className="text-xl text-slate-300 leading-relaxed mb-6">
           Je m&apos;appelle{" "}
-          <strong className="text-slate-100">Marc Devillers</strong> et
-          j&apos;ai créé Filtrio pour aider les créateurs vidéo, freelances,
-          indépendants, agences et petites équipes à choisir plus facilement
-          les bons outils IA.
+          <strong className="text-slate-100">Marc Devillers</strong>
+          {" "}et j&apos;ai créé Filtrio pour aider les créateurs vidéo,
+          freelances, indépendants, agences et petites équipes à choisir plus
+          facilement les bons outils IA.
         </p>
         <p className="text-slate-400 leading-relaxed mb-4">
           Aujourd&apos;hui, il existe de nombreux outils pour créer des shorts,

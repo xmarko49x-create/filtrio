@@ -35,8 +35,23 @@ export const submagicFiche: FicheData = {
     },
     {
       question: "Combien ?",
-      answer:
-        "14 $/mois (Starter, 20 vidéos/mois) à 29 $/mois (Pro, quasi illimité). Paiement USD uniquement. Essai gratuit limité à 3 vidéos au total, pas renouvelable.",
+      answer: (
+        <>
+          Abonnement mensuel à partir de 19 €/mois en facturation mensuelle.
+          Une option annuelle moins chère est également proposée. Essai
+          gratuit limité disponible. Les plans et tarifs exacts sont à jour
+          sur la{" "}
+          <a
+            href="https://submagic.co/?via=marc38"
+            target="_blank"
+            rel="sponsored nofollow noopener"
+            className="text-amber-400 hover:underline"
+          >
+            page Tarifs de Submagic
+          </a>
+          .
+        </>
+      ),
     },
     {
       question: "Meilleure alternative ?",
@@ -116,7 +131,7 @@ export const submagicFiche: FicheData = {
       poids: 20,
       score: 7.8,
       commentaire:
-        "14 $/mois pour 20 vidéos c'est correct mais pas le moins cher. L'absence de vrai tier gratuit récurrent pénalise. Le plan Pro à 29 $/mois reste compétitif vs la concurrence.",
+        "Positionnement dans la fourchette haute de sa catégorie. L'absence de vrai tier gratuit récurrent peut pénaliser les usages très occasionnels. Le tarif devient rentable dès qu'on publie plusieurs shorts par mois, grâce au temps gagné sur les sous-titres.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
@@ -171,22 +186,15 @@ export const submagicFiche: FicheData = {
   ],
   plans: [
     {
-      nom: "Starter",
-      prix: "14 $/mois",
-      cible: "Créateurs occasionnels",
-      features: ["20 vidéos/mois", "Templates complets", "Export 1080p", "Support FR"],
-    },
-    {
-      nom: "Pro",
-      prix: "29 $/mois",
-      cible: "Créateurs réguliers",
-      features: ["100 vidéos/mois", "Templates premium", "Export 4K", "Équipe jusqu'à 3"],
-    },
-    {
-      nom: "Business",
-      prix: "Sur devis",
-      cible: "Agences",
-      features: ["Volume illimité", "API early access", "Gestion multi-comptes", "SLA"],
+      nom: "Plans Submagic",
+      prix: "À partir de 19 €/mois",
+      cible: "Créateurs, indépendants, équipes",
+      features: [
+        "Facturation mensuelle ou annuelle (annuelle moins chère)",
+        "Essai gratuit limité disponible",
+        "Détail complet des quotas et fonctionnalités sur la page Tarifs",
+        "Tarifs susceptibles d'évoluer — vérifier sur submagic.co",
+      ],
     },
   ],
   alternatives: [
@@ -208,9 +216,9 @@ export const submagicFiche: FicheData = {
   ],
   faq: [
     {
-      question: "Submagic vaut-il les 14 $/mois pour un créateur qui débute ?",
+      question: "Submagic vaut-il son abonnement pour un créateur qui débute ?",
       answer:
-        "Oui si tu publies au moins 4-5 shorts par mois. Le temps gagné sur les sous-titres stylés paie l'abonnement dès le 3e short. Non si tu publies moins souvent — CapCut gratuit fera l'affaire.",
+        "Oui si tu publies au moins 4-5 shorts par mois. Le temps gagné sur les sous-titres stylés compense rapidement le coût. Non si tu publies très occasionnellement — CapCut gratuit fera l'affaire.",
     },
     {
       question: "La précision FR est-elle vraiment meilleure que les alternatives ?",
@@ -220,7 +228,7 @@ export const submagicFiche: FicheData = {
     {
       question: "Y a-t-il une vraie offre gratuite ?",
       answer:
-        "Non. L'essai gratuit est limité à 3 vidéos à vie, pas renouvelable. Pour un usage gratuit durable, OpusClip (60 min/mois récurrent) ou CapCut sont plus adaptés.",
+        "Submagic propose un essai gratuit limité mais pas de plan gratuit récurrent. Pour un usage gratuit durable, OpusClip ou CapCut sont des alternatives plus adaptées. Les conditions exactes de l'essai sont à vérifier sur submagic.co.",
     },
     {
       question: "Peut-on l'utiliser dans un workflow automatisé (Make, Zapier) ?",
@@ -228,14 +236,14 @@ export const submagicFiche: FicheData = {
         "Non, pas d'API publique à date. L'API est en early access pour certains partenaires Business. Si l'automatisation est critique, regarder OpusClip qui propose une API sur plan Pro.",
     },
     {
-      question: "Combien de temps pour sous-titrer une vidéo de 1 minute ?",
+      question: "Combien de temps pour sous-titrer une vidéo courte ?",
       answer:
-        "Environ 60-90 secondes total (upload + génération + export) selon la complexité du template choisi. C'est l'un des workflows les plus rapides du marché.",
+        "Le workflow est l'un des plus rapides du marché : upload, choix du template, export en quelques clics. La durée exacte dépend de la longueur de la vidéo et du template choisi.",
     },
   ],
   ctaFinal: {
     headline: "Prêt à essayer Submagic ?",
-    sub: "Le workflow le plus rapide pour des sous-titres stylés en français. Essai gratuit 3 vidéos, pas de carte requise.",
+    sub: "Le workflow le plus rapide pour des sous-titres stylés en français. Essai gratuit disponible sur le site.",
     buttonText: "Essayer Submagic",
   },
 };

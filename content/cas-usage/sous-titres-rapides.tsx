@@ -90,9 +90,9 @@ export const sousTitresRapides: CasUsageData = {
         "Export direct au format TikTok/Reels/Shorts",
       ],
       limites: [
-        "Pas de vraie gratuité (essai 3 vidéos à vie)",
-        "Plafond 60 sec par vidéo en Starter",
-        "Paiement USD uniquement",
+        "Pas de vraie gratuité récurrente, seulement un essai limité",
+        "Plafond de durée vidéo selon le plan choisi",
+        "Tarifs à vérifier selon la devise affichée",
       ],
       verdict:
         "Si tu produis régulièrement des shorts, Submagic te fait gagner 10-15 minutes par vidéo comparé à un outil plus lent. Rentabilisé dès le 3e short.",
@@ -171,12 +171,12 @@ export const sousTitresRapides: CasUsageData = {
         "Tu peux utiliser Pictory, Synthesia ou un autre outil anglophone pour générer des sous-titres FR, mais tu vas devoir corriger beaucoup plus qu'avec un outil pensé FR. Faux gain de temps.",
     },
     {
-      titre: "Tenter le plan gratuit Submagic pour un usage régulier",
+      titre: "Tenter l'essai gratuit Submagic pour un usage régulier",
       description: (
         <>
-          3 vidéos à vie. Tu les consommes en 2 jours. Si tu veux utiliser
-          Submagic sur la durée, il faut payer. Pour un vrai test gratuit
-          durable, commence par{" "}
+          L&apos;essai gratuit est limité et se consomme rapidement. Si tu
+          veux utiliser Submagic sur la durée, il faut passer sur un plan
+          payant. Pour un vrai test gratuit récurrent, commence plutôt par{" "}
           <Link
             href="/outils/opusclip"
             className="text-emerald-400 hover:underline"

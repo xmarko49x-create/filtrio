@@ -26,8 +26,8 @@ export const opusclipVsSubmagic: ComparatifData = {
       </>,
       <>
         Beaucoup de créateurs pros utilisent les deux : OpusClip pour la
-        découpe initiale, Submagic pour le polish final. Combo à ~23 $/mois qui
-        reste rentable si tu produis du contenu régulièrement.
+        découpe initiale, Submagic pour le polish final. Un combo économique
+        qui reste rentable si tu produis du contenu régulièrement.
       </>,
     ],
   },
@@ -139,7 +139,7 @@ export const opusclipVsSubmagic: ComparatifData = {
     {
       question: "Peut-on utiliser les deux dans le même workflow ?",
       answer:
-        "Oui, c'est même le setup le plus puissant. OpusClip pour la découpe initiale, Submagic pour le rendu final FR stylé. Combo à ~23 $/mois qui se rentabilise dès 15-20 shorts produits par mois.",
+        "Oui, c'est même le setup le plus puissant. OpusClip pour la découpe initiale, Submagic pour le rendu final FR stylé. Combo économique qui se rentabilise rapidement dès qu'on produit plusieurs shorts par mois.",
     },
     {
       question: "Lequel a la meilleure qualité de sous-titres en français ?",
@@ -149,7 +149,7 @@ export const opusclipVsSubmagic: ComparatifData = {
     {
       question: "Y a-t-il un plan gratuit durable ?",
       answer:
-        "OpusClip propose 60 min/mois récurrent gratuitement. Submagic limite son essai à 3 vidéos à vie, pas renouvelable. OpusClip gagne clairement sur ce point.",
+        "OpusClip propose un plan gratuit récurrent mensuel, plus généreux que Submagic qui se limite à un essai gratuit ponctuel. Sur ce point, OpusClip prend l'avantage. Conditions exactes à vérifier sur les sites officiels.",
     },
     {
       question: "Lequel a la meilleure API ?",
@@ -160,9 +160,10 @@ export const opusclipVsSubmagic: ComparatifData = {
       question: "Lequel choisir pour débuter ?",
       answer: (
         <>
-          Si tu pars de vidéos longues, commence avec le plan gratuit OpusClip
-          (60 min/mois). Si tu tournes déjà court, teste Submagic sur 3 vidéos
-          puis décide. Les deux sont plus simples que leurs concurrents (
+          Si tu pars de vidéos longues, commence avec le plan gratuit
+          d&apos;OpusClip pour te faire une idée. Si tu tournes déjà court,
+          teste l&apos;essai gratuit de Submagic puis décide. Les deux sont
+          plus simples que leurs concurrents (
           <Link href="/outils/descript" className="text-violet-400 hover:underline">
             Descript
           </Link>

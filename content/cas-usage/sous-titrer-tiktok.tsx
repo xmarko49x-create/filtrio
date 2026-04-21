@@ -81,8 +81,8 @@ export const sousTitrerTiktok: CasUsageData = {
         "Workflow 3 clics : upload → template → export",
       ],
       limites: [
-        "Pas de vraie gratuité récurrente (3 vidéos essai à vie)",
-        "Paiement USD uniquement",
+        "Pas de vraie gratuité récurrente, seulement un essai limité",
+        "Tarifs à vérifier selon la devise affichée",
         "Pas d'API publique pour automatiser",
       ],
       verdict:

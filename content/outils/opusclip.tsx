@@ -6,7 +6,7 @@ export const opusclipFiche: FicheData = {
   hero: {
     h1: "OpusClip : l'avis complet en 2026",
     tagline:
-      "Le spécialiste incontournable de la découpe IA de long format en shorts. Plan gratuit récurrent 60 min/mois, score viralité prédictif, intégrations massives. Voici pour qui il vaut son prix.",
+      "Le spécialiste incontournable de la découpe IA de long format en shorts. Plan gratuit récurrent mensuel, score viralité prédictif, intégrations massives. Voici pour qui il vaut son prix.",
     badges: [
       { label: "Large adoption", tone: "primary" },
       { label: "Commission 25% récurrent 1 an", tone: "accent" },
@@ -36,7 +36,7 @@ export const opusclipFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan gratuit récurrent de 60 min de traitement par mois (un des plus généreux du marché). Starter à 9 $/mois (150 min). Pro à 29 $/mois (quasi illimité). Paiement USD.",
+        "Plan gratuit récurrent mensuel disponible (un des plus généreux de sa catégorie), puis plans payants mensuels. Tarifs exacts et quotas à consulter sur la page Tarifs d'OpusClip.",
     },
     {
       question: "Meilleure alternative ?",
@@ -72,7 +72,7 @@ export const opusclipFiche: FicheData = {
     "Tu pars de sources longues (podcasts, lives, interviews 30 min+)",
     "Tu veux 100% d'automatisation de la découpe",
     "Tu publies sur plusieurs plateformes en même temps",
-    "Tu veux tester sérieusement sans payer (plan gratuit 60 min/mois)",
+    "Tu veux tester sérieusement sans payer (plan gratuit récurrent mensuel)",
     "Tu veux connecter directement YouTube, Twitch, Zoom, Drive",
     "Tu gères une agence social media avec du volume",
   ],
@@ -103,7 +103,7 @@ export const opusclipFiche: FicheData = {
       poids: 20,
       score: 9.0,
       commentaire:
-        "Un des meilleurs rapports qualité/prix de sa catégorie. Plan gratuit de 60 min/mois récurrent, Starter à 9 $/mois. Beaucoup plus généreux que Submagic ou Descript pour démarrer.",
+        "Un des meilleurs rapports qualité/prix de sa catégorie grâce à un plan gratuit récurrent mensuel et des plans payants abordables. Plus généreux que Submagic ou Descript pour démarrer sans engagement.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
@@ -168,49 +168,14 @@ export const opusclipFiche: FicheData = {
   ],
   plans: [
     {
-      nom: "Gratuit",
-      prix: "0 $",
-      cible: "Pour tester sérieusement",
+      nom: "Plans OpusClip",
+      prix: "Plan gratuit + plans payants",
+      cible: "Créateurs, agences, médias",
       features: [
-        "60 min de traitement/mois (récurrent)",
-        "Jusqu'à 30 min par source",
-        "Watermark OpusClip",
-        "Publication manuelle",
-      ],
-    },
-    {
-      nom: "Starter",
-      prix: "9 $/mois",
-      cible: "Créateurs occasionnels",
-      features: [
-        "150 min de traitement/mois",
-        "Sources jusqu'à 1 heure",
-        "Sans watermark",
-        "Export HD",
-        "Auto-post Reels/TikTok",
-      ],
-    },
-    {
-      nom: "Pro",
-      prix: "29 $/mois",
-      cible: "Créateurs réguliers et agences",
-      features: [
-        "Traitement quasi illimité",
-        "Sources jusqu'à 3 heures",
-        "Export 4K",
-        "Accès API",
-        "Score viralité avancé",
-      ],
-    },
-    {
-      nom: "Business",
-      prix: "Sur devis",
-      cible: "Agences et médias",
-      features: [
-        "Illimité",
-        "Comptes équipe",
-        "SSO et admin",
-        "Support dédié",
+        "Plan gratuit récurrent mensuel (l'un des plus généreux de la catégorie)",
+        "Plans payants mensuels pour lever les limites",
+        "Plan Pro avec accès API pour l'automatisation",
+        "Quotas et tarifs exacts à consulter sur la page Tarifs d'OpusClip",
       ],
     },
   ],
@@ -252,7 +217,7 @@ export const opusclipFiche: FicheData = {
     {
       question: "Le plan gratuit est-il vraiment utilisable durablement ?",
       answer:
-        "Oui. 60 min/mois récurrent couvre 1 podcast d'1h ou plusieurs sources plus courtes. Pas un essai one-shot. Idéal pour démarrer sérieusement sans carte bancaire.",
+        "Oui. Le plan gratuit est récurrent mensuel (pas un simple essai one-shot), ce qui permet de traiter une source par mois ou plusieurs plus courtes. Idéal pour démarrer sérieusement sans carte bancaire. Quotas exacts à consulter sur le site.",
     },
     {
       question: "Le score viralité est-il fiable ?",
@@ -262,7 +227,7 @@ export const opusclipFiche: FicheData = {
     {
       question: "Peut-on utiliser OpusClip avec l'API ?",
       answer:
-        "Oui sur plan Pro (29 $/mois). Intégration avec Make, Zapier ou scripts custom pour industrialiser la génération. Particulièrement utile pour les agences et créateurs qui automatisent à grande échelle.",
+        "Oui sur les plans payants supérieurs. Intégration avec Make, Zapier ou scripts custom pour industrialiser la génération. Particulièrement utile pour les agences et créateurs qui automatisent à grande échelle.",
     },
     {
       question: "Quelle sortie pour le marché francophone ?",
@@ -281,7 +246,7 @@ export const opusclipFiche: FicheData = {
   ],
   ctaFinal: {
     headline: "Prêt à automatiser ta découpe ?",
-    sub: "Le plan gratuit (60 min/mois récurrent) suffit pour traiter 1 podcast long par mois. Tu verras vite si le workflow te convient avant de payer.",
+    sub: "Le plan gratuit récurrent mensuel permet de traiter une source longue par mois. Tu verras vite si le workflow te convient avant de payer.",
     buttonText: "Essayer OpusClip",
   },
 };

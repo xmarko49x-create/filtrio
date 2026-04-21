@@ -81,7 +81,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
       ],
       limites: [
         "Pas optimal pour découper une vidéo d'1h en 10 shorts",
-        "Pas de plan gratuit récurrent (3 vidéos essai à vie)",
+        "Pas de plan gratuit récurrent, seulement un essai limité",
         "Pas d'API publique",
       ],
       verdict:
@@ -127,19 +127,19 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
     {
       titre: "Le combo gagne en volume",
       description:
-        "Pour un créateur qui publie 15-20 shorts par mois depuis du long format : OpusClip pour extraire, export, upload dans Submagic pour polish final. Combo à ~23 $/mois, gain de temps massif vs un seul outil.",
+        "Pour un créateur qui publie régulièrement des shorts depuis du long format : OpusClip pour extraire, export, upload dans Submagic pour polish final. Combo économique, gain de temps massif vs un seul outil.",
     },
     {
       titre: "Pas la même facturation",
       description:
-        "Submagic facture à la vidéo (20-100 vidéos/mois selon le plan). OpusClip facture aux minutes de source analysée. Compte ton usage réel : 1h de podcast = 60 min OpusClip mais peut produire 10 vidéos Submagic.",
+        "Submagic facture sur un volume de vidéos par mois. OpusClip facture sur un volume de minutes de source analysée. Selon ton usage (podcasts longs ou vidéos courtes), l'un sera plus avantageux que l'autre. Les détails de chaque plan sont à consulter sur les sites officiels.",
     },
   ],
   piegesAEviter: [
     {
       titre: "Choisir sans savoir ce qu'on publie",
       description:
-        "La question n'est pas 'lequel est meilleur' mais 'que publies-tu ?'. Si tu ne sais pas encore, teste le plan gratuit OpusClip (60 min/mois) sur une vidéo existante, tu verras vite si c'est ton workflow.",
+        "La question n'est pas 'lequel est meilleur' mais 'que publies-tu ?'. Si tu ne sais pas encore, teste le plan gratuit d'OpusClip sur une vidéo existante, tu verras vite si c'est ton workflow.",
     },
     {
       titre: "Essayer de faire tout avec un seul",

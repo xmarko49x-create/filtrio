@@ -13,7 +13,6 @@ export const submagicFiche: FicheData = {
       { label: "Sous-titres & shorts", tone: "neutral" },
     ],
     origine: "France 🇫🇷",
-    depuis: "2022",
     tempsLecture: 8,
     lastCheck: "20/04/2026",
   },
@@ -21,7 +20,7 @@ export const submagicFiche: FicheData = {
     {
       question: "C'est quoi ?",
       answer:
-        "Outil français (fondé par David Zitoun) qui génère des sous-titres stylés et des shorts viraux à partir de n'importe quelle vidéo. Détection auto des moments forts, templates animés, recadrage 9:16 inclus.",
+        "Outil français qui génère des sous-titres stylés et des shorts viraux à partir de n'importe quelle vidéo. Détection auto des moments forts, templates animés, recadrage 9:16 inclus.",
     },
     {
       question: "Pour qui ?",
@@ -31,16 +30,17 @@ export const submagicFiche: FicheData = {
     {
       question: "Pas pour qui ?",
       answer:
-        "Créateurs long-format pur (podcasters sans volonté de clipper). Monteurs pro qui veulent une timeline éditable. Budgets serrés (pas de vrai tier gratuit récurrent).",
+        "Créateurs long-format pur (podcasters sans volonté de clipper). Monteurs pro qui veulent une timeline éditable. Budgets serrés (essai gratuit limité, pas de plan gratuit récurrent affiché sur la page tarifs).",
     },
     {
       question: "Combien ?",
       answer: (
         <>
-          Abonnement mensuel à partir de 19 $/mois en facturation mensuelle
-          (USD). Une option annuelle moins chère est également proposée. Essai
-          gratuit limité disponible. Les plans et tarifs exacts sont à jour
-          sur la{" "}
+          3 plans payants par membre et par mois, affichés en EUR et en
+          facturation annuelle : Starter 12 €, Pro 23 €, Business + API 41 €.
+          La facturation mensuelle est plus chère. Essai gratuit de 3 vidéos
+          sans carte bancaire. Add-on Magic Clips (+12 €/user/mois) et plan
+          Custom disponibles. Détail complet sur la{" "}
           <a
             href="https://submagic.co/?via=marc38"
             target="_blank"
@@ -186,14 +186,62 @@ export const submagicFiche: FicheData = {
   ],
   plans: [
     {
-      nom: "Plans Submagic",
-      prix: "À partir de 19 $/mois (USD)",
-      cible: "Créateurs, indépendants, équipes",
+      nom: "Starter",
+      prix: "12 €/member/mois (annuel)",
+      cible: "Individus qui démarrent la création vidéo",
       features: [
-        "Facturation mensuelle ou annuelle (annuelle moins chère)",
-        "Essai gratuit limité disponible",
-        "Détail complet des quotas et fonctionnalités sur la page Tarifs",
-        "Tarifs susceptibles d'évoluer — vérifier sur submagic.co",
+        "15 vidéos/mois, max. 2 min chacune",
+        "3 AI Credits/mois",
+        "Sans watermark · Auto captions IA",
+        "B-rolls et audio gratuits · Édition text-based",
+        "Export 1080p à 30 FPS",
+        "API & Integrations (10 min/mois)",
+      ],
+    },
+    {
+      nom: "Pro",
+      prix: "23 €/member/mois (annuel)",
+      cible: "Créateurs qui veulent des shorts percutants",
+      features: [
+        "40 vidéos/mois, max. 5 min chacune",
+        "6 AI Credits/mois",
+        "Storyblocks B-Rolls & Audio",
+        "AI hook titles, AI clean audio, AI remove silences",
+        "AI Translate captions · Brand Kit",
+        "Publish to TikTok, YouTube, Instagram (nouveau)",
+      ],
+    },
+    {
+      nom: "Business + API",
+      prix: "41 €/member/mois (annuel)",
+      cible: "Équipes et agences qui scalent la production",
+      features: [
+        "100 vidéos/mois, max. 30 min chacune",
+        "15 AI Credits/mois",
+        "Export 4K à 60 FPS",
+        "10 custom templates · Logos & brand assets",
+        "Dictionnaire de mots custom · Support prioritaire",
+        "API & Integrations (100 min/mois)",
+      ],
+    },
+    {
+      nom: "Custom Plan",
+      prix: "Sur demande",
+      cible: "Usages sur mesure",
+      features: [
+        "Nombre de vidéos, membres et templates personnalisés",
+        "Quotas API et Magic Clips sur mesure",
+        "Sécurité avancée et SSO",
+        "Customer success dédié",
+      ],
+    },
+    {
+      nom: "Essai gratuit",
+      prix: "0 €",
+      cible: "Pour tester sans engagement",
+      features: [
+        "3 vidéos gratuites",
+        "Sans carte bancaire",
       ],
     },
   ],
@@ -228,12 +276,12 @@ export const submagicFiche: FicheData = {
     {
       question: "Y a-t-il une vraie offre gratuite ?",
       answer:
-        "Submagic propose un essai gratuit limité mais pas de plan gratuit récurrent. Pour un usage gratuit durable, OpusClip ou CapCut sont des alternatives plus adaptées. Les conditions exactes de l'essai sont à vérifier sur submagic.co.",
+        "Submagic propose un essai gratuit de 3 vidéos, sans carte bancaire. Mais pas de plan gratuit récurrent. Pour un usage gratuit durable, OpusClip ou CapCut sont des alternatives plus adaptées.",
     },
     {
       question: "Peut-on l'utiliser dans un workflow automatisé (Make, Zapier) ?",
       answer:
-        "Non, pas d'API publique à date. L'API est en early access pour certains partenaires Business. Si l'automatisation est critique, regarder OpusClip qui propose une API sur plan Pro.",
+        "Oui. L'API & Integrations sont disponibles dès le Starter (quota 10 min/mois). Pour une automatisation à plus grande échelle, le plan Business + API (41 €/member/mois en annuel) monte le quota à 100 min/mois.",
     },
     {
       question: "Combien de temps pour sous-titrer une vidéo courte ?",
@@ -243,7 +291,7 @@ export const submagicFiche: FicheData = {
   ],
   ctaFinal: {
     headline: "Prêt à essayer Submagic ?",
-    sub: "Le workflow le plus rapide pour des sous-titres stylés en français. Essai gratuit disponible sur le site.",
+    sub: "Le workflow le plus rapide pour des sous-titres stylés en français. Essai gratuit : 3 vidéos, sans carte bancaire.",
     buttonText: "Essayer Submagic",
   },
 };

@@ -57,12 +57,17 @@ export default function Footer() {
             <div className="text-sm font-semibold text-slate-300 mb-3">Filtrio</div>
             <ul className="space-y-2 text-sm text-slate-500">
               <li>
+                <Link href="/a-propos" className="hover:text-slate-300">
+                  À propos
+                </Link>
+              </li>
+              <li>
                 <Link href="/methode" className="hover:text-slate-300">
                   Notre méthode
                 </Link>
               </li>
               <li>
-                <Link href="/transparence" className="hover:text-slate-300">
+                <Link href="/a-propos#transparence" className="hover:text-slate-300">
                   Transparence affiliation
                 </Link>
               </li>

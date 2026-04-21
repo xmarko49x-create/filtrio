@@ -36,7 +36,7 @@ export const opusclipFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan gratuit récurrent mensuel disponible (un des plus généreux de sa catégorie), puis plans payants mensuels. Tarifs exacts et quotas à consulter sur la page Tarifs d'OpusClip.",
+        "Plan gratuit disponible · Plans payants à partir de 15 $/mois · Business sur devis. Détail des quotas et fonctionnalités sur la page Tarifs d'OpusClip.",
     },
     {
       question: "Meilleure alternative ?",
@@ -169,13 +169,13 @@ export const opusclipFiche: FicheData = {
   plans: [
     {
       nom: "Plans OpusClip",
-      prix: "Plan gratuit + plans payants",
+      prix: "À partir de 15 $/mois",
       cible: "Créateurs, agences, médias",
       features: [
-        "Plan gratuit récurrent mensuel (l'un des plus généreux de la catégorie)",
-        "Plans payants mensuels pour lever les limites",
-        "Plan Pro avec accès API pour l'automatisation",
-        "Quotas et tarifs exacts à consulter sur la page Tarifs d'OpusClip",
+        "Plan gratuit disponible",
+        "Plans payants à partir de 15 $/mois",
+        "Plan Business sur devis",
+        "Quotas exacts et fonctionnalités par plan sur la page Tarifs d'OpusClip",
       ],
     },
   ],

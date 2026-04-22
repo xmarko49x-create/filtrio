@@ -5,6 +5,7 @@ import { veedVsKapwing } from "./veed-vs-kapwing";
 import { opusclipVsCapcut } from "./opusclip-vs-capcut";
 import { invideoVsPictory } from "./invideo-vs-pictory";
 import { runwayVsPika } from "./runway-vs-pika";
+import { submagicVsCapcut } from "./submagic-vs-capcut";
 
 /**
  * Registre des comparatifs 1v1 (pas la meta-page alternatives-a-submagic,
@@ -17,7 +18,8 @@ export const COMPARATIF_REGISTRY: Record<string, ComparatifData> = {
   "opusclip-vs-capcut": opusclipVsCapcut,
   "invideo-vs-pictory": invideoVsPictory,
   "runway-vs-pika": runwayVsPika,
-  // submagic-vs-capcut, submagic-vs-descript, vidiq-vs-tubebuddy,
+  "submagic-vs-capcut": submagicVsCapcut,
+  // submagic-vs-descript, vidiq-vs-tubebuddy,
   // elevenlabs-vs-heygen, descript-vs-riverside — à porter plus tard
 };
 

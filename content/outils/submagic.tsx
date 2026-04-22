@@ -269,8 +269,27 @@ export const submagicFiche: FicheData = {
     },
     {
       question: "Y a-t-il une vraie offre gratuite ?",
-      answer:
-        "Submagic propose un essai gratuit de 3 vidéos, sans carte bancaire. Mais pas de plan gratuit récurrent. Pour un usage gratuit durable, OpusClip ou CapCut sont des alternatives plus adaptées.",
+      answer: (
+        <>
+          Submagic propose un essai gratuit de 3 vidéos, sans carte bancaire.
+          Mais pas de plan gratuit récurrent. Pour un usage gratuit durable,{" "}
+          <Link href="/outils/opusclip" className="text-emerald-400 hover:underline">
+            OpusClip
+          </Link>{" "}
+          ou{" "}
+          <Link href="/outils/capcut" className="text-sky-400 hover:underline">
+            CapCut
+          </Link>{" "}
+          sont des alternatives plus adaptées. Détail dans le{" "}
+          <Link
+            href="/comparatifs/submagic-vs-capcut"
+            className="text-amber-400 hover:underline"
+          >
+            comparatif Submagic vs CapCut
+          </Link>
+          .
+        </>
+      ),
     },
     {
       question: "Peut-on intégrer Submagic à un workflow automatisé (Make, Zapier) ?",

@@ -82,7 +82,7 @@ const ALTERNATIVES: Alternative[] = [
       "N'a rien à voir avec les shorts viraux. À considérer uniquement si tu cherches un outil podcast distant, pas un remplaçant Submagic.",
     verdict:
       "Fausse alternative dans la plupart des cas. Pertinent uniquement si tu as mal identifié ton vrai besoin.",
-    priceLabel: "15 $/mois",
+    priceLabel: "À partir de 24 $/mois",
   },
 ];
 

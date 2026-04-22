@@ -6,22 +6,21 @@ export const riversideFiche: FicheData = {
   hero: {
     h1: "Riverside.fm : l'avis complet en 2026",
     tagline:
-      "Référence de l'enregistrement podcast à distance. Qualité studio même sur connexion moyenne grâce à l'enregistrement local séparé de chaque participant. Jusqu'à 4K vidéo. Voici le verdict.",
+      "Référence de l'enregistrement podcast et interview à distance. Positionnement qualité studio grâce à l'enregistrement local séparé de chaque participant.",
     badges: [
       { label: "Enregistrement distant pro", tone: "primary" },
       { label: "Qualité studio", tone: "accent" },
-      { label: "Jusqu'à 8 participants", tone: "neutral" },
+      { label: "Record · Edit · Repurpose", tone: "neutral" },
     ],
     origine: "Israël",
-    depuis: "2020",
     tempsLecture: 8,
-    lastCheck: "20/04/2026",
+    lastCheck: "22/04/2026",
   },
   verdict30s: [
     {
       question: "C'est quoi ?",
       answer:
-        "Plateforme d'enregistrement audio-vidéo à distance lancée en 2020. Innovation clé : chaque participant est enregistré localement (sur sa machine) en qualité maximale, puis les tracks sont uploadés. Résultat : qualité studio même sur une connexion moyenne.",
+        "Plateforme d'enregistrement audio-vidéo à distance. Innovation clé : chaque participant est enregistré localement sur sa machine, puis les tracks sont uploadés séparément. Résultat annoncé : qualité studio même sur une connexion moyenne.",
     },
     {
       question: "Pour qui ?",
@@ -32,8 +31,8 @@ export const riversideFiche: FicheData = {
       question: "Pas pour qui ?",
       answer: (
         <>
-          Créateurs solo qui enregistrent seuls (pas besoin d&apos;un studio
-          distribué). Ceux qui éditent beaucoup en post-prod (→{" "}
+          Créateurs solo qui enregistrent seuls. Ceux qui éditent beaucoup en
+          post-prod (→{" "}
           <Link href="/outils/descript" className="text-violet-400 hover:underline">
             Descript
           </Link>{" "}
@@ -43,8 +42,15 @@ export const riversideFiche: FicheData = {
     },
     {
       question: "Combien ?",
-      answer:
-        "Plan gratuit 2h d'enregistrement/mois. Standard à 15 $/mois (5h), Pro à 24 $/mois (15h + éditeur IA), Business à 49 $/mois (illimité + équipe). Tarification au temps d'enregistrement mensuel.",
+      answer: (
+        <>
+          À partir de 24 $/mois. Riverside propose aussi un plan gratuit pour
+          découvrir l&apos;outil. Les plans payants sont affichés en dollars
+          américains sur le site officiel. Pour les besoins avancés ou équipe,
+          il faut passer par une offre plus élevée ou une prise de contact
+          commerciale.
+        </>
+      ),
     },
     {
       question: "Meilleure alternative ?",
@@ -53,8 +59,7 @@ export const riversideFiche: FicheData = {
           <Link href="/outils/descript" className="text-violet-400 hover:underline">
             Descript
           </Link>{" "}
-          qui intègre désormais l&apos;enregistrement à distance (via
-          Squadcast). Zencastr pour un concurrent plus abordable.{" "}
+          qui intègre désormais l&apos;enregistrement à distance.{" "}
           <Link
             href="/comparatifs/descript-vs-riverside"
             className="text-indigo-400 hover:underline"
@@ -80,8 +85,8 @@ export const riversideFiche: FicheData = {
     "Tu fais du podcast ou interview avec des invités à distance",
     "Tu veux une qualité d'enregistrement studio sans studio physique",
     "La qualité audio/vidéo de tes invités compte autant que la tienne",
-    "Tu veux enregistrer vidéo 4K (plan Pro+)",
-    "Tu as des invités 1-7 personnes à rassembler sur une session",
+    "Tu rassembles plusieurs intervenants sur une même session",
+    "Tu veux récupérer des tracks séparés par participant pour éditer proprement",
     "Tu veux un producteur / ingé son à distance en tant que \"spectateur\"",
   ],
   pasPourQui: [
@@ -104,42 +109,42 @@ export const riversideFiche: FicheData = {
       poids: 20,
       score: 7.5,
       commentaire:
-        "Interface partiellement traduite en FR. La feature d'enregistrement en elle-même est agnostique à la langue. La transcription et l'éditeur IA sont moins naturels en français qu'en anglais, comparable à Descript sur ce point.",
+        "Interface partiellement traduite en FR. La feature d'enregistrement en elle-même est agnostique à la langue. La transcription et l'éditeur IA restent plus convaincants en anglais qu'en français, comparable à Descript sur ce point.",
     },
     {
       label: "Rapport qualité/prix",
       poids: 20,
       score: 7.5,
       commentaire:
-        "Plan gratuit correct (2h/mois pour tester). Plan Standard à 15 $/mois avec 5h d'enregistrement convient à un podcaster occasionnel. Plus cher que Zencastr sur l'entrée de gamme, plus mature fonctionnellement.",
+        "Plan gratuit disponible pour tester. Point d'entrée payant affiché à partir de 24 $/mois (USD) sur le site officiel. Positionnement dans la fourchette haute de sa catégorie, avec une spécialisation forte sur l'enregistrement distant pro.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
       poids: 20,
       score: 8.5,
       commentaire:
-        "Magic Editor depuis 2024 : découpe intelligente, suppression des silences, génération de clips courts, transcription auto. Moins poussé que Descript sur l'édition textuelle, mais comble vite l'écart. Suggestions de highlights réellement pertinentes.",
+        "Magic Editor : découpe intelligente, suppression des silences, génération de clips courts, transcription auto. Moins poussé que Descript sur l'édition textuelle, mais comble l'écart sur les workflows podcast. Suggestions de highlights utiles.",
     },
     {
       label: "Qualité d'enregistrement à distance",
       poids: 15,
       score: 9.5,
       commentaire:
-        "Le point fort absolu. Enregistrement local sur la machine de chaque participant, puis upload des tracks séparés. Aucune perte liée à la connexion. Qualité 48kHz audio, vidéo 4K disponible. Largement supérieur à Zoom ou Teams sur ce volet.",
+        "Le point fort absolu. Enregistrement local sur la machine de chaque participant, puis upload des tracks séparés. Aucune perte liée à la connexion. Largement supérieur à Zoom ou Teams sur ce volet.",
     },
     {
       label: "Support & confort FR",
       poids: 15,
       score: 7.0,
       commentaire:
-        "Support client en anglais principalement, chat live réactif. Documentation traduite automatiquement, qualité correcte. Plusieurs tutos YouTube FR de la communauté podcasting francophone.",
+        "Support client en anglais principalement. Documentation traduite automatiquement, qualité correcte. Plusieurs tutos FR de la communauté podcasting francophone sur YouTube.",
     },
     {
       label: "Intégrations",
       poids: 10,
       score: 8.0,
       commentaire:
-        "Export direct vers plateformes podcast (Spotify, Apple, Google), YouTube, réseaux sociaux. API disponible sur plans Business. Intégration Zapier et Make. Compatible avec la plupart des flux de production de podcast.",
+        "Export direct vers plateformes podcast (Spotify, Apple, Google), YouTube, réseaux sociaux. API disponible sur les plans supérieurs. Intégrations Zapier et Make. Compatible avec la plupart des flux de production podcast.",
     },
   ],
   fonctionnalites: [
@@ -149,19 +154,14 @@ export const riversideFiche: FicheData = {
         "Le différenciateur principal. Chaque participant enregistre en local sur sa machine en qualité maximale. Les tracks audio et vidéo sont uploadés en arrière-plan, sans perte liée à la connexion.",
     },
     {
-      titre: "Qualité 48kHz / 4K",
-      description:
-        "Audio 48kHz pour tous les plans, vidéo jusqu'à 4K sur les plans Pro+. Qualité comparable à un enregistrement studio, à condition que chaque participant ait un minimum de matériel côté micro.",
-    },
-    {
       titre: "Magic Editor (IA)",
       description:
-        "Éditeur IA lancé en 2024 : transcription automatique, suppression des silences, génération de clips courts automatiques, suggestions de moments forts. Moins poussé que Descript sur l'édition textuelle mais couvre bien les cas courants.",
+        "Éditeur IA : transcription automatique, suppression des silences, génération de clips courts automatiques, suggestions de moments forts. Couvre la plupart des cas d'édition courants pour un podcast.",
     },
     {
-      titre: "Jusqu'à 8 participants",
+      titre: "Multi-intervenants avec tracks séparés",
       description:
-        "Enregistrement simultané de 8 intervenants avec tracks séparés. Utile pour les tables rondes, émissions multi-invités. Au-delà, il faut basculer sur un plan entreprise.",
+        "Enregistrement simultané de plusieurs intervenants avec tracks séparés par participant. Utile pour les tables rondes et émissions multi-invités, et pour mixer proprement en post-production.",
     },
     {
       titre: "Producer mode",
@@ -173,50 +173,45 @@ export const riversideFiche: FicheData = {
       description:
         "Permet d'injecter des sons, jingles, extraits vidéo en direct pendant l'enregistrement. Précieux pour les podcasts scénarisés ou les émissions dynamiques.",
     },
+    {
+      titre: "Export multi-plateformes",
+      description:
+        "Export direct vers les plateformes podcast et les réseaux sociaux. Formats audio et vidéo disponibles selon le plan choisi.",
+    },
   ],
   plans: [
     {
-      nom: "Free",
+      nom: "Plan gratuit",
       prix: "0 $",
-      cible: "Pour tester",
+      prixSub: "Pour découvrir l'outil",
+      cible: "Test avant engagement",
       features: [
-        "2h d'enregistrement/mois",
-        "Qualité 720p",
-        "Watermark sur export",
-        "Pas de Magic Editor",
+        "Accès aux fonctionnalités de base d'enregistrement",
+        "Idéal pour tester la qualité avant de s'engager",
+        "Quotas et limites à vérifier sur la page Tarifs officielle",
       ],
     },
     {
-      nom: "Standard",
-      prix: "15 $/mois",
-      cible: "Podcasteurs réguliers",
+      nom: "Plans payants",
+      prix: "À partir de 24 $/mois",
+      prixSub: "Facturation en USD",
+      cible: "Podcasteurs et créateurs réguliers",
       features: [
-        "5h d'enregistrement/mois",
-        "1080p vidéo",
-        "Sans watermark",
-        "Transcription auto",
+        "Plans mensuels et annuels disponibles",
+        "Enregistrement local pour tous les participants",
+        "Magic Editor et fonctionnalités IA",
+        "Quotas détaillés sur la page Tarifs officielle",
       ],
     },
     {
-      nom: "Pro",
-      prix: "24 $/mois",
-      cible: "Créateurs pros",
+      nom: "Business / Équipe",
+      prix: "Sur devis",
+      prixSub: "Prise de contact commerciale",
+      cible: "Agences, médias, équipes",
       features: [
-        "15h d'enregistrement/mois",
-        "4K vidéo",
-        "Magic Editor complet",
-        "Producer mode",
-      ],
-    },
-    {
-      nom: "Business",
-      prix: "49 $/mois",
-      cible: "Agences et médias",
-      features: [
-        "Enregistrement illimité",
-        "API et intégrations",
-        "Collaboration équipe",
-        "Support prioritaire",
+        "Besoins avancés ou usages équipe",
+        "Collaboration et gestion multi-utilisateurs",
+        "Quotas et fonctionnalités sur demande",
       ],
     },
   ],
@@ -224,12 +219,12 @@ export const riversideFiche: FicheData = {
     {
       slug: "descript",
       comment:
-        "Intègre désormais l'enregistrement à distance via Squadcast. Plus fort sur la post-prod textuelle. Moins mature en enregistrement pur que Riverside.",
+        "Intègre désormais l'enregistrement à distance. Plus fort sur la post-prod textuelle. Moins spécialisé en enregistrement pur que Riverside.",
     },
     {
       slug: "zencastr",
       comment:
-        "Alternative plus accessible dès 10 $/mois. Moins mature en vidéo mais très correct pour du podcast audio pur.",
+        "Alternative historique plus abordable. Moins mature en vidéo mais très correct pour du podcast audio pur.",
     },
     {
       slug: "squadcast",
@@ -259,12 +254,12 @@ export const riversideFiche: FicheData = {
     {
       question: "La qualité est-elle vraiment meilleure que Zoom ?",
       answer:
-        "Oui, nettement. Zoom compresse l'audio en temps réel et dégrade la vidéo selon la bande passante. Riverside enregistre en local, pas de compression temps-réel. L'écart est immédiatement audible sur un enregistrement conversationnel multi-intervenants.",
+        "Oui, nettement, selon les retours publics. Zoom compresse l'audio en temps réel et dégrade la vidéo selon la bande passante. Riverside enregistre en local, pas de compression temps-réel. L'écart est généralement audible sur un enregistrement conversationnel multi-intervenants.",
     },
     {
       question: "Combien d'invités peut-on avoir simultanément ?",
       answer:
-        "Jusqu'à 8 participants sur tous les plans payants. Au-delà, il faut passer sur un plan entreprise. Pour une table ronde classique (2-4 personnes), le plan Standard à 15 $/mois suffit largement.",
+        "Riverside permet plusieurs participants simultanés sur la même session, avec tracks séparés par personne. Le nombre exact selon le plan est à vérifier sur la page Tarifs officielle.",
     },
     {
       question: "L'invité doit-il installer quelque chose ?",
@@ -274,12 +269,12 @@ export const riversideFiche: FicheData = {
     {
       question: "Riverside vaut-il le prix pour un débutant podcaster ?",
       answer:
-        "Pour un podcasteur qui prend son rendu au sérieux, oui. La différence de qualité par rapport à Zoom ou Teams est immédiatement audible. Pour un débutant qui n'est pas sûr de son engagement dans le podcasting, le plan gratuit (2h/mois) permet de tester avant de s'engager.",
+        "Pour un podcasteur qui prend son rendu au sérieux, oui. La différence de qualité par rapport à Zoom ou Teams est généralement audible. Pour un débutant qui n'est pas sûr de son engagement dans le podcasting, le plan gratuit permet de tester avant de s'engager.",
     },
   ],
   ctaFinal: {
     headline: "Prêt à enregistrer en qualité studio ?",
-    sub: "Le plan gratuit (2h/mois) permet de faire 1-2 épisodes de test avec un invité pour juger du rendu. Zéro risque avant engagement.",
+    sub: "Le plan gratuit permet de tester la qualité d'enregistrement distant avec un invité avant de t'engager. Plans payants à partir de 24 $/mois (USD).",
     buttonText: "Essayer Riverside",
   },
 };

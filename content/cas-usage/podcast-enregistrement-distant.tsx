@@ -82,7 +82,7 @@ export const podcastEnregistrementDistant: CasUsageData = {
       badge: "Qualité studio",
       pourquoiGagne: [
         "Enregistrement local par participant (qualité préservée)",
-        "Vidéo jusqu'au 4K, audio WAV non compressé",
+        "Tracks audio et vidéo séparés par intervenant",
         "Invité rejoint via simple lien navigateur",
         "Export multi-pistes séparées automatique",
         "Transcription auto + Magic Clips pour extraire shorts",
@@ -90,14 +90,14 @@ export const podcastEnregistrementDistant: CasUsageData = {
       limites: [
         "Interface d'édition moins poussée que Descript",
         "Upload peut prendre du temps en fin d'enregistrement",
-        "Plans Pro nécessaires pour 4K et longueur illimitée",
+        "Fonctionnalités avancées sur les plans supérieurs (voir page Tarifs officielle)",
       ],
       verdict:
         "Si tu produis régulièrement un podcast ou une série d'interviews à distance, Riverside est l'investissement le plus logique. La qualité fait la différence à l'écoute, et ton invité n'a rien à installer.",
       priceDisplay: {
         label: "À partir de",
-        value: "15 $/mois",
-        note: "Plan gratuit 2h",
+        value: "24 $/mois",
+        note: "Plan gratuit disponible",
       },
     },
     {

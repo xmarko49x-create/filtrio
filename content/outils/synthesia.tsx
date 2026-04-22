@@ -13,9 +13,8 @@ export const synthesiaFiche: FicheData = {
       { label: "SOC 2 / GDPR", tone: "neutral" },
     ],
     origine: "UK",
-    depuis: "2017",
     tempsLecture: 8,
-    lastCheck: "20/04/2026",
+    lastCheck: "22/04/2026",
   },
   verdict30s: [
     {
@@ -48,7 +47,7 @@ export const synthesiaFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan Starter à 22 $/mois (10 min vidéo), Creator à 67 $/mois (30 min). Enterprise sur devis. Plus cher qu'HeyGen à l'entrée mais inclut des features B2B (SSO, admin, conformité) utiles en entreprise.",
+        "Plan Basic gratuit (360 crédits/mois, jusqu'à 3 minutes de vidéo/mois, sans carte bancaire). Starter à 12 €/mois en annuel (19 €/mois en mensuel) avec assistant vidéo, doublage IA et avatars Synthesia. Creator (populaire) à 49 €/mois en annuel (79 €/mois en mensuel) avec 5 avatars personnels, API et vidéos interactives. Enterprise sur mesure pour les équipes (minutes illimitées, 80+ langues, SSO). Facturation EUR.",
     },
     {
       question: "Meilleure alternative ?",
@@ -131,7 +130,7 @@ export const synthesiaFiche: FicheData = {
       poids: 20,
       score: 8.5,
       commentaire:
-        "230+ avatars préconçus, clonage facial sur plans pros, traduction vidéo automatique 140+ langues avec sync labiale adaptée. Solide mais moins créatif que HeyGen sur les usages contemporain.",
+        "Large bibliothèque d'avatars préconçus, clonage facial (Personal Avatars) sur plans payants, traduction vidéo automatique multilingue avec sync labiale adaptée. Solide mais moins créatif qu'HeyGen sur les usages contemporain.",
     },
     {
       label: "Interface et prise en main",
@@ -159,7 +158,7 @@ export const synthesiaFiche: FicheData = {
     {
       titre: "Avatars B2B préconçus",
       description:
-        "230+ avatars catégorisés par style pro (formation, corporate, tech, finance). Rendu adapté au contexte entreprise, moins \"créatif\" qu'HeyGen. Les avatars premium sont très crédibles.",
+        "Avatars catégorisés par style pro (formation, corporate, tech, finance). Rendu adapté au contexte entreprise, moins \"créatif\" qu'HeyGen. Les avatars premium sont très crédibles selon les retours publics.",
     },
     {
       titre: "Traduction vidéo 140+ langues",
@@ -189,47 +188,54 @@ export const synthesiaFiche: FicheData = {
   ],
   plans: [
     {
-      nom: "Free",
-      prix: "0 $",
-      cible: "Pour démo rapide",
+      nom: "Basic",
+      prix: "Gratuit",
+      prixSub: "Aucune carte de crédit nécessaire",
+      cible: "Pour démarrer gratuitement",
       features: [
-        "3 min de vidéo/mois",
-        "9 avatars basiques",
-        "Watermark Synthesia",
-        "140 langues accessibles",
+        "360 crédits/mois",
+        "Jusqu'à 3 minutes de vidéo/mois",
       ],
     },
     {
       nom: "Starter",
-      prix: "22 $/mois",
-      cible: "Petite équipe formation",
+      prix: "12 €/mois",
+      prixSub: "Facturation annuelle · 19 €/mois en mensuel",
+      cible: "Créateurs et petites équipes",
       features: [
-        "10 min de vidéo/mois",
-        "100+ avatars",
-        "Sans watermark",
-        "Export 1080p",
+        "Tout Basic inclus",
+        "Téléchargement de vos vidéos",
+        "Assistant vidéo · Doublage IA",
+        "Suppression du logo de Synthesia",
+        "1 éditeur et 3 invités",
+        "Avatars IA de Synthesia",
       ],
     },
     {
       nom: "Creator",
-      prix: "67 $/mois",
-      cible: "Formateurs pros / PME",
+      prix: "49 €/mois",
+      prixSub: "Facturation annuelle · 79 €/mois en mensuel",
+      cible: "Créateurs réguliers · Plan populaire",
       features: [
-        "30 min de vidéo/mois",
-        "230+ avatars",
-        "Clonage facial basique",
-        "Branding personnalisé",
+        "Tout Starter inclus",
+        "5 avatars personnels",
+        "Doublage IA · Pages vidéo personnalisables",
+        "Accès API",
+        "Plusieurs avatars par scène · Vidéos interactives",
       ],
     },
     {
       nom: "Enterprise",
-      prix: "Sur devis",
-      cible: "Grandes entreprises",
+      prix: "Formule sur mesure",
+      prixSub: "Tarifs personnalisés · Pour les équipes",
+      cible: "Organisations et grandes équipes",
       features: [
-        "Volume sur mesure",
-        "SSO + SOC 2 + GDPR",
-        "API + intégrations LMS",
-        "Support dédié + SLA",
+        "Tout Creator inclus",
+        "Nombre illimité de minutes de vidéo",
+        "Traductions en un clic dans plus de 80 langues",
+        "Large bibliothèque d'avatars IA libres de droits",
+        "Nombre illimité d'avatars personnels",
+        "SAML/SSO · Collaboration en équipe",
       ],
     },
   ],

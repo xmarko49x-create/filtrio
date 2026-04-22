@@ -13,9 +13,8 @@ export const capcutFiche: FicheData = {
       { label: "ByteDance (TikTok)", tone: "neutral" },
     ],
     origine: "Chine (ByteDance)",
-    depuis: "2020",
     tempsLecture: 7,
-    lastCheck: "20/04/2026",
+    lastCheck: "22/04/2026",
   },
   verdict30s: [
     {
@@ -44,7 +43,7 @@ export const capcutFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "100% gratuit pour la majorité des features. Plan Pro à environ 10 $/mois pour : export 4K sans watermark sur certains assets, stock premium, features IA illimitées, cloud storage. Pour 90% des créateurs solo, le plan gratuit suffit.",
+        "Plan gratuit très complet (éditeur et la plupart des features). Version Pro accessible via 7 jours d'essai offerts, puis 23,99 €/mois en mensuel ou 199,99 €/an en annuel (≈ 16,66 €/mois) : 1 400 crédits mensuels, ressources premium, features IA avancées et 100 Go de stockage cloud. Version équipes disponible avec un tarif qui varie selon la région, le nombre de sièges et la fréquence de facturation. Facturation en EUR en France.",
     },
     {
       question: "Meilleure alternative ?",
@@ -155,7 +154,7 @@ export const capcutFiche: FicheData = {
     {
       titre: "Éditeur vidéo complet",
       description:
-        "Timeline multi-pistes, transitions, effets visuels, color grading basique, keyframes, green screen, multicam. Fonctionnalités qu'on trouve normalement dans des logiciels payants à 20+ $/mois.",
+        "Timeline multi-pistes, transitions, effets visuels, color grading basique, keyframes, green screen, multicam. Fonctionnalités qu'on trouve normalement dans des logiciels payants de la même catégorie.",
     },
     {
       titre: "Sous-titres automatiques",
@@ -186,37 +185,63 @@ export const capcutFiche: FicheData = {
   plans: [
     {
       nom: "Gratuit",
-      prix: "0 $",
+      prix: "0 €",
+      prixSub: "Éditeur complet accessible sans engagement",
       cible: "Créateurs solo et débutants",
       features: [
-        "Éditeur complet sans limite",
-        "Sous-titres auto illimités",
-        "Export 1080p",
-        "Bibliothèque basique",
+        "Éditeur vidéo complet (desktop, mobile, web)",
+        "Sous-titres auto",
+        "Bibliothèque d'assets de base",
         "Features IA de base",
+        "Export standard",
       ],
     },
     {
-      nom: "Pro",
-      prix: "10 $/mois",
+      nom: "Essai Pro",
+      prix: "0 €",
+      prixSub: "7 jours offerts pour tester",
+      cible: "Pour découvrir Pro avant engagement",
+      features: [
+        "Accès complet à la version Pro pendant 7 jours",
+        "Puis 23,99 €/mois si tu continues",
+        "Annulation possible à tout moment",
+      ],
+    },
+    {
+      nom: "Pro Annuel",
+      prix: "199,99 €/an",
+      prixSub: "≈ 16,66 €/mois · solution la plus économique",
       cible: "Créateurs réguliers",
       features: [
-        "Export 4K sans watermark",
-        "Stock premium illimité",
+        "1 400 crédits mensuels",
+        "Plus de 200 millions de ressources de création",
+        "Export 4K sans watermark sur assets Pro",
         "Features IA avancées",
-        "Cloud storage 100 Go",
-        "Support prioritaire",
+        "100 Go de stockage cloud",
       ],
     },
     {
-      nom: "Business",
-      prix: "Sur devis",
-      cible: "Agences et marques",
+      nom: "Pro Mensuel",
+      prix: "23,99 €/mois",
+      prixSub: "Promo 1er mois à 14,49 € affichée",
+      cible: "Engagement court",
       features: [
-        "Comptes équipe",
-        "Stockage illimité",
-        "Gestion centralisée",
-        "Support dédié",
+        "Tout Pro Annuel inclus",
+        "100 Go de stockage cloud",
+        "Accessible desktop, mobile et web",
+        "Annulation à tout moment",
+      ],
+    },
+    {
+      nom: "Pro Équipes",
+      prix: "Offre dédiée",
+      prixSub: "Tarif selon région, sièges et fréquence de facturation",
+      cible: "Équipes et collaborations",
+      features: [
+        "Tout Pro inclus",
+        "Gestion multi-postes et collaboration",
+        "Tarifs variables (dans notre capture FR : 17,99 €/poste/mois, 8,99 € promo 1er mois)",
+        "Vérifier l'offre exacte selon ton compte et ta région",
       ],
     },
   ],
@@ -244,9 +269,9 @@ export const capcutFiche: FicheData = {
         "Oui, sans discussion pour débuter. C'est l'éditeur vidéo gratuit le plus complet du marché. Pour un usage régulier et pro, les outils spécialisés (Submagic pour shorts, DaVinci pour montage pro) font mieux sur leur niche.",
     },
     {
-      question: "Le plan Pro vaut-il 10 $/mois ?",
+      question: "Le plan CapCut Pro vaut-il son prix ?",
       answer:
-        "Dépend de ton usage. Si tu exportes régulièrement en 4K, utilises les features IA avancées et le stock premium, oui. Sinon le plan gratuit suffit largement pour 90% des créateurs solo. Je recommande plutôt d'ajouter Submagic à 14 $ pour un meilleur rendu qu'un Pro CapCut.",
+        "Dépend de ton usage. Si tu exportes régulièrement en 4K, utilises les 1 400 crédits mensuels (features IA avancées) et le stock premium, le Pro peut se justifier — surtout à 199,99 €/an (≈ 16,66 €/mois). Sinon le plan gratuit couvre largement la majorité des créateurs solo. Un combo à envisager : CapCut gratuit pour monter + Submagic (à partir de 12 €/mois) pour le rendu sous-titres stylés FR.",
     },
     {
       question: "La question ByteDance pose-t-elle problème ?",

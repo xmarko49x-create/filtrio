@@ -13,15 +13,14 @@ export const kapwingFiche: FicheData = {
       { label: "Agences et équipes", tone: "neutral" },
     ],
     origine: "USA",
-    depuis: "2017",
     tempsLecture: 7,
-    lastCheck: "20/04/2026",
+    lastCheck: "22/04/2026",
   },
   verdict30s: [
     {
       question: "C'est quoi ?",
       answer:
-        "Éditeur vidéo web collaboratif lancé en 2017. Différenciateur principal : édition simultanée de plusieurs utilisateurs sur un même projet, à la manière de Google Docs. Commentaires précis ancrés à des timestamps, workflows d'approbation, brand kits partagés.",
+        "Éditeur vidéo web collaboratif américain. Différenciateur principal : édition simultanée de plusieurs utilisateurs sur un même projet, à la manière de Google Docs. Commentaires précis ancrés à des timestamps, workflows d'approbation, brand kits partagés.",
     },
     {
       question: "Pour qui ?",
@@ -51,7 +50,7 @@ export const kapwingFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan gratuit très limité (4 min max par vidéo). Pro à 16 $/mois, Business à 50 $/mois pour les équipes. Plus cher que Veed et CapCut à l'entrée, s'amortit si la collaboration est réellement utilisée.",
+        "Plan Free (0 $) limité. Pro à 16 $/mois par user en annuel (192 $/an) ou 24 $/mois en mensuel : projets et édition illimités, exports jusqu'à 2h. Business à 50 $/mois par user en annuel (600 $/an) ou 64 $/mois en mensuel pour booster la création en équipe. Enterprise sur devis. Facturation USD.",
     },
     {
       question: "Meilleure alternative ?",
@@ -120,7 +119,7 @@ export const kapwingFiche: FicheData = {
       poids: 20,
       score: 6.8,
       commentaire:
-        "Pro à 16 $/mois pour solo est cher vs Veed ou CapCut. Business à 50 $/mois pour équipe correct si la collaboration est vraiment utilisée. Le rapport qualité/prix n'a de sens qu'en équipe.",
+        "Pro à 16 $/mois en solo est cher vs Veed ou CapCut. Business à 50 $/mois par user devient intéressant si la collaboration temps réel est vraiment exploitée. Le rapport qualité/prix n'a de sens qu'en équipe.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
@@ -185,37 +184,51 @@ export const kapwingFiche: FicheData = {
   ],
   plans: [
     {
-      nom: "Gratuit",
+      nom: "Free",
       prix: "0 $",
-      cible: "Pour découvrir",
+      prixSub: "Pour tester",
+      cible: "Découverte de l'outil",
       features: [
-        "Vidéos jusqu'à 4 min",
-        "720p avec watermark",
-        "Export 7 min/jour max",
-        "Features IA limitées",
+        "Plan gratuit avec limites",
+        "Watermark et quotas d'export limités",
+        "Accès à l'interface collaborative basique",
       ],
     },
     {
       nom: "Pro",
       prix: "16 $/mois",
-      cible: "Solo pro",
+      prixSub: "Par user · facturation annuelle (192 $/an) · ou 24 $/mois en mensuel",
+      cible: "Créateurs et solo pros",
       features: [
-        "Vidéos illimitées",
-        "1080p sans watermark",
-        "Features IA complètes",
+        "Projets et édition illimités",
+        "Exports jusqu'à 2 heures",
+        "Sans watermark",
         "Brand kit personnel",
+        "Features IA complètes",
       ],
     },
     {
       nom: "Business",
-      prix: "50 $/user/mois",
-      cible: "Agences et entreprises",
+      prix: "50 $/mois",
+      prixSub: "Par user · facturation annuelle (600 $/an) · ou 64 $/mois en mensuel",
+      cible: "Agences et équipes",
       features: [
         "Tout Pro inclus",
-        "Collaboration temps réel",
+        "Collaboration temps réel avancée",
         "Workflows d'approbation",
-        "API et SSO",
         "Brand kits d'équipe",
+        "API et SSO",
+      ],
+    },
+    {
+      nom: "Enterprise",
+      prix: "Sur devis",
+      prixSub: "Organisations centralisées",
+      cible: "Grandes équipes et groupes",
+      features: [
+        "Gestion centralisée des équipes",
+        "Fonctionnalités sur mesure",
+        "Support dédié",
       ],
     },
   ],
@@ -250,7 +263,7 @@ export const kapwingFiche: FicheData = {
           <Link href="/outils/veed" className="text-yellow-400 hover:underline">
             Veed
           </Link>{" "}
-          à 12 $ plus polyvalent, ou{" "}
+          Lite à 10,75 €/mois plus polyvalent, ou{" "}
           <Link href="/outils/capcut" className="text-sky-400 hover:underline">
             CapCut
           </Link>{" "}

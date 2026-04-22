@@ -290,6 +290,28 @@ export const descriptFiche: FicheData = {
         "Oui pour les corrections ponctuelles (1-3 mots). Au-delà, le rendu devient moins naturel et fait entendre une légère texture artificielle. Parfait pour réparer une erreur, pas pour générer des paragraphes entiers.",
     },
     {
+      question: "Descript ou Submagic pour un YouTubeur qui fait aussi des shorts ?",
+      answer: (
+        <>
+          Descript pour éditer proprement le long format (podcast, tuto,
+          interview),{" "}
+          <Link href="/outils/submagic" className="text-amber-400 hover:underline">
+            Submagic
+          </Link>{" "}
+          pour finaliser les shorts avec sous-titres animés. Le combo est
+          fréquent chez les créateurs qui couvrent les deux formats. Détail
+          dans le{" "}
+          <Link
+            href="/comparatifs/submagic-vs-descript"
+            className="text-violet-400 hover:underline"
+          >
+            comparatif Submagic vs Descript
+          </Link>
+          .
+        </>
+      ),
+    },
+    {
       question: "Combien d'heures de media pour un podcast hebdo ?",
       answer:
         "Pour un podcast d'1h par semaine avec retakes, le plan Hobbyist à 16 $/mois en annuel (10 media hours/mois) convient à un créateur régulier sans débordement. Au-delà, passer sur Creator à 24 $/mois en annuel (30 media hours + 5 bonus).",

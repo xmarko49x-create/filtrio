@@ -301,6 +301,26 @@ export const submagicFiche: FicheData = {
       answer:
         "Le workflow est l'un des plus rapides de sa catégorie : upload, choix du template, export en quelques clics. La durée exacte dépend de la longueur de la vidéo et du template choisi.",
     },
+    {
+      question: "Submagic ou Descript pour un YouTubeur qui fait les deux formats ?",
+      answer: (
+        <>
+          Submagic pour les shorts (TikTok, Reels, YouTube Shorts),{" "}
+          <Link href="/outils/descript" className="text-violet-400 hover:underline">
+            Descript
+          </Link>{" "}
+          pour l&apos;édition propre du long format (podcast, tuto, interview).
+          Ils ne jouent pas sur le même terrain. Détail dans le{" "}
+          <Link
+            href="/comparatifs/submagic-vs-descript"
+            className="text-violet-400 hover:underline"
+          >
+            comparatif Submagic vs Descript
+          </Link>
+          .
+        </>
+      ),
+    },
   ],
   ctaFinal: {
     headline: "Prêt à essayer Submagic ?",

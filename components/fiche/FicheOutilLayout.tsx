@@ -92,8 +92,12 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-6 bg-slate-900/40 border border-slate-800 rounded-xl p-5">
-              <FactCell label="Prix" value={outil.priceFrom ?? "—"} />
-              <FactCell label="Essai" value={outil.freeTier ?? "—"} />
+              {outil.priceFrom && (
+                <FactCell label="Prix" value={outil.priceFrom} />
+              )}
+              {outil.freeTier && (
+                <FactCell label="Essai" value={outil.freeTier} />
+              )}
               {data.hero.langue && (
                 <FactCell label="Langue" value={data.hero.langue} />
               )}

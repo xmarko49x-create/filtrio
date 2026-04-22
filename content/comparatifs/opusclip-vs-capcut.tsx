@@ -79,7 +79,7 @@ export const opusclipVsCapcut: ComparatifData = {
     "Tu as beaucoup de long format à recycler en shorts",
     "Tu fais du podcast, du live ou du webinaire régulier",
     "Tu veux automatiser l'extraction des moments forts",
-    "Tu as un budget 9-29 $/mois à allouer",
+    "Tu as un budget à partir de 15 $/mois à allouer",
     "Tu crées en anglais ou multilingue (OpusClip est fort en EN)",
   ],
   porQuiB: [
@@ -105,7 +105,7 @@ export const opusclipVsCapcut: ComparatifData = {
     {
       profil: "YouTubeur long format qui fait 4 vidéos/mois",
       description:
-        "Workflow optimal : OpusClip pour sortir 20-30 shorts par mois à partir des vidéos longues. 9-29 $/mois, rentabilisé dès 15-20 shorts.",
+        "Workflow optimal : OpusClip pour sortir des shorts à partir des vidéos longues. À partir de 15 $/mois sur les plans payants, rentabilisé dès qu'on produit plusieurs shorts par mois.",
       gagnant: "A",
     },
     {
@@ -135,9 +135,9 @@ export const opusclipVsCapcut: ComparatifData = {
   },
   faq: [
     {
-      question: "OpusClip vaut-il 9 $/mois vs CapCut gratuit ?",
+      question: "OpusClip vaut-il son abonnement vs CapCut gratuit ?",
       answer:
-        "Si tu fais régulièrement du long format à découper, oui, largement. Une vidéo d'1h que tu découpes à la main dans CapCut = 2-3h de travail. OpusClip fait la même chose en 20 minutes. Rentabilisé dès la 2e vidéo source.",
+        "Si tu fais régulièrement du long format à découper, oui, largement. Une vidéo d'1h que tu découpes à la main dans CapCut demande plusieurs heures de travail. OpusClip fait la même chose en une fraction du temps. L'abonnement se rentabilise rapidement dès qu'on produit plusieurs shorts par mois.",
     },
     {
       question: "Peut-on utiliser les deux ensemble ?",

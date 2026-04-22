@@ -30,8 +30,9 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
       </>,
       <>
         Beaucoup de créateurs pros utilisent les deux : OpusClip pour la
-        découpe initiale, Submagic pour le polish final. Combo à ~23 $/mois qui
-        se rentabilise dès 15-20 shorts produits par mois.
+        découpe initiale, Submagic pour le polish final. Un combo économique
+        qui se rentabilise rapidement dès qu&apos;on produit plusieurs shorts
+        par mois.
       </>,
     ],
   },
@@ -108,8 +109,8 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
         "Si tu pars de long format (podcasts, lives, vidéos YouTube d'1h), OpusClip est nettement plus adapté. Rentabilisé dès 3-4 vidéos sources par mois.",
       priceDisplay: {
         label: "À partir de",
-        value: "9 $/mois",
-        note: "Plan gratuit 60 min",
+        value: "15 $/mois",
+        note: "Plan gratuit disponible",
       },
     },
   ],
@@ -186,16 +187,16 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
       reponse: (
         <>
           Si oui → <strong className="text-emerald-400">OpusClip</strong> seul
-          (9 $/mois). Gratuit 60 min/mois pour tester.
+          (à partir de 15 $/mois). Plan gratuit disponible pour tester.
         </>
       ),
     },
     {
-      question: "Tu produis 15+ shorts par mois depuis du long format ?",
+      question: "Tu produis plusieurs shorts par mois depuis du long format ?",
       reponse: (
         <>
           Si oui → Combo <strong className="text-emerald-400">OpusClip</strong> +{" "}
-          <strong className="text-amber-400">Submagic</strong>. ~23 $/mois,
+          <strong className="text-amber-400">Submagic</strong>. Combo économique,
           workflow pro complet.
         </>
       ),
@@ -204,9 +205,9 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
       question: "Tu es débutant avec budget zéro ?",
       reponse: (
         <>
-          OpusClip gratuit (60 min/mois) ou{" "}
+          Plan gratuit OpusClip ou{" "}
           <strong className="text-sky-400">CapCut</strong> gratuit.
-          Submagic&apos;s free tier est trop limité pour un vrai test.
+          L&apos;essai Submagic reste limité pour un vrai test.
         </>
       ),
     },
@@ -223,12 +224,13 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
         "Submagic, selon les retours publics G2/Reddit et notre analyse des features. OpusClip a progressé en 2025-2026 mais reste en léger retrait sur la segmentation FR, les accents régionaux et la cohérence ponctuation.",
     },
     {
-      question: "Le combo vaut-il les 23 $/mois ?",
+      question: "Le combo vaut-il son coût ?",
       answer: (
         <>
-          Si tu publies 15+ shorts par mois, oui largement. Exemple : 20 shorts
-          × 10-15 minutes gagnées par rapport à un workflow manuel = 3-5h
-          économisées par mois. À 50 €/h de valeur créateur, ROI évident. Voir
+          Si tu publies plusieurs shorts par mois depuis du long format, oui
+          largement. Le temps gagné par rapport à un workflow manuel rentabilise
+          rapidement les deux abonnements combinés, d&apos;autant plus à
+          mesure que le volume de publication augmente. Voir
           aussi le{" "}
           <Link
             href="/comparatifs/opusclip-vs-submagic"

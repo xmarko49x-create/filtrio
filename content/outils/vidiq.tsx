@@ -13,9 +13,8 @@ export const vidiqFiche: FicheData = {
       { label: "Trend Alerts", tone: "neutral" },
     ],
     origine: "USA",
-    depuis: "2015",
     tempsLecture: 8,
-    lastCheck: "20/04/2026",
+    lastCheck: "22/04/2026",
   },
   verdict30s: [
     {
@@ -48,7 +47,7 @@ export const vidiqFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan gratuit récurrent correct (meilleur que TubeBuddy sur ce point). Pro à 10 $/mois (limité), Boost à 39 $/mois (complet), Max à 79 $/mois (équipes). Tarification fixe, pas dépendante de la taille de la chaîne.",
+        "Plan Gratuit disponible pour démarrer (meilleur que TubeBuddy sur ce point). Boost à 16,58 €/mois en annuel, Max à 31 €/mois en annuel. Offre Enterprise dédiée via contact. Facturation en EUR (FR geo-pricing), tarification fixe.",
     },
     {
       question: "Meilleure alternative ?",
@@ -121,7 +120,7 @@ export const vidiqFiche: FicheData = {
       poids: 20,
       score: 8.0,
       commentaire:
-        "Plan gratuit récurrent réellement utilisable (avantage sur TubeBuddy). Tarifs fixes et prévisibles : 10 $/mois pour Pro, 39 $/mois pour Boost. Plan Boost proposé souvent en promo à -50% la première année.",
+        "Plan gratuit réellement utilisable (avantage sur TubeBuddy). Tarifs fixes et prévisibles affichés en EUR : Boost à 16,58 €/mois en annuel, Max à 31 €/mois. Plan Boost proposé régulièrement en promo, avec économie annoncée sur la facturation annuelle.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
@@ -149,7 +148,7 @@ export const vidiqFiche: FicheData = {
       poids: 10,
       score: 8.5,
       commentaire:
-        "Extensions Chrome, Firefox, Edge, Safari. Applications iOS et Android natives (avantage sur TubeBuddy). Export data vers Google Sheets. API accessible sur Boost et Max.",
+        "Extensions Chrome, Firefox, Edge, Safari. Applications iOS et Android natives (avantage sur TubeBuddy). Export data vers Google Sheets. API accessible sur les plans supérieurs.",
     },
   ],
   fonctionnalites: [
@@ -187,46 +186,47 @@ export const vidiqFiche: FicheData = {
   plans: [
     {
       nom: "Gratuit",
-      prix: "0 $",
-      cible: "Pour découvrir et débuter",
+      prix: "0 €",
+      prixSub: "Pour démarrer",
+      cible: "Pour découvrir VidIQ",
       features: [
-        "Scoring SEO basique",
-        "Keyword research limité",
-        "Trend Alerts basiques",
-        "AI Coach limité",
-      ],
-    },
-    {
-      nom: "Pro",
-      prix: "10 $/mois",
-      cible: "Créateurs en croissance",
-      features: [
-        "Keyword research complet",
-        "Analytics avancées",
-        "AI générative limitée",
-        "1 chaîne",
+        "Accès limité aux outils SEO et IA",
+        "Scoring et keyword research de base",
+        "Upgrade quand la chaîne grandit",
       ],
     },
     {
       nom: "Boost",
-      prix: "39 $/mois",
+      prix: "16,58 €/mois",
+      prixSub: "En annuel · économie 29 € vs mensuel",
       cible: "Créateurs réguliers",
       features: [
-        "IA générative complète",
-        "AI Coach illimité",
-        "Competitor tracking étendu",
-        "1 chaîne principale",
+        "IA générative intégrée au workflow",
+        "AI Coach pour accompagnement",
+        "Scoring SEO, tendances, analytics",
+        "Extensions + apps mobiles",
       ],
     },
     {
       nom: "Max",
-      prix: "79 $/mois",
-      cible: "Agences et médias",
+      prix: "31 €/mois",
+      prixSub: "En annuel · économie 96 € vs mensuel",
+      cible: "Créateurs pros",
       features: [
-        "Multi-chaînes",
-        "Accès API",
-        "Équipe et SSO",
-        "Support prioritaire",
+        "Tout Boost inclus",
+        "Mode \"Max Mode\" AI plus puissant (entraîné sur des milliards de vidéos)",
+        "Outils avancés de pilotage de chaîne",
+      ],
+    },
+    {
+      nom: "Enterprise",
+      prix: "Sur devis",
+      prixSub: "Organisations & médias",
+      cible: "Accès entreprise multi-chaînes",
+      features: [
+        "Full enterprise access pour chaque chaîne",
+        "Support et conditions dédiés",
+        "Détails via contact commercial",
       ],
     },
   ],

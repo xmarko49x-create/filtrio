@@ -8,20 +8,20 @@ export const canvaFiche: FicheData = {
     tagline:
       "Le couteau suisse du design pour créateurs. 180M+ utilisateurs, Magic Design IA, templates massifs, édition vidéo légère. Voici pour qui c'est le choix idéal.",
     badges: [
-      { label: "180M+ utilisateurs", tone: "primary" },
+      { label: "Interface FR native", tone: "primary" },
       { label: "Plan gratuit riche", tone: "accent" },
-      { label: "Depuis 2013", tone: "neutral" },
+      { label: "Magic Design IA", tone: "neutral" },
     ],
     origine: "Australie",
-    depuis: "2013",
+    langue: "Interface disponible en français",
     tempsLecture: 7,
-    lastCheck: "20/04/2026",
+    lastCheck: "22/04/2026",
   },
   verdict30s: [
     {
       question: "C'est quoi ?",
       answer:
-        "Plateforme de design en ligne lancée en 2013. Devenue un couteau suisse : miniatures YouTube, posts sociaux, présentations, logos, édition vidéo basique. Ajout massif d'IA depuis 2023 (Magic Design, Magic Write, Magic Edit).",
+        "Plateforme de design en ligne devenue un couteau suisse : miniatures YouTube, posts sociaux, présentations, logos, édition vidéo basique. Écosystème IA en expansion (Magic Design, Magic Write, Magic Edit).",
     },
     {
       question: "Pour qui ?",
@@ -45,7 +45,7 @@ export const canvaFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan gratuit couvre 90% des besoins. Pro à 13 €/mois débloque Magic Design illimité, brand kits, stockage 1 To, stock premium. Teams pour agences. Excellent rapport qualité/prix sur tous les tiers.",
+        "Plan Gratuit (0 €/an). Pro à 110 €/an par personne (facturation annuelle, environ 9 €/mois), débloque Magic Design, Brand Kit, contenu premium et suppression d'arrière-plan. Pro+ à 170 €/an par personne (plan populaire) pour les particuliers et petites équipes. Offre Entreprise dédiée via contact. Économisez 16 % et plus avec l'annuel.",
     },
     {
       question: "Meilleure alternative ?",
@@ -65,9 +65,10 @@ export const canvaFiche: FicheData = {
       question: "Est-ce qu'on le recommande ?",
       answer: (
         <>
-          <strong className="text-pink-400">Oui, sans hésiter</strong>, pour
-          tout créateur qui a besoin de design + contenu visuel. C&apos;est le
-          choix par défaut de 80% des créateurs solo en 2026.
+          <strong className="text-pink-400">Oui</strong>, pour la majorité des
+          créateurs qui ont besoin de design + contenu visuel sans skills pro.
+          Interface FR native et plan gratuit riche en font le choix par défaut
+          des créateurs francophones.
         </>
       ),
     },
@@ -113,7 +114,7 @@ export const canvaFiche: FicheData = {
       poids: 20,
       score: 9.0,
       commentaire:
-        "Plan gratuit réellement utilisable pour 90% des besoins solo. Pro à 13 €/mois : excellent rapport qualité/prix si tu utilises le Magic Design, brand kits et stock premium. Rarement cher pour ce qu'il offre.",
+        "Plan gratuit réellement utilisable pour la majorité des besoins solo. Pro à 110 €/an par personne (facturation annuelle) : excellent rapport qualité/prix si tu utilises Magic Design, Brand Kit et contenu premium. Économisez 16 % et plus avec l'annuel.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
@@ -179,39 +180,50 @@ export const canvaFiche: FicheData = {
   plans: [
     {
       nom: "Gratuit",
-      prix: "0 €",
+      prix: "0 €/an",
+      prixSub: "Pour une seule personne",
       cible: "Créateurs solo et débutants",
       features: [
-        "250 000+ templates gratuits",
-        "Bibliothèque photos/vidéos basique",
-        "Magic Design limité",
-        "5 Go de stockage",
+        "Éditeur drag-and-drop et plus de 1 000 types de designs",
+        "Large bibliothèque de modèles, photos, vidéos, illustrations, audio",
+        "1 Identité visuelle (3 couleurs uniquement)",
         "Export PNG, JPG, PDF",
       ],
     },
     {
       nom: "Pro",
-      prix: "13 €/mois",
+      prix: "110 €/an",
+      prixSub: "Par personne · Facturation annuelle",
       cible: "Créateurs réguliers",
       features: [
-        "100M+ assets premium",
-        "Magic Design illimité",
-        "Brand Kit complet",
-        "1 To de stockage",
-        "Suppression arrière-plan",
-        "Redimensionnement auto",
+        "Accès au contenu premium et aux outils de création avancés",
+        "Magic Design, Magic Write et outils IA inclus",
+        "Brand Kit et outils de marque",
+        "Économisez 16 % et plus avec l'annuel (mensuel disponible plus cher)",
       ],
     },
     {
-      nom: "Teams",
-      prix: "10 €/user/mois",
-      cible: "Agences et marques",
+      nom: "Pro+",
+      prix: "170 €/an",
+      prixSub: "Par personne · Plan populaire",
+      cible: "Particuliers et petites équipes",
       features: [
         "Tout Pro inclus",
-        "Gestion équipe",
-        "Approbation workflows",
+        "Outils avancés pour créer plus vite",
+        "Stratégie marketing plus intelligente",
+        "Évolution et collaboration en équipe",
+      ],
+    },
+    {
+      nom: "Entreprise",
+      prix: "Sur devis",
+      prixSub: "Organisations & grandes équipes",
+      cible: "Besoins sur mesure",
+      features: [
+        "Gestion multi-équipes",
         "Brand controls avancés",
-        "Support prioritaire",
+        "Sécurité et conformité entreprise",
+        "Support dédié",
       ],
     },
   ],
@@ -241,7 +253,7 @@ export const canvaFiche: FicheData = {
     {
       question: "Le plan gratuit est-il vraiment suffisant ?",
       answer:
-        "Pour 90% des créateurs solo, oui. Il couvre les templates de base, une partie de la bibliothèque d'assets, Magic Design limité. Tu passes Pro si tu veux Magic Design illimité, Brand Kit, stock premium ou 1 To de stockage.",
+        "Pour la majorité des créateurs solo, oui. Il couvre l'éditeur drag-and-drop, plus de 1 000 types de designs, et la bibliothèque standard de modèles, photos, vidéos et audio. Tu passes Pro si tu veux le contenu premium, le Brand Kit et les outils IA avancés.",
     },
     {
       question: "Peut-on éditer de la vidéo sérieusement avec Canva ?",
@@ -258,14 +270,19 @@ export const canvaFiche: FicheData = {
       ),
     },
     {
-      question: "Le Brand Kit vaut-il les 13 €/mois du plan Pro ?",
+      question: "Le Brand Kit vaut-il le plan Pro ?",
       answer:
-        "Si tu maintiens une cohérence visuelle de marque et que tu produis beaucoup de contenu, oui. Une fois configuré, le Brand Kit applique automatiquement tes couleurs/fonts/logos à tous les nouveaux designs. Gain de temps énorme pour les marketeurs et créateurs pros.",
+        "Si tu maintiens une cohérence visuelle de marque et que tu produis beaucoup de contenu, oui. Une fois configuré, le Brand Kit applique automatiquement tes couleurs/fonts/logos aux nouveaux designs. Gain de temps réel pour marketeurs et créateurs réguliers. Pro à 110 €/an par personne en annuel.",
     },
     {
-      question: "Compatible avec l'accessibilité et la TVA FR ?",
+      question: "Pro ou Pro+, comment choisir ?",
       answer:
-        "Facturation en euros avec TVA FR native. Plan Pro gratuit pour associations, enseignants et étudiants (avec vérification). Bonne politique de localisation FR vs les outils US standards.",
+        "Pro à 110 €/an par personne suffit pour un créateur solo qui veut le contenu premium, Brand Kit et Magic Design. Pro+ à 170 €/an est le plan populaire pour les particuliers et petites équipes qui veulent aller plus loin sur la collaboration et la stratégie marketing. Entreprise sur devis pour les organisations.",
+    },
+    {
+      question: "Compatible avec la TVA FR ?",
+      answer:
+        "Oui, Canva propose une facturation en euros avec interface française native. Plan Pro offert pour associations, enseignants et étudiants sous conditions (avec vérification). Bonne politique de localisation FR.",
     },
   ],
   ctaFinal: {

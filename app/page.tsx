@@ -13,23 +13,26 @@ export default function HomePage() {
     <>
       <Nav ctaHref="#top-outils" />
 
-      {/* HERO */}
-      <section className="max-w-5xl mx-auto px-6 pt-20 pb-16">
+      {/* HERO — direct, orienté utilité */}
+      <section className="max-w-5xl mx-auto px-6 pt-20 pb-12">
         <div className="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 rounded-full px-4 py-1.5 text-xs text-slate-300 mb-8">
           <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
-          Mise à jour · {new Date().toLocaleDateString("fr-FR", { month: "long", year: "numeric" })}
+          Mise à jour ·{" "}
+          {new Date().toLocaleDateString("fr-FR", {
+            month: "long",
+            year: "numeric",
+          })}
         </div>
         <h1 className="text-5xl md:text-6xl font-bold leading-[1.05] mb-6 tracking-tight">
-          Les outils IA des{" "}
-          <span className="text-emerald-400">créateurs vidéo francophones</span>.
-          <br />
-          Analysés sans langue de bois.
+          Quel outil IA pour{" "}
+          <span className="text-emerald-400">tes vidéos</span> ?
         </h1>
-        <p className="text-xl text-slate-400 leading-relaxed mb-10 max-w-3xl">
-          Un comparateur indépendant dédié aux créateurs vidéo francophones. Notés
-          sur 6 critères concrets. Mis à jour régulièrement.
+        <p className="text-xl text-slate-300 leading-relaxed mb-10 max-w-3xl">
+          Filtrio est un comparateur indépendant pour créateurs vidéo
+          francophones. Tu donnes ton besoin, on te dit quel outil prendre —
+          avec forces, limites et prix.
         </p>
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-4">
           <Link
             href="#top-outils"
             className="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-6 py-3 rounded-lg transition"
@@ -41,6 +44,68 @@ export default function HomePage() {
             className="border border-slate-700 hover:border-slate-600 px-6 py-3 rounded-lg transition"
           >
             Notre méthode
+          </Link>
+        </div>
+      </section>
+
+      {/* 3 ENTRÉES ACTIONNABLES */}
+      <section className="max-w-6xl mx-auto px-6 pb-20">
+        <div className="grid md:grid-cols-3 gap-4">
+          <Link
+            href="#comparatifs"
+            className="group p-6 bg-slate-900 border border-slate-800 rounded-xl hover:border-emerald-500/40 transition"
+          >
+            <div className="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-3">
+              Entrée 1
+            </div>
+            <h3 className="text-xl font-bold mb-2 group-hover:text-emerald-400 transition">
+              Comparer deux outils
+            </h3>
+            <p className="text-sm text-slate-400 leading-relaxed mb-4">
+              Duels 1 contre 1 : OpusClip vs Submagic, VidIQ vs TubeBuddy,
+              etc. Verdict clair par profil.
+            </p>
+            <div className="text-xs text-emerald-400 font-medium">
+              Voir les comparatifs →
+            </div>
+          </Link>
+
+          <Link
+            href="#cas-usage"
+            className="group p-6 bg-slate-900 border border-slate-800 rounded-xl hover:border-emerald-500/40 transition"
+          >
+            <div className="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-3">
+              Entrée 2
+            </div>
+            <h3 className="text-xl font-bold mb-2 group-hover:text-emerald-400 transition">
+              Choisir par besoin
+            </h3>
+            <p className="text-sm text-slate-400 leading-relaxed mb-4">
+              Tu sais ce que tu veux faire (sous-titrer, clipper un podcast,
+              générer une miniature). On te dit quel outil.
+            </p>
+            <div className="text-xs text-emerald-400 font-medium">
+              Voir les cas d&apos;usage →
+            </div>
+          </Link>
+
+          <Link
+            href="#top-outils"
+            className="group p-6 bg-slate-900 border border-slate-800 rounded-xl hover:border-emerald-500/40 transition"
+          >
+            <div className="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-3">
+              Entrée 3
+            </div>
+            <h3 className="text-xl font-bold mb-2 group-hover:text-emerald-400 transition">
+              Voir les meilleurs outils
+            </h3>
+            <p className="text-sm text-slate-400 leading-relaxed mb-4">
+              Classement par score éditorial sur 6 critères pondérés. Les
+              outils qui tiennent la route, pas le buzz.
+            </p>
+            <div className="text-xs text-emerald-400 font-medium">
+              Voir le top 5 →
+            </div>
           </Link>
         </div>
       </section>
@@ -137,7 +202,7 @@ export default function HomePage() {
       </section>
 
       {/* CAS D'USAGE */}
-      <section className="border-y border-slate-800 bg-slate-900/40">
+      <section id="cas-usage" className="border-y border-slate-800 bg-slate-900/40">
         <div className="max-w-6xl mx-auto px-6 py-24">
           <div className="mb-12">
             <div className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-3">
@@ -168,53 +233,58 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* MÉTHODE */}
+      {/* MÉTHODE — version allégée */}
       <section className="max-w-5xl mx-auto px-6 py-24">
         <div className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-3">
           Notre méthode
         </div>
         <h2 className="text-4xl font-bold mb-6 tracking-tight">
-          Score éditorial Filtrio : 6 critères pondérés.
+          Un scoring éditorial en 6 critères.
         </h2>
-        <p className="text-slate-400 text-lg mb-10 max-w-3xl">
-          On ne note pas à la louche. Chaque outil est analysé sur 6 critères
-          pondérés identiques, avec la même grille pour tous.
+        <p className="text-slate-300 text-lg mb-8 max-w-3xl">
+          Chaque outil est analysé sur la même grille, avec les mêmes
+          pondérations. Aucun favoritisme, aucun classement dicté par la
+          commission affiliée.
         </p>
-        <div className="grid md:grid-cols-2 gap-4 mb-10">
-          {[
-            ["Qualité en français", "20%", "Rendu FR natif, pas traduit depuis l'anglais"],
-            ["Rapport qualité/prix", "20%", "Plans, limites, ce que tu obtiens pour ton budget"],
-            ["Profondeur IA", "20%", "Sophistication des features IA, pas juste le buzz"],
-            ["Interface & prise en main", "15%", "Combien de temps avant ton premier résultat"],
-            ["Support & doc FR", "15%", "Ressources, communauté, réactivité"],
-            ["Intégrations", "10%", "Zapier, API, exports, autres outils"],
-          ].map(([label, poids, desc]) => (
-            <div
-              key={label}
-              className="bg-slate-900 border border-slate-800 rounded-xl p-5 flex justify-between items-start gap-4"
-            >
-              <div>
-                <div className="font-semibold">{label}</div>
-                <div className="text-xs text-slate-500">{desc}</div>
-              </div>
-              <div className="text-emerald-400 font-bold">{poids}</div>
-            </div>
-          ))}
+
+        <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-6">
+          <ul className="grid md:grid-cols-2 gap-x-8 gap-y-3">
+            {[
+              ["Qualité en français", "20 %"],
+              ["Rapport qualité/prix", "20 %"],
+              ["Profondeur IA", "20 %"],
+              ["Interface & prise en main", "15 %"],
+              ["Support & confort FR", "15 %"],
+              ["Intégrations", "10 %"],
+            ].map(([label, poids]) => (
+              <li
+                key={label}
+                className="flex items-center justify-between border-b border-slate-800 pb-2"
+              >
+                <span className="text-slate-200">{label}</span>
+                <span className="text-emerald-400 font-semibold text-sm">
+                  {poids}
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
-        <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 text-sm text-slate-400">
-          <p className="mb-2">
-            <strong className="text-slate-200">Phase actuelle (V1) :</strong>{" "}
-            scores basés sur une analyse documentaire approfondie, la
-            compilation de retours utilisateurs publics (G2, Trustpilot, Reddit,
-            documentation officielle) et la prise en main des plans gratuits.
-          </p>
-          <p>
-            <strong className="text-slate-200">Phase à venir :</strong> protocole
-            de test comparatif standardisé avec sources vidéo identiques selon
-            les cas d&apos;usage. Les résultats détaillés seront publiés
-            publiquement.
-          </p>
-        </div>
+
+        <p className="text-sm text-slate-400 mb-8 max-w-3xl">
+          <strong className="text-slate-200">Phase actuelle (V1) :</strong>{" "}
+          analyse documentaire approfondie + compilation des retours
+          utilisateurs publics (G2, Trustpilot, Reddit, doc officielle) +
+          prise en main des plans gratuits.{" "}
+          <strong className="text-slate-200">Phase à venir :</strong> protocole
+          de test comparatif standardisé.
+        </p>
+
+        <Link
+          href="/methode"
+          className="inline-flex items-center gap-2 border border-slate-700 hover:border-slate-600 px-5 py-3 rounded-lg transition"
+        >
+          Voir la méthode complète →
+        </Link>
       </section>
 
       <Newsletter />

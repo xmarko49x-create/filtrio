@@ -13,15 +13,14 @@ export const heygenFiche: FicheData = {
       { label: "Contenu B2B & formation", tone: "neutral" },
     ],
     origine: "USA",
-    depuis: "2020",
     tempsLecture: 8,
-    lastCheck: "20/04/2026",
+    lastCheck: "22/04/2026",
   },
   verdict30s: [
     {
       question: "C'est quoi ?",
       answer:
-        "Plateforme d'avatars IA vidéo lancée en 2020. Tu écris un script, tu choisis un avatar (parmi la bibliothèque ou en clonant ton visage), et HeyGen génère une vidéo complète avec sync labiale. Spécialité : le doublage multilingue vidéo.",
+        "Plateforme d'avatars IA vidéo. Tu écris un script, tu choisis un avatar (parmi la bibliothèque ou en clonant ton visage), et HeyGen génère une vidéo complète avec sync labiale. Spécialité : le doublage multilingue vidéo.",
     },
     {
       question: "Pour qui ?",
@@ -48,7 +47,7 @@ export const heygenFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan gratuit 3 vidéos/mois (max 3 min chacune). Creator à 29 $/mois, Team à 89 $/mois, Enterprise sur devis. Nettement plus cher qu'ElevenLabs voix-only.",
+        "Plan gratuit (Free) disponible. Creator à 29 $/mois (Photo Avatars illimités, fast video processing). Pro à 99 $/mois (faster processing, translation script edit). Business à 149 $/mois pour les équipes (+20 $/siège). Enterprise sur devis. Facturation en USD.",
     },
     {
       question: "Meilleure alternative ?",
@@ -95,7 +94,7 @@ export const heygenFiche: FicheData = {
     "Tu fais du contenu marketing B2B, de la formation, ou du tuto corporate",
     "Tu veux cloner ton propre visage pour industrialiser ta production",
     "Tu veux un rendu pro sans équipe de tournage",
-    "Tu as un budget 29-89 $/mois à allouer",
+    "Tu as un budget à partir de 29 $/mois à allouer",
   ],
   pasPourQui: [
     "Tu fais du contenu authentique personnel face cam (YouTube, TikTok)",
@@ -127,7 +126,7 @@ export const heygenFiche: FicheData = {
       poids: 20,
       score: 7.0,
       commentaire:
-        "Plus cher que les outils voix-only. 29 $/mois minimum pour un usage sérieux, vite 89 $/mois dès que tu veux plus de minutes ou de features pro. Le rapport q/p dépend entièrement du besoin : excellent si tu as vraiment besoin d'avatars, décevant si tu veux juste de la voix.",
+        "Plus cher que les outils voix-only. 29 $/mois minimum pour un usage sérieux (Creator), 99 $/mois pour Pro, 149 $/mois pour Business (équipes). Le rapport qualité/prix dépend du besoin : excellent si tu as vraiment besoin d'avatars, décevant si tu veux juste de la voix.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
@@ -192,47 +191,65 @@ export const heygenFiche: FicheData = {
   ],
   plans: [
     {
-      nom: "Gratuit",
+      nom: "Free",
       prix: "0 $",
-      cible: "Pour tester",
+      prixSub: "Pour tester",
+      cible: "Découverte de l'outil",
       features: [
-        "3 vidéos/mois, 3 min max",
-        "Avatars basiques",
-        "Watermark HeyGen",
-        "Pas d'avatar custom",
+        "1 minute Avatar IV Gen",
+        "3 minutes Product Placement",
+        "Standard video processing",
+        "Point d'entrée pour tester l'outil",
       ],
     },
     {
       nom: "Creator",
       prix: "29 $/mois",
-      cible: "Marketeurs solo, formateurs",
+      prixSub: "Facturation USD",
+      cible: "Créateurs solo, marketeurs",
       features: [
-        "30 min de vidéo/mois",
-        "Avatar custom (clonage)",
-        "Sans watermark",
-        "Export 1080p",
+        "Unlimited Photo Avatars",
+        "Fast video processing",
+        "30 minutes Avatar IV Gen",
+        "30 minutes Product Placement",
+        "AI video generator · AI voice over",
       ],
     },
     {
-      nom: "Team",
-      prix: "89 $/mois",
-      cible: "Agences et entreprises",
+      nom: "Pro",
+      prix: "99 $/mois",
+      prixSub: "Créateurs pros",
+      cible: "Création vidéo avancée",
       features: [
-        "90 min/mois/user",
-        "3 avatars customs",
-        "Interactive Avatar",
-        "Collaboration équipe",
+        "Tout Creator · Faster video processing",
+        "30 minutes Avatar IV Gen",
+        "30 minutes Product Placement",
+        "Edit & proofread translation script",
+        "Password protected URLs",
+      ],
+    },
+    {
+      nom: "Business",
+      prix: "149 $/mois",
+      prixSub: "+20 $/siège supplémentaire",
+      cible: "Équipes, agences",
+      features: [
+        "Auto-reload credits",
+        "60 minutes Avatar IV Gen",
+        "Team templates · Invites & team management",
+        "Team Member 2FA Enforcement",
       ],
     },
     {
       nom: "Enterprise",
       prix: "Sur devis",
-      cible: "Grandes entreprises",
+      prixSub: "Organisations & grandes équipes",
+      cible: "Studio-quality custom",
       features: [
-        "Volume illimité",
-        "API prioritaire",
-        "SSO et conformité",
-        "Support dédié",
+        "Proofreader seats for video translation",
+        "Enterprise-grade security & privacy",
+        "Team Member MFA",
+        "Enterprise Community access",
       ],
     },
   ],
@@ -295,12 +312,12 @@ export const heygenFiche: FicheData = {
     {
       question: "Peut-on intégrer HeyGen dans un workflow automatisé ?",
       answer:
-        "Oui sur plans Team+. API REST documentée, intégrations natives Make et Zapier. Permet d'industrialiser : chaque nouvelle fiche produit déclenche une vidéo avatar, chaque nouvel article devient une vidéo explicative, etc. Gain de temps considérable à l'échelle.",
+        "Oui sur plans Business et Enterprise. API REST documentée, intégrations natives Make et Zapier, auto-reload credits. Permet d'industrialiser la production : chaque nouvelle fiche produit déclenche une vidéo avatar, chaque nouvel article devient une vidéo explicative. Gain de temps considérable à l'échelle.",
     },
   ],
   ctaFinal: {
     headline: "Prêt à tester HeyGen ?",
-    sub: "Le plan gratuit (3 vidéos/mois) permet de tester la qualité des avatars et du clonage basique sur ta voix et ton script. Suffisant pour juger avant de s'engager.",
+    sub: "Le plan gratuit permet de tester la qualité des avatars sur ton script avant de t'engager. Creator à 29 $/mois pour les créateurs solo, Business à 149 $/mois pour les équipes.",
     buttonText: "Essayer HeyGen",
   },
 };

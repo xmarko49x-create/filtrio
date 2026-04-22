@@ -41,12 +41,12 @@ const ALTERNATIVES: Alternative[] = [
     positionnement: "Découpe auto",
     scoreAlt: 8.7,
     pourquoi:
-      "Si ton vrai besoin est de découper du long format en shorts, OpusClip est plus spécialisé que Submagic sur ce point. Plan gratuit récurrent 60 min/mois.",
+      "OpusClip propose un plan gratuit, puis une offre payante à partir de 15 $/mois. Si ton vrai besoin est de découper du long format en shorts, OpusClip est plus spécialisé que Submagic sur ce point.",
     limites:
-      "Moins fort que Submagic sur le rendu final viral FR. Pas d'API publique équivalente. Payant au-delà des 60 min gratuites.",
+      "Le plan gratuit reste utile pour tester, mais il inclut un watermark, sans édition, avec une limite d'export dans le temps. Moins fort que Submagic sur le rendu final viral FR.",
     verdict:
       "Alternative complémentaire plutôt que concurrente. Le combo OpusClip + Submagic reste le setup le plus puissant.",
-    priceLabel: "9 $/mois",
+    priceLabel: "À partir de 15 $/mois",
   },
   {
     slug: "descript",

@@ -96,7 +96,7 @@ export const sousTitresRapides: CasUsageData = {
       ],
       verdict:
         "Si tu produis régulièrement des shorts, Submagic te fait gagner 10-15 minutes par vidéo comparé à un outil plus lent. Rentabilisé dès le 3e short.",
-      priceDisplay: { label: "À partir de", value: "14 $/mois" },
+      priceDisplay: { label: "À partir de", value: "12 €/mois" },
     },
     {
       slug: "capcut",
@@ -113,8 +113,8 @@ export const sousTitresRapides: CasUsageData = {
         "À prendre si ton cas principal est la découpe automatique de longues vidéos. Sur une vidéo courte isolée, Submagic ou CapCut iront plus vite.",
       priceDisplay: {
         label: "À partir de",
-        value: "9 $/mois",
-        note: "Plan gratuit 60 min",
+        value: "15 $/mois",
+        note: "Plan gratuit disponible",
       },
     },
     {
@@ -163,7 +163,7 @@ export const sousTitresRapides: CasUsageData = {
     {
       titre: "Écrire les sous-titres à la main",
       description:
-        "15-20 minutes par vidéo pour taper, synchroniser, styliser. Absurde quand un outil à 14 $/mois fait le même job en 60 secondes avec un meilleur rendu.",
+        "15-20 minutes par vidéo pour taper, synchroniser, styliser. Absurde quand un outil à partir de 12 €/mois fait le même job en 60 secondes avec un meilleur rendu.",
     },
     {
       titre: "Utiliser un outil EN sur du contenu FR",
@@ -194,7 +194,7 @@ export const sousTitresRapides: CasUsageData = {
       reponse: (
         <>
           Si oui → <strong className="text-amber-400">Submagic</strong>.
-          C&apos;est le plus rapide du marché, 14 $/mois.
+          C&apos;est le plus rapide du marché, à partir de 12 €/mois.
         </>
       ),
     },
@@ -232,7 +232,7 @@ export const sousTitresRapides: CasUsageData = {
         "Sur un audio propre, oui — les outils spécialisés FR comme Submagic produisent des sous-titres corrects avec peu de retouches nécessaires selon les retours utilisateurs publics. Les difficultés restent : vocabulaire technique pointu, noms propres rares, accents régionaux forts. Dans ces cas, prévois une relecture rapide.",
     },
     {
-      question: "Submagic mérite-t-il les 14 $/mois juste pour la vitesse ?",
+      question: "Submagic mérite-t-il son abonnement juste pour la vitesse ?",
       answer:
         "Dépend de ton volume. Si tu fais 1 short par mois, clairement non, CapCut suffit. Si tu fais 1 short par semaine, le calcul devient intéressant : 4 shorts × 10 min gagnées = 40 min/mois. Si tu fais 3+ shorts par semaine, Submagic se paie tout seul en temps gagné.",
     },

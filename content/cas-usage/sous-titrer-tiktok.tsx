@@ -87,7 +87,7 @@ export const sousTitrerTiktok: CasUsageData = {
       ],
       verdict:
         "Si tu publies régulièrement sur TikTok en français, Submagic paie son abonnement dès le 3e short. Le gain de temps est immédiatement tangible.",
-      priceDisplay: { label: "À partir de", value: "14 $/mois" },
+      priceDisplay: { label: "À partir de", value: "12 €/mois" },
     },
     {
       slug: "capcut",
@@ -104,8 +104,8 @@ export const sousTitrerTiktok: CasUsageData = {
         "Excellent si tu pars d'une vidéo longue à découper. Moins optimal pour un simple sous-titrage de TikTok déjà prêt. Combo OpusClip + Submagic reste le setup pro pour volume.",
       priceDisplay: {
         label: "À partir de",
-        value: "9 $/mois",
-        note: "Plan gratuit 60 min",
+        value: "15 $/mois",
+        note: "Plan gratuit disponible",
       },
     },
     {
@@ -154,7 +154,7 @@ export const sousTitrerTiktok: CasUsageData = {
     {
       titre: "Écrire les sous-titres à la main",
       description:
-        "15-20 minutes par vidéo pour taper, synchroniser, styliser. Absurde quand un outil à 14 $/mois fait le même job en 60 secondes avec un meilleur rendu.",
+        "15-20 minutes par vidéo pour taper, synchroniser, styliser. Absurde quand un outil à partir de 12 €/mois fait le même job en 60 secondes avec un meilleur rendu.",
     },
     {
       titre: "Utiliser un outil EN sur du contenu FR",
@@ -222,7 +222,7 @@ export const sousTitrerTiktok: CasUsageData = {
           <Link href="/outils/submagic" className="text-amber-400 hover:underline">
             Submagic
           </Link>{" "}
-          pour finaliser les sous-titres stylés. ~23 $/mois pour un workflow
+          pour finaliser les sous-titres stylés. un combo économique pour un workflow
           complet.
         </>
       ),

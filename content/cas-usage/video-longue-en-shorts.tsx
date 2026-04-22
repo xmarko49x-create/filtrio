@@ -86,11 +86,11 @@ export const videoLongueEnShorts: CasUsageData = {
       limites: [
         "Qualité sous-titres FR en retrait vs Submagic",
         "Rendu final parfois générique sans retouches",
-        "Les meilleurs plans commencent à 19 $/mois",
+        "Les fonctionnalités avancées sont sur les plans supérieurs",
       ],
       verdict:
-        "Si tu produis du long format régulièrement, OpusClip est l'investissement le plus logique. Rentabilisé dès 3-4 vidéos sources par mois.",
-      priceDisplay: { label: "À partir de", value: "9 $/mois", note: "Plan gratuit 60 min" },
+        "Si tu produis du long format régulièrement, OpusClip est l'investissement le plus logique. Rentabilisé rapidement dès qu'on produit plusieurs shorts par mois.",
+      priceDisplay: { label: "À partir de", value: "15 $/mois", note: "Plan gratuit disponible" },
     },
     {
       slug: "submagic",
@@ -98,7 +98,7 @@ export const videoLongueEnShorts: CasUsageData = {
       badge: "Spécialiste FR",
       verdict:
         "Excellent sur le rendu final FR et les sous-titres stylés. Moins adapté à la découpe automatique de longs contenus. Idéal en complément d'OpusClip.",
-      priceDisplay: { label: "À partir de", value: "14 $/mois" },
+      priceDisplay: { label: "À partir de", value: "12 €/mois" },
     },
     {
       slug: "descript",
@@ -166,7 +166,7 @@ export const videoLongueEnShorts: CasUsageData = {
           <Link href="/outils/submagic" className="text-amber-400 hover:underline">
             Submagic
           </Link>{" "}
-          en 2e étape. Combo à ~23 $/mois pour un rendu pro complet.
+          en 2e étape. Un combo économique pour un rendu pro complet.
         </>
       ),
     },
@@ -185,8 +185,8 @@ export const videoLongueEnShorts: CasUsageData = {
       question: "Tu veux tester gratuitement avant de t'engager ?",
       reponse: (
         <>
-          Oui → <strong className="text-emerald-400">OpusClip plan gratuit</strong> (60 min/mois
-          récurrent).
+          Oui → <strong className="text-emerald-400">OpusClip plan gratuit</strong>.
+          Disponible pour tester l&apos;outil avant de s&apos;engager.
         </>
       ),
     },
@@ -195,7 +195,8 @@ export const videoLongueEnShorts: CasUsageData = {
       reponse: (
         <>
           Combo <strong className="text-emerald-400">OpusClip</strong> pour la découpe +{" "}
-          <strong className="text-amber-400">Submagic</strong> pour le polish final. ~23 $/mois total.
+          <strong className="text-amber-400">Submagic</strong> pour le polish final. Un combo
+          économique pour un rendu pro complet.
         </>
       ),
     },

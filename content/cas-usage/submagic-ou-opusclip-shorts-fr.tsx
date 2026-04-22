@@ -87,7 +87,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
       ],
       verdict:
         "Si tu tournes directement des shorts (face cam, moments courts), Submagic est le choix évident. Le rendu FR + les templates font la différence visible.",
-      priceDisplay: { label: "À partir de", value: "14 $/mois" },
+      priceDisplay: { label: "À partir de", value: "12 €/mois" },
     },
     {
       slug: "opusclip",
@@ -178,7 +178,8 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
       reponse: (
         <>
           Si oui → <strong className="text-amber-400">Submagic</strong> seul.
-          14 $/mois, rentabilisé dès 3-4 shorts.
+          À partir de 12 €/mois, rentabilisé rapidement dès qu&apos;on publie
+          plusieurs shorts par mois.
         </>
       ),
     },
@@ -250,9 +251,9 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
           <Link href="/outils/capcut" className="text-sky-400 hover:underline">
             CapCut
           </Link>{" "}
-          (gratuit) pour finaliser. Tu gagnes 14 $/mois, tu perds 10-15 minutes
-          par short en personnalisation manuelle. Équation à faire selon le
-          volume.
+          (gratuit) pour finaliser. Tu économises le coût de Submagic, mais tu
+          perds du temps en personnalisation manuelle par short. Équation à
+          faire selon ton volume de production.
         </>
       ),
     },

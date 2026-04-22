@@ -144,9 +144,9 @@ export default function AlternativesASubmagicPage() {
           <p className="text-slate-300 leading-relaxed mb-4">
             Submagic reste le plus fort sur les sous-titres viraux FR, avec le
             score éditorial Filtrio le plus élevé ({submagic.score.toFixed(1)}).
-            Mais il a des limites : pas d&apos;API, pas de vraie gratuité
-            récurrente, facturation USD uniquement, pas optimal pour le long
-            format.
+            Mais il a des limites : pas de plan gratuit récurrent (seulement un
+            essai limité), positionnement dans la fourchette haute de sa
+            catégorie, pas optimal pour le clipping massif de long format.
           </p>
           <p className="text-slate-400 leading-relaxed">
             Selon ton cas d&apos;usage (budget zéro, long format, équipe,
@@ -281,7 +281,7 @@ export default function AlternativesASubmagicPage() {
           <div className="space-y-4">
             <details className="group bg-slate-900 border border-slate-800 rounded-xl p-6 open:border-amber-500/30">
               <summary className="font-semibold cursor-pointer list-none flex justify-between items-center">
-                <span>Submagic vaut-il encore ses 14 $/mois en 2026 ?</span>
+                <span>Submagic vaut-il encore son abonnement en 2026 ?</span>
                 <span className="faq-chevron transition-transform text-amber-400">+</span>
               </summary>
               <div className="text-slate-400 mt-4 leading-relaxed">

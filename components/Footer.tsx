@@ -72,9 +72,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-slate-300">
+                <a href="mailto:contact@filtrio.fr" className="hover:text-slate-300">
                   Contact
-                </Link>
+                </a>
               </li>
               <li>
                 <Link href="/mentions-legales" className="hover:text-slate-300">

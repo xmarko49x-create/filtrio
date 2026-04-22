@@ -6,59 +6,33 @@ export const submagicFiche: FicheData = {
   hero: {
     h1: "Submagic : l'avis complet en 2026",
     tagline:
-      "L'outil français qui s'est imposé comme référence des sous-titres viraux. Voici pour qui il vaut son prix, pour qui il ne vaut pas, et ce qu'il sait faire mieux que ses concurrents.",
+      "Un outil rapide pour produire des shorts visuellement propres, avec une interface simple et une prise en main en quelques clics.",
     badges: [
       { label: "Outil français", tone: "primary" },
       { label: "Coup de cœur Filtrio", tone: "accent" },
       { label: "Sous-titres & shorts", tone: "neutral" },
     ],
-    origine: "France 🇫🇷",
+    langue: "Interface disponible en français",
     tempsLecture: 8,
-    lastCheck: "20/04/2026",
+    lastCheck: "22/04/2026",
   },
   verdict30s: [
     {
-      question: "C'est quoi ?",
-      answer:
-        "Outil français qui génère des sous-titres stylés et des shorts viraux à partir de n'importe quelle vidéo. Détection auto des moments forts, templates animés, recadrage 9:16 inclus.",
-    },
-    {
       question: "Pour qui ?",
       answer:
-        "Créateurs FR qui postent sur TikTok, Reels, Shorts. Solopreneurs personal branding. Agences social media. Tous ceux qui veulent des sous-titres propres en français sans y passer des heures.",
+        "Créateurs de contenu, freelances, agences et petites équipes qui veulent produire des shorts propres rapidement, avec un rendu visuel fort et une interface simple.",
     },
     {
       question: "Pas pour qui ?",
       answer:
-        "Créateurs long-format pur (podcasters sans volonté de clipper). Monteurs pro qui veulent une timeline éditable. Budgets serrés (essai gratuit limité, pas de plan gratuit récurrent affiché sur la page tarifs).",
-    },
-    {
-      question: "Combien ?",
-      answer: (
-        <>
-          3 plans payants par membre et par mois, affichés en EUR et en
-          facturation annuelle : Starter 12 €, Pro 23 €, Business + API 41 €.
-          La facturation mensuelle est plus chère. Essai gratuit de 3 vidéos
-          sans carte bancaire. Add-on Magic Clips (+12 €/user/mois) et plan
-          Custom disponibles. Détail complet sur la{" "}
-          <a
-            href="https://submagic.co/?via=marc38"
-            target="_blank"
-            rel="sponsored nofollow noopener"
-            className="text-amber-400 hover:underline"
-          >
-            page Tarifs de Submagic
-          </a>
-          .
-        </>
-      ),
+        "Équipes qui ont besoin d'automatisations avancées, de gros volumes API dès le départ, ou d'un workflow orienté clipping massif de longues vidéos.",
     },
     {
       question: "Meilleure alternative ?",
       answer: (
         <>
-          OpusClip si tu veux recycler du contenu long (podcasts, lives) en
-          masse. CapCut si ton budget est zéro.{" "}
+          OpusClip si ton besoin principal est de découper automatiquement de
+          longues vidéos en extraits courts à grande échelle.{" "}
           <Link
             href="/comparatifs/opusclip-vs-submagic"
             className="text-emerald-400 hover:underline"
@@ -71,26 +45,46 @@ export const submagicFiche: FicheData = {
     },
     {
       question: "Est-ce qu'on le recommande ?",
+      answer:
+        "Oui, pour beaucoup de créateurs francophones qui veulent un outil rapide, simple et efficace pour produire des shorts plus propres visuellement.",
+    },
+    {
+      question: "Combien ?",
       answer: (
         <>
-          <strong className="text-amber-400">Oui, sans hésiter</strong>, pour la
-          majorité des créateurs vidéo francophones. C&apos;est le #1 de notre
-          classement 2026 et la fiche la plus simple à justifier.
+          À partir de 12 €/mois en annuel. Essai gratuit de 3 vidéos. Plans
+          supérieurs disponibles selon les volumes et les besoins. Détail sur
+          la{" "}
+          <a
+            href="https://submagic.co/?via=marc38"
+            target="_blank"
+            rel="sponsored nofollow noopener"
+            className="text-amber-400 hover:underline"
+          >
+            page Tarifs
+          </a>
+          .
         </>
       ),
     },
+    {
+      question: "Verdict rapide",
+      answer:
+        "Submagic est un très bon choix si tu veux aller vite, obtenir un rendu moderne et produire des vidéos courtes plus propres sans complexité inutile.",
+    },
   ],
   porQui: [
-    "Tu postes principalement sur TikTok, Reels, YouTube Shorts",
-    "Tu vises un public francophone (la qualité FR est son point fort)",
-    "Tu veux des sous-titres stylés sans passer 30 min par vidéo",
-    "Tes sources sont déjà courtes (2 à 15 min)",
-    "Tu veux un outil simple, prise en main en moins d'une heure",
-    "Tu fais du personal branding (LinkedIn vidéo, Shorts face cam)",
+    "Tu veux produire des shorts rapides, propres, avec un rendu visuel fort",
+    "Tu fais du personal branding ou du contenu court régulier (TikTok, Reels, Shorts)",
+    "Tu veux une interface simple, sans courbe d'apprentissage",
+    "Tes sources sont déjà courtes à moyennes",
+    "Tu travailles en français ou ciblent une audience francophone",
+    "Tu veux un outil qui te fait gagner du temps sur le sous-titrage",
   ],
   pasPourQui: [
+    "Tu as besoin d'automatisations avancées et de gros volumes API dès le départ",
     <>
-      Tu veux découper automatiquement un podcast d&apos;1h en 10 clips (→{" "}
+      Tu veux un workflow orienté clipping massif de longues vidéos (→{" "}
       <Link href="/outils/opusclip" className="text-emerald-400 hover:underline">
         OpusClip
       </Link>
@@ -114,9 +108,7 @@ export const submagicFiche: FicheData = {
       </Link>{" "}
       reste très correct en gratuit)
     </>,
-    "Tu veux une API publique pour automatiser via Make/Zapier",
-    "Tu as besoin d'une facturation en euros avec TVA FR",
-    "Tu crées exclusivement en anglais (les concurrents US sont aussi bons)",
+    "Tu crées exclusivement en anglais sans contrainte de rendu visuel FR",
   ],
   scoring: [
     {
@@ -124,14 +116,14 @@ export const submagicFiche: FicheData = {
       poids: 20,
       score: 9.2,
       commentaire:
-        "Précision FR parmi les meilleures du marché selon les retours utilisateurs publics. Segmentation propre, ponctuation cohérente, gestion des accents correcte. Interface en français natif.",
+        "Précision FR parmi les plus convaincantes de sa catégorie selon les retours utilisateurs publics. Segmentation propre, ponctuation cohérente, gestion correcte des accents. Interface en français.",
     },
     {
       label: "Rapport qualité/prix",
       poids: 20,
       score: 7.8,
       commentaire:
-        "Positionnement dans la fourchette haute de sa catégorie. L'absence de vrai tier gratuit récurrent peut pénaliser les usages très occasionnels. Le tarif devient rentable dès qu'on publie plusieurs shorts par mois, grâce au temps gagné sur les sous-titres.",
+        "Positionnement dans la fourchette haute de sa catégorie. L'absence de plan gratuit récurrent peut pénaliser les usages très occasionnels. Le tarif devient rentable dès qu'on publie plusieurs shorts par mois, grâce au temps gagné sur les sous-titres.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
@@ -145,21 +137,21 @@ export const submagicFiche: FicheData = {
       poids: 15,
       score: 9.3,
       commentaire:
-        "L'un des parcours utilisateurs les plus courts de sa catégorie. Upload, choix du template, export : trois clics. Peu de courbe d'apprentissage pour un non-technicien.",
+        "L'un des parcours utilisateurs les plus courts de sa catégorie. Upload, choix du template, export : peu de clics. Peu de courbe d'apprentissage pour un non-technicien.",
     },
     {
-      label: "Support et documentation FR",
+      label: "Support et documentation",
       poids: 15,
-      score: 9.3,
+      score: 8.5,
       commentaire:
-        "Support en français natif. Documentation bilingue complète. Communauté Discord FR active. Équipe basée en France, réactive sur les tickets.",
+        "Documentation accessible et claire, support disponible. Le français est bien pris en compte côté interface et contenu généré.",
     },
     {
       label: "Intégrations",
       poids: 10,
-      score: 6.5,
+      score: 7.0,
       commentaire:
-        "Le maillon faible. Upload manuel uniquement, pas d'API publique, pas d'intégration native YouTube/Twitch/Zoom. L'export vers réseaux sociaux demande un passage par ton PC.",
+        "Des options d'API et d'intégrations existent (disponibles dès le Starter avec un petit quota, étendues sur Business + API). L'outil reste avant tout pensé pour une utilisation simple et rapide, pas comme une plateforme d'automatisation avancée à grande échelle.",
     },
   ],
   fonctionnalites: [
@@ -186,8 +178,16 @@ export const submagicFiche: FicheData = {
   ],
   plans: [
     {
+      nom: "Essai gratuit",
+      prix: "0 €",
+      prixSub: "Essai de 3 vidéos",
+      cible: "Pour tester sans engagement",
+      features: ["3 vidéos gratuites", "Sans carte bancaire"],
+    },
+    {
       nom: "Starter",
-      prix: "12 €/member/mois (annuel)",
+      prix: "12 €/mois",
+      prixSub: "Facturation annuelle · mensuel plus cher",
       cible: "Individus qui démarrent la création vidéo",
       features: [
         "15 vidéos/mois, max. 2 min chacune",
@@ -200,7 +200,8 @@ export const submagicFiche: FicheData = {
     },
     {
       nom: "Pro",
-      prix: "23 €/member/mois (annuel)",
+      prix: "23 €/mois",
+      prixSub: "Facturation annuelle · mensuel plus cher",
       cible: "Créateurs qui veulent des shorts percutants",
       features: [
         "40 vidéos/mois, max. 5 min chacune",
@@ -208,12 +209,13 @@ export const submagicFiche: FicheData = {
         "Storyblocks B-Rolls & Audio",
         "AI hook titles, AI clean audio, AI remove silences",
         "AI Translate captions · Brand Kit",
-        "Publish to TikTok, YouTube, Instagram (nouveau)",
+        "Publish to TikTok, YouTube, Instagram",
       ],
     },
     {
       nom: "Business + API",
-      prix: "41 €/member/mois (annuel)",
+      prix: "41 €/mois",
+      prixSub: "Facturation annuelle · mensuel plus cher",
       cible: "Équipes et agences qui scalent la production",
       features: [
         "100 vidéos/mois, max. 30 min chacune",
@@ -226,22 +228,14 @@ export const submagicFiche: FicheData = {
     },
     {
       nom: "Custom Plan",
-      prix: "Sur demande",
-      cible: "Usages sur mesure",
+      prix: "Sur devis",
+      prixSub: "Usages sur mesure",
+      cible: "Organisations aux besoins spécifiques",
       features: [
         "Nombre de vidéos, membres et templates personnalisés",
         "Quotas API et Magic Clips sur mesure",
         "Sécurité avancée et SSO",
         "Customer success dédié",
-      ],
-    },
-    {
-      nom: "Essai gratuit",
-      prix: "0 €",
-      cible: "Pour tester sans engagement",
-      features: [
-        "3 vidéos gratuites",
-        "Sans carte bancaire",
       ],
     },
   ],
@@ -254,7 +248,7 @@ export const submagicFiche: FicheData = {
     {
       slug: "capcut",
       comment:
-        "Alternative gratuite la plus sérieuse. Moins spécialisé que Submagic mais couvre un éditeur complet en plus.",
+        "Alternative gratuite la plus sérieuse. Moins spécialisée que Submagic mais couvre un éditeur complet en plus.",
     },
     {
       slug: "descript",
@@ -279,19 +273,19 @@ export const submagicFiche: FicheData = {
         "Submagic propose un essai gratuit de 3 vidéos, sans carte bancaire. Mais pas de plan gratuit récurrent. Pour un usage gratuit durable, OpusClip ou CapCut sont des alternatives plus adaptées.",
     },
     {
-      question: "Peut-on l'utiliser dans un workflow automatisé (Make, Zapier) ?",
+      question: "Peut-on intégrer Submagic à un workflow automatisé (Make, Zapier) ?",
       answer:
-        "Oui. L'API & Integrations sont disponibles dès le Starter (quota 10 min/mois). Pour une automatisation à plus grande échelle, le plan Business + API (41 €/member/mois en annuel) monte le quota à 100 min/mois.",
+        "Oui, Submagic affiche des options d'API et d'intégrations sur ses offres (disponibles dès le Starter avec un petit quota, étendues sur Business + API). En revanche, l'outil reste surtout positionné comme une solution simple et rapide pour produire des shorts, pas comme une brique d'automatisation lourde.",
     },
     {
       question: "Combien de temps pour sous-titrer une vidéo courte ?",
       answer:
-        "Le workflow est l'un des plus rapides du marché : upload, choix du template, export en quelques clics. La durée exacte dépend de la longueur de la vidéo et du template choisi.",
+        "Le workflow est l'un des plus rapides de sa catégorie : upload, choix du template, export en quelques clics. La durée exacte dépend de la longueur de la vidéo et du template choisi.",
     },
   ],
   ctaFinal: {
     headline: "Prêt à essayer Submagic ?",
-    sub: "Le workflow le plus rapide pour des sous-titres stylés en français. Essai gratuit : 3 vidéos, sans carte bancaire.",
+    sub: "Un outil rapide pour produire des shorts visuellement propres. Essai gratuit : 3 vidéos, sans carte bancaire.",
     buttonText: "Essayer Submagic",
   },
 };

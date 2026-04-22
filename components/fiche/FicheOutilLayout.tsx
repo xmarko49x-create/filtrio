@@ -14,6 +14,7 @@ export interface FicheData {
     badges: { label: string; tone?: "primary" | "accent" | "neutral" }[];
     origine?: string;
     depuis?: string;
+    langue?: string;
     tempsLecture: number;
     lastCheck: string;
   };
@@ -27,7 +28,13 @@ export interface FicheData {
     commentaire: string;
   }[];
   fonctionnalites?: { titre: string; description: string }[];
-  plans?: { nom: string; prix: string; features: string[]; cible?: string }[];
+  plans?: {
+    nom: string;
+    prix: string;
+    prixSub?: string;
+    features: string[];
+    cible?: string;
+  }[];
   alternatives: { slug: string; comment: string }[];
   faq: { question: string; answer: ReactNode }[];
   ctaFinal: { headline: string; sub: string; buttonText: string };
@@ -84,18 +91,21 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
               {data.hero.tagline}
             </p>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-6">
-              <FactCell label="À partir de" value={outil.priceFrom ?? "—"} />
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-6 bg-slate-900/40 border border-slate-800 rounded-xl p-5">
+              <FactCell label="Prix" value={outil.priceFrom ?? "—"} />
               <FactCell label="Essai" value={outil.freeTier ?? "—"} />
-              {data.hero.origine && (
+              {data.hero.langue && (
+                <FactCell label="Langue" value={data.hero.langue} />
+              )}
+              {!data.hero.langue && data.hero.origine && (
                 <FactCell label="Origine" value={data.hero.origine} />
               )}
-              {data.hero.depuis && (
+              {!data.hero.langue && data.hero.depuis && (
                 <FactCell label="Depuis" value={data.hero.depuis} />
               )}
             </div>
 
-            <div className="flex gap-3 flex-wrap">
+            <div className="flex gap-4 flex-wrap">
               <Link
                 href="#cta-final"
                 className={`bg-${c}-500 hover:bg-${c}-400 text-slate-950 font-semibold px-6 py-3 rounded-lg transition`}
@@ -138,10 +148,10 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
           <div className="grid md:grid-cols-2 gap-6">
             {data.verdict30s.map((qa) => (
               <div key={qa.question}>
-                <div className="text-xs text-slate-500 uppercase tracking-wider mb-2">
+                <div className="text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
                   {qa.question}
                 </div>
-                <div className="text-slate-200 leading-relaxed">{qa.answer}</div>
+                <div className="text-slate-100 leading-relaxed">{qa.answer}</div>
               </div>
             ))}
           </div>
@@ -216,7 +226,7 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
                       ["--bar-color" as string]: hex,
                     }}
                   />
-                  <p className="text-sm text-slate-400">{cr.commentaire}</p>
+                  <p className="text-sm text-slate-300">{cr.commentaire}</p>
                 </div>
               ))}
             </div>
@@ -260,18 +270,28 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
               {data.plans.map((p) => (
                 <div
                   key={p.nom}
-                  className="bg-slate-900 border border-slate-800 rounded-xl p-6"
+                  className="bg-slate-900 border border-slate-800 rounded-xl p-6 flex flex-col"
                 >
                   <div className="text-xs text-slate-500 uppercase tracking-wider mb-2">
                     {p.nom}
                   </div>
-                  <div className={`text-3xl font-bold mb-2`} style={{ color: hex }}>
-                    {p.prix}
+                  <div className="mb-2">
+                    <div
+                      className="text-3xl font-bold leading-none"
+                      style={{ color: hex }}
+                    >
+                      {p.prix}
+                    </div>
+                    {p.prixSub && (
+                      <div className="text-xs text-slate-500 mt-1">
+                        {p.prixSub}
+                      </div>
+                    )}
                   </div>
                   {p.cible && (
                     <div className="text-xs text-slate-500 mb-4">{p.cible}</div>
                   )}
-                  <ul className="text-sm text-slate-400 space-y-1">
+                  <ul className="text-sm text-slate-300 space-y-1">
                     {p.features.map((ft, i) => (
                       <li key={i}>— {ft}</li>
                     ))}
@@ -359,7 +379,7 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
                     +
                   </span>
                 </summary>
-                <div className="text-slate-400 mt-4 leading-relaxed">{q.answer}</div>
+                <div className="text-slate-300 mt-4 leading-relaxed">{q.answer}</div>
               </details>
             ))}
           </div>

@@ -13,15 +13,14 @@ export const davinciFiche: FicheData = {
       { label: "Color grading Hollywood", tone: "neutral" },
     ],
     origine: "Australie (Blackmagic)",
-    depuis: "2003",
     tempsLecture: 8,
-    lastCheck: "20/04/2026",
+    lastCheck: "22/04/2026",
   },
   verdict30s: [
     {
       question: "C'est quoi ?",
       answer:
-        "Éditeur vidéo pro développé par Blackmagic Design. Version gratuite quasiment illimitée qui inclut montage, color grading, effets visuels, audio. Version Studio payante à 295 $ en licence à vie (pas d'abonnement). Outil utilisé par les studios Hollywood.",
+        "Éditeur vidéo pro développé par Blackmagic Design (désormais en version 21). Version gratuite quasiment illimitée qui inclut montage, color grading, effets visuels, audio. Version Studio payante à 295 $ en licence unique (pas d'abonnement, mises à jour incluses). Outil utilisé par les studios Hollywood.",
     },
     {
       question: "Pour qui ?",
@@ -48,7 +47,7 @@ export const davinciFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Version gratuite complète (95% des features). Studio à 295 $ en une fois (pas d'abonnement, mise à jour à vie). Pour ce prix, accès à HDR, 4K-8K, effets IA avancés, filtres neuraux. Rapport qualité/prix imbattable si tu maîtrises l'outil.",
+        "Deux options officielles Blackmagic : DaVinci Resolve 21 en téléchargement gratuit (déjà très complet) ou DaVinci Resolve Studio à 295 $ en achat unique (licence perpétuelle, mises à jour majeures incluses, pas d'abonnement). Studio débloque HDR, 4K-8K, effets IA avancés (Neural Engine), collaboration multi-user et plugins tiers. Facturation USD côté Blackmagic Design.",
     },
     {
       question: "Meilleure alternative ?",
@@ -113,7 +112,7 @@ export const davinciFiche: FicheData = {
       poids: 20,
       score: 9.8,
       commentaire:
-        "Le point fort absolu. Éditeur pro gratuit quasi illimité, ou Studio à 295 $ en une fois (licence à vie, vs 23 €/mois sur Premiere = amorti en 13 mois). Aucun concurrent ne propose ce rapport qualité/prix.",
+        "Le point fort absolu. Éditeur pro gratuit quasi illimité, ou Studio à 295 $ en achat unique (licence perpétuelle, aucun abonnement à vie). Un éditeur à abonnement mensuel s'amortit vs DaVinci Studio en ~1 an selon le tarif retenu. Aucun concurrent ne propose ce rapport qualité/prix.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
@@ -178,30 +177,32 @@ export const davinciFiche: FicheData = {
   ],
   plans: [
     {
-      nom: "Gratuit",
+      nom: "DaVinci Resolve",
       prix: "0 $",
-      cible: "95% des créateurs",
+      prixSub: "Téléchargement gratuit · pas de watermark",
+      cible: "Couvre la majorité des créateurs",
       features: [
         "Éditeur complet (Edit + Cut Page)",
         "Color grading complet",
         "Fusion (VFX) complet",
         "Fairlight (audio) complet",
         "Export H.264/H.265 sans watermark",
-        "Export 4K limité à 60fps",
+        "Export jusqu'à UHD 60p",
       ],
     },
     {
-      nom: "Studio",
+      nom: "DaVinci Resolve Studio",
       prix: "295 $",
-      cible: "Vidéastes pros",
+      prixSub: "Achat unique · licence perpétuelle · pas d'abonnement",
+      cible: "Vidéastes et studios pros",
       features: [
-        "Tout Gratuit inclus",
-        "Licence à vie (pas d'abonnement)",
-        "Export 4K-8K sans limite",
+        "Tout DaVinci Resolve inclus",
+        "Export 4K-8K sans limite de framerate",
         "HDR / Dolby Vision",
         "Neural Engine complet (IA avancée)",
         "Collaboration multi-user",
         "Plugins tiers avancés",
+        "Mises à jour incluses",
       ],
     },
   ],
@@ -214,12 +215,12 @@ export const davinciFiche: FicheData = {
     {
       slug: "adobe-premiere",
       comment:
-        "La référence Adobe. Plus intuitif pour certains, intégration complète avec After Effects et Audition. 23 €/mois par abonnement.",
+        "La référence Adobe. Plus intuitif pour certains, intégration complète avec After Effects et Audition. Modèle par abonnement mensuel (voir tarifs officiels Adobe).",
     },
     {
       slug: "final-cut-pro",
       comment:
-        "La référence Apple. Interface magnétique unique, performances excellentes sur Mac. 349 € en licence à vie, Mac only.",
+        "La référence Apple. Interface magnétique unique, performances excellentes sur Mac. Licence unique Mac only (voir tarifs officiels App Store).",
     },
   ],
   faq: [
@@ -241,7 +242,7 @@ export const davinciFiche: FicheData = {
     {
       question: "DaVinci vs Premiere Pro, lequel choisir en 2026 ?",
       answer:
-        "Si tu veux l'écosystème Adobe (After Effects, Audition, Photoshop intégrés) et tu acceptes 23 €/mois : Premiere. Si tu veux un éditeur au moins aussi puissant sans abonnement : DaVinci Studio à 295 $. Les deux sont pro, le choix se fait sur le modèle économique et l'écosystème.",
+        "Si tu veux l'écosystème Adobe (After Effects, Audition, Photoshop intégrés) et tu acceptes un abonnement mensuel : Premiere. Si tu veux un éditeur au moins aussi puissant en achat unique : DaVinci Studio à 295 $. Les deux sont pro, le choix se fait sur le modèle économique et l'écosystème.",
     },
     {
       question: "Y a-t-il un programme affilié DaVinci ?",

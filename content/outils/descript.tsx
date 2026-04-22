@@ -13,15 +13,14 @@ export const descriptFiche: FicheData = {
       { label: "Studio Sound inclus", tone: "neutral" },
     ],
     origine: "USA",
-    depuis: "2017",
     tempsLecture: 8,
-    lastCheck: "20/04/2026",
+    lastCheck: "22/04/2026",
   },
   verdict30s: [
     {
       question: "C'est quoi ?",
       answer:
-        "Plateforme d'édition audio-vidéo unique : tu modifies ta vidéo en éditant sa transcription. Supprime un mot = la vidéo se coupe au bon endroit. Lancé en 2017, rachat de Squadcast en 2023 pour renforcer l'enregistrement à distance.",
+        "Plateforme d'édition audio-vidéo unique : tu modifies ta vidéo en éditant sa transcription. Supprime un mot = la vidéo se coupe au bon endroit. Descript intègre aussi l'enregistrement à distance (via Squadcast), Studio Sound et Overdub pour le clonage vocal.",
     },
     {
       question: "Pour qui ?",
@@ -45,7 +44,7 @@ export const descriptFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan gratuit 1h de transcription/mois, export 1080p. Hobbyist à 12 $/mois (10h), Creator à 24 $/mois (30h), Business à 40 $/mois (40h + features pro). Export watermark sur plan gratuit.",
+        "Plan gratuit (Free) disponible. Hobbyist à 16 $/mois en annuel (24 $/mois en mensuel) avec 10h de media. Creator à 24 $/mois en annuel (35 $ mensuel) avec 30h + 5 bonus et export 4K. Business à 50 $/mois en annuel (65 $ mensuel) avec 40h + 10 bonus, Brand Studio et traduction 30+ langues. Enterprise sur devis. Facturation USD, jusqu'à 35 % d'économie en annuel.",
     },
     {
       question: "Meilleure alternative ?",
@@ -118,7 +117,7 @@ export const descriptFiche: FicheData = {
       poids: 20,
       score: 8.8,
       commentaire:
-        "Plan gratuit correct pour tester (1h/mois). Plan Hobbyist à 12 $/mois avec 10h de transcription et les features principales : très bon rapport q/p pour un podcaster régulier. Moins compétitif pour les usages faibles.",
+        "Plan gratuit disponible pour tester. Hobbyist à 16 $/mois en annuel (10 media hours) : bon rapport q/p pour un podcaster régulier. Creator à 24 $/mois en annuel pour plus d'heures et l'export 4K. Jusqu'à 35 % d'économie avec l'annuel.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
@@ -183,47 +182,60 @@ export const descriptFiche: FicheData = {
   ],
   plans: [
     {
-      nom: "Gratuit",
+      nom: "Free",
       prix: "0 $",
-      cible: "Pour tester",
+      prixSub: "Pour démarrer gratuitement",
+      cible: "Découverte de l'outil",
       features: [
-        "1 heure transcription/mois",
-        "Export 1080p avec watermark",
-        "Features basiques",
-        "Pas d'Overdub",
+        "Accès aux features de base",
+        "Workflow d'édition textuelle testable",
+        "Détails exacts sur la page Tarifs officielle",
       ],
     },
     {
       nom: "Hobbyist",
-      prix: "12 $/mois",
-      cible: "Podcasteurs réguliers",
+      prix: "16 $/mois",
+      prixSub: "En annuel · 24 $/mois en mensuel",
+      cible: "Projets perso, montée en gamme",
       features: [
-        "10h transcription/mois",
-        "Sans watermark",
-        "Studio Sound inclus",
-        "Overdub basique",
+        "10 media hours/mois",
+        "Export 1080p sans watermark",
+        "Studio Sound et édition textuelle",
       ],
     },
     {
       nom: "Creator",
       prix: "24 $/mois",
-      cible: "Créateurs pros",
+      prixSub: "En annuel · 35 $/mois en mensuel",
+      cible: "Créateurs réguliers · Team jusqu'à 3",
       features: [
-        "30h transcription/mois",
-        "Export 4K",
-        "AI Actions complètes",
-        "Squadcast inclus",
+        "30 media hours/mois + 5 bonus hours",
+        "Export 4K sans watermark",
+        "Royalty-free stock media illimité",
+        "Accès aux top ups (media hours et AI credits)",
       ],
     },
     {
       nom: "Business",
-      prix: "40 $/mois",
-      cible: "Agences et médias",
+      prix: "50 $/mois",
+      prixSub: "En annuel · 65 $/mois en mensuel",
+      cible: "Équipes et agences · Team jusqu'à 5",
       features: [
-        "40h transcription/mois",
-        "API et intégrations avancées",
-        "Collaboration équipe",
-        "Support prioritaire",
+        "40 media hours/mois + 10 bonus hours",
+        "Brand Studio partagé en équipe",
+        "Traduction et dubbing vidéo en 30+ langues avec proofread",
+        "Collaboration équipe + top ups",
+      ],
+    },
+    {
+      nom: "Enterprise",
+      prix: "Sur devis",
+      prixSub: "Organisations & grandes équipes",
+      cible: "Custom media minutes, sécurité avancée",
+      features: [
+        "Custom media minutes",
+        "Enterprise-grade security",
+        "Solutions sur mesure",
       ],
     },
   ],
@@ -278,14 +290,14 @@ export const descriptFiche: FicheData = {
         "Oui pour les corrections ponctuelles (1-3 mots). Au-delà, le rendu devient moins naturel et fait entendre une légère texture artificielle. Parfait pour réparer une erreur, pas pour générer des paragraphes entiers.",
     },
     {
-      question: "Combien d'heures de transcription pour un podcast hebdo ?",
+      question: "Combien d'heures de media pour un podcast hebdo ?",
       answer:
-        "Environ 4-8h/mois pour un podcast d'1h par semaine (l'outil transcrit l'audio brut + les retakes). Le plan Hobbyist à 12 $/mois (10h) convient pour un créateur régulier sans débordement. Au-delà, passe sur Creator à 24 $/mois.",
+        "Pour un podcast d'1h par semaine avec retakes, le plan Hobbyist à 16 $/mois en annuel (10 media hours/mois) convient à un créateur régulier sans débordement. Au-delà, passer sur Creator à 24 $/mois en annuel (30 media hours + 5 bonus).",
     },
   ],
   ctaFinal: {
     headline: "Prêt à tester Descript ?",
-    sub: "Le plan gratuit (1h/mois de transcription) permet de découvrir le workflow d'édition textuelle. Même 30 minutes de test suffisent pour comprendre le gain.",
+    sub: "Le plan gratuit permet de découvrir le workflow d'édition textuelle sans engagement. Hobbyist à 16 $/mois en annuel dès que tu publies régulièrement.",
     buttonText: "Essayer Descript",
   },
 };

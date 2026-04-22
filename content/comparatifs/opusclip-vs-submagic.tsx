@@ -80,7 +80,7 @@ export const opusclipVsSubmagic: ComparatifData = {
     "Tu veux automatiser la production de 5-10 clips par vidéo source",
     "Tu utilises déjà un workflow Make/Zapier et veux une API",
     "Tu crées aussi en anglais ou multilingue",
-    "Tu cherches un plan gratuit récurrent (60 min/mois)",
+    "Tu cherches un plan gratuit récurrent pour tester sans engagement",
   ],
   porQuiB: [
     "Tu tournes directement des contenus courts (face cam, Shorts)",

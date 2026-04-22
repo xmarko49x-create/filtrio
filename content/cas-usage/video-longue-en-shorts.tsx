@@ -106,7 +106,7 @@ export const videoLongueEnShorts: CasUsageData = {
       badge: "Tout-en-un",
       verdict:
         "Plus complet (édition textuelle + enregistrement + découpe) mais plus lourd à prendre en main. Pertinent si ton workflow inclut aussi l'édition long format.",
-      priceDisplay: { label: "À partir de", value: "24 $/mois" },
+      priceDisplay: { label: "À partir de", value: "16 $/mois" },
     },
     {
       slug: "capcut",

@@ -15,7 +15,7 @@ export const tubebuddyFiche: FicheData = {
     origine: "USA",
     depuis: "2014",
     tempsLecture: 8,
-    lastCheck: "20/04/2026",
+    lastCheck: "22/04/2026",
   },
   verdict30s: [
     {

@@ -83,7 +83,7 @@ export const synthesiaVsHeygen: ComparatifData = {
     "Tu es créateur solo ou scale-up agile",
     "Tu veux un style d'avatars plus contemporain",
     "Tu clones ton visage pour produire en volume",
-    "Tu veux l'API dès le plan Creator à 29 $/mois",
+    "Tu veux l'API dès le plan Creator HeyGen (à partir de 29 $/mois, USD)",
     "Interactive Avatar pour chatbots vidéo ou démos interactives",
   ],
   casUsage: [

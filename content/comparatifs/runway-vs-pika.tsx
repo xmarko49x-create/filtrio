@@ -10,8 +10,8 @@ export const runwayVsPika: ComparatifData = {
     color: "rose",
     score: 7.5,
     tagline: "Génération vidéo IA accessible",
-    priceFrom: "10 $/mois",
-    freeTier: "250 crédits",
+    priceFrom: "Plans payants",
+    freeTier: "Plan gratuit disponible",
   },
   hero: {
     h1: "lequel choisir ?",

@@ -84,11 +84,11 @@ export const miniaturesYoutubeIa: CasUsageData = {
         "Certains templates sentent le 'déjà vu'",
       ],
       verdict:
-        "Si tu produis des miniatures régulièrement, Canva Pro à 13 €/mois est le meilleur ROI. Le combo templates + Magic Design + Brand Kit couvre 90% des besoins.",
+        "Si tu produis des miniatures régulièrement, Canva Pro à 110 €/an par personne (≈ 9 €/mois en annuel) est un excellent ROI. Le combo templates + Magic Design + Brand Kit couvre l'essentiel des besoins.",
       priceDisplay: {
         label: "À partir de",
-        value: "13 €/mois",
-        note: "Plan gratuit utile",
+        value: "110 €/an",
+        note: "Plan gratuit disponible",
       },
     },
     {
@@ -105,7 +105,7 @@ export const miniaturesYoutubeIa: CasUsageData = {
       scoreCas: 7.5,
       verdict:
         "Pas un générateur de miniatures à proprement parler, mais permet de tester A/B plusieurs miniatures existantes pour mesurer celle qui marche le mieux. Complémentaire à Canva pour optimiser le CTR.",
-      priceDisplay: { label: "À partir de", value: "5 $/mois" },
+      priceDisplay: { label: "À partir de", value: "12 $/mois" },
     },
     {
       slug: "adobe-express",
@@ -227,7 +227,7 @@ export const miniaturesYoutubeIa: CasUsageData = {
     {
       question: "Canva gratuit suffit-il pour faire des miniatures YouTube ?",
       answer:
-        "Oui pour démarrer. Tu as accès aux templates de base, à la bibliothèque basique, et aux fonctions de texte/image. Les vraies limites du gratuit : pas de suppression fond en un clic (essentiel pour les face cam), pas de Brand Kit, Magic Design limité. Pour un usage régulier, le Pro à 13 €/mois se rentabilise.",
+        "Oui pour démarrer. Tu as accès aux templates de base, à la bibliothèque basique, et aux fonctions de texte/image. Les vraies limites du gratuit : pas de suppression fond en un clic (essentiel pour les face cam), pas de Brand Kit, Magic Design limité. Pour un usage régulier, le Pro à 110 €/an (≈ 9 €/mois en annuel) se rentabilise.",
     },
     {
       question: "Canva ou Midjourney pour générer le visuel ?",

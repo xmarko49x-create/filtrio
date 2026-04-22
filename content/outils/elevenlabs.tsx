@@ -128,7 +128,7 @@ export const elevenlabsFiche: FicheData = {
         "Interface web propre, prise en main rapide pour la génération basique. Les features avancées (fine-tuning, clonage pro, API) demandent un peu de lecture de doc. Globalement accessible pour un non-technicien.",
     },
     {
-      label: "Support et documentation FR",
+      label: "Support & confort FR",
       poids: 15,
       score: 6.5,
       commentaire:

@@ -130,7 +130,7 @@ export const davinciFiche: FicheData = {
         "Le vrai défaut. Courbe d'apprentissage raide : 10-20h minimum pour être opérationnel, interface dense, terminologie pro. C'est le prix à payer pour autant de puissance.",
     },
     {
-      label: "Support et documentation FR",
+      label: "Support & confort FR",
       poids: 15,
       score: 8.5,
       commentaire:

@@ -36,7 +36,7 @@ export const tubebuddyFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan gratuit très limité (quelques features basiques). Pro à partir de 5 $/mois (limité), Legend à 30 $/mois (complet). Tarification agressive pour les petites chaînes, augmente avec la taille.",
+        "Plans payants à partir de 12 $/mois · Facturation en USD · Voir les tarifs officiels pour le détail des offres.",
     },
     {
       question: "Meilleure alternative ?",
@@ -97,7 +97,7 @@ export const tubebuddyFiche: FicheData = {
       poids: 20,
       score: 8.8,
       commentaire:
-        "Tarification dégressive intéressante pour les petites chaînes (dès 5 $/mois). Plan gratuit utile pour découvrir. Le ROI est clair sur les chaînes en croissance qui cherchent à optimiser leur visibilité.",
+        "Tarification dégressive intéressante pour les petites chaînes. Plan gratuit utile pour découvrir. Le ROI est clair sur les chaînes en croissance qui cherchent à optimiser leur visibilité.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
@@ -114,7 +114,7 @@ export const tubebuddyFiche: FicheData = {
         "Intégration directe à YouTube Studio via l'extension. Pas de nouvelle interface à apprendre : les features apparaissent dans les pages YouTube existantes. Fluide pour un YouTubeur déjà habitué à son environnement.",
     },
     {
-      label: "Support et documentation FR",
+      label: "Support & confort FR",
       poids: 15,
       score: 7.0,
       commentaire:
@@ -162,47 +162,14 @@ export const tubebuddyFiche: FicheData = {
   ],
   plans: [
     {
-      nom: "Gratuit",
-      prix: "0 $",
-      cible: "Pour découvrir l'outil",
+      nom: "Plans TubeBuddy",
+      prix: "À partir de 12 $/mois",
+      cible: "YouTubeurs, chaînes en croissance, agences",
       features: [
-        "Tag explorer limité",
-        "Vérifications SEO basiques",
-        "Analytics légères",
-        "Pas de tests A/B",
-      ],
-    },
-    {
-      nom: "Pro",
-      prix: "5 $/mois",
-      cible: "YouTubeurs en croissance",
-      features: [
-        "SEO Studio complet",
-        "Tag suggestions illimitées",
-        "Tests A/B de miniatures",
-        "Compteur de vues en temps réel",
-      ],
-    },
-    {
-      nom: "Legend",
-      prix: "30 $/mois",
-      cible: "Chaînes établies",
-      features: [
-        "Accès à tout le catalogue",
-        "Analytics avancées",
-        "Suggestions IA",
-        "Bulk processing illimité",
-      ],
-    },
-    {
-      nom: "Enterprise",
-      prix: "Sur devis",
-      cible: "Agences et médias",
-      features: [
-        "Comptes équipe",
-        "Multi-chaînes",
-        "Support dédié",
-        "Formation incluse",
+        "Plans payants à partir de 12 $/mois",
+        "Facturation en USD",
+        "Détail des offres et fonctionnalités sur la page Tarifs de TubeBuddy",
+        "Tarifs susceptibles d'évoluer — vérifier sur le site officiel",
       ],
     },
   ],
@@ -254,7 +221,7 @@ export const tubebuddyFiche: FicheData = {
     {
       question: "Le prix augmente-t-il avec la taille de ma chaîne ?",
       answer:
-        "Oui, c'est le point critique. TubeBuddy applique une tarification dégressive basée sur la taille de ta chaîne. Plus tu grossis, plus le prix grimpe. Un créateur à 500k abonnés peut payer 30-50 $/mois là où un petit créateur paie 5 $/mois pour les mêmes features.",
+        "Oui, c'est le point critique. TubeBuddy applique une tarification en partie liée à la taille de ta chaîne : plus elle grossit, plus l'abonnement monte. Les paliers exacts sont à vérifier sur la page Tarifs officielle.",
     },
     {
       question: "Compatible avec Safari ou Opera ?",
@@ -264,7 +231,7 @@ export const tubebuddyFiche: FicheData = {
   ],
   ctaFinal: {
     headline: "Prêt à tester TubeBuddy ?",
-    sub: "Le plan gratuit permet de découvrir l'outil. Pour un vrai usage, le Pro à 5 $/mois est la bonne porte d'entrée pour les petites chaînes.",
+    sub: "Plans payants à partir de 12 $/mois (facturation USD). Détail des offres sur la page Tarifs officielle.",
     buttonText: "Essayer TubeBuddy",
   },
 };

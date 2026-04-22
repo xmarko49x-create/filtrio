@@ -120,7 +120,7 @@ export const opusclipFiche: FicheData = {
         "Plus riche que Submagic en options (choix clips à garder, réorganisation, édition fine), donc un peu plus longue à maîtriser. Une fois le workflow compris, très efficace.",
     },
     {
-      label: "Support et documentation FR",
+      label: "Support & confort FR",
       poids: 15,
       score: 7.5,
       commentaire:

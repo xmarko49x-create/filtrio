@@ -140,7 +140,7 @@ export const submagicFiche: FicheData = {
         "L'un des parcours utilisateurs les plus courts de sa catégorie. Upload, choix du template, export : peu de clics. Peu de courbe d'apprentissage pour un non-technicien.",
     },
     {
-      label: "Support et documentation",
+      label: "Support & confort FR",
       poids: 15,
       score: 8.5,
       commentaire:

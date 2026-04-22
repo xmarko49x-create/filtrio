@@ -128,7 +128,7 @@ export const riversideFiche: FicheData = {
         "Le point fort absolu. Enregistrement local sur la machine de chaque participant, puis upload des tracks séparés. Aucune perte liée à la connexion. Qualité 48kHz audio, vidéo 4K disponible. Largement supérieur à Zoom ou Teams sur ce volet.",
     },
     {
-      label: "Support et documentation FR",
+      label: "Support & confort FR",
       poids: 15,
       score: 7.0,
       commentaire:

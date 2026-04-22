@@ -137,7 +137,7 @@ export const capcutFiche: FicheData = {
         "Interface mobile et desktop particulièrement bien pensée, surtout pour les TikTokeurs. Courbe d'apprentissage courte. Moins intuitive sur les features vidéo avancées que sur les shorts.",
     },
     {
-      label: "Support et documentation FR",
+      label: "Support & confort FR",
       poids: 15,
       score: 7.5,
       commentaire:

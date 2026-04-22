@@ -130,7 +130,7 @@ export const canvaFiche: FicheData = {
         "Point fort. Interface pensée pour les non-designers, drag-and-drop intuitif, templates qui guident le choix. 20 minutes pour être opérationnel même sans expérience design.",
     },
     {
-      label: "Support et documentation FR",
+      label: "Support & confort FR",
       poids: 15,
       score: 8.5,
       commentaire:

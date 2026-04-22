@@ -135,7 +135,7 @@ export const descriptFiche: FicheData = {
         "Courbe d'apprentissage plus longue que la moyenne. Le modèle d'édition textuelle est déroutant au début : tu édites du texte, pas une timeline. Compte 2-3 heures pour être vraiment à l'aise. Une fois maîtrisé, gain de productivité massif.",
     },
     {
-      label: "Support et documentation FR",
+      label: "Support & confort FR",
       poids: 15,
       score: 6.5,
       commentaire:

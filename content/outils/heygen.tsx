@@ -144,7 +144,7 @@ export const heygenFiche: FicheData = {
         "Interface moderne, workflow clair : script → avatar → voix → render. Courbe d'apprentissage de 30 min pour les basiques, quelques heures pour maîtriser les features avancées. Editor vidéo intégré basique.",
     },
     {
-      label: "Support et documentation FR",
+      label: "Support & confort FR",
       poids: 15,
       score: 7.0,
       commentaire:

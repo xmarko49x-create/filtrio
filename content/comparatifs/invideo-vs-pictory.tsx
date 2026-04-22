@@ -70,7 +70,7 @@ export const invideoVsPictory: ComparatifData = {
       gagnant: "B",
     },
     {
-      label: "Support & documentation FR",
+      label: "Support & confort FR",
       poids: 15,
       scoreA: 7.2,
       scoreB: 6.5,

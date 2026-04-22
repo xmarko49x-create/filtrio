@@ -145,7 +145,7 @@ export const veedFiche: FicheData = {
         "Interface web propre, prise en main rapide pour un non-technicien. Courbe d'apprentissage plus courte que DaVinci Resolve mais plus chargée que CapCut. Compromis accessible.",
     },
     {
-      label: "Support et documentation FR",
+      label: "Support & confort FR",
       poids: 15,
       score: 7.0,
       commentaire:

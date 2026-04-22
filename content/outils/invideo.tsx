@@ -127,7 +127,7 @@ export const invideoFiche: FicheData = {
         "Interface moderne orientée workflow IA. Prise en main rapide pour les cas standards (script → vidéo). Plus technique si tu veux du contrôle fin (ajustements timeline, transitions custom).",
     },
     {
-      label: "Support et documentation FR",
+      label: "Support & confort FR",
       poids: 15,
       score: 6.8,
       commentaire:

@@ -61,7 +61,7 @@ export const opusclipVsSubmagic: ComparatifData = {
       gagnant: "B",
     },
     {
-      label: "Confort FR",
+      label: "Support & confort FR",
       poids: 15,
       scoreA: 7.0,
       scoreB: 9.0,

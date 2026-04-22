@@ -138,7 +138,7 @@ export const vidiqFiche: FicheData = {
         "Extension intégrée à YouTube Studio avec un design plus moderne que TubeBuddy. Dashboard séparé disponible. Courbe d'apprentissage courte : les 3-4 features principales sont accessibles en moins de 10 minutes.",
     },
     {
-      label: "Support et documentation FR",
+      label: "Support & confort FR",
       poids: 15,
       score: 7.0,
       commentaire:

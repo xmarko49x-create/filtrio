@@ -10,15 +10,15 @@ export const invideoVsPictory: ComparatifData = {
     color: "rose",
     score: 7.0,
     tagline: "Article-to-video et webinaires",
-    priceFrom: "29 $/mois",
-    freeTier: "Essai 14 jours",
+    priceFrom: "Plans payants",
+    freeTier: "Essai gratuit",
   },
   hero: {
     h1: "lequel choisir ?",
     tagline:
       "Le générateur polyvalent (InVideo) contre le spécialiste article-to-video (Pictory). InVideo couvre beaucoup plus de cas. Pictory n'a de sens que sur un workflow précis : articles et webinaires à transformer en vidéos courtes.",
     tempsLecture: 5,
-    lastCheck: "20/04/2026",
+    lastCheck: "22/04/2026",
   },
   verdictRapide: {
     headline: "InVideo prend clairement l'avantage pour la plupart des créateurs.",
@@ -158,7 +158,7 @@ export const invideoVsPictory: ComparatifData = {
     {
       question: "Lequel offre le meilleur rapport qualité/prix ?",
       answer:
-        "InVideo. À 25 $/mois, tu as un moteur IA complet, un éditeur flexible, du stock intégré et des templates sociaux. Pictory à 29 $/mois offre une utilisation plus étroite avec des limites de durée mensuelle plus strictes, donc moins de polyvalence pour un budget similaire.",
+        "InVideo est devenu plus généraliste avec son modèle à crédits (point d'entrée à 17 $/mois en annuel sur le plan En plus, jusqu'à 900 $/mois pour Élite). Pictory garde un positionnement plus étroit mais plus prévisible sur le forfait mensuel. Le choix dépend surtout de la prévisibilité recherchée : InVideo sur usage en volume, Pictory sur forfait simple.",
     },
     {
       question: "Peut-on les combiner dans un workflow ?",

@@ -232,7 +232,7 @@ export const OUTILS: Outil[] = [
     color: "fuchsia",
     tagline: "Script-to-video IA",
     category: "script-to-video",
-    priceFrom: "Plan gratuit + payant",
+    priceFrom: "À partir de 17 $/mois",
     freeTier: "",
     affiliateLink: "#aff-invideo",
     ficheAvailable: true,

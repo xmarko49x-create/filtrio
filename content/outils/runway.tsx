@@ -13,9 +13,8 @@ export const runwayFiche: FicheData = {
       { label: "Clips 5-10s", tone: "neutral" },
     ],
     origine: "USA",
-    depuis: "2018",
     tempsLecture: 8,
-    lastCheck: "20/04/2026",
+    lastCheck: "22/04/2026",
   },
   verdict30s: [
     {
@@ -48,7 +47,7 @@ export const runwayFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Standard à 15 $/mois (625 crédits), Pro à 35 $/mois (2250 crédits), Unlimited à 95 $/mois. Les crédits sont consommés par la génération vidéo (environ 5 crédits/seconde en Gen-3). Volume pro = coût rapide.",
+        "Plan Free (0 $) avec 125 credits one-time et 3 projets. Standard à 12 $/user/mois en annuel (144 $/an) avec 625 credits mensuels. Pro à 28 $/user/mois en annuel (336 $/an) avec 2250 credits. Unlimited à 76 $/user/mois en annuel (912 $/an) avec génération illimitée en Explore Mode. Enterprise sur devis. Facturation USD.",
     },
     {
       question: "Meilleure alternative ?",
@@ -100,7 +99,7 @@ export const runwayFiche: FicheData = {
     "Tu produis beaucoup de vidéos longues (coût en crédits élevé)",
     "Tu es débutant en création visuelle",
     "Tu veux un rendu \"réaliste cinéma\" parfait (encore des limites)",
-    "Budget serré (15-35 $/mois + coûts crédits)",
+    "Budget serré (à partir de 12 $/mois + coûts crédits)",
   ],
   scoring: [
     {
@@ -182,45 +181,58 @@ export const runwayFiche: FicheData = {
     {
       nom: "Free",
       prix: "0 $",
-      cible: "Pour tester",
+      prixSub: "Free forever · per editor",
+      cible: "Pour tester l'outil",
       features: [
-        "125 crédits (one-shot)",
-        "Résolution 720p",
-        "Watermark Runway",
-        "Features basiques",
+        "125 credits (one-time)",
+        "3 video editor projects",
+        "Accès Gemini 3 Pro",
       ],
     },
     {
       nom: "Standard",
-      prix: "15 $/mois",
-      cible: "Créatifs visuels réguliers",
+      prix: "12 $/mois",
+      prixSub: "Par user · facturation annuelle (144 $/an)",
+      cible: "Créateurs solo et petites équipes (max 5 users)",
       features: [
-        "625 crédits/mois",
-        "Résolution 1080p",
-        "Sans watermark",
-        "Gen-3 Alpha accessible",
+        "625 credits monthly · Credits refresh chaque mois",
+        "Accès aux modèles tiers (Seedance 2.0, Kling 3.0 Pro, etc.)",
+        "Unlimited video editor projects",
+        "Possibilité d'acheter des credits supplémentaires",
       ],
     },
     {
       nom: "Pro",
-      prix: "35 $/mois",
-      cible: "Motion designers pros",
+      prix: "28 $/mois",
+      prixSub: "Par user · facturation annuelle (336 $/an)",
+      cible: "Teams pros (max 10 users)",
       features: [
-        "2250 crédits/mois",
-        "Accès prioritaire",
-        "VFX avancés",
-        "Exports 4K",
+        "2250 credits monthly",
+        "Create Custom Voices pour Lip Sync et Text to Speech",
+        "500 GB asset storage",
+        "Tout Standard inclus",
       ],
     },
     {
       nom: "Unlimited",
-      prix: "95 $/mois",
-      cible: "Studios et agences",
+      prix: "76 $/mois",
+      prixSub: "Par user · facturation annuelle (912 $/an)",
+      cible: "Studios avec volume illimité (max 10 users)",
       features: [
-        "Crédits illimités (mode Explore)",
-        "Priorité maximum",
-        "API",
-        "Support dédié",
+        "2250 credits mensuels + Explore Mode",
+        "Unlimited generations de tous les modèles image et vidéo en Explore mode",
+        "Tout Pro inclus",
+      ],
+    },
+    {
+      nom: "Enterprise",
+      prix: "Sur devis",
+      prixSub: "Organisations & grandes équipes",
+      cible: "Sécurité avancée et personnalisation",
+      features: [
+        "Scalable pour grandes organisations",
+        "Sécurité avancée et support dédié",
+        "Personnalisation sur mesure",
       ],
     },
   ],
@@ -283,7 +295,7 @@ export const runwayFiche: FicheData = {
   ],
   ctaFinal: {
     headline: "Prêt à tester Runway ?",
-    sub: "Le plan gratuit (125 crédits one-shot) permet de faire 10-20 clips de test pour juger de la qualité Gen-3 Alpha. Suffisant pour décider.",
+    sub: "Le plan Free (125 credits one-time, 3 projets) permet de tester la qualité des modèles avant engagement. Standard à partir de 12 $/user/mois en annuel.",
     buttonText: "Essayer Runway",
   },
 };

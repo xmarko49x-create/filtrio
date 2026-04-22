@@ -71,7 +71,7 @@ export const OUTILS: Outil[] = [
     color: "emerald",
     tagline: "Découpe IA auto",
     category: "shorts",
-    priceFrom: "À partir de 15 $/mois",
+    priceFrom: "15 $/mois",
     freeTier: "Plan gratuit récurrent",
     affiliateLink: "#aff-opusclip",
     ficheAvailable: true,

@@ -13,7 +13,7 @@ export const opusclipVsSubmagic: ComparatifData = {
     lastCheck: "20/04/2026",
   },
   verdictRapide: {
-    headline: "OpusClip pour le volume. Submagic pour la qualité FR.",
+    headline: "OpusClip pour le volume. Submagic pour le rendu FR.",
     paragraphs: [
       <>
         <strong className="text-emerald-400">OpusClip</strong> automatise la
@@ -61,10 +61,10 @@ export const opusclipVsSubmagic: ComparatifData = {
       gagnant: "B",
     },
     {
-      label: "Support & doc FR",
+      label: "Support & confort FR",
       poids: 15,
       scoreA: 7.0,
-      scoreB: 9.3,
+      scoreB: 9.0,
       gagnant: "B",
     },
     {
@@ -93,7 +93,7 @@ export const opusclipVsSubmagic: ComparatifData = {
     {
       profil: "Podcasteur qui veut transformer 1h en 10 shorts",
       description:
-        "OpusClip analyse toute la vidéo et propose les meilleurs moments prêts à clipper. Submagic n'est pas pensé pour ce volume de découpe.",
+        "OpusClip analyse toute la vidéo et propose les meilleurs moments prêts à clipper. OpusClip est nettement plus adapté à ce volume de découpe.",
       gagnant: "A",
     },
     {
@@ -117,7 +117,7 @@ export const opusclipVsSubmagic: ComparatifData = {
     {
       profil: "Agence social media qui gère plusieurs comptes",
       description:
-        "L'API et le volume d'OpusClip font la différence à l'échelle. Submagic en complément pour les clients qui demandent du rendu FR premium.",
+        "Le clipping massif, le volume et l'orientation workflow d'OpusClip font la différence à l'échelle. Submagic en complément pour les clients qui demandent du rendu FR premium.",
       gagnant: "A",
     },
   ],
@@ -149,12 +149,12 @@ export const opusclipVsSubmagic: ComparatifData = {
     {
       question: "Y a-t-il un plan gratuit durable ?",
       answer:
-        "OpusClip propose un plan gratuit récurrent mensuel, plus généreux que Submagic qui se limite à un essai gratuit ponctuel. Sur ce point, OpusClip prend l'avantage. Conditions exactes à vérifier sur les sites officiels.",
+        "Oui, les deux proposent une porte d'entrée gratuite, mais elles ne servent pas le même usage. OpusClip pousse davantage le clipping de vidéos longues avec une logique plus orientée volume, tandis que Submagic propose une formule gratuite plus limitée pour tester son rendu et son workflow.",
     },
     {
       question: "Lequel a la meilleure API ?",
       answer:
-        "OpusClip sur plan Pro. Submagic n'a pas d'API publique à date. Si l'automatisation est critique (Make, Zapier), OpusClip est le seul choix.",
+        "OpusClip reste plus crédible si ton besoin principal est le clipping à grande échelle et un workflow orienté volume. Submagic affiche aussi des options d'API et d'intégrations sur ses offres, mais l'outil reste surtout pensé pour produire rapidement des shorts avec un rendu visuel fort, pas comme une plateforme d'automatisation lourde.",
     },
     {
       question: "Lequel choisir pour débuter ?",

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
+import { TrackedComparatifLink } from "@/components/TrackedComparatifLink";
 import { outilsByScore } from "@/lib/outils";
 import { COMPARATIFS } from "@/lib/comparatifs";
 import { CAS_USAGE } from "@/lib/cas-usage";
@@ -179,9 +180,11 @@ export default function HomePage() {
         </div>
         <div className="grid md:grid-cols-2 gap-4">
           {COMPARATIFS.map((c) => (
-            <Link
+            <TrackedComparatifLink
               key={c.slug}
               href={`/comparatifs/${c.slug}`}
+              slug={c.slug}
+              source="home"
               className="p-6 bg-slate-900 border border-slate-800 rounded-xl hover:border-emerald-500/40 transition group"
             >
               <div className="flex justify-between items-start mb-3">
@@ -196,7 +199,7 @@ export default function HomePage() {
               <div className="text-xs text-emerald-400 font-medium">
                 Lire le verdict →
               </div>
-            </Link>
+            </TrackedComparatifLink>
           ))}
         </div>
       </section>

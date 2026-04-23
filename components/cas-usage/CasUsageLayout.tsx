@@ -5,7 +5,9 @@ import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
 import { colorHex } from "@/components/ScoreRing";
 import { TrackedAffiliateLink } from "@/components/TrackedAffiliateLink";
+import { JsonLd } from "@/components/JsonLd";
 import { getOutil, type TailwindColor } from "@/lib/outils";
+import { getFaqPageSchema, getBreadcrumbSchema } from "@/lib/schema";
 
 export interface OutilDansClassement {
   slug: string;
@@ -52,8 +54,17 @@ export default function CasUsageLayout({ data }: { data: CasUsageData }) {
   const c = gagnant.color;
   const hex = colorHex(c);
 
+  // JSON-LD
+  const faqSchema = getFaqPageSchema(data.faq);
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: "Accueil", url: "/" },
+    { name: "Cas d'usage", url: "/" },
+    { name: data.hero.h1 },
+  ]);
+
   return (
     <>
+      <JsonLd data={[faqSchema, breadcrumbSchema]} />
       <Nav ctaHref="#gagnant" />
 
       {/* HERO */}

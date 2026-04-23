@@ -3,15 +3,21 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
 import { TrackedComparatifLink } from "@/components/TrackedComparatifLink";
+import { JsonLd } from "@/components/JsonLd";
 import { outilsByScore } from "@/lib/outils";
 import { COMPARATIFS } from "@/lib/comparatifs";
 import { CAS_USAGE } from "@/lib/cas-usage";
+import {
+  getOrganizationSchema,
+  getWebsiteSchema,
+} from "@/lib/schema";
 
 export default function HomePage() {
   const top5 = outilsByScore(5);
 
   return (
     <>
+      <JsonLd data={[getOrganizationSchema(), getWebsiteSchema()]} />
       <Nav ctaHref="#top-outils" />
 
       {/* HERO — direct, orienté utilité */}

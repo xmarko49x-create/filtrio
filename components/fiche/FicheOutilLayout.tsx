@@ -5,7 +5,13 @@ import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
 import ScoreRing, { colorHex } from "@/components/ScoreRing";
 import { TrackedAffiliateLink } from "@/components/TrackedAffiliateLink";
+import { JsonLd } from "@/components/JsonLd";
 import { getOutil, getOutilOrThrow, type TailwindColor } from "@/lib/outils";
+import {
+  getReviewSchema,
+  getFaqPageSchema,
+  getBreadcrumbSchema,
+} from "@/lib/schema";
 
 export interface FicheData {
   slug: string;
@@ -52,8 +58,25 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
   const hex = colorHex(outil.color);
   const c = outil.color;
 
+  // JSON-LD pour rich snippets Google
+  const reviewSchema = getReviewSchema({
+    outilSlug: outil.slug,
+    outilName: outil.name,
+    tagline: outil.tagline,
+    score: outil.score,
+    priceFrom: outil.priceFrom,
+    lastCheck: data.hero.lastCheck,
+  });
+  const faqSchema = getFaqPageSchema(data.faq);
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: "Accueil", url: "/" },
+    { name: "Outils", url: "/" },
+    { name: outil.name },
+  ]);
+
   return (
     <>
+      <JsonLd data={[reviewSchema, faqSchema, breadcrumbSchema]} />
       <Nav ctaHref="#cta-final" />
 
       {/* HERO */}

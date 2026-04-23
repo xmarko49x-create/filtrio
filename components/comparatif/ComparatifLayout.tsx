@@ -4,7 +4,9 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
 import { colorHex } from "@/components/ScoreRing";
+import { JsonLd } from "@/components/JsonLd";
 import { getOutil, type TailwindColor } from "@/lib/outils";
+import { getFaqPageSchema, getBreadcrumbSchema } from "@/lib/schema";
 
 /** Permet de définir un "outil fantôme" quand la fiche n'existe pas encore (Pika, Pictory…). */
 export interface PhantomOutil {
@@ -97,8 +99,17 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
 
   const cta = data.verdictFinal.ctaGagnant === "A" ? A : B;
 
+  // JSON-LD
+  const faqSchema = getFaqPageSchema(data.faq);
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: "Accueil", url: "/" },
+    { name: "Comparatifs", url: "/" },
+    { name: `${A.name} vs ${B.name}` },
+  ]);
+
   return (
     <>
+      <JsonLd data={[faqSchema, breadcrumbSchema]} />
       <Nav ctaHref="#verdict" />
 
       {/* HERO */}

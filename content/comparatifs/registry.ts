@@ -8,6 +8,8 @@ import { runwayVsPika } from "./runway-vs-pika";
 import { submagicVsCapcut } from "./submagic-vs-capcut";
 import { submagicVsDescript } from "./submagic-vs-descript";
 import { descriptVsRiverside } from "./descript-vs-riverside";
+import { vidiqVsTubebuddy } from "./vidiq-vs-tubebuddy";
+import { elevenlabsVsHeygen } from "./elevenlabs-vs-heygen";
 
 /**
  * Registre des comparatifs 1v1 (pas la meta-page alternatives-a-submagic,
@@ -23,7 +25,8 @@ export const COMPARATIF_REGISTRY: Record<string, ComparatifData> = {
   "submagic-vs-capcut": submagicVsCapcut,
   "submagic-vs-descript": submagicVsDescript,
   "descript-vs-riverside": descriptVsRiverside,
-  // vidiq-vs-tubebuddy, elevenlabs-vs-heygen — à porter plus tard
+  "vidiq-vs-tubebuddy": vidiqVsTubebuddy,
+  "elevenlabs-vs-heygen": elevenlabsVsHeygen,
 };
 
 export function getComparatifContent(slug: string): ComparatifData | undefined {

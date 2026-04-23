@@ -4,6 +4,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
 import ScoreRing, { colorHex } from "@/components/ScoreRing";
+import { TrackedAffiliateLink } from "@/components/TrackedAffiliateLink";
 import { getOutil, getOutilOrThrow, type TailwindColor } from "@/lib/outils";
 
 export interface FicheData {
@@ -405,13 +406,15 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
           <p className="text-xl text-slate-400 leading-relaxed mb-10 max-w-2xl mx-auto">
             {data.ctaFinal.sub}
           </p>
-          <a
+          <TrackedAffiliateLink
             href={outil.affiliateLink}
-            rel="sponsored nofollow"
+            outilSlug={outil.slug}
+            outilName={outil.name}
+            source="fiche"
             className={`inline-block bg-${c}-500 hover:bg-${c}-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg`}
           >
             {data.ctaFinal.buttonText} →
-          </a>
+          </TrackedAffiliateLink>
           <p className="text-xs text-slate-500 mt-6 max-w-lg mx-auto">
             Ce lien est affilié. Si tu t&apos;abonnes, on touche une commission —
             sans que cela change jamais notre classement.

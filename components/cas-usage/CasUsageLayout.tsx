@@ -4,6 +4,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
 import { colorHex } from "@/components/ScoreRing";
+import { TrackedAffiliateLink } from "@/components/TrackedAffiliateLink";
 import { getOutil, type TailwindColor } from "@/lib/outils";
 
 export interface OutilDansClassement {
@@ -264,13 +265,15 @@ export default function CasUsageLayout({ data }: { data: CasUsageData }) {
           <p className="text-xl text-slate-400 leading-relaxed mb-10 max-w-2xl mx-auto">
             {data.ctaFinal.paragraph}
           </p>
-          <a
+          <TrackedAffiliateLink
             href={gagnant.affiliateLink}
-            rel="sponsored nofollow"
+            outilSlug={gagnant.slug}
+            outilName={gagnant.name}
+            source="cas-usage"
             className={`inline-block bg-${c}-500 hover:bg-${c}-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg`}
           >
             {data.ctaFinal.buttonText} →
-          </a>
+          </TrackedAffiliateLink>
           <p className="text-xs text-slate-500 mt-6 max-w-lg mx-auto">
             Ce lien est affilié. Si tu t&apos;abonnes, on touche une commission
             — sans que cela change jamais notre classement.

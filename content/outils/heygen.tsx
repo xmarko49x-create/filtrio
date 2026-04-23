@@ -6,7 +6,7 @@ export const heygenFiche: FicheData = {
   hero: {
     h1: "HeyGen : l'avis complet en 2026",
     tagline:
-      "Plateforme d'avatars IA vidéo spécialisée dans le contenu marketing multilingue et la formation scalable. Clonage facial en 2 minutes, 500+ avatars, sync labiale adaptée par langue. Voici pour qui il vaut son prix.",
+      "Plateforme d'avatars IA vidéo spécialisée dans le contenu marketing multilingue et la formation scalable. Custom Digital Twins, 700+ Stock Video Avatars sur Creator, sync labiale Video Translation multilingue. Voici pour qui il vaut son prix.",
     badges: [
       { label: "Avatars IA réalistes", tone: "primary" },
       { label: "Doublage multilingue", tone: "accent" },
@@ -14,7 +14,7 @@ export const heygenFiche: FicheData = {
     ],
     origine: "USA",
     tempsLecture: 8,
-    lastCheck: "22/04/2026",
+    lastCheck: "23/04/2026",
   },
   verdict30s: [
     {
@@ -47,7 +47,7 @@ export const heygenFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan gratuit (Free) disponible. Creator à 29 $/mois (Photo Avatars illimités, fast video processing). Pro à 99 $/mois (faster processing, translation script edit). Business à 149 $/mois pour les équipes (+20 $/siège). Enterprise sur devis. Facturation en USD.",
+        "Plan Free disponible (3 vidéos/mois, vidéos jusqu'à 1 min, 720p). Creator à 29 $/mois en mensuel ou 24 $/mois en annuel (vidéos jusqu'à 30 min, 700+ Stock Video Avatars, voice cloning, 175+ langues, 1080p, sans watermark). Business à 149 $/mois (vidéos jusqu'à 60 min, 4K, seats additionnels à 20 $). Enterprise sur devis. Facturation en USD.",
     },
     {
       question: "Meilleure alternative ?",
@@ -126,14 +126,14 @@ export const heygenFiche: FicheData = {
       poids: 20,
       score: 7.0,
       commentaire:
-        "Plus cher que les outils voix-only. 29 $/mois minimum pour un usage sérieux (Creator), 99 $/mois pour Pro, 149 $/mois pour Business (équipes). Le rapport qualité/prix dépend du besoin : excellent si tu as vraiment besoin d'avatars, décevant si tu veux juste de la voix.",
+        "Plus cher que les outils voix-only. Creator à 29 $/mois en mensuel (ou 24 $/mois en annuel) pour un usage sérieux, Business à 149 $/mois pour les équipes (+20 $/seat). Le rapport qualité/prix dépend du besoin : excellent si tu as vraiment besoin d'avatars vidéo complets, décevant si tu veux juste de la voix.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
       poids: 20,
       score: 9.0,
       commentaire:
-        "Point fort. Génération d'avatars à partir d'un script, clonage facial à partir d'une vidéo de 2 min, doublage vidéo avec sync labiale adaptée à la langue, bibliothèque de 500+ avatars. Interactive avatar en temps réel sur plans pro.",
+        "Point fort. Génération vidéo par avatar à partir d'un script, Custom Digital Twins (1 à 5 selon le plan), Video Translation avec sync labiale, 500+ stock photo avatars sur Free et 700+ Stock Video Avatars sur Creator, voice cloning sur Creator+. Avatar IV pour générations étendues sur plans supérieurs.",
     },
     {
       label: "Interface et prise en main",
@@ -159,19 +159,19 @@ export const heygenFiche: FicheData = {
   ],
   fonctionnalites: [
     {
-      titre: "Avatars IA réalistes",
+      titre: "Avatars IA stock et custom",
       description:
-        "Plus de 500 avatars pré-conçus dans la bibliothèque, dont une quarantaine d'avatars \"premium\" très réalistes. Catégorisés par genre, âge, style, métier. Le choix de l'avatar conditionne fortement la crédibilité du rendu.",
+        "500+ stock photo avatars sur le plan Free, 700+ Stock Video Avatars débloqués sur Creator. Possibilité de créer un Custom Digital Twin (1 sur Creator, jusqu'à 5 sur Business). Le choix de l'avatar conditionne fortement la crédibilité du rendu.",
     },
     {
-      titre: "Clonage facial et vocal",
+      titre: "Custom Digital Twin",
       description:
-        "Avatar personnalisé à partir d'une vidéo de 2 min de toi. L'outil recrée ton visage, ta voix, tes expressions. Disponible sur plans Creator+, avec vérification d'identité obligatoire.",
+        "Avatar personnalisé à partir d'une captation vidéo de toi. L'outil recrée ton visage et tes expressions. Disponible dès Creator (1 twin) et Business (5 twins), avec vérification d'identité.",
     },
     {
-      titre: "Doublage vidéo multilingue",
+      titre: "Video Translation multilingue",
       description:
-        "Transforme une vidéo existante dans une autre langue en ajustant la sync labiale. 170+ langues supportées. La qualité varie selon la langue cible (excellent en EN/ES, bon en FR).",
+        "Transforme une vidéo existante dans une autre langue en ajustant la sync labiale. 175+ langues et dialectes supportés sur Creator (contre 30+ langues en trial sur Free). Qualité variable selon la langue cible.",
     },
     {
       titre: "Script-to-Video",
@@ -196,48 +196,46 @@ export const heygenFiche: FicheData = {
       prixSub: "Pour tester",
       cible: "Découverte de l'outil",
       features: [
-        "1 minute Avatar IV Gen",
-        "3 minutes Product Placement",
+        "3 videos per month",
+        "Videos up to 1-min",
+        "1 Custom Digital Twin",
         "Standard video processing",
-        "Point d'entrée pour tester l'outil",
+        "500+ stock photo avatars",
+        "720p video export",
+        "Trial access to Avatar IV, Agent, Video Translation (30+ languages)",
       ],
     },
     {
       nom: "Creator",
       prix: "29 $/mois",
-      prixSub: "Facturation USD",
+      prixSub: "Mensuel · ou 24 $/mois en annuel",
       cible: "Créateurs solo, marketeurs",
       features: [
+        "Videos up to 30-mins",
+        "1 Custom Digital Twin",
         "Unlimited Photo Avatars",
-        "Fast video processing",
-        "30 minutes Avatar IV Gen",
-        "30 minutes Product Placement",
-        "AI video generator · AI voice over",
-      ],
-    },
-    {
-      nom: "Pro",
-      prix: "99 $/mois",
-      prixSub: "Créateurs pros",
-      cible: "Création vidéo avancée",
-      features: [
-        "Tout Creator · Faster video processing",
-        "30 minutes Avatar IV Gen",
-        "30 minutes Product Placement",
-        "Edit & proofread translation script",
-        "Password protected URLs",
+        "700+ Stock Video Avatars",
+        "Voice cloning",
+        "175+ languages and dialects",
+        "Fast video processing · 1080p export",
+        "Brand kit · Watermark removal",
       ],
     },
     {
       nom: "Business",
       prix: "149 $/mois",
-      prixSub: "+20 $/siège supplémentaire",
+      prixSub: "+ 20 $ par siège supplémentaire",
       cible: "Équipes, agences",
       features: [
-        "Auto-reload credits",
-        "60 minutes Avatar IV Gen",
-        "Team templates · Invites & team management",
-        "Team Member 2FA Enforcement",
+        "Videos up to 60-mins",
+        "4K video export",
+        "Faster video processing",
+        "Extended video generation with Avatar IV",
+        "5x more Generative Usage",
+        "5 Custom Digital Twins",
+        "Edit & proofread translation script",
+        "Interactive Video (Quizzes, Links, Branching)",
+        "Integrations n8n, Make, Hubspot & Zapier",
       ],
     },
     {
@@ -246,10 +244,12 @@ export const heygenFiche: FicheData = {
       prixSub: "Organisations & grandes équipes",
       cible: "Studio-quality custom",
       features: [
+        "Unlimited videos · No video duration max",
+        "Fastest video processing",
+        "Multi-workspace control",
         "Proofreader seats for video translation",
         "Enterprise-grade security & privacy",
-        "Team Member MFA",
-        "Enterprise Community access",
+        "SCIM User Provisioning, SSO",
       ],
     },
   ],
@@ -292,7 +292,7 @@ export const heygenFiche: FicheData = {
     {
       question: "Peut-on cloner son propre visage ?",
       answer:
-        "Oui, sur les plans Creator+. 2 minutes de vidéo propre suffisent. Vérification d'identité obligatoire pour éviter les deepfakes. Le clonage prend quelques heures côté HeyGen. Résultat généralement très convaincant sur voix et expressions basiques.",
+        "Oui, via la fonctionnalité Custom Digital Twin : 1 twin inclus sur Creator, 5 twins sur Business. Le processus demande une captation vidéo propre et une vérification d'identité pour éviter les deepfakes. Le clonage prend quelques heures côté HeyGen. Résultat généralement convaincant sur voix et expressions basiques.",
     },
     {
       question: "La sync labiale fonctionne-t-elle bien en français ?",

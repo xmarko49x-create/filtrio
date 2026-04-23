@@ -6,22 +6,21 @@ export const tubebuddyFiche: FicheData = {
   hero: {
     h1: "TubeBuddy : l'avis complet en 2026",
     tagline:
-      "L'extension Chrome historique du SEO YouTube, depuis 2014. Tests A/B de miniatures, analyse concurrence, bulk edit. Voici pour qui elle vaut son prix, pour qui elle ne vaut pas.",
+      "L'extension historique du SEO YouTube. Tests A/B de miniatures, analyse concurrence, bulk edit. Voici pour qui elle vaut son prix, pour qui elle ne vaut pas.",
     badges: [
       { label: "SEO YouTube historique", tone: "primary" },
       { label: "Commission 50% récurrent", tone: "accent" },
       { label: "Tests A/B miniatures", tone: "neutral" },
     ],
     origine: "USA",
-    depuis: "2014",
     tempsLecture: 8,
-    lastCheck: "22/04/2026",
+    lastCheck: "23/04/2026",
   },
   verdict30s: [
     {
       question: "C'est quoi ?",
       answer:
-        "Extension Chrome pour YouTubeurs, lancée en 2014. Elle s'intègre directement à YouTube Studio et ajoute des outils d'optimisation : tags suggérés, analyse de mots-clés, optimisation de titres, test A/B de miniatures, analytics concurrent.",
+        "Extension pour YouTubeurs qui s'intègre directement à YouTube Studio et ajoute des outils d'optimisation : tags suggérés, analyse de mots-clés, optimisation de titres, test A/B de miniatures, analytics concurrent, bulk edit.",
     },
     {
       question: "Pour qui ?",
@@ -36,7 +35,7 @@ export const tubebuddyFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plans payants à partir de 12 $/mois · Facturation en USD · Voir les tarifs officiels pour le détail des offres.",
+        "Deux plans Creator License packages officiels en USD. Pro : 4,99 $/mois en mensuel ou 3,99 $/mois en annuel (économie de 20 %). Legend : 31,50 $/mois en mensuel ou 25,20 $/mois en annuel. Enterprise réservé aux businesses (sur devis). Pas de plan gratuit affiché actuellement sur la pricing page officielle.",
     },
     {
       question: "Meilleure alternative ?",
@@ -162,14 +161,42 @@ export const tubebuddyFiche: FicheData = {
   ],
   plans: [
     {
-      nom: "Plans TubeBuddy",
-      prix: "À partir de 12 $/mois",
-      cible: "YouTubeurs, chaînes en croissance, agences",
+      nom: "Pro",
+      prix: "3,99 $/mois",
+      prixSub: "Facturation annuelle · -20 % vs mensuel (4,99 $/mois)",
+      cible: "Nouveaux créateurs, démarrage",
       features: [
-        "Plans payants à partir de 12 $/mois",
-        "Facturation en USD",
-        "Détail des offres et fonctionnalités sur la page Tarifs de TubeBuddy",
-        "Tarifs susceptibles d'évoluer — vérifier sur le site officiel",
+        "Basic Video and Thumbnail Tools",
+        "Basic title and tag optimization",
+        "Content Strategy Tools (access de base)",
+        "Audience Understanding Tools",
+        "YouTube Shorts Linking",
+        "Topical Analysis",
+      ],
+    },
+    {
+      nom: "Legend",
+      prix: "25,20 $/mois",
+      prixSub: "Facturation annuelle · -20 % vs mensuel (31,50 $/mois)",
+      cible: "Créateurs sérieux et agences",
+      features: [
+        "Tout Pro inclus",
+        "Advanced reporting and analytics",
+        "Full search and SEO access",
+        "Bulk Processing / Editing Tools",
+        "A/B Testing (avancé)",
+        "Click Magnet, Opportunity Finder, Retention Analyzer",
+      ],
+    },
+    {
+      nom: "Enterprise",
+      prix: "Sur devis",
+      prixSub: "Pour brands et agences",
+      cible: "Businesses, multi-chaînes",
+      features: [
+        "Offre réservée aux businesses",
+        "Non disponible pour les creators individuels",
+        "Détails et tarifs auprès de l'équipe commerciale",
       ],
     },
   ],
@@ -214,24 +241,34 @@ export const tubebuddyFiche: FicheData = {
       ),
     },
     {
-      question: "Le plan gratuit est-il vraiment utile ?",
-      answer:
-        "Pour découvrir l'outil, oui. Pour un usage régulier, non : les limitations arrivent vite (tags limités, pas de tests A/B, analytics basiques). VidIQ propose un plan gratuit nettement plus généreux sur ce point.",
+      question: "Y a-t-il un plan gratuit ?",
+      answer: (
+        <>
+          La page Tarifs officielle n&apos;affiche actuellement que les plans
+          payants Pro et Legend (plus Enterprise pour businesses). Le plan
+          gratuit historique n&apos;est plus mis en avant dans l&apos;offre 2026.
+          Pour tester sans payer,{" "}
+          <Link href="/outils/vidiq" className="text-sky-400 hover:underline">
+            VidIQ
+          </Link>{" "}
+          conserve un plan Free récurrent nettement plus généreux sur ce volet.
+        </>
+      ),
     },
     {
-      question: "Le prix augmente-t-il avec la taille de ma chaîne ?",
+      question: "Pro ou Legend, lequel choisir ?",
       answer:
-        "Oui, c'est le point critique. TubeBuddy applique une tarification en partie liée à la taille de ta chaîne : plus elle grossit, plus l'abonnement monte. Les paliers exacts sont à vérifier sur la page Tarifs officielle.",
+        "Pro (3,99 $/mois en annuel) couvre les fondamentaux : tags, SEO de base, A/B testing limité. Legend (25,20 $/mois en annuel) débloque le reporting avancé, le bulk editing, l'analyse concurrentielle poussée, les tests A/B sans limitation. Pro suffit pour débuter ou pour une petite chaîne. Legend devient pertinent dès que tu veux industrialiser l'optimisation sur un catalogue important.",
     },
     {
       question: "Compatible avec Safari ou Opera ?",
       answer:
-        "Non. Extension officiellement supportée sur Chrome, Firefox et Edge. Safari et Opera ne sont pas couverts. Si tu travailles sur Mac Safari, il faut basculer sur Chrome pour utiliser TubeBuddy.",
+        "Extension principalement distribuée sur Chrome, Firefox et Edge. La compatibilité Safari et Opera n'est pas mise en avant par l'éditeur. À vérifier directement sur la page officielle avant installation si tu travailles sur ces navigateurs.",
     },
   ],
   ctaFinal: {
     headline: "Prêt à tester TubeBuddy ?",
-    sub: "Plans payants à partir de 12 $/mois (facturation USD). Détail des offres sur la page Tarifs officielle.",
+    sub: "Plan Pro à 3,99 $/mois en annuel (ou 4,99 $/mois en mensuel). Plan Legend à 25,20 $/mois en annuel. Facturation USD. Pas d'engagement, annulable à tout moment.",
     buttonText: "Essayer TubeBuddy",
   },
 };

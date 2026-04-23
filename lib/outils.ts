@@ -84,7 +84,7 @@ export const OUTILS: Outil[] = [
     color: "orange",
     tagline: "SEO YouTube",
     category: "seo-youtube",
-    priceFrom: "Plan gratuit + payant",
+    priceFrom: "À partir de 3,99 $/mois",
     freeTier: "",
     affiliateLink: "#aff-tubebuddy",
     ficheAvailable: true,

@@ -25,8 +25,10 @@ export const runwayVsPika: ComparatifData = {
     paragraphs: [
       <>
         <strong className="text-purple-400">Runway</strong> reste la référence
-        du marché avec Gen-3 Alpha, l&apos;écosystème VFX le plus complet
-        (inpainting, tracking, green screen IA), et une crédibilité studio.{" "}
+        du marché avec Gen-4 et Gen-4.5, Aleph, Acte-Deux, l&apos;écosystème
+        VFX le plus complet (inpainting, tracking, green screen IA) et
+        l&apos;intégration des modèles tiers majeurs (Veo 3.1, Sora, Kling
+        3.0 Pro). Crédibilité studio.{" "}
         <strong className="text-rose-400">Pika</strong> est plus abordable,
         plus simple à prendre en main, mais propose une qualité qui progresse
         rapidement sans atteindre le niveau Runway.
@@ -143,7 +145,7 @@ export const runwayVsPika: ComparatifData = {
     {
       question: "Quelle différence de qualité entre les deux en 2026 ?",
       answer:
-        "Runway Gen-3 Alpha reste mesurablement supérieur sur le réalisme, la cohérence temporelle et la qualité visuelle globale. Pika a fait d'énormes progrès en 2025-2026 mais garde un léger retard technique. L'écart se réduit progressivement.",
+        "Runway Gen-4.5 et Gen-4 restent mesurablement supérieurs sur le réalisme, la cohérence temporelle et la qualité visuelle globale. Pika a fait d'énormes progrès en 2025-2026 mais garde un léger retard technique. L'écart se réduit progressivement.",
     },
     {
       question: "Peut-on mélanger les deux dans un workflow ?",
@@ -153,7 +155,7 @@ export const runwayVsPika: ComparatifData = {
     {
       question: "Longueur maximale des vidéos générées ?",
       answer:
-        "5-10 secondes pour Runway Gen-3 Alpha, 3-5 secondes pour Pika selon la version. Limitation inhérente aux modèles de génération vidéo IA actuels. Pour des vidéos plus longues, il faut enchaîner plusieurs générations.",
+        "Quelques secondes par génération avec Gen-4 et Gen-4.5 de Runway, 3 à 5 secondes pour Pika selon la version. Limitation inhérente aux modèles de génération vidéo IA actuels. Pour des vidéos plus longues, il faut enchaîner plusieurs générations.",
     },
     {
       question: "Lequel est le plus utilisé par les pros ?",

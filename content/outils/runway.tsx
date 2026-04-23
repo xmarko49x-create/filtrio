@@ -6,7 +6,7 @@ export const runwayFiche: FicheData = {
   hero: {
     h1: "Runway : l'avis complet en 2026",
     tagline:
-      "Référence de la génération vidéo IA premium. Gen-3 Alpha, écosystème VFX complet, utilisé par les studios Hollywood. Voici pour qui il vaut son prix.",
+      "Référence de la génération vidéo IA premium. Gen-4, Gen-4.5 et Aleph maison, intégration Veo 3.1, Sora et Kling 3.0 Pro, écosystème VFX complet, utilisé par les studios Hollywood. Voici pour qui il vaut son prix.",
     badges: [
       { label: "Génération vidéo IA premium", tone: "primary" },
       { label: "VFX pro", tone: "accent" },
@@ -121,7 +121,7 @@ export const runwayFiche: FicheData = {
       poids: 25,
       score: 9.5,
       commentaire:
-        "Point fort absolu. Gen-3 Alpha est parmi les meilleurs modèles de génération vidéo IA disponibles au grand public en 2026. Qualité visuelle impressionnante pour des clips de 5-10 secondes. Sora (OpenAI) comparable quand accessible.",
+        "Point fort absolu. Gen-4 et Gen-4.5 sont parmi les meilleurs modèles de génération vidéo IA disponibles au grand public en 2026. Qualité visuelle impressionnante pour des clips courts. Intégration native Veo 3.1, Sora et Kling 3.0 Pro pour accéder aux autres modèles de pointe depuis la même plateforme.",
     },
     {
       label: "Interface et prise en main",
@@ -147,9 +147,9 @@ export const runwayFiche: FicheData = {
   ],
   fonctionnalites: [
     {
-      titre: "Gen-3 Alpha (text-to-video)",
+      titre: "Gen-4.5 et Gen-4 (text-to-video / image-to-video)",
       description:
-        "Modèle de pointe depuis 2024. Génère des clips de 5-10 secondes à partir d'un prompt texte. Qualité visuelle au-dessus de la moyenne du marché.",
+        "Modèles maison de pointe. Gen-4.5 pour text-to-video, Gen-4 pour image-to-video. Gen-4 Turbo disponible dès le plan Gratuit (image à vidéo uniquement). Qualité visuelle au-dessus de la moyenne du marché.",
     },
     {
       titre: "Image-to-video",
@@ -289,7 +289,7 @@ export const runwayFiche: FicheData = {
     {
       question: "Longueur maximale des vidéos générées ?",
       answer:
-        "5 à 10 secondes par génération Gen-3 Alpha. Pour des vidéos plus longues, il faut enchaîner plusieurs générations et les monter ensemble. Limitation inhérente à la technologie actuelle de génération vidéo IA, tous outils confondus.",
+        "Quelques secondes par génération avec les modèles Gen-4 et Gen-4.5. Pour des vidéos plus longues, il faut enchaîner plusieurs générations et les monter ensemble. Limitation inhérente à la technologie actuelle de génération vidéo IA, tous outils confondus.",
     },
     {
       question: "Prompts en français fonctionnent-ils ?",

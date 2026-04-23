@@ -80,6 +80,7 @@ export function getReviewSchema(params: {
   lastCheck: string;
 }) {
   // ratingValue doit être entre 1 et 10 (bestRating = 10)
+  const parsedOffer = buildOfferFromPriceFrom(params.priceFrom);
   return {
     "@context": "https://schema.org",
     "@type": "Review",
@@ -89,14 +90,7 @@ export function getReviewSchema(params: {
       applicationCategory: "MultimediaApplication",
       description: params.tagline,
       operatingSystem: "Web",
-      ...(params.priceFrom
-        ? {
-            offers: {
-              "@type": "Offer",
-              description: params.priceFrom,
-            },
-          }
-        : {}),
+      ...(parsedOffer ? { offers: parsedOffer } : {}),
     },
     reviewRating: {
       "@type": "Rating",
@@ -164,4 +158,33 @@ function lastCheckToIso(lastCheck: string): string {
   if (!match) return new Date().toISOString().split("T")[0];
   const [, dd, mm, yyyy] = match;
   return `${yyyy}-${mm}-${dd}`;
+}
+
+/**
+ * Essaie de parser un priceFrom type "À partir de 12 €/mois" ou "À partir
+ * de 3,99 $/mois" en Offer JSON-LD avec price + priceCurrency structurés
+ * (plus conforme à Google qu'une simple description texte).
+ *
+ * Retourne null pour les cas non parsables (ex : "Gratuit · Studio à 295 $
+ * en achat unique", "Plan gratuit + payant") — auquel cas pas d'Offer,
+ * ce qui reste valide côté Google.
+ */
+function buildOfferFromPriceFrom(
+  priceFrom: string | undefined,
+): Record<string, string> | null {
+  if (!priceFrom) return null;
+  // Pattern : "À partir de 12 €/mois", "À partir de 3,99 $/mois",
+  // "À partir de 16,58 €/mois", "À partir de 110 €/an"
+  const match = priceFrom.match(
+    /(\d+(?:[.,]\d+)?)\s*(€|\$)\s*\/\s*(mois|an)/i,
+  );
+  if (!match) return null;
+  const [, rawNumber, rawCurrency] = match;
+  const price = rawNumber.replace(",", ".");
+  const priceCurrency = rawCurrency === "€" ? "EUR" : "USD";
+  return {
+    "@type": "Offer",
+    price,
+    priceCurrency,
+  };
 }

@@ -107,7 +107,7 @@ export const runwayVsPika: ComparatifData = {
     {
       profil: "Créateur qui découvre la génération vidéo IA",
       description:
-        "Pas besoin de la qualité Gen-3 pour débuter. Pika est plus accessible, moins cher, bonne courbe d'apprentissage.",
+        "Pas besoin de la qualité Gen-4.5 pour débuter. Pika est plus accessible, moins cher, bonne courbe d'apprentissage.",
       gagnant: "B",
     },
     {

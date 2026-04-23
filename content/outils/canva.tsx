@@ -15,7 +15,7 @@ export const canvaFiche: FicheData = {
     origine: "Australie",
     langue: "Interface disponible en français",
     tempsLecture: 7,
-    lastCheck: "22/04/2026",
+    lastCheck: "23/04/2026",
   },
   verdict30s: [
     {

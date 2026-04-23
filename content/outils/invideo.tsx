@@ -260,6 +260,11 @@ export const invideoFiche: FicheData = {
   ],
   faq: [
     {
+      question: "invideo AI et invideo Studio, quelle différence ?",
+      answer:
+        "Deux produits distincts sous la même marque. invideo AI = plateforme de génération vidéo à crédits (200+ modèles IA intégrés, plans En plus à 17 $/mo annuel jusqu'à Élite à 900 $/mo). invideo Studio = éditeur vidéo traditionnel avec bibliothèque de modèles et générateur de scripts IA (plans Gratuit, Affaires à 15 $/mo annuel, Illimité à 30 $/mo annuel, avec lifetime Business à 399 $ et Unlimited à 1 099 $ one-time). Cette fiche couvre principalement invideo AI (l'offre mise en avant sur la page Tarification principale).",
+    },
+    {
       question: "InVideo ou HeyGen pour du contenu IA ?",
       answer: (
         <>

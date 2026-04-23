@@ -14,7 +14,7 @@ export const capcutFiche: FicheData = {
     ],
     origine: "Chine (ByteDance)",
     tempsLecture: 7,
-    lastCheck: "22/04/2026",
+    lastCheck: "23/04/2026",
   },
   verdict30s: [
     {
@@ -234,8 +234,8 @@ export const capcutFiche: FicheData = {
     },
     {
       nom: "Pro Équipes",
-      prix: "Offre dédiée",
-      prixSub: "Tarif selon région, sièges et fréquence de facturation",
+      prix: "17,99 €/poste/mois",
+      prixSub: "Mensuel · tarifs variables par région",
       cible: "Équipes et collaborations",
       features: [
         "Tout Pro inclus",

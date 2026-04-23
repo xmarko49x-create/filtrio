@@ -263,7 +263,7 @@ export const kapwingFiche: FicheData = {
           <Link href="/outils/veed" className="text-yellow-400 hover:underline">
             Veed
           </Link>{" "}
-          Lite à 10,75 €/mois plus polyvalent, ou{" "}
+          Creator à 10,75 €/mois plus polyvalent, ou{" "}
           <Link href="/outils/capcut" className="text-sky-400 hover:underline">
             CapCut
           </Link>{" "}

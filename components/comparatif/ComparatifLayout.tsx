@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
 import { colorHex } from "@/components/ScoreRing";
 import { JsonLd } from "@/components/JsonLd";
+import { AuthorByline } from "@/components/AuthorByline";
+import { AuthorBio } from "@/components/AuthorBio";
 import { getOutil, type TailwindColor } from "@/lib/outils";
 import { getFaqPageSchema, getBreadcrumbSchema } from "@/lib/schema";
 
@@ -125,15 +127,17 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
             {A.name} vs {B.name}
           </span>
         </div>
-        <div className="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 rounded-full px-4 py-1.5 text-xs text-slate-300 mb-6">
-          <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-          Mise à jour · {data.hero.lastCheck}
-        </div>
-        <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-6 tracking-tight">
+        <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-5 tracking-tight">
           <span className={`text-${A.color}-400`}>{A.name}</span> vs{" "}
           <span className={`text-${B.color}-400`}>{B.name}</span> :{" "}
           {data.hero.h1}
         </h1>
+        <div className="mb-6">
+          <AuthorByline
+            lastCheck={data.hero.lastCheck}
+            subtitle="Comparateur indépendant · Méthodologie en 6 critères"
+          />
+        </div>
         <p className="text-xl text-slate-400 leading-relaxed mb-8 max-w-3xl">
           {data.hero.tagline}
         </p>
@@ -330,6 +334,7 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
         </div>
       </section>
 
+      <AuthorBio />
       <Newsletter />
       <Footer />
     </>

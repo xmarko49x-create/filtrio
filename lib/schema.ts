@@ -8,10 +8,12 @@
  */
 
 import type { ReactNode } from "react";
+import { AUTHOR, SITE_LAUNCH_DATE } from "@/lib/author";
 
 const SITE_URL = "https://filtrio.fr";
 const SITE_NAME = "Filtrio";
-const AUTHOR_NAME = "Marc Devillers";
+const AUTHOR_NAME = AUTHOR.name;
+const AUTHOR_URL = `${SITE_URL}${AUTHOR.url}`;
 
 /* ---------- Utilitaires ---------- */
 
@@ -44,6 +46,7 @@ export function getOrganizationSchema() {
     founder: {
       "@type": "Person",
       name: AUTHOR_NAME,
+      url: AUTHOR_URL,
     },
     foundingDate: "2026",
     inLanguage: "fr-FR",
@@ -101,13 +104,15 @@ export function getReviewSchema(params: {
     author: {
       "@type": "Person",
       name: AUTHOR_NAME,
+      url: AUTHOR_URL,
     },
     publisher: {
       "@type": "Organization",
       name: SITE_NAME,
       url: SITE_URL,
     },
-    datePublished: lastCheckToIso(params.lastCheck),
+    datePublished: SITE_LAUNCH_DATE,
+    dateModified: lastCheckToIso(params.lastCheck),
   };
 }
 

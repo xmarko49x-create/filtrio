@@ -6,6 +6,8 @@ import Newsletter from "@/components/Newsletter";
 import ScoreRing, { colorHex } from "@/components/ScoreRing";
 import { TrackedAffiliateLink } from "@/components/TrackedAffiliateLink";
 import { JsonLd } from "@/components/JsonLd";
+import { AuthorByline } from "@/components/AuthorByline";
+import { AuthorBio } from "@/components/AuthorBio";
 import { getOutil, getOutilOrThrow, type TailwindColor } from "@/lib/outils";
 import {
   getReviewSchema,
@@ -111,6 +113,12 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
             <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-4 tracking-tight">
               {data.hero.h1}
             </h1>
+            <div className="mb-5">
+              <AuthorByline
+                lastCheck={data.hero.lastCheck}
+                subtitle="Comparateur indépendant · Méthodologie en 6 critères"
+              />
+            </div>
             <p className="text-xl text-slate-400 leading-relaxed mb-6">
               {data.hero.tagline}
             </p>
@@ -445,6 +453,7 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
         </div>
       </section>
 
+      <AuthorBio />
       <Newsletter />
       <Footer />
     </>

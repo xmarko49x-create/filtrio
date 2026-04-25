@@ -6,6 +6,8 @@ import Newsletter from "@/components/Newsletter";
 import { colorHex } from "@/components/ScoreRing";
 import { TrackedAffiliateLink } from "@/components/TrackedAffiliateLink";
 import { JsonLd } from "@/components/JsonLd";
+import { AuthorByline } from "@/components/AuthorByline";
+import { AuthorBio } from "@/components/AuthorBio";
 import { getOutil, type TailwindColor } from "@/lib/outils";
 import { getFaqPageSchema, getBreadcrumbSchema } from "@/lib/schema";
 
@@ -76,20 +78,19 @@ export default function CasUsageLayout({ data }: { data: CasUsageData }) {
           <span>›</span>
           <span>Cas d&apos;usage</span>
         </div>
-        <div className="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 rounded-full px-4 py-1.5 text-xs text-slate-300 mb-6">
-          <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-          Mise à jour · {data.hero.lastCheck}
-        </div>
-        <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-6 tracking-tight">
+        <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-5 tracking-tight">
           {data.hero.h1}
         </h1>
+        <div className="mb-6">
+          <AuthorByline
+            lastCheck={data.hero.lastCheck}
+            subtitle="Comparateur indépendant · Méthodologie en 6 critères"
+          />
+        </div>
         <p className="text-xl text-slate-400 leading-relaxed mb-8 max-w-3xl">
           {data.hero.tagline}
         </p>
         <div className="flex flex-wrap gap-6 text-sm text-slate-500 border-t border-slate-800 pt-6">
-          <div>
-            <span className="text-slate-400">Auteur :</span> Équipe Filtrio
-          </div>
           <div>
             <span className="text-slate-400">Temps de lecture :</span>{" "}
             {data.hero.tempsLecture} min
@@ -317,6 +318,7 @@ export default function CasUsageLayout({ data }: { data: CasUsageData }) {
         </div>
       </section>
 
+      <AuthorBio />
       <Newsletter />
       <Footer />
     </>

@@ -186,8 +186,9 @@ export const OUTILS: Outil[] = [
     category: "seo-youtube",
     priceFrom: "À partir de 16,58 €/mois",
     freeTier: "Plan gratuit disponible",
-    affiliateLink: "#aff-vidiq",
+    affiliateLink: "https://vidiq.com/filtrio",
     ficheAvailable: true,
+    commission: "15% récurrent (palier Associate, jusqu'à 25% selon volume)",
   },
   {
     slug: "heygen",

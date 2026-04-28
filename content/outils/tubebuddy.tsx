@@ -9,8 +9,8 @@ export const tubebuddyFiche: FicheData = {
       "L'extension historique du SEO YouTube. Tests A/B de miniatures, analyse concurrence, bulk edit. Voici pour qui elle vaut son prix, pour qui elle ne vaut pas.",
     badges: [
       { label: "SEO YouTube historique", tone: "primary" },
-      { label: "Commission 50% récurrent", tone: "accent" },
-      { label: "Tests A/B miniatures", tone: "neutral" },
+      { label: "Tests A/B miniatures", tone: "accent" },
+      { label: "Bulk edit massif", tone: "neutral" },
     ],
     origine: "USA",
     tempsLecture: 8,

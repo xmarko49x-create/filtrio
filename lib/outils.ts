@@ -88,7 +88,7 @@ export const OUTILS: Outil[] = [
     freeTier: "",
     affiliateLink: "#aff-tubebuddy",
     ficheAvailable: true,
-    commission: "50% récurrent",
+    commission: "15% récurrent jusqu'à 1 an (programme actuellement fermé aux nouveaux affiliés)",
   },
   {
     slug: "canva",

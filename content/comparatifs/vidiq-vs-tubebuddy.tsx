@@ -123,17 +123,18 @@ export const vidiqVsTubebuddy: ComparatifData = {
     },
   ],
   verdictFinal: {
-    headline: "En résumé.",
+    headline: "Pour la majorité des créateurs aujourd'hui, VidIQ est le meilleur point de départ.",
     paragraph: (
       <>
-        VidIQ si tu débutes, utilises l&apos;IA, ou travailles mobile-first.
-        TubeBuddy si tu es établi, testes beaucoup, ou gères plusieurs chaînes.
-        Les deux outils couvrent le même besoin avec des philosophies
-        complémentaires.
+        Plan gratuit récurrent vraiment utilisable, IA générative active,
+        recherche de niches, apps mobiles complètes. VidIQ couvre ce dont la
+        plupart des chaînes ont besoin pour grandir en 2026. TubeBuddy reste
+        pertinent si tu fais beaucoup de tests A/B de miniatures ou gères un
+        catalogue important. Sinon, commence par VidIQ.
       </>
     ),
-    ctaGagnant: "B",
-    ctaText: "Essayer TubeBuddy →",
+    ctaGagnant: "A",
+    ctaText: "Tester VidIQ →",
   },
   faq: [
     {

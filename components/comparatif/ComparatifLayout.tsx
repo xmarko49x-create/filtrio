@@ -100,15 +100,20 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
   const hexA = colorHex(A.color);
   const hexB = colorHex(B.color);
 
-  const cta = data.verdictFinal.ctaGagnant === "A" ? A : B;
-  // Récupère le vrai outil gagnant depuis le registre pour avoir
-  // son affiliateLink (les phantoms B sans fiche n'en ont pas).
-  const ctaOutil = cta.ficheAvailable ? getOutil(cta.slug) : undefined;
-  // Lien affilié exploitable uniquement si c'est un vrai URL externe.
-  // Les placeholders type "#aff-{slug}" sont traités comme absents.
-  const hasRealAffiliateLink =
-    !!ctaOutil &&
-    /^https?:\/\//.test(ctaOutil.affiliateLink);
+  // Outil "gagnant" du verdict final (CTA principal).
+  const winner = data.verdictFinal.ctaGagnant === "A" ? A : B;
+  // Outil "perdant" — affiché en CTA secondaire pour donner le choix au visiteur.
+  const loser = data.verdictFinal.ctaGagnant === "A" ? B : A;
+
+  // Helper : récupère un Outil du registre + détecte un lien affilié réel.
+  const ctaInfo = (slug: string, ficheAvailable: boolean) => {
+    const outil = ficheAvailable ? getOutil(slug) : undefined;
+    const hasRealAffiliateLink =
+      !!outil && /^https?:\/\//.test(outil.affiliateLink);
+    return { outil, hasRealAffiliateLink };
+  };
+  const winnerCta = ctaInfo(winner.slug, winner.ficheAvailable);
+  const loserCta = ctaInfo(loser.slug, loser.ficheAvailable);
 
   // JSON-LD
   const faqSchema = getFaqPageSchema(data.faq);
@@ -307,24 +312,48 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
           <p className="text-xl text-slate-400 leading-relaxed mb-10 max-w-2xl mx-auto">
             {data.verdictFinal.paragraph}
           </p>
-          {hasRealAffiliateLink && ctaOutil ? (
-            <TrackedAffiliateLink
-              href={ctaOutil.affiliateLink}
-              outilSlug={ctaOutil.slug}
-              outilName={ctaOutil.name}
-              source="comparatif"
-              className={`inline-block bg-${cta.color}-500 hover:bg-${cta.color}-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg`}
-            >
-              {data.verdictFinal.ctaText}
-            </TrackedAffiliateLink>
-          ) : (
-            <Link
-              href={`/outils/${cta.slug}`}
-              className={`inline-block bg-${cta.color}-500 hover:bg-${cta.color}-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg`}
-            >
-              {data.verdictFinal.ctaText}
-            </Link>
-          )}
+          <div className="flex flex-wrap gap-4 justify-center">
+            {/* CTA principal : le gagnant */}
+            {winnerCta.hasRealAffiliateLink && winnerCta.outil ? (
+              <TrackedAffiliateLink
+                href={winnerCta.outil.affiliateLink}
+                outilSlug={winnerCta.outil.slug}
+                outilName={winnerCta.outil.name}
+                source="comparatif"
+                className={`inline-block bg-${winner.color}-500 hover:bg-${winner.color}-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg`}
+              >
+                {data.verdictFinal.ctaText}
+              </TrackedAffiliateLink>
+            ) : (
+              <Link
+                href={`/outils/${winner.slug}`}
+                className={`inline-block bg-${winner.color}-500 hover:bg-${winner.color}-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg`}
+              >
+                {data.verdictFinal.ctaText}
+              </Link>
+            )}
+
+            {/* CTA secondaire : l'autre outil. Ne rien faire si pas de fiche dispo. */}
+            {loser.ficheAvailable &&
+              (loserCta.hasRealAffiliateLink && loserCta.outil ? (
+                <TrackedAffiliateLink
+                  href={loserCta.outil.affiliateLink}
+                  outilSlug={loserCta.outil.slug}
+                  outilName={loserCta.outil.name}
+                  source="comparatif"
+                  className={`inline-block border border-${loser.color}-500/40 hover:border-${loser.color}-500 text-${loser.color}-400 hover:text-${loser.color}-300 font-semibold px-8 py-4 rounded-xl transition text-lg`}
+                >
+                  Tester {loser.name}
+                </TrackedAffiliateLink>
+              ) : (
+                <Link
+                  href={`/outils/${loser.slug}`}
+                  className={`inline-block border border-${loser.color}-500/40 hover:border-${loser.color}-500 text-${loser.color}-400 hover:text-${loser.color}-300 font-semibold px-8 py-4 rounded-xl transition text-lg`}
+                >
+                  Voir {loser.name}
+                </Link>
+              ))}
+          </div>
         </div>
       </section>
 

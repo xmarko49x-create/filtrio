@@ -71,6 +71,15 @@ export default function HomePage() {
 
       {/* 3 ENTRÉES ACTIONNABLES */}
       <section className="max-w-6xl mx-auto px-6 pb-20">
+        <div className="mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">
+            Tu ne sais pas par où commencer ?
+          </h2>
+          <p className="text-lg text-slate-400 max-w-2xl">
+            Trois façons rapides de trouver l&apos;outil qu&apos;il te faut.
+            Pas besoin de tout lire.
+          </p>
+        </div>
         <div className="grid md:grid-cols-3 gap-4">
           <Link
             href="#comparatifs"

@@ -136,7 +136,7 @@ export const OUTILS: Outil[] = [
     category: "voix-ia",
     priceFrom: "À partir de 6 $/mois",
     freeTier: "Plan gratuit disponible",
-    affiliateLink: "#aff-elevenlabs",
+    affiliateLink: "https://try.elevenlabs.io/0rlozubpip1z",
     ficheAvailable: true,
     commission: "22% récurrent 12 mois",
   },

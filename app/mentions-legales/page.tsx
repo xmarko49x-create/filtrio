@@ -65,9 +65,8 @@ export default function MentionsLegalesPage() {
           <h2 className="text-2xl font-bold mb-4">Données personnelles</h2>
           <p className="text-slate-300 leading-relaxed mb-3">
             Filtrio ne collecte aucune donnée personnelle via des formulaires
-            publics au-delà de l&apos;adresse email si elle est volontairement
-            fournie pour la newsletter. Aucune revente, aucun partage à des
-            tiers à des fins commerciales.
+            publics. Aucune revente, aucun partage à des tiers à des fins
+            commerciales.
           </p>
           <p className="text-slate-300 leading-relaxed">
             Conformément au RGPD, tu peux demander à tout moment la

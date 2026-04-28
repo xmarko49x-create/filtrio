@@ -21,8 +21,8 @@ export default function Nav({ ctaHref = "#verdict" }: { ctaHref?: string }) {
             <Link href="/methode" className="hover:text-slate-100 transition">
               Méthode
             </Link>
-            <Link href="/#newsletter" className="hover:text-slate-100 transition">
-              Newsletter
+            <Link href="/a-propos" className="hover:text-slate-100 transition">
+              À propos
             </Link>
           </div>
         </div>

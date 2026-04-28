@@ -104,6 +104,11 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
   // Récupère le vrai outil gagnant depuis le registre pour avoir
   // son affiliateLink (les phantoms B sans fiche n'en ont pas).
   const ctaOutil = cta.ficheAvailable ? getOutil(cta.slug) : undefined;
+  // Lien affilié exploitable uniquement si c'est un vrai URL externe.
+  // Les placeholders type "#aff-{slug}" sont traités comme absents.
+  const hasRealAffiliateLink =
+    !!ctaOutil &&
+    /^https?:\/\//.test(ctaOutil.affiliateLink);
 
   // JSON-LD
   const faqSchema = getFaqPageSchema(data.faq);
@@ -302,7 +307,7 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
           <p className="text-xl text-slate-400 leading-relaxed mb-10 max-w-2xl mx-auto">
             {data.verdictFinal.paragraph}
           </p>
-          {ctaOutil ? (
+          {hasRealAffiliateLink && ctaOutil ? (
             <TrackedAffiliateLink
               href={ctaOutil.affiliateLink}
               outilSlug={ctaOutil.slug}

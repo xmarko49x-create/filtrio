@@ -277,19 +277,30 @@ export default function CasUsageLayout({ data }: { data: CasUsageData }) {
           <p className="text-xl text-slate-400 leading-relaxed mb-10 max-w-2xl mx-auto">
             {data.ctaFinal.paragraph}
           </p>
-          <TrackedAffiliateLink
-            href={gagnant.affiliateLink}
-            outilSlug={gagnant.slug}
-            outilName={gagnant.name}
-            source="cas-usage"
-            className={`inline-block bg-${c}-500 hover:bg-${c}-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg`}
-          >
-            {data.ctaFinal.buttonText} →
-          </TrackedAffiliateLink>
-          <p className="text-xs text-slate-500 mt-6 max-w-lg mx-auto">
-            Ce lien est affilié. Si tu t&apos;abonnes, on touche une commission
-            — sans que cela change jamais notre classement.
-          </p>
+          {/^https?:\/\//.test(gagnant.affiliateLink) ? (
+            <>
+              <TrackedAffiliateLink
+                href={gagnant.affiliateLink}
+                outilSlug={gagnant.slug}
+                outilName={gagnant.name}
+                source="cas-usage"
+                className={`inline-block bg-${c}-500 hover:bg-${c}-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg`}
+              >
+                {data.ctaFinal.buttonText} →
+              </TrackedAffiliateLink>
+              <p className="text-xs text-slate-500 mt-6 max-w-lg mx-auto">
+                Ce lien est affilié. Si tu t&apos;abonnes, on touche une
+                commission — sans que cela change jamais notre classement.
+              </p>
+            </>
+          ) : (
+            <Link
+              href={`/outils/${gagnant.slug}`}
+              className={`inline-block bg-${c}-500 hover:bg-${c}-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg`}
+            >
+              {data.ctaFinal.buttonText} →
+            </Link>
+          )}
         </div>
       </section>
 

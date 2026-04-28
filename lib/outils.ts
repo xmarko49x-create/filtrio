@@ -73,7 +73,7 @@ export const OUTILS: Outil[] = [
     category: "shorts",
     priceFrom: "À partir de 15 $/mois",
     freeTier: "Plan gratuit disponible",
-    affiliateLink: "#aff-opusclip",
+    affiliateLink: "https://www.opus.pro/?via=3e1380",
     ficheAvailable: true,
     commission: "25% récurrent 1 an",
   },

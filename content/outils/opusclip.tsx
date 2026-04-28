@@ -276,7 +276,7 @@ export const opusclipFiche: FicheData = {
         "Oui sur les plans payants supérieurs. Intégration avec Make, Zapier ou scripts custom pour industrialiser la génération. Particulièrement utile pour les agences et créateurs qui automatisent à grande échelle.",
     },
     {
-      question: "Quelle sortie pour le marché francophone ?",
+      question: "Quelle sortie pour le marché FR ?",
       answer: (
         <>
           Fonctionne correctement en FR (reconnaissance vocale et découpe IA).

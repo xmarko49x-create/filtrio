@@ -56,7 +56,7 @@ export const videoLongueEnShorts: CasUsageData = {
       label: "Qualité sous-titres FR",
       poids: 20,
       description:
-        "Précision, segmentation, gestion des accents. Pour un public francophone, critique.",
+        "Précision, segmentation, gestion des accents. Pour un public FR, critique.",
     },
     {
       label: "Recadrage 9:16 auto",

@@ -130,7 +130,7 @@ export const invideoFiche: FicheData = {
       poids: 15,
       score: 6.8,
       commentaire:
-        "Support anglais. Documentation traduite automatiquement. Peu de tutos YouTube FR (vs la richesse de Canva/CapCut). C'est un outil plus orienté marketeurs pros que créateurs amateurs francophones.",
+        "Support anglais. Documentation traduite automatiquement. Peu de tutos YouTube FR (vs la richesse de Canva/CapCut). C'est un outil plus orienté marketeurs pros que créateurs amateurs.",
     },
     {
       label: "Intégrations",

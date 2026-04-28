@@ -294,7 +294,7 @@ export const runwayFiche: FicheData = {
     {
       question: "Prompts en français fonctionnent-ils ?",
       answer:
-        "Oui, mais les résultats sont généralement meilleurs en anglais selon les retours utilisateurs. Le modèle a été entraîné principalement sur des prompts EN. Pour la qualité maximale, formuler les prompts en anglais même si tu es francophone.",
+        "Oui, mais les résultats sont généralement meilleurs en anglais selon les retours utilisateurs. Le modèle a été entraîné principalement sur des prompts EN. Pour la qualité maximale, formuler les prompts en anglais même si tu es français.",
     },
     {
       question: "Usage commercial autorisé ?",

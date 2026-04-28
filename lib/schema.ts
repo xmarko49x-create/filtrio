@@ -42,7 +42,7 @@ export function getOrganizationSchema() {
     url: SITE_URL,
     logo: `${SITE_URL}/icon`,
     description:
-      "Comparateur indépendant d'outils IA pour créateurs vidéo francophones. Analysés sans langue de bois, notés sur 6 critères concrets.",
+      "Comparateur indépendant d'outils IA pour créateurs vidéo. Analysés sans langue de bois, notés sur 6 critères concrets.",
     founder: {
       "@type": "Person",
       name: AUTHOR_NAME,
@@ -60,7 +60,7 @@ export function getWebsiteSchema() {
     name: SITE_NAME,
     url: SITE_URL,
     description:
-      "Comparateur indépendant d'outils IA pour créateurs vidéo francophones.",
+      "Comparateur indépendant d'outils IA pour créateurs vidéo.",
     inLanguage: "fr-FR",
     publisher: {
       "@type": "Organization",

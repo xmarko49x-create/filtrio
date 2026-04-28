@@ -64,7 +64,7 @@ export default function MethodePage() {
               [
                 "Support & confort FR",
                 "15 %",
-                "Documentation, ressources FR, support client, confort d'usage général pour un francophone.",
+                "Documentation, ressources FR, support client, confort d'usage général pour un utilisateur français.",
               ],
               [
                 "Intégrations",

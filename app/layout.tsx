@@ -5,24 +5,24 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://filtrio.fr"),
   title: {
-    default: "Filtrio — Comparateur d'outils IA pour créateurs vidéo francophones",
+    default: "Filtrio — Comparateur d'outils IA pour créateurs vidéo",
     template: "%s — Filtrio",
   },
   description:
-    "Un comparateur indépendant dédié aux créateurs vidéo francophones. Analysés sans langue de bois. Notés sur 6 critères concrets. Mis à jour régulièrement.",
+    "Un comparateur indépendant pour créateurs vidéo. Analysés sans langue de bois. Notés sur 6 critères concrets. Mis à jour régulièrement.",
   openGraph: {
     type: "website",
     locale: "fr_FR",
     siteName: "Filtrio",
-    title: "Filtrio — Comparateur d'outils IA pour créateurs vidéo francophones",
+    title: "Filtrio — Comparateur d'outils IA pour créateurs vidéo",
     description:
-      "Un comparateur indépendant dédié aux créateurs vidéo francophones. Analysés sans langue de bois.",
+      "Un comparateur indépendant pour créateurs vidéo. Analysés sans langue de bois.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Filtrio",
     description:
-      "Comparateur indépendant d'outils IA pour créateurs vidéo francophones.",
+      "Comparateur indépendant d'outils IA pour créateurs vidéo.",
   },
   alternates: {
     canonical: "/",

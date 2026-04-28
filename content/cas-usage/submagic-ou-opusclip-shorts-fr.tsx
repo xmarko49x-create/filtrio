@@ -41,7 +41,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
       label: "Qualité sous-titres FR",
       poids: 30,
       description:
-        "Sur un public francophone, la précision FR fait 80% de la perception de qualité.",
+        "Sur un public FR, la précision FR fait 80% de la perception de qualité.",
     },
     {
       label: "Automatisation (découpe auto)",

@@ -12,12 +12,12 @@ const AUTEUR = {
 export const metadata: Metadata = {
   title: "À propos de Filtrio — Comparateur d'outils IA pour créateurs vidéo",
   description:
-    "Filtrio est un comparateur indépendant d'outils IA pour créateurs vidéo francophones. Méthode de notation claire, transparence sur l'affiliation.",
+    "Filtrio est un comparateur indépendant d'outils IA pour créateurs vidéo. Méthode de notation claire, transparence sur l'affiliation.",
   alternates: { canonical: "/a-propos" },
   openGraph: {
     title: "À propos de Filtrio",
     description:
-      "Un comparateur d'outils IA pensé pour les créateurs vidéo francophones.",
+      "Un comparateur d'outils IA pensé pour les créateurs vidéo.",
     type: "profile",
   },
 };
@@ -34,13 +34,12 @@ export default function AProposPage() {
           À propos de Filtrio
         </div>
         <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-8 tracking-tight">
-          Un comparateur d&apos;outils IA pensé pour les créateurs vidéo
-          francophones.
+          Un comparateur d&apos;outils IA pensé pour les créateurs vidéo.
         </h1>
 
         <p className="text-lg text-slate-300 leading-relaxed mb-5">
-          Filtrio est un comparateur d&apos;outils IA pour créateurs vidéo
-          francophones. Le but du site est simple : aider à choisir plus vite
+          Filtrio est un comparateur d&apos;outils IA pour créateurs vidéo.
+          Le but du site est simple : aider à choisir plus vite
           le bon outil selon un besoin concret, avec des avis structurés, des
           comparatifs utiles et une méthode de notation claire.
         </p>
@@ -99,7 +98,7 @@ export default function AProposPage() {
         <p className="text-slate-400 leading-relaxed mb-6">
           L&apos;objectif n&apos;est pas de produire une note
           &laquo;&nbsp;scientifique&nbsp;&raquo; artificielle, mais un verdict
-          utile, cohérent et lisible pour un créateur francophone.
+          utile, cohérent et lisible pour un créateur vidéo.
         </p>
         <Link
           href="/methode"

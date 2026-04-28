@@ -102,7 +102,7 @@ export const vidiqFiche: FicheData = {
       </Link>
       )
     </>,
-    "Tu crées du contenu dans une niche très francophone (outils optimisés EN)",
+    "Tu crées du contenu dans une niche très FR (outils optimisés EN)",
     "Tu cherches un éditeur vidéo ou un outil de sous-titrage",
     "Tu as besoin d'un outil de gestion multi-chaînes poussé",
     "Tu veux un outil qui fonctionne sans extension navigateur",

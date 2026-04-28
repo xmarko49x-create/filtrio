@@ -46,7 +46,7 @@ export const submagicFiche: FicheData = {
     {
       question: "Est-ce qu'on le recommande ?",
       answer:
-        "Oui, pour beaucoup de créateurs francophones qui veulent un outil rapide, simple et efficace pour produire des shorts plus propres visuellement.",
+        "Oui, pour beaucoup de créateurs qui veulent un outil rapide, simple et efficace pour produire des shorts plus propres visuellement.",
     },
     {
       question: "Combien ?",
@@ -78,7 +78,7 @@ export const submagicFiche: FicheData = {
     "Tu fais du personal branding ou du contenu court régulier (TikTok, Reels, Shorts)",
     "Tu veux une interface simple, sans courbe d'apprentissage",
     "Tes sources sont déjà courtes à moyennes",
-    "Tu travailles en français ou ciblent une audience francophone",
+    "Tu travailles en français ou ciblent une audience FR",
     "Tu veux un outil qui te fait gagner du temps sur le sous-titrage",
   ],
   pasPourQui: [

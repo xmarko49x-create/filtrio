@@ -78,7 +78,7 @@ export const submagicVsDescript: ComparatifData = {
   ],
   porQuiA: [
     "Ton format principal est le short (TikTok, Reels, YouTube Shorts)",
-    "Tu vises un public francophone (précision FR mieux travaillée)",
+    "Tu vises un public FR (précision FR mieux travaillée)",
     "Tu veux des styles de sous-titres animés prêts sans effort",
     "Tes sources sont courtes (moins de 15 min)",
     "Tu ne veux pas apprendre un outil complexe",
@@ -92,7 +92,7 @@ export const submagicVsDescript: ComparatifData = {
   ],
   casUsage: [
     {
-      profil: "TikTokeur ou créateur Shorts francophone",
+      profil: "TikTokeur ou créateur Shorts FR",
       description:
         "Priorité à la qualité visuelle des sous-titres FR et à la rapidité de production. Descript est surdimensionné pour ce besoin.",
       gagnant: "A",

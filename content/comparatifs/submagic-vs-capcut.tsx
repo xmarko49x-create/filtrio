@@ -77,7 +77,7 @@ export const submagicVsCapcut: ComparatifData = {
   ],
   porQuiA: [
     "Tu produis régulièrement des shorts (3+ par semaine)",
-    "Tu vises un public francophone (précision FR plus travaillée)",
+    "Tu vises un public FR (précision FR plus travaillée)",
     "Tu veux des styles de sous-titres animés prêts, sans effort",
     "Tu as un budget de 12-23 €/mois à allouer (plans Starter ou Pro)",
     "Tu veux maximiser le rendement par short",

@@ -164,7 +164,7 @@ export const vidiqVsTubebuddy: ComparatifData = {
       question: "Lequel est le plus populaire en France ?",
       answer: (
         <>
-          Les deux sont largement utilisés par les YouTubeurs francophones.{" "}
+          Les deux sont largement utilisés par les YouTubeurs.{" "}
           <Link href="/outils/tubebuddy" className="text-orange-400 hover:underline">
             TubeBuddy
           </Link>{" "}

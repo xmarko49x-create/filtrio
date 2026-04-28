@@ -5,7 +5,7 @@ import Newsletter from "@/components/Newsletter";
 import PlateformeSection from "@/components/PlateformeSection";
 
 export const metadata: Metadata = {
-  title: "Outils IA pour YouTubeurs francophones en 2026",
+  title: "Outils IA pour YouTubeurs en 2026",
   description:
     "Sélection 2026 des meilleurs outils IA pour YouTubeurs : SEO, miniatures, voix off, édition long format, découpe en shorts. Analysés sur 6 critères.",
   alternates: { canonical: "/youtube" },
@@ -21,8 +21,7 @@ export default function YouTubePage() {
           Sélection YouTube · avril 2026
         </div>
         <h1 className="text-5xl md:text-6xl font-bold leading-[1.05] mb-6 tracking-tight">
-          Les outils IA pour <span className="text-red-400">YouTubeurs</span>{" "}
-          francophones.
+          Les outils IA pour <span className="text-red-400">YouTubeurs</span>.
         </h1>
         <p className="text-xl text-slate-400 leading-relaxed mb-4 max-w-3xl">
           Pour grandir sur YouTube aujourd&apos;hui, tu as besoin de 4 choses :

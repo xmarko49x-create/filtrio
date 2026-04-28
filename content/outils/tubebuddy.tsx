@@ -221,7 +221,7 @@ export const tubebuddyFiche: FicheData = {
     {
       question: "TubeBuddy fonctionne-t-il bien en français ?",
       answer:
-        "L'interface est traduite. Les données et suggestions de mots-clés sont nettement plus riches en anglais qu'en français. Pour une niche francophone, les suggestions restent utiles mais moins exhaustives. Support uniquement en EN.",
+        "L'interface est traduite. Les données et suggestions de mots-clés sont nettement plus riches en anglais qu'en français. Pour une niche FR, les suggestions restent utiles mais moins exhaustives. Support uniquement en EN.",
     },
     {
       question: "Quelle est la différence principale avec VidIQ ?",

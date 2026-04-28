@@ -188,7 +188,7 @@ export const elevenlabsVsHeygen: ComparatifData = {
     {
       question: "La qualité FR d'ElevenLabs est-elle vraiment supérieure ?",
       answer:
-        "Selon les retours publics et les comparaisons disponibles en ligne (Reddit, démos YouTube), oui — sur la naturalité du phrasé, la gestion des liaisons, l'intonation. HeyGen est correct pour du contenu corporate mais moins convaincant pour du narratif long. Le critère est audible pour une oreille francophone exigeante.",
+        "Selon les retours publics et les comparaisons disponibles en ligne (Reddit, démos YouTube), oui — sur la naturalité du phrasé, la gestion des liaisons, l'intonation. HeyGen est correct pour du contenu corporate mais moins convaincant pour du narratif long. Le critère est audible pour une oreille FR exigeante.",
     },
     {
       question: "Quel modèle économique choisir : crédits ou minutes ?",

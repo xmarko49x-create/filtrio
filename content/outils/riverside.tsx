@@ -137,7 +137,7 @@ export const riversideFiche: FicheData = {
       poids: 15,
       score: 7.0,
       commentaire:
-        "Support client en anglais principalement. Documentation traduite automatiquement, qualité correcte. Plusieurs tutos FR de la communauté podcasting francophone sur YouTube.",
+        "Support client en anglais principalement. Documentation traduite automatiquement, qualité correcte. Plusieurs tutos FR de la communauté podcasting FR sur YouTube.",
     },
     {
       label: "Intégrations",

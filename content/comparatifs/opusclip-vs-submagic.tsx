@@ -84,7 +84,7 @@ export const opusclipVsSubmagic: ComparatifData = {
   ],
   porQuiB: [
     "Tu tournes directement des contenus courts (face cam, Shorts)",
-    "Tu vises un public exclusivement francophone",
+    "Tu vises un public FR",
     "La qualité du sous-titre FR est ton critère #1",
     "Tu veux un rendu viral stylé sans retouches manuelles",
     "Tu fais du personal branding sur LinkedIn / TikTok / Reels",

@@ -49,8 +49,8 @@ export default function HomePage() {
           <span className="text-emerald-400">tes vidéos</span> ?
         </h1>
         <p className="text-xl text-slate-300 leading-relaxed mb-10 max-w-3xl">
-          Filtrio est un comparateur indépendant pour créateurs vidéo
-          francophones. Tu nous dis ton besoin, on te dit quel outil prendre.
+          Filtrio est un comparateur indépendant pour créateurs vidéo.
+          Tu nous dis ton besoin, on te dit quel outil prendre.
           Avec ses forces, ses limites et son prix.
         </p>
         <div className="flex flex-wrap gap-4">

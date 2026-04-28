@@ -5,7 +5,7 @@ import Newsletter from "@/components/Newsletter";
 import PlateformeSection from "@/components/PlateformeSection";
 
 export const metadata: Metadata = {
-  title: "Outils IA pour TikTok, Shorts et Reels francophones en 2026",
+  title: "Outils IA pour TikTok, Shorts et Reels en 2026",
   description:
     "Sélection 2026 des meilleurs outils IA pour créateurs TikTok/Shorts/Reels : sous-titres viraux FR, découpe auto, éditeur gratuit, voix IA.",
   alternates: { canonical: "/tiktok-shorts" },
@@ -22,8 +22,7 @@ export default function TikTokShortsPage() {
         </div>
         <h1 className="text-5xl md:text-6xl font-bold leading-[1.05] mb-6 tracking-tight">
           Les outils IA pour{" "}
-          <span className="text-amber-400">TikTok / Shorts / Reels</span>{" "}
-          francophones.
+          <span className="text-amber-400">TikTok / Shorts / Reels</span>.
         </h1>
         <p className="text-xl text-slate-400 leading-relaxed mb-4 max-w-3xl">
           Le short viral a son écosystème : sous-titres stylés, découpe auto,

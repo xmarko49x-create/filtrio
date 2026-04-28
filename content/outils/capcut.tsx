@@ -140,7 +140,7 @@ export const capcutFiche: FicheData = {
       poids: 15,
       score: 7.5,
       commentaire:
-        "Base de connaissances en français correcte. Support client limité (principalement via formulaires). Communauté francophone massive sur YouTube et TikTok avec tutos gratuits de qualité.",
+        "Base de connaissances en français correcte. Support client limité (principalement via formulaires). Communauté FR massive sur YouTube et TikTok avec tutos gratuits de qualité.",
     },
     {
       label: "Intégrations",
@@ -249,7 +249,7 @@ export const capcutFiche: FicheData = {
     {
       slug: "submagic",
       comment:
-        "Payant spécialisé sur les sous-titres viraux FR. Beaucoup plus stylé pour le rendu final, surtout sur audience francophone.",
+        "Payant spécialisé sur les sous-titres viraux FR. Beaucoup plus stylé pour le rendu final, surtout sur audience FR.",
     },
     {
       slug: "davinci",

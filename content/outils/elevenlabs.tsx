@@ -69,7 +69,7 @@ export const elevenlabsFiche: FicheData = {
       answer: (
         <>
           <strong className="text-teal-400">Oui</strong>, pour la majorité des
-          créateurs francophones qui veulent une voix IA naturelle et
+          créateurs qui veulent une voix IA naturelle et
           convaincante. C&apos;est l&apos;option de référence selon les retours
           publics.
         </>

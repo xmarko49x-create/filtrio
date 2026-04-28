@@ -68,7 +68,7 @@ export const canvaFiche: FicheData = {
           <strong className="text-pink-400">Oui</strong>, pour la majorité des
           créateurs qui ont besoin de design + contenu visuel sans skills pro.
           Interface FR native et plan gratuit riche en font le choix par défaut
-          des créateurs francophones.
+          des créateurs.
         </>
       ),
     },

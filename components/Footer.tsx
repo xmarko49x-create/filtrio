@@ -10,7 +10,7 @@ export default function Footer() {
               <span className="text-emerald-400">Filt</span>rio
             </div>
             <p className="text-sm text-slate-500">
-              Le comparateur des outils IA pour créateurs vidéo francophones.
+              Le comparateur des outils IA pour créateurs vidéo.
             </p>
           </div>
           <div>

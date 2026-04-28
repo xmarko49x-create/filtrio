@@ -165,7 +165,7 @@ export const runwayVsPika: ComparatifData = {
     {
       question: "Prompts en français fonctionnent-ils ?",
       answer:
-        "Les deux acceptent les prompts en français mais les résultats sont meilleurs en anglais. Modèles entraînés principalement sur des prompts EN. Pour la qualité maximale, formuler les prompts en anglais même en étant francophone.",
+        "Les deux acceptent les prompts en français mais les résultats sont meilleurs en anglais. Modèles entraînés principalement sur des prompts EN. Pour la qualité maximale, formuler les prompts en anglais même en étant français.",
     },
   ],
 };

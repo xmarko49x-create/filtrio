@@ -242,7 +242,7 @@ export const miniaturesYoutubeIa: CasUsageData = {
     {
       question: "Microsoft Designer vs Canva, quel est le vrai gap ?",
       answer:
-        "Canva a beaucoup plus de templates, un écosystème design complet, et une communauté francophone énorme. Microsoft Designer est plus brut mais avec DALL-E 3 intégré gratuit. Pour un débutant ou un budget zéro, Microsoft Designer est très correct. Pour un créateur régulier, Canva reste devant.",
+        "Canva a beaucoup plus de templates, un écosystème design complet, et une communauté FR énorme. Microsoft Designer est plus brut mais avec DALL-E 3 intégré gratuit. Pour un débutant ou un budget zéro, Microsoft Designer est très correct. Pour un créateur régulier, Canva reste devant.",
     },
     {
       question: "Peut-on utiliser l'IA pour générer 20 miniatures d'un coup ?",

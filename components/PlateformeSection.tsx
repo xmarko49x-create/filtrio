@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { OUTILS, type Outil } from "@/lib/outils";
+import { TrackedAffiliateLink } from "@/components/TrackedAffiliateLink";
 
 interface PlateformeSectionProps {
   plateforme: "YouTube" | "TikTok / Shorts";
@@ -9,6 +10,11 @@ interface PlateformeSectionProps {
   comparatifsPertinents: { slug: string; titre: string; description: string }[];
   /** Slugs des cas d'usage pertinents. */
   casUsagePertinents: { slug: string; titre: string; description: string }[];
+}
+
+/** Détecte un vrai lien affilié vs un placeholder type `#aff-...`. */
+function hasRealAffiliateLink(o: Outil): boolean {
+  return /^https?:\/\//.test(o.affiliateLink);
 }
 
 export default function PlateformeSection({
@@ -39,17 +45,40 @@ export default function PlateformeSection({
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {outils.map((o) =>
-              o.ficheAvailable ? (
-                <Link
+            {outils.map((o) => {
+              const showTester = o.ficheAvailable && hasRealAffiliateLink(o);
+              if (!o.ficheAvailable) {
+                return (
+                  <div
+                    key={o.slug}
+                    className="p-6 bg-slate-900/60 border border-slate-800 rounded-xl opacity-70"
+                  >
+                    <div className="flex justify-between items-start mb-3">
+                      <h3 className="text-xl font-bold text-slate-300">
+                        {o.name}
+                      </h3>
+                      <span className="text-xs bg-slate-800 text-slate-500 px-2 py-0.5 rounded">
+                        Fiche à venir
+                      </span>
+                    </div>
+                    <div className="text-sm text-slate-400 mb-4">{o.tagline}</div>
+                    <div className="flex flex-wrap gap-2 text-xs text-slate-500">
+                      {o.priceFrom && (
+                        <span className="bg-slate-800 px-2 py-0.5 rounded">
+                          {o.priceFrom}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                );
+              }
+              return (
+                <div
                   key={o.slug}
-                  href={`/outils/${o.slug}`}
-                  className="p-6 bg-slate-900 border border-slate-800 rounded-xl hover:border-emerald-500/40 transition group"
+                  className="p-6 bg-slate-900 border border-slate-800 rounded-xl hover:border-emerald-500/40 transition group flex flex-col"
                 >
                   <div className="flex justify-between items-start mb-3">
-                    <h3
-                      className={`text-xl font-bold group-hover:text-${o.color}-400 transition`}
-                    >
+                    <h3 className={`text-xl font-bold text-${o.color}-400`}>
                       {o.name}
                     </h3>
                     <span className={`text-${o.color}-400 font-bold`}>
@@ -57,7 +86,7 @@ export default function PlateformeSection({
                     </span>
                   </div>
                   <div className="text-sm text-slate-400 mb-4">{o.tagline}</div>
-                  <div className="flex flex-wrap gap-2 text-xs text-slate-500">
+                  <div className="flex flex-wrap gap-2 text-xs text-slate-500 mb-5">
                     {o.priceFrom && (
                       <span className="bg-slate-800 px-2 py-0.5 rounded">
                         {o.priceFrom}
@@ -69,31 +98,28 @@ export default function PlateformeSection({
                       </span>
                     )}
                   </div>
-                </Link>
-              ) : (
-                <div
-                  key={o.slug}
-                  className="p-6 bg-slate-900/60 border border-slate-800 rounded-xl opacity-70"
-                >
-                  <div className="flex justify-between items-start mb-3">
-                    <h3 className="text-xl font-bold text-slate-300">
-                      {o.name}
-                    </h3>
-                    <span className="text-xs bg-slate-800 text-slate-500 px-2 py-0.5 rounded">
-                      Fiche à venir
-                    </span>
-                  </div>
-                  <div className="text-sm text-slate-400 mb-4">{o.tagline}</div>
-                  <div className="flex flex-wrap gap-2 text-xs text-slate-500">
-                    {o.priceFrom && (
-                      <span className="bg-slate-800 px-2 py-0.5 rounded">
-                        {o.priceFrom}
-                      </span>
+                  <div className="mt-auto flex flex-wrap gap-2">
+                    <Link
+                      href={`/outils/${o.slug}`}
+                      className="text-sm font-medium border border-slate-700 hover:border-slate-500 text-slate-200 px-4 py-2 rounded-lg transition"
+                    >
+                      Voir la fiche
+                    </Link>
+                    {showTester && (
+                      <TrackedAffiliateLink
+                        href={o.affiliateLink}
+                        outilSlug={o.slug}
+                        outilName={o.name}
+                        source="plateforme"
+                        className={`text-sm font-semibold bg-${o.color}-500 hover:bg-${o.color}-400 text-slate-950 px-4 py-2 rounded-lg transition`}
+                      >
+                        Tester {o.name}
+                      </TrackedAffiliateLink>
                     )}
                   </div>
                 </div>
-              ),
-            )}
+              );
+            })}
           </div>
         </div>
       </section>

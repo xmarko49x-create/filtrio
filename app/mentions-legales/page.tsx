@@ -99,7 +99,7 @@ export default function MentionsLegalesPage() {
             signifie que Filtrio peut recevoir une commission si un visiteur
             s&apos;inscrit via ces liens, sans coût supplémentaire pour le
             visiteur. La rémunération affiliée ne biaise pas le classement
-            éditorial des outils — les scores sont attribués avant tout calcul
+            éditorial des outils. Les scores sont attribués avant tout calcul
             de commission. Plus de détails sur la{" "}
             <a
               href="/a-propos#transparence"
@@ -123,8 +123,8 @@ export default function MentionsLegalesPage() {
               page Méthode
             </a>
             . Les informations sont fournies à titre indicatif. Les tarifs,
-            fonctionnalités et disponibilités des outils cités peuvent évoluer
-            — il est recommandé de vérifier directement sur le site officiel de
+            fonctionnalités et disponibilités des outils cités peuvent évoluer.
+            Il est recommandé de vérifier directement sur le site officiel de
             chaque outil avant toute décision d&apos;achat.
           </p>
         </section>

@@ -6,7 +6,7 @@ interface TrackedAffiliateLinkProps {
   href: string;
   outilSlug: string;
   outilName: string;
-  source: "fiche" | "cas-usage" | "comparatif";
+  source: "fiche" | "cas-usage" | "comparatif" | "plateforme" | "home";
   className?: string;
   children: React.ReactNode;
 }

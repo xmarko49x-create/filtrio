@@ -7,6 +7,7 @@ import { colorHex } from "@/components/ScoreRing";
 import { JsonLd } from "@/components/JsonLd";
 import { AuthorByline } from "@/components/AuthorByline";
 import { AuthorBio } from "@/components/AuthorBio";
+import { TrackedAffiliateLink } from "@/components/TrackedAffiliateLink";
 import { getOutil, type TailwindColor } from "@/lib/outils";
 import { getFaqPageSchema, getBreadcrumbSchema } from "@/lib/schema";
 
@@ -100,6 +101,9 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
   const hexB = colorHex(B.color);
 
   const cta = data.verdictFinal.ctaGagnant === "A" ? A : B;
+  // Récupère le vrai outil gagnant depuis le registre pour avoir
+  // son affiliateLink (les phantoms B sans fiche n'en ont pas).
+  const ctaOutil = cta.ficheAvailable ? getOutil(cta.slug) : undefined;
 
   // JSON-LD
   const faqSchema = getFaqPageSchema(data.faq);
@@ -298,13 +302,24 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
           <p className="text-xl text-slate-400 leading-relaxed mb-10 max-w-2xl mx-auto">
             {data.verdictFinal.paragraph}
           </p>
-          <a
-            href="#"
-            rel="sponsored nofollow"
-            className={`inline-block bg-${cta.color}-500 hover:bg-${cta.color}-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg`}
-          >
-            {data.verdictFinal.ctaText}
-          </a>
+          {ctaOutil ? (
+            <TrackedAffiliateLink
+              href={ctaOutil.affiliateLink}
+              outilSlug={ctaOutil.slug}
+              outilName={ctaOutil.name}
+              source="comparatif"
+              className={`inline-block bg-${cta.color}-500 hover:bg-${cta.color}-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg`}
+            >
+              {data.verdictFinal.ctaText}
+            </TrackedAffiliateLink>
+          ) : (
+            <Link
+              href={`/outils/${cta.slug}`}
+              className={`inline-block bg-${cta.color}-500 hover:bg-${cta.color}-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg`}
+            >
+              {data.verdictFinal.ctaText}
+            </Link>
+          )}
         </div>
       </section>
 

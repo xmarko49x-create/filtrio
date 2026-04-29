@@ -59,6 +59,9 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
   const outil = getOutilOrThrow(data.slug);
   const hex = colorHex(outil.color);
   const c = outil.color;
+  // Vrai lien affilié vs placeholder type "#aff-...".
+  // Détermine si on peut afficher des CTA trackés inline (hero + après verdict).
+  const hasRealAffiliateLink = /^https?:\/\//.test(outil.affiliateLink);
 
   // JSON-LD pour rich snippets Google
   const reviewSchema = getReviewSchema({
@@ -142,12 +145,24 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
             </div>
 
             <div className="flex gap-4 flex-wrap">
-              <Link
-                href="#cta-final"
-                className={`bg-${c}-500 hover:bg-${c}-400 text-slate-950 font-semibold px-6 py-3 rounded-lg transition`}
-              >
-                Essayer {outil.name}
-              </Link>
+              {hasRealAffiliateLink ? (
+                <TrackedAffiliateLink
+                  href={outil.affiliateLink}
+                  outilSlug={outil.slug}
+                  outilName={outil.name}
+                  source="fiche"
+                  className={`bg-${c}-500 hover:bg-${c}-400 text-slate-950 font-semibold px-6 py-3 rounded-lg transition`}
+                >
+                  Essayer {outil.name}
+                </TrackedAffiliateLink>
+              ) : (
+                <Link
+                  href="#cta-final"
+                  className={`bg-${c}-500 hover:bg-${c}-400 text-slate-950 font-semibold px-6 py-3 rounded-lg transition`}
+                >
+                  Essayer {outil.name}
+                </Link>
+              )}
               <Link
                 href="#verdict"
                 className="border border-slate-700 hover:border-slate-600 px-6 py-3 rounded-lg transition"
@@ -188,6 +203,25 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
               </div>
             ))}
           </div>
+
+          {hasRealAffiliateLink && (
+            <div
+              className={`mt-8 pt-8 border-t border-${c}-500/20 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4`}
+            >
+              <p className="text-sm text-slate-300">
+                Convaincu ? Tu peux tester {outil.name} dès maintenant.
+              </p>
+              <TrackedAffiliateLink
+                href={outil.affiliateLink}
+                outilSlug={outil.slug}
+                outilName={outil.name}
+                source="fiche"
+                className={`inline-block bg-${c}-500 hover:bg-${c}-400 text-slate-950 font-semibold px-6 py-3 rounded-lg transition whitespace-nowrap`}
+              >
+                Tester {outil.name} →
+              </TrackedAffiliateLink>
+            </div>
+          )}
         </div>
       </section>
 
@@ -434,19 +468,36 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
           <p className="text-xl text-slate-400 leading-relaxed mb-10 max-w-2xl mx-auto">
             {data.ctaFinal.sub}
           </p>
-          <TrackedAffiliateLink
-            href={outil.affiliateLink}
-            outilSlug={outil.slug}
-            outilName={outil.name}
-            source="fiche"
-            className={`inline-block bg-${c}-500 hover:bg-${c}-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg`}
-          >
-            {data.ctaFinal.buttonText} →
-          </TrackedAffiliateLink>
-          <p className="text-xs text-slate-500 mt-6 max-w-lg mx-auto">
-            Ce lien est affilié. Si tu t&apos;abonnes, on touche une commission —
-            sans que cela change jamais notre classement.
-          </p>
+          {hasRealAffiliateLink ? (
+            <>
+              <TrackedAffiliateLink
+                href={outil.affiliateLink}
+                outilSlug={outil.slug}
+                outilName={outil.name}
+                source="fiche"
+                className={`inline-block bg-${c}-500 hover:bg-${c}-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg`}
+              >
+                {data.ctaFinal.buttonText} →
+              </TrackedAffiliateLink>
+              <p className="text-xs text-slate-500 mt-6 max-w-lg mx-auto">
+                Ce lien est affilié. Si tu t&apos;abonnes, on touche une
+                commission, sans que cela change jamais notre classement.
+              </p>
+            </>
+          ) : (
+            <>
+              <Link
+                href="/outils"
+                className={`inline-block bg-${c}-500 hover:bg-${c}-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg`}
+              >
+                Voir tous les outils analysés →
+              </Link>
+              <p className="text-xs text-slate-500 mt-6 max-w-lg mx-auto">
+                Pas de lien direct vers {outil.name} ici. Compare-le avec les
+                autres outils de la même catégorie sur Filtrio.
+              </p>
+            </>
+          )}
         </div>
       </section>
 

@@ -34,6 +34,19 @@ export type OutilCategorie =
   | "design"
   | "script-to-video";
 
+/** Libellés lisibles des catégories pour l'UI (page /outils notamment). */
+export const CATEGORIE_LABELS: Record<OutilCategorie, string> = {
+  shorts: "Shorts & Clips",
+  "seo-youtube": "SEO YouTube",
+  "voix-ia": "Voix IA",
+  "avatar-ia": "Avatars IA",
+  "long-format": "Long format",
+  editeur: "Éditeur vidéo",
+  "generation-video": "Génération vidéo IA",
+  design: "Design",
+  "script-to-video": "Script-to-video",
+};
+
 export interface Outil {
   slug: string;
   name: string;

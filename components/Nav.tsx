@@ -9,6 +9,9 @@ export default function Nav({ ctaHref = "#verdict" }: { ctaHref?: string }) {
             <span className="text-emerald-400">Filt</span>rio
           </Link>
           <div className="hidden md:flex gap-6 text-sm text-slate-400">
+            <Link href="/outils" className="hover:text-slate-100 transition">
+              Outils
+            </Link>
             <Link href="/youtube" className="hover:text-slate-100 transition">
               YouTube
             </Link>
@@ -20,9 +23,6 @@ export default function Nav({ ctaHref = "#verdict" }: { ctaHref?: string }) {
             </Link>
             <Link href="/methode" className="hover:text-slate-100 transition">
               Méthode
-            </Link>
-            <Link href="/a-propos" className="hover:text-slate-100 transition">
-              À propos
             </Link>
           </div>
         </div>

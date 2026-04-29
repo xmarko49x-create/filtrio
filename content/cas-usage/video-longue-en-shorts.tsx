@@ -194,8 +194,8 @@ export const videoLongueEnShorts: CasUsageData = {
       question: "Tu veux un rendu FR premium dès la sortie ?",
       reponse: (
         <>
-          Combo <strong className="text-emerald-400">OpusClip</strong> pour la découpe +{" "}
-          <strong className="text-amber-400">Submagic</strong> pour le polish final. Un combo
+          Combo <strong className="text-emerald-400">OpusClip</strong>{" "}pour la découpe +{" "}
+          <strong className="text-amber-400">Submagic</strong>{" "}pour le polish final. Un combo
           économique pour un rendu pro complet.
         </>
       ),

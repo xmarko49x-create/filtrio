@@ -181,7 +181,7 @@ export const sousTitrerTiktok: CasUsageData = {
       question: "Budget zéro ?",
       reponse: (
         <>
-          Si oui → <strong className="text-sky-400">CapCut</strong> gratuit.
+          Si oui → <strong className="text-sky-400">CapCut</strong>{" "}gratuit.
           Personnalisation manuelle requise pour le rendu stylé.
         </>
       ),
@@ -191,9 +191,9 @@ export const sousTitrerTiktok: CasUsageData = {
       reponse: (
         <>
           Si oui → Combo{" "}
-          <strong className="text-emerald-400">OpusClip</strong> (pour découper)
+          <strong className="text-emerald-400">OpusClip</strong>{" "}(pour découper)
           +{" "}
-          <strong className="text-amber-400">Submagic</strong> (pour le rendu
+          <strong className="text-amber-400">Submagic</strong>{" "}(pour le rendu
           final).
         </>
       ),

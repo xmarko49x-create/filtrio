@@ -17,12 +17,14 @@ export const vidiqVsTubebuddy: ComparatifData = {
       "VidIQ pour l'IA et les débutants. TubeBuddy pour les tests A/B et les chaînes établies.",
     paragraphs: [
       <>
-        <strong className="text-sky-400">VidIQ</strong> mise sur l&apos;IA
-        générative, l&apos;analyse de tendances et un plan gratuit vraiment
-        utile. Plus moderne, plus accessible pour démarrer.{" "}
-        <strong className="text-orange-400">TubeBuddy</strong> mise sur la
-        maturité, les tests A/B de miniatures et les outils d&apos;analyse
-        concurrentielle. Plus ancré dans une approche analytique.
+        <strong className="text-sky-400">VidIQ</strong>{" "}
+        mise sur l&apos;IA générative, l&apos;analyse de tendances et un
+        plan gratuit vraiment utile. Plus moderne, plus accessible pour
+        démarrer.{" "}
+        <strong className="text-orange-400">TubeBuddy</strong>{" "}
+        mise sur la maturité, les tests A/B de miniatures et les outils
+        d&apos;analyse concurrentielle. Plus ancré dans une approche
+        analytique.
       </>,
       <>
         Ils couvrent des besoins similaires mais avec des philosophies

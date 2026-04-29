@@ -17,10 +17,10 @@ export const veedVsKapwing: ComparatifData = {
       "Veed pour solo et petites équipes. Kapwing pour workflow collaboratif intensif.",
     paragraphs: [
       <>
-        <strong className="text-yellow-400">Veed</strong> couvre mieux les
+        <strong className="text-yellow-400">Veed</strong>{" "}couvre mieux les
         usages individuels avec un rapport qualité/prix supérieur à
         l&apos;entrée (12 $/mois).{" "}
-        <strong className="text-green-400">Kapwing</strong> justifie son tarif
+        <strong className="text-green-400">Kapwing</strong>{" "}justifie son tarif
         Business (50 $/mois/user) si la collaboration temps réel est au cœur du
         workflow.
       </>,

@@ -17,11 +17,11 @@ export const submagicVsCapcut: ComparatifData = {
       "Submagic pour qui veut des shorts léchés. CapCut pour qui veut tout faire sans payer.",
     paragraphs: [
       <>
-        <strong className="text-amber-400">Submagic</strong> est une option
+        <strong className="text-amber-400">Submagic</strong>{" "}est une option
         logique si ta priorité est la qualité visuelle des sous-titres en
         français, la régularité de production et le gain de temps sur les
         shorts. Ses styles animés font la différence visuellement.{" "}
-        <strong className="text-sky-400">CapCut</strong> est un choix solide si
+        <strong className="text-sky-400">CapCut</strong>{" "}est un choix solide si
         tu débutes, si ton budget est zéro, ou si tu veux un éditeur vidéo
         complet en plus du sous-titrage.
       </>,

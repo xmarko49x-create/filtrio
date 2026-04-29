@@ -17,9 +17,9 @@ export const descriptVsRiverside: ComparatifData = {
       "Descript pour éditer. Riverside pour enregistrer. Beaucoup de pros utilisent les deux.",
     paragraphs: [
       <>
-        <strong className="text-violet-400">Descript</strong> est imbattable en
+        <strong className="text-violet-400">Descript</strong>{" "}est imbattable en
         post-production avec son édition textuelle unique.{" "}
-        <strong className="text-indigo-400">Riverside</strong> est imbattable
+        <strong className="text-indigo-400">Riverside</strong>{" "}est imbattable
         en enregistrement à distance avec sa qualité locale séparée par
         intervenant. Depuis le rachat de Squadcast par Descript en 2023, les
         deux se chevauchent davantage, mais chacun garde son territoire de
@@ -129,8 +129,8 @@ export const descriptVsRiverside: ComparatifData = {
         Descript si tu passes plus de temps à éditer qu&apos;à enregistrer.
         Riverside si tu reçois des invités à distance régulièrement. Beaucoup
         de podcasteurs pros utilisent les deux en complément :{" "}
-        <strong className="text-indigo-400">Riverside</strong> pour la capture,{" "}
-        <strong className="text-violet-400">Descript</strong> pour le montage.
+        <strong className="text-indigo-400">Riverside</strong>{" "}pour la capture,{" "}
+        <strong className="text-violet-400">Descript</strong>{" "}pour le montage.
       </>
     ),
     ctaGagnant: "A",

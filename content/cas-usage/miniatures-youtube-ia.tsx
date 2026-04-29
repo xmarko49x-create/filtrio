@@ -197,7 +197,7 @@ export const miniaturesYoutubeIa: CasUsageData = {
       reponse: (
         <>
           Si oui →{" "}
-          <strong className="text-sky-400">Microsoft Designer</strong> avec
+          <strong className="text-sky-400">Microsoft Designer</strong>{" "}avec
           DALL-E 3 intégré. Rendu correct, 100% gratuit.
         </>
       ),
@@ -206,7 +206,7 @@ export const miniaturesYoutubeIa: CasUsageData = {
       question: "Tu veux de l'IA image très avancée ?",
       reponse: (
         <>
-          Si oui → <strong className="text-purple-400">Midjourney</strong> pour
+          Si oui → <strong className="text-purple-400">Midjourney</strong>{" "}pour
           le visuel, puis Canva pour ajouter texte/composition. Deux outils,
           workflow plus long.
         </>
@@ -216,8 +216,8 @@ export const miniaturesYoutubeIa: CasUsageData = {
       question: "Tu veux aussi tester A/B tes miniatures ?",
       reponse: (
         <>
-          Combo <strong className="text-pink-400">Canva</strong> (créer) +{" "}
-          <strong className="text-orange-400">TubeBuddy</strong> (tester). ROI
+          Combo <strong className="text-pink-400">Canva</strong>{" "}(créer) +{" "}
+          <strong className="text-orange-400">TubeBuddy</strong>{" "}(tester). ROI
           CTR mesurable.
         </>
       ),

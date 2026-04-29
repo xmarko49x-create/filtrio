@@ -16,10 +16,10 @@ export const opusclipVsCapcut: ComparatifData = {
     headline: "OpusClip pour l'automatisation. CapCut pour la gratuité complète.",
     paragraphs: [
       <>
-        <strong className="text-emerald-400">OpusClip</strong> excelle sur un
+        <strong className="text-emerald-400">OpusClip</strong>{" "}excelle sur un
         cas précis : prendre une vidéo longue et en sortir 5-15 shorts prêts à
         publier, automatiquement.{" "}
-        <strong className="text-sky-400">CapCut</strong> est un éditeur complet
+        <strong className="text-sky-400">CapCut</strong>{" "}est un éditeur complet
         gratuit qui peut aussi découper, mais manuellement. Deux outils, deux
         problèmes.
       </>,

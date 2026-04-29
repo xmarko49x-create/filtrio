@@ -29,7 +29,7 @@ export const sousTitresRapides: CasUsageData = {
         secondes pour avoir ton short prêt à publier.
       </>,
       <>
-        <strong className="text-slate-200">Exception :</strong> si tu veux
+        <strong className="text-slate-200">Exception :</strong>{" "}si tu veux
         tester en gratuit avant de payer,{" "}
         <Link href="/outils/capcut" className="text-sky-400 hover:underline">
           CapCut
@@ -212,9 +212,9 @@ export const sousTitresRapides: CasUsageData = {
       question: "Tu pars d'une vidéo longue à découper d'abord ?",
       reponse: (
         <>
-          Si oui → <strong className="text-emerald-400">OpusClip</strong> pour
+          Si oui → <strong className="text-emerald-400">OpusClip</strong>{" "}pour
           la découpe, puis{" "}
-          <strong className="text-amber-400">Submagic</strong> pour finaliser
+          <strong className="text-amber-400">Submagic</strong>{" "}pour finaliser
           les sous-titres. Combo rapide pour long format.
         </>
       ),

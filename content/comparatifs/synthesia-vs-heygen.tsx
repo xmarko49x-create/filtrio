@@ -16,9 +16,9 @@ export const synthesiaVsHeygen: ComparatifData = {
     headline: "Synthesia pour l'entreprise. HeyGen pour le créateur.",
     paragraphs: [
       <>
-        <strong className="text-blue-400">Synthesia</strong> mise sur le B2B :
+        <strong className="text-blue-400">Synthesia</strong>{" "}mise sur le B2B :
         SSO, GDPR, SOC 2, intégrations LMS, support formation.{" "}
-        <strong className="text-cyan-400">HeyGen</strong> mise sur le créateur
+        <strong className="text-cyan-400">HeyGen</strong>{" "}mise sur le créateur
         moderne : avatars plus flashy, workflow rapide, prix d&apos;entrée
         accessible, API dès plan Creator.
       </>,

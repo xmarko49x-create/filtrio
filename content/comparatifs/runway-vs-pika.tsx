@@ -24,12 +24,12 @@ export const runwayVsPika: ComparatifData = {
     headline: "Runway pour la qualité pro. Pika pour l'accessibilité.",
     paragraphs: [
       <>
-        <strong className="text-purple-400">Runway</strong> reste la référence
+        <strong className="text-purple-400">Runway</strong>{" "}reste la référence
         du marché avec Gen-4 et Gen-4.5, Aleph, Acte-Deux, l&apos;écosystème
         VFX le plus complet (inpainting, tracking, green screen IA) et
         l&apos;intégration des modèles tiers majeurs (Veo 3.1, Sora, Kling
         3.0 Pro). Crédibilité studio.{" "}
-        <strong className="text-rose-400">Pika</strong> est plus abordable,
+        <strong className="text-rose-400">Pika</strong>{" "}est plus abordable,
         plus simple à prendre en main, mais propose une qualité qui progresse
         rapidement sans atteindre le niveau Runway.
       </>,

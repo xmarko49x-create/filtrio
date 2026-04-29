@@ -16,11 +16,11 @@ export const opusclipVsSubmagic: ComparatifData = {
     headline: "OpusClip pour le volume. Submagic pour le rendu FR.",
     paragraphs: [
       <>
-        <strong className="text-emerald-400">OpusClip</strong> automatise la
+        <strong className="text-emerald-400">OpusClip</strong>{" "}automatise la
         découpe de vidéos longues (podcasts, lives, conférences) en clips
         courts prêts à publier. Parfait si ta source fait 30 minutes à 2
         heures.{" "}
-        <strong className="text-amber-400">Submagic</strong> est plus fort sur
+        <strong className="text-amber-400">Submagic</strong>{" "}est plus fort sur
         la qualité des sous-titres en français et les templates viraux. Pour
         des shorts courts tournés directement, Submagic prend l&apos;avantage.
       </>,

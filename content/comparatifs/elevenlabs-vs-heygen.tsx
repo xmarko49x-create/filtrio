@@ -17,10 +17,10 @@ export const elevenlabsVsHeygen: ComparatifData = {
       "ElevenLabs pour la voix. HeyGen pour la vidéo avec avatar. Ce ne sont pas vraiment des rivaux.",
     paragraphs: [
       <>
-        <strong className="text-teal-400">ElevenLabs</strong> fait une chose
+        <strong className="text-teal-400">ElevenLabs</strong>{" "}fait une chose
         avec excellence : générer de la voix IA ultra-naturelle, en
         particulier en français.{" "}
-        <strong className="text-cyan-400">HeyGen</strong> fait autre chose :
+        <strong className="text-cyan-400">HeyGen</strong>{" "}fait autre chose :
         générer des vidéos complètes avec un avatar qui parle, avec sync
         labiale. Tu choisis selon ton format de sortie : voix seule ou vidéo
         avec visage.
@@ -130,8 +130,8 @@ export const elevenlabsVsHeygen: ComparatifData = {
         HeyGen pour la vidéo avec avatar (plus cher, mais couvre un besoin
         qu&apos;ElevenLabs ne couvre pas). Le bon choix dépend de ton format
         de contenu. Workflow avancé combiné : voix{" "}
-        <strong className="text-teal-400">ElevenLabs</strong> importée dans{" "}
-        <strong className="text-cyan-400">HeyGen</strong> pour un rendu
+        <strong className="text-teal-400">ElevenLabs</strong>{" "}importée dans{" "}
+        <strong className="text-cyan-400">HeyGen</strong>{" "}pour un rendu
         maximal.
       </>
     ),

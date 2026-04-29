@@ -22,7 +22,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
     ),
     paragraphs: [
       <>
-        <strong className="text-amber-400">Submagic</strong> excelle sur le
+        <strong className="text-amber-400">Submagic</strong>{" "}excelle sur le
         rendu final : sous-titres viraux stylés FR, templates prêts, recadrage
         9:16 natif. <strong className="text-emerald-400">OpusClip</strong>{" "}
         excelle sur l&apos;extraction : prendre une vidéo longue d&apos;1h et
@@ -177,7 +177,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
       question: "Tu tournes directement des shorts (face cam, 30-90 sec) ?",
       reponse: (
         <>
-          Si oui → <strong className="text-amber-400">Submagic</strong> seul.
+          Si oui → <strong className="text-amber-400">Submagic</strong>{" "}seul.
           À partir de 12 €/mois, rentabilisé rapidement dès qu&apos;on publie
           plusieurs shorts par mois.
         </>
@@ -187,7 +187,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
       question: "Tu pars d'une source longue (podcast, live, vidéo YouTube d'1h+) ?",
       reponse: (
         <>
-          Si oui → <strong className="text-emerald-400">OpusClip</strong> seul
+          Si oui → <strong className="text-emerald-400">OpusClip</strong>{" "}seul
           (à partir de 15 $/mois). Plan gratuit disponible pour tester.
         </>
       ),
@@ -196,7 +196,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
       question: "Tu produis plusieurs shorts par mois depuis du long format ?",
       reponse: (
         <>
-          Si oui → Combo <strong className="text-emerald-400">OpusClip</strong> +{" "}
+          Si oui → Combo <strong className="text-emerald-400">OpusClip</strong>{" "}+{" "}
           <strong className="text-amber-400">Submagic</strong>. Combo économique,
           workflow pro complet.
         </>
@@ -207,7 +207,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
       reponse: (
         <>
           Plan gratuit OpusClip ou{" "}
-          <strong className="text-sky-400">CapCut</strong> gratuit.
+          <strong className="text-sky-400">CapCut</strong>{" "}gratuit.
           L&apos;essai Submagic reste limité pour un vrai test.
         </>
       ),

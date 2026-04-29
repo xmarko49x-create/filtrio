@@ -216,8 +216,8 @@ export const podcastEnregistrementDistant: CasUsageData = {
       question: "Podcast 100% audio sans ambition vidéo ?",
       reponse: (
         <>
-          Si oui → <strong className="text-slate-300">Zencastr</strong> ou{" "}
-          <strong className="text-indigo-400">Riverside</strong> sur le plan
+          Si oui → <strong className="text-slate-300">Zencastr</strong>{" "}ou{" "}
+          <strong className="text-indigo-400">Riverside</strong>{" "}sur le plan
           gratuit. Les deux suffisent largement.
         </>
       ),
@@ -226,7 +226,7 @@ export const podcastEnregistrementDistant: CasUsageData = {
       question: "Tu publies ensuite des shorts verticaux sur TikTok ou Reels ?",
       reponse: (
         <>
-          Si oui → <strong className="text-indigo-400">Riverside</strong> +
+          Si oui → <strong className="text-indigo-400">Riverside</strong>{" "}+
           OpusClip. Enregistrement pro puis découpe automatique en shorts.
         </>
       ),

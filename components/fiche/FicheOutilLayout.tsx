@@ -160,9 +160,6 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
 
         <div className="flex flex-wrap gap-6 text-xs text-slate-500 border-t border-slate-800 pt-6 mt-8">
           <div>
-            <span className="text-slate-400">Auteur :</span> Équipe Filtrio
-          </div>
-          <div>
             <span className="text-slate-400">Temps de lecture :</span>{" "}
             {data.hero.tempsLecture} min
           </div>

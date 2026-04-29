@@ -24,10 +24,10 @@ export const invideoVsPictory: ComparatifData = {
     headline: "InVideo prend clairement l'avantage pour la plupart des créateurs.",
     paragraphs: [
       <>
-        <strong className="text-fuchsia-400">InVideo</strong> couvre plus de
+        <strong className="text-fuchsia-400">InVideo</strong>{" "}couvre plus de
         cas d&apos;usage : script-to-video IA, templates sociaux, stock intégré
         massif, voix IA, éditeur web propre.{" "}
-        <strong className="text-rose-400">Pictory</strong> reste pertinent pour
+        <strong className="text-rose-400">Pictory</strong>{" "}reste pertinent pour
         un usage spécifique (transformer articles de blog et longs webinaires
         en vidéos courtes) mais offre moins de flexibilité, un rendu plus
         générique, et un rapport qualité/prix moins intéressant.

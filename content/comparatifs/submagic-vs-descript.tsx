@@ -17,10 +17,10 @@ export const submagicVsDescript: ComparatifData = {
       "Submagic gagne pour les shorts. Descript gagne pour le long format.",
     paragraphs: [
       <>
-        <strong className="text-amber-400">Submagic</strong> est l&apos;option
+        <strong className="text-amber-400">Submagic</strong>{" "}est l&apos;option
         la plus spécialisée pour produire rapidement des shorts TikTok / Reels /
         Shorts avec sous-titres stylés en français.{" "}
-        <strong className="text-violet-400">Descript</strong> est l&apos;option
+        <strong className="text-violet-400">Descript</strong>{" "}est l&apos;option
         la plus complète pour éditer un podcast, une interview ou une longue
         vidéo YouTube : édition textuelle, Studio Sound, suppression
         automatique des hésitations.
@@ -129,7 +129,7 @@ export const submagicVsDescript: ComparatifData = {
         Submagic si ton format principal est le short. Descript si ton format
         principal est le long (podcast, tuto, interview). Ils ne sont pas en
         concurrence frontale. Pour qui fait les deux, le combo{" "}
-        <strong className="text-slate-200">Descript + Submagic</strong> est
+        <strong className="text-slate-200">Descript + Submagic</strong>{" "}est
         courant chez les YouTubeurs et podcasteurs qui veulent aussi alimenter
         leurs shorts.
       </>

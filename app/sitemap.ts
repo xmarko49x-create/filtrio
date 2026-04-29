@@ -45,13 +45,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // Meta-page "Alternatives à Submagic" (route concrète, pas dynamique)
+  // Meta-pages comparatifs (routes concrètes, pas dynamiques)
   const metaPages: MetadataRoute.Sitemap = [
     {
       url: `${SITE_URL}/comparatifs/alternatives-a-submagic`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.9,
+    },
+    {
+      url: `${SITE_URL}/comparatifs/outils-shorts-tiktok-2026`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.95,
     },
   ];
 

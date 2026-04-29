@@ -85,7 +85,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-start gap-4 text-xs text-slate-500">
-          <div>© {new Date().getFullYear()} Filtrio — Indépendant, français, sans bullshit.</div>
+          <div>© {new Date().getFullYear()} Filtrio — Indépendant, français, sans langue de bois.</div>
           <div className="max-w-lg md:text-right">
             Certains liens sont affiliés. Cela ne change jamais notre classement.
           </div>

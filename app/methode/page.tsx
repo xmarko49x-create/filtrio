@@ -5,9 +5,9 @@ import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
 
 export const metadata: Metadata = {
-  title: "Méthode de notation Filtrio — 6 critères pondérés transparents",
+  title: "Notre méthode sans langue de bois",
   description:
-    "Comment Filtrio évalue les outils IA pour créateurs vidéo : 6 critères pondérés identiques pour tous, scoring indépendant de l'affiliation, méthodologie transparente.",
+    "6 critères d'évaluation, prix vérifiés, analyse des fonctionnalités, transparence affiliation et mises à jour régulières pour comparer les outils IA vidéo.",
   alternates: { canonical: "/methode" },
 };
 

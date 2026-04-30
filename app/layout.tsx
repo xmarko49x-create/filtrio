@@ -9,20 +9,20 @@ export const metadata: Metadata = {
     template: "%s — Filtrio",
   },
   description:
-    "Un comparateur indépendant pour créateurs vidéo. Analysés sans langue de bois. Notés sur 6 critères concrets. Mis à jour régulièrement.",
+    "Comparateur indépendant d'outils IA pour créateurs vidéo : Submagic, OpusClip, ElevenLabs, HeyGen et 12 autres. Notés sur 6 critères, prix vérifiés, sans langue de bois.",
   openGraph: {
     type: "website",
     locale: "fr_FR",
     siteName: "Filtrio",
     title: "Filtrio — Comparateur d'outils IA pour créateurs vidéo",
     description:
-      "Un comparateur indépendant pour créateurs vidéo. Analysés sans langue de bois.",
+      "Comparateur indépendant d'outils IA pour créateurs vidéo : Submagic, OpusClip, ElevenLabs, HeyGen et 12 autres. Notés sur 6 critères, prix vérifiés.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Filtrio",
     description:
-      "Comparateur indépendant d'outils IA pour créateurs vidéo.",
+      "Comparateur indépendant d'outils IA pour créateurs vidéo : Submagic, OpusClip, ElevenLabs et 13 autres. Notés sur 6 critères, prix vérifiés.",
   },
   alternates: {
     canonical: "/",

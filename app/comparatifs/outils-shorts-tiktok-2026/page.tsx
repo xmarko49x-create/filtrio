@@ -277,7 +277,7 @@ const FAQ = [
     question:
       "Submagic ou OpusClip pour des shorts en français ?",
     answer:
-      "Pour la qualité du rendu final en français : Submagic. Sa précision FR sur les accents et les liaisons est meilleure, et ses templates animés sont conçus pour le marché francophone. Pour la productivité pure (transformer une vidéo longue en plusieurs shorts automatiquement) : OpusClip. Beaucoup de créateurs avancés combinent les deux : OpusClip pour la découpe, Submagic pour finaliser les sous-titres.",
+      "Pour la qualité du rendu final en français : Submagic. Sa précision FR sur les accents et les liaisons est meilleure, et ses templates animés sont conçus pour le marché français. Pour la productivité pure (transformer une vidéo longue en plusieurs shorts automatiquement) : OpusClip. Beaucoup de créateurs avancés combinent les deux : OpusClip pour la découpe, Submagic pour finaliser les sous-titres.",
   },
   {
     question:

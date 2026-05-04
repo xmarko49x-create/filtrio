@@ -17,6 +17,25 @@ function hasRealAffiliateLink(o: Outil): boolean {
   return /^https?:\/\//.test(o.affiliateLink);
 }
 
+/**
+ * Pour un outil sans lien affilié, propose un outil alternatif :
+ * - même catégorie
+ * - avec lien affilié réel
+ * - score le plus élevé
+ * Retourne undefined si aucun match.
+ */
+function suggererAlternative(outil: Outil): Outil | undefined {
+  if (hasRealAffiliateLink(outil)) return undefined;
+  const candidats = OUTILS.filter(
+    (o) =>
+      o.slug !== outil.slug &&
+      o.category === outil.category &&
+      o.ficheAvailable &&
+      hasRealAffiliateLink(o),
+  ).sort((a, b) => b.score - a.score);
+  return candidats[0];
+}
+
 export default function PlateformeSection({
   plateforme,
   outilsPrioritaires,
@@ -72,6 +91,7 @@ export default function PlateformeSection({
                   </div>
                 );
               }
+              const alternative = suggererAlternative(o);
               return (
                 <div
                   key={o.slug}
@@ -117,6 +137,17 @@ export default function PlateformeSection({
                       </TrackedAffiliateLink>
                     )}
                   </div>
+                  {alternative && (
+                    <div className="mt-3 pt-3 border-t border-slate-800 text-xs text-slate-500">
+                      Pas de lien direct ici. Voir alternative{" "}
+                      <Link
+                        href={`/outils/${alternative.slug}`}
+                        className={`text-${alternative.color}-400 hover:text-${alternative.color}-300 font-medium`}
+                      >
+                        {alternative.name} →
+                      </Link>
+                    </div>
+                  )}
                 </div>
               );
             })}

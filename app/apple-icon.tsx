@@ -25,16 +25,14 @@ export default function AppleIcon() {
       >
         <div
           style={{
-            display: "flex",
-            alignItems: "center",
             fontSize: 110,
             fontWeight: 800,
+            color: "#34d399",
             letterSpacing: "-0.05em",
             lineHeight: 1,
           }}
         >
-          <span style={{ color: "#34d399" }}>F</span>
-          <span style={{ color: "#f1f5f9" }}>.</span>
+          F
         </div>
       </div>
     ),

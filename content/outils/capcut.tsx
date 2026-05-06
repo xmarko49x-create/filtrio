@@ -28,7 +28,7 @@ export const capcutFiche: FicheData = {
         "Débutants sans budget, créateurs mobile-first, TikTokeurs qui éditent sur smartphone, créateurs occasionnels qui ne veulent pas s'engager sur un abonnement, étudiants, tous ceux qui découvrent le montage vidéo.",
     },
     {
-      question: "Pas pour qui ?",
+      question: "À éviter si ?",
       answer: (
         <>
           Créateurs sérieux qui veulent un style signature (→{" "}

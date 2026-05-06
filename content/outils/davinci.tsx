@@ -28,7 +28,7 @@ export const davinciFiche: FicheData = {
         "Créateurs vidéo sérieux qui veulent un rendu pro, vidéastes freelance, monteurs qui font du color grading, YouTubeurs haut de gamme, documentaristes, étudiants cinéma. Pour ceux qui investissent du temps pour un résultat pro.",
     },
     {
-      question: "Pas pour qui ?",
+      question: "À éviter si ?",
       answer: (
         <>
           Débutants qui veulent monter vite (→{" "}

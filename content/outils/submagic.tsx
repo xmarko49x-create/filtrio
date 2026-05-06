@@ -23,7 +23,7 @@ export const submagicFiche: FicheData = {
         "Créateurs de contenu, freelances, agences et petites équipes qui veulent produire des shorts propres rapidement, avec un rendu visuel fort et une interface simple.",
     },
     {
-      question: "Pas pour qui ?",
+      question: "À éviter si ?",
       answer:
         "Équipes qui ont besoin d'automatisations avancées, de gros volumes API dès le départ, ou d'un workflow orienté clipping massif de longues vidéos.",
     },

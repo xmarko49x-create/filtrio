@@ -28,7 +28,7 @@ export const invideoFiche: FicheData = {
         "Marketeurs qui produisent des pubs vidéo en série, créateurs faceless, YouTubeurs qui diffusent du contenu éducatif automatisé, agences qui industrialisent la production. Pour qui a besoin de volume et de scripts texte comme point de départ.",
     },
     {
-      question: "Pas pour qui ?",
+      question: "À éviter si ?",
       answer: (
         <>
           Créateurs qui veulent du contenu authentique face cam. Shorts viraux

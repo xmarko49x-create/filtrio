@@ -29,7 +29,7 @@ export const canvaFiche: FicheData = {
         "Créateurs de contenu qui font aussi du design (miniatures, posts, stories), solopreneurs, marketeurs sans équipe design, formateurs, tous ceux qui veulent un rendu pro sans skills design avancés.",
     },
     {
-      question: "Pas pour qui ?",
+      question: "À éviter si ?",
       answer: (
         <>
           Designers pros qui ont besoin d&apos;Illustrator/Photoshop. Monteurs

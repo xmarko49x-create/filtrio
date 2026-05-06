@@ -28,7 +28,7 @@ export const elevenlabsFiche: FicheData = {
         "Créateurs vidéo qui ont besoin de voix off sans enregistrer, YouTubeurs sans face cam, podcasteurs qui veulent doubler leurs épisodes, marques qui produisent du contenu multilingue, auteurs audiobook.",
     },
     {
-      question: "Pas pour qui ?",
+      question: "À éviter si ?",
       answer: (
         <>
           Créateurs qui font déjà du face cam et parlent eux-mêmes. Ceux qui

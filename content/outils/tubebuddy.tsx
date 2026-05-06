@@ -28,7 +28,7 @@ export const tubebuddyFiche: FicheData = {
         "YouTubeurs qui veulent optimiser leur SEO, comprendre leur concurrence, tester différentes miniatures et titres, et gérer leur chaîne plus efficacement. Particulièrement utile pour les chaînes entre 1k et 100k abonnés.",
     },
     {
-      question: "Pas pour qui ?",
+      question: "À éviter si ?",
       answer:
         "Créateurs 100% TikTok/Reels (pas utile hors YouTube). YouTubeurs gros qui ont déjà des équipes SEO. Ceux qui cherchent un outil de montage ou de sous-titrage (ce n'est pas son rôle).",
     },

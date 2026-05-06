@@ -28,7 +28,7 @@ export const riversideFiche: FicheData = {
         "Podcasteurs qui reçoivent des invités à distance, intervieweurs, équipes qui font du contenu conversationnel multi-intervenants. Tous ceux qui trouvent Zoom insuffisant pour un rendu pro.",
     },
     {
-      question: "Pas pour qui ?",
+      question: "À éviter si ?",
       answer: (
         <>
           Créateurs solo qui enregistrent seuls. Ceux qui éditent beaucoup en

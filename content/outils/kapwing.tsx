@@ -28,7 +28,7 @@ export const kapwingFiche: FicheData = {
         "Équipes qui travaillent à plusieurs sur des vidéos : agences sociales, équipes marketing, médias, scale-ups. Tous ceux qui en ont marre d'envoyer des exports par email et de commenter par Slack.",
     },
     {
-      question: "Pas pour qui ?",
+      question: "À éviter si ?",
       answer: (
         <>
           Créateurs solo (

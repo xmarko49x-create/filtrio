@@ -28,7 +28,7 @@ export const veedFiche: FicheData = {
         "Créateurs qui veulent un éditeur web fiable, marketeurs qui font des vidéos B2B, équipes qui travaillent depuis plusieurs machines, freelances qui alternent entre plusieurs clients sans logiciel dédié.",
     },
     {
-      question: "Pas pour qui ?",
+      question: "À éviter si ?",
       answer: (
         <>
           Créateurs de shorts viraux FR (→{" "}

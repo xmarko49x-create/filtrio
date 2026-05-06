@@ -28,7 +28,7 @@ export const vidiqFiche: FicheData = {
         "YouTubeurs qui veulent un outil SEO moderne avec une forte dimension IA générative. Créateurs qui recherchent leurs prochains sujets via l'analyse de tendances. Agences qui ont besoin d'analytics data-driven.",
     },
     {
-      question: "Pas pour qui ?",
+      question: "À éviter si ?",
       answer: (
         <>
           Créateurs hors YouTube. YouTubeurs qui préfèrent une approche plus

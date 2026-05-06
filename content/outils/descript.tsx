@@ -28,7 +28,7 @@ export const descriptFiche: FicheData = {
         "Podcasteurs, intervieweurs, formateurs, YouTubeurs long format. Créateurs qui font beaucoup de montage conversationnel et veulent supprimer les silences, hésitations, répétitions sans passer des heures dans une timeline.",
     },
     {
-      question: "Pas pour qui ?",
+      question: "À éviter si ?",
       answer: (
         <>
           Créateurs 100% shorts (→{" "}

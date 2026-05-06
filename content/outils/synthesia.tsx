@@ -28,7 +28,7 @@ export const synthesiaFiche: FicheData = {
         "Équipes L&D (Learning & Development), communication interne d'entreprise, formation client SaaS, onboarding multilingue. Entreprises qui ont des exigences de conformité et qui produisent beaucoup de contenu formation/corporate.",
     },
     {
-      question: "Pas pour qui ?",
+      question: "À éviter si ?",
       answer: (
         <>
           Créateurs solo ou YouTubeurs (→{" "}

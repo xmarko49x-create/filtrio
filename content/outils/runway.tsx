@@ -28,7 +28,7 @@ export const runwayFiche: FicheData = {
         "Motion designers, filmmakers indépendants, créateurs visuels premium, agences publicitaires. Pros de la création visuelle qui veulent explorer ce que la génération vidéo IA peut faire en 2026.",
     },
     {
-      question: "Pas pour qui ?",
+      question: "À éviter si ?",
       answer: (
         <>
           Créateurs long format classique (→{" "}

@@ -28,7 +28,7 @@ export const heygenFiche: FicheData = {
         "Marques qui produisent du contenu marketing multilingue, équipes formation interne qui veulent scaler, marketeurs qui produisent des pubs personnalisées, créateurs de contenu pédagogique. Pas un outil de créateur solo classique.",
     },
     {
-      question: "Pas pour qui ?",
+      question: "À éviter si ?",
       answer: (
         <>
           YouTubeurs qui font du contenu authentique face cam. Créateurs qui

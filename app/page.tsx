@@ -39,18 +39,18 @@ export default function HomePage() {
         {/* Halo emerald décoratif en arrière-plan (style Vercel/Linear) */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -top-20 -left-32 w-[480px] h-[480px] rounded-full opacity-25 blur-3xl bg-gradient-radial from-emerald-500/40 via-emerald-500/10 to-transparent"
+          className="pointer-events-none absolute -top-24 -left-40 w-[560px] h-[560px] rounded-full opacity-50 blur-3xl"
           style={{
             background:
-              "radial-gradient(closest-side, rgba(52,211,153,0.45), rgba(52,211,153,0.08), transparent)",
+              "radial-gradient(closest-side, rgba(52,211,153,0.65), rgba(52,211,153,0.15), transparent)",
           }}
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute top-32 right-0 w-[380px] h-[380px] rounded-full opacity-20 blur-3xl"
+          className="pointer-events-none absolute top-20 right-0 w-[440px] h-[440px] rounded-full opacity-40 blur-3xl"
           style={{
             background:
-              "radial-gradient(closest-side, rgba(52,211,153,0.35), rgba(52,211,153,0.05), transparent)",
+              "radial-gradient(closest-side, rgba(52,211,153,0.55), rgba(52,211,153,0.10), transparent)",
           }}
         />
         <div className="relative inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 rounded-full px-4 py-1.5 text-xs text-slate-300 mb-8">

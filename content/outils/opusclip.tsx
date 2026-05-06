@@ -29,7 +29,7 @@ export const opusclipFiche: FicheData = {
         "Podcasters, streamers Twitch, YouTubeurs long-format, agences social media, marques qui recyclent du contenu existant en masse. Toute personne qui part d'une source longue pour faire des shorts.",
     },
     {
-      question: "Pas pour qui ?",
+      question: "À éviter si ?",
       answer:
         "Créateurs qui tournent déjà au format court (face cam 30-60 sec). Ceux qui visent la qualité visuelle maximale des sous-titres en français. Ceux qui veulent éditer finement chaque clip.",
     },

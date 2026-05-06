@@ -22,11 +22,12 @@ function hasFreeTier(o: Outil): boolean {
 }
 
 type SortKey = "score" | "name";
+type BudgetFilter = "all" | "free" | "paid";
 
 export default function OutilsCatalog() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState<"all" | OutilCategorie>("all");
-  const [onlyFree, setOnlyFree] = useState(false);
+  const [budget, setBudget] = useState<BudgetFilter>("all");
   const [sortKey, setSortKey] = useState<SortKey>("score");
 
   const filtered = useMemo(() => {
@@ -36,8 +37,10 @@ export default function OutilsCatalog() {
     if (category !== "all") {
       list = list.filter((o) => o.category === category);
     }
-    if (onlyFree) {
+    if (budget === "free") {
       list = list.filter(hasFreeTier);
+    } else if (budget === "paid") {
+      list = list.filter((o) => !hasFreeTier(o));
     }
     if (q.length > 0) {
       list = list.filter(
@@ -53,7 +56,7 @@ export default function OutilsCatalog() {
       list = [...list].sort((a, b) => a.name.localeCompare(b.name));
     }
     return list;
-  }, [search, category, onlyFree, sortKey]);
+  }, [search, category, budget, sortKey]);
 
   const total = OUTILS.filter((o) => o.ficheAvailable).length;
   const categoriesPresent = useMemo(() => {
@@ -111,26 +114,31 @@ export default function OutilsCatalog() {
           </select>
         </div>
 
-        {/* Plan gratuit */}
+        {/* Budget — 3 boutons rapides */}
         <div>
-          <label
-            htmlFor="onlyFree"
-            className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2"
-          >
-            Plan gratuit
+          <label className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
+            Budget
           </label>
-          <button
-            id="onlyFree"
-            type="button"
-            onClick={() => setOnlyFree(!onlyFree)}
-            className={`px-4 py-2.5 rounded-lg text-sm font-medium border transition ${
-              onlyFree
-                ? "bg-emerald-500 border-emerald-500 text-slate-950"
-                : "bg-slate-900 border-slate-700 text-slate-300 hover:border-slate-500"
-            }`}
-          >
-            {onlyFree ? "✓ Oui uniquement" : "Tous les outils"}
-          </button>
+          <div className="flex gap-1 bg-slate-900 border border-slate-700 rounded-lg p-1">
+            {[
+              { key: "all" as const, label: "Tous" },
+              { key: "free" as const, label: "Gratuit / Essai" },
+              { key: "paid" as const, label: "Payant" },
+            ].map((opt) => (
+              <button
+                key={opt.key}
+                type="button"
+                onClick={() => setBudget(opt.key)}
+                className={`px-3 py-1.5 rounded-md text-sm font-medium transition ${
+                  budget === opt.key
+                    ? "bg-emerald-500 text-slate-950"
+                    : "text-slate-400 hover:text-slate-200"
+                }`}
+              >
+                {opt.label}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Tri */}
@@ -162,13 +170,13 @@ export default function OutilsCatalog() {
           {filtered.length > 1 ? "outils affichés" : "outil affiché"} sur{" "}
           {total}
         </div>
-        {(search || category !== "all" || onlyFree) && (
+        {(search || category !== "all" || budget !== "all") && (
           <button
             type="button"
             onClick={() => {
               setSearch("");
               setCategory("all");
-              setOnlyFree(false);
+              setBudget("all");
             }}
             className="text-emerald-400 hover:text-emerald-300 font-medium"
           >

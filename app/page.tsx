@@ -11,7 +11,79 @@ import { CAS_USAGE } from "@/lib/cas-usage";
 import {
   getOrganizationSchema,
   getWebsiteSchema,
+  getFaqPageSchema,
 } from "@/lib/schema";
+
+// Mini-FAQ home — questions classiques de visiteur lambda
+const HOME_FAQ: { question: string; answer: React.ReactNode }[] = [
+  {
+    question: "C'est gratuit, ces outils ?",
+    answer: (
+      <>
+        Plusieurs outils du classement proposent un plan gratuit ou un essai
+        sans carte bancaire (CapCut, OpusClip, Canva, ElevenLabs, VidIQ).
+        Les outils les plus complets restent payants, à partir de 6 à 30
+        €/mois selon le niveau.
+      </>
+    ),
+  },
+  {
+    question: "Si je débute, je prends lequel ?",
+    answer: (
+      <>
+        Pour des sous-titres rapides, viraux, en français : Submagic. Pour
+        découper de longues vidéos en shorts automatiquement : OpusClip. Pour
+        des miniatures et visuels propres : Canva. Tous les trois ont une
+        prise en main très rapide pour un débutant.
+      </>
+    ),
+  },
+  {
+    question: "Pourquoi tu ne notes pas tous les outils 10/10 ?",
+    answer: (
+      <>
+        Notre note est relative, pas commerciale. Chaque outil est évalué
+        sur 6 critères pondérés. Un outil peut être très bon sur la qualité
+        FR mais moyen sur les intégrations, ce qui donne une note finale
+        nuancée. C&apos;est ce qui rend le classement utile.
+      </>
+    ),
+  },
+  {
+    question: "Vos liens sont des liens affiliés ?",
+    answer: (
+      <>
+        Certains liens vers les outils sont affiliés (Submagic, OpusClip,
+        ElevenLabs, VidIQ). Cela ne change <strong>jamais</strong> le
+        classement éditorial. Les scores sont attribués avant tout calcul
+        de commission, et la méthodologie est publique.
+      </>
+    ),
+  },
+  {
+    question: "Vous testez vraiment les outils ?",
+    answer: (
+      <>
+        Phase actuelle (V1) : analyse documentaire approfondie + compilation
+        des retours utilisateurs publics (G2, Trustpilot, Reddit, doc
+        officielle) + prise en main des plans gratuits. Phase à venir (V2) :
+        protocole de test comparatif standardisé sur sources vidéo
+        identiques. Tout est dit sur la page Méthode.
+      </>
+    ),
+  },
+  {
+    question: "Comment vous choisissez les outils du classement ?",
+    answer: (
+      <>
+        Niche : créateurs vidéo (YouTube, TikTok / Shorts / Reels). Critère
+        d&apos;entrée : l&apos;outil doit être utilisable dans au moins 2
+        formats (long, shorts, voix, avatars, design). Pas d&apos;outil
+        ajouté contre rémunération, jamais.
+      </>
+    ),
+  },
+];
 
 /**
  * Sélection éditoriale du top 5 home.
@@ -31,7 +103,13 @@ export default function HomePage() {
 
   return (
     <>
-      <JsonLd data={[getOrganizationSchema(), getWebsiteSchema()]} />
+      <JsonLd
+        data={[
+          getOrganizationSchema(),
+          getWebsiteSchema(),
+          getFaqPageSchema(HOME_FAQ),
+        ]}
+      />
       <Nav ctaHref="#top-outils" />
 
       {/* HERO — direct, orienté utilité */}
@@ -389,6 +467,44 @@ export default function HomePage() {
         >
           Voir la méthode complète →
         </Link>
+      </section>
+
+      {/* FAQ — questions classiques visiteur lambda */}
+      <section className="border-y border-slate-800 bg-slate-900/40">
+        <div className="max-w-4xl mx-auto px-6 py-24">
+          <div className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-3">
+            On nous demande souvent
+          </div>
+          <h2 className="text-4xl font-bold mb-3 tracking-tight">
+            Les questions qu&apos;on nous pose.
+          </h2>
+          <p className="text-slate-400 text-lg max-w-3xl mb-10">
+            Tout ce que tu te demandes avant d&apos;utiliser Filtrio.
+          </p>
+          <div className="space-y-3">
+            {HOME_FAQ.map((qa) => (
+              <details
+                key={qa.question}
+                className="group bg-slate-900 border border-slate-800 rounded-xl overflow-hidden"
+              >
+                <summary className="cursor-pointer list-none p-5 flex items-center justify-between gap-4 hover:bg-slate-800/40 transition">
+                  <span className="font-semibold text-slate-100">
+                    {qa.question}
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="faq-chevron text-emerald-400 text-2xl leading-none transition-transform"
+                  >
+                    +
+                  </span>
+                </summary>
+                <div className="px-5 pb-5 text-slate-300 leading-relaxed">
+                  {qa.answer}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
       </section>
 
       <Newsletter />

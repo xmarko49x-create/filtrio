@@ -27,6 +27,8 @@ export interface FicheData {
     tempsLecture: number;
     lastCheck: string;
   };
+  /** Visuel illustratif optionnel affiché entre le hero et le verdict (mockup interface ou capture d'écran). */
+  apercuVisuel?: ReactNode;
   verdict30s: { question: string; answer: ReactNode }[];
   porQui: string[];
   pasPourQui: ReactNode[];
@@ -184,6 +186,16 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
           </div>
         </div>
       </section>
+
+      {/* APERÇU VISUEL — optionnel */}
+      {data.apercuVisuel && (
+        <section className="max-w-5xl mx-auto px-6 pb-16">
+          <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-4">
+            Aperçu de l&apos;interface
+          </div>
+          {data.apercuVisuel}
+        </section>
+      )}
 
       {/* VERDICT 30S */}
       <section id="verdict" className="max-w-5xl mx-auto px-6 pb-16">

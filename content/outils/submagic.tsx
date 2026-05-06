@@ -16,6 +16,78 @@ export const submagicFiche: FicheData = {
     tempsLecture: 8,
     lastCheck: "22/04/2026",
   },
+  apercuVisuel: (
+    <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8">
+      <div className="grid md:grid-cols-[auto_1fr] gap-8 items-center">
+        {/* Mockup verticale type story/short */}
+        <div className="flex justify-center">
+          <div
+            className="relative w-[200px] h-[356px] rounded-[28px] bg-gradient-to-br from-slate-700 via-slate-800 to-slate-950 overflow-hidden border-[3px] border-slate-800 shadow-2xl"
+            aria-hidden="true"
+          >
+            {/* Notch smartphone */}
+            <div className="absolute top-1.5 left-1/2 -translate-x-1/2 w-16 h-4 bg-slate-950 rounded-full" />
+            {/* Pseudo silhouette en arrière-plan */}
+            <div className="absolute inset-0 bg-gradient-to-b from-amber-500/0 via-amber-500/5 to-amber-500/10" />
+            <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full bg-amber-500/20 blur-xl" />
+            {/* Sous-titres animés style Submagic */}
+            <div className="absolute bottom-12 left-0 right-0 flex flex-col items-center gap-1.5 px-4">
+              <span className="bg-amber-500 text-slate-950 font-black text-sm px-2.5 py-1 rounded-md tracking-tight uppercase">
+                ÇA
+              </span>
+              <span className="bg-slate-950 text-amber-400 font-black text-base px-3 py-1.5 rounded-md tracking-tight uppercase shadow-lg">
+                MARCHE
+              </span>
+              <span className="bg-amber-500 text-slate-950 font-black text-sm px-2.5 py-1 rounded-md tracking-tight uppercase">
+                VRAIMENT
+              </span>
+            </div>
+            {/* Compteur */}
+            <div className="absolute top-4 right-3 flex flex-col items-center gap-1 text-white/70 text-[10px]">
+              <div className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center">
+                ❤
+              </div>
+              <span>14k</span>
+            </div>
+          </div>
+        </div>
+        {/* Description à droite */}
+        <div>
+          <div className="text-amber-400 font-bold text-sm uppercase tracking-wider mb-2">
+            Sous-titres viraux animés
+          </div>
+          <h3 className="text-2xl font-bold text-slate-100 mb-3">
+            Le rendu signature de Submagic.
+          </h3>
+          <p className="text-slate-400 leading-relaxed mb-4">
+            Sous-titres mot par mot, animations dynamiques, palette de templates
+            travaillés pour le format vertical. Une fois la vidéo importée, le
+            résultat sort en quelques minutes sans réglages avancés.
+          </p>
+          <ul className="space-y-2 text-sm text-slate-400">
+            <li className="flex gap-2">
+              <span className="text-amber-400 mt-0.5">•</span>
+              <span>
+                Précision FR sur les liaisons et les accents (atout majeur pour
+                le marché français)
+              </span>
+            </li>
+            <li className="flex gap-2">
+              <span className="text-amber-400 mt-0.5">•</span>
+              <span>
+                Templates animés prêts à l&apos;emploi (TikTok, YouTube Shorts,
+                Reels)
+              </span>
+            </li>
+            <li className="flex gap-2">
+              <span className="text-amber-400 mt-0.5">•</span>
+              <span>Édition text-based : tu corriges le texte, la vidéo suit</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  ),
   verdict30s: [
     {
       question: "Pour qui ?",

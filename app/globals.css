@@ -14,11 +14,27 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* --- Barres de score par critère (utilisées dans comparatifs) --- */
+/* --- Barres de score par critère (fiches outils + comparatifs) --- */
 .bar {
-  background: linear-gradient(90deg, var(--bar-color, #10b981) calc(var(--w) * 1%), #1e293b 0);
-  height: 0.5rem;
+  position: relative;
+  background-color: #1e293b; /* slate-800 */
+  height: 0.625rem;
   border-radius: 9999px;
+  overflow: hidden;
+}
+.bar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: calc(var(--w) * 1%);
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--bar-color, #10b981) 70%, white 0%),
+    var(--bar-color, #10b981)
+  );
+  border-radius: 9999px;
+  box-shadow: 0 0 12px color-mix(in srgb, var(--bar-color, #10b981) 50%, transparent);
+  transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 /* --- FAQ chevron rotation quand <details> ouvert --- */

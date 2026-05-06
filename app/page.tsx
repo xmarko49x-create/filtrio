@@ -35,8 +35,25 @@ export default function HomePage() {
       <Nav ctaHref="#top-outils" />
 
       {/* HERO — direct, orienté utilité */}
-      <section className="max-w-5xl mx-auto px-6 pt-20 pb-12">
-        <div className="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 rounded-full px-4 py-1.5 text-xs text-slate-300 mb-8">
+      <section className="relative max-w-5xl mx-auto px-6 pt-20 pb-12">
+        {/* Halo emerald décoratif en arrière-plan (style Vercel/Linear) */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -top-20 -left-32 w-[480px] h-[480px] rounded-full opacity-25 blur-3xl bg-gradient-radial from-emerald-500/40 via-emerald-500/10 to-transparent"
+          style={{
+            background:
+              "radial-gradient(closest-side, rgba(52,211,153,0.45), rgba(52,211,153,0.08), transparent)",
+          }}
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute top-32 right-0 w-[380px] h-[380px] rounded-full opacity-20 blur-3xl"
+          style={{
+            background:
+              "radial-gradient(closest-side, rgba(52,211,153,0.35), rgba(52,211,153,0.05), transparent)",
+          }}
+        />
+        <div className="relative inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 rounded-full px-4 py-1.5 text-xs text-slate-300 mb-8">
           <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
           Mise à jour ·{" "}
           {new Date().toLocaleDateString("fr-FR", {
@@ -227,28 +244,64 @@ export default function HomePage() {
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-4">
-          {COMPARATIFS.map((c) => (
-            <TrackedComparatifLink
-              key={c.slug}
-              href={`/comparatifs/${c.slug}`}
-              slug={c.slug}
-              source="home"
-              className="p-6 bg-slate-900 border border-slate-800 rounded-xl hover:border-emerald-500/40 transition group"
-            >
-              <div className="flex justify-between items-start mb-3">
-                <h3 className="text-xl font-bold group-hover:text-emerald-400 transition">
+          {COMPARATIFS.map((c) => {
+            const outilA = OUTILS.find((o) => o.slug === c.outilA);
+            const outilB = OUTILS.find((o) => o.slug === c.outilB);
+            return (
+              <TrackedComparatifLink
+                key={c.slug}
+                href={`/comparatifs/${c.slug}`}
+                slug={c.slug}
+                source="home"
+                className="p-6 bg-slate-900 border border-slate-800 rounded-xl hover:border-emerald-500/40 transition group flex flex-col"
+              >
+                {/* Rounds visuels avec scores */}
+                {outilA && (
+                  <div className="flex items-center gap-3 mb-4">
+                    <div
+                      className={`w-12 h-12 rounded-full bg-${outilA.color}-500/10 border border-${outilA.color}-500/40 flex flex-col items-center justify-center flex-shrink-0`}
+                    >
+                      <span
+                        className={`text-${outilA.color}-400 font-bold text-sm leading-none`}
+                      >
+                        {outilA.score.toFixed(1)}
+                      </span>
+                    </div>
+                    <span className="text-xs text-slate-500 font-bold">
+                      VS
+                    </span>
+                    {outilB ? (
+                      <div
+                        className={`w-12 h-12 rounded-full bg-${outilB.color}-500/10 border border-${outilB.color}-500/40 flex flex-col items-center justify-center flex-shrink-0`}
+                      >
+                        <span
+                          className={`text-${outilB.color}-400 font-bold text-sm leading-none`}
+                        >
+                          {outilB.score.toFixed(1)}
+                        </span>
+                      </div>
+                    ) : (
+                      <div className="w-12 h-12 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-500 font-bold flex-shrink-0">
+                        +
+                      </div>
+                    )}
+                    <span className="ml-auto text-xs text-slate-500">
+                      {c.tempsLecture} min
+                    </span>
+                  </div>
+                )}
+                <h3 className="text-xl font-bold mb-2 group-hover:text-emerald-400 transition">
                   {c.titre}
                 </h3>
-                <span className="text-xs text-slate-500">
-                  {c.tempsLecture} min de lecture
-                </span>
-              </div>
-              <p className="text-slate-400 text-sm mb-3">{c.description}</p>
-              <div className="text-xs text-emerald-400 font-medium">
-                Lire le verdict →
-              </div>
-            </TrackedComparatifLink>
-          ))}
+                <p className="text-slate-400 text-sm mb-3 flex-1">
+                  {c.description}
+                </p>
+                <div className="text-xs text-emerald-400 font-medium">
+                  Lire le verdict →
+                </div>
+              </TrackedComparatifLink>
+            );
+          })}
         </div>
       </section>
 

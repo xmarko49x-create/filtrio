@@ -296,6 +296,9 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
                       style={{ color: hex }}
                     >
                       {cr.score.toFixed(1)}
+                      <span className="text-base text-slate-500 font-medium">
+                        {" "}/ 10
+                      </span>
                     </span>
                   </div>
                   <div

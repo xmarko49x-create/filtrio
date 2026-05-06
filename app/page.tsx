@@ -113,7 +113,7 @@ export default function HomePage() {
       <Nav ctaHref="#top-outils" />
 
       {/* HERO — direct, orienté utilité */}
-      <section className="relative max-w-5xl mx-auto px-6 pt-20 pb-12">
+      <section className="relative max-w-5xl mx-auto px-6 pt-20 pb-12 overflow-hidden">
         {/* Halo emerald décoratif en arrière-plan (style Vercel/Linear) */}
         <div
           aria-hidden="true"

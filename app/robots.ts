@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://filtrio.fr";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.filtrio.fr";
 
 export default function robots(): MetadataRoute.Robots {
   return {

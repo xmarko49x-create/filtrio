@@ -10,7 +10,7 @@
 import type { ReactNode } from "react";
 import { AUTHOR, SITE_LAUNCH_DATE } from "@/lib/author";
 
-const SITE_URL = "https://filtrio.fr";
+const SITE_URL = "https://www.filtrio.fr";
 const SITE_NAME = "Filtrio";
 const AUTHOR_NAME = AUTHOR.name;
 const AUTHOR_URL = `${SITE_URL}${AUTHOR.url}`;

@@ -30,7 +30,7 @@ export default function OutilsPage() {
     itemListElement: OUTILS.filter((o) => o.ficheAvailable).map((o, i) => ({
       "@type": "ListItem",
       position: i + 1,
-      url: `https://filtrio.fr/outils/${o.slug}`,
+      url: `https://www.filtrio.fr/outils/${o.slug}`,
       name: o.name,
     })),
   };

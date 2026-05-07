@@ -3,7 +3,7 @@ import { FICHE_REGISTRY } from "@/content/outils/registry";
 import { COMPARATIF_REGISTRY } from "@/content/comparatifs/registry";
 import { CAS_USAGE_REGISTRY } from "@/content/cas-usage/registry";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://filtrio.fr";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.filtrio.fr";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

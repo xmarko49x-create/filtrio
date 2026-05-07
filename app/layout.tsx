@@ -3,7 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://filtrio.fr"),
+  metadataBase: new URL("https://www.filtrio.fr"),
   title: {
     default: "Filtrio — Comparateur d'outils IA pour créateurs vidéo",
     template: "%s — Filtrio",

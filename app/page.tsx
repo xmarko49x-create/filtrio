@@ -113,11 +113,11 @@ export default function HomePage() {
       <Nav ctaHref="#top-outils" />
 
       {/* HERO — direct, orienté utilité */}
-      <section className="relative max-w-5xl mx-auto px-6 pt-20 pb-12 overflow-hidden">
-        {/* Halo emerald décoratif en arrière-plan (style Vercel/Linear) */}
+      <section className="relative overflow-hidden">
+        {/* Halos décoratifs full-width (clipés au viewport, pas au max-w-5xl) */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -top-24 -left-40 w-[560px] h-[560px] rounded-full opacity-50 blur-3xl"
+          className="pointer-events-none absolute -top-24 left-1/2 -translate-x-[60%] w-[560px] h-[560px] rounded-full opacity-50 blur-3xl"
           style={{
             background:
               "radial-gradient(closest-side, rgba(52,211,153,0.65), rgba(52,211,153,0.15), transparent)",
@@ -125,12 +125,13 @@ export default function HomePage() {
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute top-20 right-0 w-[440px] h-[440px] rounded-full opacity-40 blur-3xl"
+          className="pointer-events-none absolute top-20 left-1/2 translate-x-[10%] w-[440px] h-[440px] rounded-full opacity-40 blur-3xl"
           style={{
             background:
               "radial-gradient(closest-side, rgba(52,211,153,0.55), rgba(52,211,153,0.10), transparent)",
           }}
         />
+        <div className="relative max-w-5xl mx-auto px-6 pt-20 pb-12">
         <div className="relative inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 rounded-full px-4 py-1.5 text-xs text-slate-300 mb-8">
           <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
           Mise à jour ·{" "}
@@ -161,6 +162,7 @@ export default function HomePage() {
           >
             Notre méthode
           </Link>
+        </div>
         </div>
       </section>
 
@@ -345,23 +347,39 @@ export default function HomePage() {
                         {outilA.score.toFixed(1)}
                       </span>
                     </div>
-                    <span className="text-xs text-slate-500 font-bold">
-                      VS
-                    </span>
                     {outilB ? (
-                      <div
-                        className={`w-12 h-12 rounded-full bg-${outilB.color}-500/10 border border-${outilB.color}-500/40 flex flex-col items-center justify-center flex-shrink-0`}
-                      >
-                        <span
-                          className={`text-${outilB.color}-400 font-bold text-sm leading-none`}
-                        >
-                          {outilB.score.toFixed(1)}
+                      <>
+                        <span className="text-xs text-slate-500 font-bold">
+                          VS
                         </span>
-                      </div>
+                        <div
+                          className={`w-12 h-12 rounded-full bg-${outilB.color}-500/10 border border-${outilB.color}-500/40 flex flex-col items-center justify-center flex-shrink-0`}
+                        >
+                          <span
+                            className={`text-${outilB.color}-400 font-bold text-sm leading-none`}
+                          >
+                            {outilB.score.toFixed(1)}
+                          </span>
+                        </div>
+                      </>
                     ) : (
-                      <div className="w-12 h-12 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-500 font-bold flex-shrink-0">
-                        +
-                      </div>
+                      // Méta-page : visuel "alternatives groupées"
+                      <>
+                        <span className="text-xs text-slate-500 font-bold">
+                          vs
+                        </span>
+                        <div className="flex -space-x-3">
+                          <div className="w-9 h-9 rounded-full bg-slate-700 border-2 border-slate-900 flex items-center justify-center text-[10px] text-slate-400 font-bold">
+                            1
+                          </div>
+                          <div className="w-9 h-9 rounded-full bg-slate-600 border-2 border-slate-900 flex items-center justify-center text-[10px] text-slate-400 font-bold">
+                            2
+                          </div>
+                          <div className="w-9 h-9 rounded-full bg-slate-500 border-2 border-slate-900 flex items-center justify-center text-[10px] text-slate-300 font-bold">
+                            3+
+                          </div>
+                        </div>
+                      </>
                     )}
                     <span className="ml-auto text-xs text-slate-500">
                       {c.tempsLecture} min

@@ -18,6 +18,7 @@ const COLOR_HEX: Record<TailwindColor, string> = {
   blue: "#3b82f6",
   purple: "#c084fc",
   rose: "#fb7185",
+  lime: "#a3e635",
   slate: "#94a3b8",
 };
 

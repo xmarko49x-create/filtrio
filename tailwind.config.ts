@@ -17,6 +17,7 @@ const ACCENT_COLORS = [
   "blue",
   "purple",
   "rose",
+  "lime",
   "slate",
 ] as const;
 

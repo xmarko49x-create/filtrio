@@ -21,6 +21,7 @@ export type TailwindColor =
   | "blue"
   | "purple"
   | "rose"
+  | "lime"
   | "slate";
 
 export type OutilCategorie =
@@ -261,6 +262,30 @@ export const OUTILS: Outil[] = [
     priceFrom: "À partir de 16 $/mois",
     freeTier: "Plan gratuit disponible",
     affiliateLink: "#aff-kapwing",
+    ficheAvailable: true,
+  },
+  {
+    slug: "pictory",
+    name: "Pictory",
+    score: 7.5,
+    color: "rose",
+    tagline: "Script-to-video AI",
+    category: "script-to-video",
+    priceFrom: "À partir de 25 $/mois",
+    freeTier: "Essai gratuit",
+    affiliateLink: "#aff-pictory",
+    ficheAvailable: true,
+  },
+  {
+    slug: "pika",
+    name: "Pika",
+    score: 7.8,
+    color: "lime",
+    tagline: "Génération vidéo IA accessible",
+    category: "generation-video",
+    priceFrom: "Gratuit · Plans payants à partir de 8 $/mois",
+    freeTier: "Plan gratuit (80 credits/mois)",
+    affiliateLink: "#aff-pika",
     ficheAvailable: true,
   },
 ];

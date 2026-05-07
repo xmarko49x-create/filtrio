@@ -15,6 +15,8 @@ import { kapwingFiche } from "./kapwing";
 import { opusclipFiche } from "./opusclip";
 import { davinciFiche } from "./davinci";
 import { invideoFiche } from "./invideo";
+import { pictoryFiche } from "./pictory";
+import { pikaFiche } from "./pika";
 
 /**
  * Registre des fiches outils publiées. Les 16 sont portées en Next.js.
@@ -40,6 +42,8 @@ export const FICHE_REGISTRY: Record<string, FicheData> = {
   opusclip: opusclipFiche,
   davinci: davinciFiche,
   invideo: invideoFiche,
+  pictory: pictoryFiche,
+  pika: pikaFiche,
 };
 
 export function getFiche(slug: string): FicheData | undefined {

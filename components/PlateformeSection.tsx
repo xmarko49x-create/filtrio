@@ -46,8 +46,113 @@ export default function PlateformeSection({
     .map((slug) => OUTILS.find((o) => o.slug === slug))
     .filter((o): o is Outil => o !== undefined);
 
+  // Top 3 picks : les 3 premiers outils prioritaires avec fiche disponible.
+  // Format inspiré de Wirecutter / NerdWallet (Editor's pick + scoring visuel + CTA gros).
+  const top3 = outils.filter((o) => o.ficheAvailable).slice(0, 3);
+
+  const labelTop3 = (i: number): string => {
+    if (i === 0) return "Notre choix #1";
+    if (i === 1) return "Notre choix #2";
+    return "Notre choix #3";
+  };
+
   return (
     <>
+      {/* TOP 3 PICKS — format Wirecutter / NerdWallet : verdict éclair + gros CTA */}
+      {top3.length >= 2 && (
+        <section className="max-w-6xl mx-auto px-6 pt-16 pb-12">
+          <div className="mb-10">
+            <div className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-3">
+              Notre sélection
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">
+              Le top 3 pour {plateforme}.
+            </h2>
+            <p className="text-slate-400 text-lg max-w-3xl">
+              Les outils qui sortent du lot dans notre analyse 6 critères. Pas
+              un top arbitraire : classement par score éditorial.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-4">
+            {top3.map((o, i) => {
+              const showTester = hasRealAffiliateLink(o);
+              const isWinner = i === 0;
+              return (
+                <div
+                  key={o.slug}
+                  className={`p-6 rounded-xl border flex flex-col ${
+                    isWinner
+                      ? `bg-${o.color}-500/5 border-${o.color}-500/30`
+                      : "bg-slate-900 border-slate-800"
+                  }`}
+                >
+                  <div className="flex items-center justify-between mb-4">
+                    <span
+                      className={`text-xs font-bold uppercase tracking-wider ${
+                        isWinner
+                          ? `text-${o.color}-400`
+                          : "text-slate-500"
+                      }`}
+                    >
+                      {labelTop3(i)}
+                    </span>
+                    <span
+                      className={`text-${o.color}-400 font-bold text-lg`}
+                    >
+                      {o.score.toFixed(1)}/10
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3 mb-3">
+                    <div
+                      className={`w-12 h-12 rounded-xl bg-${o.color}-500/10 border border-${o.color}-500/30 flex items-center justify-center text-${o.color}-400 font-bold text-xl flex-shrink-0`}
+                    >
+                      {o.name.charAt(0)}
+                    </div>
+                    <h3 className="text-xl font-bold">{o.name}</h3>
+                  </div>
+                  <p className="text-sm text-slate-400 mb-3 flex-1">
+                    {o.tagline}
+                  </p>
+                  {o.priceFrom && (
+                    <p className="text-xs text-slate-500 mb-4">
+                      {o.priceFrom}
+                    </p>
+                  )}
+                  <div className="flex gap-2">
+                    {showTester ? (
+                      <TrackedAffiliateLink
+                        href={o.affiliateLink}
+                        outilSlug={o.slug}
+                        outilName={o.name}
+                        source="plateforme"
+                        className={`flex-1 text-center text-sm font-semibold bg-${o.color}-500 hover:bg-${o.color}-400 text-slate-950 px-4 py-2.5 rounded-lg transition`}
+                      >
+                        Tester {o.name}
+                      </TrackedAffiliateLink>
+                    ) : (
+                      <Link
+                        href={`/outils/${o.slug}`}
+                        className={`flex-1 text-center text-sm font-semibold bg-${o.color}-500 hover:bg-${o.color}-400 text-slate-950 px-4 py-2.5 rounded-lg transition`}
+                      >
+                        Voir {o.name}
+                      </Link>
+                    )}
+                    {showTester && (
+                      <Link
+                        href={`/outils/${o.slug}`}
+                        className="text-sm font-medium border border-slate-700 hover:border-slate-500 text-slate-200 px-4 py-2.5 rounded-lg transition"
+                      >
+                        Fiche
+                      </Link>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
       {/* OUTILS PRIORITAIRES */}
       <section className="border-y border-slate-800 bg-slate-900/40">
         <div className="max-w-6xl mx-auto px-6 py-24">

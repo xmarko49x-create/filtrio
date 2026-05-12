@@ -519,6 +519,21 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
       <AuthorBio />
       <Newsletter />
       <Footer />
+
+      {/* Sticky CTA mobile (visible < md uniquement) — pattern Tom's Guide / Mangools / NerdWallet */}
+      {hasRealAffiliateLink && (
+        <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-slate-950/95 backdrop-blur-md border-t border-slate-800 px-4 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.5)]">
+          <TrackedAffiliateLink
+            href={outil.affiliateLink}
+            outilSlug={outil.slug}
+            outilName={outil.name}
+            source="fiche"
+            className={`block w-full text-center bg-${outil.color}-500 hover:bg-${outil.color}-400 text-slate-950 font-semibold py-3 rounded-lg transition`}
+          >
+            Tester {outil.name} →
+          </TrackedAffiliateLink>
+        </div>
+      )}
     </>
   );
 }

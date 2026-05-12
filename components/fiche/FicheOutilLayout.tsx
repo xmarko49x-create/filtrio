@@ -8,6 +8,7 @@ import { TrackedAffiliateLink } from "@/components/TrackedAffiliateLink";
 import { JsonLd } from "@/components/JsonLd";
 import { AuthorByline } from "@/components/AuthorByline";
 import { AuthorBio } from "@/components/AuthorBio";
+import { formatDateFR } from "@/lib/author";
 import { getOutil, getOutilOrThrow, type TailwindColor } from "@/lib/outils";
 import {
   getReviewSchema,
@@ -175,14 +176,25 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-6 text-xs text-slate-500 border-t border-slate-800 pt-6 mt-8">
-          <div>
-            <span className="text-slate-400">Temps de lecture :</span>{" "}
-            {data.hero.tempsLecture} min
+        {/* Bandeau "Vérifié le X" — signal de fraîcheur visible (pattern Wirecutter / NerdWallet) */}
+        <div className="flex flex-wrap gap-3 items-center border-t border-slate-800 pt-6 mt-8">
+          <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-3 py-1.5">
+            <svg
+              aria-hidden="true"
+              className="w-4 h-4 text-emerald-400"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth="2.5"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span className="text-emerald-400 font-medium text-xs">
+              Vérifié le {formatDateFR(data.hero.lastCheck)} · Prix officiels
+            </span>
           </div>
-          <div>
-            <span className="text-slate-400">Dernière vérification :</span>{" "}
-            {data.hero.lastCheck}
+          <div className="text-xs text-slate-500">
+            Temps de lecture : {data.hero.tempsLecture} min
           </div>
         </div>
       </section>
@@ -378,6 +390,18 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
                       <li key={i}>— {ft}</li>
                     ))}
                   </ul>
+                  {/* CTA par plan (pattern NerdWallet / G2 / Wirecutter) — un bouton tracké par ligne pricing */}
+                  {hasRealAffiliateLink && (
+                    <TrackedAffiliateLink
+                      href={outil.affiliateLink}
+                      outilSlug={outil.slug}
+                      outilName={outil.name}
+                      source="fiche"
+                      className={`mt-5 text-center text-sm font-semibold border border-${outil.color}-500/40 text-${outil.color}-400 hover:bg-${outil.color}-500/10 px-4 py-2.5 rounded-lg transition`}
+                    >
+                      Essayer ce plan →
+                    </TrackedAffiliateLink>
+                  )}
                 </div>
               ))}
             </div>

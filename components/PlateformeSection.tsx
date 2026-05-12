@@ -46,9 +46,15 @@ export default function PlateformeSection({
     .map((slug) => OUTILS.find((o) => o.slug === slug))
     .filter((o): o is Outil => o !== undefined);
 
-  // Top 3 picks : les 3 premiers outils prioritaires avec fiche disponible.
-  // Format inspiré de Wirecutter / NerdWallet (Editor's pick + scoring visuel + CTA gros).
-  const top3 = outils.filter((o) => o.ficheAvailable).slice(0, 3);
+  // Top 3 picks : les 3 outils affiliés actifs avec le meilleur score,
+  // parmi la liste prioritaire de la plateforme.
+  // Pattern Wirecutter / NerdWallet / Mangools : l'"Editor's pick" est toujours
+  // un outil monétisable. Les outils sans affiliation restent visibles dans le
+  // classement complet en dessous (pas de censure, pas de re-ranking SEO).
+  const top3 = outils
+    .filter((o) => o.ficheAvailable && hasRealAffiliateLink(o))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 3);
 
   const labelTop3 = (i: number): string => {
     if (i === 0) return "Notre choix #1";

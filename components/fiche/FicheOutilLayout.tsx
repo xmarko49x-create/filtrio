@@ -387,7 +387,7 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
                   )}
                   <ul className="text-sm text-slate-300 space-y-1">
                     {p.features.map((ft, i) => (
-                      <li key={i}>, {ft}</li>
+                      <li key={i}>— {ft}</li>
                     ))}
                   </ul>
                   {/* CTA par plan (pattern NerdWallet / G2 / Wirecutter), un bouton tracké par ligne pricing */}

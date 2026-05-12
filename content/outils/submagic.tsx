@@ -78,7 +78,7 @@ export const submagicFiche: FicheData = {
     "Tu fais du personal branding ou du contenu court régulier (TikTok, Reels, Shorts)",
     "Tu veux une interface simple, sans courbe d'apprentissage",
     "Tes sources sont déjà courtes à moyennes",
-    "Tu travailles en français ou ciblent une audience FR",
+    "Tu travailles en français ou tu cibles une audience FR",
     "Tu veux un outil qui te fait gagner du temps sur le sous-titrage",
   ],
   pasPourQui: [

@@ -36,6 +36,7 @@ export default function YouTubePage() {
 
       <PlateformeSection
         plateforme="YouTube"
+        top3Slugs={["tubebuddy", "vidiq", "opusclip"]}
         outilsPrioritaires={[
           "tubebuddy",
           "vidiq",

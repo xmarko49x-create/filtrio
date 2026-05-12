@@ -9,8 +9,9 @@ export const opusclipFiche: FicheData = {
       "Le spécialiste incontournable de la découpe IA de long format en shorts. Plan gratuit récurrent mensuel, score viralité prédictif, intégrations massives. Voici pour qui il vaut son prix.",
     badges: [
       { label: "Large adoption", tone: "primary" },
-      { label: "Commission 25% récurrent 1 an", tone: "accent" },
+      { label: "Plan gratuit", tone: "accent" },
       { label: "Découpe IA auto", tone: "neutral" },
+      { label: "Long format vers shorts", tone: "neutral" },
     ],
     origine: "USA",
     depuis: "2022",
@@ -70,7 +71,7 @@ export const opusclipFiche: FicheData = {
   ],
   porQui: [
     "Tu pars de sources longues (podcasts, lives, interviews 30 min+)",
-    "Tu veux 100% d'automatisation de la découpe",
+    "Tu veux 100 % d'automatisation de la découpe",
     "Tu publies sur plusieurs plateformes en même temps",
     "Tu veux tester sérieusement sans payer (plan gratuit récurrent mensuel)",
     "Tu veux connecter directement YouTube, Twitch, Zoom, Drive",
@@ -96,7 +97,7 @@ export const opusclipFiche: FicheData = {
       poids: 20,
       score: 7.5,
       commentaire:
-        "Reconnaissance vocale FR correcte, segmentation des sous-titres à retoucher sur vocabulaire technique. Meilleur sur l'anglais, pensé pour le marché US d'abord. Interface multilingue mais pas 100% FR natif.",
+        "Reconnaissance vocale FR correcte, segmentation des sous-titres à retoucher sur vocabulaire technique. Meilleur sur l'anglais, pensé pour le marché US d'abord. Interface multilingue mais pas 100 % FR natif.",
     },
     {
       label: "Rapport qualité/prix",

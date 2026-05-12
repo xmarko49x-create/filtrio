@@ -6,6 +6,13 @@ interface PlateformeSectionProps {
   plateforme: "YouTube" | "TikTok / Shorts";
   /** Slugs des outils les plus pertinents (ordre = priorité). */
   outilsPrioritaires: string[];
+  /**
+   * Top 3 contextualisé pour cette plateforme (slugs explicites, dans l'ordre
+   * d'affichage). Si fourni, override le tri automatique par score affilié.
+   * Permet d'afficher les outils vraiment pertinents pour la plateforme
+   * (ex: TubeBuddy/VidIQ pour YouTube) plutôt que le top score global.
+   */
+  top3Slugs?: string[];
   /** Slugs des comparatifs pertinents. */
   comparatifsPertinents: { slug: string; titre: string; description: string }[];
   /** Slugs des cas d'usage pertinents. */
@@ -39,6 +46,7 @@ function suggererAlternative(outil: Outil): Outil | undefined {
 export default function PlateformeSection({
   plateforme,
   outilsPrioritaires,
+  top3Slugs,
   comparatifsPertinents,
   casUsagePertinents,
 }: PlateformeSectionProps) {
@@ -46,15 +54,21 @@ export default function PlateformeSection({
     .map((slug) => OUTILS.find((o) => o.slug === slug))
     .filter((o): o is Outil => o !== undefined);
 
-  // Top 3 picks : les 3 outils affiliés actifs avec le meilleur score,
-  // parmi la liste prioritaire de la plateforme.
-  // Pattern Wirecutter / NerdWallet / Mangools : l'"Editor's pick" est toujours
-  // un outil monétisable. Les outils sans affiliation restent visibles dans le
-  // classement complet en dessous (pas de censure, pas de re-ranking SEO).
-  const top3 = outils
-    .filter((o) => o.ficheAvailable && hasRealAffiliateLink(o))
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 3);
+  // Top 3 contextualisé pour la plateforme.
+  // Si top3Slugs est fourni : on utilise cette liste explicite dans l'ordre
+  // (pertinence éditoriale pour la plateforme, pas score absolu).
+  // Sinon fallback historique : 3 outils affiliés avec meilleur score.
+  const top3: Outil[] = top3Slugs && top3Slugs.length > 0
+    ? top3Slugs
+        .map((slug) => OUTILS.find((o) => o.slug === slug && o.ficheAvailable))
+        .filter((o): o is Outil => o !== undefined)
+        .slice(0, 3)
+    : outils
+        .filter((o) => o.ficheAvailable && hasRealAffiliateLink(o))
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 3);
+
+  const top3IsContextual = !!(top3Slugs && top3Slugs.length > 0);
 
   const labelTop3 = (i: number): string => {
     if (i === 0) return "Notre choix #1";
@@ -75,8 +89,9 @@ export default function PlateformeSection({
               Le top 3 pour {plateforme}.
             </h2>
             <p className="text-slate-400 text-lg max-w-3xl">
-              Les outils qui sortent du lot dans notre analyse 6 critères. Pas
-              un top arbitraire : classement par score éditorial.
+              {top3IsContextual
+                ? `Sélection contextualisée pour ${plateforme}. Ces 3 outils couvrent les besoins clés d'un créateur sur cette plateforme, pas un classement par score absolu.`
+                : "Les outils qui sortent du lot dans notre analyse 6 critères. Pas un top arbitraire, classement par score éditorial."}
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-4">

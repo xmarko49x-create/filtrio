@@ -23,8 +23,8 @@ export const videoLongueEnShorts: CasUsageData = {
     paragraphs: [
       <>
         L&apos;IA identifie les passages forts d&apos;une vidéo longue et
-        propose 5 à 15 clips courts prêts à publier, avec sous-titres auto et
-        recadrage vertical. Gain de temps massif vs découpe manuelle.
+        propose une série de clips courts prêts à publier, avec sous-titres
+        auto et recadrage vertical. Gain de temps massif vs découpe manuelle.
       </>,
       <>
         <strong className="text-slate-200">Alternative sérieuse :</strong>{" "}
@@ -80,8 +80,8 @@ export const videoLongueEnShorts: CasUsageData = {
         "Détection IA des moments forts la plus mature du marché",
         "Sous-titres auto intégrés, pas besoin d'un second outil",
         "Recadrage 9:16 avec suivi de visage fluide",
-        "API disponible sur plan Pro pour automatiser",
-        "Plan gratuit récurrent (60 min/mois) pour tester durablement",
+        "API disponible sur le plan le plus élevé (Business), à vérifier sur opus.pro",
+        "Plan gratuit récurrent pour tester durablement (pas juste un essai limité dans le temps)",
       ],
       limites: [
         "Qualité sous-titres FR en retrait vs Submagic",
@@ -143,7 +143,7 @@ export const videoLongueEnShorts: CasUsageData = {
     {
       titre: "Plan gratuit durable",
       description:
-        "60 min/mois récurrent, pas juste un essai. Permet de tester sérieusement sans pression d'abonnement immédiat. Rare dans cette catégorie.",
+        "Plan gratuit récurrent, pas juste un essai limité dans le temps. Permet de tester sérieusement sans pression d'abonnement immédiat. Rare dans cette catégorie.",
     },
   ],
   piegesAEviter: [
@@ -225,13 +225,13 @@ export const videoLongueEnShorts: CasUsageData = {
     {
       question: "Combien de temps pour traiter 1h de source ?",
       answer:
-        "Environ 15-25 minutes en traitement cloud côté OpusClip. Tu lances puis tu fais autre chose, tu reçois les clips prêts. Vs 2-3h de travail manuel dans un éditeur classique.",
+        "Traitement cloud côté OpusClip qui prend généralement quelques dizaines de minutes. Tu lances puis tu fais autre chose, tu reçois les clips prêts. Vs 2-3h de travail manuel dans un éditeur classique.",
     },
   ],
   ctaFinal: {
     headline: "Prêt à automatiser la découpe ?",
     paragraph:
-      "Le plan gratuit OpusClip (60 min/mois) permet de tester sur ta source la plus récente sans engagement. Résultat en 20 minutes.",
+      "Le plan gratuit OpusClip permet de tester sur ta source la plus récente sans engagement, avant de basculer sur un plan payant si tu valides l'approche.",
     buttonText: "Essayer OpusClip",
   },
   autresCasUsage: [

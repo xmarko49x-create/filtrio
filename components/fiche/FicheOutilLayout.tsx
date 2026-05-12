@@ -336,7 +336,7 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
             Fonctionnalités principales
           </div>
           <h2 className="text-3xl font-bold mb-10 tracking-tight">
-            Ce que {outil.name} sait faire.
+            Ce {/[aeiouyhAEIOUYH]/.test(outil.name.charAt(0)) ? `qu'${outil.name}` : `que ${outil.name}`} sait faire.
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
             {data.fonctionnalites.map((f) => (
@@ -581,7 +581,7 @@ function MethodologyNote() {
         en main des plans gratuits.
       </p>
       <p>
-        <strong className="text-slate-300">Phase à venir :</strong> protocole de
+        <strong className="text-slate-300">Phase à venir :</strong>{" "}protocole de
         test comparatif standardisé avec sources vidéo identiques selon les cas
         d&apos;usage.
       </p>

@@ -260,7 +260,7 @@ export const canvaFiche: FicheData = {
       answer: (
         <>
           Pour du court social media simple, oui. Pour un montage long format
-          ou avec color grading, non — utilise plutôt{" "}
+          ou avec color grading, non, utilise plutôt{" "}
           <Link href="/outils/capcut" className="text-sky-400 hover:underline">
             CapCut
           </Link>{" "}

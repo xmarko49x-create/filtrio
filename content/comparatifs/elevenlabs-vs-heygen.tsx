@@ -118,7 +118,7 @@ export const elevenlabsVsHeygen: ComparatifData = {
     {
       profil: "Créateur avancé qui veut le meilleur des deux",
       description:
-        "Voix ElevenLabs importée dans HeyGen pour un avatar avec voix ultra-naturelle. Workflow pro mais coûteux — pertinent pour du contenu premium.",
+        "Voix ElevenLabs importée dans HeyGen pour un avatar avec voix ultra-naturelle. Workflow pro mais coûteux, pertinent pour du contenu premium.",
       gagnant: "B",
     },
   ],
@@ -188,7 +188,7 @@ export const elevenlabsVsHeygen: ComparatifData = {
     {
       question: "La qualité FR d'ElevenLabs est-elle vraiment supérieure ?",
       answer:
-        "Selon les retours publics et les comparaisons disponibles en ligne (Reddit, démos YouTube), oui — sur la naturalité du phrasé, la gestion des liaisons, l'intonation. HeyGen est correct pour du contenu corporate mais moins convaincant pour du narratif long. Le critère est audible pour une oreille FR exigeante.",
+        "Selon les retours publics et les comparaisons disponibles en ligne (Reddit, démos YouTube), oui, sur la naturalité du phrasé, la gestion des liaisons, l'intonation. HeyGen est correct pour du contenu corporate mais moins convaincant pour du narratif long. Le critère est audible pour une oreille FR exigeante.",
     },
     {
       question: "Quel modèle économique choisir : crédits ou minutes ?",

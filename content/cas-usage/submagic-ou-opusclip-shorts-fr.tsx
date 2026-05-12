@@ -7,7 +7,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
   hero: {
     h1: "Submagic ou OpusClip pour des shorts en français",
     tagline:
-      "C'est la question qui revient le plus chez les créateurs FR. Les deux outils sont excellents mais ne résolvent pas le même problème. Voici le choix guidé en 4 questions pour savoir lequel prendre — ou quand utiliser les deux.",
+      "C'est la question qui revient le plus chez les créateurs FR. Les deux outils sont excellents mais ne résolvent pas le même problème. Voici le choix guidé en 4 questions pour savoir lequel prendre, ou quand utiliser les deux.",
     tempsLecture: 5,
     outilsAnalyses: 2,
     lastCheck: "20/04/2026",
@@ -118,7 +118,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
     {
       titre: "Submagic gagne si tu tournes directement court",
       description:
-        "Tu tournes des shorts de 30-90 sec en face cam ou en voix off. Submagic te donne un rendu viral FR en 90 secondes. OpusClip serait du gaspillage ici — tu n'as pas de long format à découper.",
+        "Tu tournes des shorts de 30-90 sec en face cam ou en voix off. Submagic te donne un rendu viral FR en 90 secondes. OpusClip serait du gaspillage ici, tu n'as pas de long format à découper.",
     },
     {
       titre: "OpusClip gagne si tu pars de long",

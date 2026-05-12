@@ -290,7 +290,7 @@ export default function CasUsageLayout({ data }: { data: CasUsageData }) {
               </TrackedAffiliateLink>
               <p className="text-xs text-slate-500 mt-6 max-w-lg mx-auto">
                 Ce lien est affilié. Si tu t&apos;abonnes, on touche une
-                commission — sans que cela change jamais notre classement.
+                commission, sans que cela change jamais notre classement.
               </p>
             </>
           ) : (
@@ -420,7 +420,7 @@ function OutilCard({
                 <div className="font-semibold text-emerald-400 mb-2">Pourquoi il gagne</div>
                 <ul className="text-slate-300 space-y-1">
                   {item.pourquoiGagne.map((p, i) => (
-                    <li key={i}>— {p}</li>
+                    <li key={i}>, {p}</li>
                   ))}
                 </ul>
               </div>
@@ -428,7 +428,7 @@ function OutilCard({
                 <div className="font-semibold text-rose-400 mb-2">Limites pour ce cas</div>
                 <ul className="text-slate-300 space-y-1">
                   {item.limites.map((l, i) => (
-                    <li key={i}>— {l}</li>
+                    <li key={i}>, {l}</li>
                   ))}
                 </ul>
               </div>

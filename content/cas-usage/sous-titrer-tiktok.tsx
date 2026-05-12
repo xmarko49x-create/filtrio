@@ -164,7 +164,7 @@ export const sousTitrerTiktok: CasUsageData = {
     {
       titre: "Ignorer le template de la niche",
       description:
-        "Le style des sous-titres doit matcher ton audience. Les templates sérieux pour les contenus éducatifs, les templates flashy pour les divertissants. Submagic propose plusieurs styles — prends le temps de choisir.",
+        "Le style des sous-titres doit matcher ton audience. Les templates sérieux pour les contenus éducatifs, les templates flashy pour les divertissants. Submagic propose plusieurs styles, prends le temps de choisir.",
     },
   ],
   commentChoisir: [

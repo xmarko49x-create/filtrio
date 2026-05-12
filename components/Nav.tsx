@@ -58,7 +58,7 @@ export default function Nav({ ctaHref = "#verdict" }: { ctaHref?: string }) {
             Voir le verdict
           </Link>
 
-          {/* Hamburger — visible < lg (les liens du menu sont en lg:flex) */}
+          {/* Hamburger, visible < lg (les liens du menu sont en lg:flex) */}
           <button
             type="button"
             aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}

@@ -64,7 +64,7 @@ export default function PlateformeSection({
 
   return (
     <>
-      {/* TOP 3 PICKS — format Wirecutter / NerdWallet : verdict éclair + gros CTA */}
+      {/* TOP 3 PICKS, format Wirecutter / NerdWallet : verdict éclair + gros CTA */}
       {top3.length >= 2 && (
         <section className="max-w-6xl mx-auto px-6 pt-16 pb-12">
           <div className="mb-10">

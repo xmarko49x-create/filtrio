@@ -102,7 +102,7 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
 
   // Outil "gagnant" du verdict final (CTA principal).
   const winner = data.verdictFinal.ctaGagnant === "A" ? A : B;
-  // Outil "perdant" — affiché en CTA secondaire pour donner le choix au visiteur.
+  // Outil "perdant", affiché en CTA secondaire pour donner le choix au visiteur.
   const loser = data.verdictFinal.ctaGagnant === "A" ? B : A;
 
   // Helper : récupère un Outil du registre + détecte un lien affilié réel.

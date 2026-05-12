@@ -153,7 +153,7 @@ export const vidiqVsTubebuddy: ComparatifData = {
           miniatures natifs, suggestions de contenu. Ça ne remplace pas
           totalement VidIQ ou TubeBuddy mais ça couvre une partie significative
           des besoins de base gratuitement. À noter : côté TubeBuddy, la page
-          Tarifs officielle ne met plus en avant de plan gratuit en 2026 —
+          Tarifs officielle ne met plus en avant de plan gratuit en 2026 ,
           seuls les plans Pro et Legend sont affichés.{" "}
           <Link href="/outils/vidiq" className="text-sky-400 hover:underline">
             VidIQ
@@ -196,7 +196,7 @@ export const vidiqVsTubebuddy: ComparatifData = {
           <Link href="/outils/tubebuddy" className="text-orange-400 hover:underline">
             TubeBuddy
           </Link>{" "}
-          à partir de 3,99 $/mois (Pro annuel) — tarif d&apos;entrée
+          à partir de 3,99 $/mois (Pro annuel), tarif d&apos;entrée
           sensiblement plus bas sur le papier.
         </>
       ),

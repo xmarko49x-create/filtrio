@@ -176,7 +176,7 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
           </div>
         </div>
 
-        {/* Bandeau "Vérifié le X" — signal de fraîcheur visible (pattern Wirecutter / NerdWallet) */}
+        {/* Bandeau "Vérifié le X", signal de fraîcheur visible (pattern Wirecutter / NerdWallet) */}
         <div className="flex flex-wrap gap-3 items-center border-t border-slate-800 pt-6 mt-8">
           <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-3 py-1.5">
             <svg
@@ -199,7 +199,7 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
         </div>
       </section>
 
-      {/* APERÇU VISUEL — optionnel */}
+      {/* APERÇU VISUEL, optionnel */}
       {data.apercuVisuel && (
         <section className="max-w-5xl mx-auto px-6 pb-16">
           <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-4">
@@ -387,10 +387,10 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
                   )}
                   <ul className="text-sm text-slate-300 space-y-1">
                     {p.features.map((ft, i) => (
-                      <li key={i}>— {ft}</li>
+                      <li key={i}>, {ft}</li>
                     ))}
                   </ul>
-                  {/* CTA par plan (pattern NerdWallet / G2 / Wirecutter) — un bouton tracké par ligne pricing */}
+                  {/* CTA par plan (pattern NerdWallet / G2 / Wirecutter), un bouton tracké par ligne pricing */}
                   {hasRealAffiliateLink && (
                     <TrackedAffiliateLink
                       href={outil.affiliateLink}
@@ -544,7 +544,7 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
       <Newsletter />
       <Footer />
 
-      {/* Sticky CTA mobile (visible < md uniquement) — pattern Tom's Guide / Mangools / NerdWallet */}
+      {/* Sticky CTA mobile (visible < md uniquement), pattern Tom's Guide / Mangools / NerdWallet */}
       {hasRealAffiliateLink && (
         <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-slate-950/95 backdrop-blur-md border-t border-slate-800 px-4 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.5)]">
           <TrackedAffiliateLink

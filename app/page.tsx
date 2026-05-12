@@ -14,7 +14,7 @@ import {
   getFaqPageSchema,
 } from "@/lib/schema";
 
-// Mini-FAQ home — questions classiques de visiteur lambda
+// Mini-FAQ home, questions classiques de visiteur lambda
 const HOME_FAQ: { question: string; answer: React.ReactNode }[] = [
   {
     question: "C'est gratuit, ces outils ?",
@@ -112,7 +112,7 @@ export default function HomePage() {
       />
       <Nav ctaHref="#top-outils" />
 
-      {/* HERO — direct, orienté utilité */}
+      {/* HERO, direct, orienté utilité */}
       <section className="relative overflow-hidden">
         {/* Halos décoratifs full-width (clipés au viewport, pas au max-w-5xl) */}
         <div
@@ -433,7 +433,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* MÉTHODE — version allégée */}
+      {/* MÉTHODE, version allégée */}
       <section className="max-w-5xl mx-auto px-6 py-24">
         <div className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-3">
           Notre méthode
@@ -487,7 +487,7 @@ export default function HomePage() {
         </Link>
       </section>
 
-      {/* FAQ — questions classiques visiteur lambda */}
+      {/* FAQ, questions classiques visiteur lambda */}
       <section className="border-y border-slate-800 bg-slate-900/40">
         <div className="max-w-4xl mx-auto px-6 py-24">
           <div className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-3">

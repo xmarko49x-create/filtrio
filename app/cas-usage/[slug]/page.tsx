@@ -23,7 +23,7 @@ export async function generateMetadata(props: {
     description: meta.description,
     alternates: { canonical: `/cas-usage/${slug}` },
     openGraph: {
-      title: `${meta.titre} — Filtrio`,
+      title: `${meta.titre}, Filtrio`,
       description: meta.description,
       type: "article",
     },

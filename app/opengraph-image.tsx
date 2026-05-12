@@ -4,7 +4,7 @@ import { ImageResponse } from "next/og";
 // Utilisée comme aperçu quand un lien Filtrio est partagé sur
 // LinkedIn, X (Twitter), Facebook, WhatsApp, Slack, Discord, etc.
 export const alt =
-  "Filtrio — Comparateur d'outils IA pour créateurs vidéo";
+  "Filtrio, Comparateur d'outils IA pour créateurs vidéo";
 export const size = {
   width: 1200,
   height: 630,

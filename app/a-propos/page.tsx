@@ -10,7 +10,7 @@ const AUTEUR = {
 };
 
 export const metadata: Metadata = {
-  title: "À propos de Filtrio — Comparateur d'outils IA pour créateurs vidéo",
+  title: "À propos de Filtrio, Comparateur d'outils IA pour créateurs vidéo",
   description:
     "Filtrio est un comparateur indépendant d'outils IA pour créateurs vidéo. Méthode de notation claire, transparence sur l'affiliation.",
   alternates: { canonical: "/a-propos" },
@@ -148,7 +148,7 @@ export default function AProposPage() {
         </p>
       </section>
 
-      {/* POUR COMMENCER — maillage */}
+      {/* POUR COMMENCER, maillage */}
       <section className="border-y border-slate-800 bg-slate-900/40">
         <div className="max-w-3xl mx-auto px-6 py-14">
           <h2 className="text-3xl font-bold mb-6 tracking-tight">

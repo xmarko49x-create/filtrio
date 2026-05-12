@@ -271,7 +271,7 @@ export const capcutFiche: FicheData = {
     {
       question: "Le plan CapCut Pro vaut-il son prix ?",
       answer:
-        "Dépend de ton usage. Si tu exportes régulièrement en 4K, utilises les 1 400 crédits mensuels (features IA avancées) et le stock premium, le Pro peut se justifier — surtout à 199,99 €/an (≈ 16,66 €/mois). Sinon le plan gratuit couvre largement la majorité des créateurs solo. Un combo à envisager : CapCut gratuit pour monter + Submagic (à partir de 12 €/mois) pour le rendu sous-titres stylés FR.",
+        "Dépend de ton usage. Si tu exportes régulièrement en 4K, utilises les 1 400 crédits mensuels (features IA avancées) et le stock premium, le Pro peut se justifier, surtout à 199,99 €/an (≈ 16,66 €/mois). Sinon le plan gratuit couvre largement la majorité des créateurs solo. Un combo à envisager : CapCut gratuit pour monter + Submagic (à partir de 12 €/mois) pour le rendu sous-titres stylés FR.",
     },
     {
       question: "La question ByteDance pose-t-elle problème ?",

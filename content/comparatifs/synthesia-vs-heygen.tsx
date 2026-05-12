@@ -124,7 +124,7 @@ export const synthesiaVsHeygen: ComparatifData = {
       <>
         Synthesia pour le B2B et la conformité. HeyGen pour le créateur et la
         vitesse. La ligne de partage est claire : pose-toi la question
-        &quot;est-ce que j&apos;ai des exigences d&apos;entreprise ?&quot; —
+        &quot;est-ce que j&apos;ai des exigences d&apos;entreprise ?&quot; ,
         la réponse tranche.
       </>
     ),

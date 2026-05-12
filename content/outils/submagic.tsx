@@ -173,7 +173,7 @@ export const submagicFiche: FicheData = {
     {
       titre: "B-roll et effets sonores IA",
       description:
-        "Ajoute automatiquement des images d'illustration et des effets audio selon le contexte. À utiliser avec parcimonie — peut vite faire 'IA générique' si abusé.",
+        "Ajoute automatiquement des images d'illustration et des effets audio selon le contexte. À utiliser avec parcimonie, peut vite faire 'IA générique' si abusé.",
     },
   ],
   plans: [
@@ -260,7 +260,7 @@ export const submagicFiche: FicheData = {
     {
       question: "Submagic vaut-il son abonnement pour un créateur qui débute ?",
       answer:
-        "Oui si tu publies au moins 4-5 shorts par mois. Le temps gagné sur les sous-titres stylés compense rapidement le coût. Non si tu publies très occasionnellement — CapCut gratuit fera l'affaire.",
+        "Oui si tu publies au moins 4-5 shorts par mois. Le temps gagné sur les sous-titres stylés compense rapidement le coût. Non si tu publies très occasionnellement, CapCut gratuit fera l'affaire.",
     },
     {
       question: "La précision FR est-elle vraiment meilleure que les alternatives ?",

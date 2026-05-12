@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Catalogue filtrable de 16 outils IA analysés sur 6 critères. Filtre par catégorie, plan gratuit, recherche par nom. Score éditorial transparent.",
   alternates: { canonical: "/outils" },
   openGraph: {
-    title: "Tous les outils IA pour créateurs vidéo — Filtrio",
+    title: "Tous les outils IA pour créateurs vidéo, Filtrio",
     description:
       "16 outils analysés en profondeur. Filtre par catégorie ou plan gratuit pour trouver ce qu'il te faut.",
     type: "website",
@@ -24,7 +24,7 @@ export default function OutilsPage() {
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Outils IA pour créateurs vidéo — Filtrio",
+    name: "Outils IA pour créateurs vidéo, Filtrio",
     description:
       "Catalogue éditorial Filtrio des outils IA analysés sur 6 critères.",
     itemListElement: OUTILS.filter((o) => o.ficheAvailable).map((o, i) => ({

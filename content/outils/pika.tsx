@@ -36,7 +36,7 @@ export const pikaFiche: FicheData = {
             Runway
           </Link>
           ). Tu veux des intégrations VFX avancées (motion tracking, green
-          screen IA — Runway domine). Tu produis du contenu linéaire long
+          screen IA, Runway domine). Tu produis du contenu linéaire long
           format classique (génération vidéo IA pas adaptée).
         </>
       ),
@@ -94,7 +94,7 @@ export const pikaFiche: FicheData = {
       </Link>
       )
     </>,
-    "Tu fais des effets VFX pros (motion tracking, green screen IA — Runway)",
+    "Tu fais des effets VFX pros (motion tracking, green screen IA, Runway)",
     "Tu produis pour des clients premium qui exigent une qualité référence",
     "Tu as besoin d'API robuste pour automatiser (Runway plus mature)",
     "Tu fais du long format ou de l'éducatif linéaire",

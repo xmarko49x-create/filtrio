@@ -162,7 +162,7 @@ export const veedVsKapwing: ComparatifData = {
     {
       question: "Coûts totaux sur un an ?",
       answer:
-        "Veed Basic : 144 $/an pour 1 user. Kapwing Business : 600 $/user/an. L'écart est énorme mais n'a de sens qu'en comparant équipe vs solo. En équipe de 5 monteurs, Kapwing à 3000 $/an vs Veed Business à ~700 $/an — la différence se justifie uniquement si tu utilises vraiment la collaboration temps réel.",
+        "Veed Basic : 144 $/an pour 1 user. Kapwing Business : 600 $/user/an. L'écart est énorme mais n'a de sens qu'en comparant équipe vs solo. En équipe de 5 monteurs, Kapwing à 3000 $/an vs Veed Business à ~700 $/an, la différence se justifie uniquement si tu utilises vraiment la collaboration temps réel.",
     },
   ],
 };

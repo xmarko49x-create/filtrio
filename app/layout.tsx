@@ -5,8 +5,8 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.filtrio.fr"),
   title: {
-    default: "Filtrio — Comparateur d'outils IA pour créateurs vidéo",
-    template: "%s — Filtrio",
+    default: "Filtrio, Comparateur d'outils IA pour créateurs vidéo",
+    template: "%s, Filtrio",
   },
   description:
     "Comparateur indépendant d'outils IA pour créateurs vidéo : Submagic, OpusClip, ElevenLabs, HeyGen et 12 autres. Notés sur 6 critères, prix vérifiés, sans langue de bois.",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     siteName: "Filtrio",
-    title: "Filtrio — Comparateur d'outils IA pour créateurs vidéo",
+    title: "Filtrio, Comparateur d'outils IA pour créateurs vidéo",
     description:
       "Comparateur indépendant d'outils IA pour créateurs vidéo : Submagic, OpusClip, ElevenLabs, HeyGen et 12 autres. Notés sur 6 critères, prix vérifiés.",
   },
@@ -46,7 +46,7 @@ export default function RootLayout({
       </head>
       <body>
         {children}
-        {/* Plausible Analytics — privacy-friendly, cookie-less, sans bandeau */}
+        {/* Plausible Analytics, privacy-friendly, cookie-less, sans bandeau */}
         <Script
           src="https://plausible.io/js/pa-VYPdDDpvcbd6XBNACEEcX.js"
           strategy="afterInteractive"

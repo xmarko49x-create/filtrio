@@ -229,7 +229,7 @@ export const sousTitresRapides: CasUsageData = {
     {
       question: "Les sous-titres IA en français sont-ils fiables ?",
       answer:
-        "Sur un audio propre, oui — les outils spécialisés FR comme Submagic produisent des sous-titres corrects avec peu de retouches nécessaires selon les retours utilisateurs publics. Les difficultés restent : vocabulaire technique pointu, noms propres rares, accents régionaux forts. Dans ces cas, prévois une relecture rapide.",
+        "Sur un audio propre, oui, les outils spécialisés FR comme Submagic produisent des sous-titres corrects avec peu de retouches nécessaires selon les retours utilisateurs publics. Les difficultés restent : vocabulaire technique pointu, noms propres rares, accents régionaux forts. Dans ces cas, prévois une relecture rapide.",
     },
     {
       question: "Submagic mérite-t-il son abonnement juste pour la vitesse ?",

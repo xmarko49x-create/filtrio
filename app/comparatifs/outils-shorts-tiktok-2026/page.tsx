@@ -357,7 +357,7 @@ export default function GrandComparatifPage() {
         </p>
       </section>
 
-      {/* VERDICT EN 30S — synthèse */}
+      {/* VERDICT EN 30S, synthèse */}
       <section className="max-w-5xl mx-auto px-6 pb-16">
         <div className="bg-gradient-to-br from-amber-500/10 to-emerald-500/5 border border-amber-500/20 rounded-2xl p-8 md:p-10">
           <div className="text-sm font-semibold text-amber-400 uppercase tracking-wider mb-4">
@@ -532,7 +532,7 @@ export default function GrandComparatifPage() {
         </div>
       </section>
 
-      {/* MAILLAGE — comparatifs 1v1 + cas d'usage */}
+      {/* MAILLAGE, comparatifs 1v1 + cas d'usage */}
       <section className="border-y border-slate-800 bg-slate-900/40">
         <div className="max-w-5xl mx-auto px-6 py-16">
           <div className="text-sm font-semibold text-amber-400 uppercase tracking-wider mb-3">

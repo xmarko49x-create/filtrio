@@ -114,7 +114,7 @@ export default function OutilsCatalog() {
           </select>
         </div>
 
-        {/* Budget — 3 boutons rapides */}
+        {/* Budget, 3 boutons rapides */}
         <div>
           <label className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
             Budget

@@ -91,7 +91,7 @@ export default function MethodePage() {
         </div>
       </section>
 
-      {/* COLLECTE DES DONNÉES — resserrée */}
+      {/* COLLECTE DES DONNÉES, resserrée */}
       <section className="max-w-4xl mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold mb-8 tracking-tight">
           D&apos;où viennent les données.
@@ -160,7 +160,7 @@ export default function MethodePage() {
         </div>
       </section>
 
-      {/* EXEMPLES CONCRETS — nouveau bloc maillage */}
+      {/* EXEMPLES CONCRETS, nouveau bloc maillage */}
       <section className="max-w-4xl mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold mb-8 tracking-tight">
           La méthode appliquée concrètement.
@@ -179,7 +179,7 @@ export default function MethodePage() {
               Fiche outil
             </div>
             <div className="font-semibold group-hover:text-emerald-400 transition">
-              Submagic — l&apos;avis complet
+              Submagic, l&apos;avis complet
             </div>
             <div className="text-sm text-slate-400 mt-1">
               Grille des 6 critères, plans réels, verdict par profil.

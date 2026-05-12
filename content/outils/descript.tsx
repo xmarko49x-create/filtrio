@@ -260,7 +260,7 @@ export const descriptFiche: FicheData = {
     {
       question: "L'édition textuelle vaut-elle vraiment la courbe d'apprentissage ?",
       answer:
-        "Oui pour un usage long format régulier. Compte 2-3h pour être à l'aise. Une fois maîtrisé, le gain de productivité est massif — selon les retours publics, le temps de montage d'un podcast d'1h est divisé par 3 à 5 vs un workflow timeline classique.",
+        "Oui pour un usage long format régulier. Compte 2-3h pour être à l'aise. Une fois maîtrisé, le gain de productivité est massif, selon les retours publics, le temps de montage d'un podcast d'1h est divisé par 3 à 5 vs un workflow timeline classique.",
     },
     {
       question: "La transcription FR est-elle fiable ?",

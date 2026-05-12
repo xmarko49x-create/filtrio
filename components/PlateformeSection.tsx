@@ -164,14 +164,22 @@ export default function PlateformeSection({
         <div className="max-w-6xl mx-auto px-6 py-24">
           <div className="mb-12">
             <div className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-3">
-              Les outils qui comptent
+              Pour aller plus loin
             </div>
             <h2 className="text-4xl font-bold mb-3 tracking-tight">
-              Pour {plateforme}, voici le classement.
+              Les outils utiles pour {plateforme}.
             </h2>
             <p className="text-slate-400 text-lg max-w-3xl">
-              Score éditorial Filtrio sur 6 critères identiques pour tous. Les
-              fiches disponibles ouvrent l&apos;analyse complète.
+              Triés par pertinence pour {plateforme} — pas par score absolu. Le
+              score reflète la qualité globale de l&apos;outil, tous usages
+              confondus. Pour un classement strict par score, voir le{" "}
+              <Link
+                href="/outils"
+                className="text-emerald-400 hover:text-emerald-300 underline"
+              >
+                catalogue complet
+              </Link>
+              .
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">

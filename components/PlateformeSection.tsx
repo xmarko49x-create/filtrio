@@ -170,7 +170,7 @@ export default function PlateformeSection({
               Les outils utiles pour {plateforme}.
             </h2>
             <p className="text-slate-400 text-lg max-w-3xl">
-              Triés par pertinence pour {plateforme} — pas par score absolu. Le
+              Triés par pertinence pour {plateforme}. Pas par score absolu. Le
               score reflète la qualité globale de l&apos;outil, tous usages
               confondus. Pour un classement strict par score, voir le{" "}
               <Link

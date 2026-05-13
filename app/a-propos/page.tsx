@@ -67,19 +67,10 @@ export default function AProposPage() {
             Filtrio existe pour simplifier ce choix. Le site met
             l&apos;accent sur trois choses :
           </p>
-          <ul className="space-y-2 text-slate-300 leading-relaxed">
-            <li className="flex gap-3">
-              <span className="text-emerald-400 mt-1">•</span>
-              <span>comprendre rapidement à quoi sert vraiment un outil,</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-emerald-400 mt-1">•</span>
-              <span>voir ses limites autant que ses points forts,</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-emerald-400 mt-1">•</span>
-              <span>comparer plusieurs options sans jargon inutile.</span>
-            </li>
+          <ul className="space-y-2 text-slate-300 leading-relaxed list-disc list-inside marker:text-emerald-400 pl-1">
+            <li>comprendre rapidement à quoi sert vraiment un outil,</li>
+            <li>voir ses limites autant que ses points forts,</li>
+            <li>comparer plusieurs options sans jargon inutile.</li>
           </ul>
         </div>
       </section>

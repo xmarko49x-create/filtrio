@@ -138,7 +138,7 @@ export const videoLongueEnShorts: CasUsageData = {
     {
       titre: "API pour scaler",
       description:
-        "Sur plan Pro, l'API permet d'automatiser via Make : chaque nouvelle vidéo YouTube déclenche la génération automatique de 5-10 shorts. Game-changer pour agences.",
+        "L'API et les automatisations dépendent du plan choisi. À vérifier sur la page officielle d'OpusClip avant de construire un workflow Make.",
     },
     {
       titre: "Plan gratuit durable",
@@ -150,7 +150,7 @@ export const videoLongueEnShorts: CasUsageData = {
     {
       titre: "Couper à la main",
       description:
-        "2-3 heures de travail pour ce que l'IA fait en 5 minutes. Absurde si tu produis régulièrement du long format. Laisse l'IA proposer, valide, ajuste.",
+        "Plusieurs heures de travail manuel pour ce que l'IA traite en automatique. Absurde si tu produis régulièrement du long format. Laisse l'IA proposer, valide, ajuste.",
     },
     {
       titre: "Utiliser un outil qui sait pas faire du FR",
@@ -205,12 +205,12 @@ export const videoLongueEnShorts: CasUsageData = {
     {
       question: "Combien de shorts peut-on tirer d'un podcast d'1h ?",
       answer:
-        "Entre 5 et 15 clips de 30 à 90 secondes, selon la densité du contenu. L'IA d'OpusClip priorise les passages les plus punchy. Sur une conversation fluide et dense, 10-12 clips de qualité publiables est courant.",
+        "Le nombre de shorts exploitables dépend de la densité de la vidéo source, du rythme, du sujet et du niveau de retouche accepté. L'IA d'OpusClip priorise les passages les plus punchy. Sur une conversation fluide et dense, le rendement est meilleur que sur un monologue lent.",
     },
     {
       question: "La qualité IA est-elle suffisante sans intervention humaine ?",
       answer:
-        "À 80%. Les 20% restants demandent une passe humaine : vérifier que les clips n'ont pas coupé une phrase au milieu, ajuster parfois le début/fin, valider le choix des hooks. Compter 2-5 min par clip pour un rendu publiable.",
+        "Largement, oui. Mais une passe humaine reste utile : vérifier que les clips n'ont pas coupé une phrase au milieu, ajuster parfois le début/fin, valider le choix des hooks. Compte un peu de temps de relecture par clip pour un rendu vraiment publiable.",
     },
     {
       question: "Peut-on utiliser une vidéo YouTube directement ?",
@@ -225,7 +225,7 @@ export const videoLongueEnShorts: CasUsageData = {
     {
       question: "Combien de temps pour traiter 1h de source ?",
       answer:
-        "Traitement cloud côté OpusClip qui prend généralement quelques dizaines de minutes. Tu lances puis tu fais autre chose, tu reçois les clips prêts. Vs 2-3h de travail manuel dans un éditeur classique.",
+        "Traitement cloud côté OpusClip qui peut varier selon la durée de la vidéo, la file d'attente et le plan utilisé. Tu lances puis tu fais autre chose, tu reçois les clips prêts. Vs un travail manuel long dans un éditeur classique.",
     },
   ],
   ctaFinal: {

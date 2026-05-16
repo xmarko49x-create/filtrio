@@ -22,7 +22,7 @@ export const opusclipFiche: FicheData = {
     {
       question: "C'est quoi ?",
       answer:
-        "Outil américain lancé en 2022 qui découpe automatiquement une vidéo longue (podcast, live, interview) en 8-15 clips courts prêts à publier, avec score viralité prédictif, recadrage 9:16 et sous-titres.",
+        "Outil américain lancé en 2022 qui découpe automatiquement une vidéo longue (podcast, live, interview) en plusieurs clips courts prêts à publier, avec score viralité prédictif, recadrage 9:16 et sous-titres.",
     },
     {
       question: "Pour qui ?",
@@ -73,7 +73,7 @@ export const opusclipFiche: FicheData = {
     "Tu pars de sources longues (podcasts, lives, interviews 30 min+)",
     "Tu veux 100 % d'automatisation de la découpe",
     "Tu publies sur plusieurs plateformes en même temps",
-    "Tu veux tester sérieusement sans payer (plan gratuit récurrent mensuel)",
+    "Tu veux tester sérieusement sans payer (plan gratuit récurrent)",
     "Tu veux connecter directement YouTube, Twitch, Zoom, Drive",
     "Tu gères une agence social media avec du volume",
   ],
@@ -104,7 +104,7 @@ export const opusclipFiche: FicheData = {
       poids: 20,
       score: 9.0,
       commentaire:
-        "Un des meilleurs rapports qualité/prix de sa catégorie grâce à un plan gratuit récurrent mensuel et des plans payants abordables. Plus généreux que Submagic ou Descript pour démarrer sans engagement.",
+        "Un des meilleurs rapports qualité/prix de sa catégorie grâce à un plan gratuit récurrent et des plans payants abordables. Plus généreux que Submagic ou Descript pour démarrer sans engagement.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
@@ -132,7 +132,7 @@ export const opusclipFiche: FicheData = {
       poids: 10,
       score: 9.0,
       commentaire:
-        "Écosystème riche. Import depuis YouTube, Twitch, Vimeo, Zoom, Google Drive, Dropbox. Publication programmée directe sur TikTok, Instagram Reels, YouTube Shorts. API disponible sur plan Business (custom pricing).",
+        "Écosystème riche. Import depuis YouTube, Twitch, Vimeo, Zoom, Google Drive, Dropbox. Publication programmée directe sur TikTok, Instagram Reels, YouTube Shorts. API disponible sur le plan le plus élevé (à vérifier sur opus.pro pour le détail).",
     },
   ],
   fonctionnalites: [
@@ -159,7 +159,7 @@ export const opusclipFiche: FicheData = {
     {
       titre: "Sources longues acceptées",
       description:
-        "Jusqu'à 3 heures de vidéo en plan Pro. Un des rares outils à gérer les podcasts et lives complets sans devoir les scinder.",
+        "Accepte les vidéos longues (la durée maximale dépend du plan, à vérifier sur opus.pro). Un des rares outils à gérer les podcasts et lives complets sans devoir systématiquement les scinder.",
     },
     {
       titre: "Publication multi-plateformes",
@@ -293,7 +293,7 @@ export const opusclipFiche: FicheData = {
   ],
   ctaFinal: {
     headline: "Prêt à automatiser ta découpe ?",
-    sub: "Le plan gratuit récurrent mensuel permet de traiter une source longue par mois. Tu verras vite si le workflow te convient avant de payer.",
+    sub: "Le plan gratuit récurrent permet de traiter une source longue par mois. Tu verras vite si le workflow te convient avant de payer.",
     buttonText: "Essayer OpusClip",
   },
 };

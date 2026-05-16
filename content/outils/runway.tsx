@@ -6,7 +6,7 @@ export const runwayFiche: FicheData = {
   hero: {
     h1: "Runway : l'avis complet en 2026",
     tagline:
-      "Référence de la génération vidéo IA premium. Gen-4, Gen-4.5 et Aleph maison, intégration Veo 3.1, Sora et Kling 3.0 Pro, écosystème VFX complet, utilisé par les studios Hollywood. Voici pour qui il vaut son prix.",
+      "Référence de la génération vidéo IA premium. Modèles maison Gen-4, Gen-4.5 et Aleph, intégration de plusieurs modèles tiers (Google Veo, OpenAI Sora, Kling, etc., la liste évolue régulièrement sur runwayml.com), écosystème VFX complet, utilisé par les studios Hollywood. Voici pour qui il vaut son prix.",
     badges: [
       { label: "Génération vidéo IA premium", tone: "primary" },
       { label: "VFX pro", tone: "accent" },
@@ -20,7 +20,7 @@ export const runwayFiche: FicheData = {
     {
       question: "C'est quoi ?",
       answer:
-        "Plateforme de génération vidéo IA. Modèles maison Gen-4, Gen-4.5, Gen-4 Turbo, Aleph (montage vidéo), Acte-Deux (capture de performance) intégrés avec les modèles tiers majeurs (Veo 3.1, Sora, Kling 3.0 Pro, Seedance 2.0, BFL FLUX.2, Seedream 5.0). Écosystème VFX complet (inpainting, motion tracking, green screen auto). Utilisée par studios Hollywood et agences premium.",
+        "Plateforme de génération vidéo IA. Modèles maison Gen-4, Gen-4.5, Gen-4 Turbo, Aleph (montage vidéo), Acte-Deux (capture de performance) intégrés avec plusieurs modèles tiers majeurs (Google Veo, OpenAI Sora, Kling, Seedance, FLUX, Seedream, etc., la liste exacte évolue régulièrement, voir runwayml.com). Écosystème VFX complet (inpainting, motion tracking, green screen auto). Utilisée par studios Hollywood et agences premium.",
     },
     {
       question: "Pour qui ?",
@@ -121,7 +121,7 @@ export const runwayFiche: FicheData = {
       poids: 25,
       score: 9.5,
       commentaire:
-        "Point fort absolu. Gen-4 et Gen-4.5 sont parmi les meilleurs modèles de génération vidéo IA disponibles au grand public en 2026. Qualité visuelle impressionnante pour des clips courts. Intégration native Veo 3.1, Sora et Kling 3.0 Pro pour accéder aux autres modèles de pointe depuis la même plateforme.",
+        "Point fort absolu. Gen-4 et Gen-4.5 sont parmi les modèles de génération vidéo IA les plus aboutis disponibles au grand public en 2026. Qualité visuelle impressionnante pour des clips courts. Intégration native de plusieurs modèles tiers (Google Veo, OpenAI Sora, Kling, etc.) pour accéder à d'autres options depuis la même plateforme.",
     },
     {
       label: "Interface et prise en main",
@@ -202,9 +202,8 @@ export const runwayFiche: FicheData = {
         "625 credits mensuels",
         "Tout le Gratuit inclus",
         "Accès à toutes les applications · flux de travail",
-        "Vidéo générative : Aleph, Gen-4.5 (Texte en vidéo), Gen-4 (Image à vidéo), Acte-Deux (capture de performance), Veo 3.1, Veo 3",
-        "Modèles vidéo tiers : Seedance 2.0, Kling 3.0 Pro, etc.",
-        "Modèles image tiers : BFL FLUX.2 [max], Seedream 5.0, etc.",
+        "Vidéo générative maison : Aleph, Gen-4.5 (texte en vidéo), Gen-4 (image à vidéo), Acte-Deux (capture de performance)",
+        "Modèles tiers intégrés : Google Veo, OpenAI Sora, Kling, Seedance, FLUX, Seedream, etc. (liste évolutive, voir runwayml.com)",
         "Upscale · suppression filigranes sur tous les modèles vidéo",
         "Renouvellement mensuel des crédits · achat de crédits supplémentaires",
         "100 Go de stockage actif · projets de montage illimités",

@@ -6,7 +6,7 @@ export const opusclipFiche: FicheData = {
   hero: {
     h1: "OpusClip : l'avis complet en 2026",
     tagline:
-      "Le spécialiste incontournable de la découpe IA de long format en shorts. Plan gratuit récurrent mensuel, score viralité prédictif, intégrations massives. Voici pour qui il vaut son prix.",
+      "Le spécialiste incontournable de la découpe IA de long format en shorts. Plan gratuit récurrent, score viralité prédictif, intégrations massives. Voici pour qui il vaut son prix.",
     badges: [
       { label: "Large adoption", tone: "primary" },
       { label: "Plan gratuit", tone: "accent" },
@@ -264,7 +264,7 @@ export const opusclipFiche: FicheData = {
     {
       question: "Le plan gratuit est-il vraiment utilisable durablement ?",
       answer:
-        "Oui. Le plan gratuit est récurrent mensuel (pas un simple essai one-shot), ce qui permet de traiter une source par mois ou plusieurs plus courtes. Idéal pour démarrer sérieusement sans carte bancaire. Quotas exacts à consulter sur le site.",
+        "Oui. Le plan gratuit est récurrent (pas un simple essai one-shot), ce qui permet de traiter une source par mois ou plusieurs plus courtes. Idéal pour démarrer sérieusement sans carte bancaire. Quotas exacts à consulter sur le site.",
     },
     {
       question: "Le score viralité est-il fiable ?",

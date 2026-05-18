@@ -201,7 +201,7 @@ const PROFILS: Profil[] = [
   },
   {
     emoji: "🎬",
-    titre: "Tu publies 3-5 shorts par semaine et tu vises la viralité",
+    titre: "Tu publies plusieurs shorts par semaine et tu vises la viralité",
     description:
       "Tu as déjà tes habitudes, tu veux un rendu pro et un workflow rapide. Budget jusqu'à 25 €/mois acceptable.",
     recommandation: "submagic",
@@ -216,7 +216,7 @@ const PROFILS: Profil[] = [
     emoji: "📺",
     titre: "Tu fais du long format YouTube et tu veux recycler en shorts",
     description:
-      "Ta vidéo principale fait 15-30 min. Tu veux 3-5 shorts générés automatiquement à partir des meilleurs passages.",
+      "Ta vidéo principale fait plusieurs dizaines de minutes. Tu veux plusieurs shorts générés automatiquement à partir des meilleurs passages.",
     recommandation: "opusclip",
     raisons: [
       "L'IA détecte les meilleurs passages automatiquement",
@@ -242,7 +242,7 @@ const PROFILS: Profil[] = [
     emoji: "📊",
     titre: "Tu fais du marketing pour ta boîte ou tes clients",
     description:
-      "Tu produis 10-20 vidéos par mois pour des landing pages, social ads, posts LinkedIn. Tu veux un seul outil pour tout.",
+      "Tu produis un volume régulier de vidéos pour des landing pages, social ads, posts LinkedIn. Tu veux un seul outil pour tout.",
     recommandation: "veed",
     raisons: [
       "Bibliothèque de templates pour publicité, social, formation",
@@ -261,7 +261,7 @@ const PROFILS: Profil[] = [
       "Édition collaborative en temps réel comme Google Docs",
       "Commentaires précis sur des moments de la vidéo",
       "Gestion des permissions et workflow de validation",
-      "Plan Business à 50 $/mois solide pour une petite équipe",
+      "Plan équipe solide pour une petite équipe (voir tarifs officiels)",
     ],
   },
 ];
@@ -301,7 +301,7 @@ const FAQ = [
     question:
       "Quel est le combo le plus puissant pour un créateur sérieux ?",
     answer:
-      "Pour un créateur shorts régulier qui fait aussi du long format : OpusClip + Submagic. OpusClip découpe les meilleurs moments de ta vidéo longue en shorts bruts, Submagic finalise les sous-titres et l'animation. Total environ 27 $/mois en plans payants, très défendable pour un usage régulier. C'est aussi le combo qu'on recommande dans notre cas d'usage Submagic ou OpusClip pour des shorts en français.",
+      "Pour un créateur shorts régulier qui fait aussi du long format : OpusClip + Submagic. OpusClip découpe les meilleurs moments de ta vidéo longue en shorts bruts, Submagic finalise les sous-titres et l'animation. Le coût total dépend des plans choisis (voir les pages tarifs officielles), mais le combo reste défendable pour un usage régulier. C'est aussi le combo qu'on recommande dans notre cas d'usage Submagic ou OpusClip pour des shorts en français.",
   },
 ];
 

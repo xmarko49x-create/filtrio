@@ -223,7 +223,7 @@ export default function CasUsageLayout({ data }: { data: CasUsageData }) {
             Ta décision en {data.commentChoisir.length} questions
           </div>
           <h2 className="text-3xl font-bold mb-10 tracking-tight">Comment choisir en 60 secondes.</h2>
-          <ol className="space-y-6">
+          <ol className="space-y-6 list-none">
             {data.commentChoisir.map((q, i) => (
               <li key={i} className="flex gap-4">
                 <div

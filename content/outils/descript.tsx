@@ -231,10 +231,10 @@ export const descriptFiche: FicheData = {
       nom: "Enterprise",
       prix: "Sur devis",
       prixSub: "Organisations & grandes équipes",
-      cible: "Custom media minutes, sécurité avancée",
+      cible: "Minutes médias sur mesure, sécurité avancée",
       features: [
-        "Custom media minutes",
-        "Enterprise-grade security",
+        "Minutes médias sur mesure",
+        "Sécurité de niveau entreprise",
         "Solutions sur mesure",
       ],
     },

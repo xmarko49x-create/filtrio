@@ -17,7 +17,7 @@ export const miniaturesYoutubeIa: CasUsageData = {
     headline: (
       <>
         Pour les miniatures YouTube,{" "}
-        <span className="text-pink-400">Canva</span> reste l&apos;option la
+        <span className="text-pink-400">Canva</span>{" "}reste l&apos;option la
         plus complète.
       </>
     ),

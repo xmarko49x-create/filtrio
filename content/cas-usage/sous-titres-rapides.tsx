@@ -17,7 +17,7 @@ export const sousTitresRapides: CasUsageData = {
     headline: (
       <>
         Pour la vitesse,{" "}
-        <span className="text-amber-400">Submagic</span> reste imbattable.
+        <span className="text-amber-400">Submagic</span>{" "}reste imbattable.
       </>
     ),
     paragraphs: [

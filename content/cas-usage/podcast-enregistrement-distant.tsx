@@ -17,7 +17,7 @@ export const podcastEnregistrementDistant: CasUsageData = {
     headline: (
       <>
         Pour la qualité studio,{" "}
-        <span className="text-indigo-400">Riverside</span> prend clairement
+        <span className="text-indigo-400">Riverside</span>{" "}prend clairement
         l&apos;avantage.
       </>
     ),

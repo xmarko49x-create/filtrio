@@ -179,7 +179,7 @@ export default function CasUsageLayout({ data }: { data: CasUsageData }) {
             Focus sur le gagnant
           </div>
           <h2 className="text-3xl font-bold mb-10 tracking-tight">
-            Pourquoi {gagnant.name} prend l&apos;avantage.
+            Pourquoi {gagnant.name}{" "}prend l&apos;avantage.
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {data.pourquoiGagne.map((p, i) => (

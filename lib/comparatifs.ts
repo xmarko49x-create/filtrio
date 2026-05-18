@@ -54,7 +54,7 @@ export const COMPARATIFS: ComparatifMeta[] = [
     slug: "elevenlabs-vs-heygen",
     titre: "ElevenLabs vs HeyGen",
     description:
-      "Voix IA pure contre avatar vidéo complet. Pas de vrais rivaux — le choix dépend du format.",
+      "Voix IA pure contre avatar vidéo complet. Pas de vrais rivaux, le choix dépend du format.",
     outilA: "elevenlabs",
     outilB: "heygen",
     tempsLecture: 6,
@@ -101,7 +101,7 @@ export const COMPARATIFS: ComparatifMeta[] = [
     description:
       "Génération vidéo IA. Qualité pro vs accessibilité. Verdict par profil créatif.",
     outilA: "runway",
-    // Pika pas dans le registre — garde string libre
+    // Pika pas dans le registre, garde string libre
     outilB: "pika",
     tempsLecture: 5,
   },

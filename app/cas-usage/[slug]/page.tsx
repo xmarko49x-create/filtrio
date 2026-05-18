@@ -18,13 +18,21 @@ export async function generateMetadata(props: {
   const meta = getCasUsage(slug);
   if (!meta) return { title: "Cas d'usage introuvable" };
 
+  // Description optimisée SEO : titre + description du registre + hook.
+  // Cible 150-160 chars pour maximiser l'affichage en SERP Google.
+  const baseDesc = meta.description.replace(/\s+$/, "");
+  const hasSuffix = /(verdict|outils analysés|gagnant|comparés)/i.test(baseDesc);
+  const description = hasSuffix
+    ? `${baseDesc} 5 outils comparés, gagnant tranché, pièges à éviter et alternatives.`
+    : `${baseDesc} Verdict en 30 secondes, 5 outils comparés, pièges à éviter et alternatives.`;
+
   return {
     title: meta.titre,
-    description: meta.description,
+    description,
     alternates: { canonical: `/cas-usage/${slug}` },
     openGraph: {
       title: `${meta.titre}, Filtrio`,
-      description: meta.description,
+      description,
       type: "article",
     },
   };

@@ -18,13 +18,22 @@ export async function generateMetadata(props: {
   const meta = getComparatif(slug);
   if (!meta) return { title: "Comparatif introuvable" };
 
+  // Description optimisée SEO : titre + description du registre + hook engageant.
+  // Cible 150-160 chars pour maximiser l'affichage en SERP Google.
+  // Suffix ajouté seulement si la description du registre n'en contient pas déjà.
+  const baseDesc = meta.description.replace(/\s+$/, "");
+  const hasSuffix = /(verdict|alternatives|FAQ|prix|plans|cas d'usage)/i.test(baseDesc);
+  const description = hasSuffix
+    ? `${meta.titre} en 2026. ${baseDesc}`
+    : `${meta.titre} en 2026. ${baseDesc} Verdict tranché, prix, alternatives et cas d'usage détaillés.`;
+
   return {
     title: `${meta.titre} : lequel choisir en 2026 ?`,
-    description: meta.description,
+    description,
     alternates: { canonical: `/comparatifs/${slug}` },
     openGraph: {
       title: `${meta.titre}, Filtrio`,
-      description: meta.description,
+      description,
       type: "article",
     },
   };

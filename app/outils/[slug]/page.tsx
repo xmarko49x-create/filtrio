@@ -15,13 +15,21 @@ export async function generateMetadata(props: {
   const outil = getOutil(slug);
   if (!outil) return { title: "Fiche introuvable" };
 
+  // Description optimisée SEO : prix + score + tagline + hook
+  // Cible 150-160 chars pour maximiser l'affichage en SERP Google.
+  // Si priceFrom absent, on garde une formulation neutre.
+  const prixSegment = outil.priceFrom
+    ? `${outil.priceFrom}, score ${outil.score}/10`
+    : `score ${outil.score}/10`;
+  const description = `Avis ${outil.name} 2026 : ${prixSegment}. ${outil.tagline} Plans, alternatives, FAQ et analyse sans langue de bois.`;
+
   return {
     title: `${outil.name} : avis complet en 2026`,
-    description: `Avis ${outil.name} 2026 : score éditorial Filtrio, tarifs, fonctionnalités, alternatives. ${outil.tagline}.`,
+    description,
     alternates: { canonical: `/outils/${slug}` },
     openGraph: {
       title: `${outil.name} : avis complet en 2026, Filtrio`,
-      description: `Analyse ${outil.name} : score ${outil.score}/10. ${outil.tagline}.`,
+      description,
       type: "article",
     },
   };

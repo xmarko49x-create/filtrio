@@ -131,7 +131,7 @@ export default function CasUsageLayout({ data }: { data: CasUsageData }) {
             Ce qui compte pour ce cas précis
           </div>
           <h2 className="text-3xl font-bold mb-10 tracking-tight">
-            Les {data.criteres.length} critères qu&apos;on regarde.
+            Les {data.criteres.length}{" "}critères qu&apos;on regarde.
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
             {data.criteres.map((cr) => (

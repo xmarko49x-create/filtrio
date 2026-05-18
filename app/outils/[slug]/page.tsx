@@ -21,7 +21,9 @@ export async function generateMetadata(props: {
   const prixSegment = outil.priceFrom
     ? `${outil.priceFrom}, score ${outil.score}/10`
     : `score ${outil.score}/10`;
-  const description = `Avis ${outil.name} 2026 : ${prixSegment}. ${outil.tagline} Plans, alternatives, FAQ et analyse sans langue de bois.`;
+  // Garantit une ponctuation finale après la tagline pour la concaténation propre
+  const tagline = /[.!?]\s*$/.test(outil.tagline) ? outil.tagline : `${outil.tagline}.`;
+  const description = `Avis ${outil.name} 2026 : ${prixSegment}. ${tagline} Plans, alternatives, FAQ et analyse sans langue de bois.`;
 
   return {
     title: `${outil.name} : avis complet en 2026`,

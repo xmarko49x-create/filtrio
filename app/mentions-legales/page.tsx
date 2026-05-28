@@ -3,7 +3,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Mentions légales, Filtrio",
+  title: "Mentions légales",
   description:
     "Informations légales du site Filtrio : éditeur, hébergeur, propriété intellectuelle, données personnelles, affiliation.",
   alternates: { canonical: "/mentions-legales" },

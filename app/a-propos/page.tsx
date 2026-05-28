@@ -10,7 +10,7 @@ const AUTEUR = {
 };
 
 export const metadata: Metadata = {
-  title: "À propos de Filtrio, Comparateur d'outils IA pour créateurs vidéo",
+  title: "À propos, Comparateur d'outils IA pour créateurs vidéo",
   description:
     "Filtrio est un comparateur indépendant d'outils IA pour créateurs vidéo. Méthode de notation claire, transparence sur l'affiliation.",
   alternates: { canonical: "/a-propos" },

@@ -5,12 +5,12 @@ export const sousTitrerTiktok: CasUsageData = {
   slug: "sous-titrer-tiktok",
   gagnantSlug: "submagic",
   hero: {
-    h1: "Meilleur outil IA pour sous-titrer une vidéo TikTok",
+    h1: "Sous-titrer une vidéo TikTok : 5 outils IA comparés en 2026",
     tagline:
       "Tu veux des sous-titres stylés en français sur tes TikTok, sans passer 30 minutes par vidéo à les ajuster. Voici notre classement des outils qui livrent le meilleur rendu FR, le gagnant, et les pièges à éviter.",
     tempsLecture: 5,
     outilsAnalyses: 5,
-    lastCheck: "20/04/2026",
+    lastCheck: "28/05/2026",
   },
   verdict: {
     tag: "Le verdict en 30 secondes",
@@ -23,8 +23,8 @@ export const sousTitrerTiktok: CasUsageData = {
     paragraphs: [
       <>
         Précision FR supérieure aux concurrents, templates viraux prêts à
-        l&apos;emploi, recadrage 9:16 automatique, export direct TikTok. Le
-        workflow le plus rapide du marché pour un rendu pro.
+        l&apos;emploi, recadrage 9:16 automatique, export direct TikTok. Un
+        des workflows les plus rapides pour obtenir un rendu pro.
       </>,
       <>
         <strong className="text-slate-200">Alternative sérieuse :</strong>{" "}
@@ -74,7 +74,7 @@ export const sousTitrerTiktok: CasUsageData = {
       scoreCas: 9.5,
       badge: "Outil français",
       pourquoiGagne: [
-        "Précision FR la plus élevée du marché selon les retours publics",
+        "Très bonne précision FR selon les retours publics",
         "Templates viraux FR prêts, zéro ajustement nécessaire",
         "Recadrage 9:16 automatique, pas besoin d'autre outil",
         "Export direct TikTok et autres plateformes shorts",
@@ -86,22 +86,46 @@ export const sousTitrerTiktok: CasUsageData = {
         "Pas d'API publique pour automatiser",
       ],
       verdict:
-        "Si tu publies régulièrement sur TikTok en français, Submagic paie son abonnement dès le 3e short. Le gain de temps est immédiatement tangible.",
+        "Si tu publies régulièrement sur TikTok en français, Submagic peut être rentabilisé rapidement et le gain de temps reste tangible dès les premières vidéos.",
       priceDisplay: { label: "À partir de", value: "12 €/mois" },
     },
     {
       slug: "capcut",
       scoreCas: 8.0,
       badge: "Gratuit",
+      pourquoiGagne: [
+        "Gratuit avec sous-titres FR automatiques de qualité correcte",
+        "Templates de sous-titres animés disponibles dans la bibliothèque intégrée",
+        "Recadrage 9:16 et autres formats verticaux natifs",
+        "Édition complète : tu peux finaliser ton TikTok dans la même app",
+        "Disponible sur mobile (iOS/Android) pour éditer en déplacement",
+      ],
+      limites: [
+        "Style viral TikTok moins prêt à l'emploi que Submagic, nécessite ajustement manuel",
+        "Précision FR correcte mais légèrement en retrait sur les accents et le vocabulaire courant",
+        "Templates de sous-titres animés moins variés que Submagic pour le format short",
+      ],
       verdict:
-        "L'alternative gratuite la plus sérieuse. Sous-titres FR corrects, mais style viral à personnaliser manuellement. Comptez 3-5 minutes de retouches par vidéo pour approcher le rendu Submagic.",
+        "L'alternative gratuite la plus sérieuse. Sous-titres FR corrects, mais style viral à personnaliser manuellement. Compte 3-5 minutes de retouches par vidéo pour approcher le rendu Submagic.",
       priceDisplay: { label: "Prix", value: "Gratuit" },
     },
     {
       slug: "opusclip",
       scoreCas: 7.8,
+      pourquoiGagne: [
+        "AI Caption avec animation mot par mot et highlights émotionnels",
+        "Recadrage 9:16 automatique et virality score intégré",
+        "Workflow taillé pour transformer une vidéo longue en plusieurs TikTok d'un coup",
+        "Plan gratuit récurrent pour tester sérieusement",
+        "Export direct multi-plateformes shorts (TikTok, Reels, Shorts)",
+      ],
+      limites: [
+        "Surdimensionné si tu sous-titres juste une vidéo TikTok déjà tournée verticale",
+        "Précision FR pure légèrement en retrait de Submagic sur les transcriptions courtes",
+        "Mieux exploité quand tu pars d'une vidéo longue à découper en plusieurs shorts",
+      ],
       verdict:
-        "Excellent si tu pars d'une vidéo longue à découper. Moins optimal pour un simple sous-titrage de TikTok déjà prêt. Combo OpusClip + Submagic reste le setup pro pour volume.",
+        "Très bien si tu pars d'une vidéo longue à découper. Moins optimal pour un simple sous-titrage de TikTok déjà prêt. Combo OpusClip + Submagic reste le setup pro pour volume.",
       priceDisplay: {
         label: "À partir de",
         value: "15 $/mois",
@@ -111,6 +135,17 @@ export const sousTitrerTiktok: CasUsageData = {
     {
       slug: "veed",
       scoreCas: 7.2,
+      pourquoiGagne: [
+        "Éditeur web complet accessible depuis n'importe quel navigateur",
+        "Sous-titres FR automatiques avec édition manuelle simple",
+        "Multi-outils dans la même plateforme (sous-titres, édition, voix off)",
+        "Bonne option si tu utilises déjà Veed pour d'autres besoins vidéo",
+      ],
+      limites: [
+        "Styles de sous-titres moins viraux que Submagic, plus orientés pro et corporate",
+        "Précision FR moins poussée que les outils spécialisés shorts",
+        "Workflow plus long, plus pensé pour le montage classique que pour les shorts rapides",
+      ],
       verdict:
         "Éditeur web polyvalent, sous-titres FR fonctionnels. Pas le plus stylé pour TikTok mais pratique si tu utilises déjà Veed pour d'autres besoins vidéo.",
       priceDisplay: { label: "À partir de", value: "12 $/mois" },
@@ -118,6 +153,17 @@ export const sousTitrerTiktok: CasUsageData = {
     {
       slug: "kapwing",
       scoreCas: 6.8,
+      pourquoiGagne: [
+        "Collaboration en équipe intégrée, utile si plusieurs personnes éditent les TikTok",
+        "Bibliothèque de templates et d'éléments visuels riche",
+        "Édition web sans installation, accessible depuis n'importe où",
+        "Gestion de versioning des projets",
+      ],
+      limites: [
+        "Pensé pour des équipes plus que pour un créateur solo qui publie vite",
+        "Styles de sous-titres moins optimisés pour le format short viral",
+        "Workflow plus lent que les outils dédiés shorts (Submagic, OpusClip)",
+      ],
       verdict:
         "Davantage pensé pour le travail en équipe que pour le créateur solo qui publie sur TikTok. Sous-titres FR corrects mais workflow moins adapté au short viral.",
       priceDisplay: { label: "À partir de", value: "16 $/mois" },
@@ -127,7 +173,7 @@ export const sousTitrerTiktok: CasUsageData = {
     {
       titre: "Précision FR supérieure",
       description:
-        "Submagic a été développé par une équipe française (David Zitoun), entraîné massivement sur du contenu FR. La différence se voit dès la première vidéo : segmentation propre, accents gérés, ponctuation cohérente.",
+        "Submagic met clairement l'accent sur le contenu court et les sous-titres en français. L'outil semble mieux gérer le français que beaucoup d'alternatives généralistes, notamment sur la segmentation, les accents et la ponctuation.",
     },
     {
       titre: "Templates viraux prêts à l'emploi",
@@ -154,7 +200,7 @@ export const sousTitrerTiktok: CasUsageData = {
     {
       titre: "Écrire les sous-titres à la main",
       description:
-        "15-20 minutes par vidéo pour taper, synchroniser, styliser. Absurde quand un outil à partir de 12 €/mois fait le même job en 60 secondes avec un meilleur rendu.",
+        "15-20 minutes par vidéo pour taper, synchroniser, styliser. Peu rentable quand un outil spécialisé peut faire une grosse partie du travail beaucoup plus vite, avec un rendu souvent plus propre.",
     },
     {
       titre: "Utiliser un outil EN sur du contenu FR",
@@ -173,7 +219,7 @@ export const sousTitrerTiktok: CasUsageData = {
       reponse: (
         <>
           Si oui → <strong className="text-amber-400">Submagic</strong>.
-          Rentabilisé dès 3-4 shorts par mois.
+          Intéressant si tu publies plusieurs shorts par mois.
         </>
       ),
     },
@@ -239,9 +285,9 @@ export const sousTitrerTiktok: CasUsageData = {
     },
   ],
   ctaFinal: {
-    headline: "Prêt à sous-titrer en 90 secondes ?",
+    headline: "Prêt à accélérer tes sous-titres TikTok ?",
     paragraph:
-      "Le workflow le plus rapide : un compte Submagic, upload de ta vidéo TikTok, choix du template, export. Résultat prêt à publier avant la fin de ton café.",
+      "Le workflow le plus simple : un compte Submagic, l'upload de ta vidéo TikTok, le choix du template, puis l'export. Résultat prêt à publier sans passer par un montage manuel complet.",
     buttonText: "Essayer Submagic",
   },
   autresCasUsage: [

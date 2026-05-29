@@ -22,7 +22,7 @@ export const CAS_USAGE: CasUsageMeta[] = [
   },
   {
     slug: "sous-titrer-tiktok",
-    titre: "Meilleur outil IA pour sous-titrer une vidéo TikTok",
+    titre: "Sous-titrer une vidéo TikTok : 5 outils IA comparés en 2026",
     description:
       "Précision FR, rapidité, style : les 3 critères décisifs. Verdict en tête.",
     gagnant: "submagic",

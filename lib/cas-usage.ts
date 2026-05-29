@@ -54,7 +54,7 @@ export const CAS_USAGE: CasUsageMeta[] = [
   },
   {
     slug: "podcast-enregistrement-distant",
-    titre: "Meilleur outil pour enregistrer un podcast à distance",
+    titre: "Enregistrer un podcast à distance : 5 outils comparés en 2026",
     description:
       "Qualité studio sans être dans la même pièce. 5 outils analysés, pièges à éviter.",
     gagnant: "riverside",

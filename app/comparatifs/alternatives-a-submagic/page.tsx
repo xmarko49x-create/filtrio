@@ -7,7 +7,7 @@ import { colorHex } from "@/components/ScoreRing";
 import { getOutilOrThrow, type TailwindColor } from "@/lib/outils";
 
 export const metadata: Metadata = {
-  title: "Alternatives à Submagic : 5 options sérieuses en 2026",
+  title: "Alternative à Submagic : 5 outils sérieux comparés en 2026",
   description:
     "5 vraies alternatives à Submagic analysées sur 6 critères. 2 gratuites qui tiennent la route, 3 payantes qui font mieux sur certains cas précis.",
   alternates: { canonical: "/comparatifs/alternatives-a-submagic" },
@@ -102,15 +102,15 @@ export default function AlternativesASubmagicPage() {
           <span>›</span>
           <span>Comparatifs</span>
           <span>›</span>
-          <span className="text-slate-300">Alternatives à Submagic</span>
+          <span className="text-slate-300">Alternative à Submagic</span>
         </div>
         <div className="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 rounded-full px-4 py-1.5 text-xs text-slate-300 mb-6">
           <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-          Mise à jour · avril 2026
+          Mise à jour · mai 2026
         </div>
         <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-6 tracking-tight">
-          Alternatives à <span className="text-amber-400">Submagic</span> : les
-          5 options sérieuses en 2026
+          Alternative à <span className="text-amber-400">Submagic</span> : les
+          5 outils sérieux en 2026
         </h1>
         <p className="text-xl text-slate-400 leading-relaxed mb-8 max-w-3xl">
           5 vraies alternatives à Submagic, analysées sur leurs forces et

@@ -26,11 +26,11 @@ export async function generateMetadata(props: {
   const description = `Avis ${outil.name} 2026 : ${prixSegment}. ${tagline} Plans, alternatives, FAQ et analyse sans langue de bois.`;
 
   return {
-    title: `${outil.name} : avis complet en 2026`,
+    title: `${outil.name} avis 2026 : prix, fonctionnalités, alternatives`,
     description,
     alternates: { canonical: `/outils/${slug}` },
     openGraph: {
-      title: `${outil.name} : avis complet en 2026, Filtrio`,
+      title: `${outil.name} avis 2026 : prix, fonctionnalités, alternatives, Filtrio`,
       description,
       type: "article",
     },

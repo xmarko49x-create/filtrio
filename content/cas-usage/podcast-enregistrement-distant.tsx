@@ -5,7 +5,7 @@ export const podcastEnregistrementDistant: CasUsageData = {
   slug: "podcast-enregistrement-distant",
   gagnantSlug: "riverside",
   hero: {
-    h1: "Meilleur outil pour enregistrer un podcast à distance",
+    h1: "Enregistrer un podcast à distance : 5 outils comparés en 2026",
     tagline:
       "Tu veux enregistrer un podcast ou une interview avec un invité à distance, en qualité studio, sans Zoom qui compresse l'audio. Voici notre classement des outils qui livrent la meilleure qualité, le gagnant, et les pièges à éviter.",
     tempsLecture: 6,
@@ -104,6 +104,18 @@ export const podcastEnregistrementDistant: CasUsageData = {
       slug: "descript",
       scoreCas: 8.6,
       badge: "Tout-en-un",
+      pourquoiGagne: [
+        "Tout-en-un : enregistrement à distance, édition et transcription dans la même app",
+        "Édition textuelle puissante : tu coupes ton podcast comme tu coupes un Word",
+        "Features IA avancées : suppression hésitations, mots-bouchons, ajustement audio",
+        "Studio Sound pour nettoyer la voix automatiquement",
+        "Export multi-formats et publication directe simplifiée",
+      ],
+      limites: [
+        "Qualité d'enregistrement à distance moins poussée que Riverside (pas de track local par invité dans les plans bas)",
+        "Plan Hobbyist limite l'enregistrement à 1h",
+        "Si tu fais surtout du podcast pur sans édition lourde, c'est surdimensionné",
+      ],
       verdict:
         "Choix pertinent si tu veux tout faire au même endroit. La qualité d'enregistrement pure reste légèrement en retrait de Riverside, mais la force d'édition compense pour beaucoup de créateurs.",
       priceDisplay: {
@@ -117,8 +129,20 @@ export const podcastEnregistrementDistant: CasUsageData = {
       fallbackColor: "slate",
       fallbackName: "Zencastr",
       scoreCas: 8.2,
+      pourquoiGagne: [
+        "Spécialiste podcast 100 % audio depuis plus de 10 ans",
+        "Enregistrement local par participant (qualité préservée)",
+        "Interface très simple pour les invités, juste un lien à ouvrir",
+        "Plan gratuit honnête pour démarrer",
+        "Bonne réputation dans la communauté podcast",
+      ],
+      limites: [
+        "Pas de vidéo en qualité pro (peu adapté si tu veux publier des clips vidéo)",
+        "Édition très basique vs Descript ou Riverside",
+        "Moins de features IA récentes que la concurrence",
+      ],
       verdict:
-        "Solide pour du podcast 100% audio. Si tu as besoin de vidéo en qualité pro, Riverside reste devant. Fiche Filtrio à venir.",
+        "Solide pour du podcast 100 % audio. Si tu as besoin de vidéo en qualité pro, Riverside reste devant. Fiche Filtrio à venir.",
       priceDisplay: {
         label: "À partir de",
         value: "20 $/mois",
@@ -130,6 +154,15 @@ export const podcastEnregistrementDistant: CasUsageData = {
       fallbackColor: "slate",
       fallbackName: "SquadCast (by Descript)",
       scoreCas: 7.8,
+      pourquoiGagne: [
+        "Historiquement réputé pour la qualité audio à distance",
+        "Enregistrement local par invité (Dolby Voice)",
+        "Intégré à Descript pour l'édition derrière",
+      ],
+      limites: [
+        "Aujourd'hui doublonné avec Descript : si tu prends Descript, tu as déjà SquadCast intégré",
+        "Peu de raison de le prendre seul en 2026",
+      ],
       verdict:
         "Historiquement une alternative sérieuse. Aujourd'hui la logique est plutôt de prendre Descript directement.",
       priceDisplay: {
@@ -142,6 +175,17 @@ export const podcastEnregistrementDistant: CasUsageData = {
       fallbackColor: "slate",
       fallbackName: "Zoom / Google Meet",
       scoreCas: 5.5,
+      pourquoiGagne: [
+        "Déjà installé chez toi et chez tes invités",
+        "Zéro friction pour les invités, aucune installation",
+        "Gratuit ou inclus dans ton abonnement existant",
+      ],
+      limites: [
+        "Qualité audio compressée (streaming, pas enregistrement studio)",
+        "Pas de tracks séparées par intervenant",
+        "Pas d'enregistrement local : si la connexion plante, tu perds tout",
+        "Édition très basique côté plateforme",
+      ],
       verdict:
         "Acceptable pour un call interne ou une prise de notes. Inadapté pour un podcast destiné à être publié. L'audio compressé s'entend immédiatement et fait perdre en crédibilité.",
       priceDisplay: { label: "Prix", value: "Gratuit" },

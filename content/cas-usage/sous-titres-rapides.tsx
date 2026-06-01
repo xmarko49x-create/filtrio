@@ -5,12 +5,12 @@ export const sousTitresRapides: CasUsageData = {
   slug: "sous-titres-rapides",
   gagnantSlug: "submagic",
   hero: {
-    h1: "Outil le plus rapide pour sous-titres automatiques",
+    h1: "Sous-titres automatiques : 5 outils IA comparés en 2026",
     tagline:
       "Tu veux des sous-titres automatiques en français en moins de 2 minutes par vidéo, sans sacrifier la qualité. Voici notre classement des outils qui livrent le rendu le plus rapide, le gagnant, et les pièges à éviter.",
     tempsLecture: 5,
     outilsAnalyses: 5,
-    lastCheck: "20/04/2026",
+    lastCheck: "01/06/2026",
   },
   verdict: {
     tag: "Le verdict en 30 secondes",
@@ -95,13 +95,25 @@ export const sousTitresRapides: CasUsageData = {
         "Tarifs à vérifier selon la devise affichée",
       ],
       verdict:
-        "Si tu produis régulièrement des shorts, Submagic te fait gagner 10-15 minutes par vidéo comparé à un outil plus lent. Rentabilisé dès le 3e short.",
+        "Si tu produis régulièrement des shorts, Submagic te fait gagner du temps significatif par vidéo comparé à un outil plus lent. Peut être rentabilisé rapidement si tu publies plusieurs shorts par mois.",
       priceDisplay: { label: "À partir de", value: "12 €/mois" },
     },
     {
       slug: "capcut",
       scoreCas: 8.5,
       badge: "Gratuit",
+      pourquoiGagne: [
+        "Gratuit, sans limite de vidéos sur la version gratuite",
+        "Sous-titres automatiques en français avec qualité correcte",
+        "Recadrage 9:16 natif et autres formats verticaux",
+        "Disponible sur desktop et mobile (iOS, Android)",
+        "Édition complète intégrée pour finaliser dans la même app",
+      ],
+      limites: [
+        "Personnalisation manuelle nécessaire pour approcher le rendu Submagic",
+        "Templates de sous-titres animés moins variés que les outils spécialisés shorts",
+        "Workflow plus long si tu vises un style viral spécifique",
+      ],
       verdict:
         "Tu passeras 2-3 minutes de plus par vidéo qu'avec Submagic pour personnaliser le style manuellement. Acceptable si le budget est la priorité.",
       priceDisplay: { label: "Prix", value: "Gratuit" },
@@ -109,6 +121,18 @@ export const sousTitresRapides: CasUsageData = {
     {
       slug: "opusclip",
       scoreCas: 8.0,
+      pourquoiGagne: [
+        "Très rapide pour découper une vidéo longue en plusieurs shorts d'un coup",
+        "L'IA sélectionne automatiquement les meilleurs moments à clipper",
+        "Plan gratuit récurrent pour tester sérieusement",
+        "Recadrage 9:16 automatique et sous-titres animés intégrés",
+        "Export direct multi-plateformes shorts (TikTok, Reels, Shorts)",
+      ],
+      limites: [
+        "Surdimensionné si tu sous-titres juste une vidéo courte isolée",
+        "Précision FR pure légèrement en retrait de Submagic sur les transcriptions courtes",
+        "Mieux exploité quand tu pars d'une vidéo longue à découper",
+      ],
       verdict:
         "À prendre si ton cas principal est la découpe automatique de longues vidéos. Sur une vidéo courte isolée, Submagic ou CapCut iront plus vite.",
       priceDisplay: {
@@ -120,6 +144,17 @@ export const sousTitresRapides: CasUsageData = {
     {
       slug: "veed",
       scoreCas: 7.5,
+      pourquoiGagne: [
+        "Éditeur web complet accessible depuis n'importe quel navigateur",
+        "Sous-titres FR automatiques avec édition manuelle simple",
+        "Multi-outils dans la même plateforme (sous-titres, édition, voix off)",
+        "Bonne option si tu utilises déjà Veed pour d'autres besoins vidéo",
+      ],
+      limites: [
+        "Workflow plus long que les outils dédiés shorts",
+        "Styles de sous-titres moins viraux que Submagic, plus orientés pro",
+        "Pas le plus rapide sur le cas spécifique des sous-titres courts",
+      ],
       verdict:
         "Correct si tu utilises déjà Veed pour d'autres besoins. Pas le plus rapide sur ce cas précis.",
       priceDisplay: { label: "À partir de", value: "12 $/mois" },
@@ -127,6 +162,17 @@ export const sousTitresRapides: CasUsageData = {
     {
       slug: "kapwing",
       scoreCas: 7.0,
+      pourquoiGagne: [
+        "Collaboration en équipe intégrée, utile si plusieurs personnes éditent les vidéos",
+        "Bibliothèque de templates et d'éléments visuels riche",
+        "Édition web sans installation, accessible depuis n'importe où",
+        "Gestion de versioning des projets",
+      ],
+      limites: [
+        "Pensé pour des équipes plus que pour un créateur solo qui veut aller vite",
+        "Styles de sous-titres moins optimisés pour le format short viral",
+        "Workflow plus lent que les outils dédiés shorts (Submagic, OpusClip)",
+      ],
       verdict:
         "Intéressant en équipe. Pour un créateur solo qui veut aller vite, Submagic ou CapCut sont plus adaptés.",
       priceDisplay: { label: "À partir de", value: "16 $/mois" },
@@ -163,7 +209,7 @@ export const sousTitresRapides: CasUsageData = {
     {
       titre: "Écrire les sous-titres à la main",
       description:
-        "15-20 minutes par vidéo pour taper, synchroniser, styliser. Absurde quand un outil à partir de 12 €/mois fait le même job en 60 secondes avec un meilleur rendu.",
+        "15-20 minutes par vidéo pour taper, synchroniser, styliser. Peu rentable quand un outil spécialisé peut faire une grosse partie du travail beaucoup plus vite, avec un rendu souvent plus propre.",
     },
     {
       titre: "Utiliser un outil EN sur du contenu FR",
@@ -183,7 +229,7 @@ export const sousTitresRapides: CasUsageData = {
           >
             OpusClip
           </Link>{" "}
-          (60 min/mois récurrent) ou CapCut.
+          (plan gratuit récurrent) ou CapCut.
         </>
       ),
     },
@@ -194,7 +240,7 @@ export const sousTitresRapides: CasUsageData = {
       reponse: (
         <>
           Si oui → <strong className="text-amber-400">Submagic</strong>.
-          C&apos;est le plus rapide du marché, à partir de 12 €/mois.
+          Un des plus rapides du marché, à partir de 12 €/mois.
         </>
       ),
     },
@@ -267,9 +313,9 @@ export const sousTitresRapides: CasUsageData = {
     },
   ],
   ctaFinal: {
-    headline: "Prêt à sous-titrer en 90 secondes ?",
+    headline: "Prêt à accélérer tes sous-titres ?",
     paragraph:
-      "Le workflow le plus rapide : un compte Submagic, upload d'une vidéo courte, template, export. Résultat prêt à publier avant la fin de ton café.",
+      "Le workflow le plus simple : un compte Submagic, l'upload d'une vidéo courte, le choix du template, puis l'export. Résultat prêt à publier sans passer par un montage manuel complet.",
     buttonText: "Essayer Submagic",
   },
   autresCasUsage: [

@@ -38,7 +38,7 @@ export const CAS_USAGE: CasUsageMeta[] = [
   },
   {
     slug: "sous-titres-rapides",
-    titre: "Outil le plus rapide pour sous-titres automatiques",
+    titre: "Sous-titres automatiques : 5 outils IA comparés en 2026",
     description:
       "Comparaison du temps de traitement et de la qualité livrée. Verdict direct.",
     gagnant: "submagic",

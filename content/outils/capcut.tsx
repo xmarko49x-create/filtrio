@@ -304,7 +304,7 @@ export const capcutFiche: FicheData = {
   ],
   ctaFinal: {
     headline: "Prêt à tester CapCut ?",
-    sub: "100% gratuit, pas d'engagement. Télécharge l'app ou ouvre la version web et teste en 5 minutes sur une vidéo existante.",
+    sub: "Version gratuite très complète, sans engagement. Télécharge l'app ou ouvre la version web et teste en 5 minutes sur une vidéo existante. Plan Pro disponible pour les fonctionnalités avancées.",
     buttonText: "Télécharger CapCut",
   },
 };

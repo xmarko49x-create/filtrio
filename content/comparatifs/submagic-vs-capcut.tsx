@@ -83,7 +83,7 @@ export const submagicVsCapcut: ComparatifData = {
     "Tu veux maximiser le rendement par short",
   ],
   porQuiB: [
-    "Ton budget est zéro (CapCut reste 100% gratuit pour la majorité des besoins)",
+    "Ton budget est zéro (la version gratuite de CapCut couvre la majorité des besoins, un plan Pro existe pour les fonctionnalités avancées)",
     "Tu débutes et tu n'es pas sûr de ton engagement dans la création",
     "Tu veux aussi un éditeur vidéo complet (timeline, transitions, effets)",
     "Tu montes tes vidéos principalement sur mobile",

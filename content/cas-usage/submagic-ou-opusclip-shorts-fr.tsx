@@ -74,10 +74,10 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
       scoreCas: 9.3,
       badge: "Rendu final FR",
       pourquoiGagne: [
-        "Précision FR la plus élevée du marché",
+        "Très bonne précision FR selon les retours publics",
         "Templates viraux FR prêts à l'emploi",
         "Recadrage 9:16 automatique",
-        "Workflow 3 clics pour un short fini",
+        "Workflow rapide en quelques étapes pour un short fini",
         "Origine française, support FR",
       ],
       limites: [
@@ -123,7 +123,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
     {
       titre: "OpusClip gagne si tu pars de long",
       description:
-        "Tu fais des podcasts d'1h, des lives YouTube, des conférences. OpusClip identifie les passages forts et génère 5-15 clips prêts. Faire ça à la main prendrait 2-3h par vidéo source.",
+        "Tu fais des podcasts d'1h, des lives YouTube, des conférences. OpusClip identifie les passages forts et génère plusieurs clips prêts. Faire ça à la main peut prendre beaucoup de temps par rapport à une découpe automatique.",
     },
     {
       titre: "Le combo gagne en volume",

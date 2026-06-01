@@ -43,7 +43,7 @@ const OUTILS_COMPARES: OutilCard[] = [
     slug: "submagic",
     badge: "Le plus FR",
     bestFor: "TikTokeurs et créateurs de shorts qui veulent un rendu viral propre en français.",
-    forceMajeure: "La meilleure précision FR du marché et des templates animés vraiment utilisables.",
+    forceMajeure: "Très bonne précision FR selon les retours publics, avec des templates animés vraiment utilisables.",
     faiblesseMajeure: "Pas pensé pour le clipping massif depuis une vidéo longue.",
   },
   {
@@ -206,7 +206,7 @@ const PROFILS: Profil[] = [
       "Tu as déjà tes habitudes, tu veux un rendu pro et un workflow rapide. Budget jusqu'à 25 €/mois acceptable.",
     recommandation: "submagic",
     raisons: [
-      "La meilleure précision FR pour les sous-titres",
+      "Une des meilleures précisions FR pour les sous-titres selon les retours publics",
       "Templates animés conçus pour la viralité",
       "Magic Clips pour découper des shorts depuis une longue vidéo",
       "Démarre à 12 €/mois en annuel, raisonnable pour l'usage",

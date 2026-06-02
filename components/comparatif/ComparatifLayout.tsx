@@ -58,6 +58,22 @@ export interface ComparatifData {
     ctaText: string;
   };
   faq: { question: string; answer: ReactNode }[];
+  /**
+   * Section optionnelle "On a vraiment testé" : test de première main.
+   * C'est l'ingrédient E-E-A-T (expérience réelle, méthodologie affichée) qui
+   * distingue le contenu en 2026. Ne s'affiche que si le champ est présent.
+   */
+  testReel?: {
+    intro: ReactNode;
+    lignes: {
+      critere: ReactNode;
+      a: ReactNode;
+      b: ReactNode;
+      gagnant: "A" | "B" | "egalite";
+    }[];
+    images?: { src: string; alt: string; caption: ReactNode }[];
+    verdict: ReactNode;
+  };
 }
 
 export default function ComparatifLayout({ data }: { data: ComparatifData }) {
@@ -237,6 +253,90 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
           </div>
         </div>
       </section>
+
+      {/* ON A VRAIMENT TESTÉ (test de première main, E-E-A-T) */}
+      {data.testReel && (
+        <section id="test" className="max-w-5xl mx-auto px-6 py-20">
+          <div
+            className={`text-sm font-semibold text-${A.color}-400 uppercase tracking-wider mb-3`}
+          >
+            Test de première main
+          </div>
+          <h2 className="text-3xl font-bold mb-4 tracking-tight">
+            On a vraiment testé.
+          </h2>
+          <div className="text-lg text-slate-300 leading-relaxed mb-10 max-w-3xl">
+            {data.testReel.intro}
+          </div>
+
+          {/* Tableau du test */}
+          <div className="overflow-x-auto -mx-6 px-6 mb-10">
+            <table className="w-full text-sm border-collapse min-w-[560px]">
+              <thead>
+                <tr className="border-b border-slate-700">
+                  <th className="text-left py-3 pr-4 font-semibold text-slate-400 w-1/3">
+                    Ce qu&apos;on a vérifié
+                  </th>
+                  <th className={`text-left py-3 px-4 font-bold text-${A.color}-400`}>
+                    {A.name}
+                  </th>
+                  <th className={`text-left py-3 px-4 font-bold text-${B.color}-400`}>
+                    {B.name}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.testReel.lignes.map((l, i) => (
+                  <tr key={i} className="border-b border-slate-800 align-top">
+                    <td className="py-4 pr-4 font-medium text-slate-300">
+                      {l.critere}
+                    </td>
+                    <td className="py-4 px-4 text-slate-200 leading-relaxed">
+                      {l.a}
+                    </td>
+                    <td className="py-4 px-4 text-slate-200 leading-relaxed">
+                      {l.b}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Galerie de preuves (captures d'écran réelles) */}
+          {data.testReel.images && data.testReel.images.length > 0 && (
+            <div className="grid sm:grid-cols-2 gap-5 mb-10">
+              {data.testReel.images.map((img, i) => (
+                <figure
+                  key={i}
+                  className="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    loading="lazy"
+                    className="w-full h-auto block"
+                  />
+                  <figcaption className="text-xs text-slate-400 leading-relaxed p-4">
+                    {img.caption}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          )}
+
+          {/* Verdict du test */}
+          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8">
+            <div className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">
+              Notre verdict sur ce test
+            </div>
+            <div className="text-slate-300 leading-relaxed">
+              {data.testReel.verdict}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* RECOMMANDATION POR QUI */}
       <section className="max-w-5xl mx-auto px-6 py-20">

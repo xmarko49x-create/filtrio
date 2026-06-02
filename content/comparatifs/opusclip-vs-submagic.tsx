@@ -9,8 +9,8 @@ export const opusclipVsSubmagic: ComparatifData = {
     h1: "lequel choisir ?",
     tagline:
       "Les deux rois du short viral. Comparés sur la base de leurs fonctionnalités, de leurs plans et des retours utilisateurs publics. Le gagnant dépend de ton cas précis.",
-    tempsLecture: 7,
-    lastCheck: "20/04/2026",
+    tempsLecture: 9,
+    lastCheck: "02/06/2026",
   },
   verdictRapide: {
     headline: "OpusClip pour le volume. Submagic pour le rendu FR.",
@@ -175,5 +175,134 @@ export const opusclipVsSubmagic: ComparatifData = {
         </>
       ),
     },
+    {
+      question: "Avez-vous vraiment testé Submagic et OpusClip ?",
+      answer: (
+        <>
+          Oui. On a enregistré une vidéo de 53 secondes en français, remplie de
+          pièges (un prix, des noms de marque, des mots techniques comme
+          «&nbsp;récurrent&nbsp;» et «&nbsp;référencement&nbsp;»), et on
+          l&apos;a passée dans les deux outils avec le même fichier. Les deux
+          écrivent parfaitement les mots techniques. Chacun fait une faute que
+          l&apos;autre évite, et aucun ne reconnaît le nom de marque
+          «&nbsp;Reels&nbsp;». Submagic est quasi instantané, OpusClip met
+          environ 2 minutes mais ajoute un titre et un résumé. Le détail complet
+          est dans la section «&nbsp;On a vraiment testé&nbsp;» plus haut.
+        </>
+      ),
+    },
   ],
+
+  testReel: {
+    intro: (
+      <>
+        Pour aller plus loin que la théorie, on a fait le test nous-mêmes. On a
+        enregistré une vidéo de 53 secondes en français, volontairement remplie
+        de pièges : un prix, des noms de marque, et des mots techniques comme
+        «&nbsp;récurrent&nbsp;» et «&nbsp;référencement&nbsp;». Puis on
+        l&apos;a passée dans OpusClip et Submagic avec exactement le même
+        fichier. Voici ce qu&apos;on a vu, sans filtre.
+      </>
+    ),
+    lignes: [
+      {
+        critere: "« récurrent » (le mot piège)",
+        a: "Écrit « récurrent » correctement",
+        b: "Écrit « récurrent » correctement",
+        gagnant: "egalite",
+      },
+      {
+        critere: "« référencement »",
+        a: "Correct",
+        b: "Correct",
+        gagnant: "egalite",
+      },
+      {
+        critere: "« le mieux en français »",
+        a: "Correct : « mieux »",
+        b: "Erreur : a écrit « le mur »",
+        gagnant: "A",
+      },
+      {
+        critere: "« des trucs exprès »",
+        a: "Erreur : a écrit « esprits »",
+        b: "Correct : « exprès »",
+        gagnant: "B",
+      },
+      {
+        critere: "Nom de marque « Reels »",
+        a: "Erreur : « réel »",
+        b: "Erreur : « réels »",
+        gagnant: "egalite",
+      },
+      {
+        critere: "Vitesse (même clip de 53 s)",
+        a: "Environ 2 minutes",
+        b: "Quasi instantané",
+        gagnant: "B",
+      },
+      {
+        critere: "Petits plus automatiques",
+        a: "Titre + résumé + score de la vidéo",
+        b: "Majuscules + emojis ajoutés",
+        gagnant: "egalite",
+      },
+    ],
+    images: [
+      {
+        src: "/tests/submagic-mur.png",
+        alt: "Capture Submagic affichant « MUR FRANÇAIS »",
+        caption: (
+          <>
+            Submagic a transcrit «&nbsp;le mur français&nbsp;» au lieu de
+            «&nbsp;le mieux en français&nbsp;». La seule vraie erreur de sens du
+            test.
+          </>
+        ),
+      },
+      {
+        src: "/tests/opusclip-esprits.png",
+        alt: "Capture OpusClip affichant « ESPRITS POUR LES PIÉGER »",
+        caption: (
+          <>
+            OpusClip a écrit «&nbsp;des trucs esprits&nbsp;» au lieu de
+            «&nbsp;des trucs exprès&nbsp;».
+          </>
+        ),
+      },
+      {
+        src: "/tests/recurrent.png",
+        alt: "Capture OpusClip affichant correctement « RÉCURRENT »",
+        caption: (
+          <>
+            Exemple côté OpusClip : «&nbsp;récurrent&nbsp;» bien écrit. Les deux
+            outils réussissent ce mot piège.
+          </>
+        ),
+      },
+      {
+        src: "/tests/instagram-reel.png",
+        alt: "Capture OpusClip affichant « INSTAGRAM RÉEL » au lieu de « Reels »",
+        caption: (
+          <>
+            Le nom de marque «&nbsp;Reels&nbsp;» devient «&nbsp;réel&nbsp;» :
+            aucun des deux ne reconnaît les noms propres, à corriger à la main.
+          </>
+        ),
+      },
+    ],
+    verdict: (
+      <>
+        Match serré, et c&apos;est ça la vérité. Chacun fait une faute que
+        l&apos;autre évite, et les deux ratent les noms de marque. Mais les deux
+        écrivent parfaitement les mots techniques, ce qui est déjà mieux que
+        beaucoup d&apos;outils. En clair : Submagic pour la vitesse et le rendu
+        prêt à publier, OpusClip pour le côté tout-en-un (titre, résumé) si tu
+        acceptes d&apos;attendre un peu. Aucun n&apos;est parfait en français,
+        surtout sur les noms propres, donc une relecture rapide reste utile dans
+        les deux cas. Test réalisé sur une vidéo&nbsp;; on l&apos;étendra à
+        d&apos;autres voix et accents.
+      </>
+    ),
+  },
 };

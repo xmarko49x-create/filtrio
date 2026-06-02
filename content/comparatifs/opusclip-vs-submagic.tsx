@@ -179,10 +179,10 @@ export const opusclipVsSubmagic: ComparatifData = {
       question: "Avez-vous vraiment testé Submagic et OpusClip ?",
       answer: (
         <>
-          Oui. On a enregistré une vidéo de 53 secondes en français, remplie de
-          pièges (un prix, des noms de marque, des mots techniques comme
-          «&nbsp;récurrent&nbsp;» et «&nbsp;référencement&nbsp;»), et on
-          l&apos;a passée dans les deux outils avec le même fichier. Les deux
+          Oui. On a lu à voix haute un court texte en français (53 secondes),
+          rempli de pièges (un prix, des noms de marque, des mots techniques
+          comme «&nbsp;récurrent&nbsp;» et «&nbsp;référencement&nbsp;»), et on a
+          passé cet enregistrement dans les deux outils avec le même fichier. Les deux
           écrivent parfaitement les mots techniques. Chacun fait une faute que
           l&apos;autre évite, et aucun ne reconnaît le nom de marque
           «&nbsp;Reels&nbsp;». Submagic est quasi instantané, OpusClip met
@@ -197,11 +197,11 @@ export const opusclipVsSubmagic: ComparatifData = {
     intro: (
       <>
         Pour aller plus loin que la théorie, on a fait le test nous-mêmes. On a
-        enregistré une vidéo de 53 secondes en français, volontairement remplie
-        de pièges : un prix, des noms de marque, et des mots techniques comme
-        «&nbsp;récurrent&nbsp;» et «&nbsp;référencement&nbsp;». Puis on
-        l&apos;a passée dans OpusClip et Submagic avec exactement le même
-        fichier. Voici ce qu&apos;on a vu, sans filtre.
+        lu à voix haute un court texte en français de 53 secondes, volontairement
+        rempli de pièges : un prix, des noms de marque, et des mots techniques
+        comme «&nbsp;récurrent&nbsp;» et «&nbsp;référencement&nbsp;». Puis on a
+        passé cet enregistrement dans OpusClip et Submagic avec exactement le
+        même fichier. Voici ce qu&apos;on a vu, sans filtre.
       </>
     ),
     lignes: [
@@ -271,12 +271,13 @@ export const opusclipVsSubmagic: ComparatifData = {
         ),
       },
       {
-        src: "/tests/recurrent.png",
-        alt: "Capture OpusClip affichant correctement « RÉCURRENT »",
+        src: "/tests/submagic-recurrent.png",
+        alt: "Capture Submagic affichant correctement « récurrent » et « référencement »",
         caption: (
           <>
-            Exemple côté OpusClip : «&nbsp;récurrent&nbsp;» bien écrit. Les deux
-            outils réussissent ce mot piège.
+            Submagic écrit bien «&nbsp;récurrent&nbsp;» et
+            «&nbsp;référencement&nbsp;». OpusClip aussi : les deux gèrent le
+            vocabulaire technique mieux que la moyenne.
           </>
         ),
       },
@@ -285,8 +286,9 @@ export const opusclipVsSubmagic: ComparatifData = {
         alt: "Capture OpusClip affichant « INSTAGRAM RÉEL » au lieu de « Reels »",
         caption: (
           <>
-            Le nom de marque «&nbsp;Reels&nbsp;» devient «&nbsp;réel&nbsp;» :
-            aucun des deux ne reconnaît les noms propres, à corriger à la main.
+            OpusClip : le nom de marque «&nbsp;Reels&nbsp;» devient
+            «&nbsp;réel&nbsp;» (et «&nbsp;réels&nbsp;» chez Submagic). Aucun des
+            deux ne reconnaît les noms propres.
           </>
         ),
       },
@@ -300,8 +302,8 @@ export const opusclipVsSubmagic: ComparatifData = {
         prêt à publier, OpusClip pour le côté tout-en-un (titre, résumé) si tu
         acceptes d&apos;attendre un peu. Aucun n&apos;est parfait en français,
         surtout sur les noms propres, donc une relecture rapide reste utile dans
-        les deux cas. Test réalisé sur une vidéo&nbsp;; on l&apos;étendra à
-        d&apos;autres voix et accents.
+        les deux cas. Test réalisé sur un enregistrement&nbsp;; on l&apos;étendra
+        à d&apos;autres voix et accents.
       </>
     ),
   },

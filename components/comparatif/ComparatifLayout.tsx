@@ -305,11 +305,11 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
 
           {/* Galerie de preuves (captures d'écran réelles) */}
           {data.testReel.images && data.testReel.images.length > 0 && (
-            <div className="grid sm:grid-cols-2 gap-5 mb-10">
+            <div className="columns-1 sm:columns-2 gap-x-5 mb-10">
               {data.testReel.images.map((img, i) => (
                 <figure
                   key={i}
-                  className="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden"
+                  className="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden break-inside-avoid mb-5"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img

@@ -94,7 +94,7 @@ export const runwayVsPika: ComparatifData = {
     "Tu débutes en génération vidéo IA",
     "Tu veux expérimenter sans budget élevé",
     "Tu as besoin de rendu rapide plutôt que parfait",
-    "Tu crées du contenu social media expérimental",
+    "Tu crées du contenu réseaux sociaux expérimental",
     "Tu n'as pas besoin d'écosystème VFX complet",
   ],
   casUsage: [
@@ -117,7 +117,7 @@ export const runwayVsPika: ComparatifData = {
       gagnant: "A",
     },
     {
-      profil: "Créateur social media qui veut expérimenter",
+      profil: "Créateur réseaux sociaux qui veut expérimenter",
       description:
         "Besoin de rendre des concepts rapidement pour TikTok/Reels. Pika permet de tester vite sans exploser le budget.",
       gagnant: "B",

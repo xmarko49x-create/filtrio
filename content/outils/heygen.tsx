@@ -6,7 +6,7 @@ export const heygenFiche: FicheData = {
   hero: {
     h1: "HeyGen : l'avis complet en 2026",
     tagline:
-      "Plateforme d'avatars IA vidéo spécialisée dans le contenu marketing multilingue et la formation scalable. Custom Digital Twins, 700+ Stock Video Avatars sur Creator, sync labiale Video Translation multilingue. Voici pour qui il vaut son prix.",
+      "Plateforme d'avatars IA vidéo spécialisée dans le contenu marketing multilingue et la formation à grande échelle. Custom Digital Twins, 700+ Stock Video Avatars sur Creator, sync labiale Video Translation multilingue. Voici pour qui il vaut son prix.",
     badges: [
       { label: "Avatars IA réalistes", tone: "primary" },
       { label: "Doublage multilingue", tone: "accent" },
@@ -25,7 +25,7 @@ export const heygenFiche: FicheData = {
     {
       question: "Pour qui ?",
       answer:
-        "Marques qui produisent du contenu marketing multilingue, équipes formation interne qui veulent scaler, marketeurs qui produisent des pubs personnalisées, créateurs de contenu pédagogique. Pas un outil de créateur solo classique.",
+        "Marques qui produisent du contenu marketing multilingue, équipes formation interne qui veulent passer à l'échelle, marketeurs qui produisent des pubs personnalisées, créateurs de contenu pédagogique. Pas un outil de créateur solo classique.",
     },
     {
       question: "À éviter si ?",

@@ -204,7 +204,7 @@ export const vidiqVsTubebuddy: ComparatifData = {
     {
       question: "Dois-je changer d'outil si je grandis ?",
       answer:
-        "Pas forcément. Les deux outils scalent pour des chaînes de toutes tailles. Le seul cas où changer fait sens : si tu passes du mode créateur solo au mode agence multi-chaînes, TubeBuddy a historiquement des features bulk edit plus matures. Pour rester sur VidIQ, ses plans supérieurs couvrent aussi les équipes.",
+        "Pas forcément. Les deux outils s'adaptent à des chaînes de toutes tailles. Le seul cas où changer fait sens : si tu passes du mode créateur solo au mode agence multi-chaînes, TubeBuddy a historiquement des fonctions d'édition en masse plus matures. Pour rester sur VidIQ, ses plans supérieurs couvrent aussi les équipes.",
     },
   ],
 };

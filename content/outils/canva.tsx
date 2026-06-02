@@ -26,7 +26,7 @@ export const canvaFiche: FicheData = {
     {
       question: "Pour qui ?",
       answer:
-        "Créateurs de contenu qui font aussi du design (miniatures, posts, stories), solopreneurs, marketeurs sans équipe design, formateurs, tous ceux qui veulent un rendu pro sans skills design avancés.",
+        "Créateurs de contenu qui font aussi du design (miniatures, posts, stories), créateurs solo, marketeurs sans équipe design, formateurs, tous ceux qui veulent un rendu pro sans compétences avancées en design.",
     },
     {
       question: "À éviter si ?",
@@ -66,7 +66,7 @@ export const canvaFiche: FicheData = {
       answer: (
         <>
           <strong className="text-pink-400">Oui</strong>, pour la majorité des
-          créateurs qui ont besoin de design + contenu visuel sans skills pro.
+          créateurs qui ont besoin de design + contenu visuel sans compétences pro.
           Interface FR native et plan gratuit riche en font le choix par défaut
           des créateurs.
         </>
@@ -76,7 +76,7 @@ export const canvaFiche: FicheData = {
   porQui: [
     "Tu produis des miniatures YouTube régulièrement",
     "Tu fais aussi du design (posts sociaux, stories, présentations)",
-    "Tu n'as pas de skills design avancés mais tu veux un rendu pro",
+    "Tu n'as pas de compétences avancées en design mais tu veux un rendu pro",
     "Tu veux un outil polyvalent plutôt que 5 spécialisés",
     "Tu veux profiter d'un plan gratuit réellement utilisable",
     "Tu travailles en équipe sur des visuels de marque",
@@ -169,7 +169,7 @@ export const canvaFiche: FicheData = {
     {
       titre: "Édition vidéo basique",
       description:
-        "Timeline simple, transitions, musique, sous-titres auto. Suffisant pour du contenu social media court, pas pour un montage pro. Bon complément du design.",
+        "Timeline simple, transitions, musique, sous-titres auto. Suffisant pour du contenu court sur les réseaux sociaux, pas pour un montage pro. Bon complément du design.",
     },
     {
       titre: "Collaboration équipe",
@@ -259,7 +259,7 @@ export const canvaFiche: FicheData = {
       question: "Peut-on éditer de la vidéo sérieusement avec Canva ?",
       answer: (
         <>
-          Pour du court social media simple, oui. Pour un montage long format
+          Pour du contenu court sur les réseaux sociaux, oui. Pour un montage long format
           ou avec color grading, non, utilise plutôt{" "}
           <Link href="/outils/capcut" className="text-sky-400 hover:underline">
             CapCut

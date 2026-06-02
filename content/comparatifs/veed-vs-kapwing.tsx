@@ -96,7 +96,7 @@ export const veedVsKapwing: ComparatifData = {
       gagnant: "A",
     },
     {
-      profil: "Agence social media avec 3+ monteurs",
+      profil: "Agence réseaux sociaux avec 3+ monteurs",
       description:
         "Édition simultanée, commentaires, approbation client directement dans l'outil. Kapwing Business (50 $/user/mois) s'amortit vite.",
       gagnant: "B",

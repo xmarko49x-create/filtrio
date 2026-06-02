@@ -26,7 +26,7 @@ export const opusclipVsSubmagic: ComparatifData = {
       </>,
       <>
         Beaucoup de créateurs pros utilisent les deux : OpusClip pour la
-        découpe initiale, Submagic pour le polish final. Un combo économique
+        découpe initiale, Submagic pour la finition. Un combo économique
         qui reste rentable si tu produis du contenu régulièrement.
       </>,
     ],
@@ -109,13 +109,13 @@ export const opusclipVsSubmagic: ComparatifData = {
       gagnant: "A",
     },
     {
-      profil: "Solopreneur personal branding LinkedIn vidéo",
+      profil: "Créateur solo en personal branding LinkedIn vidéo",
       description:
         "Format court, audience FR, besoin de rendu pro. Submagic est l'outil le plus adapté à ce cas précis.",
       gagnant: "B",
     },
     {
-      profil: "Agence social media qui gère plusieurs comptes",
+      profil: "Agence réseaux sociaux qui gère plusieurs comptes",
       description:
         "Le clipping massif, le volume et l'orientation workflow d'OpusClip font la différence à l'échelle. Submagic en complément pour les clients qui demandent du rendu FR premium.",
       gagnant: "A",
@@ -139,7 +139,7 @@ export const opusclipVsSubmagic: ComparatifData = {
     {
       question: "Peut-on utiliser les deux dans le même workflow ?",
       answer:
-        "Oui, c'est même le setup le plus puissant. OpusClip pour la découpe initiale, Submagic pour le rendu final FR stylé. Combo économique qui se rentabilise rapidement dès qu'on produit plusieurs shorts par mois.",
+        "Oui, c'est même la combinaison la plus puissante. OpusClip pour la découpe initiale, Submagic pour le rendu final FR stylé. Combo économique qui se rentabilise rapidement dès qu'on produit plusieurs shorts par mois.",
     },
     {
       question: "Lequel a la meilleure qualité de sous-titres en français ?",

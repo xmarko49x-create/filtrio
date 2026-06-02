@@ -125,7 +125,7 @@ export const sousTitrerTiktok: CasUsageData = {
         "Mieux exploité quand tu pars d'une vidéo longue à découper en plusieurs shorts",
       ],
       verdict:
-        "Très bien si tu pars d'une vidéo longue à découper. Moins optimal pour un simple sous-titrage de TikTok déjà prêt. Combo OpusClip + Submagic reste le setup pro pour volume.",
+        "Très bien si tu pars d'une vidéo longue à découper. Moins optimal pour un simple sous-titrage de TikTok déjà prêt. Combo OpusClip + Submagic reste la combinaison pro pour le volume.",
       priceDisplay: {
         label: "À partir de",
         value: "15 $/mois",

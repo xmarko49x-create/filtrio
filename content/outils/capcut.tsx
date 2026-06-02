@@ -96,7 +96,7 @@ export const capcutFiche: FicheData = {
     </>,
     "Tu es sensible à la question des données personnelles (ByteDance)",
     "Tu veux un éditeur pro avec color grading avancé (→ DaVinci Resolve)",
-    "Tu as besoin d'API ou d'automatisation pour scaler",
+    "Tu as besoin d'API ou d'automatisation pour produire à grande échelle",
     "Tu veux un outil européen ou US pour des raisons de conformité",
     <>
       Tu fais du long format podcast/interview (→{" "}
@@ -299,7 +299,7 @@ export const capcutFiche: FicheData = {
     {
       question: "Compatible avec les autres logiciels vidéo ?",
       answer:
-        "Export vers tous les formats standards (MP4, MOV, etc.). Compatible avec Premiere Pro, DaVinci Resolve, Final Cut pour aller-retour. Pas d'API publique pour automatiser, contrainte si tu veux scaler.",
+        "Export vers tous les formats standards (MP4, MOV, etc.). Compatible avec Premiere Pro, DaVinci Resolve, Final Cut pour aller-retour. Pas d'API publique pour automatiser, contrainte si tu veux produire à grande échelle.",
     },
   ],
   ctaFinal: {

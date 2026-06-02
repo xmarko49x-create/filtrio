@@ -136,7 +136,7 @@ export const videoLongueEnShorts: CasUsageData = {
         "Pas besoin d'enchaîner 3 outils. OpusClip gère la découpe, les sous-titres, le recadrage 9:16 et l'export dans une seule interface.",
     },
     {
-      titre: "API pour scaler",
+      titre: "API pour passer à l'échelle",
       description:
         "L'API et les automatisations dépendent du plan choisi. À vérifier sur la page officielle d'OpusClip avant de construire un workflow Make.",
     },
@@ -195,7 +195,7 @@ export const videoLongueEnShorts: CasUsageData = {
       reponse: (
         <>
           Combo <strong className="text-emerald-400">OpusClip</strong>{" "}pour la découpe +{" "}
-          <strong className="text-amber-400">Submagic</strong>{" "}pour le polish final. Un combo
+          <strong className="text-amber-400">Submagic</strong>{" "}pour la finition. Un combo
           économique pour un rendu pro complet.
         </>
       ),

@@ -116,7 +116,7 @@ export const submagicVsDescript: ComparatifData = {
       gagnant: "B",
     },
     {
-      profil: "Solopreneur personal branding (LinkedIn, Shorts)",
+      profil: "Créateur solo en personal branding (LinkedIn, Shorts)",
       description:
         "Enregistrements courts face caméra, besoin de sortir du contenu régulier et léché sans passer 1h par vidéo.",
       gagnant: "A",

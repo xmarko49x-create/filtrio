@@ -281,8 +281,9 @@ export const podcastEnregistrementDistant: CasUsageData = {
       question: "Riverside ou Descript pour un podcast hebdomadaire ?",
       answer: (
         <>
-          Dépend de ton workflow. Si tu préfères enregistrer dans un outil et
-          éditer dans un autre avec ton propre setup, Riverside. Si tu veux
+          Dépend de ta façon de travailler. Si tu préfères enregistrer dans un
+          outil et éditer dans un autre avec ta propre installation, Riverside.
+          Si tu veux
           passer directement de l&apos;enregistrement à l&apos;édition
           textuelle sans changer d&apos;outil, Descript. Les deux tiennent la
           charge d&apos;un podcast hebdomadaire.
@@ -307,7 +308,7 @@ export const podcastEnregistrementDistant: CasUsageData = {
     {
       question: "Peut-on ajouter des invités qui appellent depuis leur téléphone ?",
       answer:
-        "Riverside et Zencastr proposent des applications mobiles qui permettent à un invité d'enregistrer en local depuis son téléphone. La qualité reste inférieure à un setup desktop avec micro dédié, mais c'est très nettement au-dessus d'un appel téléphonique classique.",
+        "Riverside et Zencastr proposent des applications mobiles qui permettent à un invité d'enregistrer en local depuis son téléphone. La qualité reste inférieure à une installation sur ordinateur avec micro dédié, mais c'est très nettement au-dessus d'un appel téléphonique classique.",
     },
   ],
   ctaFinal: {

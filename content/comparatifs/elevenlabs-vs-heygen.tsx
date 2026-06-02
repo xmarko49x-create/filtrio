@@ -87,7 +87,7 @@ export const elevenlabsVsHeygen: ComparatifData = {
     "Tu veux produire du contenu vidéo avec un visage sans filmer",
     "Tu dois décliner des vidéos marketing dans plusieurs langues",
     "Tu fais de la formation, du corporate, du B2B",
-    "Tu veux cloner ton visage pour scaler ta production vidéo",
+    "Tu veux cloner ton visage pour produire ta vidéo à grande échelle",
     "Tu as un budget 29 $/mois minimum (ou 24 $/mois en annuel, plan Creator)",
   ],
   casUsage: [
@@ -110,7 +110,7 @@ export const elevenlabsVsHeygen: ComparatifData = {
       gagnant: "A",
     },
     {
-      profil: "Formateur qui scale sa production de tutos vidéo",
+      profil: "Formateur qui produit ses tutos vidéo à grande échelle",
       description:
         "Cloner son visage + générer plusieurs tutos par mois sans se filmer à chaque fois. HeyGen est la solution la plus directe.",
       gagnant: "B",

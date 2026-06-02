@@ -98,7 +98,7 @@ export const synthesiaFiche: FicheData = {
       </Link>
       )
     </>,
-    "Tu fais du contenu social media grand public",
+    "Tu fais du contenu grand public pour les réseaux sociaux",
     <>
       Tu veux juste de la voix off (→{" "}
       <Link href="/outils/elevenlabs" className="text-teal-400 hover:underline">
@@ -253,7 +253,7 @@ export const synthesiaFiche: FicheData = {
     {
       slug: "heygen",
       comment:
-        "Concurrent direct plus orienté créateurs individuels. Avatars plus modernes, moins de features B2B. Plus souple pour usage social media.",
+        "Concurrent direct plus orienté créateurs individuels. Avatars plus modernes, moins de fonctions B2B. Plus souple pour un usage réseaux sociaux.",
     },
     {
       slug: "elevenlabs",

@@ -30,7 +30,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
       </>,
       <>
         Beaucoup de créateurs pros utilisent les deux : OpusClip pour la
-        découpe initiale, Submagic pour le polish final. Un combo économique
+        découpe initiale, Submagic pour la finition. Un combo économique
         qui se rentabilise rapidement dès qu&apos;on produit plusieurs shorts
         par mois.
       </>,
@@ -128,7 +128,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
     {
       titre: "Le combo gagne en volume",
       description:
-        "Pour un créateur qui publie régulièrement des shorts depuis du long format : OpusClip pour extraire, export, upload dans Submagic pour polish final. Combo économique, gain de temps massif vs un seul outil.",
+        "Pour un créateur qui publie régulièrement des shorts depuis du long format : OpusClip pour extraire, export, import dans Submagic pour la finition. Combo économique, gain de temps massif vs un seul outil.",
     },
     {
       titre: "Pas la même facturation",

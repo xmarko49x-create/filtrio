@@ -210,7 +210,7 @@ export const davinciFiche: FicheData = {
     {
       slug: "capcut",
       comment:
-        "Alternative beaucoup plus accessible. Moins puissante mais prise en main 10x plus rapide. Pour usage social media et shorts, CapCut fait largement le job.",
+        "Alternative beaucoup plus accessible. Moins puissante mais prise en main 10x plus rapide. Pour un usage réseaux sociaux et shorts, CapCut fait largement le job.",
     },
     {
       slug: "adobe-premiere",

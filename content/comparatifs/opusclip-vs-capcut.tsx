@@ -115,7 +115,7 @@ export const opusclipVsCapcut: ComparatifData = {
       gagnant: "B",
     },
     {
-      profil: "Agence social media qui gère plusieurs clients",
+      profil: "Agence réseaux sociaux qui gère plusieurs clients",
       description:
         "L'API OpusClip permet d'industrialiser. CapCut reste en accompagnement pour retouches manuelles. Combo gagnant à l'échelle.",
       gagnant: "A",

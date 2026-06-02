@@ -27,7 +27,7 @@ export const opusclipFiche: FicheData = {
     {
       question: "Pour qui ?",
       answer:
-        "Podcasters, streamers Twitch, YouTubeurs long-format, agences social media, marques qui recyclent du contenu existant en masse. Toute personne qui part d'une source longue pour faire des shorts.",
+        "Podcasters, streamers Twitch, YouTubeurs long-format, agences réseaux sociaux, marques qui recyclent du contenu existant en masse. Toute personne qui part d'une source longue pour faire des shorts.",
     },
     {
       question: "À éviter si ?",
@@ -75,7 +75,7 @@ export const opusclipFiche: FicheData = {
     "Tu publies sur plusieurs plateformes en même temps",
     "Tu veux tester sérieusement sans payer (plan gratuit récurrent)",
     "Tu veux connecter directement YouTube, Twitch, Zoom, Drive",
-    "Tu gères une agence social media avec du volume",
+    "Tu gères une agence réseaux sociaux avec du volume",
   ],
   pasPourQui: [
     <>
@@ -230,7 +230,7 @@ export const opusclipFiche: FicheData = {
     {
       slug: "submagic",
       comment:
-        "Pour la qualité visuelle maximale des sous-titres FR. Meilleur sur sources courtes tournées directement. Combo OpusClip + Submagic reste le setup pro le plus puissant.",
+        "Pour la qualité visuelle maximale des sous-titres FR. Meilleur sur sources courtes tournées directement. Combo OpusClip + Submagic reste la combinaison pro la plus puissante.",
     },
     {
       slug: "descript",

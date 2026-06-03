@@ -54,7 +54,7 @@ export const COMPARATIFS: ComparatifMeta[] = [
     slug: "elevenlabs-vs-heygen",
     titre: "ElevenLabs vs HeyGen",
     description:
-      "Voix IA pure contre avatar vidéo complet. Pas de vrais rivaux, le choix dépend du format.",
+      "ElevenLabs pour la voix off IA, HeyGen pour les avatars vidéo. On compare prix, qualité FR et usages pour t'aider à choisir selon ton format.",
     outilA: "elevenlabs",
     outilB: "heygen",
     tempsLecture: 6,
@@ -99,7 +99,7 @@ export const COMPARATIFS: ComparatifMeta[] = [
     slug: "runway-vs-pika",
     titre: "Runway vs Pika",
     description:
-      "Génération vidéo IA. Qualité pro vs accessibilité. Verdict par profil créatif.",
+      "Runway ou Pika pour générer de la vidéo par IA ? On compare qualité, prix et facilité pour trancher selon ton profil créatif.",
     outilA: "runway",
     // Pika pas dans le registre, garde string libre
     outilB: "pika",

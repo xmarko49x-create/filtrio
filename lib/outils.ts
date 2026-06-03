@@ -62,6 +62,8 @@ export interface Outil {
   ficheAvailable: boolean;
   /** Commission affilié connue (pour tri / badge "tier 1"). */
   commission?: string;
+  /** Override du <title> SEO. Sinon template "{name} avis 2026 : prix, fonctionnalités, alternatives". */
+  metaTitle?: string;
 }
 
 export const OUTILS: Outil[] = [
@@ -127,6 +129,7 @@ export const OUTILS: Outil[] = [
     freeTier: "Plan gratuit disponible",
     affiliateLink: "#aff-runway",
     ficheAvailable: true,
+    metaTitle: "Runway avis 2026 : prix, qualité de la vidéo IA et alternatives",
   },
   {
     slug: "descript",

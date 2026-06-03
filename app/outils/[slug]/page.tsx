@@ -25,12 +25,16 @@ export async function generateMetadata(props: {
   const tagline = /[.!?]\s*$/.test(outil.tagline) ? outil.tagline : `${outil.tagline}.`;
   const description = `Avis ${outil.name} 2026 : ${prixSegment}. ${tagline} Plans, alternatives, FAQ et analyse sans langue de bois.`;
 
+  // Title : override par fiche si défini, sinon template générique.
+  const baseTitle =
+    outil.metaTitle ?? `${outil.name} avis 2026 : prix, fonctionnalités, alternatives`;
+
   return {
-    title: `${outil.name} avis 2026 : prix, fonctionnalités, alternatives`,
+    title: baseTitle,
     description,
     alternates: { canonical: `/outils/${slug}` },
     openGraph: {
-      title: `${outil.name} avis 2026 : prix, fonctionnalités, alternatives, Filtrio`,
+      title: `${baseTitle}, Filtrio`,
       description,
       type: "article",
     },

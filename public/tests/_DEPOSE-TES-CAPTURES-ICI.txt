@@ -1,0 +1,13 @@
+Dépose ici tes 4 captures du test Submagic vs OpusClip,
+renommées EXACTEMENT comme ceci (sinon elles ne s'afficheront pas) :
+
+  submagic-mur.png        ->  la capture "MUR FRANÇAIS"
+  opusclip-esprits.png    ->  la capture "esprits"
+  recurrent.png           ->  la capture "récurrent" (bien écrit)
+  instagram-reel.png      ->  la capture "Instagram réel"
+
+Une fois les 4 fichiers déposés dans ce dossier, dis à Claude
+"c'est bon, les captures sont dans public/tests".
+Il vérifiera qu'elles sont là et rallumera la galerie sur la page.
+
+(Tu peux supprimer ce fichier .txt après, il ne sert qu'à toi.)

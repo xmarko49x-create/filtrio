@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
 import { colorHex } from "@/components/ScoreRing";
 import { getOutilOrThrow, type TailwindColor } from "@/lib/outils";
+import { TrackedAffiliateLink } from "@/components/TrackedAffiliateLink";
 
 export const metadata: Metadata = {
   title: "Alternative à Submagic : 5 outils sérieux comparés en 2026",
@@ -55,10 +56,10 @@ const ALTERNATIVES: Alternative[] = [
     pourquoi:
       "Pour ceux qui font surtout du long format (podcasts, interviews, tutos). L'édition textuelle divise le temps de montage par 3-5. Studio Sound nettoie l'audio en un clic.",
     limites:
-      "Pas optimal pour les shorts viraux (pas son cas d'usage). Plus cher (12 $/mois min). Interface moins intuitive au premier abord.",
+      "Pas optimal pour les shorts viraux (pas son cas d'usage). Plus cher (à partir de 16 $/mois). Interface moins intuitive au premier abord.",
     verdict:
       "Alternative si ton contenu principal est long et pas short. Pour le short viral FR, Submagic reste devant.",
-    priceLabel: "12 $/mois",
+    priceLabel: "À partir de 16 $/mois",
   },
   {
     slug: "veed",
@@ -70,7 +71,7 @@ const ALTERNATIVES: Alternative[] = [
       "Sous-titres FR moins soignés que Submagic. Moins de templates viraux prêts. Performance IA généraliste, pas spécialisée.",
     verdict:
       "Alternative si tu veux un outil plus polyvalent que Submagic et moins spécialisé. Bon équilibre features/prix.",
-    priceLabel: "12 $/mois",
+    priceLabel: "À partir de 10,75 €/mois",
   },
   {
     slug: "riverside",
@@ -127,7 +128,7 @@ export default function AlternativesASubmagicPage() {
           </div>
           <div>
             <span className="text-slate-400">Dernière vérification :</span>{" "}
-            20/04/2026
+            04/06/2026
           </div>
         </div>
       </section>
@@ -254,7 +255,7 @@ export default function AlternativesASubmagicPage() {
             </div>
             <div>
               <h3 className="font-semibold mb-1">
-                Dans 90% des cas, Submagic reste le meilleur choix.
+                Dans la plupart des cas, Submagic reste le meilleur choix.
               </h3>
               <p className="text-slate-400 text-sm">
                 Si ton usage principal est les shorts viraux FR, aucune de ces
@@ -339,19 +340,31 @@ export default function AlternativesASubmagicPage() {
             Prêt à choisir ?
           </div>
           <h2 className="text-4xl font-bold mb-4 tracking-tight">
-            Dans 90% des cas, reste sur Submagic.
+            Dans la plupart des cas, reste sur Submagic.
           </h2>
           <p className="text-xl text-slate-400 leading-relaxed mb-10 max-w-2xl mx-auto">
             Les alternatives ci-dessus ne battent Submagic que sur des cas
             précis (gratuit, long format, podcast distant). Pour le short
-            viral FR, Submagic reste la référence la plus complète du marché.
+            viral FR, Submagic reste l&apos;option la plus complète de notre
+            classement.
           </p>
-          <Link
-            href="/outils/submagic"
-            className="inline-block bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg"
-          >
-            Voir la fiche Submagic →
-          </Link>
+          <div className="flex flex-wrap justify-center gap-4">
+            <TrackedAffiliateLink
+              href={submagic.affiliateLink}
+              outilSlug="submagic"
+              outilName="Submagic"
+              source="comparatif"
+              className="inline-block bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg"
+            >
+              Tester Submagic →
+            </TrackedAffiliateLink>
+            <Link
+              href="/outils/submagic"
+              className="inline-block border border-slate-700 hover:border-slate-600 text-slate-200 font-semibold px-8 py-4 rounded-xl transition text-lg"
+            >
+              Voir la fiche Submagic
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -366,6 +379,7 @@ function AlternativeCard({ alt, rank }: { alt: Alternative; rank: number }) {
   const c: TailwindColor = outil.color;
   const hex = colorHex(c);
   const pct = Math.round(alt.scoreAlt * 10);
+  const hasRealAffiliateLink = /^https?:\/\//.test(outil.affiliateLink);
 
   return (
     <article className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8">
@@ -419,7 +433,18 @@ function AlternativeCard({ alt, rank }: { alt: Alternative; rank: number }) {
           </div>
 
           {outil.ficheAvailable && (
-            <div className="flex gap-3 mt-5">
+            <div className="flex flex-wrap gap-3 mt-5">
+              {hasRealAffiliateLink && (
+                <TrackedAffiliateLink
+                  href={outil.affiliateLink}
+                  outilSlug={outil.slug}
+                  outilName={outil.name}
+                  source="comparatif"
+                  className={`bg-${c}-500 hover:bg-${c}-400 text-slate-950 font-semibold px-5 py-2.5 rounded-lg text-sm transition`}
+                >
+                  Tester {outil.name} →
+                </TrackedAffiliateLink>
+              )}
               <Link
                 href={`/outils/${outil.slug}`}
                 className="border border-slate-700 hover:border-slate-600 px-5 py-2.5 rounded-lg text-sm transition"

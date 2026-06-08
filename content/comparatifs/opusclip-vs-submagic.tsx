@@ -16,6 +16,16 @@ export const opusclipVsSubmagic: ComparatifData = {
     headline: "OpusClip pour le volume. Submagic pour le rendu FR.",
     paragraphs: [
       <>
+        <strong>Réponse directe :</strong>{" "}choisis{" "}
+        <strong className="text-emerald-400">OpusClip</strong>{" "}si tu pars de
+        vidéos longues (podcasts, lives, conférences) à découper
+        automatiquement en clips courts. Choisis{" "}
+        <strong className="text-amber-400">Submagic</strong>{" "}si tu tournes
+        déjà des vidéos courtes et que la qualité des sous-titres en français
+        est ta priorité. Pour un usage pro régulier, beaucoup combinent les
+        deux : OpusClip pour découper, Submagic pour la finition.
+      </>,
+      <>
         <strong className="text-emerald-400">OpusClip</strong>{" "}automatise la
         découpe de vidéos longues (podcasts, lives, conférences) en clips
         courts prêts à publier. Parfait si ta source fait 30 minutes à 2
@@ -136,6 +146,16 @@ export const opusclipVsSubmagic: ComparatifData = {
     ctaText: "Essayer OpusClip →",
   },
   faq: [
+    {
+      question: "OpusClip ou Submagic pour des shorts en français ?",
+      answer:
+        "Pour des shorts en français, Submagic prend l'avantage : la qualité de ses sous-titres FR et ses mises en forme animées sont au-dessus. OpusClip reste pertinent si tes shorts proviennent d'une vidéo longue à découper d'abord. Beaucoup combinent les deux : OpusClip pour découper, Submagic pour le rendu FR final.",
+    },
+    {
+      question: "Lequel est le moins cher entre OpusClip et Submagic ?",
+      answer:
+        "Les deux proposent une formule gratuite pour tester. Côté payant, les tarifs d'entrée sont proches et dépendent de l'engagement (mensuel ou annuel) et de la devise : Submagic facture en euros, OpusClip en dollars. Le vrai écart se joue sur l'usage, OpusClip pour découper des vidéos longues en volume, Submagic pour un rendu FR soigné. Vérifie les tarifs à jour sur leurs fiches respectives.",
+    },
     {
       question: "Peut-on utiliser les deux dans le même workflow ?",
       answer:

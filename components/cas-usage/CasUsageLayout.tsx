@@ -414,10 +414,12 @@ function OutilCard({
             )}
           </div>
 
-          {isWinner && item.pourquoiGagne && item.limites && (
+          {item.pourquoiGagne && item.limites && (
             <div className="grid md:grid-cols-2 gap-4 mt-5">
               <div className="text-sm">
-                <div className="font-semibold text-emerald-400 mb-2">Pourquoi il gagne</div>
+                <div className="font-semibold text-emerald-400 mb-2">
+                  {isWinner ? "Pourquoi il gagne" : "Points forts pour ce cas"}
+                </div>
                 <ul className="text-slate-300 space-y-1">
                   {item.pourquoiGagne.map((p, i) => (
                     <li key={i}>· {p}</li>

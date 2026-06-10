@@ -294,7 +294,7 @@ export const sousTitresRapides: CasUsageData = {
           >
             OpusClip
           </Link>{" "}
-          (API sur plan Pro) ou{" "}
+          (API sur le plan le plus élevé, à vérifier sur opus.pro) ou{" "}
           <Link
             href="/outils/elevenlabs"
             className="text-teal-400 hover:underline"

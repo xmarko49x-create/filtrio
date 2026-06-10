@@ -14,7 +14,7 @@ export interface CasUsageMeta {
 export const CAS_USAGE: CasUsageMeta[] = [
   {
     slug: "video-longue-en-shorts",
-    titre: "Meilleur outil pour transformer une vidéo longue en shorts",
+    titre: "Transformer une vidéo longue en shorts : 5 outils comparés en 2026",
     description:
       "Les meilleurs outils analysés pour le même besoin. Gagnant annoncé dès le début.",
     gagnant: "opusclip",

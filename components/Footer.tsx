@@ -67,6 +67,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/observatoire-prix" className="hover:text-slate-300">
+                  Observatoire des prix
+                </Link>
+              </li>
+              <li>
                 <Link href="/a-propos#transparence" className="hover:text-slate-300">
                   Transparence affiliation
                 </Link>

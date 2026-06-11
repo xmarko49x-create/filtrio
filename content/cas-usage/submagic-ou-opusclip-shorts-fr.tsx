@@ -5,12 +5,12 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
   slug: "submagic-ou-opusclip-shorts-fr",
   gagnantSlug: "submagic",
   hero: {
-    h1: "Submagic ou OpusClip pour des shorts en français",
+    h1: "Submagic ou OpusClip pour des shorts en français ? Le verdict 2026",
     tagline:
       "C'est la question qui revient le plus chez les créateurs FR. Les deux outils sont excellents mais ne résolvent pas le même problème. Voici le choix guidé en 4 questions pour savoir lequel prendre, ou quand utiliser les deux.",
     tempsLecture: 5,
     outilsAnalyses: 2,
-    lastCheck: "20/04/2026",
+    lastCheck: "12/06/2026",
   },
   verdict: {
     tag: "La recommandation tout de suite",
@@ -26,11 +26,11 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
         rendu final : sous-titres viraux stylés FR, templates prêts, recadrage
         9:16 natif. <strong className="text-emerald-400">OpusClip</strong>{" "}
         excelle sur l&apos;extraction : prendre une vidéo longue d&apos;1h et
-        en sortir 5-15 shorts automatiquement.
+        en sortir une série de shorts automatiquement.
       </>,
       <>
-        Beaucoup de créateurs pros utilisent les deux : OpusClip pour la
-        découpe initiale, Submagic pour la finition. Un combo économique
+        Beaucoup d&apos;utilisateurs avancés combinent les deux : OpusClip pour la
+        découpe initiale, Submagic pour le polish final. Un combo économique
         qui se rentabilise rapidement dès qu&apos;on produit plusieurs shorts
         par mois.
       </>,
@@ -41,7 +41,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
       label: "Qualité sous-titres FR",
       poids: 30,
       description:
-        "Sur un public FR, la précision FR fait 80% de la perception de qualité.",
+        "Sur un public FR, la précision des sous-titres pèse lourd dans la perception de qualité.",
     },
     {
       label: "Automatisation (découpe auto)",
@@ -96,8 +96,8 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
       pourquoiGagne: [
         "Détection IA des moments forts sur long format",
         "Recadrage 9:16 + sous-titres auto dans le même outil",
-        "Plan gratuit 60 min/mois récurrent (vraiment utilisable)",
-        "API sur plan Pro pour industrialiser",
+        "Plan gratuit récurrent, vraiment utilisable pour tester",
+        "API disponible sur le plan le plus élevé (à vérifier sur opus.pro)",
         "Fort en EN aussi, utile si multilingue",
       ],
       limites: [
@@ -106,7 +106,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
         "Sous-titres corrects mais moins stylés par défaut",
       ],
       verdict:
-        "Si tu pars de long format (podcasts, lives, vidéos YouTube d'1h), OpusClip est nettement plus adapté. Rentabilisé dès 3-4 vidéos sources par mois.",
+        "Si tu pars de long format (podcasts, lives, vidéos YouTube d'1h), OpusClip est nettement plus adapté. Peut être rentabilisé rapidement si tu produis régulièrement du long format.",
       priceDisplay: {
         label: "À partir de",
         value: "15 $/mois",
@@ -118,7 +118,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
     {
       titre: "Submagic gagne si tu tournes directement court",
       description:
-        "Tu tournes des shorts de 30-90 sec en face cam ou en voix off. Submagic te donne un rendu viral FR en 90 secondes. OpusClip serait du gaspillage ici, tu n'as pas de long format à découper.",
+        "Tu tournes des shorts de 30-90 sec en face cam ou en voix off. Submagic te donne un rendu viral FR en quelques minutes. OpusClip serait du gaspillage ici, tu n'as pas de long format à découper.",
     },
     {
       titre: "OpusClip gagne si tu pars de long",
@@ -128,7 +128,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
     {
       titre: "Le combo gagne en volume",
       description:
-        "Pour un créateur qui publie régulièrement des shorts depuis du long format : OpusClip pour extraire, export, import dans Submagic pour la finition. Combo économique, gain de temps massif vs un seul outil.",
+        "Pour un créateur qui publie régulièrement des shorts depuis du long format : OpusClip pour extraire, export, upload dans Submagic pour polish final. Combo économique, gain de temps important par rapport à un seul outil.",
     },
     {
       titre: "Pas la même facturation",
@@ -150,7 +150,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
     {
       titre: "Ignorer le volume réel de production",
       description:
-        "Si tu publies 2 shorts par mois occasionnels, CapCut gratuit suffit, ni Submagic ni OpusClip ne sont justifiés. Si tu publies 15+ shorts par mois pour construire une audience, le combo Submagic + OpusClip est rentabilisé dès le 2e mois.",
+        "Si tu publies quelques shorts par mois en occasionnel, CapCut gratuit suffit, ni Submagic ni OpusClip ne sont justifiés. Si tu publies plusieurs shorts par semaine pour construire une audience, le combo Submagic + OpusClip peut se rentabiliser rapidement.",
     },
     {
       titre: "Oublier que l'affiliation existe",
@@ -260,13 +260,13 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
     {
       question: "Est-ce que Submagic va intégrer une découpe auto à terme ?",
       answer:
-        "Des features d'auto-sélection de moments forts ont été ajoutées en 2025, mais reste moins mature qu'OpusClip sur ce terrain. Submagic reste focalisé sur le rendu final viral. Peu probable qu'ils rattrapent OpusClip sur la découpe pure à court terme.",
+        "Submagic propose un add-on de découpe (Magic Clips, facturé en plus de l'abonnement), mais l'outil reste moins mature qu'OpusClip sur ce terrain. Submagic reste focalisé sur le rendu final viral, OpusClip sur l'extraction. La division du travail entre les deux reste d'actualité.",
     },
   ],
   ctaFinal: {
     headline: "Prêt à choisir ?",
     paragraph:
-      "Si tu hésites, commence par OpusClip gratuit (60 min/mois) pour voir si la découpe auto t'est utile. Si oui, ajoute Submagic pour le rendu final. Si non, Submagic seul suffira.",
+      "Si tu hésites, commence par le plan gratuit OpusClip pour voir si la découpe auto t'est utile. Si oui, ajoute Submagic pour le rendu final. Si non, Submagic seul suffira.",
     buttonText: "Essayer Submagic",
   },
   autresCasUsage: [

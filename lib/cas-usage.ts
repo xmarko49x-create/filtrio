@@ -30,7 +30,7 @@ export const CAS_USAGE: CasUsageMeta[] = [
   },
   {
     slug: "submagic-ou-opusclip-shorts-fr",
-    titre: "Submagic ou OpusClip pour des shorts en français",
+    titre: "Submagic ou OpusClip pour des shorts en français ? Le verdict 2026",
     description:
       "La question qui revient le plus. Choix guidé en 4 questions.",
     gagnant: "submagic",

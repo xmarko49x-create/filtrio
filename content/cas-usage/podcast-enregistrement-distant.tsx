@@ -10,7 +10,7 @@ export const podcastEnregistrementDistant: CasUsageData = {
       "Tu veux enregistrer un podcast ou une interview avec un invité à distance, en qualité studio, sans Zoom qui compresse l'audio. Voici notre classement des outils qui livrent la meilleure qualité, le gagnant, et les pièges à éviter.",
     tempsLecture: 6,
     outilsAnalyses: 5,
-    lastCheck: "20/04/2026",
+    lastCheck: "12/06/2026",
   },
   verdict: {
     tag: "La recommandation tout de suite",
@@ -222,7 +222,7 @@ export const podcastEnregistrementDistant: CasUsageData = {
     {
       titre: "Demander à l'invité d'installer un logiciel",
       description:
-        "Tu perds 30% de tes invités à l'étape installation. Un bon outil de podcast à distance fonctionne directement dans le navigateur, juste avec un lien. Riverside, Descript et Zencastr respectent tous ce principe.",
+        "Tu perds une partie de tes invités à l'étape installation : logiciel à télécharger, compte à créer, réglages à faire. Un bon outil de podcast à distance fonctionne directement dans le navigateur, juste avec un lien. Riverside, Descript et Zencastr respectent tous ce principe.",
     },
     {
       titre: "Négliger le micro de l'invité",
@@ -251,8 +251,8 @@ export const podcastEnregistrementDistant: CasUsageData = {
       reponse: (
         <>
           Si oui →{" "}
-          <strong className="text-violet-400">Descript</strong>. L&apos;édition
-          textuelle reste la meilleure du marché.
+          <strong className="text-violet-400">Descript</strong>. Son édition
+          textuelle reste une des plus abouties du marché.
         </>
       ),
     },
@@ -281,9 +281,8 @@ export const podcastEnregistrementDistant: CasUsageData = {
       question: "Riverside ou Descript pour un podcast hebdomadaire ?",
       answer: (
         <>
-          Dépend de ta façon de travailler. Si tu préfères enregistrer dans un
-          outil et éditer dans un autre avec ta propre installation, Riverside.
-          Si tu veux
+          Dépend de ton workflow. Si tu préfères enregistrer dans un outil et
+          éditer dans un autre avec ton propre setup, Riverside. Si tu veux
           passer directement de l&apos;enregistrement à l&apos;édition
           textuelle sans changer d&apos;outil, Descript. Les deux tiennent la
           charge d&apos;un podcast hebdomadaire.
@@ -308,7 +307,7 @@ export const podcastEnregistrementDistant: CasUsageData = {
     {
       question: "Peut-on ajouter des invités qui appellent depuis leur téléphone ?",
       answer:
-        "Riverside et Zencastr proposent des applications mobiles qui permettent à un invité d'enregistrer en local depuis son téléphone. La qualité reste inférieure à une installation sur ordinateur avec micro dédié, mais c'est très nettement au-dessus d'un appel téléphonique classique.",
+        "Riverside et Zencastr proposent des applications mobiles qui permettent à un invité d'enregistrer en local depuis son téléphone. La qualité reste inférieure à un setup desktop avec micro dédié, mais c'est très nettement au-dessus d'un appel téléphonique classique.",
     },
   ],
   ctaFinal: {

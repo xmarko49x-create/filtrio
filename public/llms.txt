@@ -1,0 +1,29 @@
+# Filtrio
+
+> Comparateur indépendant en français d'outils IA pour créateurs vidéo (YouTube, TikTok, Shorts, Reels). 18 outils analysés sur 6 critères pondérés publics, prix relevés manuellement sur les pages officielles et datés, comparatifs 1 contre 1 avec verdict par profil. Édité par Marc Devillers. Certains liens sont affiliés, ce qui ne change jamais le classement éditorial : la méthodologie est publique.
+
+Données citables librement avec attribution et lien vers la source.
+
+## Données et références
+
+- [Observatoire des prix des outils IA vidéo](https://www.filtrio.fr/observatoire-prix) : prix d'entrée, devises et dates de vérification des 18 outils ; 12/18 facturés en dollars US ; le même plan coûte de +21 % à +100 % de plus en facturation mensuelle qu'annuelle (exemples vérifiés)
+- [Méthodologie de notation](https://www.filtrio.fr/methode) : 6 critères pondérés, grille publique
+- [Lexique IA vidéo](https://www.filtrio.fr/lexique) : 22 termes définis (text-to-video, clonage vocal, deepfake, AI Act...)
+
+## Comparatifs
+
+- [Tous les comparatifs](https://www.filtrio.fr/comparatifs) : 11 duels 1 contre 1 + méga-comparatif shorts
+- [OpusClip vs Submagic](https://www.filtrio.fr/comparatifs/opusclip-vs-submagic) : le duel le plus consulté, verdict par profil
+- [Grand comparatif outils shorts 2026](https://www.filtrio.fr/comparatifs/outils-shorts-tiktok-2026) : 6 outils, 12 critères
+
+## Fiches outils (sélection)
+
+- [Catalogue des 18 outils](https://www.filtrio.fr/outils)
+- [Submagic](https://www.filtrio.fr/outils/submagic) : sous-titres viraux FR, score 9.2/10
+- [OpusClip](https://www.filtrio.fr/outils/opusclip) : découpe IA de vidéos longues en shorts, score 8.7/10
+- [ElevenLabs](https://www.filtrio.fr/outils/elevenlabs) : voix IA, score 8.3/10
+
+## À propos
+
+- [Qui édite Filtrio](https://www.filtrio.fr/a-propos) : auteur identifié, transparence affiliation
+- [Contact](https://www.filtrio.fr/contact) : contact@filtrio.fr, réponse sous 24h

@@ -9,22 +9,12 @@ export const opusclipVsSubmagic: ComparatifData = {
     h1: "lequel choisir ?",
     tagline:
       "Les deux rois du short viral. Comparés sur la base de leurs fonctionnalités, de leurs plans et des retours utilisateurs publics. Le gagnant dépend de ton cas précis.",
-    tempsLecture: 9,
-    lastCheck: "02/06/2026",
+    tempsLecture: 7,
+    lastCheck: "20/04/2026",
   },
   verdictRapide: {
     headline: "OpusClip pour le volume. Submagic pour le rendu FR.",
     paragraphs: [
-      <>
-        <strong>Réponse directe :</strong>{" "}choisis{" "}
-        <strong className="text-emerald-400">OpusClip</strong>{" "}si tu pars de
-        vidéos longues (podcasts, lives, conférences) à découper
-        automatiquement en clips courts. Choisis{" "}
-        <strong className="text-amber-400">Submagic</strong>{" "}si tu tournes
-        déjà des vidéos courtes et que la qualité des sous-titres en français
-        est ta priorité. Pour un usage pro régulier, beaucoup combinent les
-        deux : OpusClip pour découper, Submagic pour la finition.
-      </>,
       <>
         <strong className="text-emerald-400">OpusClip</strong>{" "}automatise la
         découpe de vidéos longues (podcasts, lives, conférences) en clips
@@ -36,7 +26,7 @@ export const opusclipVsSubmagic: ComparatifData = {
       </>,
       <>
         Beaucoup de créateurs pros utilisent les deux : OpusClip pour la
-        découpe initiale, Submagic pour la finition. Un combo économique
+        découpe initiale, Submagic pour le polish final. Un combo économique
         qui reste rentable si tu produis du contenu régulièrement.
       </>,
     ],
@@ -87,7 +77,7 @@ export const opusclipVsSubmagic: ComparatifData = {
   ],
   porQuiA: [
     "Tu as des vidéos longues à recycler (podcasts, lives, confs)",
-    "Tu veux automatiser la production de 5-10 clips par vidéo source",
+    "Tu veux automatiser la production de plusieurs clips par vidéo source",
     "Tu utilises déjà un workflow Make/Zapier et veux une API",
     "Tu crées aussi en anglais ou multilingue",
     "Tu cherches un plan gratuit récurrent pour tester sans engagement",
@@ -119,13 +109,13 @@ export const opusclipVsSubmagic: ComparatifData = {
       gagnant: "A",
     },
     {
-      profil: "Créateur solo en personal branding LinkedIn vidéo",
+      profil: "Solopreneur personal branding LinkedIn vidéo",
       description:
         "Format court, audience FR, besoin de rendu pro. Submagic est l'outil le plus adapté à ce cas précis.",
       gagnant: "B",
     },
     {
-      profil: "Agence réseaux sociaux qui gère plusieurs comptes",
+      profil: "Agence social media qui gère plusieurs comptes",
       description:
         "Le clipping massif, le volume et l'orientation workflow d'OpusClip font la différence à l'échelle. Submagic en complément pour les clients qui demandent du rendu FR premium.",
       gagnant: "A",
@@ -147,19 +137,9 @@ export const opusclipVsSubmagic: ComparatifData = {
   },
   faq: [
     {
-      question: "OpusClip ou Submagic pour des shorts en français ?",
-      answer:
-        "Pour des shorts en français, Submagic prend l'avantage : la qualité de ses sous-titres FR et ses mises en forme animées sont au-dessus. OpusClip reste pertinent si tes shorts proviennent d'une vidéo longue à découper d'abord. Beaucoup combinent les deux : OpusClip pour découper, Submagic pour le rendu FR final.",
-    },
-    {
-      question: "Lequel est le moins cher entre OpusClip et Submagic ?",
-      answer:
-        "Les deux proposent une formule gratuite pour tester. Côté payant, les tarifs d'entrée sont proches et dépendent de l'engagement (mensuel ou annuel) et de la devise : Submagic facture en euros, OpusClip en dollars. Le vrai écart se joue sur l'usage, OpusClip pour découper des vidéos longues en volume, Submagic pour un rendu FR soigné. Vérifie les tarifs à jour sur leurs fiches respectives.",
-    },
-    {
       question: "Peut-on utiliser les deux dans le même workflow ?",
       answer:
-        "Oui, c'est même la combinaison la plus puissante. OpusClip pour la découpe initiale, Submagic pour le rendu final FR stylé. Combo économique qui se rentabilise rapidement dès qu'on produit plusieurs shorts par mois.",
+        "Oui, c'est même le setup le plus puissant. OpusClip pour la découpe initiale, Submagic pour le rendu final FR stylé. Combo économique qui se rentabilise rapidement dès qu'on produit plusieurs shorts par mois.",
     },
     {
       question: "Lequel a la meilleure qualité de sous-titres en français ?",
@@ -195,136 +175,5 @@ export const opusclipVsSubmagic: ComparatifData = {
         </>
       ),
     },
-    {
-      question: "Avez-vous vraiment testé Submagic et OpusClip ?",
-      answer: (
-        <>
-          Oui. On a lu à voix haute un court texte en français (53 secondes),
-          rempli de pièges (un prix, des noms de marque, des mots techniques
-          comme «&nbsp;récurrent&nbsp;» et «&nbsp;référencement&nbsp;»), et on a
-          passé cet enregistrement dans les deux outils avec le même fichier. Les deux
-          écrivent parfaitement les mots techniques. Chacun fait une faute que
-          l&apos;autre évite, et aucun ne reconnaît le nom de marque
-          «&nbsp;Reels&nbsp;». Submagic est quasi instantané, OpusClip met
-          environ 2 minutes mais ajoute un titre et un résumé. Le détail complet
-          est dans la section «&nbsp;On a vraiment testé&nbsp;» plus haut.
-        </>
-      ),
-    },
   ],
-
-  testReel: {
-    intro: (
-      <>
-        Pour aller plus loin que la théorie, on a fait le test nous-mêmes. On a
-        lu à voix haute un court texte en français de 53 secondes, volontairement
-        rempli de pièges : un prix, des noms de marque, et des mots techniques
-        comme «&nbsp;récurrent&nbsp;» et «&nbsp;référencement&nbsp;». Puis on a
-        passé cet enregistrement dans OpusClip et Submagic avec exactement le
-        même fichier. Voici ce qu&apos;on a vu, sans filtre.
-      </>
-    ),
-    lignes: [
-      {
-        critere: "« récurrent » (le mot piège)",
-        a: "Écrit « récurrent » correctement",
-        b: "Écrit « récurrent » correctement",
-        gagnant: "egalite",
-      },
-      {
-        critere: "« référencement »",
-        a: "Correct",
-        b: "Correct",
-        gagnant: "egalite",
-      },
-      {
-        critere: "« le mieux en français »",
-        a: "Correct : « mieux »",
-        b: "Erreur : a écrit « le mur »",
-        gagnant: "A",
-      },
-      {
-        critere: "« des trucs exprès »",
-        a: "Erreur : a écrit « esprits »",
-        b: "Correct : « exprès »",
-        gagnant: "B",
-      },
-      {
-        critere: "Nom de marque « Reels »",
-        a: "Erreur : « réel »",
-        b: "Erreur : « réels »",
-        gagnant: "egalite",
-      },
-      {
-        critere: "Vitesse (même clip de 53 s)",
-        a: "Environ 2 minutes",
-        b: "Quasi instantané",
-        gagnant: "B",
-      },
-      {
-        critere: "Petits plus automatiques",
-        a: "Titre + résumé + score de la vidéo",
-        b: "Majuscules + emojis ajoutés",
-        gagnant: "egalite",
-      },
-    ],
-    images: [
-      {
-        src: "/tests/submagic-mur.png",
-        alt: "Capture Submagic affichant « MUR FRANÇAIS »",
-        caption: (
-          <>
-            Submagic a transcrit «&nbsp;le mur français&nbsp;» au lieu de
-            «&nbsp;le mieux en français&nbsp;». La seule vraie erreur de sens du
-            test.
-          </>
-        ),
-      },
-      {
-        src: "/tests/opusclip-esprits.png",
-        alt: "Capture OpusClip affichant « ESPRITS POUR LES PIÉGER »",
-        caption: (
-          <>
-            OpusClip a écrit «&nbsp;des trucs esprits&nbsp;» au lieu de
-            «&nbsp;des trucs exprès&nbsp;».
-          </>
-        ),
-      },
-      {
-        src: "/tests/submagic-recurrent.png",
-        alt: "Capture Submagic affichant correctement « récurrent » et « référencement »",
-        caption: (
-          <>
-            Submagic écrit bien «&nbsp;récurrent&nbsp;» et
-            «&nbsp;référencement&nbsp;». OpusClip aussi : les deux gèrent le
-            vocabulaire technique mieux que la moyenne.
-          </>
-        ),
-      },
-      {
-        src: "/tests/instagram-reel.png",
-        alt: "Capture OpusClip affichant « INSTAGRAM RÉEL » au lieu de « Reels »",
-        caption: (
-          <>
-            OpusClip : le nom de marque «&nbsp;Reels&nbsp;» devient
-            «&nbsp;réel&nbsp;» (et «&nbsp;réels&nbsp;» chez Submagic). Aucun des
-            deux ne reconnaît les noms propres.
-          </>
-        ),
-      },
-    ],
-    verdict: (
-      <>
-        Match serré, et c&apos;est ça la vérité. Chacun fait une faute que
-        l&apos;autre évite, et les deux ratent les noms de marque. Mais les deux
-        écrivent parfaitement les mots techniques, ce qui est déjà mieux que
-        beaucoup d&apos;outils. En clair : Submagic pour la vitesse et le rendu
-        prêt à publier, OpusClip pour le côté tout-en-un (titre, résumé) si tu
-        acceptes d&apos;attendre un peu. Aucun n&apos;est parfait en français,
-        surtout sur les noms propres, donc une relecture rapide reste utile dans
-        les deux cas. Test réalisé sur un enregistrement&nbsp;; on l&apos;étendra
-        à d&apos;autres voix et accents.
-      </>
-    ),
-  },
 };

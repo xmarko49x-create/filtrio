@@ -15,6 +15,7 @@ export default function Nav({ ctaHref = "#verdict" }: { ctaHref?: string }) {
           <Link
             href="/"
             onClick={close}
+            aria-label="Filtrio, retour à l'accueil"
             className="font-bold text-xl tracking-tight flex-shrink-0"
           >
             <span className="text-emerald-400">Filt</span>rio
@@ -33,7 +34,7 @@ export default function Nav({ ctaHref = "#verdict" }: { ctaHref?: string }) {
               TikTok / Shorts
             </Link>
             <Link
-              href="/#comparatifs"
+              href="/comparatifs"
               className="hover:text-slate-100 transition"
             >
               Comparatifs
@@ -127,7 +128,7 @@ export default function Nav({ ctaHref = "#verdict" }: { ctaHref?: string }) {
               TikTok / Shorts
             </Link>
             <Link
-              href="/#comparatifs"
+              href="/comparatifs"
               onClick={close}
               className="py-3 text-slate-200 hover:text-emerald-400 transition border-b border-slate-800/60"
             >

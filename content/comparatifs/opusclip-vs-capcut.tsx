@@ -17,7 +17,7 @@ export const opusclipVsCapcut: ComparatifData = {
     paragraphs: [
       <>
         <strong className="text-emerald-400">OpusClip</strong>{" "}excelle sur un
-        cas précis : prendre une vidéo longue et en sortir 5-15 shorts prêts à
+        cas précis : prendre une vidéo longue et en sortir une série de shorts prêts à
         publier, automatiquement.{" "}
         <strong className="text-sky-400">CapCut</strong>{" "}est un éditeur complet
         gratuit qui peut aussi découper, mais manuellement. Deux outils, deux
@@ -115,7 +115,7 @@ export const opusclipVsCapcut: ComparatifData = {
       gagnant: "B",
     },
     {
-      profil: "Agence réseaux sociaux qui gère plusieurs clients",
+      profil: "Agence social media qui gère plusieurs clients",
       description:
         "L'API OpusClip permet d'industrialiser. CapCut reste en accompagnement pour retouches manuelles. Combo gagnant à l'échelle.",
       gagnant: "A",

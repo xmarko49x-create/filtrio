@@ -120,7 +120,7 @@ export const invideoVsPictory: ComparatifData = {
     {
       profil: "Organisateur de webinaires longs à recycler",
       description:
-        "1h de webinaire à transformer en 5-10 clips courts pour social. Pictory est pensé pour ce workflow long-form-to-shorts avec transcription et sélection auto.",
+        "1h de webinaire à transformer en plusieurs clips courts pour les réseaux. Pictory est pensé pour ce workflow long-form-to-shorts avec transcription et sélection auto.",
       gagnant: "B",
     },
     {

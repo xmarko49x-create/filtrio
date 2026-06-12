@@ -131,7 +131,7 @@ export const descriptFiche: FicheData = {
       poids: 15,
       score: 7.5,
       commentaire:
-        "Courbe d'apprentissage plus longue que la moyenne. Le modèle d'édition textuelle est déroutant au début : tu édites du texte, pas une timeline. Compte 2-3 heures pour être vraiment à l'aise. Une fois maîtrisé, gain de productivité massif.",
+        "Courbe d'apprentissage plus longue que la moyenne. Le modèle d'édition textuelle est déroutant au début : tu édites du texte, pas une timeline. Compte quelques heures pour être vraiment à l'aise. Une fois maîtrisé, le gain de productivité est important.",
     },
     {
       label: "Support & confort FR",
@@ -260,7 +260,7 @@ export const descriptFiche: FicheData = {
     {
       question: "L'édition textuelle vaut-elle vraiment la courbe d'apprentissage ?",
       answer:
-        "Oui pour un usage long format régulier. Compte 2-3h pour être à l'aise. Une fois maîtrisé, le gain de productivité est massif, selon les retours publics, le temps de montage d'un podcast d'1h est divisé par 3 à 5 vs un workflow timeline classique.",
+        "Oui pour un usage long format régulier. Compte quelques heures pour être à l'aise. Une fois maîtrisé, le gain de productivité est important : selon les retours publics, le temps de montage d'un long format baisse nettement par rapport à un workflow timeline classique.",
     },
     {
       question: "La transcription FR est-elle fiable ?",

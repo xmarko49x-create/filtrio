@@ -5,12 +5,12 @@ export const miniaturesYoutubeIa: CasUsageData = {
   slug: "miniatures-youtube-ia",
   gagnantSlug: "canva",
   hero: {
-    h1: "Meilleur générateur de miniatures YouTube IA",
+    h1: "Miniatures YouTube IA : 5 outils comparés en 2026",
     tagline:
       "Tu veux des miniatures YouTube qui attirent le clic, générées en quelques minutes avec l'IA. Voici notre classement 2026 des outils qui livrent le meilleur rendu, le gagnant, et les pièges à éviter pour ton CTR.",
     tempsLecture: 6,
     outilsAnalyses: 5,
-    lastCheck: "20/04/2026",
+    lastCheck: "13/06/2026",
   },
   verdict: {
     tag: "Le verdict en 30 secondes",
@@ -18,14 +18,15 @@ export const miniaturesYoutubeIa: CasUsageData = {
       <>
         Pour les miniatures YouTube,{" "}
         <span className="text-pink-400">Canva</span>{" "}reste l&apos;option la
-        plus complète.
+        plus complète de notre classement.
       </>
     ),
     paragraphs: [
       <>
-        Magic Design pour générer des miniatures depuis un prompt, templates
-        YouTube massifs, Brand Kit pour la cohérence, suppression fond en un
-        clic. Le meilleur équilibre entre IA générative et contrôle créatif.
+        Magic Design pour générer des miniatures depuis un prompt, large
+        bibliothèque de templates YouTube, Brand Kit pour la cohérence,
+        suppression fond en un clic. Un des meilleurs équilibres entre IA
+        générative et contrôle créatif.
       </>,
       <>
         <strong className="text-slate-200">Alternative sérieuse :</strong>{" "}
@@ -96,24 +97,55 @@ export const miniaturesYoutubeIa: CasUsageData = {
       fallbackColor: "sky",
       fallbackName: "Microsoft Designer",
       scoreCas: 8.2,
+      pourquoiGagne: [
+        "Gratuit, avec le générateur d'images DALL-E intégré",
+        "Génération de visuels depuis un prompt en français",
+        "Suffisant pour des miniatures simples et propres",
+        "Un compte Microsoft standard suffit, pas d'abonnement",
+      ],
+      limites: [
+        "Bibliothèque de templates bien plus réduite que Canva",
+        "Pas d'équivalent du Brand Kit pour la cohérence de chaîne",
+        "Composition plus limitée pour les miniatures complexes",
+      ],
       verdict:
-        "Alternative gratuite sérieuse avec DALL-E 3 intégré. Moins de templates Canva, mais IA image plus avancée. Bon choix si tu veux du 100% gratuit et que tu aimes itérer via prompts.",
+        "Alternative gratuite sérieuse avec DALL-E intégré. Moins de templates que Canva, mais génération IA solide. Bon choix si tu veux du 100% gratuit et que tu aimes itérer via prompts.",
       priceDisplay: { label: "Prix", value: "Gratuit" },
     },
     {
       slug: "tubebuddy",
       scoreCas: 7.5,
+      pourquoiGagne: [
+        "Test A/B de miniatures intégré à YouTube : mesure laquelle fait cliquer",
+        "Données réelles de CTR, pas des impressions subjectives",
+        "Complément naturel d'un outil de création comme Canva",
+      ],
+      limites: [
+        "Ne crée pas de miniatures : c'est un outil de test, pas de design",
+        "Le test A/B demande du trafic existant pour donner des résultats fiables",
+        "Interface en anglais",
+      ],
       verdict:
         "Pas un générateur de miniatures à proprement parler, mais permet de tester A/B plusieurs miniatures existantes pour mesurer celle qui marche le mieux. Complémentaire à Canva pour optimiser le CTR.",
-      priceDisplay: { label: "À partir de", value: "12 $/mois" },
+      priceDisplay: { label: "À partir de", value: "3,99 $/mois" },
     },
     {
       slug: "adobe-express",
       fallbackColor: "rose",
       fallbackName: "Adobe Express",
       scoreCas: 7.8,
+      pourquoiGagne: [
+        "Firefly intégré pour la génération IA, entraîné sur des contenus sous licence",
+        "Finition soignée et exports propres, l'ADN Adobe",
+        "Pertinent si tu as déjà un abonnement Creative Cloud",
+      ],
+      limites: [
+        "Moins intuitif que Canva pour un débutant",
+        "Bibliothèque de templates YouTube moins fournie",
+        "L'intérêt chute si tu n'es pas déjà dans l'écosystème Adobe",
+      ],
       verdict:
-        "Firefly intégré, excellent pour les utilisateurs Adobe. Plus pro sur la finition, moins intuitif que Canva. Choix pertinent si tu as déjà un abonnement Creative Cloud.",
+        "Firefly intégré, très bon pour les utilisateurs Adobe. Plus pro sur la finition, moins intuitif que Canva. Choix pertinent si tu as déjà un abonnement Creative Cloud.",
       priceDisplay: {
         label: "À partir de",
         value: "11 €/mois",
@@ -125,8 +157,18 @@ export const miniaturesYoutubeIa: CasUsageData = {
       fallbackColor: "purple",
       fallbackName: "Midjourney",
       scoreCas: 7.0,
+      pourquoiGagne: [
+        "Parmi les rendus IA les plus avancés pour des visuels uniques",
+        "Styles impossibles à obtenir avec des templates classiques",
+        "Utile pour se démarquer dans une niche saturée visuellement",
+      ],
+      limites: [
+        "Ne gère ni le texte ni la composition : il faut finir dans Canva ou Photoshop",
+        "Workflow en deux outils, donc plus long",
+        "Courbe d'apprentissage des prompts plus exigeante",
+      ],
       verdict:
-        "IA image la plus avancée du marché, mais tu génères le visuel seul. Il faut ensuite importer dans Canva ou Photoshop pour ajouter texte et éléments. Deux outils au lieu d'un = moins rapide.",
+        "Parmi les IA image les plus avancées du marché, mais tu génères le visuel seul. Il faut ensuite importer dans Canva ou Photoshop pour ajouter texte et éléments. Deux outils au lieu d'un = moins rapide.",
       priceDisplay: { label: "À partir de", value: "10 $/mois" },
     },
   ],
@@ -139,7 +181,7 @@ export const miniaturesYoutubeIa: CasUsageData = {
     {
       titre: "Magic Design IA natif",
       description:
-        "Depuis 2023-2024, Magic Design a mûri. Tu décris ta miniature, tu récupères 5-10 propositions à affiner. Gain de temps net sur la phase créative initiale.",
+        "Depuis 2023-2024, Magic Design a mûri. Tu décris ta miniature, tu récupères plusieurs propositions à affiner. Gain de temps net sur la phase créative initiale.",
     },
     {
       titre: "Brand Kit pour cohérence",
@@ -176,8 +218,8 @@ export const miniaturesYoutubeIa: CasUsageData = {
           <Link href="/outils/tubebuddy" className="text-orange-400 hover:underline">
             TubeBuddy
           </Link>{" "}
-          permet de tester 2-3 variantes automatiquement. Sur 50 vidéos, le gain
-          cumulé de CTR est massif.
+          permet de tester plusieurs variantes automatiquement. Sur la durée,
+          le gain cumulé de CTR devient significatif.
         </>
       ),
     },

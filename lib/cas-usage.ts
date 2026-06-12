@@ -46,7 +46,7 @@ export const CAS_USAGE: CasUsageMeta[] = [
   },
   {
     slug: "miniatures-youtube-ia",
-    titre: "Meilleur générateur de miniatures YouTube IA",
+    titre: "Miniatures YouTube IA : 5 outils comparés en 2026",
     description:
       "5 outils analysés pour le même besoin. Canva, Microsoft Designer, TubeBuddy et alternatives.",
     gagnant: "canva",

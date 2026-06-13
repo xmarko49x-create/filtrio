@@ -253,7 +253,7 @@ export const synthesiaFiche: FicheData = {
     {
       slug: "heygen",
       comment:
-        "Concurrent direct plus orienté créateurs individuels. Avatars plus modernes, moins de features B2B. Plus souple pour usage social media.",
+        "Concurrent direct plus orienté créateurs individuels. Avatars plus modernes, moins de fonctionnalités B2B. Plus souple pour usage réseaux sociaux.",
     },
     {
       slug: "elevenlabs",
@@ -273,7 +273,7 @@ export const synthesiaFiche: FicheData = {
         <>
           Synthesia dans la plupart des cas B2B : SSO, GDPR, SOC 2,
           intégrations LMS. HeyGen dans les cas où vitesse et créativité
-          priment sur les features B2B (ex : équipe marketing agile d&apos;une
+          priment sur les fonctionnalités B2B (ex : équipe marketing agile d&apos;une
           scale-up). Voir le{" "}
           <Link
             href="/comparatifs/synthesia-vs-heygen"

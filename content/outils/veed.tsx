@@ -286,7 +286,7 @@ export const veedFiche: FicheData = {
           <Link href="/outils/kapwing" className="text-green-400 hover:underline">
             Kapwing
           </Link>{" "}
-          est en avance. Pour un éditeur web polyvalent avec plus de features
+          est en avance. Pour un éditeur web polyvalent avec plus de fonctionnalités
           IA intégrées en solo/petite équipe, Veed est un meilleur compromis.
           La différence se joue sur l&apos;intensité du travail collaboratif.
         </>

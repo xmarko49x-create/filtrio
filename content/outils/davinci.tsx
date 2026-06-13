@@ -119,7 +119,7 @@ export const davinciFiche: FicheData = {
       poids: 20,
       score: 7.8,
       commentaire:
-        "Neural Engine propose : tracking facial, recadrage intelligent, upscaling, suppression bruit, transcription auto. Moins IA-first que CapCut ou les outils modernes mais couvre les usages pro. Studio débloque les features IA avancées.",
+        "Neural Engine propose : tracking facial, recadrage intelligent, upscaling, suppression bruit, transcription auto. Moins IA-first que CapCut ou les outils modernes mais couvre les usages pro. Studio débloque les fonctionnalités IA avancées.",
     },
     {
       label: "Interface et prise en main",
@@ -157,7 +157,7 @@ export const davinciFiche: FicheData = {
     {
       titre: "Fusion (effets visuels)",
       description:
-        "Moteur VFX node-based intégré, équivalent à After Effects. Compositing pro, motion tracking, particules, 3D basique. Niveau cinéma pour certaines features.",
+        "Moteur VFX node-based intégré, équivalent à After Effects. Compositing pro, motion tracking, particules, 3D basique. Niveau cinéma pour certaines fonctionnalités.",
     },
     {
       titre: "Fairlight (audio)",
@@ -167,7 +167,7 @@ export const davinciFiche: FicheData = {
     {
       titre: "Neural Engine (IA)",
       description:
-        "Features IA : tracking facial, recadrage automatique 9:16/1:1, upscaling 4K-8K, suppression objets, transcription auto. Studio débloque les features IA les plus avancées.",
+        "Fonctionnalités IA : tracking facial, recadrage automatique 9:16/1:1, upscaling 4K-8K, suppression objets, transcription auto. Studio débloque les fonctionnalités IA les plus avancées.",
     },
     {
       titre: "Cut Page (montage rapide)",
@@ -210,7 +210,7 @@ export const davinciFiche: FicheData = {
     {
       slug: "capcut",
       comment:
-        "Alternative beaucoup plus accessible. Moins puissante mais prise en main 10x plus rapide. Pour un usage réseaux sociaux et shorts, CapCut fait largement le job.",
+        "Alternative beaucoup plus accessible. Moins puissante mais prise en main 10x plus rapide. Pour usage social media et shorts, CapCut fait largement le job.",
     },
     {
       slug: "adobe-premiere",
@@ -227,7 +227,7 @@ export const davinciFiche: FicheData = {
     {
       question: "DaVinci gratuit ou Studio pour un YouTubeur ?",
       answer:
-        "Gratuit couvre 95% des besoins. Passe sur Studio si tu fais beaucoup de 4K-8K, HDR, ou si tu utilises intensivement les features IA avancées (filtres neuraux, super-résolution). Pour la majorité, rester sur Gratuit est rationnel.",
+        "Gratuit couvre 95% des besoins. Passe sur Studio si tu fais beaucoup de 4K-8K, HDR, ou si tu utilises intensivement les fonctionnalités IA avancées (filtres neuraux, super-résolution). Pour la majorité, rester sur Gratuit est rationnel.",
     },
     {
       question: "Quel ordinateur pour faire tourner DaVinci ?",

@@ -130,7 +130,7 @@ export const pikaFiche: FicheData = {
         "Interface très simple, orientée créativité ludique. Workflow rapide : tu écris un prompt, tu choisis un Pikaffect, tu génères. Apprentissage rapide pour les débutants. Les Pikaffects sont un plus pédagogique pour comprendre ce qu'on peut faire.",
     },
     {
-      label: "Effets et features créatives",
+      label: "Effets et fonctionnalités créatives",
       poids: 10,
       score: 8.5,
       commentaire:

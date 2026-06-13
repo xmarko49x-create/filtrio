@@ -135,7 +135,7 @@ export const synthesiaVsHeygen: ComparatifData = {
     {
       question: "Quel est le vrai écart de qualité entre les avatars ?",
       answer:
-        "Faible et très contextuel. HeyGen a un léger avantage sur les avatars \"contemporains\" (style réseaux sociaux). Synthesia a un léger avantage sur le rendu corporate (formation, B2B). Dans les deux cas, la qualité est suffisante pour un usage pro.",
+        "Faible et très contextuel. HeyGen a un léger avantage sur les avatars \"contemporains\" (style social media). Synthesia a un léger avantage sur le rendu corporate (formation, B2B). Dans les deux cas, la qualité est suffisante pour un usage pro.",
     },
     {
       question: "Peut-on migrer de l'un à l'autre facilement ?",

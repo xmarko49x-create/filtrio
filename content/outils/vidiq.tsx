@@ -113,7 +113,7 @@ export const vidiqFiche: FicheData = {
       poids: 20,
       score: 7.0,
       commentaire:
-        "Interface partiellement traduite, suggestions de keywords nettement moins riches en français qu'en anglais. Les features IA génératives fonctionnent en FR mais avec moins de finesse que pour les niches anglophones.",
+        "Interface partiellement traduite, suggestions de keywords nettement moins riches en français qu'en anglais. Les fonctionnalités IA génératives fonctionnent en FR mais avec moins de finesse que pour les niches anglophones.",
     },
     {
       label: "Rapport qualité/prix",
@@ -134,7 +134,7 @@ export const vidiqFiche: FicheData = {
       poids: 15,
       score: 8.5,
       commentaire:
-        "Extension intégrée à YouTube Studio avec un design plus moderne que TubeBuddy. Dashboard séparé disponible. Courbe d'apprentissage courte : les 3-4 features principales sont accessibles en moins de 10 minutes.",
+        "Extension intégrée à YouTube Studio avec un design plus moderne que TubeBuddy. Dashboard séparé disponible. Courbe d'apprentissage courte : les 3-4 fonctionnalités principales sont accessibles en moins de 10 minutes.",
     },
     {
       label: "Support & confort FR",
@@ -239,12 +239,12 @@ export const vidiqFiche: FicheData = {
     {
       slug: "morningfame",
       comment:
-        "Alternative européenne plus pédagogique et moins chère. Bon choix pour débuter sans surcharge de features.",
+        "Alternative européenne plus pédagogique et moins chère. Bon choix pour débuter sans surcharge de fonctionnalités.",
     },
     {
       slug: "youtube-studio",
       comment:
-        "YouTube Studio natif a amélioré ses analytics et suggestions en 2024-2026. Couvre une partie des features VidIQ sans extension.",
+        "YouTube Studio natif a amélioré ses analytics et suggestions en 2024-2026. Couvre une partie des fonctionnalités VidIQ sans extension.",
     },
   ],
   faq: [
@@ -271,7 +271,7 @@ export const vidiqFiche: FicheData = {
         "Oui, c'est un vrai avantage vs TubeBuddy. Tu peux faire du scoring SEO basique, découvrir des mots-clés, avoir quelques alertes de tendance sur la durée. Assez pour démarrer une chaîne avec de bonnes bases avant de considérer le Pro.",
     },
     {
-      question: "Les features IA fonctionnent-elles bien en français ?",
+      question: "Les fonctionnalités IA fonctionnent-elles bien en français ?",
       answer:
         "Fonctionnent oui, avec moins de finesse qu'en anglais. Les suggestions de titres FR sont correctes mais manquent parfois d'idiomatique naturel. L'AI Coach fournit des retours utiles mais optimisés par défaut pour le marché anglophone.",
     },

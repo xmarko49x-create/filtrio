@@ -6,7 +6,7 @@ export const capcutFiche: FicheData = {
   hero: {
     h1: "CapCut : l'avis complet en 2026",
     tagline:
-      "Le leader gratuit du montage vidéo mobile et desktop. Édition complète, sous-titres auto, features IA, bibliothèque massive. Voici pour qui c'est suffisant et pour qui c'est trop limité.",
+      "Le leader gratuit du montage vidéo mobile et desktop. Édition complète, sous-titres auto, fonctionnalités IA, bibliothèque massive. Voici pour qui c'est suffisant et pour qui c'est trop limité.",
     badges: [
       { label: "Gratuit", tone: "primary" },
       { label: "Mobile-first", tone: "accent" },
@@ -43,7 +43,7 @@ export const capcutFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan gratuit très complet (éditeur et la plupart des features). Version Pro accessible via 7 jours d'essai offerts, puis 23,99 €/mois en mensuel ou 199,99 €/an en annuel (≈ 16,66 €/mois) : 1 400 crédits mensuels, ressources premium, features IA avancées et 100 Go de stockage cloud. Version équipes disponible avec un tarif qui varie selon la région, le nombre de sièges et la fréquence de facturation. Facturation en EUR en France.",
+        "Plan gratuit très complet (éditeur et la plupart des fonctionnalités). Version Pro accessible via 7 jours d'essai offerts, puis 23,99 €/mois en mensuel ou 199,99 €/an en annuel (≈ 16,66 €/mois) : 1 400 crédits mensuels, ressources premium, fonctionnalités IA avancées et 100 Go de stockage cloud. Version équipes disponible avec un tarif qui varie selon la région, le nombre de sièges et la fréquence de facturation. Facturation en EUR en France.",
     },
     {
       question: "Meilleure alternative ?",
@@ -126,14 +126,14 @@ export const capcutFiche: FicheData = {
       poids: 20,
       score: 7.2,
       commentaire:
-        "Features IA ajoutées progressivement en 2024-2026 : sous-titres auto, effets IA, suppression fond, upscaling. Moins spécialisé que Submagic ou Descript mais couvre les usages courants correctement.",
+        "Fonctionnalités IA ajoutées progressivement en 2024-2026 : sous-titres auto, effets IA, suppression fond, upscaling. Moins spécialisé que Submagic ou Descript mais couvre les usages courants correctement.",
     },
     {
       label: "Interface et prise en main",
       poids: 15,
       score: 8.5,
       commentaire:
-        "Interface mobile et desktop particulièrement bien pensée, surtout pour les TikTokeurs. Courbe d'apprentissage courte. Moins intuitive sur les features vidéo avancées que sur les shorts.",
+        "Interface mobile et desktop particulièrement bien pensée, surtout pour les TikTokeurs. Courbe d'apprentissage courte. Moins intuitive sur les fonctionnalités vidéo avancées que sur les shorts.",
     },
     {
       label: "Support & confort FR",
@@ -162,7 +162,7 @@ export const capcutFiche: FicheData = {
         "Génération automatique de sous-titres en français et autres langues. Précision correcte (moins fine que Submagic mais acceptable). Personnalisation manuelle du style possible.",
     },
     {
-      titre: "Features IA intégrées",
+      titre: "Fonctionnalités IA intégrées",
       description:
         "Suppression fond vidéo, upscaling qualité, génération avatars, voix off IA, effets automatiques. Écosystème IA en croissance constante, ajouts réguliers.",
     },
@@ -192,7 +192,7 @@ export const capcutFiche: FicheData = {
         "Éditeur vidéo complet (desktop, mobile, web)",
         "Sous-titres auto",
         "Bibliothèque d'assets de base",
-        "Features IA de base",
+        "Fonctionnalités IA de base",
         "Export standard",
       ],
     },
@@ -216,7 +216,7 @@ export const capcutFiche: FicheData = {
         "1 400 crédits mensuels",
         "Plus de 200 millions de ressources de création",
         "Export 4K sans watermark sur assets Pro",
-        "Features IA avancées",
+        "Fonctionnalités IA avancées",
         "100 Go de stockage cloud",
       ],
     },
@@ -271,7 +271,7 @@ export const capcutFiche: FicheData = {
     {
       question: "Le plan CapCut Pro vaut-il son prix ?",
       answer:
-        "Dépend de ton usage. Si tu exportes régulièrement en 4K, utilises les 1 400 crédits mensuels (features IA avancées) et le stock premium, le Pro peut se justifier, surtout à 199,99 €/an (≈ 16,66 €/mois). Sinon le plan gratuit couvre largement la majorité des créateurs solo. Un combo à envisager : CapCut gratuit pour monter + Submagic (à partir de 12 €/mois) pour le rendu sous-titres stylés FR.",
+        "Dépend de ton usage. Si tu exportes régulièrement en 4K, utilises les 1 400 crédits mensuels (fonctionnalités IA avancées) et le stock premium, le Pro peut se justifier, surtout à 199,99 €/an (≈ 16,66 €/mois). Sinon le plan gratuit couvre largement la majorité des créateurs solo. Un combo à envisager : CapCut gratuit pour monter + Submagic (à partir de 12 €/mois) pour le rendu sous-titres stylés FR.",
     },
     {
       question: "La question ByteDance pose-t-elle problème ?",

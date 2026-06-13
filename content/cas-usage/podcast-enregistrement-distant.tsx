@@ -107,7 +107,7 @@ export const podcastEnregistrementDistant: CasUsageData = {
       pourquoiGagne: [
         "Tout-en-un : enregistrement à distance, édition et transcription dans la même app",
         "Édition textuelle puissante : tu coupes ton podcast comme tu coupes un Word",
-        "Features IA avancées : suppression hésitations, mots-bouchons, ajustement audio",
+        "Fonctionnalités IA avancées : suppression hésitations, mots-bouchons, ajustement audio",
         "Studio Sound pour nettoyer la voix automatiquement",
         "Export multi-formats et publication directe simplifiée",
       ],
@@ -139,7 +139,7 @@ export const podcastEnregistrementDistant: CasUsageData = {
       limites: [
         "Pas de vidéo en qualité pro (peu adapté si tu veux publier des clips vidéo)",
         "Édition très basique vs Descript ou Riverside",
-        "Moins de features IA récentes que la concurrence",
+        "Moins de fonctionnalités IA récentes que la concurrence",
       ],
       verdict:
         "Solide pour du podcast 100 % audio. Si tu as besoin de vidéo en qualité pro, Riverside reste devant. Fiche Filtrio à venir.",

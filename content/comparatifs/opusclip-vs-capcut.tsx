@@ -161,7 +161,7 @@ export const opusclipVsCapcut: ComparatifData = {
     {
       question: "CapCut a-t-il une découpe IA ?",
       answer:
-        "Depuis 2024-2026, CapCut a ajouté quelques features IA basiques (suppression silences, suggestions). Mais c'est encore loin du niveau de spécialisation d'OpusClip. Si la découpe auto est ton besoin principal, OpusClip reste nettement devant.",
+        "Depuis 2024-2026, CapCut a ajouté quelques fonctionnalités IA basiques (suppression silences, suggestions). Mais c'est encore loin du niveau de spécialisation d'OpusClip. Si la découpe auto est ton besoin principal, OpusClip reste nettement devant.",
     },
     {
       question: "Et par rapport à Submagic ?",

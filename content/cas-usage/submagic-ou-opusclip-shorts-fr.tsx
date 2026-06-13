@@ -222,7 +222,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
     {
       question: "Lequel génère les meilleurs sous-titres FR ?",
       answer:
-        "Submagic, selon les retours publics G2/Reddit et notre analyse des features. OpusClip a progressé en 2025-2026 mais reste en léger retrait sur la segmentation FR, les accents régionaux et la cohérence ponctuation.",
+        "Submagic, selon les retours publics G2/Reddit et notre analyse des fonctionnalités. OpusClip a progressé en 2025-2026 mais reste en léger retrait sur la segmentation FR, les accents régionaux et la cohérence ponctuation.",
     },
     {
       question: "Le combo vaut-il son coût ?",

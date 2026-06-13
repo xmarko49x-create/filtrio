@@ -86,7 +86,7 @@ export const runwayVsPika: ComparatifData = {
   porQuiA: [
     "Tu es motion designer ou filmmaker pro",
     "Tu cherches la qualité maximale disponible en 2026",
-    "Tu utilises les features VFX (inpainting, tracking, green screen)",
+    "Tu utilises les fonctionnalités VFX (inpainting, tracking, green screen)",
     "Ton contenu est premium (pub, clip, documentaire)",
     "Tu veux l'API pour automatiser un studio",
   ],
@@ -94,7 +94,7 @@ export const runwayVsPika: ComparatifData = {
     "Tu débutes en génération vidéo IA",
     "Tu veux expérimenter sans budget élevé",
     "Tu as besoin de rendu rapide plutôt que parfait",
-    "Tu crées du contenu réseaux sociaux expérimental",
+    "Tu crées du contenu social media expérimental",
     "Tu n'as pas besoin d'écosystème VFX complet",
   ],
   casUsage: [
@@ -117,7 +117,7 @@ export const runwayVsPika: ComparatifData = {
       gagnant: "A",
     },
     {
-      profil: "Créateur réseaux sociaux qui veut expérimenter",
+      profil: "Créateur social media qui veut expérimenter",
       description:
         "Besoin de rendre des concepts rapidement pour TikTok/Reels. Pika permet de tester vite sans exploser le budget.",
       gagnant: "B",

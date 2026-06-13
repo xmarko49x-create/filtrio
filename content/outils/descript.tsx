@@ -187,7 +187,7 @@ export const descriptFiche: FicheData = {
       prixSub: "Pour démarrer gratuitement",
       cible: "Découverte de l'outil",
       features: [
-        "Accès aux features de base",
+        "Accès aux fonctionnalités de base",
         "Workflow d'édition textuelle testable",
         "Détails exacts sur la page Tarifs officielle",
       ],

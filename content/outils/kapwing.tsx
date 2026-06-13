@@ -104,7 +104,7 @@ export const kapwingFiche: FicheData = {
     "Ton budget est serré",
     "Tu veux du montage pro (→ DaVinci ou Premiere)",
     "Tu veux travailler offline",
-    "Tu veux des features IA de pointe (Kapwing est en retrait)",
+    "Tu veux des fonctionnalités IA de pointe (Kapwing est en retrait)",
   ],
   scoring: [
     {
@@ -204,7 +204,7 @@ export const kapwingFiche: FicheData = {
         "Exports jusqu'à 2 heures",
         "Sans watermark",
         "Brand kit personnel",
-        "Features IA complètes",
+        "Fonctionnalités IA complètes",
       ],
     },
     {
@@ -246,7 +246,7 @@ export const kapwingFiche: FicheData = {
     {
       slug: "capcut",
       comment:
-        "Si tu ne travailles pas vraiment en équipe, CapCut gratuit fait largement l'affaire avec plus de features éditeur.",
+        "Si tu ne travailles pas vraiment en équipe, CapCut gratuit fait largement l'affaire avec plus de fonctionnalités éditeur.",
     },
   ],
   faq: [
@@ -277,7 +277,7 @@ export const kapwingFiche: FicheData = {
         <>
           Kapwing pour la collaboration temps réel pure (édition simultanée,
           approbation structurée). Veed pour un éditeur web polyvalent avec
-          plus de features individuelles. Voir le{" "}
+          plus de fonctionnalités individuelles. Voir le{" "}
           <Link
             href="/comparatifs/veed-vs-kapwing"
             className="text-green-400 hover:underline"
@@ -291,7 +291,7 @@ export const kapwingFiche: FicheData = {
     {
       question: "Le plan gratuit est-il utilisable pour une démo ?",
       answer:
-        "Oui pour tester l'interface, la collaboration (avec un collègue sur le même lien), les features IA. Les limites (4 min max, watermark, 7 min export/jour) te pousseront vite vers le Pro mais c'est suffisant pour se faire une idée.",
+        "Oui pour tester l'interface, la collaboration (avec un collègue sur le même lien), les fonctionnalités IA. Les limites (4 min max, watermark, 7 min export/jour) te pousseront vite vers le Pro mais c'est suffisant pour se faire une idée.",
     },
     {
       question: "Compatible avec les workflows Slack/Notion ?",

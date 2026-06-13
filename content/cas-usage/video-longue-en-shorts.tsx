@@ -164,7 +164,7 @@ export const videoLongueEnShorts: CasUsageData = {
         "Pas pensé d'abord pour le recyclage de vidéos longues",
       ],
       verdict:
-        "Éditeur web polyvalent, features découpe IA en progression mais pas le spécialiste. Intéressant si tu utilises déjà Veed pour autre chose.",
+        "Éditeur web polyvalent, fonctionnalités découpe IA en progression mais pas le spécialiste. Intéressant si tu utilises déjà Veed pour autre chose.",
       priceDisplay: { label: "À partir de", value: "12 $/mois" },
     },
   ],

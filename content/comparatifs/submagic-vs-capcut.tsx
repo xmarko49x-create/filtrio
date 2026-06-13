@@ -139,7 +139,7 @@ export const submagicVsCapcut: ComparatifData = {
     {
       question: "CapCut est-il vraiment gratuit sans limite ?",
       answer:
-        "Le plan gratuit couvre la majorité des besoins d'un créateur individuel : export HD, sous-titres auto, templates, effets de base. Certaines fonctionnalités premium (export 4K, stock premium, features IA avancées) nécessitent le plan Pro. Pour de la création de shorts classique, la version gratuite reste suffisante.",
+        "Le plan gratuit couvre la majorité des besoins d'un créateur individuel : export HD, sous-titres auto, templates, effets de base. Certaines fonctionnalités premium (export 4K, stock premium, fonctionnalités IA avancées) nécessitent le plan Pro. Pour de la création de shorts classique, la version gratuite reste suffisante.",
     },
     {
       question:

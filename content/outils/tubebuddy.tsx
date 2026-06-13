@@ -110,7 +110,7 @@ export const tubebuddyFiche: FicheData = {
       poids: 15,
       score: 9.0,
       commentaire:
-        "Intégration directe à YouTube Studio via l'extension. Pas de nouvelle interface à apprendre : les features apparaissent dans les pages YouTube existantes. Fluide pour un YouTubeur déjà habitué à son environnement.",
+        "Intégration directe à YouTube Studio via l'extension. Pas de nouvelle interface à apprendre : les fonctionnalités apparaissent dans les pages YouTube existantes. Fluide pour un YouTubeur déjà habitué à son environnement.",
     },
     {
       label: "Support & confort FR",
@@ -209,12 +209,12 @@ export const tubebuddyFiche: FicheData = {
     {
       slug: "morningfame",
       comment:
-        "Alternative européenne plus pédagogique et moins chère. Bon choix pour débuter sans surcharge de features.",
+        "Alternative européenne plus pédagogique et moins chère. Bon choix pour débuter sans surcharge de fonctionnalités.",
     },
     {
       slug: "youtube-studio",
       comment:
-        "YouTube a amélioré ses analytics et suggestions en 2024-2026. Couvre une partie des features TubeBuddy sans extension, gratuitement.",
+        "YouTube a amélioré ses analytics et suggestions en 2024-2026. Couvre une partie des fonctionnalités TubeBuddy sans extension, gratuitement.",
     },
   ],
   faq: [

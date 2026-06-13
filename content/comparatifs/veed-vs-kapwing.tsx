@@ -79,7 +79,7 @@ export const veedVsKapwing: ComparatifData = {
     "Ton usage est polyvalent (montage + sous-titres + enregistrement)",
     "Tu veux l'entrée la moins chère (12 $/mois)",
     "Tu travailles depuis plusieurs ordinateurs différents",
-    "Features IA légères te suffisent (transcription, sous-titres auto)",
+    "Fonctionnalités IA légères te suffisent (transcription, sous-titres auto)",
   ],
   porQuiB: [
     "Tu travailles en équipe de 3+ personnes",
@@ -96,7 +96,7 @@ export const veedVsKapwing: ComparatifData = {
       gagnant: "A",
     },
     {
-      profil: "Agence réseaux sociaux avec 3+ monteurs",
+      profil: "Agence social media avec 3+ monteurs",
       description:
         "Édition simultanée, commentaires, approbation client directement dans l'outil. Kapwing Business (50 $/user/mois) s'amortit vite.",
       gagnant: "B",
@@ -135,7 +135,7 @@ export const veedVsKapwing: ComparatifData = {
     {
       question: "Lequel est le mieux pour un débutant ?",
       answer:
-        "Veed. Interface plus intuitive, prise en main plus rapide, moins cher. Kapwing a une courbe d'apprentissage plus longue et ses features brillent en équipe, pas en solo.",
+        "Veed. Interface plus intuitive, prise en main plus rapide, moins cher. Kapwing a une courbe d'apprentissage plus longue et ses fonctionnalités brillent en équipe, pas en solo.",
     },
     {
       question: "Peut-on travailler offline sur l'un ou l'autre ?",

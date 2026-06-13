@@ -125,7 +125,7 @@ export const elevenlabsFiche: FicheData = {
       poids: 15,
       score: 8.5,
       commentaire:
-        "Interface web propre, prise en main rapide pour la génération basique. Les features avancées (fine-tuning, clonage pro, API) demandent un peu de lecture de doc. Globalement accessible pour un non-technicien.",
+        "Interface web propre, prise en main rapide pour la génération basique. Les fonctionnalités avancées (fine-tuning, clonage pro, API) demandent un peu de lecture de doc. Globalement accessible pour un non-technicien.",
     },
     {
       label: "Support & confort FR",
@@ -255,7 +255,7 @@ export const elevenlabsFiche: FicheData = {
     {
       question: "ElevenLabs est-il vraiment la meilleure voix IA en français ?",
       answer:
-        "Selon les retours publics et notre analyse des features, oui sur le rendu naturel, les liaisons et les intonations. Certains concurrents (Murf, Play.ht) sont plus abordables sur le volume mais généralement en retrait sur la qualité FR pure.",
+        "Selon les retours publics et notre analyse des fonctionnalités, oui sur le rendu naturel, les liaisons et les intonations. Certains concurrents (Murf, Play.ht) sont plus abordables sur le volume mais généralement en retrait sur la qualité FR pure.",
     },
     {
       question: "Comment fonctionne la facturation aux credits ?",

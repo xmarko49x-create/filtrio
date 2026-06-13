@@ -112,7 +112,7 @@ export const descriptVsRiverside: ComparatifData = {
     {
       profil: "Formateur solo qui enregistre des tutos",
       description:
-        "Enregistrement seul, besoin de montage rapide et nettoyage audio. Pas besoin des features multi-invités de Riverside.",
+        "Enregistrement seul, besoin de montage rapide et nettoyage audio. Pas besoin des fonctionnalités multi-invités de Riverside.",
       gagnant: "A",
     },
     {
@@ -170,7 +170,7 @@ export const descriptVsRiverside: ComparatifData = {
     {
       question: "Riverside ou Zencastr, quelle différence ?",
       answer:
-        "Zencastr est une alternative historique avec une approche similaire. Riverside a plus de features pro (4K, Producer mode, Media Board) et une meilleure qualité vidéo. Pour du podcast audio pur avec budget serré, Zencastr peut suffire. Pour de la vidéo pro ou des sessions multi-invités complexes, Riverside est plus adapté.",
+        "Zencastr est une alternative historique avec une approche similaire. Riverside a plus de fonctionnalités pro (4K, Producer mode, Media Board) et une meilleure qualité vidéo. Pour du podcast audio pur avec budget serré, Zencastr peut suffire. Pour de la vidéo pro ou des sessions multi-invités complexes, Riverside est plus adapté.",
     },
     {
       question: "Le combo des deux outils coûte-t-il vraiment cher ?",

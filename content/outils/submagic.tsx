@@ -216,7 +216,7 @@ export const submagicFiche: FicheData = {
       nom: "Business + API",
       prix: "41 €/mois",
       prixSub: "Facturation annuelle · mensuel plus cher",
-      cible: "Équipes et agences qui produisent à grande échelle",
+      cible: "Équipes et agences qui scalent la production",
       features: [
         "100 vidéos/mois, max. 30 min chacune",
         "15 AI Credits/mois",

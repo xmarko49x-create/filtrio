@@ -47,7 +47,7 @@ export const synthesiaFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan Basic gratuit (360 crédits/mois, jusqu'à 3 minutes de vidéo/mois, sans carte bancaire). Starter à 12 €/mois en annuel (19 €/mois en mensuel) avec assistant vidéo, doublage IA et avatars Synthesia. Creator (populaire) à 49 €/mois en annuel (79 €/mois en mensuel) avec 5 avatars personnels, API et vidéos interactives. Enterprise sur mesure pour les équipes (minutes illimitées, 80+ langues, SSO). Facturation EUR.",
+        "Plan Basic gratuit (1 200 crédits/mois, jusqu'à 10 minutes de vidéo/mois, sans carte bancaire). Starter à 12 €/mois en annuel (19 €/mois en mensuel) avec assistant vidéo, doublage IA et avatars Synthesia. Creator (populaire) à 29 €/mois en annuel (39 €/mois en mensuel) avec 5 avatars personnels, API et vidéos interactives. Enterprise sur mesure pour les équipes (minutes illimitées, 80+ langues, SSO). Facturation EUR, vérifié le 13/06/2026.",
     },
     {
       question: "Meilleure alternative ?",
@@ -98,7 +98,7 @@ export const synthesiaFiche: FicheData = {
       </Link>
       )
     </>,
-    "Tu fais du contenu grand public pour les réseaux sociaux",
+    "Tu fais du contenu social media grand public",
     <>
       Tu veux juste de la voix off (→{" "}
       <Link href="/outils/elevenlabs" className="text-teal-400 hover:underline">
@@ -106,7 +106,7 @@ export const synthesiaFiche: FicheData = {
       </Link>
       )
     </>,
-    "Budget solo serré (22 $/mois c'est un engagement)",
+    "Budget solo très serré (même à 12 €/mois en annuel, c'est un engagement)",
     "Tu veux un style d'avatar créatif/flashy",
     "Tu préfères filmer toi-même (Synthesia ne remplace pas la présence humaine)",
   ],
@@ -123,7 +123,7 @@ export const synthesiaFiche: FicheData = {
       poids: 20,
       score: 7.2,
       commentaire:
-        "Plus cher qu'HeyGen à l'entrée pour passer au Creator (49 €/mois annuel vs 29 $/mois HeyGen Creator) mais comparable si tu cherches une plateforme B2B solide. S'amortit en entreprise grâce aux features Enterprise (traductions 80+ langues, 230+ avatars libres de droits, SAML/SSO). Peu adapté au solo créateur.",
+        "Tarif Creator comparable à HeyGen (29 €/mois en annuel chez Synthesia) si tu cherches une plateforme B2B solide. S'amortit surtout en entreprise grâce aux fonctionnalités Enterprise (traductions 80+ langues, 230+ avatars libres de droits, SAML/SSO). Peu adapté au solo créateur.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
@@ -193,8 +193,8 @@ export const synthesiaFiche: FicheData = {
       prixSub: "Aucune carte de crédit nécessaire",
       cible: "Pour démarrer gratuitement",
       features: [
-        "360 crédits/mois",
-        "Jusqu'à 3 minutes de vidéo/mois",
+        "1 200 crédits/mois",
+        "Jusqu'à 10 minutes de vidéo/mois",
       ],
     },
     {
@@ -215,8 +215,8 @@ export const synthesiaFiche: FicheData = {
     },
     {
       nom: "Creator",
-      prix: "49 €/mois",
-      prixSub: "Facturation annuelle · 79 €/mois en mensuel · Plan populaire",
+      prix: "29 €/mois",
+      prixSub: "Facturation annuelle · 39 €/mois en mensuel · Plan populaire · 44 000 crédits/an inclus",
       cible: "Créateurs réguliers",
       features: [
         "Tout Starter inclus",
@@ -253,7 +253,7 @@ export const synthesiaFiche: FicheData = {
     {
       slug: "heygen",
       comment:
-        "Concurrent direct plus orienté créateurs individuels. Avatars plus modernes, moins de fonctions B2B. Plus souple pour un usage réseaux sociaux.",
+        "Concurrent direct plus orienté créateurs individuels. Avatars plus modernes, moins de features B2B. Plus souple pour usage social media.",
     },
     {
       slug: "elevenlabs",

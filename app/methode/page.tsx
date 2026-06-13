@@ -27,7 +27,7 @@ export default function MethodePage() {
         </h1>
         <p className="text-xl text-slate-300 leading-relaxed">
           Filtrio note les outils sur 6 critères pondérés identiques, avec la
-          même grille pour tous. Pas de listicle sponsorisé. Pas de classement
+          même grille pour tous. Pas de liste sponsorisée. Pas de classement
           acheté. Le scoring est défini avant toute considération de
           commission d&apos;affiliation.
         </p>
@@ -54,7 +54,7 @@ export default function MethodePage() {
               [
                 "Profondeur IA",
                 "20 %",
-                "Sophistication réelle des features IA, pas juste le buzz. Ce que l'outil fait concrètement mieux que la moyenne.",
+                "Sophistication réelle des fonctionnalités IA, pas juste le buzz. Ce que l'outil fait concrètement mieux que la moyenne.",
               ],
               [
                 "Interface & prise en main",
@@ -69,7 +69,7 @@ export default function MethodePage() {
               [
                 "Intégrations",
                 "10 %",
-                "API, Zapier/Make, exports, connexions avec les autres outils du workflow.",
+                "API, Zapier/Make, exports, connexions avec les autres outils de ton processus de travail.",
               ],
             ].map(([label, poids, desc]) => (
               <div

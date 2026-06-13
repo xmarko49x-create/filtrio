@@ -20,7 +20,7 @@ export const capcutFiche: FicheData = {
     {
       question: "C'est quoi ?",
       answer:
-        "Éditeur vidéo gratuit (mobile iOS/Android + desktop + web) développé par ByteDance, maison mère de TikTok. Probablement l'outil de montage vidéo grand public le plus utilisé au monde. Features IA intégrées en 2024-2026.",
+        "Éditeur vidéo gratuit (mobile iOS/Android + desktop + web) développé par ByteDance, maison mère de TikTok. L'un des outils de montage vidéo grand public les plus utilisés, surtout sur mobile. Fonctionnalités IA intégrées en 2024-2026.",
     },
     {
       question: "Pour qui ?",
@@ -96,7 +96,7 @@ export const capcutFiche: FicheData = {
     </>,
     "Tu es sensible à la question des données personnelles (ByteDance)",
     "Tu veux un éditeur pro avec color grading avancé (→ DaVinci Resolve)",
-    "Tu as besoin d'API ou d'automatisation pour produire à grande échelle",
+    "Tu as besoin d'API ou d'automatisation pour scaler",
     "Tu veux un outil européen ou US pour des raisons de conformité",
     <>
       Tu fais du long format podcast/interview (→{" "}
@@ -276,7 +276,7 @@ export const capcutFiche: FicheData = {
     {
       question: "La question ByteDance pose-t-elle problème ?",
       answer:
-        "Les préoccupations sur ByteDance (maison mère de TikTok) portent sur la collecte de données et les possibles accès par des autorités chinoises. Pour un créateur grand public, risque négligeable. Pour un pro qui édite du contenu sensible (entreprise, public, juridique), privilégier DaVinci Resolve ou Adobe Premiere.",
+        "Les préoccupations sur ByteDance (maison mère de TikTok) portent sur la collecte de données et les possibles accès par des autorités chinoises. Pour un créateur grand public qui ne traite pas de contenu sensible, le risque est généralement limité, mais il mérite d'être connu. Pour un pro qui édite du contenu sensible (entreprise, public, juridique), privilégier DaVinci Resolve ou Adobe Premiere.",
     },
     {
       question: "Sous-titres auto FR vs Submagic ?",
@@ -299,7 +299,7 @@ export const capcutFiche: FicheData = {
     {
       question: "Compatible avec les autres logiciels vidéo ?",
       answer:
-        "Export vers tous les formats standards (MP4, MOV, etc.). Compatible avec Premiere Pro, DaVinci Resolve, Final Cut pour aller-retour. Pas d'API publique pour automatiser, contrainte si tu veux produire à grande échelle.",
+        "Export vers tous les formats standards (MP4, MOV, etc.). Compatible avec Premiere Pro, DaVinci Resolve, Final Cut pour aller-retour. Pas d'API publique pour automatiser, contrainte si tu veux scaler.",
     },
   ],
   ctaFinal: {

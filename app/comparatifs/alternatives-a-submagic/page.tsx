@@ -182,7 +182,7 @@ export default function AlternativesASubmagicPage() {
         <h2 className="text-3xl font-bold mb-10 tracking-tight">
           Ta vraie question n&apos;est pas &quot;laquelle&quot; mais &quot;pourquoi&quot;.
         </h2>
-        <ol className="space-y-6">
+        <ol className="space-y-6 list-none">
           <li className="flex gap-4">
             <div className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-400 font-bold">
               1

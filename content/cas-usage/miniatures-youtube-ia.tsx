@@ -64,7 +64,7 @@ export const miniaturesYoutubeIa: CasUsageData = {
       label: "Rapport qualité/prix",
       poids: 15,
       description:
-        "Combien ça coûte pour produire 20-30 miniatures/mois avec des features IA.",
+        "Combien ça coûte pour produire 20-30 miniatures/mois avec des fonctionnalités IA.",
     },
   ],
   classement: [
@@ -81,7 +81,7 @@ export const miniaturesYoutubeIa: CasUsageData = {
       ],
       limites: [
         "IA générative pure moins avancée que Midjourney",
-        "Plan gratuit limité sur certaines features IA",
+        "Plan gratuit limité sur certaines fonctionnalités IA",
         "Certains templates sentent le 'déjà vu'",
       ],
       verdict:

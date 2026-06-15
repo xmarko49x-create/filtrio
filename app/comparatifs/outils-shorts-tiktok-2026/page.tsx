@@ -62,7 +62,7 @@ const OUTILS_COMPARES: OutilCard[] = [
   },
   {
     slug: "capcut",
-    badge: "Le gratuit roi",
+    badge: "Le roi du gratuit",
     bestFor: "Débutants sans budget qui veulent un éditeur complet sans payer.",
     forceMajeure: "Gratuit avec une qualité largement suffisante. Communauté massive sur TikTok.",
     faiblesseMajeure: "Sous-titres FR moins automatisés, plus manuels que Submagic.",

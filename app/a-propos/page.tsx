@@ -128,6 +128,19 @@ export default function AProposPage() {
           Filtrio est un projet indépendant créé par{" "}
           <strong className="text-slate-100">{AUTEUR.nomComplet}</strong>.
         </p>
+        <p className="text-slate-400 leading-relaxed mb-4">
+          En juin 2026, j&apos;ai publié une chronique dans{" "}
+          <a
+            href="https://www.journaldunet.com/intelligence-artificielle/1551371-ia-video-la-fin-de-l-illimite-au-profit-des-credits/"
+            target="_blank"
+            rel="noopener"
+            className="text-emerald-400 hover:text-emerald-300"
+          >
+            Le Journal du Net
+          </a>{" "}
+          sur le basculement des outils d&apos;IA vidéo vers les modèles à
+          crédits, à partir du relevé de tarifs réalisé pour Filtrio.
+        </p>
         <p className="text-slate-400 leading-relaxed">
           Pour me contacter :{" "}
           <a

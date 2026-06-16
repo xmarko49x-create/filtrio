@@ -14,7 +14,7 @@ export const elevenlabsFiche: FicheData = {
     ],
     origine: "USA",
     tempsLecture: 8,
-    lastCheck: "28/05/2026",
+    lastCheck: "16/06/2026",
   },
   verdict30s: [
     {

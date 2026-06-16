@@ -13,7 +13,7 @@ import { AuthorByline } from "@/components/AuthorByline";
 import { AuthorBio } from "@/components/AuthorBio";
 import { OUTILS, CATEGORIE_LABELS } from "@/lib/outils";
 
-const LAST_UPDATED = "10/06/2026";
+const LAST_UPDATED = "16/06/2026";
 
 export const metadata: Metadata = {
   title: "Observatoire des prix des outils IA vidéo, édition juin 2026",
@@ -26,13 +26,13 @@ export const metadata: Metadata = {
 
 /** Date de dernière vérification du prix, par fiche (reprise des fiches publiées). */
 const VERIF_DATES: Record<string, string> = {
-  submagic: "28/05/2026",
-  opusclip: "22/04/2026",
+  submagic: "16/06/2026",
+  opusclip: "16/06/2026",
   tubebuddy: "23/04/2026",
   canva: "23/04/2026",
   runway: "23/04/2026",
   descript: "28/05/2026",
-  elevenlabs: "28/05/2026",
+  elevenlabs: "16/06/2026",
   davinci: "22/04/2026",
   synthesia: "23/04/2026",
   riverside: "23/04/2026",

@@ -362,6 +362,24 @@ export default function ObservatoirePrixPage() {
               départagent, critère par critère.
             </p>
           </div>
+
+          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-7">
+            <h3 className="text-xl font-bold mb-3 text-emerald-400">
+              6. Le prix d&apos;entrée moyen : environ 12,80 € ou 15,60 $ par mois.
+            </h3>
+            <p className="text-slate-300 leading-relaxed">
+              En isolant les seuls abonnements mensuels d&apos;entrée de gamme
+              (hors plans annuels, hors achat unique, hors promotions), le
+              premier palier payant revient en moyenne à{" "}
+              <strong className="text-slate-100">environ 12,80 € par mois</strong>{" "}
+              pour les outils facturés en euros, et{" "}
+              <strong className="text-slate-100">environ 15,60 $ par mois</strong>{" "}
+              pour ceux facturés en dollars. Un repère utile, mais à manier avec
+              prudence : la moyenne écrase les écarts (de 3,99 $ à 29 $) et ne
+              dit rien des modèles à crédits, où le coût réel dépend de ton
+              volume de production.
+            </p>
+          </div>
         </div>
       </section>
 

@@ -38,6 +38,17 @@ const nextConfig = {
       },
     ];
   },
+  async redirects() {
+    return [
+      {
+        // Ancienne version de l'observatoire (orpheline) consolidée
+        // en 301 vers la page de référence, pour préserver le jus SEO.
+        source: "/observatoire-prix-outils-ia-video",
+        destination: "/observatoire-prix",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -25,8 +25,8 @@ export const sousTitresRapides: CasUsageData = {
         3 clics de l&apos;upload au rendu final : choix du template, génération
         automatique, export. La qualité FR et les templates prêts à
         l&apos;emploi évitent toute retouche manuelle sur la grande majorité
-        des vidéos. Sur une vidéo de 60 secondes, compte environ 60 à 90
-        secondes pour avoir ton short prêt à publier.
+        des vidéos. Sur une vidéo courte, le traitement est rapide : le short
+        ressort prêt à publier, sans passe de montage manuel.
       </>,
       <>
         <strong className="text-slate-200">Exception :</strong>{" "}si tu veux

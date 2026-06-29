@@ -271,6 +271,24 @@ export const videoLongueEnShorts: CasUsageData = {
       answer:
         "Traitement cloud côté OpusClip qui peut varier selon la durée de la vidéo, la file d'attente et le plan utilisé. Tu lances puis tu fais autre chose, tu reçois les clips prêts. Vs un travail manuel long dans un éditeur classique.",
     },
+    {
+      question: "Quelles alternatives pour finaliser les sous-titres des shorts ?",
+      answer: (
+        <>
+          Une fois tes clips découpés, plusieurs outils peuvent prendre le
+          relais sur les sous-titres et le rendu : CapCut en gratuit, Veed en
+          polyvalent, Captions pour la création tout-IA. On les compare dans un
+          tableau sur notre page{" "}
+          <Link
+            href="/comparatifs/alternatives-a-submagic"
+            className="text-amber-400 hover:underline"
+          >
+            alternatives à Submagic
+          </Link>
+          .
+        </>
+      ),
+    },
   ],
   ctaFinal: {
     headline: "Prêt à automatiser la découpe ?",

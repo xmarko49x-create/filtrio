@@ -8,9 +8,12 @@ import { getOutilOrThrow, type TailwindColor } from "@/lib/outils";
 import { TrackedAffiliateLink } from "@/components/TrackedAffiliateLink";
 
 export const metadata: Metadata = {
-  title: "Alternative à Submagic : 5 outils sérieux comparés en 2026",
+  title: {
+    absolute:
+      "Alternative à Submagic : 6 outils pour sous-titrer et monter des shorts en 2026",
+  },
   description:
-    "5 vraies alternatives à Submagic analysées sur 6 critères. 2 gratuites qui tiennent la route, 3 payantes qui font mieux sur certains cas précis.",
+    "6 vraies alternatives à Submagic pour sous-titrer et monter des shorts, comparées dans un tableau et analysées sur 6 critères. Des options gratuites et payantes selon ton usage.",
   alternates: { canonical: "/comparatifs/alternatives-a-submagic" },
 };
 
@@ -46,7 +49,7 @@ const ALTERNATIVES: Alternative[] = [
     limites:
       "Le plan gratuit reste utile pour tester, mais il inclut un watermark, sans édition, avec une limite d'export dans le temps. Moins fort que Submagic sur le rendu final viral FR.",
     verdict:
-      "Alternative complémentaire plutôt que concurrente. Le combo OpusClip + Submagic reste le setup le plus puissant.",
+      "Alternative complémentaire plutôt que concurrente. Le combo OpusClip + Submagic reste un des setups les plus complets.",
     priceLabel: "À partir de 15 $/mois",
   },
   {
@@ -87,6 +90,69 @@ const ALTERNATIVES: Alternative[] = [
   },
 ];
 
+/**
+ * Tableau comparatif d'entrée de page.
+ * Prix d'entrée alignés sur lib/outils.ts (vérifiés au fil des sessions).
+ * Prix Captions vérifiés en LIVE le 29/06/2026 depuis captions.ai/pricing :
+ * inscription gratuite (version Free), plan payant le moins cher affiché =
+ * Max à 24,99 $/mois (prix iOS, USD), un plan Pro existe sans tarif affiché.
+ * Captions n'a pas encore de fiche complète sur Filtrio (lien direct, non affilié).
+ */
+interface TableRow {
+  nom: string;
+  gratuit: string;
+  prix: string;
+  meilleurPour: string;
+  sousTitresFR: string;
+  ref?: boolean;
+}
+
+const TABLE_ROWS: TableRow[] = [
+  {
+    nom: "Submagic",
+    gratuit: "Essai limité",
+    prix: "12 €/mois",
+    meilleurPour: "Sous-titres viraux courts en français",
+    sousTitresFR: "La référence du classement",
+    ref: true,
+  },
+  {
+    nom: "Captions",
+    gratuit: "Oui (version Free)",
+    prix: "24,99 $/mois",
+    meilleurPour: "Création tout-IA (acteurs IA, B-roll, voix)",
+    sousTitresFR: "Solides, 100+ langues, interface en anglais",
+  },
+  {
+    nom: "OpusClip",
+    gratuit: "Oui (avec watermark)",
+    prix: "15 $/mois",
+    meilleurPour: "Découper du long format en shorts",
+    sousTitresFR: "Bons, un cran sous Submagic",
+  },
+  {
+    nom: "CapCut",
+    gratuit: "Oui (éditeur complet)",
+    prix: "Gratuit, Pro à 199,99 €/an",
+    meilleurPour: "Éditeur gratuit polyvalent",
+    sousTitresFR: "Corrects, plus de réglage manuel",
+  },
+  {
+    nom: "Veed",
+    gratuit: "Oui",
+    prix: "10,75 €/mois",
+    meilleurPour: "Éditeur web tout-en-un",
+    sousTitresFR: "Moins soignés que Submagic",
+  },
+  {
+    nom: "Descript",
+    gratuit: "Oui",
+    prix: "16 $/mois",
+    meilleurPour: "Long format, podcasts, tutos",
+    sousTitresFR: "Bons en long format, pas le short viral",
+  },
+];
+
 export default function AlternativesASubmagicPage() {
   const submagic = getOutilOrThrow("submagic");
 
@@ -111,24 +177,24 @@ export default function AlternativesASubmagicPage() {
         </div>
         <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-6 tracking-tight">
           Alternative à <span className="text-amber-400">Submagic</span> : les
-          5 outils sérieux en 2026
+          6 outils sérieux en 2026
         </h1>
         <p className="text-xl text-slate-400 leading-relaxed mb-8 max-w-3xl">
-          5 vraies alternatives à Submagic, analysées sur leurs forces et
-          faiblesses. 2 gratuites qui tiennent la route, 3 payantes qui font
-          mieux sur certains cas précis. Pour chaque profil de créateur,
-          l&apos;option qui a du sens.
+          6 vraies alternatives à Submagic, analysées sur leurs forces et
+          faiblesses, avec un tableau comparatif et une recommandation par
+          usage. Des options gratuites qui tiennent la route et des payantes
+          qui font mieux sur certains cas précis.
         </p>
         <div className="flex flex-wrap gap-6 text-sm text-slate-500 border-t border-slate-800 pt-6">
           <div>
-            <span className="text-slate-400">Temps de lecture :</span> 7 min
+            <span className="text-slate-400">Temps de lecture :</span> 9 min
           </div>
           <div>
-            <span className="text-slate-400">Outils analysés :</span> 5
+            <span className="text-slate-400">Outils comparés :</span> 6
           </div>
           <div>
-            <span className="text-slate-400">Dernière vérification :</span>{" "}
-            04/06/2026
+            <span className="text-slate-400">Dernière mise à jour :</span>{" "}
+            29/06/2026
           </div>
         </div>
       </section>
@@ -152,8 +218,111 @@ export default function AlternativesASubmagicPage() {
           <p className="text-slate-400 leading-relaxed">
             Selon ton cas d&apos;usage (budget zéro, long format, équipe,
             podcast distant, workflow automatisé), une alternative peut être
-            plus adaptée. Voici les 5 options qu&apos;on recommande.
+            plus adaptée. Voici les options qu&apos;on recommande.
           </p>
+        </div>
+      </section>
+
+      {/* TABLEAU COMPARATIF */}
+      <section className="max-w-5xl mx-auto px-6 pb-16">
+        <div className="text-sm font-semibold text-amber-400 uppercase tracking-wider mb-3">
+          Vue d&apos;ensemble
+        </div>
+        <h2 className="text-3xl font-bold mb-4 tracking-tight">
+          Submagic face à ses alternatives, en un coup d&apos;œil
+        </h2>
+        <p className="text-slate-400 leading-relaxed mb-8 max-w-3xl">
+          Les six outils côte à côte sur ce qui compte vraiment quand on
+          cherche à remplacer Submagic : le plan gratuit, le prix
+          d&apos;entrée, le cas d&apos;usage idéal et la qualité des
+          sous-titres en français. Submagic sert de point de référence.
+        </p>
+        <div className="overflow-x-auto rounded-2xl border border-slate-800">
+          <table className="w-full text-sm text-left border-collapse min-w-[680px]">
+            <thead>
+              <tr className="bg-slate-900 text-slate-300">
+                <th className="px-4 py-3 font-semibold">Outil</th>
+                <th className="px-4 py-3 font-semibold">Plan gratuit</th>
+                <th className="px-4 py-3 font-semibold">Prix d&apos;entrée</th>
+                <th className="px-4 py-3 font-semibold">Meilleur pour</th>
+                <th className="px-4 py-3 font-semibold">Sous-titres FR</th>
+              </tr>
+            </thead>
+            <tbody>
+              {TABLE_ROWS.map((row) => (
+                <tr
+                  key={row.nom}
+                  className={`border-t border-slate-800 ${
+                    row.ref ? "bg-amber-500/5" : "bg-slate-900/40"
+                  }`}
+                >
+                  <td className="px-4 py-3 font-semibold text-slate-100 whitespace-nowrap">
+                    {row.nom}
+                    {row.ref && (
+                      <span className="ml-2 text-[10px] uppercase tracking-wider text-amber-400">
+                        Référence
+                      </span>
+                    )}
+                  </td>
+                  <td className="px-4 py-3 text-slate-300">{row.gratuit}</td>
+                  <td className="px-4 py-3 text-slate-300 whitespace-nowrap">
+                    {row.prix}
+                  </td>
+                  <td className="px-4 py-3 text-slate-300">
+                    {row.meilleurPour}
+                  </td>
+                  <td className="px-4 py-3 text-slate-300">
+                    {row.sousTitresFR}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-xs text-slate-500 mt-4 leading-relaxed">
+          Prix d&apos;entrée relevés sur les pages officielles. Le détail et la
+          date de vérification figurent sur chaque fiche outil. Captions
+          n&apos;a pas encore de fiche complète sur Filtrio ; les prix indiqués
+          ont été vérifiés le 29/06/2026 depuis les pages publiques (version
+          gratuite à l&apos;inscription, plan Max à 24,99 $/mois affiché en prix
+          iOS USD, un plan Pro existe sans tarif affiché).
+        </p>
+      </section>
+
+      {/* FOCUS CAPTIONS */}
+      <section className="max-w-5xl mx-auto px-6 pb-16">
+        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8">
+          <h2 className="text-2xl font-bold mb-4 tracking-tight">
+            Et Captions, l&apos;alternative qu&apos;on oublie souvent
+          </h2>
+          <p className="text-slate-300 leading-relaxed mb-4">
+            Captions est l&apos;une des alternatives à Submagic les plus
+            citées, mais elle joue un jeu différent. Là où Submagic se
+            concentre sur des sous-titres animés très soignés, Captions vise la
+            création vidéo entièrement assistée par IA : acteurs IA, génération
+            de B-roll, voix off et montage piloté au chat. Le sous-titrage
+            existe et gère plus de 100 langues, mais l&apos;interface est en
+            anglais et l&apos;outil est surtout pensé pour produire des vidéos
+            de bout en bout.
+          </p>
+          <p className="text-slate-400 leading-relaxed">
+            Concrètement : si ton besoin est juste de sous-titrer des shorts en
+            français, Submagic reste plus direct et mieux localisé. Si tu veux
+            générer des vidéos complètes avec des avatars et du B-roll IA,
+            Captions devient une vraie option, à un prix plus élevé (plan Max à
+            24,99 $/mois affiché côté iOS). Captions n&apos;a pas encore de
+            fiche complète sur Filtrio, donc pas de score éditorial pour
+            l&apos;instant ; les prix indiqués ont été vérifiés le 29/06/2026
+            depuis les pages publiques.
+          </p>
+          <a
+            href="https://www.captions.ai/"
+            rel="noopener nofollow"
+            target="_blank"
+            className="inline-block mt-5 border border-slate-700 hover:border-slate-600 text-slate-200 font-semibold px-5 py-2.5 rounded-lg text-sm transition"
+          >
+            Aller sur Captions →
+          </a>
         </div>
       </section>
 
@@ -174,28 +343,38 @@ export default function AlternativesASubmagicPage() {
         </div>
       </section>
 
-      {/* COMMENT CHOISIR */}
+      {/* QUELLE ALTERNATIVE SELON USAGE */}
       <section className="max-w-4xl mx-auto px-6 py-20">
         <div className="text-sm font-semibold text-amber-400 uppercase tracking-wider mb-3">
-          Comment choisir en 60 secondes
+          Le bon choix selon ton cas
         </div>
-        <h2 className="text-3xl font-bold mb-10 tracking-tight">
-          Ta vraie question n&apos;est pas &quot;laquelle&quot; mais &quot;pourquoi&quot;.
+        <h2 className="text-3xl font-bold mb-4 tracking-tight">
+          Quelle alternative à Submagic choisir selon ton usage ?
         </h2>
+        <p className="text-slate-400 leading-relaxed mb-10 max-w-3xl">
+          Il n&apos;y a pas de meilleure alternative dans l&apos;absolu,
+          seulement celle qui colle à ton usage réel. Voici la recommandation
+          pour chaque profil de créateur.
+        </p>
         <ol className="space-y-6 list-none">
           <li className="flex gap-4">
             <div className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-400 font-bold">
               1
             </div>
             <div>
-              <h3 className="font-semibold mb-1">Tu cherches une alternative gratuite ?</h3>
-              <p className="text-slate-400 text-sm">
-                →{" "}
+              <h3 className="font-semibold mb-1">
+                Budget zéro : tu ne veux rien payer
+              </h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Va sur{" "}
                 <Link href="/outils/capcut" className="text-sky-400 hover:underline">
                   CapCut
                 </Link>
-                . C&apos;est la meilleure option zéro budget. Le compromis :
-                moins stylé, plus de travail manuel.
+                , l&apos;un des éditeurs gratuits les plus complets, avec sous-titres
+                automatiques inclus. Le compromis : un rendu moins stylé que
+                Submagic et plus de réglage manuel pour approcher le même
+                résultat. Pour la plupart des besoins de base, ça suffit
+                largement.
               </p>
             </div>
           </li>
@@ -205,15 +384,17 @@ export default function AlternativesASubmagicPage() {
             </div>
             <div>
               <h3 className="font-semibold mb-1">
-                Tu veux découper du long format en shorts ?
+                Tu pars de vidéos longues à découper en shorts
               </h3>
-              <p className="text-slate-400 text-sm">
-                →{" "}
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Prends{" "}
                 <Link href="/outils/opusclip" className="text-emerald-400 hover:underline">
                   OpusClip
                 </Link>
-                . Spécialisé sur ce cas, pas Submagic. Combo OpusClip +
-                Submagic = setup pro complet.
+                , spécialisé dans le repérage des meilleurs moments d&apos;une
+                vidéo longue. Ce n&apos;est pas le terrain de Submagic. Le combo
+                le plus courant reste OpusClip pour découper, puis Submagic
+                pour soigner le rendu final des sous-titres.
               </p>
             </div>
           </li>
@@ -222,14 +403,18 @@ export default function AlternativesASubmagicPage() {
               3
             </div>
             <div>
-              <h3 className="font-semibold mb-1">Ton besoin principal est le long format ?</h3>
-              <p className="text-slate-400 text-sm">
-                →{" "}
+              <h3 className="font-semibold mb-1">
+                Ton contenu principal est du long format
+              </h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Regarde{" "}
                 <Link href="/outils/descript" className="text-violet-400 hover:underline">
                   Descript
                 </Link>
-                . Édition textuelle révolutionnaire pour podcasts et tutos
-                longs. Pas concurrent direct Submagic.
+                , dont l&apos;édition basée sur le texte fait gagner beaucoup de
+                temps sur les podcasts, interviews et tutos. Ce n&apos;est pas un
+                concurrent direct de Submagic : pour le short viral en français,
+                Submagic reste devant.
               </p>
             </div>
           </li>
@@ -238,14 +423,19 @@ export default function AlternativesASubmagicPage() {
               4
             </div>
             <div>
-              <h3 className="font-semibold mb-1">Tu veux un éditeur polyvalent ?</h3>
-              <p className="text-slate-400 text-sm">
-                →{" "}
+              <h3 className="font-semibold mb-1">
+                Tu veux un seul outil polyvalent
+              </h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Essaie{" "}
                 <Link href="/outils/veed" className="text-yellow-400 hover:underline">
                   Veed
                 </Link>
-                . Tout-en-un web, bon compromis features/prix pour les
-                créateurs qui veulent un seul outil.
+                , un éditeur web tout-en-un (montage, sous-titres,
+                transcription, enregistrement). Bon compromis features/prix si
+                tu préfères centraliser plutôt que d&apos;empiler plusieurs
+                outils spécialisés. Les sous-titres FR sont un cran sous ceux de
+                Submagic.
               </p>
             </div>
           </li>
@@ -255,15 +445,34 @@ export default function AlternativesASubmagicPage() {
             </div>
             <div>
               <h3 className="font-semibold mb-1">
-                Dans la plupart des cas, Submagic reste le meilleur choix.
+                Tu veux générer des vidéos entières avec l&apos;IA
               </h3>
-              <p className="text-slate-400 text-sm">
-                Si ton usage principal est les shorts viraux FR, aucune de ces
-                alternatives ne fait vraiment mieux. Reste sur Submagic.{" "}
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Tourne-toi vers Captions, pensé pour la création tout-IA :
+                acteurs IA, B-roll généré, voix off et montage au chat. Bien
+                plus large que le seul sous-titrage, mais plus cher et en
+                anglais. Pour du simple sous-titrage en français, ça dépasse le
+                besoin.
+              </p>
+            </div>
+          </li>
+          <li className="flex gap-4">
+            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-400 font-bold">
+              6
+            </div>
+            <div>
+              <h3 className="font-semibold mb-1">
+                Ton usage principal, ce sont les shorts viraux en français
+              </h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Reste sur{" "}
                 <Link href="/outils/submagic" className="text-amber-400 hover:underline">
-                  Voir la fiche Submagic
+                  Submagic
                 </Link>
-                .
+                . C&apos;est le cas où aucune des alternatives ci-dessus ne fait
+                vraiment mieux : rendu des sous-titres, rapidité et localisation
+                française sont ses points forts. Les alternatives ne prennent
+                l&apos;avantage que sur des besoins différents.
               </p>
             </div>
           </li>
@@ -309,6 +518,20 @@ export default function AlternativesASubmagicPage() {
                   comparatif OpusClip vs Submagic
                 </Link>
                 .
+              </div>
+            </details>
+            <details className="group bg-slate-900 border border-slate-800 rounded-xl p-6 open:border-amber-500/30">
+              <summary className="font-semibold cursor-pointer list-none flex justify-between items-center">
+                <span>Captions est-il une bonne alternative à Submagic ?</span>
+                <span className="faq-chevron transition-transform text-amber-400">+</span>
+              </summary>
+              <div className="text-slate-400 mt-4 leading-relaxed">
+                Ça dépend de ton besoin. Pour sous-titrer des shorts en
+                français, Submagic reste plus direct et mieux localisé. Captions
+                devient intéressant si tu veux générer des vidéos entières avec
+                des acteurs IA, du B-roll et de la voix off, qui est son vrai
+                terrain. Son plan payant démarre plus haut (Max à 24,99 $/mois
+                affiché côté iOS) et l&apos;interface est en anglais.
               </div>
             </details>
             <details className="group bg-slate-900 border border-slate-800 rounded-xl p-6 open:border-amber-500/30">

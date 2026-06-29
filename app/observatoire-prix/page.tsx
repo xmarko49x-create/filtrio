@@ -338,7 +338,15 @@ export default function ObservatoirePrixPage() {
               qu&apos;un essai limité qui se consomme vite (Submagic, Pictory),
               et 2 n&apos;ont aucune offre gratuite (TubeBuddy, InVideo). Si tu
               veux tester sérieusement avant de payer, cette distinction
-              change tout.
+              change tout. Pour Submagic en particulier, des options gratuites
+              ou moins chères existent : on les compare sur notre page{" "}
+              <Link
+                href="/comparatifs/alternatives-a-submagic"
+                className="text-emerald-400 hover:underline"
+              >
+                alternatives à Submagic
+              </Link>
+              .
             </p>
           </div>
 

@@ -283,6 +283,23 @@ export const sousTitrerTiktok: CasUsageData = {
       answer:
         "Oui, Submagic supporte plusieurs langues. Le produit est fort en FR mais fonctionne aussi en EN, ES, DE, etc. Si tu fais du multilingue, Submagic reste compétitif.",
     },
+    {
+      question: "Et si Submagic ne me convient pas ?",
+      answer: (
+        <>
+          Plusieurs alternatives existent selon ton besoin (gratuit, long
+          format, éditeur polyvalent, création tout-IA). On les compare dans un
+          tableau et par cas d&apos;usage sur notre page{" "}
+          <Link
+            href="/comparatifs/alternatives-a-submagic"
+            className="text-amber-400 hover:underline"
+          >
+            alternatives à Submagic
+          </Link>
+          .
+        </>
+      ),
+    },
   ],
   ctaFinal: {
     headline: "Prêt à accélérer tes sous-titres TikTok ?",

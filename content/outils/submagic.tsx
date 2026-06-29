@@ -292,6 +292,24 @@ export const submagicFiche: FicheData = {
       ),
     },
     {
+      question: "Quelles sont les meilleures alternatives à Submagic ?",
+      answer: (
+        <>
+          Ça dépend de ton usage : CapCut en gratuit, OpusClip pour découper du
+          long format, Descript pour le long format, Veed en éditeur polyvalent,
+          Captions pour la création tout-IA. On les compare dans un tableau et
+          par cas d&apos;usage sur notre page{" "}
+          <Link
+            href="/comparatifs/alternatives-a-submagic"
+            className="text-amber-400 hover:underline"
+          >
+            alternatives à Submagic
+          </Link>
+          .
+        </>
+      ),
+    },
+    {
       question: "Peut-on intégrer Submagic à un workflow automatisé (Make, Zapier) ?",
       answer:
         "Oui, Submagic affiche des options d'API et d'intégrations sur ses offres (disponibles dès le Starter avec un petit quota, étendues sur Business + API). En revanche, l'outil reste surtout positionné comme une solution simple et rapide pour produire des shorts, pas comme une brique d'automatisation lourde.",

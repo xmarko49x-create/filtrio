@@ -13,7 +13,7 @@ export const metadata: Metadata = {
       "Alternative à Submagic : 6 outils pour sous-titrer et monter des shorts en 2026",
   },
   description:
-    "6 vraies alternatives à Submagic pour sous-titrer et monter des shorts, comparées dans un tableau et analysées sur 6 critères. Des options gratuites et payantes selon ton usage.",
+    "5 alternatives sérieuses à Submagic pour sous-titrer et monter des shorts, comparées à Submagic comme référence : forces, limites, prix et niveau de sous-titrage en français.",
   alternates: { canonical: "/comparatifs/alternatives-a-submagic" },
 };
 
@@ -173,17 +173,16 @@ export default function AlternativesASubmagicPage() {
         </div>
         <div className="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 rounded-full px-4 py-1.5 text-xs text-slate-300 mb-6">
           <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-          Mise à jour · mai 2026
+          Mise à jour · juin 2026
         </div>
         <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-6 tracking-tight">
           Alternative à <span className="text-amber-400">Submagic</span> : les
           6 outils sérieux en 2026
         </h1>
         <p className="text-xl text-slate-400 leading-relaxed mb-8 max-w-3xl">
-          6 vraies alternatives à Submagic, analysées sur leurs forces et
-          faiblesses, avec un tableau comparatif et une recommandation par
-          usage. Des options gratuites qui tiennent la route et des payantes
-          qui font mieux sur certains cas précis.
+          5 alternatives sérieuses à Submagic, comparées à Submagic comme point
+          de référence, avec leurs forces, leurs limites, leurs prix et leur
+          niveau de sous-titrage en français.
         </p>
         <div className="flex flex-wrap gap-6 text-sm text-slate-500 border-t border-slate-800 pt-6">
           <div>

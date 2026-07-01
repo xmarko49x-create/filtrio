@@ -227,8 +227,8 @@ export default function HomePage() {
               Voir les meilleurs outils
             </h3>
             <p className="text-sm text-slate-400 leading-relaxed mb-4">
-              Classement par score éditorial sur 6 critères pondérés. Les
-              outils qui tiennent la route, pas le buzz.
+              Notre sélection du moment sur 6 critères pondérés. Les outils
+              qui tiennent la route, pas le buzz.
             </p>
             <div className="text-xs text-emerald-400 font-medium">
               Voir le top 5 →
@@ -251,8 +251,9 @@ export default function HomePage() {
               Les outils qui prennent clairement l&apos;avantage.
             </h2>
             <p className="text-slate-400 text-lg max-w-3xl">
-              Classement selon notre scoring éditorial sur 6 critères. Chaque
-              fiche détaille les forces, limites honnêtes et le verdict direct.
+              Sélection éditoriale du moment, basée sur le score mais aussi sur
+              l&apos;usage créateur. Chaque fiche détaille les forces, limites
+              honnêtes et le verdict direct.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">

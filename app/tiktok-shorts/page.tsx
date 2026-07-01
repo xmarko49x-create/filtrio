@@ -27,7 +27,7 @@ export default function TikTokShortsPage() {
         <p className="text-xl text-slate-400 leading-relaxed mb-4 max-w-3xl">
           Le short viral a son écosystème : sous-titres stylés, découpe auto,
           voix IA, templates prêts. Voici les outils que les créateurs FR
-          utilisent vraiment, classés par score éditorial.
+          utilisent vraiment, sélectionnés pour cette plateforme.
         </p>
         <p className="text-slate-400 leading-relaxed max-w-3xl">
           Pas un top 10 aléatoire. Chaque outil est analysé sur 6 critères et
@@ -37,6 +37,7 @@ export default function TikTokShortsPage() {
 
       <PlateformeSection
         plateforme="TikTok / Shorts"
+        top3Slugs={["submagic", "opusclip", "elevenlabs"]}
         outilsPrioritaires={[
           "submagic",
           "opusclip",

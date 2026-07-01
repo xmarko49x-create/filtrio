@@ -9,12 +9,12 @@ import { OUTILS } from "@/lib/outils";
 export const metadata: Metadata = {
   title: "Tous les outils IA pour créateurs vidéo en 2026",
   description:
-    "Catalogue filtrable de 16 outils IA analysés sur 6 critères. Filtre par catégorie, plan gratuit, recherche par nom. Score éditorial transparent.",
+    "Catalogue filtrable de 18 outils IA analysés sur 6 critères. Filtre par catégorie, plan gratuit, recherche par nom. Score éditorial transparent.",
   alternates: { canonical: "/outils" },
   openGraph: {
     title: "Tous les outils IA pour créateurs vidéo, Filtrio",
     description:
-      "16 outils analysés en profondeur. Filtre par catégorie ou plan gratuit pour trouver ce qu'il te faut.",
+      "18 outils analysés en profondeur. Filtre par catégorie ou plan gratuit pour trouver ce qu'il te faut.",
     type: "website",
   },
 };

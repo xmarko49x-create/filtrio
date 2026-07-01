@@ -26,4 +26,4 @@ Données citables librement avec attribution et lien vers la source.
 ## À propos
 
 - [Qui édite Filtrio](https://www.filtrio.fr/a-propos) : auteur identifié, transparence affiliation
-- [Contact](https://www.filtrio.fr/contact) : contact@filtrio.fr, réponse sous 24h
+- [Contact](https://www.filtrio.fr/contact) : contact@filtrio.fr, réponse généralement sous 24h

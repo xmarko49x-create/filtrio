@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Une question sur un outil, un prix à corriger, une demande presse ou partenariat ? Écris à contact@filtrio.fr, réponse sous 24h.",
+    "Une question sur un outil, un prix à corriger, une demande presse ou partenariat ? Écris à contact@filtrio.fr, réponse généralement sous 24h.",
   alternates: {
     canonical: "https://www.filtrio.fr/contact",
   },
@@ -24,7 +24,7 @@ export default function ContactPage() {
           </h1>
           <p className="text-lg text-slate-300 leading-relaxed mb-8">
             Filtrio fonctionne par écrit, simplement. Un email, une réponse
-            sous 24h. Pas de formulaire, pas de chatbot.
+            généralement sous 24h. Pas de formulaire, pas de chatbot.
           </p>
 
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-7 mb-8">
@@ -36,7 +36,7 @@ export default function ContactPage() {
               contact@filtrio.fr
             </a>
             <p className="text-sm text-slate-400 mt-3">
-              Réponse sous 24h, 7 jours sur 7.
+              Réponse rapide, généralement sous 24h.
             </p>
           </div>
 

@@ -150,8 +150,8 @@ export default function ObservatoirePrixPage() {
             Observatoire des prix des outils IA vidéo.
           </h1>
           <p className="text-lg text-slate-300 leading-relaxed max-w-3xl mb-6">
-            Le prix affiché sur une page tarifs n&apos;est presque jamais le
-            prix payé. Devises en dollars, engagement annuel par défaut,
+            Le prix affiché sur une page tarifs n&apos;est pas toujours le prix
+            réellement payé. Devises en dollars, engagement annuel par défaut,
             modèles à crédits : voici les tarifs réels de 18 outils IA vidéo,
             relevés un par un sur les pages officielles, avec leur date de
             vérification.
@@ -266,7 +266,7 @@ export default function ObservatoirePrixPage() {
               1. Le piège mensuel vs annuel.
             </h3>
             <p className="text-slate-300 leading-relaxed mb-5">
-              Le prix mis en avant correspond presque toujours à un engagement
+              Le prix mis en avant correspond souvent à un engagement
               annuel. Le même plan, payé au mois sans engagement, coûte
               nettement plus cher. Quatre exemples vérifiés sur les pages
               officielles :
@@ -403,7 +403,7 @@ export default function ObservatoirePrixPage() {
             mention de la source et un lien vers cette page
             (filtrio.fr/observatoire-prix). Besoin d&apos;un détail, d&apos;une
             vérification ou d&apos;un angle spécifique ? Écris-nous :
-            contact@filtrio.fr, réponse sous 24h.
+            contact@filtrio.fr, réponse généralement sous 24h.
           </p>
         </div>
       </section>

@@ -180,9 +180,9 @@ export default function AlternativesASubmagicPage() {
           6 outils sérieux en 2026
         </h1>
         <p className="text-xl text-slate-400 leading-relaxed mb-8 max-w-3xl">
-          5 alternatives sérieuses à Submagic, comparées à Submagic comme point
-          de référence, avec leurs forces, leurs limites, leurs prix et leur
-          niveau de sous-titrage en français.
+          5 alternatives sérieuses à Submagic, avec Submagic comme point de
+          référence : leurs forces, leurs limites, leurs prix et leur niveau de
+          sous-titrage en français.
         </p>
         <div className="flex flex-wrap gap-6 text-sm text-slate-500 border-t border-slate-800 pt-6">
           <div>

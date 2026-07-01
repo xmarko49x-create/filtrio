@@ -14,7 +14,7 @@ export const veedFiche: FicheData = {
     ],
     origine: "Royaume-Uni",
     tempsLecture: 7,
-    lastCheck: "23/04/2026",
+    lastCheck: "01/07/2026",
   },
   verdict30s: [
     {
@@ -50,7 +50,7 @@ export const veedFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan Free (0 €, 10 min d'export, 720p, 2 Go de stockage). Creator à 10,75 €/mois par editor (annuel, 129 €/an, 6 000 credits/an) pour des vidéos sociales sans watermark. Pro (populaire) à 23,17 €/mois par editor (annuel, 278 €/an, 30 000 credits/an) pour du pro-level avec Brand Kits multiples et 4K. Studio à 37,33 €/mois par editor (annuel, 448 €/an, 180 000 credits/an) avec Project Analytics. Enterprise sur devis. Facturation EUR.",
+        "Plan Free (0 €, 10 min d'export, 720p, 2 Go de stockage). Creator à 11 €/mois par editor (annuel, taxes incluses, 6 000 credits/an) pour des vidéos sociales sans watermark. Pro (populaire) à 23 €/mois par editor (annuel, taxes incluses, 30 000 credits/an) pour du pro-level avec Brand Kits multiples et 4K. Studio à 37 €/mois par editor (annuel, taxes incluses, 180 000 credits/an) avec Project Analytics. Enterprise sur devis. Facturation EUR, vérifié le 01/07/2026.",
     },
     {
       question: "Meilleure alternative ?",
@@ -127,7 +127,7 @@ export const veedFiche: FicheData = {
       poids: 20,
       score: 7.8,
       commentaire:
-        "Basic à 12 $/mois correct pour un éditeur web tout-en-un. Pro à 24 $/mois pour les besoins croissants. Moins cher qu'un abonnement Premiere, plus cher qu'un CapCut gratuit. Bon équilibre polyvalence/prix.",
+        "Creator à 11 €/mois correct pour un éditeur web tout-en-un. Pro à 23 €/mois pour les besoins croissants. Moins cher qu'un abonnement Premiere, plus cher qu'un CapCut gratuit. Bon équilibre polyvalence/prix.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
@@ -206,8 +206,8 @@ export const veedFiche: FicheData = {
     },
     {
       nom: "Creator",
-      prix: "10,75 €/mois",
-      prixSub: "Par editor · facturation annuelle (129 €/an) · ~6 000 credits/an",
+      prix: "11 €/mois",
+      prixSub: "Par editor · facturation annuelle · taxes incluses · ~6 000 credits/an",
       cible: "Créateurs sociaux occasionnels",
       features: [
         "Watermark-free social videos avec IA",
@@ -220,8 +220,8 @@ export const veedFiche: FicheData = {
     },
     {
       nom: "Pro",
-      prix: "23,17 €/mois",
-      prixSub: "Par editor · facturation annuelle (278 €/an) · 30 000 credits/an · Populaire",
+      prix: "23 €/mois",
+      prixSub: "Par editor · facturation annuelle · taxes incluses · 30 000 credits/an · Populaire",
       cible: "Créateurs réguliers on-brand",
       features: [
         "Tout Creator inclus",
@@ -235,8 +235,8 @@ export const veedFiche: FicheData = {
     },
     {
       nom: "Studio",
-      prix: "37,33 €/mois",
-      prixSub: "Par editor · facturation annuelle (448 €/an) · 180 000 credits/an",
+      prix: "37 €/mois",
+      prixSub: "Par editor · facturation annuelle · taxes incluses · 180 000 credits/an",
       cible: "Agences et équipes pros",
       features: [
         "Tout Pro inclus",

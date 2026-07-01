@@ -53,9 +53,9 @@ const FAQ = [
       "Chaque prix est relevé manuellement sur la page tarifs officielle de l'outil, avec sa devise et son cycle de facturation, à la date indiquée dans la colonne « Vérifié le ». Quand un prix n'est pas vérifiable proprement, on l'écrit (« voir tarifs officiels ») plutôt que de l'inventer. La méthode complète est décrite sur notre page Méthode.",
   },
   {
-    question: "Pourquoi autant de prix en dollars ?",
+    question: "Quels outils affichent leurs prix en euros ?",
     answer:
-      "12 outils sur 18 affichent leurs tarifs en dollars US, parce que ce sont des sociétés américaines sans géo-tarification européenne. Conséquence concrète pour un créateur français : le montant réellement débité en euros dépend du taux de change du jour et des éventuels frais bancaires, et il est donc légèrement différent du prix affiché. Seuls quelques outils (Submagic, Synthesia, VidIQ, Veed, Canva, CapCut) affichent des prix en euros.",
+      "Certains outils affichent directement des prix en euros depuis la France, comme Submagic, Synthesia ou Veed. D'autres restent en dollars, notamment plusieurs outils américains de génération vidéo, de voix IA ou de montage. CapCut fait exception : son offre gratuite est visible, mais le tarif Pro peut varier selon le pays, l'appareil ou le canal d'abonnement.",
   },
   {
     question: "Pourquoi le prix affiché n'est-il pas celui que je paierai ?",
@@ -302,12 +302,15 @@ export default function ObservatoirePrixPage() {
               2. Deux tiers des prix sont en dollars.
             </h3>
             <p className="text-slate-300 leading-relaxed">
-              12 outils sur 18 affichent leurs tarifs en dollars US. Pour un
-              créateur qui paie en euros, le montant réellement débité dépend
-              du taux de change du jour et des éventuels frais de ta banque.
-              Seuls Submagic, Synthesia, VidIQ, Veed, Canva et CapCut
-              affichent des prix en euros pour les visiteurs français. À
-              budget serré, c&apos;est un critère de choix à part entière.
+              La majorité des outils du panel affichent leurs tarifs en dollars
+              US. Pour un créateur qui paie en euros, le montant réellement
+              débité dépend du taux de change du jour et des éventuels frais de
+              ta banque. Quelques outils affichent directement des prix en euros
+              depuis la France, comme Submagic, Synthesia, VidIQ, Veed et Canva.
+              CapCut fait exception : l&apos;offre gratuite est visible, mais le
+              tarif Pro peut varier selon le pays, l&apos;appareil ou le canal
+              d&apos;abonnement. À budget serré, c&apos;est un critère de choix
+              à part entière.
             </p>
           </div>
 

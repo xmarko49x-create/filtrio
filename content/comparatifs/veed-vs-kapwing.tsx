@@ -10,7 +10,7 @@ export const veedVsKapwing: ComparatifData = {
     tagline:
       "Les deux éditeurs vidéo web les plus matures pour les équipes et les freelances. Veed couvre mieux le solo, Kapwing domine sur la collaboration temps réel. La bonne question : tu travailles seul ou en équipe de 3+ ?",
     tempsLecture: 5,
-    lastCheck: "20/04/2026",
+    lastCheck: "10/07/2026",
   },
   verdictRapide: {
     headline:
@@ -19,7 +19,7 @@ export const veedVsKapwing: ComparatifData = {
       <>
         <strong className="text-yellow-400">Veed</strong>{" "}couvre mieux les
         usages individuels avec un rapport qualité/prix supérieur à
-        l&apos;entrée (12 $/mois).{" "}
+        l&apos;entrée (11 €/mois TTC en annuel).{" "}
         <strong className="text-green-400">Kapwing</strong>{" "}justifie son tarif
         Business (50 $/mois/user) si la collaboration temps réel est au cœur du
         workflow.
@@ -77,7 +77,7 @@ export const veedVsKapwing: ComparatifData = {
   porQuiA: [
     "Tu travailles en solo ou en duo",
     "Ton usage est polyvalent (montage + sous-titres + enregistrement)",
-    "Tu veux l'entrée la moins chère (12 $/mois)",
+    "Tu veux l'entrée la moins chère (11 €/mois TTC en annuel)",
     "Tu travailles depuis plusieurs ordinateurs différents",
     "Fonctionnalités IA légères te suffisent (transcription, sous-titres auto)",
   ],
@@ -162,7 +162,7 @@ export const veedVsKapwing: ComparatifData = {
     {
       question: "Coûts totaux sur un an ?",
       answer:
-        "Veed Basic : 144 $/an pour 1 user. Kapwing Business : 600 $/user/an. L'écart est énorme mais n'a de sens qu'en comparant équipe vs solo. En équipe de 5 monteurs, Kapwing à 3000 $/an vs Veed Business à ~700 $/an, la différence se justifie uniquement si tu utilises vraiment la collaboration temps réel.",
+        "Veed Creator : 11 €/mois TTC en annuel, soit environ 132 €/an pour 1 user. Kapwing Business : 600 $/user/an. L'écart est énorme mais n'a de sens qu'en comparant équipe vs solo. En équipe de 5 monteurs, Kapwing ressort à 3 000 $/an là où Veed Studio (37 €/mois TTC par user) reste nettement moins cher : la différence se justifie uniquement si tu utilises vraiment la collaboration temps réel.",
     },
   ],
 };

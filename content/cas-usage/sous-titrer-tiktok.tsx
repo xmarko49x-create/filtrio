@@ -10,7 +10,7 @@ export const sousTitrerTiktok: CasUsageData = {
       "Tu veux des sous-titres stylés en français sur tes TikTok, sans passer 30 minutes par vidéo à les ajuster. Voici notre classement des outils qui livrent le meilleur rendu FR, le gagnant, et les pièges à éviter.",
     tempsLecture: 5,
     outilsAnalyses: 5,
-    lastCheck: "28/05/2026",
+    lastCheck: "10/07/2026",
   },
   verdict: {
     tag: "Le verdict en 30 secondes",
@@ -148,7 +148,7 @@ export const sousTitrerTiktok: CasUsageData = {
       ],
       verdict:
         "Éditeur web polyvalent, sous-titres FR fonctionnels. Pas le plus stylé pour TikTok mais pratique si tu utilises déjà Veed pour d'autres besoins vidéo.",
-      priceDisplay: { label: "À partir de", value: "12 $/mois" },
+      priceDisplay: { label: "À partir de", value: "11 €/mois" },
     },
     {
       slug: "kapwing",

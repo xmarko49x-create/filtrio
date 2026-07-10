@@ -114,7 +114,7 @@ const CRITERES_TABLEAU: CritereLine[] = [
       "15 $/mois",
       "16 $/mois (annuel)",
       "Gratuit",
-      "10,75 €/mois (annuel)",
+      "11 €/mois (annuel, TTC)",
       "16 $/mois (annuel)",
     ],
     highlight: 3,

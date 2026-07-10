@@ -14,7 +14,7 @@ export const invideoFiche: FicheData = {
     ],
     origine: "Inde",
     tempsLecture: 8,
-    lastCheck: "22/04/2026",
+    lastCheck: "10/07/2026",
   },
   verdict30s: [
     {
@@ -44,7 +44,7 @@ export const invideoFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Modèle à crédits en USD. Offre Individual à 4 plans facturation annuelle (-15% jusqu'à Génératif, -10% sur Élite) : En plus à 17 $/mois (200 $/an, 75 crédits/mois), Max à 85 $/mois (1000 $/an, 390 crédits/mois), Génératif à 170 $/mois (2000 $/an, 800 crédits/mois), Élite à 900 $/mois (10 800 $/an, 4250 crédits/mois). Offre Team & Enterprise sur devis. Les crédits sont consommés à chaque génération selon le modèle IA utilisé (Veo 3.1, Sora 2 pro, Kling 3.0, Nano Banana Pro tarifés à leur prix API d'origine).",
+        "Plan gratuit disponible. Modèle à crédits en USD, 4 plans en facturation annuelle : Plus à 17 $/mois (200 $ facturés par an, 75 crédits/mois), Max à 85 $/mois (1 000 $/an, 390 crédits/mois), Generative à 170 $/mois (2 000 $/an), Elite à 900 $/mois (10 800 $/an, 4 250 crédits/mois). Offre Team & Enterprise sur devis. Les crédits inclus sont renouvelés chaque mois et les crédits inutilisés ne sont pas reportés. Chaque génération consomme des crédits selon le modèle IA utilisé.",
     },
     {
       question: "Meilleure alternative ?",
@@ -174,59 +174,57 @@ export const invideoFiche: FicheData = {
   ],
   plans: [
     {
-      nom: "En plus",
+      nom: "Gratuit",
+      prix: "0 $",
+      prixSub: "Plan gratuit récurrent",
+      cible: "Pour tester avant de s'engager",
+      features: [
+        "Permet de tester la génération IA avant de payer",
+        "Quotas et limitations détaillés sur invideo.io",
+      ],
+    },
+    {
+      nom: "Plus",
       prix: "17 $/mois",
-      prixSub: "Facturation annuelle (200 $/an) · -15 % vs mensuel",
+      prixSub: "Facturation annuelle (200 $ facturés par an)",
       cible: "Pour explorer",
       features: [
-        "75 crédits/mois",
-        "= 300 Nano Banana Pro ou 600 Nano Banana 2 générations",
-        "4 avatars IA et clones vocaux",
-        "Concurrence limitée",
-        "20 Go de stockage · 100 iStock",
-        "Exportations illimitées sans watermark",
+        "75 crédits/mois, renouvelés chaque mois",
+        "Crédits inutilisés non reportés",
+        "Exportations sans watermark",
       ],
     },
     {
       nom: "Max",
       prix: "85 $/mois",
-      prixSub: "Facturation annuelle (1 000 $/an) · -15 % · Plus populaire",
-      cible: "Pour un usage occasionnel",
+      prixSub: "Facturation annuelle (1 000 $ facturés par an)",
+      cible: "Pour un usage régulier",
       features: [
-        "390 crédits/mois",
-        "= 1 560 Nano Banana Pro ou 3 120 Nano Banana 2 générations",
-        "16 avatars IA & clones vocaux",
-        "2x plus de concurrence que En plus",
-        "100 Go de stockage · 200 iStock",
-        "Exportations illimitées sans watermark",
+        "390 crédits/mois, renouvelés chaque mois",
+        "Crédits inutilisés non reportés",
+        "Exportations sans watermark",
       ],
     },
     {
-      nom: "Génératif",
+      nom: "Generative",
       prix: "170 $/mois",
-      prixSub: "Facturation annuelle (2 000 $/an) · -15 % · Meilleur rapport qualité-prix",
+      prixSub: "Facturation annuelle (2 000 $ facturés par an)",
       cible: "Pour un usage quotidien",
       features: [
-        "800 crédits/mois (slider jusqu'à 1 600)",
-        "= 3 200 Nano Banana Pro ou 6 400 Nano Banana 2 générations",
-        "40 avatars IA et clones vocaux",
-        "10x plus de concurrence que En plus",
-        "2 To de stockage · 1 000 iStock",
-        "Exportations illimitées sans watermark",
+        "Quota de crédits mensuel supérieur (détail sur invideo.io)",
+        "Crédits inutilisés non reportés",
+        "Exportations sans watermark",
       ],
     },
     {
-      nom: "Élite",
+      nom: "Elite",
       prix: "900 $/mois",
-      prixSub: "Facturation annuelle (10 800 $/an) · -10 %",
-      cible: "Pour les créateurs de pouvoir",
+      prixSub: "Facturation annuelle (10 800 $ facturés par an)",
+      cible: "Pour la production en gros volume",
       features: [
-        "4 250 crédits/mois (slider jusqu'à 8 500)",
-        "= 17 000 Nano Banana Pro ou 34 000 Nano Banana 2 générations",
-        "200 avatars IA et clones vocaux",
-        "20x plus de concurrence que En plus",
-        "10 To de stockage · 5 000 iStock",
-        "Exportations illimitées sans watermark",
+        "4 250 crédits/mois, renouvelés chaque mois",
+        "Crédits inutilisés non reportés",
+        "Exportations sans watermark",
       ],
     },
     {
@@ -262,7 +260,7 @@ export const invideoFiche: FicheData = {
     {
       question: "invideo AI et invideo Studio, quelle différence ?",
       answer:
-        "Deux produits distincts sous la même marque. invideo AI = plateforme de génération vidéo à crédits (200+ modèles IA intégrés, plans En plus à 17 $/mo annuel jusqu'à Élite à 900 $/mo). invideo Studio = éditeur vidéo traditionnel avec bibliothèque de modèles et générateur de scripts IA (plans Gratuit, Affaires à 15 $/mo annuel, Illimité à 30 $/mo annuel, avec lifetime Business à 399 $ et Unlimited à 1 099 $ one-time). Cette fiche couvre principalement invideo AI (l'offre mise en avant sur la page Tarification principale).",
+        "Deux produits distincts sous la même marque. invideo AI = plateforme de génération vidéo à crédits (200+ modèles IA intégrés, plans Plus à 17 $/mo annuel jusqu'à Elite à 900 $/mo, plus un plan gratuit). invideo Studio = éditeur vidéo traditionnel avec bibliothèque de modèles et générateur de scripts IA. Cette fiche couvre principalement invideo AI (l'offre mise en avant sur la page Tarification principale).",
     },
     {
       question: "InVideo ou HeyGen pour du contenu IA ?",
@@ -285,9 +283,9 @@ export const invideoFiche: FicheData = {
         "Correcte pour des contenus marketing standards. Moins naturelle qu'ElevenLabs. Pour du contenu premium ou où la voix porte l'émotion, envisager d'importer une piste audio ElevenLabs plutôt que d'utiliser la voix native InVideo.",
     },
     {
-      question: "Le plan En plus à 17 $/mois suffit-il pour démarrer ?",
+      question: "Le plan Plus à 17 $/mois suffit-il pour démarrer ?",
       answer:
-        "Oui pour explorer sérieusement le workflow script-to-video et évaluer la qualité sur ton cas d'usage réel (75 crédits/mois suffisent à plusieurs générations selon les modèles choisis). Pour un usage récurrent en volume, il faut passer au Max ou au Génératif.",
+        "Oui pour explorer sérieusement le workflow script-to-video et évaluer la qualité sur ton cas d'usage réel (75 crédits/mois, renouvelés mensuellement et non reportés, suffisent à plusieurs générations selon les modèles choisis). Pour un usage récurrent en volume, il faut passer au Max ou au Generative.",
     },
     {
       question: "L'API vaut-elle le coût d'un plan Individual ?",
@@ -302,7 +300,7 @@ export const invideoFiche: FicheData = {
   ],
   ctaFinal: {
     headline: "Prêt à automatiser ta prod vidéo ?",
-    sub: "Le plan En plus à 17 $/mois (annuel, 75 crédits/mois) est le point d'entrée pour tester sérieusement le workflow script-to-video sur un cas concret. Pour un usage en volume, passer au Max ou au Génératif.",
+    sub: "Le plan gratuit permet de tester, puis le plan Plus à 17 $/mois (annuel, 75 crédits/mois) est le point d'entrée pour un usage sérieux du script-to-video. Pour un usage en volume, passer au Max ou au Generative.",
     buttonText: "Essayer InVideo",
   },
 };

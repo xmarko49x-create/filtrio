@@ -10,7 +10,7 @@ export const elevenlabsVsHeygen: ComparatifData = {
     tagline:
       "Deux outils souvent comparés mais qui répondent à des besoins différents. ElevenLabs est une voix IA pure, HeyGen produit des avatars vidéo complets. Pas vraiment des concurrents frontaux, mais ils sont régulièrement mis en balance. Voici comment trancher selon ton profil.",
     tempsLecture: 6,
-    lastCheck: "22/04/2026",
+    lastCheck: "10/07/2026",
   },
   verdictRapide: {
     headline:
@@ -154,7 +154,8 @@ export const elevenlabsVsHeygen: ComparatifData = {
           </Link>{" "}
           qui anime l&apos;avatar en sync labiale avec cette voix. Résultat :
           avatar vidéo avec voix au rendu maximal. Coût combiné : environ
-          34-58 $/mois selon les plans retenus.
+          30 à 51 $/mois selon les plans retenus (ElevenLabs Starter ou
+          Creator + HeyGen Creator).
         </>
       ),
     },
@@ -203,11 +204,11 @@ export const elevenlabsVsHeygen: ComparatifData = {
           <Link href="/outils/heygen" className="text-cyan-400 hover:underline">
             HeyGen
           </Link>{" "}
-          facture au temps de vidéo (Creator 30 min/mois à 29 $/mo mensuel ou
-          24 $/mo annuel). Pour un volume régulier de vidéos courtes avec
+          facture via un système de crédits (Creator 600 crédits/mois à
+          29 $/mo mensuel ou 24 $/mo annuel). Pour un volume régulier de vidéos courtes avec
           avatar, HeyGen peut être plus avantageux. Pour du long narré en voix
           pure, ElevenLabs reste plus efficient. Fais le calcul sur ton volume
-          réel avant de choisir.
+                  mensuel réel avant de trancher.
         </>
       ),
     },

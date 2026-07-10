@@ -10,7 +10,7 @@ export const vidiqVsTubebuddy: ComparatifData = {
     tagline:
       "Les deux extensions qui dominent le marché du SEO YouTube. Approches opposées : IA générative moderne d'un côté, analyse mature et tests A/B de l'autre. Voici quel outil est fait pour quel profil de créateur.",
     tempsLecture: 6,
-    lastCheck: "22/04/2026",
+    lastCheck: "10/07/2026",
   },
   verdictRapide: {
     headline:

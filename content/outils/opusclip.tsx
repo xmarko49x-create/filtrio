@@ -16,7 +16,7 @@ export const opusclipFiche: FicheData = {
     origine: "USA",
     depuis: "2022",
     tempsLecture: 8,
-    lastCheck: "16/06/2026",
+    lastCheck: "10/07/2026",
   },
   verdict30s: [
     {

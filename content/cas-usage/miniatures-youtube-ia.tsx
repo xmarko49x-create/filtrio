@@ -10,7 +10,7 @@ export const miniaturesYoutubeIa: CasUsageData = {
       "Tu veux des miniatures YouTube qui attirent le clic, générées en quelques minutes avec l'IA. Voici notre classement 2026 des outils qui livrent le meilleur rendu, le gagnant, et les pièges à éviter pour ton CTR.",
     tempsLecture: 6,
     outilsAnalyses: 5,
-    lastCheck: "13/06/2026",
+    lastCheck: "10/07/2026",
   },
   verdict: {
     tag: "Le verdict en 30 secondes",

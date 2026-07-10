@@ -10,7 +10,7 @@ export const podcastEnregistrementDistant: CasUsageData = {
       "Tu veux enregistrer un podcast ou une interview avec un invité à distance, en qualité studio, sans Zoom qui compresse l'audio. Voici notre classement des outils qui livrent la meilleure qualité, le gagnant, et les pièges à éviter.",
     tempsLecture: 6,
     outilsAnalyses: 5,
-    lastCheck: "12/06/2026",
+    lastCheck: "10/07/2026",
   },
   verdict: {
     tag: "La recommandation tout de suite",
@@ -96,7 +96,7 @@ export const podcastEnregistrementDistant: CasUsageData = {
         "Si tu produis régulièrement un podcast ou une série d'interviews à distance, Riverside est l'investissement le plus logique. La qualité fait la différence à l'écoute, et ton invité n'a rien à installer.",
       priceDisplay: {
         label: "À partir de",
-        value: "24 $/mois",
+        value: "24 €/mois",
         note: "Plan gratuit disponible",
       },
     },
@@ -120,7 +120,7 @@ export const podcastEnregistrementDistant: CasUsageData = {
         "Choix pertinent si tu veux tout faire au même endroit. La qualité d'enregistrement pure reste légèrement en retrait de Riverside, mais la force d'édition compense pour beaucoup de créateurs.",
       priceDisplay: {
         label: "À partir de",
-        value: "24 $/mois",
+        value: "16 $/mois",
         note: "Plan gratuit 1h",
       },
     },

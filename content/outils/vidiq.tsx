@@ -14,7 +14,7 @@ export const vidiqFiche: FicheData = {
     ],
     origine: "USA",
     tempsLecture: 8,
-    lastCheck: "23/04/2026",
+    lastCheck: "10/07/2026",
   },
   verdict30s: [
     {

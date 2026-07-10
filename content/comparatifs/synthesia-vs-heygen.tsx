@@ -10,7 +10,7 @@ export const synthesiaVsHeygen: ComparatifData = {
     tagline:
       "Les deux plateformes leaders d'avatars IA vidéo en 2026. Synthesia mise sur le B2B et la conformité, HeyGen mise sur le créateur et la vitesse. La ligne de partage est presque toujours claire.",
     tempsLecture: 6,
-    lastCheck: "20/04/2026",
+    lastCheck: "10/07/2026",
   },
   verdictRapide: {
     headline: "Synthesia pour l'entreprise. HeyGen pour le créateur.",

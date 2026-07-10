@@ -14,7 +14,7 @@ export const runwayFiche: FicheData = {
     ],
     origine: "USA",
     tempsLecture: 8,
-    lastCheck: "23/04/2026",
+    lastCheck: "10/07/2026",
   },
   verdict30s: [
     {
@@ -47,7 +47,7 @@ export const runwayFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan Free (0 $) avec 125 credits one-time et 3 projets. Standard à 12 $/user/mois en annuel (144 $/an) avec 625 credits mensuels. Pro à 28 $/user/mois en annuel (336 $/an) avec 2250 credits. Unlimited à 76 $/user/mois en annuel (912 $/an) avec génération illimitée en Explore Mode. Enterprise sur devis. Facturation USD.",
+        "Plan Free (0 $) avec 125 credits one-time et 3 projets. Standard à 12 $/user/mois en annuel (144 $/an) avec 625 credits mensuels. Pro à 28 $/user/mois en annuel (336 $/an) avec 2250 credits. Max à 76 $/user/mois en annuel (912 $/an) avec 9 500 credits mensuels et report des crédits non utilisés sur 1 mois. Enterprise sur devis. Facturation USD.",
     },
     {
       question: "Meilleure alternative ?",
@@ -196,7 +196,7 @@ export const runwayFiche: FicheData = {
     {
       nom: "Standard",
       prix: "12 $/mois",
-      prixSub: "Par utilisateur · annuel (144 $/an) · max 5 utilisateurs",
+      prixSub: "Par utilisateur · annuel (144 $/an) · 15 $/mois en mensuel",
       cible: "Créateurs et petites équipes",
       features: [
         "625 credits mensuels",
@@ -212,7 +212,7 @@ export const runwayFiche: FicheData = {
     {
       nom: "Pro",
       prix: "28 $/mois",
-      prixSub: "Par utilisateur · annuel (336 $/an) · max 10 utilisateurs",
+      prixSub: "Par utilisateur · annuel (336 $/an) · 35 $/mois en mensuel",
       cible: "Créateurs et équipes pros",
       features: [
         "2 250 credits mensuels",
@@ -222,14 +222,15 @@ export const runwayFiche: FicheData = {
       ],
     },
     {
-      nom: "Illimité",
+      nom: "Max",
       prix: "76 $/mois",
-      prixSub: "Par utilisateur · annuel (912 $/an) · max 10 utilisateurs",
-      cible: "Studios avec volume illimité",
+      prixSub: "Par utilisateur · annuel (912 $/an) · 95 $/mois en mensuel (remplace l'ancien plan Illimité)",
+      cible: "Usage intensif, meilleur volume de génération",
       features: [
-        "2 250 credits mensuels",
+        "9 500 credits mensuels",
         "Tout Pro inclus",
-        "Mode Exploration : générations illimitées de tous les modèles image et vidéo (rythme Explore)",
+        "Report des crédits non utilisés sur 1 mois",
+        "Accès prioritaire aux nouveaux modèles",
       ],
     },
     {
@@ -238,7 +239,7 @@ export const runwayFiche: FicheData = {
       prixSub: "Pour les équipes et organisations",
       cible: "Sécurité avancée et intégration sur mesure",
       features: [
-        "Toutes les fonctionnalités du Plan Pro",
+        "Toutes les fonctionnalités du Plan Max",
         "Connexion unique (SSO)",
         "Montants de crédit personnalisés",
         "Espaces d'organisation et d'équipe configurables",

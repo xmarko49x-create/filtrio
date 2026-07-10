@@ -6,7 +6,7 @@ Données citables librement avec attribution et lien vers la source.
 
 ## Données et références
 
-- [Observatoire des prix des outils IA vidéo](https://www.filtrio.fr/observatoire-prix) : prix d'entrée, devises et dates de vérification des 18 outils ; 12/18 facturés en dollars US ; le même plan coûte de +21 % à +100 % de plus en facturation mensuelle qu'annuelle (exemples vérifiés)
+- [Observatoire des prix des outils IA vidéo](https://www.filtrio.fr/observatoire-prix) : prix d'entrée, devises et dates de vérification des 18 outils ; 11/18 facturés en dollars US ; le même plan coûte de +21 % à +100 % de plus en facturation mensuelle qu'annuelle (exemples vérifiés)
 - [Méthodologie de notation](https://www.filtrio.fr/methode) : 6 critères pondérés, grille publique
 - [Lexique IA vidéo](https://www.filtrio.fr/lexique) : 22 termes définis (text-to-video, clonage vocal, deepfake, AI Act...)
 

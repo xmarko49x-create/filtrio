@@ -10,7 +10,7 @@ export const descriptVsRiverside: ComparatifData = {
     tagline:
       "Les deux outils phares du podcast pro en 2026. Approches opposées : Descript excelle en post-production avec son édition textuelle, Riverside domine l'enregistrement à distance en qualité studio. Voici comment choisir selon ton workflow.",
     tempsLecture: 6,
-    lastCheck: "22/04/2026",
+    lastCheck: "10/07/2026",
   },
   verdictRapide: {
     headline:
@@ -175,7 +175,7 @@ export const descriptVsRiverside: ComparatifData = {
     {
       question: "Le combo des deux outils coûte-t-il vraiment cher ?",
       answer:
-        "Descript à partir de 16 $/mois (Hobbyist annuel) et Riverside à partir de 24 $/mois sur les plans payants les plus abordables. Le combo ressort donc autour de 40 $/mois en entrée de gamme. Pour un podcast professionnel hebdomadaire, c'est un coût de production raisonnable par rapport au temps gagné en post-prod.",
+        "Descript à partir de 16 $/mois (Hobbyist annuel) et Riverside à partir de 24 €/mois en annuel (prix affichés en euros pour les visiteurs européens). Le combo ressort donc autour de 40 € par mois en entrée de gamme. Pour un podcast professionnel hebdomadaire, c'est un coût de production raisonnable par rapport au temps gagné en post-prod.",
     },
   ],
 };

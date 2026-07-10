@@ -10,7 +10,7 @@ export const submagicVsDescript: ComparatifData = {
     tagline:
       "Deux outils puissants, deux philosophies opposées. Submagic pense shorts viraux avec sous-titres léchés. Descript pense édition textuelle profonde du long format. Le bon choix dépend entièrement de ton format.",
     tempsLecture: 6,
-    lastCheck: "22/04/2026",
+    lastCheck: "10/07/2026",
   },
   verdictRapide: {
     headline:

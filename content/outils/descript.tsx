@@ -14,7 +14,7 @@ export const descriptFiche: FicheData = {
     ],
     origine: "USA",
     tempsLecture: 8,
-    lastCheck: "28/05/2026",
+    lastCheck: "10/07/2026",
   },
   verdict30s: [
     {

@@ -575,8 +575,8 @@ function MethodologyNote() {
   return (
     <div className="mt-8 pt-6 border-t border-slate-800 text-xs text-slate-500 space-y-2">
       <p>
-        <strong className="text-slate-300">Phase actuelle (V1) :</strong> scores
-        basés sur analyse documentaire approfondie, compilation de retours
+        <strong className="text-slate-300">Phase actuelle (V1) :</strong>{" "}
+        scores basés sur analyse documentaire approfondie, compilation de retours
         utilisateurs publics (G2, Trustpilot, Reddit, doc officielle) et prise
         en main des plans gratuits.
       </p>

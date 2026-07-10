@@ -14,7 +14,7 @@ export const capcutFiche: FicheData = {
     ],
     origine: "Chine (ByteDance)",
     tempsLecture: 7,
-    lastCheck: "23/04/2026",
+    lastCheck: "10/07/2026",
   },
   verdict30s: [
     {
@@ -43,7 +43,7 @@ export const capcutFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan gratuit très complet (éditeur et la plupart des fonctionnalités). Version Pro accessible via 7 jours d'essai offerts, puis 23,99 €/mois en mensuel ou 199,99 €/an en annuel (≈ 16,66 €/mois) : 1 400 crédits mensuels, ressources premium, fonctionnalités IA avancées et 100 Go de stockage cloud. Version équipes disponible avec un tarif qui varie selon la région, le nombre de sièges et la fréquence de facturation. Facturation en EUR en France.",
+        "Plan gratuit très complet (éditeur et la plupart des fonctionnalités). Abonnements relevés sur l'App Store France : Standard à 11,99 €/mois et Pro à 23,99 €/mois. Une formule annuelle à 109,99 € apparaît également, sans que l'App Store précise clairement à quel niveau elle correspond. Attention : les prix CapCut peuvent varier selon la plateforme (Web, Android, ordinateur), la région et les promotions en cours. Facturation en EUR en France.",
     },
     {
       question: "Meilleure alternative ?",
@@ -197,51 +197,37 @@ export const capcutFiche: FicheData = {
       ],
     },
     {
-      nom: "Essai Pro",
-      prix: "0 €",
-      prixSub: "7 jours offerts pour tester",
-      cible: "Pour découvrir Pro avant engagement",
+      nom: "Standard",
+      prix: "11,99 €/mois",
+      prixSub: "Tarif relevé sur l'App Store France · peut varier selon la plateforme",
+      cible: "Créateurs réguliers avec besoins intermédiaires",
       features: [
-        "Accès complet à la version Pro pendant 7 jours",
-        "Puis 23,99 €/mois si tu continues",
-        "Annulation possible à tout moment",
-      ],
-    },
-    {
-      nom: "Pro Annuel",
-      prix: "199,99 €/an",
-      prixSub: "≈ 16,66 €/mois · solution la plus économique",
-      cible: "Créateurs réguliers",
-      features: [
-        "1 400 crédits mensuels",
-        "Plus de 200 millions de ressources de création",
-        "Export 4K sans watermark sur assets Pro",
-        "Fonctionnalités IA avancées",
-        "100 Go de stockage cloud",
-      ],
-    },
-    {
-      nom: "Pro Mensuel",
-      prix: "23,99 €/mois",
-      prixSub: "Promo 1er mois à 14,49 € affichée",
-      cible: "Engagement court",
-      features: [
-        "Tout Pro Annuel inclus",
-        "100 Go de stockage cloud",
-        "Accessible desktop, mobile et web",
+        "Niveau intermédiaire entre le gratuit et Pro",
+        "Détail des fonctionnalités à vérifier dans l'app (variable selon plateforme)",
         "Annulation à tout moment",
       ],
     },
     {
-      nom: "Pro Équipes",
-      prix: "17,99 €/poste/mois",
-      prixSub: "Mensuel · tarifs variables par région",
-      cible: "Équipes et collaborations",
+      nom: "Pro",
+      prix: "23,99 €/mois",
+      prixSub: "Tarif de référence relevé sur l'App Store France · essai 7 jours offert",
+      cible: "Créateurs réguliers",
       features: [
-        "Tout Pro inclus",
-        "Gestion multi-postes et collaboration",
-        "Tarifs variables (dans notre capture FR : 17,99 €/poste/mois, 8,99 € promo 1er mois)",
-        "Vérifier l'offre exacte selon ton compte et ta région",
+        "Ressources et assets premium",
+        "Fonctionnalités IA avancées",
+        "Export sans watermark sur assets Pro",
+        "Essai gratuit de 7 jours, annulation à tout moment",
+        "Le tarif peut différer sur le Web, Android ou ordinateur",
+      ],
+    },
+    {
+      nom: "Formule annuelle",
+      prix: "109,99 €/an",
+      prixSub: "Affichée sur l'App Store France, niveau d'abonnement non précisé",
+      cible: "Engagement à l'année",
+      features: [
+        "L'App Store ne précise pas clairement à quel niveau (Standard ou Pro) cette formule correspond",
+        "À vérifier dans l'app avant de souscrire",
       ],
     },
   ],
@@ -271,7 +257,7 @@ export const capcutFiche: FicheData = {
     {
       question: "Le plan CapCut Pro vaut-il son prix ?",
       answer:
-        "Dépend de ton usage. Si tu exportes régulièrement en 4K, utilises les 1 400 crédits mensuels (fonctionnalités IA avancées) et le stock premium, le Pro peut se justifier, surtout à 199,99 €/an (≈ 16,66 €/mois). Sinon le plan gratuit couvre largement la majorité des créateurs solo. Un combo à envisager : CapCut gratuit pour monter + Submagic (à partir de 12 €/mois) pour le rendu sous-titres stylés FR.",
+        "Dépend de ton usage. Si tu utilises régulièrement les fonctionnalités IA avancées et le stock premium, le Pro à 23,99 €/mois (tarif App Store France, variable selon la plateforme et les promotions) peut se justifier. Sinon le plan gratuit couvre largement la majorité des créateurs solo. Un combo à envisager : CapCut gratuit pour monter + Submagic (à partir de 12 €/mois) pour le rendu sous-titres stylés FR.",
     },
     {
       question: "La question ByteDance pose-t-elle problème ?",

@@ -14,7 +14,7 @@ export const pikaFiche: FicheData = {
     ],
     origine: "USA",
     tempsLecture: 6,
-    lastCheck: "06/05/2026",
+    lastCheck: "10/07/2026",
   },
   verdict30s: [
     {
@@ -44,7 +44,7 @@ export const pikaFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan Basic gratuit (80 credits/mois, Pika 2.5 480p only, watermark). Standard à 8 $/mois en annuel (700 credits, toutes résolutions, sans watermark, pas d'usage commercial). Pro à 28 $/mois en annuel (2 300 credits, faster generations, usage commercial). Fancy à 76 $/mois en annuel (6 000 credits, fastest). Facturation USD.",
+        "Plan Basic gratuit (80 credits/mois, Pika 2.5 480p uniquement). Standard à 8 $/mois en annuel (700 credits, toutes résolutions, sans watermark). Pro à 28 $/mois en annuel (2 300 credits, générations plus rapides). Fancy à 76 $/mois en annuel (6 000 credits, générations les plus rapides). D'après la page tarifs actuelle, le téléchargement sans watermark et l'usage commercial sont listés sur tous les plans, y compris le gratuit. Facturation USD.",
     },
     {
       question: "Meilleure alternative ?",
@@ -98,7 +98,7 @@ export const pikaFiche: FicheData = {
     "Tu produis pour des clients premium qui exigent une qualité référence",
     "Tu as besoin d'API robuste pour automatiser (Runway plus mature)",
     "Tu fais du long format ou de l'éducatif linéaire",
-    "Tu veux un usage commercial et tu hésites à monter au plan Pro (28 $/mois)",
+    "Tu veux monter en volume ou en vitesse de génération (plans Pro et Fancy)",
   ],
   scoring: [
     {
@@ -141,7 +141,7 @@ export const pikaFiche: FicheData = {
       poids: 5,
       score: 6.0,
       commentaire:
-        "Restriction notable : usage commercial uniquement à partir du plan Pro (28 $/mois). Plan Standard (8 $) ne permet pas l'usage commercial. À prendre en compte si tu vends des prestations vidéo. Runway autorise l'usage commercial dès le plan Standard à 12 $/mois.",
+        "Bonne nouvelle : d'après la page tarifs actuelle de Pika, l'usage commercial est listé sur tous les plans, y compris le gratuit. Les conditions exactes peuvent évoluer, vérifie les CGU avant de vendre des prestations vidéo basées sur Pika.",
     },
   ],
   fonctionnalites: [
@@ -182,9 +182,9 @@ export const pikaFiche: FicheData = {
         "Pika 2.5 (480p uniquement)",
         "Pikascenes, Pikadditions, Pikaswaps, Pikatwists",
         "Pikaffects Image-to-Video uniquement",
-        "Téléchargements avec watermark",
-        "Pas d'usage commercial",
-        "Rollover des crédits non utilisés",
+        "Téléchargements sans watermark",
+        "Usage commercial listé sur la page tarifs",
+        "Rollover des crédits achetés",
       ],
     },
     {
@@ -199,7 +199,7 @@ export const pikaFiche: FicheData = {
         "Génération rapide",
         "Téléchargements sans watermark",
         "Achat de crédits supplémentaires",
-        "Pas d'usage commercial",
+        "Usage commercial listé sur la page tarifs",
       ],
     },
     {
@@ -274,7 +274,7 @@ export const pikaFiche: FicheData = {
     {
       question: "Usage commercial autorisé ?",
       answer:
-        "Uniquement à partir du plan Pro (28 $/mois en annuel). Les plans Basic (gratuit) et Standard (8 $/mois) ne permettent pas l'usage commercial. À retenir si tu vends des vidéos ou les utilises pour un client.",
+        "D'après la page tarifs actuelle de Pika, l'usage commercial est listé sur tous les plans, y compris Basic (gratuit) et Standard (8 $/mois). Les conditions exactes peuvent évoluer : vérifie les CGU officielles avant de vendre des vidéos ou de les utiliser pour un client.",
     },
     {
       question: "Prompts en français fonctionnent-ils ?",
@@ -294,7 +294,7 @@ export const pikaFiche: FicheData = {
   ],
   ctaFinal: {
     headline: "Prêt à tester Pika ?",
-    sub: "Plan Basic gratuit (80 credits/mois récurrent) pour découvrir. Plan Standard à 8 $/mois en annuel (700 credits, toutes résolutions, sans watermark) pour un usage régulier non commercial.",
+    sub: "Plan Basic gratuit (80 credits/mois récurrent) pour découvrir. Plan Standard à 8 $/mois en annuel (700 credits, toutes résolutions, sans watermark) pour un usage régulier.",
     buttonText: "Essayer Pika",
   },
 };

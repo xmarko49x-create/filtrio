@@ -10,7 +10,7 @@ export const opusclipVsSubmagic: ComparatifData = {
     tagline:
       "Les deux rois du short viral. Comparés sur la base de leurs fonctionnalités, de leurs plans et des retours utilisateurs publics. Le gagnant dépend de ton cas précis.",
     tempsLecture: 7,
-    lastCheck: "20/04/2026",
+    lastCheck: "10/07/2026",
   },
   verdictRapide: {
     headline: "OpusClip pour le volume. Submagic pour le rendu FR.",

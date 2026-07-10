@@ -14,7 +14,7 @@ export const heygenFiche: FicheData = {
     ],
     origine: "USA",
     tempsLecture: 8,
-    lastCheck: "23/04/2026",
+    lastCheck: "10/07/2026",
   },
   verdict30s: [
     {
@@ -47,7 +47,7 @@ export const heygenFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan Free disponible (3 vidéos/mois, vidéos jusqu'à 1 min, 720p). Creator à 29 $/mois en mensuel ou 24 $/mois en annuel (vidéos jusqu'à 30 min, 700+ Stock Video Avatars, voice cloning, 175+ langues, 1080p, sans watermark). Business à 149 $/mois (vidéos jusqu'à 60 min, 4K, seats additionnels à 20 $). Enterprise sur devis. Facturation en USD.",
+        "Plan Free disponible (3 vidéos/mois, vidéos jusqu'à 1 min). Creator à 29 $/mois en mensuel ou 24 $/mois en annuel (600 crédits/mois, vidéos jusqu'à 30 min, voice cloning, 175+ langues, 1080p, sans watermark). Pro à partir de 49 $/mois (1 000 crédits/mois, export 4K, paliers de crédits ajustables). Business à 149 $/mois (+ 20 $ par siège supplémentaire). Enterprise sur devis. Facturation en USD.",
     },
     {
       question: "Meilleure alternative ?",
@@ -211,6 +211,7 @@ export const heygenFiche: FicheData = {
       prixSub: "Mensuel · ou 24 $/mois en annuel",
       cible: "Créateurs solo, marketeurs",
       features: [
+        "600 crédits/mois",
         "Videos up to 30-mins",
         "1 Custom Digital Twin",
         "Unlimited Photo Avatars",
@@ -219,6 +220,20 @@ export const heygenFiche: FicheData = {
         "175+ languages and dialects",
         "Fast video processing · 1080p export",
         "Brand kit · Watermark removal",
+      ],
+    },
+    {
+      nom: "Pro",
+      prix: "À partir de 49 $/mois",
+      prixSub: "1 000 crédits/mois · paliers ajustables selon l'usage",
+      cible: "Créateurs avancés, production premium à l'échelle",
+      features: [
+        "Tout Creator, plus :",
+        "1 000 crédits/mois (paliers supérieurs disponibles)",
+        "Export vidéo 4K",
+        "Traitement vidéo plus rapide",
+        "Usage mensuel personnalisable",
+        "Édition et relecture des scripts de traduction",
       ],
     },
     {

@@ -14,7 +14,7 @@ export const davinciFiche: FicheData = {
     ],
     origine: "Australie (Blackmagic)",
     tempsLecture: 8,
-    lastCheck: "22/04/2026",
+    lastCheck: "10/07/2026",
   },
   verdict30s: [
     {

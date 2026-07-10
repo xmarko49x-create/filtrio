@@ -10,7 +10,7 @@ export const opusclipVsCapcut: ComparatifData = {
     tagline:
       "Le spécialiste découpe IA (OpusClip) contre l'éditeur gratuit leader (CapCut). Deux philosophies opposées : automatisation premium vs éditeur manuel polyvalent. Voici laquelle convient à ton profil.",
     tempsLecture: 5,
-    lastCheck: "20/04/2026",
+    lastCheck: "10/07/2026",
   },
   verdictRapide: {
     headline: "OpusClip pour l'automatisation. CapCut pour la gratuité complète.",

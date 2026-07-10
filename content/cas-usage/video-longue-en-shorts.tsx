@@ -10,7 +10,7 @@ export const videoLongueEnShorts: CasUsageData = {
       "Tu as un podcast, un live ou une conférence d'une à deux heures à recycler en shorts verticaux pour TikTok, Reels ou YouTube Shorts. Voici notre classement des outils qui livrent le meilleur résultat, le gagnant, et les pièges à éviter.",
     tempsLecture: 6,
     outilsAnalyses: 5,
-    lastCheck: "10/06/2026",
+    lastCheck: "10/07/2026",
   },
   verdict: {
     tag: "Le verdict en 30 secondes",
@@ -165,7 +165,7 @@ export const videoLongueEnShorts: CasUsageData = {
       ],
       verdict:
         "Éditeur web polyvalent, fonctionnalités découpe IA en progression mais pas le spécialiste. Intéressant si tu utilises déjà Veed pour autre chose.",
-      priceDisplay: { label: "À partir de", value: "12 $/mois" },
+      priceDisplay: { label: "À partir de", value: "11 €/mois" },
     },
   ],
   pourquoiGagne: [

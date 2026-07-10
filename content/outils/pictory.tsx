@@ -14,7 +14,7 @@ export const pictoryFiche: FicheData = {
     ],
     origine: "USA",
     tempsLecture: 6,
-    lastCheck: "06/05/2026",
+    lastCheck: "10/07/2026",
   },
   verdict30s: [
     {

@@ -14,7 +14,7 @@ export const riversideFiche: FicheData = {
     ],
     origine: "Israël",
     tempsLecture: 8,
-    lastCheck: "23/04/2026",
+    lastCheck: "10/07/2026",
   },
   verdict30s: [
     {
@@ -44,11 +44,12 @@ export const riversideFiche: FicheData = {
       question: "Combien ?",
       answer: (
         <>
-          À partir de 24 $/mois. Riverside propose aussi un plan gratuit pour
-          découvrir l&apos;outil. Les plans payants sont affichés en dollars
-          américains sur le site officiel. Pour les besoins avancés ou équipe,
-          il faut passer par une offre plus élevée ou une prise de contact
-          commerciale.
+          À partir de 24 €/mois en annuel (29 €/mois en mensuel). Riverside
+          propose aussi un plan gratuit pour découvrir l&apos;outil et un essai
+          gratuit de 14 jours sur les plans payants. Les prix sont affichés en
+          euros pour les visiteurs européens. Pour les besoins avancés ou
+          équipe, il faut passer par une offre plus élevée ou une prise de
+          contact commerciale.
         </>
       ),
     },
@@ -116,7 +117,7 @@ export const riversideFiche: FicheData = {
       poids: 20,
       score: 7.5,
       commentaire:
-        "Plan gratuit disponible pour tester. Point d'entrée payant affiché à partir de 24 $/mois (USD) sur le site officiel. Positionnement dans la fourchette haute de sa catégorie, avec une spécialisation forte sur l'enregistrement distant pro.",
+        "Plan gratuit disponible pour tester, essai 14 jours sur les plans payants. Point d'entrée payant affiché à partir de 24 €/mois en annuel sur le site officiel (affichage en euros pour les visiteurs européens). Positionnement dans la fourchette haute de sa catégorie, avec une spécialisation forte sur l'enregistrement distant pro.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
@@ -182,25 +183,23 @@ export const riversideFiche: FicheData = {
   plans: [
     {
       nom: "Free",
-      prix: "0 $",
-      prixSub: "2 heures one-off (crédit unique, pas mensuel)",
+      prix: "0 €",
+      prixSub: "Plan gratuit pour découvrir · conditions détaillées à vérifier sur riverside.com",
       cible: "Test avant engagement",
       features: [
-        "2 heures de multi-track recording (crédit total, non renouvelable)",
-        "Single track recording illimité",
-        "Vidéo jusqu'à 720p",
-        "Avec watermark",
+        "Permet de tester l'enregistrement distant avant de s'engager",
+        "Quotas et limitations détaillés sur la page Tarifs officielle",
       ],
     },
     {
       nom: "Pro",
-      prix: "29 $/mois",
-      prixSub: "Mensuel · ou 24 $/mois en annuel",
+      prix: "29 €/mois",
+      prixSub: "Mensuel · ou 24 €/mois en annuel",
       cible: "Podcasteurs et créateurs réguliers",
       features: [
         "Essai gratuit 14 jours",
-        "Qualité studio 4K vidéo · 48 kHz audio",
-        "15 heures de multi-track recording par mois",
+        "1 studio · qualité studio 4K vidéo · 48 kHz audio",
+        "15 heures de téléchargements multi-pistes par mois",
         "Single track illimité",
         "Teleprompter · sans watermark",
         "Édition textuelle illimitée · Outils IA (Magic Audio, contact visuel corrigé, transcriptions, suppression des silences et hésitations)",
@@ -208,26 +207,26 @@ export const riversideFiche: FicheData = {
       ],
     },
     {
-      nom: "Live",
-      prix: "39 $/mois",
-      prixSub: "Mensuel · ou 34 $/mois en annuel",
-      cible: "Créateurs live et streamers",
+      nom: "Grow",
+      prix: "39 €/mois",
+      prixSub: "Mensuel · ou 34 €/mois en annuel (anciennement plan Live)",
+      cible: "Créateurs live qui développent leur audience",
       features: [
-        "Tout Pro inclus",
+        "Tout Pro inclus · 2 studios · 20 heures multi-pistes/mois",
         "Live stream full HD 1080p",
-        "Multistreaming vers YouTube, Facebook, LinkedIn, Instagram, X, Twitch",
+        "Multistreaming vers YouTube, Facebook, LinkedIn, X, Twitch",
         "Diffusion RTMP personnalisée",
-        "Omnichat · interventions audience en direct · chat de diffusion",
-        "Habillages graphiques personnalisés, bandeaux titre",
+        "Programmation réseaux sociaux · newsletter · site créateur",
+        "Hébergement podcast pour 2 émissions · miniatures IA",
       ],
     },
     {
       nom: "Webinar",
-      prix: "99 $/mois",
-      prixSub: "Mensuel · ou 79 $/mois en annuel",
+      prix: "99 €/mois",
+      prixSub: "Mensuel · ou 79 €/mois en annuel",
       cible: "Événements et webinaires",
       features: [
-        "Tout Live inclus",
+        "Tout Grow inclus · 3 studios · 25 heures multi-pistes/mois",
         "Webinaires jusqu'à 100 inscrits",
         "Pré-enregistrement et diffusion façon live",
         "Sessions programmées illimitées",
@@ -309,7 +308,7 @@ export const riversideFiche: FicheData = {
   ],
   ctaFinal: {
     headline: "Prêt à enregistrer en qualité studio ?",
-    sub: "Le plan gratuit permet de tester la qualité d'enregistrement distant avec un invité avant de t'engager. Plans payants à partir de 24 $/mois (USD).",
+    sub: "Le plan gratuit permet de tester la qualité d'enregistrement distant avec un invité avant de t'engager. Plans payants à partir de 24 €/mois en annuel, essai gratuit 14 jours.",
     buttonText: "Essayer Riverside",
   },
 };

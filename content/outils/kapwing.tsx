@@ -14,7 +14,7 @@ export const kapwingFiche: FicheData = {
     ],
     origine: "USA",
     tempsLecture: 7,
-    lastCheck: "22/04/2026",
+    lastCheck: "10/07/2026",
   },
   verdict30s: [
     {
@@ -263,7 +263,7 @@ export const kapwingFiche: FicheData = {
           <Link href="/outils/veed" className="text-yellow-400 hover:underline">
             Veed
           </Link>{" "}
-          Creator à 10,75 €/mois plus polyvalent, ou{" "}
+          Creator à 11 €/mois plus polyvalent, ou{" "}
           <Link href="/outils/capcut" className="text-sky-400 hover:underline">
             CapCut
           </Link>{" "}

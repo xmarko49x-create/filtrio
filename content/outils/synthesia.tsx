@@ -14,13 +14,13 @@ export const synthesiaFiche: FicheData = {
     ],
     origine: "UK",
     tempsLecture: 8,
-    lastCheck: "01/07/2026",
+    lastCheck: "10/07/2026",
   },
   verdict30s: [
     {
       question: "C'est quoi ?",
       answer:
-        "Plateforme d'avatars IA vidéo lancée en 2017, positionnée B2B. Tu écris un script, tu choisis un avatar parmi 230+ préconçus (ou tu clones un dirigeant), Synthesia génère une vidéo formation ou communication. Spécialité : multilingue 140+ langues + conformité entreprise.",
+        "Plateforme d'avatars IA vidéo lancée en 2017, positionnée B2B. Tu écris un script, tu choisis un avatar parmi 240+ préconçus (ou tu clones un dirigeant), Synthesia génère une vidéo formation ou communication. Spécialité : multilingue 140+ langues + conformité entreprise.",
     },
     {
       question: "Pour qui ?",
@@ -47,7 +47,7 @@ export const synthesiaFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan Basic gratuit (1 200 crédits/mois, jusqu'à 10 minutes de vidéo/mois, sans carte bancaire). Starter à 12 €/mois en annuel (19 €/mois en mensuel) avec assistant vidéo, doublage IA et avatars Synthesia. Creator (populaire) à 29 €/mois en annuel (39 €/mois en mensuel) avec 5 avatars personnels, API et vidéos interactives. Enterprise sur mesure pour les équipes (minutes illimitées, 80+ langues, SSO). Facturation EUR, vérifié le 01/07/2026.",
+        "Plan Basic gratuit (1 200 crédits/mois, jusqu'à 10 minutes de vidéo/mois, sans carte bancaire). Starter à 12 €/mois en annuel (19 €/mois en mensuel) avec assistant vidéo, doublage IA et avatars Synthesia. Creator (populaire) à 29 €/mois en annuel (39 €/mois en mensuel) avec 5 avatars personnels, API et vidéos interactives. Enterprise sur mesure pour les équipes (minutes illimitées, 80+ langues, SSO). Facturation EUR, vérifié le 10/07/2026.",
     },
     {
       question: "Meilleure alternative ?",
@@ -123,7 +123,7 @@ export const synthesiaFiche: FicheData = {
       poids: 20,
       score: 7.2,
       commentaire:
-        "Tarif Creator comparable à HeyGen (29 €/mois en annuel chez Synthesia) si tu cherches une plateforme B2B solide. S'amortit surtout en entreprise grâce aux fonctionnalités Enterprise (traductions 80+ langues, 230+ avatars libres de droits, SAML/SSO). Peu adapté au solo créateur.",
+        "Tarif Creator comparable à HeyGen (29 €/mois en annuel chez Synthesia) si tu cherches une plateforme B2B solide. S'amortit surtout en entreprise grâce aux fonctionnalités Enterprise (traductions 80+ langues, 240+ avatars libres de droits, SAML/SSO). Peu adapté au solo créateur.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
@@ -308,7 +308,7 @@ export const synthesiaFiche: FicheData = {
   ],
   ctaFinal: {
     headline: "Prêt à tester Synthesia ?",
-    sub: "Plan gratuit (3 min/mois) suffisant pour générer une démo et tester le rendu avatar sur un script de présentation entreprise.",
+    sub: "Plan gratuit (jusqu'à 10 minutes de vidéo/mois) suffisant pour générer une démo et tester le rendu avatar sur un script de présentation entreprise.",
     buttonText: "Essayer Synthesia",
   },
 };

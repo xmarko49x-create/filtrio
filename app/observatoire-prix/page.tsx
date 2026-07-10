@@ -13,10 +13,10 @@ import { AuthorByline } from "@/components/AuthorByline";
 import { AuthorBio } from "@/components/AuthorBio";
 import { OUTILS, CATEGORIE_LABELS } from "@/lib/outils";
 
-const LAST_UPDATED = "16/06/2026";
+const LAST_UPDATED = "10/07/2026";
 
 export const metadata: Metadata = {
-  title: "Observatoire des prix des outils IA vidéo, édition juin 2026",
+  title: "Observatoire des prix des outils IA vidéo, édition juillet 2026",
   description:
     "Les prix réels de 18 outils IA vidéo (Submagic, OpusClip, ElevenLabs, HeyGen, Runway...) relevés sur les pages officielles et datés. Devises, pièges mensuel vs annuel, modèles à crédits : ce que les pages tarifs ne montrent pas.",
   alternates: {
@@ -26,24 +26,24 @@ export const metadata: Metadata = {
 
 /** Date de dernière vérification du prix, par fiche (reprise des fiches publiées). */
 const VERIF_DATES: Record<string, string> = {
-  submagic: "16/06/2026",
-  opusclip: "16/06/2026",
-  tubebuddy: "23/04/2026",
-  canva: "23/04/2026",
-  runway: "23/04/2026",
-  descript: "28/05/2026",
-  elevenlabs: "16/06/2026",
-  davinci: "22/04/2026",
-  synthesia: "23/04/2026",
-  riverside: "23/04/2026",
-  vidiq: "23/04/2026",
-  heygen: "23/04/2026",
-  capcut: "23/04/2026",
-  veed: "23/04/2026",
-  invideo: "22/04/2026",
-  kapwing: "22/04/2026",
-  pictory: "06/05/2026",
-  pika: "06/05/2026",
+  submagic: "10/07/2026",
+  opusclip: "10/07/2026",
+  tubebuddy: "10/07/2026",
+  canva: "10/07/2026",
+  runway: "10/07/2026",
+  descript: "10/07/2026",
+  elevenlabs: "10/07/2026",
+  davinci: "10/07/2026",
+  synthesia: "10/07/2026",
+  riverside: "10/07/2026",
+  vidiq: "10/07/2026",
+  heygen: "10/07/2026",
+  capcut: "10/07/2026",
+  veed: "10/07/2026",
+  invideo: "10/07/2026",
+  kapwing: "10/07/2026",
+  pictory: "10/07/2026",
+  pika: "10/07/2026",
 };
 
 const FAQ = [
@@ -55,7 +55,7 @@ const FAQ = [
   {
     question: "Quels outils affichent leurs prix en euros ?",
     answer:
-      "Certains outils affichent directement des prix en euros depuis la France, comme Submagic, Synthesia ou Veed. D'autres restent en dollars, notamment plusieurs outils américains de génération vidéo, de voix IA ou de montage. CapCut fait exception : son offre gratuite est visible, mais le tarif Pro peut varier selon le pays, l'appareil ou le canal d'abonnement.",
+      "Certains outils affichent directement des prix en euros depuis la France, comme Submagic, Synthesia, Veed ou Riverside. D'autres restent en dollars, notamment plusieurs outils américains de génération vidéo, de voix IA ou de montage. CapCut fait exception : son offre gratuite est visible, mais le tarif Pro peut varier selon le pays, l'appareil ou le canal d'abonnement.",
   },
   {
     question: "Pourquoi le prix affiché n'est-il pas celui que je paierai ?",
@@ -100,8 +100,8 @@ const ECARTS_MENSUEL_ANNUEL = [
   {
     outil: "Riverside",
     plan: "Pro",
-    annuel: "24 $/mois",
-    mensuel: "29 $/mois",
+    annuel: "24 €/mois",
+    mensuel: "29 €/mois",
     ecart: "+21 %",
   },
 ];
@@ -131,7 +131,7 @@ export default function ObservatoirePrixPage() {
               name: "Filtrio",
               url: "https://www.filtrio.fr",
             },
-            dateModified: "2026-06-10",
+            dateModified: "2026-07-10",
             inLanguage: "fr",
             isAccessibleForFree: true,
           },
@@ -144,7 +144,7 @@ export default function ObservatoirePrixPage() {
         <div className="pointer-events-none absolute -top-24 left-1/2 -translate-x-[60%] w-[560px] h-[560px] bg-emerald-500/10 rounded-full blur-3xl" />
         <div className="relative max-w-5xl mx-auto px-6 pt-16 pb-10">
           <div className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-3">
-            Données vérifiées · Édition juin 2026
+            Données vérifiées · Édition juillet 2026
           </div>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-5">
             Observatoire des prix des outils IA vidéo.
@@ -167,7 +167,7 @@ export default function ObservatoirePrixPage() {
       <section className="max-w-5xl mx-auto px-6 py-10">
         <div className="grid md:grid-cols-3 gap-5">
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-            <div className="text-3xl font-bold text-emerald-400 mb-1">12 / 18</div>
+            <div className="text-3xl font-bold text-emerald-400 mb-1">11 / 18</div>
             <p className="text-sm text-slate-300 leading-relaxed">
               outils facturent en <strong className="text-slate-100">dollars US</strong>.
               Le montant débité en euros dépend du taux de change et des
@@ -183,10 +183,10 @@ export default function ObservatoirePrixPage() {
             </p>
           </div>
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-            <div className="text-3xl font-bold text-emerald-400 mb-1">14 / 18</div>
+            <div className="text-3xl font-bold text-emerald-400 mb-1">15 / 18</div>
             <p className="text-sm text-slate-300 leading-relaxed">
               outils proposent une <strong className="text-slate-100">version gratuite durable</strong>.
-              2 n&apos;offrent qu&apos;un essai limité, 2 n&apos;ont aucune
+              2 n&apos;offrent qu&apos;un essai limité, 1 n&apos;a aucune
               offre gratuite.
             </p>
           </div>
@@ -306,7 +306,7 @@ export default function ObservatoirePrixPage() {
               US. Pour un créateur qui paie en euros, le montant réellement
               débité dépend du taux de change du jour et des éventuels frais de
               ta banque. Quelques outils affichent directement des prix en euros
-              depuis la France, comme Submagic, Synthesia, VidIQ, Veed et Canva.
+              depuis la France, comme Submagic, Synthesia, VidIQ, Veed, Canva et Riverside.
               CapCut fait exception : l&apos;offre gratuite est visible, mais le
               tarif Pro peut varier selon le pays, l&apos;appareil ou le canal
               d&apos;abonnement. À budget serré, c&apos;est un critère de choix
@@ -335,11 +335,11 @@ export default function ObservatoirePrixPage() {
               4. « Gratuit » recouvre trois réalités différentes.
             </h3>
             <p className="text-slate-300 leading-relaxed">
-              Sur les 18 outils : 14 proposent une version gratuite utilisable
+              Sur les 18 outils : 15 proposent une version gratuite utilisable
               dans la durée (dont 2 outils intégralement gratuits dans leur
               version de base, CapCut et DaVinci Resolve), 2 n&apos;offrent
               qu&apos;un essai limité qui se consomme vite (Submagic, Pictory),
-              et 2 n&apos;ont aucune offre gratuite (TubeBuddy, InVideo). Si tu
+              et 1 seul n&apos;a aucune offre gratuite (TubeBuddy). Si tu
               veux tester sérieusement avant de payer, cette distinction
               change tout. Pour Submagic en particulier, des options gratuites
               ou moins chères existent : on les compare sur notre page{" "}
@@ -385,7 +385,7 @@ export default function ObservatoirePrixPage() {
               <strong className="text-slate-100">environ 12,80 € par mois</strong>{" "}
               pour les outils facturés en euros, et{" "}
               <strong className="text-slate-100">environ 15,60 $ par mois</strong>{" "}
-              pour ceux facturés en dollars. Un repère utile, mais à manier avec
+              pour ceux facturés en dollars (calcul basé sur notre relevé de juin 2026). Un repère utile, mais à manier avec
               prudence : la moyenne écrase les écarts (de 3,99 $ à 29 $) et ne
               dit rien des modèles à crédits, où le coût réel dépend de ton
               volume de production.

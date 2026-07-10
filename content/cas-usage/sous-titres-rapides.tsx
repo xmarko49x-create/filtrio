@@ -10,7 +10,7 @@ export const sousTitresRapides: CasUsageData = {
       "Tu veux des sous-titres automatiques en français en moins de 2 minutes par vidéo, sans sacrifier la qualité. Voici notre classement des outils qui livrent le rendu le plus rapide, le gagnant, et les pièges à éviter.",
     tempsLecture: 5,
     outilsAnalyses: 5,
-    lastCheck: "01/06/2026",
+    lastCheck: "10/07/2026",
   },
   verdict: {
     tag: "Le verdict en 30 secondes",
@@ -157,7 +157,7 @@ export const sousTitresRapides: CasUsageData = {
       ],
       verdict:
         "Correct si tu utilises déjà Veed pour d'autres besoins. Pas le plus rapide sur ce cas précis.",
-      priceDisplay: { label: "À partir de", value: "12 $/mois" },
+      priceDisplay: { label: "À partir de", value: "11 €/mois" },
     },
     {
       slug: "kapwing",

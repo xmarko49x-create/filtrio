@@ -14,7 +14,7 @@ export const veedFiche: FicheData = {
     ],
     origine: "Royaume-Uni",
     tempsLecture: 7,
-    lastCheck: "01/07/2026",
+    lastCheck: "10/07/2026",
   },
   verdict30s: [
     {
@@ -50,7 +50,7 @@ export const veedFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan Free (0 €, 10 min d'export, 720p, 2 Go de stockage). Creator à 11 €/mois par editor (annuel, taxes incluses, 6 000 credits/an) pour des vidéos sociales sans watermark. Pro (populaire) à 23 €/mois par editor (annuel, taxes incluses, 30 000 credits/an) pour du pro-level avec Brand Kits multiples et 4K. Studio à 37 €/mois par editor (annuel, taxes incluses, 180 000 credits/an) avec Project Analytics. Enterprise sur devis. Facturation EUR, vérifié le 01/07/2026.",
+        "Plan Free (0 €, 10 min d'export, 720p, 2 Go de stockage). Creator à 11 €/mois par editor (annuel, taxes incluses, 6 000 credits/an) pour des vidéos sociales sans watermark. Pro (populaire) à 23 €/mois par editor (annuel, taxes incluses, 30 000 credits/an) pour du pro-level avec Brand Kits multiples et 4K. Studio à 37 €/mois par editor (annuel, taxes incluses, 180 000 credits/an) avec Project Analytics. Enterprise sur devis. Facturation EUR, vérifié le 10/07/2026.",
     },
     {
       question: "Meilleure alternative ?",
@@ -91,7 +91,7 @@ export const veedFiche: FicheData = {
     "Tu travailles depuis plusieurs ordinateurs différents",
     "Tu fais des vidéos B2B, formation, interne, explicatives",
     "Tu veux un seul outil pour couvrir plusieurs besoins",
-    "Tu préfères un tarif pro prévisible à 12-24 $/mois",
+    "Tu préfères un tarif pro prévisible à 11-23 €/mois",
     "Tu veux tester avec un plan gratuit (même limité)",
   ],
   pasPourQui: [

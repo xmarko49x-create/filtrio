@@ -18,7 +18,7 @@ export const runwayVsPika: ComparatifData = {
     tagline:
       "Les deux outils de génération vidéo IA les plus cités en 2026. Runway joue la carte qualité pro + écosystème VFX. Pika joue l'accessibilité et la rapidité. Voici lequel correspond à ton profil créatif.",
     tempsLecture: 5,
-    lastCheck: "20/04/2026",
+    lastCheck: "10/07/2026",
   },
   verdictRapide: {
     headline: "Runway pour la qualité pro. Pika pour l'accessibilité.",

@@ -74,7 +74,7 @@ const ALTERNATIVES: Alternative[] = [
       "Sous-titres FR moins soignés que Submagic. Moins de templates viraux prêts. Performance IA généraliste, pas spécialisée.",
     verdict:
       "Alternative si tu veux un outil plus polyvalent que Submagic et moins spécialisé. Bon équilibre features/prix.",
-    priceLabel: "À partir de 10,75 €/mois",
+    priceLabel: "À partir de 11 €/mois",
   },
   {
     slug: "riverside",
@@ -86,7 +86,7 @@ const ALTERNATIVES: Alternative[] = [
       "N'a rien à voir avec les shorts viraux. À considérer uniquement si tu cherches un outil podcast distant, pas un remplaçant Submagic.",
     verdict:
       "Fausse alternative dans la plupart des cas. Pertinent uniquement si tu as mal identifié ton vrai besoin.",
-    priceLabel: "À partir de 24 $/mois",
+    priceLabel: "À partir de 24 €/mois",
   },
 ];
 
@@ -140,7 +140,7 @@ const TABLE_ROWS: TableRow[] = [
   {
     nom: "Veed",
     gratuit: "Oui",
-    prix: "10,75 €/mois",
+    prix: "11 €/mois",
     meilleurPour: "Éditeur web tout-en-un",
     sousTitresFR: "Moins soignés que Submagic",
   },
@@ -173,7 +173,7 @@ export default function AlternativesASubmagicPage() {
         </div>
         <div className="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 rounded-full px-4 py-1.5 text-xs text-slate-300 mb-6">
           <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-          Mise à jour · juin 2026
+          Mise à jour · juillet 2026
         </div>
         <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-6 tracking-tight">
           Alternative à <span className="text-amber-400">Submagic</span> : les
@@ -548,7 +548,7 @@ export default function AlternativesASubmagicPage() {
                 <span className="faq-chevron transition-transform text-amber-400">+</span>
               </summary>
               <div className="text-slate-400 mt-4 leading-relaxed">
-                Canva et Veed proposent la facturation EUR native avec TVA FR. Submagic facture en USD uniquement. Si la conformité comptable FR est critique, ces alternatives te simplifient la vie côté admin.
+                Canva et Veed proposent la facturation EUR native avec TVA FR. Submagic affiche également ses prix en euros pour les visiteurs européens (12 à 41 €/mois en annuel). Vérifie la devise réellement facturée sur ta facture avant de trancher si la conformité comptable FR est critique.
               </div>
             </details>
           </div>

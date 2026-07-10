@@ -10,7 +10,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
       "C'est la question qui revient le plus chez les créateurs FR. Les deux outils sont excellents mais ne résolvent pas le même problème. Voici le choix guidé en 4 questions pour savoir lequel prendre, ou quand utiliser les deux.",
     tempsLecture: 5,
     outilsAnalyses: 2,
-    lastCheck: "12/06/2026",
+    lastCheck: "10/07/2026",
   },
   verdict: {
     tag: "La recommandation tout de suite",

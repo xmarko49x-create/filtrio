@@ -90,7 +90,7 @@ export const vidiqVsTubebuddy: ComparatifData = {
     "Tu as besoin d'analyser la concurrence en profondeur",
     "Tu veux modifier en masse les métadonnées de tes vidéos",
     "Tu es un YouTubeur qui aime tester et analyser plutôt que laisser l'IA décider",
-    "Tu cherches un tarif d'entrée bas (Pro à 3,99 $/mois en annuel)",
+    "Tu cherches un tarif d'entrée bas (Pro à 3,60 $/mois en paiement annuel)",
   ],
   casUsage: [
     {
@@ -196,7 +196,7 @@ export const vidiqVsTubebuddy: ComparatifData = {
           <Link href="/outils/tubebuddy" className="text-orange-400 hover:underline">
             TubeBuddy
           </Link>{" "}
-          à partir de 3,99 $/mois (Pro annuel), tarif d&apos;entrée
+          à partir de 3,60 $/mois (Pro, paiement annuel), tarif d&apos;entrée
           sensiblement plus bas sur le papier.
         </>
       ),

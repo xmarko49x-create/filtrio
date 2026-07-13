@@ -127,7 +127,7 @@ export const miniaturesYoutubeIa: CasUsageData = {
       ],
       verdict:
         "Pas un générateur de miniatures à proprement parler, mais permet de tester A/B plusieurs miniatures existantes pour mesurer celle qui marche le mieux. Complémentaire à Canva pour optimiser le CTR.",
-      priceDisplay: { label: "À partir de", value: "3,99 $/mois" },
+      priceDisplay: { label: "À partir de", value: "3,60 $/mois" },
     },
     {
       slug: "adobe-express",

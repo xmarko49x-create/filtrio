@@ -154,7 +154,15 @@ export default function ObservatoirePrixPage() {
             réellement payé. Devises en dollars, engagement annuel par défaut,
             modèles à crédits : voici les tarifs réels de 18 outils IA vidéo,
             relevés un par un sur les pages officielles, avec leur date de
-            vérification.
+            vérification. Pour les chiffres clés prêts à citer, voir aussi la
+            page{" "}
+            <Link
+              href="/statistiques-outils-ia-video"
+              className="text-emerald-400 hover:underline"
+            >
+              Statistiques outils IA vidéo
+            </Link>
+            .
           </p>
           <AuthorByline
             lastCheck={LAST_UPDATED}
@@ -186,8 +194,8 @@ export default function ObservatoirePrixPage() {
             <div className="text-3xl font-bold text-emerald-400 mb-1">15 / 18</div>
             <p className="text-sm text-slate-300 leading-relaxed">
               outils proposent une <strong className="text-slate-100">version gratuite durable</strong>.
-              2 n&apos;offrent qu&apos;un essai limité, 1 n&apos;a aucune
-              offre gratuite.
+              2 n&apos;offrent qu&apos;un essai limité, 1 fournit une
+              allocation unique de crédits (Runway).
             </p>
           </div>
         </div>
@@ -335,13 +343,13 @@ export default function ObservatoirePrixPage() {
               4. « Gratuit » recouvre trois réalités différentes.
             </h3>
             <p className="text-slate-300 leading-relaxed">
-              Sur les 18 outils : 15 proposent une version gratuite utilisable
-              dans la durée (dont 2 outils intégralement gratuits dans leur
-              version de base, CapCut et DaVinci Resolve), 2 n&apos;offrent
-              qu&apos;un essai limité qui se consomme vite (Submagic, Pictory),
-              et 1 seul n&apos;a aucune offre gratuite (TubeBuddy). Si tu
-              veux tester sérieusement avant de payer, cette distinction
-              change tout. Pour Submagic en particulier, des options gratuites
+              Sur les 18 outils : 15 proposent un plan gratuit durable (dont 2
+              outils intégralement gratuits dans leur version de base, CapCut
+              et DaVinci Resolve), 2 n&apos;offrent qu&apos;un essai limité qui
+              se consomme vite (Submagic, Pictory), et 1 fournit une allocation
+              gratuite unique de crédits qui ne se renouvelle pas (Runway, 125
+              crédits). Si tu veux tester sérieusement avant de payer, cette
+              distinction change tout. Pour Submagic en particulier, des options gratuites
               ou moins chères existent : on les compare sur notre page{" "}
               <Link
                 href="/comparatifs/alternatives-a-submagic"
@@ -355,13 +363,13 @@ export default function ObservatoirePrixPage() {
 
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-7">
             <h3 className="text-xl font-bold mb-3 text-emerald-400">
-              5. Un écart de 1 à 7 sur l&apos;entrée de gamme.
+              5. Un écart de 1 à 8 sur l&apos;entrée de gamme en dollars.
             </h3>
             <p className="text-slate-300 leading-relaxed">
-              Hors outils gratuits et achat unique, le premier plan payant va
-              de 3,99 $/mois (TubeBuddy) à 29 $/mois (HeyGen). Un écart de
-              plus de 1 à 7 pour des pages d&apos;accueil qui promettent
-              souvent la même chose. Le prix ne dit rien de la valeur pour TON
+              Parmi les outils facturés en dollars, le premier plan payant
+              relevé va de 3,60 $/mois (TubeBuddy Pro, paiement annuel) à
+              29 $/mois (HeyGen Creator, mensuel). Un écart de 1 à 8 pour des
+              pages d&apos;accueil qui promettent souvent la même chose. Le prix ne dit rien de la valeur pour TON
               usage : c&apos;est exactement ce que nos{" "}
               <Link href="/outils" className="text-emerald-400 hover:underline">
                 fiches
@@ -386,7 +394,7 @@ export default function ObservatoirePrixPage() {
               pour les outils facturés en euros, et{" "}
               <strong className="text-slate-100">environ 15,60 $ par mois</strong>{" "}
               pour ceux facturés en dollars (calcul basé sur notre relevé de juin 2026). Un repère utile, mais à manier avec
-              prudence : la moyenne écrase les écarts (de 3,99 $ à 29 $) et ne
+              prudence : la moyenne écrase les écarts (de 3,60 $ à 29 $) et ne
               dit rien des modèles à crédits, où le coût réel dépend de ton
               volume de production.
             </p>

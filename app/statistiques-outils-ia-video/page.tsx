@@ -19,24 +19,24 @@ const SAMPLE_SIZE = 18;
 export const metadata: Metadata = {
   title: "Statistiques outils IA vidéo 2026 : prix, devises, crédits",
   description:
-    "12 statistiques vérifiées sur les prix de 18 outils IA vidéo : 61 % facturent en dollars, jusqu'à +100 % d'écart entre mensuel et annuel, montée du modèle à crédits. Données datées, méthodologie publique, CSV téléchargeable, librement citables.",
+    "11 statistiques vérifiées sur les prix de 18 outils IA vidéo : 61 % affichés ou facturés en dollars, jusqu'à +100 % d'écart entre mensuel et annuel, montée du modèle à crédits. Données datées, méthodologie publique, CSV téléchargeable, librement citables.",
   alternates: {
     canonical: "https://www.filtrio.fr/statistiques-outils-ia-video",
   },
   openGraph: {
     title: "Statistiques outils IA vidéo 2026, Filtrio",
     description:
-      "12 statistiques vérifiées sur les prix de 18 outils IA vidéo. Données datées, librement citables avec lien.",
+      "11 statistiques vérifiées sur les prix de 18 outils IA vidéo. Données datées, librement citables avec lien.",
   },
 };
 
-/** Les 12 statistiques citables. Chaque chiffre est recalculable depuis l'observatoire. */
+/** Les 11 statistiques citables. Chaque chiffre est recalculable depuis l'observatoire. */
 const STATS = [
   {
     chiffre: "61 %",
-    titre: "des outils IA vidéo facturent en dollars US",
+    titre: "affichent ou facturent leurs abonnements en dollars US",
     detail:
-      "11 outils sur 18 affichaient ou facturaient leurs abonnements en dollars lors de notre vérification effectuée depuis la France. Pour un acheteur français, le montant réellement débité dépend alors du taux de change et des frais bancaires.",
+      "11 outils sur 18 affichaient ou facturaient leurs abonnements en dollars lors de notre vérification effectuée depuis la France. Pour un acheteur français, le montant réellement débité peut dépendre du taux de change et d'éventuels frais bancaires.",
   },
   {
     chiffre: "+21 % à +100 %",
@@ -48,7 +48,7 @@ const STATS = [
     chiffre: "+57 %",
     titre: "de surcoût mensuel moyen sur les plans vérifiés",
     detail:
-      "Moyenne des 4 écarts mensuel/annuel vérifiés ci-dessus. Le prix mis en avant sur une page tarifs correspond presque toujours à un engagement de 12 mois.",
+      "Sur ces quatre plans, le prix mensuel mis en avant correspondait à un engagement annuel, tandis que le paiement sans engagement coûtait en moyenne 57 % plus cher.",
   },
   {
     chiffre: "83 %",
@@ -57,22 +57,16 @@ const STATS = [
       "15 outils sur 18 proposent un plan gratuit durable. Submagic et Pictory proposent seulement un essai limité, tandis que Runway fournit une allocation gratuite unique de crédits qui ne se renouvelle pas.",
   },
   {
-    chiffre: "11 %",
-    titre: "seulement sont intégralement gratuits dans leur version de base",
-    detail:
-      "2 outils sur 18 : CapCut et DaVinci Resolve. Partout ailleurs, la version gratuite est un point d'entrée limité vers un abonnement payant.",
-  },
-  {
     chiffre: "de 3,60 $ à 29 $",
     titre: "par mois : l'étendue des premiers plans payants en dollars",
     detail:
       "Parmi les outils facturés en dollars, le premier palier payant relevé va de 3,60 $/mois (TubeBuddy Pro, paiement annuel) à 29 $/mois (HeyGen Creator, paiement mensuel).",
   },
   {
-    chiffre: "≥ 33 %",
+    chiffre: "≥ 44 %",
     titre: "fonctionnent partiellement ou totalement avec des crédits",
     detail:
-      "Au moins 6 outils sur 18 (ElevenLabs, Runway, Synthesia, InVideo, Pika, et Submagic pour ses fonctions IA avancées). Le prix d'abonnement ne suffit plus à prévoir le coût réel, qui dépend du volume de production.",
+      "Au moins 8 outils sur 18 : ElevenLabs, Runway, Synthesia, InVideo, Pika, OpusClip, Pictory, et Submagic pour certaines fonctionnalités IA. Le prix d'abonnement ne suffit plus à prévoir le coût réel, qui dépend du volume de production.",
   },
   {
     chiffre: "22 %",
@@ -84,13 +78,13 @@ const STATS = [
     chiffre: "2 sur 18",
     titre: "n'offrent qu'un essai gratuit limité, qui se consomme une fois",
     detail:
-      "Submagic (essai de 3 vidéos) et Pictory (essai gratuit limité). Un point d'entrée à ne pas confondre avec un plan gratuit durable : une fois l'essai consommé, il faut payer pour continuer.",
+      "Submagic (essai de 3 vidéos) et Pictory (essai de 14 jours). Un point d'entrée à ne pas confondre avec un plan gratuit durable : une fois l'essai consommé, il faut payer pour continuer.",
   },
   {
     chiffre: "39 %",
     titre: "affichent des prix en euros pour les visiteurs français",
     detail:
-      "7 outils sur 18 (Submagic, Synthesia, VidIQ, Veed, Canva, CapCut, Riverside). Un critère de choix à part entière quand la conformité comptable compte.",
+      "7 outils sur 18 (Submagic, Synthesia, VidIQ, Veed, Canva, CapCut, Riverside). Un élément utile pour comparer son budget en euros et limiter les écarts liés à la conversion monétaire.",
   },
   {
     chiffre: "1 sur 18",
@@ -100,9 +94,9 @@ const STATS = [
   },
   {
     chiffre: "1 sur 18",
-    titre: "seul outil propose encore une licence perpétuelle",
+    titre: "seul outil propose sa version payante en achat unique",
     detail:
-      "DaVinci Resolve Studio (295 $, achat unique, mises à jour incluses). Partout ailleurs, l'abonnement est la norme, complété ou remplacé par des crédits.",
+      "DaVinci Resolve Studio est affiché à 295 $ en achat unique. Pour les 17 autres outils du panel, l'accès payant repose sur au moins une formule d'abonnement.",
   },
 ];
 
@@ -165,7 +159,7 @@ export default function StatistiquesPage() {
             "@type": "Dataset",
             name: "Statistiques 2026 sur les prix des outils IA vidéo",
             description:
-              "12 statistiques vérifiées sur les prix, devises et modèles de facturation de 18 outils IA pour créateurs vidéo, calculées à partir d'un relevé manuel des pages tarifs officielles.",
+              "11 statistiques vérifiées sur les prix, devises et modèles de facturation de 18 outils IA pour créateurs vidéo, calculées à partir d'un relevé manuel des pages tarifs officielles.",
             url: "https://www.filtrio.fr/statistiques-outils-ia-video",
             creator: {
               "@type": "Organization",
@@ -198,7 +192,7 @@ export default function StatistiquesPage() {
             Statistiques 2026 sur les prix des outils IA vidéo.
           </h1>
           <p className="text-lg text-slate-300 leading-relaxed max-w-3xl mb-6">
-            12 chiffres calculés à partir d&apos;un relevé manuel des pages
+            11 chiffres calculés à partir d&apos;un relevé manuel des pages
             tarifs officielles de {SAMPLE_SIZE} outils IA pour créateurs vidéo
             (Submagic, OpusClip, Runway, HeyGen, ElevenLabs, CapCut...).
             Chaque statistique est datée, sourcée et{" "}
@@ -215,7 +209,7 @@ export default function StatistiquesPage() {
       {/* LES 12 STATS */}
       <section className="max-w-5xl mx-auto px-6 py-10">
         <h2 className="text-3xl font-bold tracking-tight mb-3">
-          Les 12 statistiques.
+          Les 11 statistiques.
         </h2>
         <p className="text-slate-400 mb-8 max-w-3xl">
           Chiffres arrondis pour la lisibilité. Le détail outil par outil (18

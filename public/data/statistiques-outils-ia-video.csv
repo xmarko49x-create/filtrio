@@ -6,7 +6,7 @@ Canva;Design;110 EUR/an (Pro);EUR;annuel;plan gratuit durable;non;10/07/2026;htt
 Runway;Generation video IA;12 USD/mois (Standard);USD;annuel (15 USD/mois en mensuel);allocation gratuite unique (125 credits, non renouvelee);oui;10/07/2026;https://runwayml.com/pricing;plan Max (9 500 credits/mois) remplace l'ancien plan Illimite
 Descript;Long format;16 USD/mois (Hobbyist);USD;annuel (24 USD/mois en mensuel);plan gratuit durable;partiellement (AI credits);10/07/2026;https://www.descript.com/pricing;
 ElevenLabs;Voix IA;6 USD/mois (Starter);USD;mensuel ou annuel;plan gratuit durable (10 000 credits/mois);oui;10/07/2026;https://elevenlabs.io/pricing;
-DaVinci Resolve;Editeur video;Studio 295 USD (achat unique);USD;achat unique;version de base integralement gratuite;non;10/07/2026;https://www.blackmagicdesign.com/products/davinciresolve;licence perpetuelle, mises a jour incluses
+DaVinci Resolve;Editeur video;Studio 295 USD (achat unique);USD;achat unique;version de base integralement gratuite;non;10/07/2026;https://www.blackmagicdesign.com/products/davinciresolve;achat unique affiche a 295 USD, seule offre non-abonnement du panel
 Synthesia;Avatars IA;12 EUR/mois (Starter);EUR;annuel (19 EUR/mois en mensuel);plan gratuit durable (1 200 credits/mois);oui;10/07/2026;https://www.synthesia.io/pricing;
 Riverside;Long format;24 EUR/mois (Pro);EUR;annuel (29 EUR/mois en mensuel);plan gratuit durable;non;10/07/2026;https://riverside.com/pricing;affichage EUR pour les visiteurs europeens, essai 14 jours
 VidIQ;SEO YouTube;16,58 EUR/mois (Boost);EUR;annuel;plan gratuit durable (150 AI credits/mois);non;10/07/2026;https://vidiq.com/pricing/;
@@ -15,5 +15,5 @@ CapCut;Editeur video;Pro 23,99 EUR/mois;EUR;mensuel (formule annuelle 109,99 EUR
 Veed;Editeur video;11 EUR/mois TTC (Creator);EUR;annuel;plan gratuit durable;oui (credits annuels);10/07/2026;https://www.veed.io/pricing;seul outil du panel affichant explicitement incl. tax
 InVideo;Script-to-video;17 USD/mois (Plus);USD;annuel;plan gratuit durable;oui (credits mensuels non reportes);10/07/2026;https://invideo.io/pricing/;
 Kapwing;Editeur video;16 USD/mois (Pro);USD;annuel (24 USD/mois en mensuel);plan gratuit durable (10 credits);non;10/07/2026;https://www.kapwing.com/pricing;
-Pictory;Script-to-video;25 USD/mois (Starter);USD;annuel (29 USD/mois en mensuel);essai gratuit limite;non;10/07/2026;https://pictory.ai/pricing;
+Pictory;Script-to-video;25 USD/mois (Starter);USD;annuel (29 USD/mois en mensuel);essai limite (14 jours);oui (credits IA inclus dans les forfaits);10/07/2026;https://pictory.ai/pricing;
 Pika;Generation video IA;8 USD/mois (Standard);USD;annuel;plan gratuit durable (80 credits/mois);oui;10/07/2026;https://pika.art/pricing;rollover des credits selon les plans

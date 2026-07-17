@@ -18,13 +18,10 @@ export async function generateMetadata(props: {
   const meta = getCasUsage(slug);
   if (!meta) return { title: "Cas d'usage introuvable" };
 
-  // Description optimisée SEO : titre + description du registre + hook.
-  // Cible 150-160 chars pour maximiser l'affichage en SERP Google.
-  const baseDesc = meta.description.replace(/\s+$/, "");
-  const hasSuffix = /(verdict|outils analysés|gagnant|comparés)/i.test(baseDesc);
-  const description = hasSuffix
-    ? `${baseDesc} 5 outils comparés, gagnant tranché, pièges à éviter et alternatives.`
-    : `${baseDesc} Verdict en 30 secondes, 5 outils comparés, pièges à éviter et alternatives.`;
+  // Description SEO écrite sur mesure par cas d'usage dans lib/cas-usage.ts
+  // (cible 140-160 chars). Pas de hook générique ajouté : chaque page a sa
+  // propre formulation, sans répétition de modèle.
+  const description = meta.description.replace(/\s+$/, "");
 
   return {
     title: meta.titre,

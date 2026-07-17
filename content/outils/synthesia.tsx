@@ -130,7 +130,7 @@ export const synthesiaFiche: FicheData = {
       poids: 20,
       score: 8.5,
       commentaire:
-        "Large bibliothèque d'avatars préconçus, clonage facial (Personal Avatars) sur plans payants, traduction vidéo automatique multilingue avec sync labiale adaptée. Solide mais moins créatif qu'HeyGen sur les usages contemporain.",
+        "Large bibliothèque d'avatars préconçus, clonage facial (Personal Avatars) sur plans payants, traduction vidéo automatique multilingue avec sync labiale adaptée. Solide mais moins créatif qu'HeyGen sur les usages contemporains.",
     },
     {
       label: "Interface et prise en main",

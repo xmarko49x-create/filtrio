@@ -135,14 +135,14 @@ export const runwayFiche: FicheData = {
       poids: 10,
       score: 9.0,
       commentaire:
-        "Écosystème VFX IA impressionnant : inpainting, motion tracking, green screen auto, removal d'objets, transfert de style. Peu d'outils aussi complets sur ce volet.",
+        "Écosystème VFX IA impressionnant : inpainting, motion tracking, green screen auto, suppression d'objets, transfert de style. Peu d'outils aussi complets sur ce volet.",
     },
     {
       label: "API et intégrations",
       poids: 10,
       score: 8.0,
       commentaire:
-        "API disponible pour les plans pros. Permet d'intégrer Runway à des workflows custom, automatiser la génération. Utile pour studios et agences.",
+        "API disponible pour les plans pros. Permet d'intégrer Runway à des flux de travail personnalisés, automatiser la génération. Utile pour studios et agences.",
     },
   ],
   fonctionnalites: [
@@ -159,7 +159,7 @@ export const runwayFiche: FicheData = {
     {
       titre: "Écosystème VFX complet",
       description:
-        "Inpainting, motion tracking, green screen IA, removal d'objets, transfert de style. Démocratise des outils jusque-là réservés aux studios pros (VFX, compositing).",
+        "Inpainting, motion tracking, green screen IA, suppression d'objets, transfert de style. Démocratise des outils jusque-là réservés aux studios pros (VFX, compositing).",
     },
     {
       titre: "Lip sync et camera motion",

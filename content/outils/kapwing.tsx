@@ -20,7 +20,7 @@ export const kapwingFiche: FicheData = {
     {
       question: "C'est quoi ?",
       answer:
-        "Éditeur vidéo web collaboratif américain. Différenciateur principal : édition simultanée de plusieurs utilisateurs sur un même projet, à la manière de Google Docs. Commentaires précis ancrés à des timestamps, workflows d'approbation, brand kits partagés.",
+        "Éditeur vidéo web collaboratif américain. Différenciateur principal : édition simultanée de plusieurs utilisateurs sur un même projet, à la manière de Google Docs. Commentaires précis ancrés à des horodatages, circuits d'approbation, brand kits partagés.",
     },
     {
       question: "Pour qui ?",
@@ -50,7 +50,7 @@ export const kapwingFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan Free (0 $) limité. Pro à 16 $/mois par user en annuel (192 $/an) ou 24 $/mois en mensuel : projets et édition illimités, exports jusqu'à 2h. Business à 50 $/mois par user en annuel (600 $/an) ou 64 $/mois en mensuel pour booster la création en équipe. Enterprise sur devis. Facturation USD.",
+        "Plan Free (0 $) limité. Pro à 16 $/mois par utilisateur en annuel (192 $/an) ou 24 $/mois en mensuel : projets et édition illimités, exports jusqu'à 2h. Business à 50 $/mois par utilisateur en annuel (600 $/an) ou 64 $/mois en mensuel pour booster la création en équipe. Enterprise sur devis. Facturation USD.",
     },
     {
       question: "Meilleure alternative ?",
@@ -103,7 +103,7 @@ export const kapwingFiche: FicheData = {
     </>,
     "Ton budget est serré",
     "Tu veux du montage pro (→ DaVinci ou Premiere)",
-    "Tu veux travailler offline",
+    "Tu veux travailler hors ligne",
     "Tu veux des fonctionnalités IA de pointe (Kapwing est en retrait)",
   ],
   scoring: [
@@ -119,7 +119,7 @@ export const kapwingFiche: FicheData = {
       poids: 20,
       score: 6.8,
       commentaire:
-        "Pro à 16 $/mois en solo est cher vs Veed ou CapCut. Business à 50 $/mois par user devient intéressant si la collaboration temps réel est vraiment exploitée. Le rapport qualité/prix n'a de sens qu'en équipe.",
+        "Pro à 16 $/mois en solo est cher vs Veed ou CapCut. Business à 50 $/mois par utilisateur devient intéressant si la collaboration temps réel est vraiment exploitée. Le rapport qualité/prix n'a de sens qu'en équipe.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
@@ -154,7 +154,7 @@ export const kapwingFiche: FicheData = {
     {
       titre: "Édition collaborative temps réel",
       description:
-        "Plusieurs éditeurs sur le même projet en même temps, à la manière de Google Docs. Commentaires précis ancrés à des timestamps. Feature signature.",
+        "Plusieurs éditeurs sur le même projet en même temps, à la manière de Google Docs. Commentaires précis ancrés à des horodatages. C'est la fonction signature de l'outil.",
     },
     {
       titre: "Smart Cut (silences)",
@@ -253,7 +253,7 @@ export const kapwingFiche: FicheData = {
     {
       question: "La collaboration temps réel fonctionne-t-elle vraiment bien ?",
       answer:
-        "Oui, c'est le point fort de Kapwing. Plusieurs monteurs sur un même projet sans conflit, commentaires ancrés à des timestamps précis, suivi des modifications. Utilisé par de nombreuses agences et équipes marketing.",
+        "Oui, c'est le point fort de Kapwing. Plusieurs monteurs sur un même projet sans conflit, commentaires ancrés à des horodatages précis, suivi des modifications. Utilisé par de nombreuses agences et équipes marketing.",
     },
     {
       question: "Kapwing vaut-il le coup en solo ?",

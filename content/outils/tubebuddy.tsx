@@ -25,7 +25,7 @@ export const tubebuddyFiche: FicheData = {
     {
       question: "Pour qui ?",
       answer:
-        "YouTubeurs qui veulent optimiser leur SEO, comprendre leur concurrence, tester différentes miniatures et titres, et gérer leur chaîne plus efficacement. Particulièrement utile pour les chaînes entre 1k et 100k abonnés.",
+        "YouTubeurs qui veulent optimiser leur SEO, comprendre leur concurrence, tester différentes miniatures et titres, et gérer leur chaîne plus efficacement. Particulièrement utile pour les chaînes entre 1 000 et 100 000 abonnés.",
     },
     {
       question: "À éviter si ?",
@@ -71,7 +71,7 @@ export const tubebuddyFiche: FicheData = {
     "Ta chaîne YouTube est ton canal principal",
     "Tu publies régulièrement (1+ vidéo par semaine)",
     "Tu veux optimiser tes tags, titres et descriptions",
-    "Tu veux tester plusieurs miniatures avec des vrais stats",
+    "Tu veux tester plusieurs miniatures avec de vraies statistiques",
     "Tu veux analyser ta concurrence en profondeur",
     "Tu préfères travailler dans l'interface YouTube native",
   ],

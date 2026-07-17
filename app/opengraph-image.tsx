@@ -73,7 +73,7 @@ export default function OpenGraphImage() {
               letterSpacing: "0.02em",
             }}
           >
-            Comparateur indépendant · Mise à jour avril 2026
+            Comparateur indépendant · Mise à jour juillet 2026
           </span>
         </div>
 

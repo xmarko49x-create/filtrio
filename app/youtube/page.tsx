@@ -18,7 +18,7 @@ export default function YouTubePage() {
       <section className="max-w-5xl mx-auto px-6 pt-20 pb-16">
         <div className="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 rounded-full px-4 py-1.5 text-xs text-slate-300 mb-8">
           <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
-          Sélection YouTube · avril 2026
+          Sélection YouTube · juillet 2026
         </div>
         <h1 className="text-5xl md:text-6xl font-bold leading-[1.05] mb-6 tracking-tight">
           Les outils IA pour <span className="text-red-400">YouTubeurs</span>.

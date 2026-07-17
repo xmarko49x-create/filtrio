@@ -44,7 +44,7 @@ export default function OutilsPage() {
       <section className="max-w-5xl mx-auto px-6 pt-20 pb-12">
         <div className="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 rounded-full px-4 py-1.5 text-xs text-slate-300 mb-8">
           <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-          Catalogue complet · avril 2026
+          Catalogue complet · juillet 2026
         </div>
         <h1 className="text-5xl md:text-6xl font-bold leading-[1.05] mb-6 tracking-tight">
           Tous les <span className="text-emerald-400">outils IA</span> analysés.

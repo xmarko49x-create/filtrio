@@ -165,7 +165,7 @@ export const OUTILS: Outil[] = [
     tagline: "Montage pro gratuit",
     category: "editeur",
     priceFrom: "Gratuit · Studio à 295 $ en achat unique",
-    freeTier: "Téléchargement gratuit sans watermark",
+    freeTier: "Téléchargement gratuit sans filigrane",
     affiliateLink: "#aff-davinci",
     ficheAvailable: true,
   },

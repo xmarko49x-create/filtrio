@@ -18,7 +18,7 @@ const LAST_UPDATED = "10/07/2026";
 export const metadata: Metadata = {
   title: "Observatoire des prix des outils IA vidéo, édition juillet 2026",
   description:
-    "Les prix réels de 18 outils IA vidéo (Submagic, OpusClip, ElevenLabs, HeyGen, Runway...) relevés sur les pages officielles et datés. Devises, pièges mensuel vs annuel, modèles à crédits : ce que les pages tarifs ne montrent pas.",
+    "Les prix réels de 18 outils IA vidéo (Submagic, OpusClip, ElevenLabs, HeyGen, Runway...) relevés sur les pages officielles et datés. Devises, pièges mensuel vs annuel, modèles à crédits : ce que les pages tarifaires ne montrent pas.",
   alternates: {
     canonical: "https://www.filtrio.fr/observatoire-prix",
   },
@@ -50,7 +50,7 @@ const FAQ = [
   {
     question: "D'où viennent ces prix ?",
     answer:
-      "Chaque prix est relevé manuellement sur la page tarifs officielle de l'outil, avec sa devise et son cycle de facturation, à la date indiquée dans la colonne « Vérifié le ». Quand un prix n'est pas vérifiable proprement, on l'écrit (« voir tarifs officiels ») plutôt que de l'inventer. La méthode complète est décrite sur notre page Méthode.",
+      "Chaque prix est relevé manuellement sur la page tarifaire officielle de l'outil, avec sa devise et son cycle de facturation, à la date indiquée dans la colonne « Vérifié le ». Quand un prix n'est pas vérifiable proprement, on l'écrit (« voir tarifs officiels ») plutôt que de l'inventer. La méthode complète est décrite sur notre page Méthode.",
   },
   {
     question: "Quels outils affichent leurs prix en euros ?",
@@ -65,7 +65,7 @@ const FAQ = [
   {
     question: "À quelle fréquence ces données sont-elles mises à jour ?",
     answer:
-      "Les prix sont re-vérifiés régulièrement, fiche par fiche, et chaque vérification est datée individuellement (colonne « Vérifié le »). Cette page se met à jour automatiquement dès qu'un prix change dans nos fiches. Avant toute souscription, vérifie toujours la page tarifs officielle de l'outil : les tarifs SaaS évoluent vite.",
+      "Les prix sont re-vérifiés régulièrement, fiche par fiche, et chaque vérification est datée individuellement (colonne « Vérifié le »). Cette page se met à jour automatiquement dès qu'un prix change dans nos fiches. Avant toute souscription, vérifie toujours la page tarifaire officielle de l'outil : les tarifs SaaS évoluent vite.",
   },
   {
     question: "Puis-je réutiliser ces données dans un article ou une vidéo ?",
@@ -124,7 +124,7 @@ export default function ObservatoirePrixPage() {
             "@type": "Dataset",
             name: "Observatoire des prix des outils IA vidéo",
             description:
-              "Prix d'entrée, devise, offre gratuite et date de vérification de 18 outils IA pour créateurs vidéo, relevés sur les pages tarifs officielles.",
+              "Prix d'entrée, devise, offre gratuite et date de vérification de 18 outils IA pour créateurs vidéo, relevés sur les pages tarifaires officielles.",
             url: "https://www.filtrio.fr/observatoire-prix",
             creator: {
               "@type": "Organization",
@@ -150,7 +150,7 @@ export default function ObservatoirePrixPage() {
             Observatoire des prix des outils IA vidéo.
           </h1>
           <p className="text-lg text-slate-300 leading-relaxed max-w-3xl mb-6">
-            Le prix affiché sur une page tarifs n&apos;est pas toujours le prix
+            Le prix affiché sur une page tarifaire n&apos;est pas toujours le prix
             réellement payé. Devises en dollars, engagement annuel par défaut,
             modèles à crédits : voici les tarifs réels de 18 outils IA vidéo,
             relevés un par un sur les pages officielles, avec leur date de
@@ -207,7 +207,7 @@ export default function ObservatoirePrixPage() {
           Les prix d&apos;entrée des 18 outils.
         </h2>
         <p className="text-slate-400 mb-6 max-w-3xl">
-          Prix d&apos;entrée de gamme tel qu&apos;affiché sur la page tarifs
+          Prix d&apos;entrée de gamme tel qu&apos;affiché sur la page tarifaire
           officielle (généralement en facturation annuelle). Classement par
           score éditorial Filtrio. Chaque fiche détaille tous les plans.
         </p>
@@ -265,7 +265,7 @@ export default function ObservatoirePrixPage() {
       {/* CONSTATS */}
       <section className="max-w-5xl mx-auto px-6 py-10">
         <h2 className="text-3xl font-bold tracking-tight mb-8">
-          Ce que les pages tarifs ne montrent pas.
+          Ce que les pages tarifaires ne montrent pas.
         </h2>
 
         <div className="space-y-8">
@@ -307,7 +307,8 @@ export default function ObservatoirePrixPage() {
 
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-7">
             <h3 className="text-xl font-bold mb-3 text-emerald-400">
-              2. Deux tiers des prix sont en dollars.
+              2. 61 % des outils affichent ou facturent leurs abonnements en
+              dollars.
             </h3>
             <p className="text-slate-300 leading-relaxed">
               La majorité des outils du panel affichent leurs tarifs en dollars
@@ -363,12 +364,12 @@ export default function ObservatoirePrixPage() {
 
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-7">
             <h3 className="text-xl font-bold mb-3 text-emerald-400">
-              5. Un écart de 1 à 8 sur l&apos;entrée de gamme en dollars.
+              5. Un rapport de 1 à 8 sur l&apos;entrée de gamme en dollars.
             </h3>
             <p className="text-slate-300 leading-relaxed">
               Parmi les outils facturés en dollars, le premier plan payant
               relevé va de 3,60 $/mois (TubeBuddy Pro, paiement annuel) à
-              29 $/mois (HeyGen Creator, mensuel). Un écart de 1 à 8 pour des
+              29 $/mois (HeyGen Creator, mensuel). Un rapport de 1 à 8 pour des
               pages d&apos;accueil qui promettent souvent la même chose. Le prix ne dit rien de la valeur pour TON
               usage : c&apos;est exactement ce que nos{" "}
               <Link href="/outils" className="text-emerald-400 hover:underline">
@@ -393,7 +394,8 @@ export default function ObservatoirePrixPage() {
               <strong className="text-slate-100">environ 12,80 € par mois</strong>{" "}
               pour les outils facturés en euros, et{" "}
               <strong className="text-slate-100">environ 15,60 $ par mois</strong>{" "}
-              pour ceux facturés en dollars (calcul basé sur notre relevé de juin 2026). Un repère utile, mais à manier avec
+              pour ceux facturés en dollars (calcul basé sur les relevés datés
+              du tableau ci-dessus). Un repère utile, mais à manier avec
               prudence : la moyenne écrase les écarts (de 3,60 $ à 29 $) et ne
               dit rien des modèles à crédits, où le coût réel dépend de ton
               volume de production.
@@ -425,7 +427,7 @@ export default function ObservatoirePrixPage() {
           Comment ces prix sont relevés.
         </h2>
         <p className="text-slate-300 leading-relaxed max-w-3xl mb-4">
-          Chaque prix est vérifié manuellement sur la page tarifs officielle
+          Chaque prix est vérifié manuellement sur la page tarifaire officielle
           de l&apos;outil, avec trois contrôles systématiques : le montant
           exact, la devise, et le cycle de facturation (mensuel ou annuel).
           Chaque vérification est datée, fiche par fiche. Quand une donnée

@@ -122,7 +122,7 @@ const FAQ = [
   {
     question: "D'où viennent ces statistiques ?",
     answer:
-      "Chaque chiffre est calculé à partir d'un relevé manuel des pages tarifs officielles de 18 outils IA vidéo, avec trois contrôles systématiques par prix : montant exact, devise et cycle de facturation. Le détail outil par outil, daté, est publié dans l'Observatoire des prix de Filtrio.",
+      "Chaque chiffre est calculé à partir d'un relevé manuel des pages tarifaires officielles de 18 outils IA vidéo, avec trois contrôles systématiques par prix : montant exact, devise et cycle de facturation. Le détail outil par outil, daté, est publié dans l'Observatoire des prix de Filtrio.",
   },
   {
     question: "Puis-je réutiliser ces chiffres dans un article, une newsletter ou une vidéo ?",
@@ -159,7 +159,7 @@ export default function StatistiquesPage() {
             "@type": "Dataset",
             name: "Statistiques 2026 sur les prix des outils IA vidéo",
             description:
-              "11 statistiques vérifiées sur les prix, devises et modèles de facturation de 18 outils IA pour créateurs vidéo, calculées à partir d'un relevé manuel des pages tarifs officielles.",
+              "11 statistiques vérifiées sur les prix, devises et modèles de facturation de 18 outils IA pour créateurs vidéo, calculées à partir d'un relevé manuel des pages tarifaires officielles.",
             url: "https://www.filtrio.fr/statistiques-outils-ia-video",
             creator: {
               "@type": "Organization",

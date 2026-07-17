@@ -190,19 +190,19 @@ export const kapwingFiche: FicheData = {
       cible: "Découverte de l'outil",
       features: [
         "Plan gratuit avec limites",
-        "Watermark et quotas d'export limités",
+        "Filigrane et quotas d'export limités",
         "Accès à l'interface collaborative basique",
       ],
     },
     {
       nom: "Pro",
       prix: "16 $/mois",
-      prixSub: "Par user · facturation annuelle (192 $/an) · ou 24 $/mois en mensuel",
+      prixSub: "Par utilisateur · facturation annuelle (192 $/an) · ou 24 $/mois en mensuel",
       cible: "Créateurs et solo pros",
       features: [
         "Projets et édition illimités",
         "Exports jusqu'à 2 heures",
-        "Sans watermark",
+        "Sans filigrane",
         "Brand kit personnel",
         "Fonctionnalités IA complètes",
       ],
@@ -210,7 +210,7 @@ export const kapwingFiche: FicheData = {
     {
       nom: "Business",
       prix: "50 $/mois",
-      prixSub: "Par user · facturation annuelle (600 $/an) · ou 64 $/mois en mensuel",
+      prixSub: "Par utilisateur · facturation annuelle (600 $/an) · ou 64 $/mois en mensuel",
       cible: "Agences et équipes",
       features: [
         "Tout Pro inclus",
@@ -291,7 +291,7 @@ export const kapwingFiche: FicheData = {
     {
       question: "Le plan gratuit est-il utilisable pour une démo ?",
       answer:
-        "Oui pour tester l'interface, la collaboration (avec un collègue sur le même lien), les fonctionnalités IA. Les limites (4 min max, watermark, 7 min export/jour) te pousseront vite vers le Pro mais c'est suffisant pour se faire une idée.",
+        "Oui pour tester l'interface, la collaboration (avec un collègue sur le même lien), les fonctionnalités IA. Les limites (4 min max, filigrane, 7 min export/jour) te pousseront vite vers le Pro mais c'est suffisant pour se faire une idée.",
     },
     {
       question: "Compatible avec les workflows Slack/Notion ?",

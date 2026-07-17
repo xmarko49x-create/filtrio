@@ -3,11 +3,74 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
+import { JsonLd } from "@/components/JsonLd";
+import {
+  getOrganizationSchema,
+  getWebsiteSchema,
+  PERSON_ID,
+  ORG_ID,
+} from "@/lib/schema";
 
 const AUTEUR = {
   nomComplet: "Marc Devillers",
   email: "contact@filtrio.fr",
 };
+
+/** ProfilePage + Person + publications externes reliées à l'auteur (E-E-A-T). */
+const PROFILE_SCHEMAS = [
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    mainEntity: {
+      "@type": "Person",
+      "@id": PERSON_ID,
+      name: "Marc Devillers",
+      url: "https://www.filtrio.fr/a-propos",
+      jobTitle: "Éditeur de Filtrio",
+      email: "mailto:contact@filtrio.fr",
+      worksFor: {
+        "@type": "Organization",
+        "@id": ORG_ID,
+        name: "Filtrio",
+        url: "https://www.filtrio.fr",
+      },
+      sameAs: [
+        "https://www.linkedin.com/in/marc-devillers",
+        "https://www.malt.fr/profile/marcdevillers",
+        "https://www.skopio.fr/a-propos",
+        "https://www.bitclair.com/a-propos",
+      ],
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "Le vrai prix des outils IA en 2026",
+    url: "https://www.webmarketing-com.com/prix-outils-ia",
+    datePublished: "2026-06-23",
+    inLanguage: "fr-FR",
+    author: { "@id": PERSON_ID },
+    publisher: {
+      "@type": "Organization",
+      name: "Webmarketing & co'm",
+      url: "https://www.webmarketing-com.com",
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "IA vidéo : la fin de l'illimité au profit des crédits",
+    url: "https://www.journaldunet.com/intelligence-artificielle/1551371-ia-video-la-fin-de-l-illimite-au-profit-des-credits/",
+    datePublished: "2026-06-15",
+    inLanguage: "fr-FR",
+    author: { "@id": PERSON_ID },
+    publisher: {
+      "@type": "Organization",
+      name: "Journal du Net",
+      url: "https://www.journaldunet.com",
+    },
+  },
+];
 
 export const metadata: Metadata = {
   title: "À propos, Comparateur d'outils IA pour créateurs vidéo",
@@ -25,6 +88,9 @@ export const metadata: Metadata = {
 export default function AProposPage() {
   return (
     <>
+      <JsonLd
+        data={[getOrganizationSchema(), getWebsiteSchema(), ...PROFILE_SCHEMAS]}
+      />
       <Nav />
 
       {/* HERO + INTRO */}
@@ -126,21 +192,83 @@ export default function AProposPage() {
         </h2>
         <p className="text-slate-300 leading-relaxed mb-4">
           Filtrio est un projet indépendant créé par{" "}
-          <strong className="text-slate-100">{AUTEUR.nomComplet}</strong>.
+          <strong className="text-slate-100">{AUTEUR.nomComplet}</strong>,
+          éditeur de Filtrio.
         </p>
-        <p className="text-slate-400 leading-relaxed mb-4">
-          En juin 2026, j&apos;ai publié une chronique dans{" "}
-          <a
-            href="https://www.journaldunet.com/intelligence-artificielle/1551371-ia-video-la-fin-de-l-illimite-au-profit-des-credits/"
-            target="_blank"
-            rel="noopener"
-            className="text-emerald-400 hover:text-emerald-300"
-          >
-            Le Journal du Net
-          </a>{" "}
-          sur le basculement des outils d&apos;IA vidéo vers les modèles à
-          crédits, à partir du relevé de tarifs réalisé pour Filtrio.
-        </p>
+        <h3 className="text-xl font-bold mt-8 mb-4 tracking-tight">
+          Publications et contributions externes
+        </h3>
+        <ul className="space-y-3 text-slate-400 leading-relaxed list-disc list-inside marker:text-emerald-400 mb-6">
+          <li>
+            <a
+              href="https://www.webmarketing-com.com/prix-outils-ia"
+              target="_blank"
+              rel="noopener"
+              className="text-emerald-400 hover:text-emerald-300"
+            >
+              « Le vrai prix des outils IA en 2026 »
+            </a>
+            , article invité publié sur Webmarketing &amp; co&apos;m le
+            23 juin 2026, à partir des relevés de tarifs réalisés pour
+            Filtrio.
+          </li>
+          <li>
+            <a
+              href="https://www.journaldunet.com/intelligence-artificielle/1551371-ia-video-la-fin-de-l-illimite-au-profit-des-credits/"
+              target="_blank"
+              rel="noopener"
+              className="text-emerald-400 hover:text-emerald-300"
+            >
+              « IA vidéo : la fin de l&apos;illimité au profit des crédits »
+            </a>
+            , chronique publiée sur le Journal du Net le 15 juin 2026, sur le
+            basculement des outils d&apos;IA vidéo vers les modèles à crédits.
+          </li>
+          <li>
+            Autres projets éditoriaux :{" "}
+            <a
+              href="https://www.skopio.fr"
+              target="_blank"
+              rel="noopener"
+              className="text-emerald-400 hover:text-emerald-300"
+            >
+              Skopio
+            </a>
+            , comparateur d&apos;outils de cybersécurité grand public, et{" "}
+            <a
+              href="https://www.bitclair.com"
+              target="_blank"
+              rel="noopener"
+              className="text-emerald-400 hover:text-emerald-300"
+            >
+              Bitclair
+            </a>
+            , comparateur de plateformes Bitcoin en France. Ces projets
+            reposent sur les mêmes principes : méthode publique, prix
+            vérifiés et datés, et transparence sur l&apos;affiliation.
+          </li>
+          <li>
+            Profils professionnels :{" "}
+            <a
+              href="https://www.linkedin.com/in/marc-devillers"
+              target="_blank"
+              rel="noopener"
+              className="text-emerald-400 hover:text-emerald-300"
+            >
+              LinkedIn
+            </a>{" "}
+            et{" "}
+            <a
+              href="https://www.malt.fr/profile/marcdevillers"
+              target="_blank"
+              rel="noopener"
+              className="text-emerald-400 hover:text-emerald-300"
+            >
+              Malt
+            </a>
+            .
+          </li>
+        </ul>
         <p className="text-slate-400 leading-relaxed">
           Pour me contacter :{" "}
           <a

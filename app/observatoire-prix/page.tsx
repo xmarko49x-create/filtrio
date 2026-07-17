@@ -12,8 +12,10 @@ import {
 import { AuthorByline } from "@/components/AuthorByline";
 import { AuthorBio } from "@/components/AuthorBio";
 import { OUTILS, CATEGORIE_LABELS } from "@/lib/outils";
-
-const LAST_UPDATED = "10/07/2026";
+import {
+  OBSERVATOIRE_LAST_UPDATED as LAST_UPDATED,
+  VERIF_DATES,
+} from "@/lib/observatoire";
 
 export const metadata: Metadata = {
   title: "Observatoire des prix des outils IA vidéo, édition juillet 2026",
@@ -22,28 +24,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.filtrio.fr/observatoire-prix",
   },
-};
-
-/** Date de dernière vérification du prix, par fiche (reprise des fiches publiées). */
-const VERIF_DATES: Record<string, string> = {
-  submagic: "10/07/2026",
-  opusclip: "10/07/2026",
-  tubebuddy: "10/07/2026",
-  canva: "10/07/2026",
-  runway: "10/07/2026",
-  descript: "10/07/2026",
-  elevenlabs: "10/07/2026",
-  davinci: "10/07/2026",
-  synthesia: "10/07/2026",
-  riverside: "10/07/2026",
-  vidiq: "10/07/2026",
-  heygen: "10/07/2026",
-  capcut: "10/07/2026",
-  veed: "10/07/2026",
-  invideo: "10/07/2026",
-  kapwing: "10/07/2026",
-  pictory: "10/07/2026",
-  pika: "10/07/2026",
 };
 
 const FAQ = [
@@ -126,11 +106,25 @@ export default function ObservatoirePrixPage() {
             description:
               "Prix d'entrée, devise, offre gratuite et date de vérification de 18 outils IA pour créateurs vidéo, relevés sur les pages tarifaires officielles.",
             url: "https://www.filtrio.fr/observatoire-prix",
+            keywords: [
+              "outils IA vidéo",
+              "prix outils IA",
+              "tarifs IA vidéo",
+              "comparatif prix IA",
+            ],
             creator: {
               "@type": "Organization",
               name: "Filtrio",
               url: "https://www.filtrio.fr",
+              logo: "https://www.filtrio.fr/icon",
             },
+            distribution: [
+              {
+                "@type": "DataDownload",
+                encodingFormat: "text/csv",
+                contentUrl: "https://www.filtrio.fr/observatoire-prix.csv",
+              },
+            ],
             dateModified: "2026-07-10",
             inLanguage: "fr",
             isAccessibleForFree: true,
@@ -260,6 +254,19 @@ export default function ObservatoirePrixPage() {
           page officielle de l&apos;outil. Si tu repères un écart, écris-nous
           à contact@filtrio.fr, on corrige.
         </p>
+        <div className="mt-5">
+          <a
+            href="/observatoire-prix.csv"
+            download
+            className="inline-flex items-center gap-2 px-5 py-3 bg-slate-900 border border-slate-700 rounded-xl text-sm font-semibold text-slate-100 hover:border-emerald-500/60 transition"
+          >
+            Télécharger les données (CSV)
+          </a>
+          <span className="block text-xs text-slate-500 mt-2">
+            Données librement réutilisables avec attribution et lien vers
+            filtrio.fr/observatoire-prix.
+          </span>
+        </div>
       </section>
 
       {/* CONSTATS */}

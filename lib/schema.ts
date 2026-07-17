@@ -15,6 +15,14 @@ const SITE_NAME = "Filtrio";
 const AUTHOR_NAME = AUTHOR.name;
 const AUTHOR_URL = `${SITE_URL}${AUTHOR.url}`;
 
+/**
+ * Identifiants JSON-LD stables (E-E-A-T).
+ * PERSON_ID relie l'auteur des 18 avis, le fondateur de l'Organization et
+ * le Person de la page À propos à une seule entité pour Google.
+ */
+export const PERSON_ID = `${SITE_URL}/a-propos#marc-devillers`;
+export const ORG_ID = `${SITE_URL}/#organization`;
+
 /* ---------- Utilitaires ---------- */
 
 /** Extrait récursivement le texte pur d'un ReactNode. */
@@ -38,6 +46,7 @@ export function getOrganizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": ORG_ID,
     name: SITE_NAME,
     url: SITE_URL,
     logo: `${SITE_URL}/icon`,
@@ -45,6 +54,7 @@ export function getOrganizationSchema() {
       "Comparateur indépendant d'outils IA pour créateurs vidéo. Analysés sans langue de bois, notés sur 6 critères concrets.",
     founder: {
       "@type": "Person",
+      "@id": PERSON_ID,
       name: AUTHOR_NAME,
       url: AUTHOR_URL,
     },
@@ -103,11 +113,13 @@ export function getReviewSchema(params: {
     },
     author: {
       "@type": "Person",
+      "@id": PERSON_ID,
       name: AUTHOR_NAME,
       url: AUTHOR_URL,
     },
     publisher: {
       "@type": "Organization",
+      "@id": ORG_ID,
       name: SITE_NAME,
       url: SITE_URL,
     },

@@ -35,7 +35,7 @@ const PROFILE_SCHEMAS = [
         url: "https://www.filtrio.fr",
       },
       sameAs: [
-        "https://www.linkedin.com/in/marc-devillers",
+        "https://www.journaldunet.com/account/marc-devillers-236345",
         "https://www.malt.fr/profile/marcdevillers",
         "https://www.skopio.fr/a-propos",
         "https://www.bitclair.com/a-propos",
@@ -248,14 +248,14 @@ export default function AProposPage() {
             vérifiés et datés, et transparence sur l&apos;affiliation.
           </li>
           <li>
-            Profils professionnels :{" "}
+            Profils publics :{" "}
             <a
-              href="https://www.linkedin.com/in/marc-devillers"
+              href="https://www.journaldunet.com/account/marc-devillers-236345"
               target="_blank"
               rel="noopener"
               className="text-emerald-400 hover:text-emerald-300"
             >
-              LinkedIn
+              Profil auteur sur le Journal du Net
             </a>{" "}
             et{" "}
             <a

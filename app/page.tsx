@@ -166,6 +166,37 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* FILTRIO DANS LES MÉDIAS, bloc crédibilité */}
+      <section className="max-w-5xl mx-auto px-6 pb-14">
+        <div className="bg-slate-900/60 border border-slate-800 rounded-xl p-5 md:p-6">
+          <div className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-2">
+            Filtrio dans les médias
+          </div>
+          <p className="text-slate-300 leading-relaxed mb-3">
+            Nos analyses sur les prix des outils IA ont été publiées par le
+            Journal du Net et Webmarketing &amp; co&apos;m.
+          </p>
+          <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+            <a
+              href="https://www.journaldunet.com/intelligence-artificielle/1551371-ia-video-la-fin-de-l-illimite-au-profit-des-credits/"
+              target="_blank"
+              rel="noopener"
+              className="text-emerald-400 hover:text-emerald-300"
+            >
+              Lire notre analyse sur le Journal du Net →
+            </a>
+            <a
+              href="https://www.webmarketing-com.com/prix-outils-ia"
+              target="_blank"
+              rel="noopener"
+              className="text-emerald-400 hover:text-emerald-300"
+            >
+              Lire notre étude sur Webmarketing &amp; co&apos;m →
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* 3 ENTRÉES ACTIONNABLES */}
       <section className="max-w-6xl mx-auto px-6 pb-20">
         <div className="mb-10">

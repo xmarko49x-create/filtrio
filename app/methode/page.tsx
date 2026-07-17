@@ -20,16 +20,18 @@ export default function MethodePage() {
       <section className="max-w-4xl mx-auto px-6 pt-16 pb-12">
         <div className="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 rounded-full px-4 py-1.5 text-xs text-slate-300 mb-6">
           <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-          Dernière mise à jour · avril 2026
+          Dernière mise à jour · juillet 2026
         </div>
         <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-6 tracking-tight">
           Comment Filtrio évalue les outils IA.
         </h1>
         <p className="text-xl text-slate-300 leading-relaxed">
-          Filtrio note les outils sur 6 critères pondérés identiques, avec la
-          même grille pour tous. Pas de liste sponsorisée. Pas de classement
-          acheté. Le scoring est défini avant toute considération de
-          commission d&apos;affiliation.
+          Chaque fiche Filtrio repose sur six critères pondérés. Une partie de
+          la grille est commune à tous les outils ; certains critères et leur
+          poids sont adaptés à la catégorie évaluée. Les scores servent avant
+          tout à comparer des outils d&apos;une même catégorie. Pas de liste
+          sponsorisée. Pas de classement acheté. Le scoring est défini avant
+          toute considération de commission d&apos;affiliation.
         </p>
       </section>
 
@@ -117,7 +119,7 @@ export default function MethodePage() {
             <p className="text-slate-300 leading-relaxed">
               Un protocole de tests comparatifs standardisés avec les mêmes
               sources vidéo pour tous les outils d&apos;une même catégorie. Les
-              résultats détaillés seront publiés publiquement dès que le
+              résultats détaillés seront publiés dès que le
               protocole est en place.
             </p>
           </div>
@@ -150,7 +152,7 @@ export default function MethodePage() {
             </p>
             <p>
               Pour éviter tout conflit : le scoring est défini{" "}
-              <strong className="text-slate-100">avant</strong> de regarder les
+              <strong className="text-slate-100">avant</strong>{" "}de regarder les
               programmes d&apos;affiliation. Un outil avec une commission
               élevée mais un score faible ne sera jamais recommandé. Un outil
               sans programme d&apos;affiliation sera recommandé s&apos;il le

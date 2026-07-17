@@ -51,8 +51,10 @@ export default function OutilsPage() {
         </h1>
         <p className="text-xl text-slate-400 leading-relaxed mb-4 max-w-3xl">
           Le catalogue complet de Filtrio. Chaque outil est analysé sur 6
-          critères identiques : qualité en français, rapport qualité/prix,
-          profondeur IA, interface, support, intégrations.
+          critères pondérés : qualité en français, rapport qualité/prix,
+          profondeur IA, interface, support, intégrations. Certains critères
+          sont adaptés à la catégorie, les scores comparent surtout les
+          outils d&apos;une même catégorie.
         </p>
         <p className="text-slate-400 leading-relaxed max-w-3xl">
           Utilise les filtres pour cibler par catégorie, par plan gratuit ou

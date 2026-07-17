@@ -29,7 +29,7 @@ export default function YouTubePage() {
           en shorts. Voici les outils qu&apos;on recommande sur chaque axe.
         </p>
         <p className="text-slate-400 leading-relaxed max-w-3xl">
-          Pas une liste bâclée. Chaque outil est noté sur 6 critères identiques
+          Pas une liste bâclée. Chaque outil est noté sur 6 critères pondérés
           et vient avec une fiche analyse complète.
         </p>
       </section>

@@ -239,7 +239,7 @@ export default function AlternativesASubmagicPage() {
             </Link>
           </div>
           <p className="text-xs text-slate-500 mt-3">
-            Liens affiliés possibles · sans surcoût, sans influence sur le
+            Certains liens sont affiliés · sans surcoût, sans influence sur le
             verdict.
           </p>
         </div>
@@ -608,7 +608,7 @@ export default function AlternativesASubmagicPage() {
               href="/outils/submagic"
               className="inline-block border border-slate-700 hover:border-slate-600 text-slate-200 font-semibold px-8 py-4 rounded-xl transition text-lg"
             >
-              Voir la fiche Submagic
+              Lire la fiche Submagic
             </Link>
           </div>
         </div>
@@ -696,7 +696,7 @@ function AlternativeCard({ alt, rank }: { alt: Alternative; rank: number }) {
                 href={`/outils/${outil.slug}`}
                 className="border border-slate-700 hover:border-slate-600 px-5 py-2.5 rounded-lg text-sm transition"
               >
-                Voir la fiche {outil.name}
+                Lire la fiche {outil.name}
               </Link>
             </div>
           )}

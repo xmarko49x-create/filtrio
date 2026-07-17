@@ -223,7 +223,7 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
                   href={`/outils/${winner.slug}`}
                   className={`inline-block bg-${winner.color}-500 hover:bg-${winner.color}-400 text-slate-950 font-semibold px-5 py-3 rounded-lg transition`}
                 >
-                  Voir la fiche {winner.name}
+                  Lire la fiche {winner.name}
                 </Link>
               )
             )}
@@ -244,13 +244,13 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
                   href={`/outils/${loser.slug}`}
                   className={`inline-block border border-${loser.color}-500/40 hover:border-${loser.color}-500 text-${loser.color}-400 hover:text-${loser.color}-300 font-semibold px-5 py-3 rounded-lg transition`}
                 >
-                  Voir la fiche {loser.name}
+                  Lire la fiche {loser.name}
                 </Link>
               )
             )}
           </div>
           <p className="text-xs text-slate-500 mt-3">
-            Liens affiliés possibles · sans surcoût, sans influence sur le
+            Certains liens sont affiliés · sans surcoût, sans influence sur le
             verdict.
           </p>
         </div>
@@ -421,7 +421,7 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
           />
         </div>
         <p className="text-xs text-slate-500 mt-4">
-          Liens affiliés possibles · sans surcoût, sans influence sur le
+          Certains liens sont affiliés · sans surcoût, sans influence sur le
           verdict.
         </p>
       </section>
@@ -494,7 +494,7 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
                 href={`/outils/${winner.slug}`}
                 className={`inline-block bg-${winner.color}-500 hover:bg-${winner.color}-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg`}
               >
-                {data.verdictFinal.ctaText}
+                Lire la fiche {winner.name}
               </Link>
             )}
 
@@ -516,7 +516,7 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
                   href={`/outils/${loser.slug}`}
                   className={`inline-block border border-${loser.color}-500/40 hover:border-${loser.color}-500 text-${loser.color}-400 hover:text-${loser.color}-300 font-semibold px-8 py-4 rounded-xl transition text-lg`}
                 >
-                  Voir {loser.name}
+                  Lire la fiche {loser.name}
                 </Link>
               ))}
           </div>
@@ -705,7 +705,7 @@ function PorQuiCard({
           href={ficheHref}
           className={`mt-8 inline-flex items-center gap-2 bg-${color}-500 hover:bg-${color}-400 text-slate-950 font-semibold px-5 py-3 rounded-lg transition`}
         >
-          Voir la fiche {name} →
+          Lire la fiche {name} →
         </Link>
       ) : (
         <span

@@ -130,6 +130,8 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
   };
   const winnerCta = ctaInfo(winner.slug, winner.ficheAvailable);
   const loserCta = ctaInfo(loser.slug, loser.ficheAvailable);
+  const ctaA = ctaInfo(A.slug, A.ficheAvailable);
+  const ctaB = ctaInfo(B.slug, B.ficheAvailable);
 
   // JSON-LD
   const faqSchema = getFaqPageSchema(data.faq);
@@ -199,6 +201,58 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
               {p}
             </p>
           ))}
+          {/* Zone de conversion 1 : verdict_haut */}
+          <div className="flex flex-wrap gap-3 mt-6">
+            {winnerCta.hasRealAffiliateLink && winnerCta.outil ? (
+              <TrackedAffiliateLink
+                href={winnerCta.outil.affiliateLink}
+                outilSlug={winnerCta.outil.slug}
+                outilName={winnerCta.outil.name}
+                source="comparatif"
+                position="verdict_haut"
+                className={`inline-block bg-${winner.color}-500 hover:bg-${winner.color}-400 text-slate-950 font-semibold px-5 py-3 rounded-lg transition`}
+              >
+                Tester {winner.name}
+                {winner.freeTier && winner.freeTier.length > 0
+                  ? " gratuitement"
+                  : ""}
+              </TrackedAffiliateLink>
+            ) : (
+              winner.ficheAvailable && (
+                <Link
+                  href={`/outils/${winner.slug}`}
+                  className={`inline-block bg-${winner.color}-500 hover:bg-${winner.color}-400 text-slate-950 font-semibold px-5 py-3 rounded-lg transition`}
+                >
+                  Voir la fiche {winner.name}
+                </Link>
+              )
+            )}
+            {loserCta.hasRealAffiliateLink && loserCta.outil ? (
+              <TrackedAffiliateLink
+                href={loserCta.outil.affiliateLink}
+                outilSlug={loserCta.outil.slug}
+                outilName={loserCta.outil.name}
+                source="comparatif"
+                position="verdict_haut"
+                className={`inline-block border border-${loser.color}-500/40 hover:border-${loser.color}-500 text-${loser.color}-400 hover:text-${loser.color}-300 font-semibold px-5 py-3 rounded-lg transition`}
+              >
+                Tester {loser.name}
+              </TrackedAffiliateLink>
+            ) : (
+              loser.ficheAvailable && (
+                <Link
+                  href={`/outils/${loser.slug}`}
+                  className={`inline-block border border-${loser.color}-500/40 hover:border-${loser.color}-500 text-${loser.color}-400 hover:text-${loser.color}-300 font-semibold px-5 py-3 rounded-lg transition`}
+                >
+                  Voir la fiche {loser.name}
+                </Link>
+              )
+            )}
+          </div>
+          <p className="text-xs text-slate-500 mt-3">
+            Liens affiliés possibles · sans surcoût, sans influence sur le
+            verdict.
+          </p>
         </div>
       </section>
 
@@ -349,17 +403,27 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
             name={A.name}
             color={A.color}
             items={data.porQuiA}
-            href={A.ficheAvailable ? `/outils/${A.slug}` : undefined}
-            buttonText={`Voir la fiche ${A.name} →`}
+            ficheHref={A.ficheAvailable ? `/outils/${A.slug}` : undefined}
+            affiliateHref={
+              ctaA.hasRealAffiliateLink ? ctaA.outil!.affiliateLink : undefined
+            }
+            outilSlug={A.slug}
           />
           <PorQuiCard
             name={B.name}
             color={B.color}
             items={data.porQuiB}
-            href={B.ficheAvailable ? `/outils/${B.slug}` : undefined}
-            buttonText={`Voir la fiche ${B.name} →`}
+            ficheHref={B.ficheAvailable ? `/outils/${B.slug}` : undefined}
+            affiliateHref={
+              ctaB.hasRealAffiliateLink ? ctaB.outil!.affiliateLink : undefined
+            }
+            outilSlug={B.slug}
           />
         </div>
+        <p className="text-xs text-slate-500 mt-4">
+          Liens affiliés possibles · sans surcoût, sans influence sur le
+          verdict.
+        </p>
       </section>
 
       {/* CAS D'USAGE */}
@@ -420,6 +484,7 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
                 outilSlug={winnerCta.outil.slug}
                 outilName={winnerCta.outil.name}
                 source="comparatif"
+                position="verdict_bas"
                 className={`inline-block bg-${winner.color}-500 hover:bg-${winner.color}-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg`}
               >
                 {data.verdictFinal.ctaText}
@@ -441,6 +506,7 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
                   outilSlug={loserCta.outil.slug}
                   outilName={loserCta.outil.name}
                   source="comparatif"
+                  position="verdict_bas"
                   className={`inline-block border border-${loser.color}-500/40 hover:border-${loser.color}-500 text-${loser.color}-400 hover:text-${loser.color}-300 font-semibold px-8 py-4 rounded-xl transition text-lg`}
                 >
                   Tester {loser.name}
@@ -586,14 +652,18 @@ function PorQuiCard({
   name,
   color,
   items,
-  href,
-  buttonText,
+  ficheHref,
+  affiliateHref,
+  outilSlug,
 }: {
   name: string;
   color: TailwindColor;
   items: string[];
-  href?: string;
-  buttonText: string;
+  /** Lien interne vers la fiche Filtrio (si publiée). */
+  ficheHref?: string;
+  /** Lien affilié réel (si programme actif), sinon undefined. */
+  affiliateHref?: string;
+  outilSlug: string;
 }) {
   return (
     <div
@@ -608,12 +678,34 @@ function PorQuiCard({
           </li>
         ))}
       </ul>
-      {href ? (
+      {/* Zone de conversion 2 : recommandation_milieu */}
+      {affiliateHref ? (
+        <div className="mt-8 flex flex-col items-start gap-3">
+          <TrackedAffiliateLink
+            href={affiliateHref}
+            outilSlug={outilSlug}
+            outilName={name}
+            source="comparatif"
+            position="recommandation_milieu"
+            className={`inline-flex items-center gap-2 bg-${color}-500 hover:bg-${color}-400 text-slate-950 font-semibold px-5 py-3 rounded-lg transition`}
+          >
+            Tester {name}
+          </TrackedAffiliateLink>
+          {ficheHref && (
+            <Link
+              href={ficheHref}
+              className={`text-sm text-${color}-400 hover:text-${color}-300 hover:underline`}
+            >
+              Lire la fiche Filtrio →
+            </Link>
+          )}
+        </div>
+      ) : ficheHref ? (
         <Link
-          href={href}
+          href={ficheHref}
           className={`mt-8 inline-flex items-center gap-2 bg-${color}-500 hover:bg-${color}-400 text-slate-950 font-semibold px-5 py-3 rounded-lg transition`}
         >
-          {buttonText}
+          Voir la fiche {name} →
         </Link>
       ) : (
         <span

@@ -219,6 +219,29 @@ export default function AlternativesASubmagicPage() {
             podcast distant, workflow automatisé), une alternative peut être
             plus adaptée. Voici les options qu&apos;on recommande.
           </p>
+          {/* Zone de conversion 1 : verdict_haut, carte du gagnant */}
+          <div className="flex flex-wrap gap-3 mt-6">
+            <TrackedAffiliateLink
+              href={submagic.affiliateLink}
+              outilSlug="submagic"
+              outilName="Submagic"
+              source="comparatif"
+              position="verdict_haut"
+              className="inline-block bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold px-5 py-3 rounded-lg transition"
+            >
+              Tester Submagic gratuitement
+            </TrackedAffiliateLink>
+            <Link
+              href="/outils/submagic"
+              className="inline-block border border-slate-700 hover:border-slate-600 text-slate-200 font-semibold px-5 py-3 rounded-lg transition"
+            >
+              Lire la fiche Filtrio
+            </Link>
+          </div>
+          <p className="text-xs text-slate-500 mt-3">
+            Liens affiliés possibles · sans surcoût, sans influence sur le
+            verdict.
+          </p>
         </div>
       </section>
 
@@ -576,6 +599,7 @@ export default function AlternativesASubmagicPage() {
               outilSlug="submagic"
               outilName="Submagic"
               source="comparatif"
+              position="verdict_bas"
               className="inline-block bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg"
             >
               Tester Submagic →
@@ -662,6 +686,7 @@ function AlternativeCard({ alt, rank }: { alt: Alternative; rank: number }) {
                   outilSlug={outil.slug}
                   outilName={outil.name}
                   source="comparatif"
+                  position="recommandation_milieu"
                   className={`bg-${c}-500 hover:bg-${c}-400 text-slate-950 font-semibold px-5 py-2.5 rounded-lg text-sm transition`}
                 >
                   Tester {outil.name} →

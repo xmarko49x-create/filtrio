@@ -14,7 +14,7 @@ const SLUG = "outils-shorts-tiktok-2026";
 const TITLE = "Comparatif des outils IA pour shorts et TikTok en 2026";
 const SUBTITLE =
   "Submagic, OpusClip, Descript, CapCut, Veed et Kapwing comparés sur 12 critères. Tableau côte à côte, recommandation par profil, verdict tranché.";
-const LAST_CHECK = "29/04/2026";
+const LAST_CHECK = "10/07/2026";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -193,7 +193,7 @@ const PROFILS: Profil[] = [
       "Tu démarres, tu découvres les outils, tu n'es pas sûr de tenir 6 mois. La gratuité prime.",
     recommandation: "capcut",
     raisons: [
-      "100 % gratuit sans watermark",
+      "Gratuit, exports classiques généralement sans filigrane",
       "Apps iOS et Android complètes",
       "Communauté FR énorme avec des tutos partout",
       "Tu peux toujours upgrader vers Submagic plus tard si tu deviens régulier",
@@ -271,7 +271,7 @@ const FAQ = [
     question:
       "Quel outil choisir si je débute totalement sans budget ?",
     answer:
-      "CapCut sans hésiter. Il est 100 % gratuit, fonctionne sur PC et mobile, et la qualité de base est largement suffisante pour démarrer. La communauté FR est immense, tu trouveras un tuto pour tout. Tu pourras toujours upgrader vers Submagic ou OpusClip plus tard si tu deviens régulier et que tu sens un plafond.",
+      "CapCut sans hésiter. Sa version de base est gratuite, fonctionne sur PC et mobile, et la qualité est largement suffisante pour démarrer. La communauté FR est immense, tu trouveras un tuto pour tout. Tu pourras toujours upgrader vers Submagic ou OpusClip plus tard si tu deviens régulier et que tu sens un plafond.",
   },
   {
     question:

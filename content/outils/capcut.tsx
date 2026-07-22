@@ -4,7 +4,7 @@ import type { FicheData } from "@/components/fiche/FicheOutilLayout";
 export const capcutFiche: FicheData = {
   slug: "capcut",
   hero: {
-    h1: "CapCut : l'avis complet en 2026",
+    h1: "CapCut Desktop : notre avis complet en 2026",
     tagline:
       "Le leader gratuit du montage vidéo mobile et desktop. Édition complète, sous-titres auto, fonctionnalités IA, bibliothèque massive. Voici pour qui c'est suffisant et pour qui c'est trop limité.",
     badges: [
@@ -78,6 +78,32 @@ export const capcutFiche: FicheData = {
       ),
     },
   ],
+  sectionApresVerdict: {
+    titre: "CapCut Desktop sur PC et Mac : notre avis",
+    contenu: (
+      <>
+        <p>
+          CapCut Desktop existe en application dédiée sur Windows et macOS, en plus
+          des versions mobile et web. Si tu montes régulièrement, c&apos;est la
+          version la plus confortable : timeline plus lisible sur grand écran,
+          raccourcis clavier, et une gestion bien plus sereine des projets longs ou
+          multi-pistes qu&apos;un montage au doigt sur smartphone.
+        </p>
+        <p>
+          Un point à garder en tête : les fonctionnalités et les prix ne sont pas
+          strictement identiques entre le Web, le mobile et Desktop. Avant de
+          t&apos;abonner, vérifie ce qui est inclus sur la plateforme que tu
+          utilises vraiment.
+        </p>
+        <p>
+          Pour démarrer, la version gratuite de CapCut Desktop suffit largement :
+          l&apos;éditeur et l&apos;essentiel des fonctions sont accessibles sans
+          payer. L&apos;abonnement Pro s&apos;adresse surtout à ceux qui ont besoin
+          des ressources premium et des fonctions IA au quotidien.
+        </p>
+      </>
+    ),
+  },
   porQui: [
     "Tu débutes et ton budget est zéro",
     "Tu montes principalement sur mobile (app iOS/Android leader du marché)",

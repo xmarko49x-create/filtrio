@@ -31,6 +31,8 @@ export interface FicheData {
   /** Visuel illustratif optionnel affiché entre le hero et le verdict (mockup interface ou capture d'écran). */
   apercuVisuel?: ReactNode;
   verdict30s: { question: string; answer: ReactNode }[];
+  /** Section éditoriale optionnelle affichée juste après le verdict 30s, avant "Pour qui / pas pour qui". */
+  sectionApresVerdict?: { titre: string; contenu: ReactNode };
   porQui: string[];
   pasPourQui: ReactNode[];
   scoring: {
@@ -248,6 +250,18 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
           )}
         </div>
       </section>
+
+      {/* SECTION ÉDITORIALE APRÈS VERDICT, optionnelle */}
+      {data.sectionApresVerdict && (
+        <section className="max-w-5xl mx-auto px-6 pb-16">
+          <h2 className="text-3xl font-bold mb-6 tracking-tight">
+            {data.sectionApresVerdict.titre}
+          </h2>
+          <div className="text-slate-300 leading-relaxed space-y-4">
+            {data.sectionApresVerdict.contenu}
+          </div>
+        </section>
+      )}
 
       {/* POUR QUI / PAS POUR QUI */}
       <section className="max-w-5xl mx-auto px-6 pb-20">

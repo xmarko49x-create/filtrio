@@ -64,6 +64,8 @@ export interface Outil {
   commission?: string;
   /** Override du <title> SEO. Sinon template "{name} avis 2026 : prix, fonctionnalités, alternatives". */
   metaTitle?: string;
+  /** Override de la meta description SEO. Sinon description générée (prix + score + tagline). */
+  metaDescription?: string;
 }
 
 export const OUTILS: Outil[] = [
@@ -226,6 +228,8 @@ export const OUTILS: Outil[] = [
     color: "sky",
     tagline: "Éditeur gratuit",
     metaTitle: "CapCut Desktop : avis sur la version PC et prix en 2026",
+    metaDescription:
+      "Avis sur CapCut Desktop en 2026 : version gratuite, prix de CapCut Pro, fonctions IA sur PC et Mac, points forts et limites pour un usage régulier.",
     category: "editeur",
     priceFrom: "Gratuit · Pro à 23,99 €/mois (App Store FR, variable selon plateforme)",
     freeTier: "Version gratuite disponible · essai Pro 7 jours selon l'appareil et l'éligibilité",

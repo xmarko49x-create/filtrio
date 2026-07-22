@@ -5,9 +5,9 @@ import Newsletter from "@/components/Newsletter";
 import PlateformeSection from "@/components/PlateformeSection";
 
 export const metadata: Metadata = {
-  title: "Outils IA pour YouTubeurs en 2026",
+  title: "Outils IA pour YouTube en 2026 : SEO, miniatures et Shorts",
   description:
-    "Sélection 2026 des meilleurs outils IA pour YouTubeurs : SEO, miniatures, voix off, édition long format, découpe en shorts. Analysés sur 6 critères.",
+    "Les meilleurs outils IA pour YouTube en 2026 : VidIQ, TubeBuddy, Canva, OpusClip et alternatives comparés pour le SEO, les miniatures et les Shorts.",
   alternates: { canonical: "/youtube" },
 };
 
@@ -21,7 +21,8 @@ export default function YouTubePage() {
           Sélection YouTube · juillet 2026
         </div>
         <h1 className="text-5xl md:text-6xl font-bold leading-[1.05] mb-6 tracking-tight">
-          Les outils IA pour <span className="text-red-400">YouTubeurs</span>.
+          Les meilleurs outils IA pour{" "}
+          <span className="text-red-400">YouTube</span> en 2026
         </h1>
         <p className="text-xl text-slate-400 leading-relaxed mb-4 max-w-3xl">
           Pour grandir sur YouTube aujourd&apos;hui, tu as besoin de 4 choses :

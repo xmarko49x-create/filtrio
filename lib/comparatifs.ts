@@ -11,6 +11,10 @@ export interface ComparatifMeta {
   outilB: string;
   /** Minutes estimées. */
   tempsLecture: number;
+  /** Override du <title> SEO. Sinon template "{titre} : lequel choisir en 2026 ?". */
+  metaTitle?: string;
+  /** Override de la meta description SEO. Sinon description générée depuis le registre. */
+  metaDescription?: string;
 }
 
 export const COMPARATIFS: ComparatifMeta[] = [
@@ -22,6 +26,9 @@ export const COMPARATIFS: ComparatifMeta[] = [
     outilA: "opusclip",
     outilB: "submagic",
     tempsLecture: 7,
+    metaTitle: "OpusClip vs Submagic en 2026 : lequel choisir pour vos Shorts",
+    metaDescription:
+      "OpusClip automatise la découpe des vidéos longues ; Submagic soigne les sous-titres français. Prix, qualité et verdict selon ton usage en 2026.",
   },
   {
     slug: "submagic-vs-capcut",

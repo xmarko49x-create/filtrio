@@ -23,12 +23,18 @@ export async function generateMetadata(props: {
   // Suffix ajouté seulement si la description du registre n'en contient pas déjà.
   const baseDesc = meta.description.replace(/\s+$/, "");
   const hasSuffix = /(verdict|alternatives|FAQ|prix|plans|cas d'usage)/i.test(baseDesc);
-  const description = hasSuffix
-    ? `${meta.titre} en 2026. ${baseDesc}`
-    : `${meta.titre} en 2026. ${baseDesc} Verdict tranché, prix, alternatives et cas d'usage détaillés.`;
+  // Description : override par comparatif si défini, sinon description générée.
+  const description =
+    meta.metaDescription ??
+    (hasSuffix
+      ? `${meta.titre} en 2026. ${baseDesc}`
+      : `${meta.titre} en 2026. ${baseDesc} Verdict tranché, prix, alternatives et cas d'usage détaillés.`);
+
+  // Title : override par comparatif si défini, sinon template générique.
+  const baseTitle = meta.metaTitle ?? `${meta.titre} : lequel choisir en 2026 ?`;
 
   return {
-    title: `${meta.titre} : lequel choisir en 2026 ?`,
+    title: baseTitle,
     description,
     alternates: { canonical: `/comparatifs/${slug}` },
     openGraph: {

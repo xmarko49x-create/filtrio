@@ -49,8 +49,22 @@ const FAQ = [
   },
   {
     question: "Puis-je réutiliser ces données dans un article ou une vidéo ?",
-    answer:
-      "Oui. Ces données sont librement citables dans la presse, les blogs, les newsletters et les vidéos, à une condition simple : mentionner la source avec un lien vers cette page (filtrio.fr/observatoire-prix). Pour toute question ou demande de données complémentaires : contact@filtrio.fr.",
+    answer: (
+      <>
+        Oui. Les chiffres peuvent être cités ou réutilisés à condition de
+        mentionner “Filtrio – Observatoire des prix des outils IA vidéo”,
+        d&apos;indiquer la date de consultation et d&apos;ajouter un lien vers
+        cette page. La revente ou la republication intégrale du jeu de données
+        comme produit autonome n&apos;est pas autorisée. Consulte les{" "}
+        <a
+          href="#reutilisation-des-donnees"
+          className="text-emerald-400 hover:underline"
+        >
+          conditions complètes de réutilisation
+        </a>
+        .
+      </>
+    ),
   },
 ];
 
@@ -128,6 +142,8 @@ export default function ObservatoirePrixPage() {
             dateModified: "2026-07-10",
             inLanguage: "fr",
             isAccessibleForFree: true,
+            license:
+              "https://www.filtrio.fr/observatoire-prix#reutilisation-des-donnees",
           },
         ]}
       />
@@ -426,6 +442,24 @@ export default function ObservatoirePrixPage() {
             contact@filtrio.fr, réponse généralement sous 24h.
           </p>
         </div>
+      </section>
+
+      {/* RÉUTILISATION DES DONNÉES */}
+      <section
+        id="reutilisation-des-donnees"
+        className="max-w-5xl mx-auto px-6 py-10 scroll-mt-24"
+      >
+        <h2 className="text-3xl font-bold tracking-tight mb-5">
+          Réutilisation des données
+        </h2>
+        <p className="text-slate-300 leading-relaxed max-w-3xl">
+          Les chiffres synthétiques et les extraits de cet Observatoire peuvent
+          être cités et réutilisés à condition de mentionner « Filtrio —
+          Observatoire des prix des outils IA vidéo », d&apos;indiquer la date
+          de consultation et d&apos;ajouter un lien vers cette page. La
+          reproduction intégrale du tableau ou du fichier CSV à des fins de
+          revente nécessite une autorisation préalable.
+        </p>
       </section>
 
       {/* METHODO */}

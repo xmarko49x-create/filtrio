@@ -225,6 +225,7 @@ export const OUTILS: Outil[] = [
     score: 7.8,
     color: "sky",
     tagline: "Éditeur gratuit",
+    metaTitle: "CapCut Desktop : avis sur la version PC et prix en 2026",
     category: "editeur",
     priceFrom: "Gratuit · Pro à 23,99 €/mois (App Store FR, variable selon plateforme)",
     freeTier: "Version gratuite disponible · essai Pro 7 jours selon l'appareil et l'éligibilité",

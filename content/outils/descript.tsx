@@ -71,7 +71,15 @@ export const descriptFiche: FicheData = {
         <>
           <strong className="text-violet-400">Oui</strong>, si tu fais du long
           format conversationnel régulier. L&apos;édition textuelle change
-          complètement le workflow. Pas indispensable pour d&apos;autres profils.
+          complètement le workflow. Pas indispensable pour d&apos;autres
+          profils. Pour l&apos;enregistrement avec des invités, voir notre{" "}
+          <Link
+            href="/cas-usage/podcast-enregistrement-distant"
+            className="text-violet-400 hover:underline"
+          >
+            comparatif des outils pour enregistrer un podcast à distance
+          </Link>
+          .
         </>
       ),
     },

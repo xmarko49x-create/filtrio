@@ -43,6 +43,53 @@ export const podcastEnregistrementDistant: CasUsageData = {
       </>,
     ],
   },
+  tableauSynthese: {
+    lignes: [
+      {
+        outil: (
+          <Link href="/outils/riverside" className="text-indigo-400 hover:underline">
+            Riverside
+          </Link>
+        ),
+        meilleurPour: "Qualité studio audio + vidéo (enregistrement local)",
+        gratuit: "Oui, plan gratuit",
+        prixEntree: "24 €/mois en annuel · 29 €/mois en mensuel",
+        verdict: "Notre gagnant (9,2/10)",
+      },
+      {
+        outil: (
+          <Link href="/outils/descript" className="text-violet-400 hover:underline">
+            Descript
+          </Link>
+        ),
+        meilleurPour: "Enregistrer et éditer dans le même outil",
+        gratuit: "Oui, limité à 1 h",
+        prixEntree: "16 $/mois",
+        verdict: "Alternative tout-en-un (8,6/10)",
+      },
+      {
+        outil: "Zencastr",
+        meilleurPour: "Podcast 100 % audio",
+        gratuit: "Oui, plan gratuit",
+        prixEntree: "20 $/mois",
+        verdict: "Solide en audio pur (8,2/10)",
+      },
+      {
+        outil: "SquadCast (by Descript)",
+        meilleurPour: "Qualité audio historique, désormais dans Descript",
+        gratuit: "Via Descript",
+        prixEntree: "Intégré à Descript",
+        verdict: "Prendre Descript directement (7,8/10)",
+      },
+      {
+        outil: "Zoom / Google Meet",
+        meilleurPour: "Réunions internes, pas la publication",
+        gratuit: "Oui",
+        prixEntree: "Gratuit",
+        verdict: "À éviter pour un podcast publié (5,5/10)",
+      },
+    ],
+  },
   criteres: [
     {
       label: "Qualité audio brute",
@@ -97,7 +144,7 @@ export const podcastEnregistrementDistant: CasUsageData = {
       priceDisplay: {
         label: "À partir de",
         value: "24 €/mois",
-        note: "Plan gratuit disponible",
+        note: "En annuel · 29 €/mois en mensuel · Plan gratuit disponible",
       },
     },
     {

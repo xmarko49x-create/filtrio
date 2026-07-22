@@ -77,7 +77,15 @@ export const riversideFiche: FicheData = {
         <>
           <strong className="text-indigo-400">Oui</strong>, si tu fais du
           podcast ou de l&apos;interview avec des invités à distance.
-          C&apos;est l&apos;option la plus spécialisée pour ce cas précis.
+          C&apos;est l&apos;option la plus spécialisée pour ce cas précis. On
+          compare les 5 outils du marché dans notre guide pour{" "}
+          <Link
+            href="/cas-usage/podcast-enregistrement-distant"
+            className="text-indigo-400 hover:underline"
+          >
+            enregistrer un podcast à distance
+          </Link>
+          .
         </>
       ),
     },

@@ -40,6 +40,16 @@ export interface CasUsageData {
     headline: ReactNode;
     paragraphs: ReactNode[];
   };
+  /** Tableau comparatif synthétique optionnel, affiché entre le verdict et les critères. */
+  tableauSynthese?: {
+    lignes: {
+      outil: ReactNode;
+      meilleurPour: string;
+      gratuit: string;
+      prixEntree: string;
+      verdict: string;
+    }[];
+  };
   criteres: { label: string; poids: number; description: string }[];
   classement: OutilDansClassement[];
   pourquoiGagne: { titre: string; description: string }[];
@@ -123,6 +133,38 @@ export default function CasUsageLayout({ data }: { data: CasUsageData }) {
           ))}
         </div>
       </section>
+
+      {/* TABLEAU SYNTHÉTIQUE, optionnel */}
+      {data.tableauSynthese && (
+        <section className="max-w-5xl mx-auto px-6 pb-16">
+          <div className="overflow-x-auto rounded-2xl border border-slate-800">
+            <table className="w-full text-sm text-left">
+              <thead className="bg-slate-900/60 text-slate-400 uppercase text-xs tracking-wider">
+                <tr>
+                  <th scope="col" className="px-4 py-3 font-semibold">Outil</th>
+                  <th scope="col" className="px-4 py-3 font-semibold">Meilleur pour</th>
+                  <th scope="col" className="px-4 py-3 font-semibold">Gratuit</th>
+                  <th scope="col" className="px-4 py-3 font-semibold">Prix d&apos;entrée</th>
+                  <th scope="col" className="px-4 py-3 font-semibold">Verdict</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-800">
+                {data.tableauSynthese.lignes.map((l, i) => (
+                  <tr key={i} className="align-top">
+                    <td className="px-4 py-3 font-semibold text-slate-200 whitespace-nowrap">
+                      {l.outil}
+                    </td>
+                    <td className="px-4 py-3 text-slate-300">{l.meilleurPour}</td>
+                    <td className="px-4 py-3 text-slate-300">{l.gratuit}</td>
+                    <td className="px-4 py-3 text-slate-300">{l.prixEntree}</td>
+                    <td className="px-4 py-3 text-slate-400">{l.verdict}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
 
       {/* CRITÈRES */}
       <section className="border-y border-slate-800 bg-slate-900/40">

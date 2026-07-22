@@ -11,15 +11,14 @@ import { getOutilOrThrow, type Outil } from "@/lib/outils";
 import { getFaqPageSchema, getBreadcrumbSchema } from "@/lib/schema";
 
 const SLUG = "outils-shorts-tiktok-2026";
-const TITLE = "Comparatif des outils IA pour shorts et TikTok en 2026";
+const TITLE = "Meilleur outil pour Shorts en 2026 : 6 solutions comparées";
 const SUBTITLE =
-  "Submagic, OpusClip, Descript, CapCut, Veed et Kapwing comparés sur 12 critères. Tableau côte à côte, recommandation par profil, verdict tranché.";
+  "Submagic, OpusClip, CapCut, Descript, Veed et Kapwing comparés sur 12 critères : prix, sous-titres français, clipping, export et verdict par profil.";
 const LAST_CHECK = "10/07/2026";
 
 export const metadata: Metadata = {
   title: TITLE,
-  description:
-    "Le grand comparatif 2026 des 6 outils de référence pour créer des shorts, TikTok et Reels. Sous-titres, clipping IA, prix, plan gratuit, qualité FR : tout sur la même page.",
+  description: SUBTITLE,
   alternates: { canonical: `/comparatifs/${SLUG}` },
   openGraph: {
     title: TITLE,
@@ -113,7 +112,7 @@ const CRITERES_TABLEAU: CritereLine[] = [
       "12 €/mois (annuel)",
       "15 $/mois",
       "16 $/mois (annuel)",
-      "Gratuit",
+      "Gratuit (Pro variable selon plateforme)",
       "11 €/mois (annuel, TTC)",
       "16 $/mois (annuel)",
     ],
@@ -343,8 +342,8 @@ export default function GrandComparatifPage() {
           Page-pilier · Mise à jour {LAST_CHECK}
         </div>
         <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-5 tracking-tight">
-          Le grand comparatif des outils IA pour{" "}
-          <span className="text-amber-400">shorts et TikTok</span> en 2026.
+          Quel est le meilleur outil pour créer des{" "}
+          <span className="text-amber-400">Shorts</span> en 2026 ?
         </h1>
         <div className="mb-6">
           <AuthorByline
@@ -354,6 +353,14 @@ export default function GrandComparatifPage() {
         </div>
         <p className="text-xl text-slate-400 leading-relaxed max-w-3xl">
           {SUBTITLE}
+        </p>
+        <p className="text-slate-400 leading-relaxed mt-4 max-w-3xl">
+          Tu préfères une sélection plus large, organisée par type de besoin
+          (sous-titres, découpe, voix IA, avatars) ? Voir notre page{" "}
+          <Link href="/tiktok-shorts" className="text-amber-400 hover:underline">
+            outils IA pour TikTok, Shorts et Reels
+          </Link>
+          .
         </p>
       </section>
 

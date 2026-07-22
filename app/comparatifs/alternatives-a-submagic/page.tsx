@@ -18,9 +18,15 @@ export const metadata: Metadata = {
 };
 
 interface Alternative {
-  slug: string;
+  /** Slug au registre Filtrio. Absent si l'outil n'a pas encore de fiche (ex : Captions). */
+  slug?: string;
+  fallbackName?: string;
+  fallbackColor?: TailwindColor;
+  /** Lien externe direct (non affilié) pour les outils sans fiche. */
+  externalUrl?: string;
   positionnement: string;
-  scoreAlt: number;
+  /** Score éditorial Filtrio. Absent si l'outil n'est pas encore noté. */
+  scoreAlt?: number;
   pourquoi: string;
   limites: string;
   verdict: string;
@@ -31,14 +37,14 @@ const ALTERNATIVES: Alternative[] = [
   {
     slug: "capcut",
     positionnement: "Gratuit",
-    scoreAlt: 8.5,
+    scoreAlt: 7.8,
     pourquoi:
       "Éditeur vidéo complet + sous-titres auto. Rapport qualité/prix imbattable (c'est gratuit). La référence pour qui ne peut ou ne veut pas payer.",
     limites:
       "Moins spécialisé sur les sous-titres viraux FR. Le rendu demande de la personnalisation manuelle. ByteDance (TikTok) = certaines entreprises bloquent.",
     verdict:
       "Alternative n°1 si ton budget est zéro. Tu ne retrouveras pas les templates viraux prêts de Submagic, mais tu couvriras 80% des besoins.",
-    priceLabel: "Gratuit",
+    priceLabel: "Gratuit · Pro à 23,99 €/mois",
   },
   {
     slug: "opusclip",
@@ -74,19 +80,20 @@ const ALTERNATIVES: Alternative[] = [
       "Sous-titres FR moins soignés que Submagic. Moins de templates viraux prêts. Performance IA généraliste, pas spécialisée.",
     verdict:
       "Alternative si tu veux un outil plus polyvalent que Submagic et moins spécialisé. Bon équilibre features/prix.",
-    priceLabel: "À partir de 11 €/mois",
+    priceLabel: "À partir de 11 €/mois en annuel, TTC",
   },
   {
-    slug: "riverside",
-    positionnement: "Podcast distant",
-    scoreAlt: 8.1,
+    fallbackName: "Captions",
+    fallbackColor: "slate",
+    externalUrl: "https://www.captions.ai/",
+    positionnement: "Création tout-IA",
     pourquoi:
-      "Si ton besoin est d'enregistrer des podcasts ou interviews à distance en qualité studio. Pas du tout le même usage que Submagic, mais souvent cité en alternative par confusion.",
+      "Création vidéo entièrement assistée par IA : acteurs IA, génération de B-roll, voix off, montage piloté au chat. Le sous-titrage gère plus de 100 langues.",
     limites:
-      "N'a rien à voir avec les shorts viraux. À considérer uniquement si tu cherches un outil podcast distant, pas un remplaçant Submagic.",
+      "Interface en anglais. Plan payant qui démarre plus haut (Max à 24,99 $/mois affiché côté iOS, vérifié le 29/06/2026). Moins localisé FR que Submagic pour le sous-titrage pur.",
     verdict:
-      "Fausse alternative dans la plupart des cas. Pertinent uniquement si tu as mal identifié ton vrai besoin.",
-    priceLabel: "À partir de 24 €/mois",
+      "Vraie alternative si tu veux générer des vidéos complètes avec l'IA. Pour du simple sous-titrage de shorts en français, Submagic reste plus direct.",
+    priceLabel: "Max à 24,99 $/mois (iOS)",
   },
 ];
 
@@ -111,9 +118,9 @@ const TABLE_ROWS: TableRow[] = [
   {
     nom: "Submagic",
     gratuit: "Essai limité",
-    prix: "12 €/mois",
+    prix: "12 €/mois (annuel, affiché en euros)",
     meilleurPour: "Sous-titres viraux courts en français",
-    sousTitresFR: "La référence du classement",
+    sousTitresFR: "La référence de la sélection",
     ref: true,
   },
   {
@@ -133,14 +140,14 @@ const TABLE_ROWS: TableRow[] = [
   {
     nom: "CapCut",
     gratuit: "Oui (éditeur complet)",
-    prix: "Gratuit, Pro à 199,99 €/an",
+    prix: "Gratuit · Pro à 23,99 €/mois (App Store FR, variable selon plateforme)",
     meilleurPour: "Éditeur gratuit polyvalent",
     sousTitresFR: "Corrects, plus de réglage manuel",
   },
   {
     nom: "Veed",
     gratuit: "Oui",
-    prix: "11 €/mois",
+    prix: "11 €/mois (annuel, TTC)",
     meilleurPour: "Éditeur web tout-en-un",
     sousTitresFR: "Moins soignés que Submagic",
   },
@@ -215,9 +222,10 @@ export default function AlternativesASubmagicPage() {
             catégorie, pas optimal pour le clipping massif de long format.
           </p>
           <p className="text-slate-400 leading-relaxed">
-            Selon ton cas d&apos;usage (budget zéro, long format, équipe,
-            podcast distant, workflow automatisé), une alternative peut être
-            plus adaptée. Voici les options qu&apos;on recommande.
+            Selon ton cas d&apos;usage (budget zéro, découpe de long format,
+            édition longue, outil polyvalent, création tout-IA), une
+            alternative peut être plus adaptée. Voici les options qu&apos;on
+            recommande.
           </p>
           {/* Zone de conversion 1 : verdict_haut, carte du gagnant */}
           <div className="flex flex-wrap gap-3 mt-6">
@@ -355,13 +363,50 @@ export default function AlternativesASubmagicPage() {
             Les 5 alternatives analysées
           </div>
           <h2 className="text-3xl font-bold mb-10 tracking-tight">
-            Classement par score éditorial.
+            Les alternatives à Submagic selon ton usage
           </h2>
           <div className="space-y-4">
             {ALTERNATIVES.map((alt, i) => (
-              <AlternativeCard key={alt.slug} alt={alt} rank={i + 1} />
+              <AlternativeCard
+                key={alt.slug ?? alt.fallbackName}
+                alt={alt}
+                rank={i + 1}
+              />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* À NE PAS CONFONDRE : RIVERSIDE */}
+      <section className="max-w-5xl mx-auto px-6 pt-16">
+        <div className="bg-slate-900 border border-indigo-500/30 rounded-2xl p-6 md:p-8">
+          <div className="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-3">
+            À ne pas confondre
+          </div>
+          <h2 className="text-2xl font-bold mb-3 tracking-tight">
+            Riverside n&apos;est pas une alternative à Submagic
+          </h2>
+          <p className="text-slate-300 leading-relaxed">
+            Riverside est parfois cité parmi les alternatives à Submagic, mais
+            c&apos;est un autre métier : il sert surtout à{" "}
+            <Link
+              href="/cas-usage/podcast-enregistrement-distant"
+              className="text-indigo-400 hover:underline"
+            >
+              enregistrer un podcast à distance
+            </Link>{" "}
+            en qualité studio (à partir de 24 €/mois en annuel, plan gratuit
+            disponible). Si ton besoin est de sous-titrer ou monter des shorts,
+            ce n&apos;est pas le bon outil. Si tu cherches un enregistreur
+            distant, voir la{" "}
+            <Link
+              href="/outils/riverside"
+              className="text-indigo-400 hover:underline"
+            >
+              fiche Riverside
+            </Link>
+            .
+          </p>
         </div>
       </section>
 
@@ -571,7 +616,10 @@ export default function AlternativesASubmagicPage() {
                 <span className="faq-chevron transition-transform text-amber-400">+</span>
               </summary>
               <div className="text-slate-400 mt-4 leading-relaxed">
-                Canva et Veed proposent la facturation EUR native avec TVA FR. Submagic affiche également ses prix en euros pour les visiteurs européens (12 à 41 €/mois en annuel). Vérifie la devise réellement facturée sur ta facture avant de trancher si la conformité comptable FR est critique.
+                Submagic affiche désormais ses prix en euros. Veed, Canva et
+                Riverside proposent également des tarifs en euros depuis la
+                France. CapCut reste variable selon le pays, l&apos;appareil et
+                le canal d&apos;abonnement.
               </div>
             </details>
           </div>
@@ -589,9 +637,9 @@ export default function AlternativesASubmagicPage() {
           </h2>
           <p className="text-xl text-slate-400 leading-relaxed mb-10 max-w-2xl mx-auto">
             Les alternatives ci-dessus ne battent Submagic que sur des cas
-            précis (gratuit, long format, podcast distant). Pour le short
-            viral FR, Submagic reste l&apos;option la plus complète de notre
-            classement.
+            précis (gratuit, découpe de long format, création tout-IA). Pour le
+            short viral FR, Submagic reste l&apos;option la plus complète de
+            notre sélection.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <TrackedAffiliateLink
@@ -621,34 +669,52 @@ export default function AlternativesASubmagicPage() {
 }
 
 function AlternativeCard({ alt, rank }: { alt: Alternative; rank: number }) {
-  const outil = getOutilOrThrow(alt.slug);
-  const c: TailwindColor = outil.color;
+  const outil = alt.slug ? getOutilOrThrow(alt.slug) : null;
+  const c: TailwindColor = outil?.color ?? alt.fallbackColor ?? "slate";
   const hex = colorHex(c);
-  const pct = Math.round(alt.scoreAlt * 10);
-  const hasRealAffiliateLink = /^https?:\/\//.test(outil.affiliateLink);
+  const nom = outil?.name ?? alt.fallbackName ?? "";
+  const pct = alt.scoreAlt !== undefined ? Math.round(alt.scoreAlt * 10) : 0;
+  const hasRealAffiliateLink = outil
+    ? /^https?:\/\//.test(outil.affiliateLink)
+    : false;
 
   return (
     <article className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8">
       <div className="flex flex-col md:flex-row md:items-start gap-6">
         <div className="flex-shrink-0 flex flex-col items-center">
-          <div
-            className="w-20 h-20 rounded-full flex items-center justify-center"
-            style={{ background: `conic-gradient(${hex} ${pct}%, #1e293b 0)` }}
-          >
-            <div className="bg-slate-900 w-16 h-16 rounded-full flex items-center justify-center">
-              <span className="text-xl font-bold" style={{ color: hex }}>
-                {alt.scoreAlt.toFixed(1)}
-              </span>
-            </div>
-          </div>
-          <div className="text-xs text-slate-500 mt-2">Score éditorial</div>
+          {alt.scoreAlt !== undefined ? (
+            <>
+              <div
+                className="w-20 h-20 rounded-full flex items-center justify-center"
+                style={{ background: `conic-gradient(${hex} ${pct}%, #1e293b 0)` }}
+              >
+                <div className="bg-slate-900 w-16 h-16 rounded-full flex items-center justify-center">
+                  <span className="text-xl font-bold" style={{ color: hex }}>
+                    {alt.scoreAlt.toFixed(1)}
+                  </span>
+                </div>
+              </div>
+              <div className="text-xs text-slate-500 mt-2">Score éditorial</div>
+            </>
+          ) : (
+            <>
+              <div className="w-20 h-20 rounded-full border-2 border-dashed border-slate-700 flex items-center justify-center">
+                <span className="text-xl font-bold text-slate-500">—</span>
+              </div>
+              <div className="text-xs text-slate-500 mt-2 text-center">
+                Pas encore
+                <br />
+                de fiche
+              </div>
+            </>
+          )}
         </div>
 
         <div className="flex-1">
           <div className="flex items-start justify-between gap-4 mb-3">
             <div>
               <h3 className="text-2xl font-bold mb-1">
-                {rank}. {outil.name}
+                {rank}. {nom}
               </h3>
               <span className={`bg-${c}-500/10 text-${c}-400 text-xs font-semibold px-2 py-1 rounded`}>
                 {alt.positionnement}
@@ -678,7 +744,7 @@ function AlternativeCard({ alt, rank }: { alt: Alternative; rank: number }) {
             <span className="text-slate-200">{alt.verdict}</span>
           </div>
 
-          {outil.ficheAvailable && (
+          {outil?.ficheAvailable && (
             <div className="flex flex-wrap gap-3 mt-5">
               {hasRealAffiliateLink && (
                 <TrackedAffiliateLink
@@ -698,6 +764,18 @@ function AlternativeCard({ alt, rank }: { alt: Alternative; rank: number }) {
               >
                 Lire la fiche {outil.name}
               </Link>
+            </div>
+          )}
+          {!outil && alt.externalUrl && (
+            <div className="flex flex-wrap gap-3 mt-5">
+              <a
+                href={alt.externalUrl}
+                rel="noopener nofollow"
+                target="_blank"
+                className="border border-slate-700 hover:border-slate-600 px-5 py-2.5 rounded-lg text-sm transition"
+              >
+                Aller sur {nom} →
+              </a>
             </div>
           )}
         </div>

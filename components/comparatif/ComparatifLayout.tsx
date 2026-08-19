@@ -262,7 +262,7 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
           <div className={`text-sm font-semibold text-${A.color}-400 uppercase tracking-wider mb-3`}>
             Scores éditoriaux Filtrio
           </div>
-          <h2 className="text-3xl font-bold mb-10 tracking-tight">La note, par critère.</h2>
+          <h2 className="text-3xl font-bold mb-10 tracking-tight">Le duel, critère par critère.</h2>
 
           <div className="grid md:grid-cols-2 gap-6 mb-10">
             <OutilScoreCard data={A} hex={hexA} highlight />

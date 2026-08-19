@@ -20,7 +20,7 @@ const HOME_FAQ: { question: string; answer: React.ReactNode }[] = [
     question: "C'est gratuit, ces outils ?",
     answer: (
       <>
-        Plusieurs outils du classement proposent un plan gratuit ou un essai
+        Plusieurs outils comparés proposent un plan gratuit ou un essai
         sans carte bancaire (CapCut, OpusClip, Canva, ElevenLabs, VidIQ).
         Les outils les plus complets restent payants, à partir de 6 à 30
         €/mois selon le niveau.
@@ -45,7 +45,9 @@ const HOME_FAQ: { question: string; answer: React.ReactNode }[] = [
         Notre note est relative, pas commerciale. Chaque outil est évalué
         sur 6 critères pondérés. Un outil peut être très bon sur la qualité
         FR mais moyen sur les intégrations, ce qui donne une note finale
-        nuancée. C&apos;est ce qui rend le classement utile.
+        nuancée. Ces notes servent surtout à départager des outils d&apos;une
+        même catégorie : comparer un outil de voix IA à un outil de design
+        n&apos;aurait pas de sens.
       </>
     ),
   },
@@ -54,9 +56,11 @@ const HOME_FAQ: { question: string; answer: React.ReactNode }[] = [
     answer: (
       <>
         Certains liens vers les outils sont affiliés (Submagic, OpusClip,
-        ElevenLabs, VidIQ). Cela ne change <strong>jamais</strong> le
-        classement éditorial. Les scores sont attribués avant tout calcul
-        de commission, et la méthodologie est publique.
+        ElevenLabs, VidIQ). Les scores et les recommandations sont établis
+        selon nos critères éditoriaux, <strong>jamais</strong> selon la
+        commission. Nos recommandations par besoin incluent d&apos;ailleurs
+        des outils qui ne nous rémunèrent pas, comme TubeBuddy et Canva.
+        La méthodologie est publique.
       </>
     ),
   },
@@ -73,7 +77,7 @@ const HOME_FAQ: { question: string; answer: React.ReactNode }[] = [
     ),
   },
   {
-    question: "Comment vous choisissez les outils du classement ?",
+    question: "Comment vous choisissez les outils comparés ?",
     answer: (
       <>
         Niche : créateurs vidéo (YouTube, TikTok / Shorts / Reels). Critère
@@ -86,20 +90,73 @@ const HOME_FAQ: { question: string; answer: React.ReactNode }[] = [
 ];
 
 /**
- * Sélection éditoriale du top 5 home.
- * Choix manuel : on combine score élevé et capacité à monétiser.
- * VidIQ remplace TubeBuddy (programme affilié TubeBuddy fermé en 2026).
+ * Recommandations par besoin.
+ *
+ * Un outil par usage, sélectionné uniquement sur les critères éditoriaux
+ * publiés. Aucun critère commercial n'entre dans ce choix : TubeBuddy et
+ * Canva y figurent alors qu'ils ne rapportent aucune commission à Filtrio.
+ *
+ * Pas de note globale affichée sur ces cartes : ces cinq outils relèvent de
+ * catégories différentes et leurs scores ne sont pas comparables entre eux.
  */
-const TOP_5_SLUGS = ["submagic", "opusclip", "canva", "runway", "vidiq"];
+const RECOMMANDATIONS: {
+  slug: string;
+  besoin: string;
+  justification: string;
+  href: string;
+  hrefLabel: string;
+}[] = [
+  {
+    slug: "submagic",
+    besoin: "Sous-titrer des shorts en français",
+    justification:
+      "Meilleure note « Qualité en français » de notre catalogue. Sous-titres animés propres, prêts à publier, sans reprise manuelle.",
+    href: "/cas-usage/sous-titrer-tiktok",
+    hrefLabel: "Voir le guide sous-titres TikTok",
+  },
+  {
+    slug: "opusclip",
+    besoin: "Découper une vidéo longue en shorts",
+    justification:
+      "Le seul outil du catalogue dont c'est la fonction principale : détection automatique des passages forts et recadrage vertical.",
+    href: "/cas-usage/video-longue-en-shorts",
+    hrefLabel: "Voir le guide découpe en shorts",
+  },
+  {
+    slug: "tubebuddy",
+    besoin: "Optimiser le SEO de sa chaîne YouTube",
+    justification:
+      "Devant VidIQ sur nos critères, notamment les tests A/B de miniatures et l'optimisation de chaîne. Aucun lien affilié de notre côté.",
+    href: "/comparatifs/vidiq-vs-tubebuddy",
+    hrefLabel: "Voir le duel VidIQ vs TubeBuddy",
+  },
+  {
+    slug: "elevenlabs",
+    besoin: "Créer des voix off en français",
+    justification:
+      "Le rendu français le plus naturel de notre panel voix IA, avec le clonage vocal et le doublage multilingue.",
+    href: "/outils/elevenlabs",
+    hrefLabel: "Voir la fiche ElevenLabs",
+  },
+  {
+    slug: "canva",
+    besoin: "Créer des miniatures YouTube",
+    justification:
+      "Vainqueur de notre comparatif miniatures : templates, suppression de fond et contrôle créatif dans le même outil. Aucun lien affilié de notre côté.",
+    href: "/cas-usage/miniatures-youtube-ia",
+    hrefLabel: "Voir le comparatif miniatures",
+  },
+];
 
 function hasRealAffiliateLink(o: Outil): boolean {
   return /^https?:\/\//.test(o.affiliateLink);
 }
 
 export default function HomePage() {
-  const top5: Outil[] = TOP_5_SLUGS.map((slug) =>
-    OUTILS.find((o) => o.slug === slug),
-  ).filter((o): o is Outil => o !== undefined);
+  const recommandations = RECOMMANDATIONS.flatMap((reco) => {
+    const outil = OUTILS.find((o) => o.slug === reco.slug);
+    return outil ? [{ ...reco, outil }] : [];
+  });
 
   return (
     <>
@@ -110,7 +167,7 @@ export default function HomePage() {
           getFaqPageSchema(HOME_FAQ),
         ]}
       />
-      <Nav ctaHref="#top-outils" />
+      <Nav ctaHref="#recommandations" />
 
       {/* HERO, direct, orienté utilité */}
       <section className="relative overflow-hidden">
@@ -151,10 +208,10 @@ export default function HomePage() {
         </p>
         <div className="flex flex-wrap gap-4">
           <Link
-            href="#top-outils"
+            href="#recommandations"
             className="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-6 py-3 rounded-lg transition"
           >
-            Voir le top 5
+            Voir nos recommandations
           </Link>
           <Link
             href="/methode"
@@ -248,96 +305,116 @@ export default function HomePage() {
           </Link>
 
           <Link
-            href="#top-outils"
+            href="#recommandations"
             className="group p-6 bg-slate-900 border border-slate-800 rounded-xl hover:border-emerald-500/40 transition"
           >
             <div className="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-3">
               Entrée 3
             </div>
             <h3 className="text-xl font-bold mb-2 group-hover:text-emerald-400 transition">
-              Voir les meilleurs outils
+              Aller droit au but
             </h3>
             <p className="text-sm text-slate-400 leading-relaxed mb-4">
-              Notre sélection du moment sur 6 critères pondérés. Les outils
-              qui tiennent la route, pas le buzz.
+              Un outil recommandé pour chacun des cinq besoins les plus
+              courants. Pas un palmarès, une réponse par usage.
             </p>
             <div className="text-xs text-emerald-400 font-medium">
-              Voir le top 5 →
+              Voir nos recommandations →
             </div>
           </Link>
         </div>
       </section>
 
-      {/* TOP 5 */}
+      {/* RECOMMANDATIONS PAR BESOIN */}
       <section
-        id="top-outils"
+        id="recommandations"
         className="border-y border-slate-800 bg-slate-900/40"
       >
         <div className="max-w-6xl mx-auto px-6 py-24">
           <div className="mb-12">
             <div className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-3">
-              Top 5 du moment
+              Recommandations par besoin
             </div>
             <h2 className="text-4xl font-bold mb-3 tracking-tight">
-              Les outils qui prennent clairement l&apos;avantage.
+              Dis-nous ce que tu veux faire.
             </h2>
             <p className="text-slate-400 text-lg max-w-3xl">
-              Sélection éditoriale du moment, basée sur le score mais aussi sur
-              l&apos;usage créateur. Chaque fiche détaille les forces, limites
-              honnêtes et le verdict direct.
+              Un outil recommandé par usage, pas un palmarès général. Comparer
+              un outil de voix IA à un outil de miniatures n&apos;aurait pas de
+              sens : nos notes servent à départager des outils d&apos;une même
+              catégorie, et c&apos;est pour ça qu&apos;elles ne figurent pas
+              ici.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {top5.map((o) => {
-              const showTester = o.ficheAvailable && hasRealAffiliateLink(o);
-              return (
-                <div
-                  key={o.slug}
-                  className="p-6 bg-slate-900 border border-slate-800 rounded-xl hover:border-emerald-500/40 transition group flex flex-col"
-                >
-                  <div className="flex justify-between items-start mb-3">
-                    <h3 className={`text-xl font-bold text-${o.color}-400`}>
-                      {o.name}
+            {recommandations.map(
+              ({ outil: o, besoin, justification, href, hrefLabel }) => {
+                const showTester = o.ficheAvailable && hasRealAffiliateLink(o);
+                return (
+                  <div
+                    key={o.slug}
+                    className="p-6 bg-slate-900 border border-slate-800 rounded-xl hover:border-emerald-500/40 transition group flex flex-col"
+                  >
+                    <div className="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-3">
+                      Tu veux…
+                    </div>
+                    <h3 className="text-lg font-bold mb-4 leading-snug">
+                      {besoin}
                     </h3>
-                    <span className={`text-${o.color}-400 font-bold`}>
-                      {o.score.toFixed(1)}
-                    </span>
-                  </div>
-                  <div className="text-sm text-slate-400 mb-4">{o.tagline}</div>
-                  <div className="flex flex-wrap gap-2 text-xs text-slate-500 mb-5">
-                    {o.priceFrom && (
-                      <span className="bg-slate-800 px-2 py-0.5 rounded">
-                        {o.priceFrom}
+                    <div className="flex flex-wrap items-center gap-2 mb-3">
+                      <span className={`text-xl font-bold text-${o.color}-400`}>
+                        {o.name}
                       </span>
-                    )}
-                    {o.freeTier && (
-                      <span className="bg-slate-800 px-2 py-0.5 rounded">
-                        {o.freeTier}
+                      <span className="text-xs font-semibold bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded-full">
+                        Recommandé
                       </span>
-                    )}
-                  </div>
-                  <div className="mt-auto flex flex-wrap gap-2">
-                    <Link
-                      href={`/outils/${o.slug}`}
-                      className="text-sm font-medium border border-slate-700 hover:border-slate-500 text-slate-200 px-4 py-2 rounded-lg transition"
-                    >
-                      Voir la fiche
-                    </Link>
-                    {showTester && (
-                      <TrackedAffiliateLink
-                        href={o.affiliateLink}
-                        outilSlug={o.slug}
-                        outilName={o.name}
-                        source="home"
-                        className={`text-sm font-semibold bg-${o.color}-500 hover:bg-${o.color}-400 text-slate-950 px-4 py-2 rounded-lg transition`}
+                    </div>
+                    <p className="text-sm text-slate-400 leading-relaxed mb-4">
+                      {justification}
+                    </p>
+                    <div className="flex flex-wrap gap-2 text-xs text-slate-500 mb-5">
+                      {o.priceFrom && (
+                        <span className="bg-slate-800 px-2 py-0.5 rounded">
+                          {o.priceFrom}
+                        </span>
+                      )}
+                      {o.freeTier && (
+                        <span className="bg-slate-800 px-2 py-0.5 rounded">
+                          {o.freeTier}
+                        </span>
+                      )}
+                    </div>
+                    <div className="mt-auto flex flex-col gap-3">
+                      <Link
+                        href={href}
+                        className="text-sm text-emerald-400 hover:text-emerald-300 font-medium"
                       >
-                        Tester {o.name}
-                      </TrackedAffiliateLink>
-                    )}
+                        {hrefLabel} →
+                      </Link>
+                      <div className="flex flex-wrap gap-2">
+                        <Link
+                          href={`/outils/${o.slug}`}
+                          className="text-sm font-medium border border-slate-700 hover:border-slate-500 text-slate-200 px-4 py-2 rounded-lg transition"
+                        >
+                          Voir la fiche
+                        </Link>
+                        {showTester && (
+                          <TrackedAffiliateLink
+                            href={o.affiliateLink}
+                            outilSlug={o.slug}
+                            outilName={o.name}
+                            source="home"
+                            className={`text-sm font-semibold bg-${o.color}-500 hover:bg-${o.color}-400 text-slate-950 px-4 py-2 rounded-lg transition`}
+                          >
+                            Tester {o.name}
+                          </TrackedAffiliateLink>
+                        )}
+                      </div>
+                    </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              },
+            )}
           </div>
         </div>
       </section>
@@ -474,9 +551,11 @@ export default function HomePage() {
           Un scoring éditorial en 6 critères.
         </h2>
         <p className="text-slate-300 text-lg mb-8 max-w-3xl">
-          Chaque outil est analysé sur la même grille, avec les mêmes
-          pondérations. Aucun favoritisme, aucun classement dicté par la
-          commission affiliée.
+          Voici notre grille de référence. C&apos;est le socle commun à tous
+          les outils. Pour certaines catégories, un axe est remplacé par un
+          critère plus pertinent : un outil collaboratif est jugé sur la
+          collaboration, un générateur vidéo sur la qualité de génération. La
+          grille appliquée est affichée en clair sur chaque fiche.
         </p>
 
         <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-6">
@@ -501,6 +580,13 @@ export default function HomePage() {
             ))}
           </ul>
         </div>
+
+        <p className="text-sm text-slate-400 mb-6 max-w-3xl">
+          <strong className="text-slate-200">À quoi sert la note :</strong> à
+          départager des outils d&apos;une même catégorie. Elle n&apos;est pas
+          faite pour comparer un outil de voix IA à un outil de design. Aucun
+          score n&apos;est influencé par une commission affiliée.
+        </p>
 
         <p className="text-sm text-slate-400 mb-8 max-w-3xl">
           <strong className="text-slate-200">Phase actuelle (V1) :</strong>{" "}

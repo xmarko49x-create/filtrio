@@ -20,6 +20,15 @@ export const metadata: Metadata = {
 };
 
 export default function OutilsPage() {
+  // Ordre alphabétique, identique à l'affichage du catalogue.
+  // Les positions du JSON-LD ne doivent pas véhiculer un classement global
+  // par score : la grille de notation comporte des axes adaptés par catégorie,
+  // donc les scores ne sont comparables qu'à l'intérieur d'une catégorie.
+  // .filter() renvoie déjà un nouveau tableau, donc .sort() ne mute pas OUTILS.
+  const outilsAlphabetiques = OUTILS.filter((o) => o.ficheAvailable).sort(
+    (a, b) => a.name.localeCompare(b.name, "fr"),
+  );
+
   // Schema CollectionPage + ItemList des outils publiés
   const itemListSchema = {
     "@context": "https://schema.org",
@@ -27,7 +36,7 @@ export default function OutilsPage() {
     name: "Outils IA pour créateurs vidéo, Filtrio",
     description:
       "Catalogue éditorial Filtrio des outils IA analysés sur 6 critères.",
-    itemListElement: OUTILS.filter((o) => o.ficheAvailable).map((o, i) => ({
+    itemListElement: outilsAlphabetiques.map((o, i) => ({
       "@type": "ListItem",
       position: i + 1,
       url: `https://www.filtrio.fr/outils/${o.slug}`,
@@ -57,8 +66,11 @@ export default function OutilsPage() {
           outils d&apos;une même catégorie.
         </p>
         <p className="text-slate-400 leading-relaxed max-w-3xl">
-          Utilise les filtres pour cibler par catégorie, par plan gratuit ou
-          par mot-clé. Tu peux trier par meilleur score ou alphabétiquement.
+          Le catalogue est présenté par ordre alphabétique. Utilise les filtres
+          pour cibler par catégorie, par plan gratuit ou par mot-clé. Une fois
+          une catégorie sélectionnée, tu peux trier les outils de cette
+          catégorie par score : c&apos;est le seul cadre où la comparaison des
+          notes est pertinente.
         </p>
       </section>
 

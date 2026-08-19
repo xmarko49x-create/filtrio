@@ -28,7 +28,19 @@ export default function OutilsCatalog() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState<"all" | OutilCategorie>("all");
   const [budget, setBudget] = useState<BudgetFilter>("all");
-  const [sortKey, setSortKey] = useState<SortKey>("score");
+  // Tri alphabétique par défaut : sans catégorie sélectionnée, un tri par
+  // score produirait un classement entre catégories que la grille de
+  // notation (axes adaptés par catégorie) ne permet pas de justifier.
+  const [sortKey, setSortKey] = useState<SortKey>("name");
+
+  // Le tri par score n'a de sens qu'à l'intérieur d'une catégorie.
+  const canSortByScore = category !== "all";
+
+  /** Change de catégorie et remet le tri A → Z si on repasse sur "Toutes". */
+  function handleCategoryChange(next: "all" | OutilCategorie) {
+    setCategory(next);
+    if (next === "all") setSortKey("name");
+  }
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();
@@ -50,10 +62,11 @@ export default function OutilsCatalog() {
       );
     }
 
-    if (sortKey === "score") {
+    // Garde-fou : le tri par score n'est appliqué que dans une catégorie.
+    if (sortKey === "score" && category !== "all") {
       list = [...list].sort((a, b) => b.score - a.score);
     } else {
-      list = [...list].sort((a, b) => a.name.localeCompare(b.name));
+      list = [...list].sort((a, b) => a.name.localeCompare(b.name, "fr"));
     }
     return list;
   }, [search, category, budget, sortKey]);
@@ -101,7 +114,7 @@ export default function OutilsCatalog() {
             id="category"
             value={category}
             onChange={(e) =>
-              setCategory(e.target.value as "all" | OutilCategorie)
+              handleCategoryChange(e.target.value as "all" | OutilCategorie)
             }
             className="w-full md:w-56 bg-slate-900 border border-slate-700 focus:border-emerald-500 rounded-lg px-4 py-2.5 text-sm outline-none transition"
           >
@@ -153,11 +166,18 @@ export default function OutilsCatalog() {
             id="sort"
             value={sortKey}
             onChange={(e) => setSortKey(e.target.value as SortKey)}
-            className="w-full md:w-44 bg-slate-900 border border-slate-700 focus:border-emerald-500 rounded-lg px-4 py-2.5 text-sm outline-none transition"
+            className="w-full md:w-64 bg-slate-900 border border-slate-700 focus:border-emerald-500 rounded-lg px-4 py-2.5 text-sm outline-none transition"
           >
-            <option value="score">Meilleur score</option>
             <option value="name">A → Z</option>
+            {canSortByScore && (
+              <option value="score">Meilleur score dans la catégorie</option>
+            )}
           </select>
+          {!canSortByScore && (
+            <p className="mt-2 text-xs text-slate-500 md:w-64">
+              Choisis une catégorie pour pouvoir trier par score.
+            </p>
+          )}
         </div>
       </div>
 
@@ -170,13 +190,17 @@ export default function OutilsCatalog() {
           {filtered.length > 1 ? "outils affichés" : "outil affiché"} sur{" "}
           {total}
         </div>
-        {(search || category !== "all" || budget !== "all") && (
+        {(search ||
+          category !== "all" ||
+          budget !== "all" ||
+          sortKey !== "name") && (
           <button
             type="button"
             onClick={() => {
               setSearch("");
               setCategory("all");
               setBudget("all");
+              setSortKey("name");
             }}
             className="text-emerald-400 hover:text-emerald-300 font-medium"
           >

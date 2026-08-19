@@ -11,7 +11,11 @@ import {
 } from "@/lib/schema";
 import { AuthorByline } from "@/components/AuthorByline";
 import { AuthorBio } from "@/components/AuthorBio";
-import { OUTILS, CATEGORIE_LABELS } from "@/lib/outils";
+import {
+  OUTILS,
+  CATEGORIE_LABELS,
+  compareOutilsByCategoryThenName,
+} from "@/lib/outils";
 
 const LAST_UPDATED = "10/07/2026";
 const SAMPLE_SIZE = 18;
@@ -142,7 +146,7 @@ const FAQ = [
 ];
 
 export default function StatistiquesPage() {
-  const outilsTries = [...OUTILS].sort((a, b) => b.score - a.score);
+  const outilsTries = [...OUTILS].sort(compareOutilsByCategoryThenName);
 
   return (
     <>
@@ -274,7 +278,8 @@ export default function StatistiquesPage() {
         </h2>
         <p className="text-slate-400 mb-6 max-w-3xl">
           Prix d&apos;entrée tel qu&apos;affiché sur la page tarifs officielle
-          au {LAST_UPDATED}. Chaque outil a une fiche détaillée sur Filtrio.
+          au {LAST_UPDATED}. Outils présentés par catégorie puis par ordre
+          alphabétique. Chaque outil a une fiche détaillée sur Filtrio.
         </p>
         <div className="overflow-x-auto rounded-2xl border border-slate-800">
           <table className="w-full text-sm">

@@ -312,3 +312,25 @@ export function outilsByScore(limit?: number): Outil[] {
   const sorted = [...OUTILS].sort((a, b) => b.score - a.score);
   return limit ? sorted.slice(0, limit) : sorted;
 }
+
+/**
+ * Comparateur neutre pour toutes les listes qui ne doivent PAS produire de
+ * classement global : catégorie (libellé français) puis nom de l'outil.
+ *
+ * Raison d'être : la grille de notation comporte des axes adaptés selon la
+ * catégorie, donc les scores ne sont comparables qu'entre outils d'une même
+ * catégorie. Trier 18 outils toutes catégories par score produirait un
+ * palmarès que la méthodologie ne permet pas de justifier.
+ *
+ * Fonction pure : ne modifie ni le registre OUTILS ni les objets comparés.
+ * Utilisée par /observatoire-prix, /statistiques-outils-ia-video et la route
+ * CSV /observatoire-prix.csv.
+ */
+export function compareOutilsByCategoryThenName(a: Outil, b: Outil): number {
+  const byCategory = CATEGORIE_LABELS[a.category].localeCompare(
+    CATEGORIE_LABELS[b.category],
+    "fr",
+  );
+  if (byCategory !== 0) return byCategory;
+  return a.name.localeCompare(b.name, "fr");
+}

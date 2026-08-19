@@ -1,4 +1,8 @@
-import { OUTILS, CATEGORIE_LABELS } from "@/lib/outils";
+import {
+  OUTILS,
+  CATEGORIE_LABELS,
+  compareOutilsByCategoryThenName,
+} from "@/lib/outils";
 import { VERIF_DATES } from "@/lib/observatoire";
 
 /**
@@ -14,11 +18,13 @@ function csvEscape(value: string): string {
 }
 
 export async function GET() {
+  // Colonne renommée : le score n'est comparable qu'entre outils d'une même
+  // catégorie, le nom de colonne doit le dire à quiconque réutilise le CSV.
   const header =
-    "outil;categorie;prix_entree;offre_gratuite;score_editorial;verifie_le;fiche";
+    "outil;categorie;prix_entree;offre_gratuite;score_editorial_dans_categorie;verifie_le;fiche";
 
   const rows = [...OUTILS]
-    .sort((a, b) => b.score - a.score)
+    .sort(compareOutilsByCategoryThenName)
     .map((o) =>
       [
         csvEscape(o.name),

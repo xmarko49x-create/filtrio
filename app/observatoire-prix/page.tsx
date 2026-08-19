@@ -11,7 +11,11 @@ import {
 } from "@/lib/schema";
 import { AuthorByline } from "@/components/AuthorByline";
 import { AuthorBio } from "@/components/AuthorBio";
-import { OUTILS, CATEGORIE_LABELS } from "@/lib/outils";
+import {
+  OUTILS,
+  CATEGORIE_LABELS,
+  compareOutilsByCategoryThenName,
+} from "@/lib/outils";
 import {
   OBSERVATOIRE_LAST_UPDATED as LAST_UPDATED,
   VERIF_DATES,
@@ -101,7 +105,7 @@ const ECARTS_MENSUEL_ANNUEL = [
 ];
 
 export default function ObservatoirePrixPage() {
-  const outilsTries = [...OUTILS].sort((a, b) => b.score - a.score);
+  const outilsTries = [...OUTILS].sort(compareOutilsByCategoryThenName);
 
   return (
     <>
@@ -218,8 +222,10 @@ export default function ObservatoirePrixPage() {
         </h2>
         <p className="text-slate-400 mb-6 max-w-3xl">
           Prix d&apos;entrée de gamme tel qu&apos;affiché sur la page tarifaire
-          officielle (généralement en facturation annuelle). Classement par
-          score éditorial Filtrio. Chaque fiche détaille tous les plans.
+          officielle (généralement en facturation annuelle). Outils présentés
+          par catégorie puis par ordre alphabétique. Les scores éditoriaux
+          servent surtout à comparer des outils d&apos;une même catégorie.
+          Chaque fiche détaille tous les plans.
         </p>
         <div className="overflow-x-auto rounded-2xl border border-slate-800">
           <table className="w-full text-sm">

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
+import { SCORING_BY_SLUG } from "@/lib/scoring";
 
 export const heygenFiche: FicheData = {
   slug: "heygen",
@@ -113,50 +114,7 @@ export const heygenFiche: FicheData = {
     "Ton contenu repose sur l'émotion et la présence humaine",
     "Tu veux un éditeur vidéo complet avec timeline",
   ],
-  scoring: [
-    {
-      label: "Qualité en français",
-      poids: 20,
-      score: 7.5,
-      commentaire:
-        "Voix FR correcte, moins naturelle que celle d'ElevenLabs selon les retours publics. La sync labiale fonctionne en français mais avec quelques glitches sur les sons nasaux typiques du FR (ent, in, on). Interface partiellement traduite.",
-    },
-    {
-      label: "Rapport qualité/prix",
-      poids: 20,
-      score: 7.0,
-      commentaire:
-        "Plus cher que les outils voix-only. Creator à 29 $/mois en mensuel (ou 24 $/mois en annuel) pour un usage sérieux, Business à 149 $/mois pour les équipes (+20 $/seat). Le rapport qualité/prix dépend du besoin : excellent si tu as vraiment besoin d'avatars vidéo complets, décevant si tu veux juste de la voix.",
-    },
-    {
-      label: "Profondeur des fonctionnalités IA",
-      poids: 20,
-      score: 9.0,
-      commentaire:
-        "Point fort. Génération vidéo par avatar à partir d'un script, Custom Digital Twins (1 à 5 selon le plan), Video Translation avec sync labiale, 500+ stock photo avatars sur Free et 700+ Stock Video Avatars sur Creator, voice cloning sur Creator+. Avatar IV pour générations étendues sur plans supérieurs.",
-    },
-    {
-      label: "Interface et prise en main",
-      poids: 15,
-      score: 8.0,
-      commentaire:
-        "Interface moderne, workflow clair : script → avatar → voix → render. Courbe d'apprentissage de 30 min pour les basiques, quelques heures pour maîtriser les fonctionnalités avancées. Editor vidéo intégré basique.",
-    },
-    {
-      label: "Support & confort FR",
-      poids: 15,
-      score: 7.0,
-      commentaire:
-        "Documentation bilingue partiellement traduite. Support en anglais uniquement. Communauté Discord active mais internationale. Plusieurs tutos YouTube FR existent, créés par la communauté.",
-    },
-    {
-      label: "Intégrations",
-      poids: 10,
-      score: 8.5,
-      commentaire:
-        "API disponible sur plans payants, intégrations natives avec Zapier et Make. Export direct vers plateformes de diffusion. Plugin PowerPoint pour transformer des présentations en vidéos avec avatar.",
-    },
-  ],
+  scoring: SCORING_BY_SLUG.heygen,
   fonctionnalites: [
     {
       titre: "Avatars IA stock et custom",

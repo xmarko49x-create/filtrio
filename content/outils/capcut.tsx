@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
+import { SCORING_BY_SLUG } from "@/lib/scoring";
 
 export const capcutFiche: FicheData = {
   slug: "capcut",
@@ -132,50 +133,7 @@ export const capcutFiche: FicheData = {
       )
     </>,
   ],
-  scoring: [
-    {
-      label: "Qualité en français",
-      poids: 20,
-      score: 7.5,
-      commentaire:
-        "Interface 100% traduite en français. Sous-titres auto FR corrects mais moins précis qu'un outil FR natif comme Submagic. Support en ligne disponible en français via base de connaissances.",
-    },
-    {
-      label: "Rapport qualité/prix",
-      poids: 20,
-      score: 9.8,
-      commentaire:
-        "Le point fort absolu. Rapport qualité/prix imbattable puisque le plan gratuit couvre 90% des besoins d'un créateur solo. Aucun concurrent ne propose un éditeur aussi complet gratuitement.",
-    },
-    {
-      label: "Profondeur des fonctionnalités IA",
-      poids: 20,
-      score: 7.2,
-      commentaire:
-        "Fonctionnalités IA ajoutées progressivement en 2024-2026 : sous-titres auto, effets IA, suppression fond, upscaling. Moins spécialisé que Submagic ou Descript mais couvre les usages courants correctement.",
-    },
-    {
-      label: "Interface et prise en main",
-      poids: 15,
-      score: 8.5,
-      commentaire:
-        "Interface mobile et desktop particulièrement bien pensée, surtout pour les TikTokeurs. Courbe d'apprentissage courte. Moins intuitive sur les fonctionnalités vidéo avancées que sur les shorts.",
-    },
-    {
-      label: "Support & confort FR",
-      poids: 15,
-      score: 7.5,
-      commentaire:
-        "Base de connaissances en français correcte. Support client limité (principalement via formulaires). Communauté FR massive sur YouTube et TikTok avec tutos gratuits de qualité.",
-    },
-    {
-      label: "Intégrations",
-      poids: 10,
-      score: 7.5,
-      commentaire:
-        "Intégration native avec TikTok (export direct, templates communs). Pas d'API publique. Export vers tous les formats standards, mais pas de publication programmée vers autres plateformes.",
-    },
-  ],
+  scoring: SCORING_BY_SLUG.capcut,
   fonctionnalites: [
     {
       titre: "Éditeur vidéo complet",

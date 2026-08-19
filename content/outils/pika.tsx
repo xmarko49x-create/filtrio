@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
+import { SCORING_BY_SLUG } from "@/lib/scoring";
 
 export const pikaFiche: FicheData = {
   slug: "pika",
@@ -100,50 +101,7 @@ export const pikaFiche: FicheData = {
     "Tu fais du long format ou de l'éducatif linéaire",
     "Tu veux monter en volume ou en vitesse de génération (plans Pro et Fancy)",
   ],
-  scoring: [
-    {
-      label: "Qualité en français",
-      poids: 20,
-      score: 6.5,
-      commentaire:
-        "Interface anglaise. Prompts en français fonctionnent mais résultats généralement meilleurs en anglais. Communauté FR limitée. Peu de tutos FR comparé à Runway.",
-    },
-    {
-      label: "Rapport qualité/prix",
-      poids: 25,
-      score: 9.0,
-      commentaire:
-        "Point fort majeur. Plan Standard à 8 $/mois en annuel = quasi-imbattable pour découvrir sérieusement la génération vidéo IA. Plan gratuit récurrent (80 credits/mois) permet de tester sans payer. Vs Runway à 12 $/mois : Pika est sensiblement moins cher pour démarrer.",
-    },
-    {
-      label: "Qualité de la génération vidéo",
-      poids: 25,
-      score: 7.5,
-      commentaire:
-        "Pika 2.5 produit des vidéos correctes. Qualité visuelle solide pour un outil grand public mais en retrait par rapport à Runway Gen-4.5 sur les rendus complexes ou cinéma. Bon pour les concepts créatifs et les vidéos sociales.",
-    },
-    {
-      label: "Interface et prise en main",
-      poids: 15,
-      score: 8.5,
-      commentaire:
-        "Interface très simple, orientée créativité ludique. Workflow rapide : tu écris un prompt, tu choisis un Pikaffect, tu génères. Apprentissage rapide pour les débutants. Les Pikaffects sont un plus pédagogique pour comprendre ce qu'on peut faire.",
-    },
-    {
-      label: "Effets et fonctionnalités créatives",
-      poids: 10,
-      score: 8.5,
-      commentaire:
-        "Pikaffects (Pikaframes, Pikascenes, Pikadditions, Pikaswaps, Pikatwists) sont une signature. Permettent des effets stylisés rapides et accessibles aux créateurs non-techniques. Différenciateur principal vs Runway plus VFX-pro.",
-    },
-    {
-      label: "Usage commercial et restrictions",
-      poids: 5,
-      score: 6.0,
-      commentaire:
-        "Bonne nouvelle : d'après la page tarifs actuelle de Pika, l'usage commercial est listé sur tous les plans, y compris le gratuit. Les conditions exactes peuvent évoluer, vérifie les CGU avant de vendre des prestations vidéo basées sur Pika.",
-    },
-  ],
+  scoring: SCORING_BY_SLUG.pika,
   fonctionnalites: [
     {
       titre: "Pika 2.5 (text-to-video, image-to-video)",

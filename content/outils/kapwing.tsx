@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
+import { SCORING_BY_SLUG } from "@/lib/scoring";
 
 export const kapwingFiche: FicheData = {
   slug: "kapwing",
@@ -106,50 +107,7 @@ export const kapwingFiche: FicheData = {
     "Tu veux travailler hors ligne",
     "Tu veux des fonctionnalités IA de pointe (Kapwing est en retrait)",
   ],
-  scoring: [
-    {
-      label: "Qualité en français",
-      poids: 20,
-      score: 7.0,
-      commentaire:
-        "Interface en anglais principalement, traduction partielle. Sous-titres auto FR fonctionnels mais moins précis qu'un outil spécialisé. Support exclusivement anglais.",
-    },
-    {
-      label: "Rapport qualité/prix",
-      poids: 20,
-      score: 6.8,
-      commentaire:
-        "Pro à 16 $/mois en solo est cher vs Veed ou CapCut. Business à 50 $/mois par utilisateur devient intéressant si la collaboration temps réel est vraiment exploitée. Le rapport qualité/prix n'a de sens qu'en équipe.",
-    },
-    {
-      label: "Profondeur des fonctionnalités IA",
-      poids: 20,
-      score: 7.0,
-      commentaire:
-        "Sous-titres auto, transcription, suppression silence, smart cut. Moins IA-first qu'un Submagic ou Descript, mais suffisant pour les usages d'équipe courants.",
-    },
-    {
-      label: "Interface et prise en main",
-      poids: 15,
-      score: 7.5,
-      commentaire:
-        "Interface claire mais moins fluide que Veed ou Canva. Courbe d'apprentissage moyenne (1-2h pour être opérationnel). La valeur ajoutée se révèle en équipe.",
-    },
-    {
-      label: "Collaboration équipe",
-      poids: 15,
-      score: 9.2,
-      commentaire:
-        "Point fort absolu. Édition simultanée, commentaires précis, approbation, gestion des rôles, brand kits partagés. L'un des meilleurs outils d'édition vidéo collaborative du marché.",
-    },
-    {
-      label: "Intégrations",
-      poids: 10,
-      score: 8.0,
-      commentaire:
-        "API sur plan Business, intégrations Slack, Notion, Asana, Google Drive, Dropbox. Pensé pour s'intégrer aux workflows d'équipe modernes.",
-    },
-  ],
+  scoring: SCORING_BY_SLUG.kapwing,
   fonctionnalites: [
     {
       titre: "Édition collaborative temps réel",

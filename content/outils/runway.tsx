@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
+import { SCORING_BY_SLUG } from "@/lib/scoring";
 
 export const runwayFiche: FicheData = {
   slug: "runway",
@@ -101,50 +102,7 @@ export const runwayFiche: FicheData = {
     "Tu veux un rendu \"réaliste cinéma\" parfait (encore des limites)",
     "Budget serré (à partir de 12 $/mois + coûts crédits)",
   ],
-  scoring: [
-    {
-      label: "Qualité en français",
-      poids: 20,
-      score: 7.0,
-      commentaire:
-        "Interface anglais principalement. Prompts IA fonctionnent en FR mais meilleurs résultats en EN selon les retours utilisateurs. Support anglais uniquement. Communauté FR modeste sur un outil très technique.",
-    },
-    {
-      label: "Rapport qualité/prix",
-      poids: 20,
-      score: 7.5,
-      commentaire:
-        "Standard à 15 $/mois correct pour tester sérieusement. Coût par crédit raisonnable mais la génération vidéo IA reste consommatrice. Pro à 35 $/mois pour usage régulier.",
-    },
-    {
-      label: "Qualité de la génération vidéo",
-      poids: 25,
-      score: 9.5,
-      commentaire:
-        "Point fort absolu. Gen-4 et Gen-4.5 sont parmi les modèles de génération vidéo IA les plus aboutis disponibles au grand public en 2026. Qualité visuelle impressionnante pour des clips courts. Intégration native de plusieurs modèles tiers (Google Veo, OpenAI Sora, Kling, etc.) pour accéder à d'autres options depuis la même plateforme.",
-    },
-    {
-      label: "Interface et prise en main",
-      poids: 15,
-      score: 8.0,
-      commentaire:
-        "Interface claire mais l'art du prompt IA reste complexe. Apprendre à formuler des prompts efficaces demande plusieurs heures d'expérimentation. Maîtrise avancée sur plusieurs semaines.",
-    },
-    {
-      label: "Outils VFX complémentaires",
-      poids: 10,
-      score: 9.0,
-      commentaire:
-        "Écosystème VFX IA impressionnant : inpainting, motion tracking, green screen auto, suppression d'objets, transfert de style. Peu d'outils aussi complets sur ce volet.",
-    },
-    {
-      label: "API et intégrations",
-      poids: 10,
-      score: 8.0,
-      commentaire:
-        "API disponible pour les plans pros. Permet d'intégrer Runway à des flux de travail personnalisés, automatiser la génération. Utile pour studios et agences.",
-    },
-  ],
+  scoring: SCORING_BY_SLUG.runway,
   fonctionnalites: [
     {
       titre: "Gen-4.5 et Gen-4 (text-to-video / image-to-video)",

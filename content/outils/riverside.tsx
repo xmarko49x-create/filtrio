@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
+import { SCORING_BY_SLUG } from "@/lib/scoring";
 
 export const riversideFiche: FicheData = {
   slug: "riverside",
@@ -112,50 +113,7 @@ export const riversideFiche: FicheData = {
     "Tes invités sont des profils non-techniques qui galèrent avec un outil nouveau",
     "Ton budget est vraiment serré sur le long terme",
   ],
-  scoring: [
-    {
-      label: "Qualité en français",
-      poids: 20,
-      score: 7.5,
-      commentaire:
-        "Interface partiellement traduite en FR. La feature d'enregistrement en elle-même est agnostique à la langue. La transcription et l'éditeur IA restent plus convaincants en anglais qu'en français, comparable à Descript sur ce point.",
-    },
-    {
-      label: "Rapport qualité/prix",
-      poids: 20,
-      score: 7.5,
-      commentaire:
-        "Plan gratuit disponible pour tester, essai 14 jours sur les plans payants. Point d'entrée payant affiché à partir de 24 €/mois en annuel sur le site officiel (affichage en euros pour les visiteurs européens). Positionnement dans la fourchette haute de sa catégorie, avec une spécialisation forte sur l'enregistrement distant pro.",
-    },
-    {
-      label: "Profondeur des fonctionnalités IA",
-      poids: 20,
-      score: 8.5,
-      commentaire:
-        "Magic Editor : découpe intelligente, suppression des silences, génération de clips courts, transcription auto. Moins poussé que Descript sur l'édition textuelle, mais comble l'écart sur les workflows podcast. Suggestions de highlights utiles.",
-    },
-    {
-      label: "Qualité d'enregistrement à distance",
-      poids: 15,
-      score: 9.5,
-      commentaire:
-        "Le point fort absolu. Enregistrement local sur la machine de chaque participant, puis upload des tracks séparés. Aucune perte liée à la connexion. Largement supérieur à Zoom ou Teams sur ce volet.",
-    },
-    {
-      label: "Support & confort FR",
-      poids: 15,
-      score: 7.0,
-      commentaire:
-        "Support client en anglais principalement. Documentation traduite automatiquement, qualité correcte. Plusieurs tutos FR de la communauté podcasting FR sur YouTube.",
-    },
-    {
-      label: "Intégrations",
-      poids: 10,
-      score: 8.0,
-      commentaire:
-        "Export direct vers plateformes podcast (Spotify, Apple, Google), YouTube, réseaux sociaux. API disponible sur les plans supérieurs. Intégrations Zapier et Make. Compatible avec la plupart des flux de production podcast.",
-    },
-  ],
+  scoring: SCORING_BY_SLUG.riverside,
   fonctionnalites: [
     {
       titre: "Enregistrement local séparé",

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
+import { SCORING_BY_SLUG } from "@/lib/scoring";
 
 export const davinciFiche: FicheData = {
   slug: "davinci",
@@ -99,50 +100,7 @@ export const davinciFiche: FicheData = {
     "Tu veux une intégration native YouTube/TikTok directe",
     "Tu refuses d'apprendre un outil pro",
   ],
-  scoring: [
-    {
-      label: "Qualité en français",
-      poids: 20,
-      score: 7.5,
-      commentaire:
-        "Interface disponible en français. Documentation officielle partiellement traduite. Gros écosystème de tutos YouTube FR créés par la communauté. Support officiel en anglais principalement.",
-    },
-    {
-      label: "Rapport qualité/prix",
-      poids: 20,
-      score: 9.8,
-      commentaire:
-        "Le point fort absolu. Éditeur pro gratuit quasi illimité, ou Studio à 295 $ en achat unique (licence perpétuelle, aucun abonnement à vie). Un éditeur à abonnement mensuel s'amortit vs DaVinci Studio en ~1 an selon le tarif retenu. Aucun concurrent ne propose ce rapport qualité/prix.",
-    },
-    {
-      label: "Profondeur des fonctionnalités IA",
-      poids: 20,
-      score: 7.8,
-      commentaire:
-        "Neural Engine propose : tracking facial, recadrage intelligent, upscaling, suppression bruit, transcription auto. Moins IA-first que CapCut ou les outils modernes mais couvre les usages pro. Studio débloque les fonctionnalités IA avancées.",
-    },
-    {
-      label: "Interface et prise en main",
-      poids: 15,
-      score: 6.5,
-      commentaire:
-        "Le vrai défaut. Courbe d'apprentissage raide : 10-20h minimum pour être opérationnel, interface dense, terminologie pro. C'est le prix à payer pour autant de puissance.",
-    },
-    {
-      label: "Support & confort FR",
-      poids: 15,
-      score: 8.5,
-      commentaire:
-        "La communauté DaVinci FR est très active depuis 10+ ans. Des centaines de tutos YouTube FR, formations payantes dédiées, blogs spécialisés. Apprendre DaVinci en français est accessible sans passer par de la doc anglaise.",
-    },
-    {
-      label: "Intégrations",
-      poids: 10,
-      score: 8.0,
-      commentaire:
-        "Export tous formats standards (H.264, H.265, ProRes, etc.), workflows cinéma pro. Compatible hardware Blackmagic (caméras, consoles de colorimétrie). Pas d'intégration native YouTube/TikTok, mais export direct puis upload manuel.",
-    },
-  ],
+  scoring: SCORING_BY_SLUG.davinci,
   fonctionnalites: [
     {
       titre: "Color grading de référence",

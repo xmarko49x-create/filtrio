@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
+import { SCORING_BY_SLUG } from "@/lib/scoring";
 
 export const canvaFiche: FicheData = {
   slug: "canva",
@@ -101,50 +102,7 @@ export const canvaFiche: FicheData = {
     "Tu as besoin d'API avancée pour automatiser à l'échelle",
     "Tu veux un contrôle typographique très fin (kerning, leading avancé)",
   ],
-  scoring: [
-    {
-      label: "Qualité en français",
-      poids: 20,
-      score: 9.0,
-      commentaire:
-        "Interface 100% traduite en français. Magic Design comprend bien les prompts FR. Support client disponible en français. L'un des meilleurs niveaux de localisation FR du marché.",
-    },
-    {
-      label: "Rapport qualité/prix",
-      poids: 20,
-      score: 9.0,
-      commentaire:
-        "Plan gratuit réellement utilisable pour la majorité des besoins solo. Pro à 110 €/an par personne (facturation annuelle) : excellent rapport qualité/prix si tu utilises Magic Design, Brand Kit et contenu premium. Économisez 16 % et plus avec l'annuel.",
-    },
-    {
-      label: "Profondeur des fonctionnalités IA",
-      poids: 20,
-      score: 8.0,
-      commentaire:
-        "Magic Design, Magic Write, Magic Edit, Magic Animate : écosystème IA en expansion constante. Moins avancé qu'un spécialiste (Midjourney pour image pure) mais intégré à tout le workflow design.",
-    },
-    {
-      label: "Interface et prise en main",
-      poids: 15,
-      score: 9.0,
-      commentaire:
-        "Point fort. Interface pensée pour les non-designers, drag-and-drop intuitif, templates qui guident le choix. 20 minutes pour être opérationnel même sans expérience design.",
-    },
-    {
-      label: "Support & confort FR",
-      poids: 15,
-      score: 8.5,
-      commentaire:
-        "Support client multilingue dont français. Centre d'aide traduit. Énormément de tutos YouTube FR créés par la communauté Canva depuis 10+ ans. Accessible pour débutants comme pour utilisateurs avancés.",
-    },
-    {
-      label: "Intégrations",
-      poids: 10,
-      score: 8.5,
-      commentaire:
-        "API disponible sur plans pro, intégrations Zapier, Make, Buffer, Hootsuite. Publication directe vers réseaux sociaux. App Canva sur mobile complète. Export direct vers YouTube.",
-    },
-  ],
+  scoring: SCORING_BY_SLUG.canva,
   fonctionnalites: [
     {
       titre: "Magic Design (IA générative)",

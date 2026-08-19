@@ -10,6 +10,7 @@ import { AuthorByline } from "@/components/AuthorByline";
 import { AuthorBio } from "@/components/AuthorBio";
 import { formatDateFR } from "@/lib/author";
 import { getOutil, getOutilOrThrow, type TailwindColor } from "@/lib/outils";
+import type { ScoringCriterion } from "@/lib/scoring";
 import {
   getReviewSchema,
   getFaqPageSchema,
@@ -35,12 +36,8 @@ export interface FicheData {
   sectionApresVerdict?: { titre: string; contenu: ReactNode };
   porQui: string[];
   pasPourQui: ReactNode[];
-  scoring: {
-    label: string;
-    poids: number;
-    score: number;
-    commentaire: string;
-  }[];
+  /** Grille de notation, centralisée dans lib/scoring.ts. */
+  scoring: ScoringCriterion[];
   fonctionnalites?: { titre: string; description: string }[];
   plans?: {
     nom: string;

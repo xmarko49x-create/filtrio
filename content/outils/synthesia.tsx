@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
+import { SCORING_BY_SLUG } from "@/lib/scoring";
 
 export const synthesiaFiche: FicheData = {
   slug: "synthesia",
@@ -110,50 +111,7 @@ export const synthesiaFiche: FicheData = {
     "Tu veux un style d'avatar créatif/flashy",
     "Tu préfères filmer toi-même (Synthesia ne remplace pas la présence humaine)",
   ],
-  scoring: [
-    {
-      label: "Qualité en français",
-      poids: 20,
-      score: 8.0,
-      commentaire:
-        "Voix FR parmi les meilleures de la catégorie avatars IA. Sync labiale FR soignée. Documentation partiellement traduite. Support B2B disponible en français pour les entreprises.",
-    },
-    {
-      label: "Rapport qualité/prix",
-      poids: 20,
-      score: 7.2,
-      commentaire:
-        "Tarif Creator comparable à HeyGen (29 €/mois en annuel chez Synthesia) si tu cherches une plateforme B2B solide. S'amortit surtout en entreprise grâce aux fonctionnalités Enterprise (traductions 80+ langues, 240+ avatars libres de droits, SAML/SSO). Peu adapté au solo créateur.",
-    },
-    {
-      label: "Profondeur des fonctionnalités IA",
-      poids: 20,
-      score: 8.5,
-      commentaire:
-        "Large bibliothèque d'avatars préconçus, clonage facial (Personal Avatars) sur plans payants, traduction vidéo automatique multilingue avec sync labiale adaptée. Solide mais moins créatif qu'HeyGen sur les usages contemporains.",
-    },
-    {
-      label: "Interface et prise en main",
-      poids: 15,
-      score: 8.0,
-      commentaire:
-        "Interface claire orientée workflow B2B : script → choix avatar → voix → render. Courbe d'apprentissage raisonnable (1h pour être opérationnel).",
-    },
-    {
-      label: "Conformité et sécurité B2B",
-      poids: 15,
-      score: 9.0,
-      commentaire:
-        "Point fort différenciateur vs HeyGen. SOC 2, GDPR compliant, SSO, audit logs, contrôle admin avancé. Conçu pour les exigences des grandes entreprises.",
-    },
-    {
-      label: "Intégrations",
-      poids: 10,
-      score: 8.5,
-      commentaire:
-        "API complète, intégrations LMS (Moodle, Docebo, Teachable), connecteurs Slack, Teams, SharePoint. Pensé pour s'insérer dans les workflows d'entreprise existants.",
-    },
-  ],
+  scoring: SCORING_BY_SLUG.synthesia,
   fonctionnalites: [
     {
       titre: "Avatars B2B préconçus",

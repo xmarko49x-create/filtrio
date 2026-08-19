@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
+import { SCORING_BY_SLUG } from "@/lib/scoring";
 
 export const descriptFiche: FicheData = {
   slug: "descript",
@@ -112,50 +113,7 @@ export const descriptFiche: FicheData = {
     "Tu fais peu de contenu parlé (l'outil est centré sur la transcription)",
     "Ta qualité audio source est médiocre (la transcription devient fautive)",
   ],
-  scoring: [
-    {
-      label: "Qualité en français",
-      poids: 20,
-      score: 7.8,
-      commentaire:
-        "Transcription FR correcte, ponctuation automatique raisonnable, mais moins fine qu'en anglais. Les termes techniques et noms propres demandent souvent des corrections. Interface partiellement traduite. Support uniquement en anglais.",
-    },
-    {
-      label: "Rapport qualité/prix",
-      poids: 20,
-      score: 8.8,
-      commentaire:
-        "Plan gratuit disponible pour tester. Hobbyist à 16 $/mois en annuel (10 media hours) : bon rapport q/p pour un podcaster régulier. Creator à 24 $/mois en annuel pour plus d'heures et l'export 4K. Jusqu'à 35 % d'économie avec l'annuel.",
-    },
-    {
-      label: "Profondeur des fonctionnalités IA",
-      poids: 20,
-      score: 9.0,
-      commentaire:
-        "Point fort. Édition textuelle unique sur le marché, Studio Sound (nettoyage audio), Overdub (clonage vocal pour corriger un mot), génération auto de titres et chapitres, transcription multi-langue. Écosystème IA le plus complet pour le long format.",
-    },
-    {
-      label: "Interface et prise en main",
-      poids: 15,
-      score: 7.5,
-      commentaire:
-        "Courbe d'apprentissage plus longue que la moyenne. Le modèle d'édition textuelle est déroutant au début : tu édites du texte, pas une timeline. Compte quelques heures pour être vraiment à l'aise. Une fois maîtrisé, le gain de productivité est important.",
-    },
-    {
-      label: "Support & confort FR",
-      poids: 15,
-      score: 6.5,
-      commentaire:
-        "Support client exclusivement en anglais. Documentation principalement anglophone avec traductions automatiques. Communauté Discord internationale très active, quelques tutos FR sur YouTube créés par des utilisateurs avancés.",
-    },
-    {
-      label: "Intégrations",
-      poids: 10,
-      score: 8.0,
-      commentaire:
-        "Import depuis YouTube, Vimeo, Zoom, Dropbox. Export vers toutes les plateformes podcast (Spotify, Apple, Google). API disponible sur plans Business. Plugin Premiere Pro pour aller-retour fluide. Squadcast intégré (enregistrement à distance).",
-    },
-  ],
+  scoring: SCORING_BY_SLUG.descript,
   fonctionnalites: [
     {
       titre: "Édition textuelle",

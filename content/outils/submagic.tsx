@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
+import { SCORING_BY_SLUG } from "@/lib/scoring";
 
 export const submagicFiche: FicheData = {
   slug: "submagic",
@@ -110,50 +111,7 @@ export const submagicFiche: FicheData = {
     </>,
     "Tu crées exclusivement en anglais sans contrainte de rendu visuel FR",
   ],
-  scoring: [
-    {
-      label: "Qualité en français",
-      poids: 20,
-      score: 9.2,
-      commentaire:
-        "Précision FR parmi les plus convaincantes de sa catégorie selon les retours utilisateurs publics. Segmentation propre, ponctuation cohérente, gestion correcte des accents. Interface en français.",
-    },
-    {
-      label: "Rapport qualité/prix",
-      poids: 20,
-      score: 7.8,
-      commentaire:
-        "Positionnement dans la fourchette haute de sa catégorie. L'absence de plan gratuit récurrent peut pénaliser les usages très occasionnels. Le tarif devient rentable dès qu'on publie plusieurs shorts par mois, grâce au temps gagné sur les sous-titres.",
-    },
-    {
-      label: "Profondeur des fonctionnalités IA",
-      poids: 20,
-      score: 8.2,
-      commentaire:
-        "Sous-titres stylés, détection moments forts, recadrage 9:16, ajout B-roll auto, effets sonores. La découpe sur vidéos très longues est moins poussée que chez OpusClip.",
-    },
-    {
-      label: "Interface et prise en main",
-      poids: 15,
-      score: 9.3,
-      commentaire:
-        "L'un des parcours utilisateurs les plus courts de sa catégorie. Upload, choix du template, export : peu de clics. Peu de courbe d'apprentissage pour un non-technicien.",
-    },
-    {
-      label: "Support & confort FR",
-      poids: 15,
-      score: 8.5,
-      commentaire:
-        "Documentation accessible et claire, support disponible. Le français est bien pris en compte côté interface et contenu généré.",
-    },
-    {
-      label: "Intégrations",
-      poids: 10,
-      score: 7.0,
-      commentaire:
-        "Des options d'API et d'intégrations existent (disponibles dès le Starter avec un petit quota, étendues sur Business + API). L'outil reste avant tout pensé pour une utilisation simple et rapide, pas comme une plateforme d'automatisation avancée à grande échelle.",
-    },
-  ],
+  scoring: SCORING_BY_SLUG.submagic,
   fonctionnalites: [
     {
       titre: "Sous-titres stylés et animés",

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
+import { SCORING_BY_SLUG } from "@/lib/scoring";
 
 export const pictoryFiche: FicheData = {
   slug: "pictory",
@@ -109,50 +110,7 @@ export const pictoryFiche: FicheData = {
     "Budget serré (à partir de 25 $/mois en annuel)",
     "Tu produis très peu de vidéos (le forfait n'est pas amorti)",
   ],
-  scoring: [
-    {
-      label: "Qualité en français",
-      poids: 20,
-      score: 7.0,
-      commentaire:
-        "Interface principalement en anglais. Les voix IA ElevenLabs intégrées supportent 29 langues dont le français, donc le rendu vidéo final peut être en FR. Mais l'expérience d'édition reste anglophone.",
-    },
-    {
-      label: "Rapport qualité/prix",
-      poids: 20,
-      score: 7.0,
-      commentaire:
-        "25 $/mois en annuel pour 200 minutes de vidéo, c'est correct mais pas donné. Le stock Getty/Storyblocks et 60 minutes de voix IA ElevenLabs inclus améliorent la valeur. Plus cher qu'InVideo qui propose un Free Forever.",
-    },
-    {
-      label: "Profondeur IA",
-      poids: 20,
-      score: 7.5,
-      commentaire:
-        "Bonne automatisation script-to-video. Découpe le texte en segments, propose des stock vidéos pertinents, génère la voix off, ajoute sous-titres et musique. Limites : la créativité reste \"générique\" (vidéos qui se ressemblent entre utilisateurs).",
-    },
-    {
-      label: "Interface et prise en main",
-      poids: 15,
-      score: 8.0,
-      commentaire:
-        "Workflow simple : tu colles un texte ou une URL, Pictory propose une première version en quelques minutes, tu retouches via une interface visuelle. Beaucoup plus accessible qu'un éditeur timeline classique.",
-    },
-    {
-      label: "Stock vidéo et voix IA",
-      poids: 15,
-      score: 9.0,
-      commentaire:
-        "Point fort. Accès à 5 millions+ de vidéos Getty Images/Storyblocks dès le plan Starter (jusqu'à 18 millions sur Professional). Voix ElevenLabs intégrée (60 min sur Starter, 120 min sur Professional). Pas besoin de payer ces ressources séparément.",
-    },
-    {
-      label: "Intégrations",
-      poids: 10,
-      score: 7.0,
-      commentaire:
-        "Connexions natives à YouTube, dépôts cloud, et import depuis URL d'article. API disponible sur les plans supérieurs pour automatiser. Moins riche que les solutions développeurs pures.",
-    },
-  ],
+  scoring: SCORING_BY_SLUG.pictory,
   fonctionnalites: [
     {
       titre: "Script-to-video automatique",

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
+import { SCORING_BY_SLUG } from "@/lib/scoring";
 
 export const veedFiche: FicheData = {
   slug: "veed",
@@ -114,50 +115,7 @@ export const veedFiche: FicheData = {
     "Tu veux une connexion offline (Veed est online only)",
     "Ta priorité est la vitesse (outils spécialisés plus rapides)",
   ],
-  scoring: [
-    {
-      label: "Qualité en français",
-      poids: 20,
-      score: 7.5,
-      commentaire:
-        "Interface partiellement traduite en français. Sous-titres auto FR corrects mais en retrait par rapport à Submagic sur le rendu visuel. Support anglais principalement. Documentation multilingue correcte.",
-    },
-    {
-      label: "Rapport qualité/prix",
-      poids: 20,
-      score: 7.8,
-      commentaire:
-        "Creator à 11 €/mois correct pour un éditeur web tout-en-un. Pro à 23 €/mois pour les besoins croissants. Moins cher qu'un abonnement Premiere, plus cher qu'un CapCut gratuit. Bon équilibre polyvalence/prix.",
-    },
-    {
-      label: "Profondeur des fonctionnalités IA",
-      poids: 20,
-      score: 7.5,
-      commentaire:
-        "IA intégrée pour sous-titres auto, transcription, suppression bruit, suppression fond vidéo, B-roll automatique. Moins spécialisé qu'un Submagic ou Descript mais couvre les cas standards correctement.",
-    },
-    {
-      label: "Interface et prise en main",
-      poids: 15,
-      score: 8.0,
-      commentaire:
-        "Interface web propre, prise en main rapide pour un non-technicien. Courbe d'apprentissage plus courte que DaVinci Resolve mais plus chargée que CapCut. Compromis accessible.",
-    },
-    {
-      label: "Support & confort FR",
-      poids: 15,
-      score: 7.0,
-      commentaire:
-        "Support principalement anglais. Base de connaissances accessible, quelques tutos YouTube FR de la communauté. Moins établi que Canva ou CapCut sur ce volet.",
-    },
-    {
-      label: "Intégrations",
-      poids: 10,
-      score: 8.5,
-      commentaire:
-        "API disponible sur plans pro. Intégrations Zapier, Make, Google Drive, Dropbox. Import direct depuis YouTube, Zoom, Teams. Bonne ouverture pour des workflows automatisés, plus poussé que CapCut.",
-    },
-  ],
+  scoring: SCORING_BY_SLUG.veed,
   fonctionnalites: [
     {
       titre: "Éditeur vidéo web complet",

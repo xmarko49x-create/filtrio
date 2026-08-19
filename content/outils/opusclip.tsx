@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
+import { SCORING_BY_SLUG } from "@/lib/scoring";
 
 export const opusclipFiche: FicheData = {
   slug: "opusclip",
@@ -91,50 +92,7 @@ export const opusclipFiche: FicheData = {
     "Tu veux un éditeur vidéo complet avec timeline",
     "Tu veux des templates viraux déjà prêts visuellement",
   ],
-  scoring: [
-    {
-      label: "Qualité en français",
-      poids: 20,
-      score: 7.5,
-      commentaire:
-        "Reconnaissance vocale FR correcte, segmentation des sous-titres à retoucher sur vocabulaire technique. Meilleur sur l'anglais, pensé pour le marché US d'abord. Interface multilingue mais pas 100 % FR natif.",
-    },
-    {
-      label: "Rapport qualité/prix",
-      poids: 20,
-      score: 9.0,
-      commentaire:
-        "Un des meilleurs rapports qualité/prix de sa catégorie grâce à un plan gratuit récurrent et des plans payants abordables. Plus généreux que Submagic ou Descript pour démarrer sans engagement.",
-    },
-    {
-      label: "Profondeur des fonctionnalités IA",
-      poids: 20,
-      score: 9.5,
-      commentaire:
-        "Le point fort. Détection IA des passages accrocheurs sur sources longues, score viralité prédictif par clip, recadrage 9:16 avec suivi visage, B-roll automatique. Aucun concurrent n'est aussi poussé sur ce volet.",
-    },
-    {
-      label: "Interface et prise en main",
-      poids: 15,
-      score: 8.5,
-      commentaire:
-        "Plus riche que Submagic en options (choix clips à garder, réorganisation, édition fine), donc un peu plus longue à maîtriser. Une fois le workflow compris, très efficace.",
-    },
-    {
-      label: "Support & confort FR",
-      poids: 15,
-      score: 7.5,
-      commentaire:
-        "Support principalement en anglais. Documentation traduite automatiquement, qualité correcte mais pas native. Communauté Discord internationale active.",
-    },
-    {
-      label: "Intégrations",
-      poids: 10,
-      score: 9.0,
-      commentaire:
-        "Écosystème riche. Import depuis YouTube, Twitch, Vimeo, Zoom, Google Drive, Dropbox. Publication programmée directe sur TikTok, Instagram Reels, YouTube Shorts. API disponible sur le plan le plus élevé (à vérifier sur opus.pro pour le détail).",
-    },
-  ],
+  scoring: SCORING_BY_SLUG.opusclip,
   fonctionnalites: [
     {
       titre: "Détection IA des moments viraux",

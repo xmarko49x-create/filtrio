@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
+import { SCORING_BY_SLUG } from "@/lib/scoring";
 
 export const elevenlabsFiche: FicheData = {
   slug: "elevenlabs",
@@ -98,50 +99,7 @@ export const elevenlabsFiche: FicheData = {
     "Tu cherches un outil complet de montage/édition vidéo",
     "Tu as besoin d'une facturation EUR avec TVA FR native",
   ],
-  scoring: [
-    {
-      label: "Qualité en français",
-      poids: 20,
-      score: 9.0,
-      commentaire:
-        "Rendu naturel en français, prononciation maîtrisée, gestion des liaisons et intonations largement supérieure aux concurrents. Certains mots techniques ou noms propres demandent des ajustements via la syntaxe phonétique.",
-    },
-    {
-      label: "Rapport qualité/prix",
-      poids: 20,
-      score: 7.5,
-      commentaire:
-        "Plan gratuit (10 000 credits/mois) généreux pour tester. Facturation au credit qui peut monter vite sur du volume. Le Creator à 22 $/mois (121k credits, premier mois -50 %) couvre les usages réguliers. Pro à 99 $/mois pour les besoins pros.",
-    },
-    {
-      label: "Profondeur des fonctionnalités IA",
-      poids: 20,
-      score: 9.5,
-      commentaire:
-        "Point fort. Synthèse vocale, clonage à partir d'un extrait audio, doublage vidéo, voix multilingues cohérentes, contrôle fin des émotions et du débit. Peu d'outils aussi poussés sur l'IA vocale pure.",
-    },
-    {
-      label: "Interface et prise en main",
-      poids: 15,
-      score: 8.5,
-      commentaire:
-        "Interface web propre, prise en main rapide pour la génération basique. Les fonctionnalités avancées (fine-tuning, clonage pro, API) demandent un peu de lecture de doc. Globalement accessible pour un non-technicien.",
-    },
-    {
-      label: "Support & confort FR",
-      poids: 15,
-      score: 6.5,
-      commentaire:
-        "Interface partiellement traduite, documentation en anglais principalement. Support client en anglais. Communauté Discord internationale très active. C'est le talon d'Achille pour l'utilisateur FR pur.",
-    },
-    {
-      label: "Intégrations",
-      poids: 10,
-      score: 9.0,
-      commentaire:
-        "API très documentée, intégration native avec Zapier, Make, Premiere Pro, DaVinci Resolve. Utilisable dans des workflows d'automatisation. Écosystème riche pour connecter la voix IA à d'autres outils.",
-    },
-  ],
+  scoring: SCORING_BY_SLUG.elevenlabs,
   fonctionnalites: [
     {
       titre: "Synthèse vocale multilingue",

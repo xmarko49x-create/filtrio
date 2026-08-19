@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
+import { SCORING_BY_SLUG } from "@/lib/scoring";
 
 export const tubebuddyFiche: FicheData = {
   slug: "tubebuddy",
@@ -83,50 +84,7 @@ export const tubebuddyFiche: FicheData = {
     "Tu préfères un workflow mobile-first",
     "Ton budget est 100% zéro (plan gratuit trop limité)",
   ],
-  scoring: [
-    {
-      label: "Qualité en français",
-      poids: 20,
-      score: 7.0,
-      commentaire:
-        "Interface disponible en français mais l'expérience reste principalement anglophone. Les suggestions de tags et de titres sont plus riches en anglais qu'en français. Support uniquement en anglais.",
-    },
-    {
-      label: "Rapport qualité/prix",
-      poids: 20,
-      score: 8.8,
-      commentaire:
-        "Tarification dégressive intéressante pour les petites chaînes. Plan gratuit utile pour découvrir. Le ROI est clair sur les chaînes en croissance qui cherchent à optimiser leur visibilité.",
-    },
-    {
-      label: "Profondeur des fonctionnalités IA",
-      poids: 20,
-      score: 8.5,
-      commentaire:
-        "L'écosystème couvre SEO, tags, titres, miniatures, tests A/B, analytics concurrent, bulk edit. Peu d'IA générative native (vs VidIQ qui mise plus sur ce terrain), mais des outils d'analyse très robustes.",
-    },
-    {
-      label: "Interface et prise en main",
-      poids: 15,
-      score: 9.0,
-      commentaire:
-        "Intégration directe à YouTube Studio via l'extension. Pas de nouvelle interface à apprendre : les fonctionnalités apparaissent dans les pages YouTube existantes. Fluide pour un YouTubeur déjà habitué à son environnement.",
-    },
-    {
-      label: "Support & confort FR",
-      poids: 15,
-      score: 7.0,
-      commentaire:
-        "Support uniquement en anglais. Documentation traduite automatiquement en français, qualité correcte. Communauté YouTube internationale très active, tutos FR existants sur YouTube.",
-    },
-    {
-      label: "Intégrations",
-      poids: 10,
-      score: 9.0,
-      commentaire:
-        "S'intègre directement à YouTube (Studio et pages publiques), export vers Google Sheets, Canva, extensions Chrome/Firefox/Edge. Pas d'API publique mais couvre le workflow YouTube natif.",
-    },
-  ],
+  scoring: SCORING_BY_SLUG.tubebuddy,
   fonctionnalites: [
     {
       titre: "Tag Explorer",

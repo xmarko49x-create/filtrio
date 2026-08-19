@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
+import { SCORING_BY_SLUG } from "@/lib/scoring";
 
 export const invideoFiche: FicheData = {
   slug: "invideo",
@@ -96,50 +97,7 @@ export const invideoFiche: FicheData = {
     "Tu veux du rendu cinéma avec color grading",
     "Tu vises une audience qui rejette le contenu IA visible",
   ],
-  scoring: [
-    {
-      label: "Qualité en français",
-      poids: 20,
-      score: 7.0,
-      commentaire:
-        "Interface anglais principalement, traduction partielle. Voix off IA FR correctes mais moins naturelles qu'ElevenLabs. Scripts FR fonctionnent, stock d'images avec mots-clés FR plus limité qu'EN.",
-    },
-    {
-      label: "Rapport qualité/prix",
-      poids: 20,
-      score: 7.0,
-      commentaire:
-        "Modèle à crédits qui peut devenir coûteux selon les modèles IA sollicités (Veo 3.1, Sora 2 pro tarifés à leur prix API d'origine). Rentable pour un usage régulier et industrialisé. Pas adapté à un usage occasionnel sans maîtrise de la consommation de crédits.",
-    },
-    {
-      label: "Profondeur des fonctionnalités IA",
-      poids: 20,
-      score: 8.5,
-      commentaire:
-        "Point fort : génération vidéo à partir de script ou prompt, voix off IA, matching automatique d'images stock pertinentes, sous-titres auto, AI Magic Box pour éditer. L'un des outils les plus IA-first du marché généraliste.",
-    },
-    {
-      label: "Interface et prise en main",
-      poids: 15,
-      score: 7.5,
-      commentaire:
-        "Interface moderne orientée workflow IA. Prise en main rapide pour les cas standards (script → vidéo). Plus technique si tu veux du contrôle fin (ajustements timeline, transitions custom).",
-    },
-    {
-      label: "Support & confort FR",
-      poids: 15,
-      score: 6.8,
-      commentaire:
-        "Support anglais. Documentation traduite automatiquement. Peu de tutos YouTube FR (vs la richesse de Canva/CapCut). C'est un outil plus orienté marketeurs pros que créateurs amateurs.",
-    },
-    {
-      label: "Intégrations",
-      poids: 10,
-      score: 8.5,
-      commentaire:
-        "API disponible. Intégrations Zapier, Make, webhooks. Export direct YouTube, plateformes sociales. Pensé pour s'insérer dans des workflows marketing automatisés.",
-    },
-  ],
+  scoring: SCORING_BY_SLUG.invideo,
   fonctionnalites: [
     {
       titre: "Script-to-video IA",

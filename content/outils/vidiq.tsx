@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
+import { SCORING_BY_SLUG } from "@/lib/scoring";
 
 export const vidiqFiche: FicheData = {
   slug: "vidiq",
@@ -107,50 +108,7 @@ export const vidiqFiche: FicheData = {
     "Tu as besoin d'un outil de gestion multi-chaînes poussé",
     "Tu veux un outil qui fonctionne sans extension navigateur",
   ],
-  scoring: [
-    {
-      label: "Qualité en français",
-      poids: 20,
-      score: 7.0,
-      commentaire:
-        "Interface partiellement traduite, suggestions de keywords nettement moins riches en français qu'en anglais. Les fonctionnalités IA génératives fonctionnent en FR mais avec moins de finesse que pour les niches anglophones.",
-    },
-    {
-      label: "Rapport qualité/prix",
-      poids: 20,
-      score: 8.0,
-      commentaire:
-        "Plan gratuit réellement utilisable (avantage sur TubeBuddy). Tarifs fixes et prévisibles affichés en EUR : Boost à 16,58 €/mois en annuel, Max à 31 €/mois. Plan Boost proposé régulièrement en promo, avec économie annoncée sur la facturation annuelle.",
-    },
-    {
-      label: "Profondeur des fonctionnalités IA",
-      poids: 20,
-      score: 8.5,
-      commentaire:
-        "IA générative intégrée au workflow : générateur de titres, scripts, hooks, descriptions, suggestions de niches. AI Coach qui accompagne les créateurs pas à pas. Plus moderne que TubeBuddy sur cet axe.",
-    },
-    {
-      label: "Interface et prise en main",
-      poids: 15,
-      score: 8.5,
-      commentaire:
-        "Extension intégrée à YouTube Studio avec un design plus moderne que TubeBuddy. Dashboard séparé disponible. Courbe d'apprentissage courte : les 3-4 fonctionnalités principales sont accessibles en moins de 10 minutes.",
-    },
-    {
-      label: "Support & confort FR",
-      poids: 15,
-      score: 7.0,
-      commentaire:
-        "Support en anglais principalement. Documentation traduite automatiquement. Communauté Discord active mais internationale. Quelques tutos YouTube FR existent par des créateurs indépendants.",
-    },
-    {
-      label: "Intégrations",
-      poids: 10,
-      score: 8.5,
-      commentaire:
-        "Extensions Chrome, Firefox, Edge, Safari. Applications iOS et Android natives (avantage sur TubeBuddy). Export data vers Google Sheets. API accessible sur les plans supérieurs.",
-    },
-  ],
+  scoring: SCORING_BY_SLUG.vidiq,
   fonctionnalites: [
     {
       titre: "Scoring SEO en temps réel",

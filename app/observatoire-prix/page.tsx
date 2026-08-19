@@ -483,7 +483,7 @@ export default function ObservatoirePrixPage() {
         </p>
         <p className="text-slate-300 leading-relaxed max-w-3xl">
           Certains liens de Filtrio sont affiliés, et cela ne change ni les
-          prix relevés ni le classement éditorial : la grille de notation est
+          prix relevés ni les scores éditoriaux : la grille de notation est
           publique sur la{" "}
           <Link href="/methode" className="text-emerald-400 hover:underline">
             page Méthode

@@ -97,9 +97,9 @@ export default function MentionsLegalesPage() {
             Certains liens vers des outils cités sont des liens affiliés. Cela
             signifie que Filtrio peut recevoir une commission si un visiteur
             s&apos;inscrit via ces liens, sans coût supplémentaire pour le
-            visiteur. La rémunération affiliée ne biaise pas le classement
-            éditorial des outils. Les scores sont attribués avant tout calcul
-            de commission. Plus de détails sur la{" "}
+            visiteur. La rémunération affiliée ne biaise pas les scores et
+            recommandations éditoriales des outils. Les scores sont attribués
+            avant tout calcul de commission. Plus de détails sur la{" "}
             <a
               href="/a-propos#transparence"
               className="text-emerald-400 hover:text-emerald-300"

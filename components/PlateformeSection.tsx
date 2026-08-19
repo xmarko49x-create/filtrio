@@ -8,11 +8,14 @@ interface PlateformeSectionProps {
   outilsPrioritaires: string[];
   /**
    * Top 3 contextualisé pour cette plateforme (slugs explicites, dans l'ordre
-   * d'affichage). Si fourni, override le tri automatique par score affilié.
-   * Permet d'afficher les outils vraiment pertinents pour la plateforme
-   * (ex: TubeBuddy/VidIQ pour YouTube) plutôt que le top score global.
+   * d'affichage). Sélection éditoriale assumée : les outils vraiment
+   * pertinents pour la plateforme (ex : TubeBuddy et VidIQ pour YouTube).
+   * Aucun critère commercial n'intervient dans ce choix.
+   *
+   * Obligatoire : un oubli doit être signalé par TypeScript, pas faire
+   * disparaître la section en silence.
    */
-  top3Slugs?: string[];
+  top3Slugs: string[];
   /** Slugs des comparatifs pertinents. */
   comparatifsPertinents: { slug: string; titre: string; description: string }[];
   /** Slugs des cas d'usage pertinents. */
@@ -22,25 +25,6 @@ interface PlateformeSectionProps {
 /** Détecte un vrai lien affilié vs un placeholder type `#aff-...`. */
 function hasRealAffiliateLink(o: Outil): boolean {
   return /^https?:\/\//.test(o.affiliateLink);
-}
-
-/**
- * Pour un outil sans lien affilié, propose un outil alternatif :
- * - même catégorie
- * - avec lien affilié réel
- * - score le plus élevé
- * Retourne undefined si aucun match.
- */
-function suggererAlternative(outil: Outil): Outil | undefined {
-  if (hasRealAffiliateLink(outil)) return undefined;
-  const candidats = OUTILS.filter(
-    (o) =>
-      o.slug !== outil.slug &&
-      o.category === outil.category &&
-      o.ficheAvailable &&
-      hasRealAffiliateLink(o),
-  ).sort((a, b) => b.score - a.score);
-  return candidats[0];
 }
 
 export default function PlateformeSection({
@@ -54,21 +38,13 @@ export default function PlateformeSection({
     .map((slug) => OUTILS.find((o) => o.slug === slug))
     .filter((o): o is Outil => o !== undefined);
 
-  // Top 3 contextualisé pour la plateforme.
-  // Si top3Slugs est fourni : on utilise cette liste explicite dans l'ordre
-  // (pertinence éditoriale pour la plateforme, pas score absolu).
-  // Sinon fallback historique : 3 outils affiliés avec meilleur score.
-  const top3: Outil[] = top3Slugs && top3Slugs.length > 0
-    ? top3Slugs
-        .map((slug) => OUTILS.find((o) => o.slug === slug && o.ficheAvailable))
-        .filter((o): o is Outil => o !== undefined)
-        .slice(0, 3)
-    : outils
-        .filter((o) => o.ficheAvailable && hasRealAffiliateLink(o))
-        .sort((a, b) => b.score - a.score)
-        .slice(0, 3);
-
-  const top3IsContextual = !!(top3Slugs && top3Slugs.length > 0);
+  // Top 3 contextualisé pour la plateforme : liste explicite, dans l'ordre.
+  // Sélection éditoriale de pertinence, pas un classement par score, et aucun
+  // critère commercial. Aucun repli automatique : la prop est obligatoire.
+  const top3: Outil[] = top3Slugs
+    .map((slug) => OUTILS.find((o) => o.slug === slug && o.ficheAvailable))
+    .filter((o): o is Outil => o !== undefined)
+    .slice(0, 3);
 
   const labelTop3 = (i: number): string => {
     if (i === 0) return "Notre choix #1";
@@ -89,9 +65,7 @@ export default function PlateformeSection({
               Le top 3 pour {plateforme}.
             </h2>
             <p className="text-slate-400 text-lg max-w-3xl">
-              {top3IsContextual
-                ? `Sélection contextualisée pour ${plateforme}. Ces 3 outils couvrent les besoins clés d'un créateur sur cette plateforme, pas un classement par score absolu.`
-                : "Les outils qui sortent du lot dans notre analyse 6 critères. Pas un top arbitraire, classement par score éditorial."}
+              {`Sélection contextualisée pour ${plateforme}. Ces 3 outils couvrent les besoins clés d'un créateur sur cette plateforme, pas un classement par score absolu.`}
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-4">
@@ -107,6 +81,10 @@ export default function PlateformeSection({
                       : "bg-slate-900 border-slate-800"
                   }`}
                 >
+                  {/* Pas de note affichée ici : ces 3 outils relèvent de
+                      catégories différentes, aligner leurs scores donnerait à
+                      lire un classement transversal qui n'en est pas un.
+                      Les notes restent sur les fiches et dans le catalogue. */}
                   <div className="flex items-center justify-between mb-4">
                     <span
                       className={`text-xs font-bold uppercase tracking-wider ${
@@ -116,11 +94,6 @@ export default function PlateformeSection({
                       }`}
                     >
                       {labelTop3(i)}
-                    </span>
-                    <span
-                      className={`text-${o.color}-400 font-bold text-lg`}
-                    >
-                      {o.score.toFixed(1)}/10
                     </span>
                   </div>
                   <div className="flex items-center gap-3 mb-3">
@@ -185,16 +158,16 @@ export default function PlateformeSection({
               Les outils utiles pour {plateforme}.
             </h2>
             <p className="text-slate-400 text-lg max-w-3xl">
-              Triés par pertinence pour {plateforme}. Pas par score absolu. Le
-              score reflète la qualité globale de l&apos;outil, tous usages
-              confondus. Pour un classement strict par score, voir le{" "}
+              Triés par pertinence pour {plateforme}. Pas par score. Les scores
+              affichés servent à comparer des outils d&apos;une même catégorie,
+              pas à les départager toutes catégories confondues. Le{" "}
               <Link
                 href="/outils"
                 className="text-emerald-400 hover:text-emerald-300 underline"
               >
                 catalogue complet
-              </Link>
-              .
+              </Link>{" "}
+              liste les 18 outils par ordre alphabétique.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -225,19 +198,16 @@ export default function PlateformeSection({
                   </div>
                 );
               }
-              const alternative = suggererAlternative(o);
               return (
                 <div
                   key={o.slug}
                   className="p-6 bg-slate-900 border border-slate-800 rounded-xl hover:border-emerald-500/40 transition group flex flex-col"
                 >
-                  <div className="flex justify-between items-start mb-3">
+                  {/* Idem : liste multi-catégories, pas de note alignée. */}
+                  <div className="mb-3">
                     <h3 className={`text-xl font-bold text-${o.color}-400`}>
                       {o.name}
                     </h3>
-                    <span className={`text-${o.color}-400 font-bold`}>
-                      {o.score.toFixed(1)}
-                    </span>
                   </div>
                   <div className="text-sm text-slate-400 mb-4">{o.tagline}</div>
                   <div className="flex flex-wrap gap-2 text-xs text-slate-500 mb-5">
@@ -271,17 +241,6 @@ export default function PlateformeSection({
                       </TrackedAffiliateLink>
                     )}
                   </div>
-                  {alternative && (
-                    <div className="mt-3 pt-3 border-t border-slate-800 text-xs text-slate-500">
-                      Pas de lien direct ici. Voir alternative{" "}
-                      <Link
-                        href={`/outils/${alternative.slug}`}
-                        className={`text-${alternative.color}-400 hover:text-${alternative.color}-300 font-medium`}
-                      >
-                        {alternative.name} →
-                      </Link>
-                    </div>
-                  )}
                 </div>
               );
             })}

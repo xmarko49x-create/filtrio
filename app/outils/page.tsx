@@ -67,10 +67,10 @@ export default function OutilsPage() {
         </p>
         <p className="text-slate-400 leading-relaxed max-w-3xl">
           Le catalogue est présenté par ordre alphabétique. Utilise les filtres
-          pour cibler par catégorie, par plan gratuit ou par mot-clé. Une fois
-          une catégorie sélectionnée, tu peux trier les outils de cette
-          catégorie par score : c&apos;est le seul cadre où la comparaison des
-          notes est pertinente.
+          pour cibler par catégorie, par plan gratuit ou par mot-clé. Nous ne
+          proposons volontairement pas de tri par score : les critères notés
+          varient d&apos;une catégorie à l&apos;autre, un classement par note
+          serait donc trompeur.
         </p>
       </section>
 

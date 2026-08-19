@@ -21,26 +21,12 @@ function hasFreeTier(o: Outil): boolean {
   return /gratuit/i.test(o.priceFrom || "");
 }
 
-type SortKey = "score" | "name";
 type BudgetFilter = "all" | "free" | "paid";
 
 export default function OutilsCatalog() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState<"all" | OutilCategorie>("all");
   const [budget, setBudget] = useState<BudgetFilter>("all");
-  // Tri alphabétique par défaut : sans catégorie sélectionnée, un tri par
-  // score produirait un classement entre catégories que la grille de
-  // notation (axes adaptés par catégorie) ne permet pas de justifier.
-  const [sortKey, setSortKey] = useState<SortKey>("name");
-
-  // Le tri par score n'a de sens qu'à l'intérieur d'une catégorie.
-  const canSortByScore = category !== "all";
-
-  /** Change de catégorie et remet le tri A → Z si on repasse sur "Toutes". */
-  function handleCategoryChange(next: "all" | OutilCategorie) {
-    setCategory(next);
-    if (next === "all") setSortKey("name");
-  }
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();
@@ -62,21 +48,21 @@ export default function OutilsCatalog() {
       );
     }
 
-    // Garde-fou : le tri par score n'est appliqué que dans une catégorie.
-    if (sortKey === "score" && category !== "all") {
-      list = [...list].sort((a, b) => b.score - a.score);
-    } else {
-      list = [...list].sort((a, b) => a.name.localeCompare(b.name, "fr"));
-    }
+    // Ordre alphabétique, sans exception. Aucun tri par score n'est proposé :
+    // la grille de notation comporte des axes adaptés selon la catégorie, et
+    // même à l'intérieur d'une catégorie les critères ne sont identiques que
+    // pour Shorts & Clips et SEO YouTube. Un tri par score serait donc
+    // méthodologiquement invalide dans la majorité des cas.
+    list = [...list].sort((a, b) => a.name.localeCompare(b.name, "fr"));
     return list;
-  }, [search, category, budget, sortKey]);
+  }, [search, category, budget]);
 
   const total = OUTILS.filter((o) => o.ficheAvailable).length;
   const categoriesPresent = useMemo(() => {
     const set = new Set<OutilCategorie>();
     OUTILS.filter((o) => o.ficheAvailable).forEach((o) => set.add(o.category));
     return Array.from(set).sort((a, b) =>
-      CATEGORIE_LABELS[a].localeCompare(CATEGORIE_LABELS[b]),
+      CATEGORIE_LABELS[a].localeCompare(CATEGORIE_LABELS[b], "fr"),
     );
   }, []);
 
@@ -114,7 +100,7 @@ export default function OutilsCatalog() {
             id="category"
             value={category}
             onChange={(e) =>
-              handleCategoryChange(e.target.value as "all" | OutilCategorie)
+              setCategory(e.target.value as "all" | OutilCategorie)
             }
             className="w-full md:w-56 bg-slate-900 border border-slate-700 focus:border-emerald-500 rounded-lg px-4 py-2.5 text-sm outline-none transition"
           >
@@ -154,30 +140,18 @@ export default function OutilsCatalog() {
           </div>
         </div>
 
-        {/* Tri */}
+        {/* Ordre d'affichage, non configurable */}
         <div>
-          <label
-            htmlFor="sort"
-            className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2"
-          >
-            Tri
-          </label>
-          <select
-            id="sort"
-            value={sortKey}
-            onChange={(e) => setSortKey(e.target.value as SortKey)}
-            className="w-full md:w-64 bg-slate-900 border border-slate-700 focus:border-emerald-500 rounded-lg px-4 py-2.5 text-sm outline-none transition"
-          >
-            <option value="name">A → Z</option>
-            {canSortByScore && (
-              <option value="score">Meilleur score dans la catégorie</option>
-            )}
-          </select>
-          {!canSortByScore && (
-            <p className="mt-2 text-xs text-slate-500 md:w-64">
-              Choisis une catégorie pour pouvoir trier par score.
-            </p>
-          )}
+          <span className="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
+            Ordre
+          </span>
+          <div className="w-full md:w-56 bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-slate-300">
+            A → Z
+          </div>
+          <p className="mt-2 text-xs text-slate-500 md:w-56">
+            Pas de tri par score : les critères notés diffèrent selon la
+            catégorie.
+          </p>
         </div>
       </div>
 
@@ -190,17 +164,13 @@ export default function OutilsCatalog() {
           {filtered.length > 1 ? "outils affichés" : "outil affiché"} sur{" "}
           {total}
         </div>
-        {(search ||
-          category !== "all" ||
-          budget !== "all" ||
-          sortKey !== "name") && (
+        {(search || category !== "all" || budget !== "all") && (
           <button
             type="button"
             onClick={() => {
               setSearch("");
               setCategory("all");
               setBudget("all");
-              setSortKey("name");
             }}
             className="text-emerald-400 hover:text-emerald-300 font-medium"
           >

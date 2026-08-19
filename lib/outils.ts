@@ -308,11 +308,6 @@ export function getOutilOrThrow(slug: string): Outil {
   return o;
 }
 
-export function outilsByScore(limit?: number): Outil[] {
-  const sorted = [...OUTILS].sort((a, b) => b.score - a.score);
-  return limit ? sorted.slice(0, limit) : sorted;
-}
-
 /**
  * Comparateur neutre pour toutes les listes qui ne doivent PAS produire de
  * classement global : catégorie (libellé français) puis nom de l'outil.

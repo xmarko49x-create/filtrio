@@ -582,8 +582,8 @@ export default function HomePage() {
         </div>
 
         <p className="text-sm text-slate-400 mb-6 max-w-3xl">
-          <strong className="text-slate-200">À quoi sert la note :</strong> à
-          départager des outils d&apos;une même catégorie. Elle n&apos;est pas
+          <strong className="text-slate-200">À quoi sert la note :</strong>{" "}
+          à départager des outils d&apos;une même catégorie. Elle n&apos;est pas
           faite pour comparer un outil de voix IA à un outil de design. Aucun
           score n&apos;est influencé par une commission affiliée.
         </p>

@@ -7,7 +7,7 @@ export const runwayFiche: FicheData = {
   hero: {
     h1: "Runway : l'avis complet en 2026",
     tagline:
-      "Référence de la génération vidéo IA premium. Modèles maison Gen-4, Gen-4.5 et Aleph, intégration de plusieurs modèles tiers (Google Veo, OpenAI Sora, Kling, etc., la liste évolue régulièrement sur runwayml.com), écosystème VFX complet, utilisé par les studios Hollywood. Voici pour qui il vaut son prix.",
+      "Référence de la génération vidéo IA premium. Modèles maison Gen-4, Gen-4.5 et Aleph, intégration de plusieurs modèles tiers (Google Veo, Kling, etc., la liste évolue régulièrement sur runwayml.com), écosystème d'applications d'édition, utilisé par les studios Hollywood. Voici pour qui il vaut son prix.",
     badges: [
       { label: "Génération vidéo IA premium", tone: "primary" },
       { label: "VFX pro", tone: "accent" },
@@ -15,13 +15,13 @@ export const runwayFiche: FicheData = {
     ],
     origine: "USA",
     tempsLecture: 8,
-    lastCheck: "10/07/2026",
+    lastCheck: "20/08/2026",
   },
   verdict30s: [
     {
       question: "C'est quoi ?",
       answer:
-        "Plateforme de génération vidéo IA. Modèles maison Gen-4, Gen-4.5, Gen-4 Turbo, Aleph (montage vidéo), Acte-Deux (capture de performance) intégrés avec plusieurs modèles tiers majeurs (Google Veo, OpenAI Sora, Kling, Seedance, FLUX, Seedream, etc., la liste exacte évolue régulièrement, voir runwayml.com). Écosystème VFX complet (inpainting, motion tracking, green screen auto). Utilisée par studios Hollywood et agences premium.",
+        "Plateforme de génération vidéo IA. Modèles maison Gen-4, Gen-4.5, Gen-4 Turbo, Aleph (montage vidéo), Act-Two (capture de performance) intégrés avec plusieurs modèles tiers majeurs (Google Veo, Kling, Seedance, FLUX, Seedream, etc., la liste exacte évolue régulièrement, voir runwayml.com). Applications d'édition dédiées (Edit Video, Video Backdrop, Color Grade Video). Utilisée par studios Hollywood et agences premium.",
     },
     {
       question: "Pour qui ?",
@@ -54,9 +54,8 @@ export const runwayFiche: FicheData = {
       question: "Meilleure alternative ?",
       answer: (
         <>
-          Pika pour une alternative plus abordable. Sora (OpenAI) pour
-          génération encore plus avancée quand disponible. Kling pour
-          utilisateurs Chine.{" "}
+          Pika pour une alternative plus abordable. Sora (OpenAI), à utiliser
+          directement chez OpenAI. Kling pour utilisateurs Chine.{" "}
           <Link
             href="/comparatifs/runway-vs-pika"
             className="text-purple-400 hover:underline"
@@ -115,9 +114,9 @@ export const runwayFiche: FicheData = {
         "Anime une image fixe en vidéo. Utile pour donner vie à une illustration, une photo produit, un concept visuel. Contrôle basique du mouvement via prompt.",
     },
     {
-      titre: "Écosystème VFX complet",
+      titre: "Applications d'édition dédiées",
       description:
-        "Inpainting, motion tracking, green screen IA, suppression d'objets, transfert de style. Démocratise des outils jusque-là réservés aux studios pros (VFX, compositing).",
+        "Edit Video pour modifier une zone d'un plan par prompt, Video Backdrop pour remplacer un arrière-plan, Color Grade Video pour l'étalonnage. Ces applications remplacent les anciens outils autonomes (Inpainting, Remove Background, Color Grade). Elles rendent accessibles des traitements jusque-là réservés aux studios.",
     },
     {
       titre: "Lip sync et camera motion",
@@ -130,7 +129,7 @@ export const runwayFiche: FicheData = {
         "API disponible sur plans pros. Permet d'automatiser la génération dans des pipelines custom. Utilisé par studios et agences pour industrialiser.",
     },
     {
-      titre: "Act-One (performance capture)",
+      titre: "Act-Two (capture de performance)",
       description:
         "Capture d'une performance d'acteur et transfert sur un personnage IA. Feature avancée pour motion designers et filmmakers cherchant du caractère sans tournage.",
     },
@@ -160,8 +159,8 @@ export const runwayFiche: FicheData = {
         "625 credits mensuels",
         "Tout le Gratuit inclus",
         "Accès à toutes les applications · flux de travail",
-        "Vidéo générative maison : Aleph, Gen-4.5 (texte en vidéo), Gen-4 (image à vidéo), Acte-Deux (capture de performance)",
-        "Modèles tiers intégrés : Google Veo, OpenAI Sora, Kling, Seedance, FLUX, Seedream, etc. (liste évolutive, voir runwayml.com)",
+        "Vidéo générative maison : Aleph, Gen-4.5 (texte en vidéo), Gen-4 (image à vidéo), Act-Two (capture de performance)",
+        "Modèles tiers intégrés : Google Veo, Kling, Seedance, FLUX, Seedream, etc. (liste évolutive, voir runwayml.com)",
         "Upscale · suppression filigranes sur tous les modèles vidéo",
         "Renouvellement mensuel des crédits · achat de crédits supplémentaires",
         "100 Go de stockage actif · projets de montage illimités",
@@ -217,7 +216,7 @@ export const runwayFiche: FicheData = {
     {
       slug: "sora",
       comment:
-        "Modèle vidéo d'OpenAI. Qualité exceptionnelle mais accès limité. Disponibilité variable selon pays et abonnement ChatGPT Pro.",
+        "Modèle vidéo d'OpenAI, à utiliser directement chez OpenAI : Sora a été retiré de Runway le 3 avril 2026. Accès et disponibilité variables selon les pays et l'abonnement ChatGPT.",
     },
     {
       slug: "invideo",
@@ -230,7 +229,8 @@ export const runwayFiche: FicheData = {
       question: "Runway ou Pika ?",
       answer: (
         <>
-          Runway pour la qualité maximale et l&apos;écosystème VFX complet.
+          Runway pour la qualité maximale et ses applications d&apos;édition
+          dédiées.
           Pika pour un accès plus abordable et un workflow simplifié. Les
           créateurs pros privilégient Runway, les débutants en génération
           vidéo IA Pika. Voir le{" "}

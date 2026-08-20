@@ -25,10 +25,10 @@ export const runwayVsPika: ComparatifData = {
     paragraphs: [
       <>
         <strong className="text-purple-400">Runway</strong>{" "}reste la référence
-        du marché avec Gen-4 et Gen-4.5, Aleph, Acte-Deux, l&apos;écosystème
-        VFX le plus complet (inpainting, tracking, green screen IA) et
-        l&apos;intégration des modèles tiers majeurs (Veo 3.1, Sora, Kling
-        3.0 Pro). Crédibilité studio.{" "}
+        du marché avec Gen-4 et Gen-4.5, Aleph, Act-Two, ses applications
+        d&apos;édition dédiées (Edit Video, Video Backdrop, Color Grade Video)
+        et l&apos;intégration de modèles tiers majeurs (Veo 3.1, Kling 3.0
+        Pro). Crédibilité studio.{" "}
         <strong className="text-rose-400">Pika</strong>{" "}est plus abordable,
         plus simple à prendre en main, mais propose une qualité qui progresse
         rapidement sans atteindre le niveau Runway.
@@ -86,7 +86,7 @@ export const runwayVsPika: ComparatifData = {
   porQuiA: [
     "Tu es motion designer ou filmmaker pro",
     "Tu cherches la qualité maximale disponible en 2026",
-    "Tu utilises les fonctionnalités VFX (inpainting, tracking, green screen)",
+    "Tu utilises les applications d'édition (Edit Video, Video Backdrop, Color Grade Video)",
     "Ton contenu est premium (pub, clip, documentaire)",
     "Tu veux l'API pour automatiser un studio",
   ],

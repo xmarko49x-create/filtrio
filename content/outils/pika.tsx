@@ -36,9 +36,10 @@ export const pikaFiche: FicheData = {
           <Link href="/outils/runway" className="text-purple-400 hover:underline">
             Runway
           </Link>
-          ). Tu veux des intégrations VFX avancées (motion tracking, green
-          screen IA, Runway domine). Tu produis du contenu linéaire long
-          format classique (génération vidéo IA pas adaptée).
+          ). Tu veux des applications d&apos;édition dédiées (Edit Video, Video
+          Backdrop, Color Grade Video) ou la capture de performance Act-Two, où
+          Runway domine. Tu produis du contenu linéaire long format classique
+          (génération vidéo IA pas adaptée).
         </>
       ),
     },
@@ -95,7 +96,7 @@ export const pikaFiche: FicheData = {
       </Link>
       )
     </>,
-    "Tu fais des effets VFX pros (motion tracking, green screen IA, Runway)",
+    "Tu fais de l'édition avancée par application (Edit Video, Video Backdrop, Color Grade Video, Runway)",
     "Tu produis pour des clients premium qui exigent une qualité référence",
     "Tu as besoin d'API robuste pour automatiser (Runway plus mature)",
     "Tu fais du long format ou de l'éducatif linéaire",

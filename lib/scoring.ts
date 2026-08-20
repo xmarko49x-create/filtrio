@@ -41,14 +41,14 @@ export const SCORING_BY_SLUG: Record<string, ScoringCriterion[]> = {
       poids: 20,
       score: 7.8,
       commentaire:
-        "Positionnement dans la fourchette haute de sa catégorie. L'absence de plan gratuit récurrent peut pénaliser les usages très occasionnels. Le tarif devient rentable dès qu'on publie plusieurs shorts par mois, grâce au temps gagné sur les sous-titres.",
+        "Positionnement dans la fourchette haute de sa catégorie. L'absence de plan gratuit récurrent peut pénaliser les usages très occasionnels. Le plan Starter couvre 15 vidéos par mois, limitées à 2 minutes, avec export en 1080p à 30 FPS : à cadrer avant de s'abonner si tu publies beaucoup ou plus long. Magic Clips, qui transforme les vidéos longues en clips courts, est un add-on facturé séparément et non une fonction incluse dans le plan de base. Le tarif devient rentable dès qu'on publie plusieurs shorts par mois, grâce au temps gagné sur les sous-titres.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
       poids: 20,
       score: 8.2,
       commentaire:
-        "Sous-titres stylés, détection moments forts, recadrage 9:16, ajout B-roll auto, effets sonores. La découpe sur vidéos très longues est moins poussée que chez OpusClip.",
+        "Inclus dans l'abonnement : sous-titres stylés, découpe textuelle, ajout de B-roll et d'audio, outils d'amélioration comme le nettoyage audio et la suppression des silences, recadrage 9:16. En revanche, la détection des moments forts et la transformation d'une vidéo longue en clips courts relèvent de Magic Clips, vendu en add-on séparé : sur ce terrain précis, OpusClip couvre le besoin dans son abonnement.",
     },
     {
       label: "Interface et prise en main",
@@ -129,7 +129,7 @@ export const SCORING_BY_SLUG: Record<string, ScoringCriterion[]> = {
       poids: 20,
       score: 8.8,
       commentaire:
-        "Tarification dégressive intéressante pour les petites chaînes. Plan gratuit utile pour découvrir. Le ROI est clair sur les chaînes en croissance qui cherchent à optimiser leur visibilité.",
+        "Un plan gratuit est disponible pour découvrir l'outil. Côté payant : Pro à 3,99 $/mois en facturation annuelle ou 4,99 $/mois en mensuel, Legend à 25,20 $/mois en annuel ou 31,50 $/mois en mensuel. Le ticket d'entrée est donc parmi les plus bas du panel, mais l'écart entre les deux paliers est important : à vérifier selon les fonctionnalités dont tu as réellement besoin. Le ROI est clair sur les chaînes en croissance qui cherchent à optimiser leur visibilité.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
@@ -150,7 +150,7 @@ export const SCORING_BY_SLUG: Record<string, ScoringCriterion[]> = {
       poids: 15,
       score: 7.0,
       commentaire:
-        "Support uniquement en anglais. Documentation traduite automatiquement en français, qualité correcte. Communauté YouTube internationale très active, tutos FR existants sur YouTube.",
+        "Support en anglais et documentation principalement anglophone, avec des traductions automatiques en français. Filtrio n'a pas encore vérifié directement la qualité de ces traductions ni celle du support en français : ce point reste à mesurer. Communauté YouTube internationale très active, tutos FR existants sur YouTube.",
     },
     {
       label: "Intégrations",
@@ -217,14 +217,14 @@ export const SCORING_BY_SLUG: Record<string, ScoringCriterion[]> = {
       poids: 20,
       score: 7.5,
       commentaire:
-        "Standard à 15 $/mois correct pour tester sérieusement. Coût par crédit raisonnable mais la génération vidéo IA reste consommatrice. Pro à 35 $/mois pour usage régulier.",
+        "Standard à 15 $/mois en facturation mensuelle, soit l'équivalent de 12 $/mois si tu paies à l'année : correct pour tester sérieusement. Coût par crédit raisonnable mais la génération vidéo IA reste consommatrice. Pro à 35 $/mois en mensuel, 28 $/mois en annuel, pour un usage régulier.",
     },
     {
       label: "Qualité de la génération vidéo",
       poids: 25,
       score: 9.5,
       commentaire:
-        "Point fort absolu. Gen-4 et Gen-4.5 sont parmi les modèles de génération vidéo IA les plus aboutis disponibles au grand public en 2026. Qualité visuelle impressionnante pour des clips courts. Intégration native de plusieurs modèles tiers (Google Veo, OpenAI Sora, Kling, etc.) pour accéder à d'autres options depuis la même plateforme.",
+        "Point fort de l'outil. Gen-4.5 est le modèle maison le plus récent, et Runway le présente comme son modèle vidéo le plus abouti : c'est son positionnement commercial, que Filtrio n'a pas mesuré face aux modèles concurrents. Runway héberge aussi des modèles tiers, notamment Kling et Veo, accessibles selon les plans et les outils, ce qui permet de comparer plusieurs rendus depuis la même plateforme. À noter : Sora a été retiré de la plateforme le 3 avril 2026.",
     },
     {
       label: "Interface et prise en main",
@@ -238,14 +238,14 @@ export const SCORING_BY_SLUG: Record<string, ScoringCriterion[]> = {
       poids: 10,
       score: 9.0,
       commentaire:
-        "Écosystème VFX IA impressionnant : inpainting, motion tracking, green screen auto, suppression d'objets, transfert de style. Peu d'outils aussi complets sur ce volet.",
+        "Au-delà de la génération, Runway propose des applications de montage et de modification vidéo, de traitement de l'arrière-plan et de colorimétrie. Attention en revanche si tu t'appuies sur des tutoriels anciens : plusieurs outils autonomes historiques ont été dépréciés ou fondus dans d'autres applications en 2026. Vérifie la documentation officielle avant de compter sur une fonction précise.",
     },
     {
       label: "API et intégrations",
       poids: 10,
       score: 8.0,
       commentaire:
-        "API disponible pour les plans pros. Permet d'intégrer Runway à des flux de travail personnalisés, automatiser la génération. Utile pour studios et agences.",
+        "Une API est proposée pour intégrer Runway à des flux de travail personnalisés et automatiser la génération. Point important : l'offre API et ses crédits sont distincts des abonnements et des crédits de l'application Runway — souscrire à un plan créateur ne donne pas accès aux crédits API. Utile pour studios et agences, à budgéter séparément.",
     },
   ],
   descript: [
@@ -268,7 +268,7 @@ export const SCORING_BY_SLUG: Record<string, ScoringCriterion[]> = {
       poids: 20,
       score: 9.0,
       commentaire:
-        "Point fort. Édition textuelle unique sur le marché, Studio Sound (nettoyage audio), Overdub (clonage vocal pour corriger un mot), génération auto de titres et chapitres, transcription multi-langue. Écosystème IA le plus complet pour le long format.",
+        "Point fort. Édition textuelle unique sur le marché, Studio Sound (nettoyage audio), clone vocal personnalisé via l'AI Speaker pour corriger un mot sans réenregistrer, génération auto de titres et chapitres, transcription multi-langue. Écosystème IA le plus complet pour le long format.",
     },
     {
       label: "Interface et prise en main",
@@ -289,7 +289,7 @@ export const SCORING_BY_SLUG: Record<string, ScoringCriterion[]> = {
       poids: 10,
       score: 8.0,
       commentaire:
-        "Import depuis YouTube, Vimeo, Zoom, Dropbox. Export vers toutes les plateformes podcast (Spotify, Apple, Google). API disponible sur plans Business. Plugin Premiere Pro pour aller-retour fluide. Squadcast intégré (enregistrement à distance).",
+        "Import depuis YouTube, Vimeo, Zoom, Dropbox. Export vers toutes les plateformes podcast (Spotify, Apple, Google). Descript documente une API et une connexion MCP, sans que le palier d'abonnement requis soit confirmé par la documentation officielle. Plugin Premiere Pro pour aller-retour fluide. SquadCast reste connectable, avec import direct des enregistrements ; Rooms est désormais l'outil d'enregistrement à distance intégré à Descript.",
     },
   ],
   elevenlabs: [

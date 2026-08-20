@@ -139,15 +139,16 @@ export const descriptVsRiverside: ComparatifData = {
   faq: [
     {
       question:
-        "Peut-on vraiment se passer de Riverside en utilisant Descript + Squadcast ?",
+        "Peut-on vraiment se passer de Riverside en utilisant l'enregistrement à distance de Descript ?",
       answer: (
         <>
           Pour un usage basique à modéré, oui.{" "}
           <Link href="/outils/descript" className="text-violet-400 hover:underline">
             Descript
           </Link>{" "}
-          a intégré Squadcast en 2023 et propose un enregistrement à distance
-          correct. Pour un usage pro intensif (4K, multi-intervenants, producer
+          propose Rooms, son enregistreur à distance intégré, et permet
+          d&apos;importer directement les enregistrements SquadCast. Pour un
+          usage pro intensif (4K, multi-intervenants, producer
           mode),{" "}
           <Link href="/outils/riverside" className="text-indigo-400 hover:underline">
             Riverside
@@ -160,7 +161,7 @@ export const descriptVsRiverside: ComparatifData = {
     {
       question: "Quel workflow pour un podcast pro solo + invités ?",
       answer:
-        "Le combo le plus courant : enregistrement sur Riverside (qualité des intervenants), puis export vers Descript pour l'édition textuelle, le nettoyage Studio Sound, les corrections Overdub. Enfin export vers plateformes podcast (Spotify, Apple) directement depuis Descript. Temps de post-prod divisé par 3 à 5 par rapport à un workflow timeline classique selon les retours publics.",
+        "Le combo le plus courant : enregistrement sur Riverside (qualité des intervenants), puis export vers Descript pour l'édition textuelle, le nettoyage Studio Sound, les corrections au clone vocal (AI Speaker). Enfin export vers plateformes podcast (Spotify, Apple) directement depuis Descript. Temps de post-prod divisé par 3 à 5 par rapport à un workflow timeline classique selon les retours publics.",
     },
     {
       question: "Pour un débutant, lequel commencer ?",

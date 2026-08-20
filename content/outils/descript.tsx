@@ -7,7 +7,7 @@ export const descriptFiche: FicheData = {
   hero: {
     h1: "Descript : l'avis complet en 2026",
     tagline:
-      "L'édition textuelle révolutionnaire : tu modifies ta vidéo en éditant sa transcription. Studio Sound, Overdub, Squadcast intégré. Voici pour qui il vaut son prix.",
+      "L'édition textuelle révolutionnaire : tu modifies ta vidéo en éditant sa transcription. Studio Sound, clone vocal personnalisé, enregistrement à distance intégré. Voici pour qui il vaut son prix.",
     badges: [
       { label: "Édition textuelle", tone: "primary" },
       { label: "Podcast & long format", tone: "accent" },
@@ -15,13 +15,13 @@ export const descriptFiche: FicheData = {
     ],
     origine: "USA",
     tempsLecture: 8,
-    lastCheck: "10/07/2026",
+    lastCheck: "20/08/2026",
   },
   verdict30s: [
     {
       question: "C'est quoi ?",
       answer:
-        "Plateforme d'édition audio-vidéo unique : tu modifies ta vidéo en éditant sa transcription. Supprime un mot = la vidéo se coupe au bon endroit. Descript intègre aussi l'enregistrement à distance (via Squadcast), Studio Sound et Overdub pour le clonage vocal.",
+        "Plateforme d'édition audio-vidéo unique : tu modifies ta vidéo en éditant sa transcription. Supprime un mot = la vidéo se coupe au bon endroit. Descript intègre aussi l'enregistrement à distance (Rooms), Studio Sound et le clone vocal personnalisé (AI Speaker).",
     },
     {
       question: "Pour qui ?",
@@ -91,7 +91,7 @@ export const descriptFiche: FicheData = {
     "Tu produis des interviews, tutos, ou formations longues",
     "Tu veux éditer ta vidéo comme un document Word",
     "Tu veux nettoyer professionnellement l'audio (Studio Sound)",
-    "Tu veux corriger ta voix avec du clonage vocal (Overdub)",
+    "Tu veux corriger ta voix avec un clone vocal personnalisé (AI Speaker)",
   ],
   pasPourQui: [
     <>
@@ -126,14 +126,14 @@ export const descriptFiche: FicheData = {
         "Un clic pour nettoyer l'audio : suppression bruit de fond, lissage de la voix, égalisation. Résultat souvent proche d'un micro pro même sur enregistrement médiocre. Particulièrement apprécié des podcasteurs.",
     },
     {
-      titre: "Overdub (clonage vocal)",
+      titre: "AI Speaker (clone vocal personnalisé)",
       description:
-        "Clone ta voix à partir de quelques minutes d'audio. Permet de corriger un mot, une phrase, un nom propre sans réenregistrer. Utile pour les erreurs, pas pour générer de gros volumes de voix.",
+        "Clone ta voix à partir d'un échantillon audio, sous le nom AI Speaker (anciennement Overdub). Permet de corriger un mot, une phrase, un nom propre sans réenregistrer. Utile pour les erreurs, pas pour générer de gros volumes de voix.",
     },
     {
-      titre: "Enregistrement à distance (via Squadcast)",
+      titre: "Enregistrement à distance (Rooms)",
       description:
-        "Depuis l'acquisition de Squadcast, Descript intègre l'enregistrement à distance de qualité. Concurrent de Riverside. Tracks locaux séparés pour chaque intervenant, pas de dépendance à la qualité de la connexion.",
+        "Rooms est l'enregistreur à distance intégré à Descript : tracks locaux séparés pour chaque intervenant, pas de dépendance à la qualité de la connexion. Les enregistrements SquadCast restent importables directement dans Descript.",
     },
     {
       titre: "AI Actions",
@@ -251,7 +251,7 @@ export const descriptFiche: FicheData = {
       ),
     },
     {
-      question: "Overdub fonctionne-t-il bien en français ?",
+      question: "Le clone vocal (AI Speaker) fonctionne-t-il bien en français ?",
       answer:
         "Oui pour les corrections ponctuelles (1-3 mots). Au-delà, le rendu devient moins naturel et fait entendre une légère texture artificielle. Parfait pour réparer une erreur, pas pour générer des paragraphes entiers.",
     },

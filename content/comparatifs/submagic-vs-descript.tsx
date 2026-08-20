@@ -185,7 +185,7 @@ export const submagicVsDescript: ComparatifData = {
     {
       question: "Comment fonctionne concrètement l'édition textuelle de Descript ?",
       answer:
-        "Tu uploades ta vidéo, Descript génère automatiquement une transcription. Tu édites cette transcription comme un document texte : tu supprimes une phrase, la vidéo correspondante est retirée. Tu remplaces un mot, Overdub peut cloner ta voix pour le dire. Tu coupes les silences en un clic. C'est l'un des modèles d'édition les plus rapides pour le long format parlé.",
+        "Tu uploades ta vidéo, Descript génère automatiquement une transcription. Tu édites cette transcription comme un document texte : tu supprimes une phrase, la vidéo correspondante est retirée. Tu remplaces un mot, le clone vocal personnalisé (AI Speaker) peut le dire avec ta voix. Tu coupes les silences en un clic. C'est l'un des modèles d'édition les plus rapides pour le long format parlé.",
     },
     {
       question: "Y a-t-il d'autres alternatives sérieuses pour le long format ?",

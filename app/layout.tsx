@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
+import { assertScoringRegistryConsistency } from "@/lib/scoring-validation.server";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.filtrio.fr"),
@@ -28,6 +29,13 @@ export const metadata: Metadata = {
     canonical: "/",
   },
 };
+
+// Contrôle structurel bloquant du registre de notation, exécuté à
+// l'évaluation du module racine, donc pour toute génération de page.
+// Une anomalie fait échouer le build en nommant l'outil et le critère.
+// Module réservé au serveur : les 108 grilles ne franchissent jamais la
+// frontière client.
+assertScoringRegistryConsistency();
 
 export default function RootLayout({
   children,

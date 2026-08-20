@@ -393,7 +393,7 @@ export const SCORING_BY_SLUG: Record<string, ScoringCriterion[]> = {
       poids: 20,
       score: 7.2,
       commentaire:
-        "Tarif Creator comparable à HeyGen (29 €/mois en annuel chez Synthesia) si tu cherches une plateforme B2B solide. S'amortit surtout en entreprise grâce aux fonctionnalités Enterprise (traductions 80+ langues, 240+ avatars libres de droits, SAML/SSO). Peu adapté au solo créateur.",
+        "Tarif Creator comparable à HeyGen (49 €/mois en annuel chez Synthesia) si tu cherches une plateforme B2B solide. S'amortit surtout en entreprise grâce aux fonctionnalités Enterprise (traductions 80+ langues, 240+ avatars libres de droits, SAML/SSO). Peu adapté au solo créateur.",
     },
     {
       label: "Profondeur des fonctionnalités IA",

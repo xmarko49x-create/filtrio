@@ -15,7 +15,7 @@ export const tubebuddyFiche: FicheData = {
     ],
     origine: "USA",
     tempsLecture: 8,
-    lastCheck: "10/07/2026",
+    lastCheck: "20/08/2026",
   },
   verdict30s: [
     {
@@ -36,7 +36,7 @@ export const tubebuddyFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Démarrage gratuit possible, sans carte bancaire, avec certaines fonctionnalités accessibles sur le plan gratuit. Côté payant : Pro à environ 4,50 $/mois en mensuel ou 3,60 $/mois en paiement annuel. Plan Legend supérieur (voir les tarifs officiels pour le montant à jour). La facturation réelle est effectuée en dollars : les montants éventuellement affichés en euros sont des estimations.",
+        "Démarrage gratuit possible, sans carte bancaire, avec certaines fonctionnalités accessibles sur le plan gratuit. Côté payant : Pro à 4,99 $/mois en mensuel ou 3,99 $/mois en paiement annuel. Legend à 31,50 $/mois en mensuel ou 25,20 $/mois en paiement annuel. La facturation réelle est effectuée en dollars : les montants éventuellement affichés en euros sont des estimations.",
     },
     {
       question: "Meilleure alternative ?",
@@ -131,8 +131,8 @@ export const tubebuddyFiche: FicheData = {
     },
     {
       nom: "Pro",
-      prix: "3,60 $/mois",
-      prixSub: "Paiement annuel · environ 4,50 $/mois en mensuel · facturation en USD",
+      prix: "3,99 $/mois",
+      prixSub: "Paiement annuel · 4,99 $/mois en mensuel · facturation en USD",
       cible: "Nouveaux créateurs, démarrage",
       features: [
         "Basic Video and Thumbnail Tools",
@@ -145,8 +145,8 @@ export const tubebuddyFiche: FicheData = {
     },
     {
       nom: "Legend",
-      prix: "Voir tarifs officiels",
-      prixSub: "Palier supérieur · facturation en USD · montant à vérifier sur tubebuddy.com",
+      prix: "25,20 $/mois",
+      prixSub: "Paiement annuel · 31,50 $/mois en mensuel · facturation en USD",
       cible: "Créateurs sérieux et agences",
       features: [
         "Tout Pro inclus",
@@ -227,7 +227,7 @@ export const tubebuddyFiche: FicheData = {
     {
       question: "Pro ou Legend, lequel choisir ?",
       answer:
-        "Pro (3,60 $/mois en paiement annuel, environ 4,50 $ en mensuel) couvre les fondamentaux : tags, SEO de base, A/B testing limité. Legend (palier supérieur, montant à vérifier sur les tarifs officiels) débloque le reporting avancé, le bulk editing, l'analyse concurrentielle poussée, les tests A/B sans limitation. Pro suffit pour débuter ou pour une petite chaîne. Legend devient pertinent dès que tu veux industrialiser l'optimisation sur un catalogue important.",
+        "Pro (3,99 $/mois en paiement annuel, 4,99 $ en mensuel) couvre les fondamentaux : tags, SEO de base, A/B testing limité. Legend (25,20 $/mois en paiement annuel, 31,50 $ en mensuel) débloque le reporting avancé, le bulk editing, l'analyse concurrentielle poussée, les tests A/B sans limitation. Pro suffit pour débuter ou pour une petite chaîne. Legend devient pertinent dès que tu veux industrialiser l'optimisation sur un catalogue important.",
     },
     {
       question: "Compatible avec Safari ou Opera ?",
@@ -237,7 +237,7 @@ export const tubebuddyFiche: FicheData = {
   ],
   ctaFinal: {
     headline: "Prêt à tester TubeBuddy ?",
-    sub: "Démarrage gratuit sans carte bancaire. Plan Pro à 3,60 $/mois en paiement annuel (environ 4,50 $/mois en mensuel). Facturation en USD, annulable à tout moment.",
+    sub: "Démarrage gratuit sans carte bancaire. Plan Pro à 3,99 $/mois en paiement annuel (4,99 $/mois en mensuel). Facturation en USD, annulable à tout moment.",
     buttonText: "Essayer TubeBuddy",
   },
 };

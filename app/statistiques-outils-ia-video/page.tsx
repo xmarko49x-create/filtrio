@@ -61,10 +61,10 @@ const STATS = [
       "15 outils sur 18 proposent un plan gratuit durable. Submagic et Pictory proposent seulement un essai limité, tandis que Runway fournit une allocation gratuite unique de crédits qui ne se renouvelle pas.",
   },
   {
-    chiffre: "de 3,60 $ à 29 $",
+    chiffre: "de 3,99 $ à 29 $",
     titre: "par mois : l'étendue des premiers plans payants en dollars",
     detail:
-      "Parmi les outils facturés en dollars, le premier palier payant relevé va de 3,60 $/mois (TubeBuddy Pro, paiement annuel) à 29 $/mois (HeyGen Creator, paiement mensuel).",
+      "Parmi les outils facturés en dollars, le premier palier payant relevé va de 3,99 $/mois (TubeBuddy Pro, paiement annuel) à 29 $/mois (HeyGen Creator, paiement mensuel).",
   },
   {
     chiffre: "≥ 44 %",

@@ -15,7 +15,7 @@ export const synthesiaFiche: FicheData = {
     ],
     origine: "UK",
     tempsLecture: 8,
-    lastCheck: "10/07/2026",
+    lastCheck: "20/08/2026",
   },
   verdict30s: [
     {
@@ -48,7 +48,7 @@ export const synthesiaFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan Basic gratuit (1 200 crédits/mois, jusqu'à 10 minutes de vidéo/mois, sans carte bancaire). Starter à 12 €/mois en annuel (19 €/mois en mensuel) avec assistant vidéo, doublage IA et avatars Synthesia. Creator (populaire) à 29 €/mois en annuel (39 €/mois en mensuel) avec 5 avatars personnels, API et vidéos interactives. Enterprise sur mesure pour les équipes (minutes illimitées, 80+ langues, SSO). Facturation EUR, vérifié le 10/07/2026.",
+        "Plan Basic gratuit (1 200 crédits/mois, jusqu'à 10 minutes de vidéo/mois, sans carte bancaire). Starter à 12 €/mois en annuel (19 €/mois en mensuel) avec assistant vidéo, doublage IA et avatars Synthesia. Creator (populaire) à 49 €/mois en annuel (79 €/mois en mensuel) avec 5 avatars personnels, API et vidéos interactives. Enterprise sur mesure pour les équipes (minutes illimitées, 80+ langues, SSO). Facturation EUR, vérifié le 20/08/2026.",
     },
     {
       question: "Meilleure alternative ?",
@@ -173,8 +173,8 @@ export const synthesiaFiche: FicheData = {
     },
     {
       nom: "Creator",
-      prix: "29 €/mois",
-      prixSub: "Facturation annuelle · 39 €/mois en mensuel · Plan populaire · 44 000 crédits/an inclus",
+      prix: "49 €/mois",
+      prixSub: "Facturation annuelle · 79 €/mois en mensuel · Plan populaire · 44 000 crédits/an inclus",
       cible: "Créateurs réguliers",
       features: [
         "Tout Starter inclus",

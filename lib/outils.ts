@@ -102,7 +102,7 @@ export const OUTILS: Outil[] = [
     color: "orange",
     tagline: "A/B tests, mots-clés, optimisation chaîne",
     category: "seo-youtube",
-    priceFrom: "À partir de 3,60 $/mois (paiement annuel)",
+    priceFrom: "À partir de 3,99 $/mois (paiement annuel)",
     freeTier: "Gratuit pour démarrer (sans carte bancaire)",
     affiliateLink: "#aff-tubebuddy",
     ficheAvailable: true,

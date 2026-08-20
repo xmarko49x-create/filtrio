@@ -90,13 +90,13 @@ export const vidiqVsTubebuddy: ComparatifData = {
     "Tu as besoin d'analyser la concurrence en profondeur",
     "Tu veux modifier en masse les métadonnées de tes vidéos",
     "Tu es un YouTubeur qui aime tester et analyser plutôt que laisser l'IA décider",
-    "Tu cherches un tarif d'entrée bas (Pro à 3,60 $/mois en paiement annuel)",
+    "Tu cherches un tarif d'entrée bas (Pro à 3,99 $/mois en paiement annuel)",
   ],
   casUsage: [
     {
       profil: "Débutant sans budget qui veut tester",
       description:
-        "Priorité au plan gratuit récurrent utilisable. VidIQ conserve un plan Free récurrent ; TubeBuddy ne met plus en avant de plan gratuit en 2026 (uniquement Pro et Legend payants). Avantage net à VidIQ pour tester sans carte bancaire.",
+        "Priorité au plan gratuit utilisable sans carte bancaire. Les deux outils en proposent un, mais leurs limites et les fonctionnalités incluses diffèrent : celui de VidIQ est le plus généreux au quotidien, celui de TubeBuddy permet surtout de démarrer et de prendre l'extension en main. À vérifier selon les fonctions dont tu as besoin.",
       gagnant: "A",
     },
     {
@@ -152,13 +152,12 @@ export const vidiqVsTubebuddy: ComparatifData = {
           d&apos;analyse en 2024-2026 : analytics détaillées, tests A/B de
           miniatures natifs, suggestions de contenu. Ça ne remplace pas
           totalement VidIQ ou TubeBuddy mais ça couvre une partie significative
-          des besoins de base gratuitement. À noter : côté TubeBuddy, la page
-          Tarifs officielle ne met plus en avant de plan gratuit en 2026 ,
-          seuls les plans Pro et Legend sont affichés.{" "}
+          des besoins de base gratuitement. À noter : TubeBuddy comme{" "}
           <Link href="/outils/vidiq" className="text-sky-400 hover:underline">
             VidIQ
           </Link>{" "}
-          conserve un plan Free récurrent.
+          proposent chacun un plan gratuit, avec des limites et des
+          fonctionnalités incluses différentes.
         </>
       ),
     },
@@ -196,7 +195,7 @@ export const vidiqVsTubebuddy: ComparatifData = {
           <Link href="/outils/tubebuddy" className="text-orange-400 hover:underline">
             TubeBuddy
           </Link>{" "}
-          à partir de 3,60 $/mois (Pro, paiement annuel), tarif d&apos;entrée
+          à partir de 3,99 $/mois (Pro, paiement annuel), tarif d&apos;entrée
           sensiblement plus bas sur le papier.
         </>
       ),

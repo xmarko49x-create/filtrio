@@ -393,12 +393,12 @@ export default function ObservatoirePrixPage() {
 
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-7">
             <h3 className="text-xl font-bold mb-3 text-emerald-400">
-              5. Un rapport de 1 à 8 sur l&apos;entrée de gamme en dollars.
+              5. Un rapport de 1 à 7 sur l&apos;entrée de gamme en dollars.
             </h3>
             <p className="text-slate-300 leading-relaxed">
               Parmi les outils facturés en dollars, le premier plan payant
-              relevé va de 3,60 $/mois (TubeBuddy Pro, paiement annuel) à
-              29 $/mois (HeyGen Creator, mensuel). Un rapport de 1 à 8 pour des
+              relevé va de 3,99 $/mois (TubeBuddy Pro, paiement annuel) à
+              29 $/mois (HeyGen Creator, mensuel). Un rapport de 1 à 7 pour des
               pages d&apos;accueil qui promettent souvent la même chose. Le prix ne dit rien de la valeur pour TON
               usage : c&apos;est exactement ce que nos{" "}
               <Link href="/outils" className="text-emerald-400 hover:underline">
@@ -412,24 +412,6 @@ export default function ObservatoirePrixPage() {
             </p>
           </div>
 
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-7">
-            <h3 className="text-xl font-bold mb-3 text-emerald-400">
-              6. Le prix d&apos;entrée moyen : environ 12,80 € ou 15,60 $ par mois.
-            </h3>
-            <p className="text-slate-300 leading-relaxed">
-              En isolant les seuls abonnements mensuels d&apos;entrée de gamme
-              (hors plans annuels, hors achat unique, hors promotions), le
-              premier palier payant revient en moyenne à{" "}
-              <strong className="text-slate-100">environ 12,80 € par mois</strong>{" "}
-              pour les outils facturés en euros, et{" "}
-              <strong className="text-slate-100">environ 15,60 $ par mois</strong>{" "}
-              pour ceux facturés en dollars (calcul basé sur les relevés datés
-              du tableau ci-dessus). Un repère utile, mais à manier avec
-              prudence : la moyenne écrase les écarts (de 3,60 $ à 29 $) et ne
-              dit rien des modèles à crédits, où le coût réel dépend de ton
-              volume de production.
-            </p>
-          </div>
         </div>
       </section>
 

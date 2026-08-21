@@ -161,6 +161,22 @@ export const opusclipVsSubmagic: ComparatifData = {
           pour que ce test soit reproductible : tu peux télécharger exactement
           le même fichier et refaire la manipulation.
         </p>
+        <p className="text-base text-slate-400">
+          Les captures ci-dessous montrent aussi des fonctions que nous
+          n&apos;avons pas utilisées. Pour éviter toute confusion, chaque
+          légende précise systématiquement ce qui a été{" "}
+          <strong className="text-slate-300">utilisé pendant le test</strong>,
+          ce qui a été{" "}
+          <strong className="text-slate-300">
+            seulement observé dans l&apos;interface
+          </strong>{" "}
+          et ce qui est{" "}
+          <strong className="text-slate-300">
+            marqué Pro ou consomme des crédits
+          </strong>
+          . Une fonction visible n&apos;est ni une fonction testée, ni une
+          fonction gratuite.
+        </p>
       </>
     ),
     lignes: [
@@ -196,14 +212,67 @@ export const opusclipVsSubmagic: ComparatifData = {
       },
     ],
     images: [
+      /* --- Groupe OpusClip --- */
       {
-        src: "/tests/2026-08-21/opusclip-import-plan-gratuit.png",
-        alt: "Écran d'import d'OpusClip affichant le bandeau du forfait gratuit avec filigrane",
+        src: "/tests/2026-08-21/opusclip-catalogue-outils.png",
+        alt: "Catalogue des outils affichés sur l'accueil d'OpusClip",
         caption: (
           <>
-            OpusClip annonce le forfait gratuit «{" "}
-            <span className="text-slate-200">avec filigrane et fonctionnalités limitées</span>{" "}
-            » dès l&apos;import. La source importée fait 1 min 18 en 720p.
+            <strong className="text-emerald-400">OpusClip · </strong>
+            l&apos;accueil affiche treize entrées : conversion format long en
+            shorts, IA Sous-titres, éditeur vidéo, Producteur IA (bêta),
+            presets viraux (bêta), amélioration vocale, effets sonores
+            automatiques, IA Reframe, IA B-Roll, voix off d&apos;accroche,
+            améliorer, double vidéo et script vers vidéo. L&apos;import accepte
+            un fichier, Google Drive ou un lien Rumble.{" "}
+            <strong className="text-slate-200">
+              Seul le parcours « Obtenir des clips en 1 clic » a été utilisé.
+            </strong>{" "}
+            Les douze autres entrées sont uniquement observées : nous ne les
+            avons ni testées, ni vérifiées, et rien n&apos;indique
+            qu&apos;elles soient incluses dans le forfait gratuit.
+          </>
+        ),
+      },
+      {
+        src: "/tests/2026-08-21/opusclip-import-plan-gratuit.png",
+        alt: "Écran d'import d'OpusClip affichant le bandeau du forfait gratuit et les réglages de découpage",
+        caption: (
+          <>
+            <strong className="text-emerald-400">OpusClip · </strong>
+            l&apos;écran d&apos;import annonce le forfait gratuit «{" "}
+            <span className="text-slate-200">
+              avec filigrane et fonctionnalités limitées
+            </span>{" "}
+            » et affiche « utilisation des crédits : 1 » pour cette vidéo.
+            Réglages laissés par défaut et{" "}
+            <strong className="text-slate-200">utilisés tels quels</strong> :
+            langue parlée sur Auto, découpage par IA, modèle de clip Auto,
+            genre Auto, durée de clip Auto (0 à 3 min), titre automatique
+            activé, plage de traitement complète (0:00 à 1:18).
+          </>
+        ),
+      },
+      {
+        src: "/tests/2026-08-21/opusclip-resultat-actions.png",
+        alt: "Écran de résultat d'OpusClip avec la transcription et les actions disponibles sur le clip",
+        caption: (
+          <>
+            <strong className="text-emerald-400">OpusClip · </strong>
+            l&apos;écran de résultat donne l&apos;analyse de scène et la
+            transcription horodatée, plus huit actions.{" "}
+            <strong className="text-slate-200">
+              Nous n&apos;avons utilisé que « Télécharger en HD »
+            </strong>
+            , qui a fonctionné sans payer. Observées sans être testées :
+            publier sur les réseaux sociaux, exporter en XML et dupliquer. «{" "}
+            Modifier le clip » et le bouton de ratio « 9:16 » portent la
+            mention{" "}
+            <strong className="text-slate-200">Pro</strong> — à noter que le
+            clip livré était déjà en 9:16 sans passer par ce bouton. «{" "}
+            Améliorer et télécharger » affiche un coût de{" "}
+            <strong className="text-slate-200">82 crédits</strong> et
+            n&apos;a pas été déclenché.
           </>
         ),
       },
@@ -212,21 +281,89 @@ export const opusclipVsSubmagic: ComparatifData = {
         alt: "Image extraite du fichier exporté par OpusClip, format vertical avec filigrane et sous-titres",
         caption: (
           <>
-            Image extraite du fichier réellement exporté, pas de l&apos;aperçu.
-            Recadrage 9:16 correct, filigrane en haut à gauche, sous-titres en
-            capitales avec le mot en cours surligné. Le bandeau nominatif de la
-            source a disparu du cadre.
+            <strong className="text-emerald-400">OpusClip · </strong>
+            image extraite du fichier réellement exporté, pas de
+            l&apos;aperçu. Recadrage 9:16 correct, filigrane en haut à gauche,
+            sous-titres en capitales avec le mot en cours surligné. Le bandeau
+            nominatif de la source a disparu du cadre. C&apos;est le résultat
+            concret du test.
+          </>
+        ),
+      },
+      /* --- Groupe Submagic --- */
+      {
+        src: "/tests/2026-08-21/submagic-editeur-outils-ia.png",
+        alt: "Éditeur Submagic ouvert sur le panneau des outils d'IA, avec les coûts en crédits",
+        caption: (
+          <>
+            <strong className="text-amber-400">Submagic · </strong>
+            l&apos;éditeur s&apos;organise en quatre onglets : style,
+            sous-titres, outils d&apos;IA et scènes.{" "}
+            <strong className="text-slate-200">
+              Seuls les sous-titres IA étaient activés, et c&apos;est la seule
+              fonction que nous avons utilisée.
+            </strong>{" "}
+            Les autres sont désactivées et{" "}
+            <strong className="text-slate-200">
+              affichent chacune un coût en crédits
+            </strong>{" "}
+            : supprimer les silences (+2), zoom automatique IA (+1),
+            automatisation automatique IA (+2), titre AI Hook (+2), audio
+            propre (+2), supprimer les mauvaises prises (+2), contact visuel
+            correct (+3). Le compte disposait de 12 crédits.
           </>
         ),
       },
       {
-        src: "/tests/2026-08-21/submagic-apercu-16-9.png",
-        alt: "Aperçu Submagic au format 16:9 avec sous-titres incrustés",
+        src: "/tests/2026-08-21/submagic-styles-legendes.png",
+        alt: "Galerie des styles de légendes de Submagic et réglages de position et de taille",
         caption: (
           <>
-            Chez Submagic, l&apos;aperçu conserve le 16:9 de la source. Les
-            sous-titres sont générés, et le bandeau nominatif de
-            l&apos;intervenante reste lisible.
+            <strong className="text-amber-400">Submagic · </strong>
+            la galerie de styles de sous-titres est fournie, classée en
+            onglets Tous, Tendance, Nouveau, Premium, Intervenants et Emoji,
+            avec réglage de la position (50 %), de la taille de police (30 px)
+            et de la police.{" "}
+            <strong className="text-slate-200">
+              Nous avons conservé le style par défaut
+            </strong>{" "}
+            : la galerie est observée, pas évaluée. Plusieurs vignettes portent
+            un éclair, et l&apos;onglet Premium indique que tous les styles ne
+            sont pas accessibles au même niveau d&apos;abonnement.
+          </>
+        ),
+      },
+      {
+        src: "/tests/2026-08-21/submagic-decoupage-scenes.png",
+        alt: "Vue Scènes de Submagic, découpage horodaté avec emplacements A-roll",
+        caption: (
+          <>
+            <strong className="text-amber-400">Submagic · </strong>
+            la vue Scènes découpe la vidéo en segments horodatés, chacun avec
+            un emplacement A-roll et un bouton d&apos;ajout, plus une zone «
+            ajouter une introduction ». En en-tête : B-rolls automatiques, zoom
+            automatique et titre Hook.{" "}
+            <strong className="text-slate-200">
+              Aucune de ces fonctions n&apos;a été déclenchée
+            </strong>{" "}
+            ; elles sont montrées pour donner à voir l&apos;étendue du montage
+            possible, pas pour en juger la qualité.
+          </>
+        ),
+      },
+      {
+        src: "/tests/2026-08-21/submagic-menu-outils-ia.png",
+        alt: "Menu compact des outils d'IA de Submagic avec le coût en crédits de chaque option",
+        caption: (
+          <>
+            <strong className="text-amber-400">Submagic · </strong>
+            la même liste en vue compacte, utile parce qu&apos;elle montre le
+            coût de chaque option d&apos;un seul coup d&apos;œil.{" "}
+            <strong className="text-slate-200">
+              Les sept interrupteurs sont sur off
+            </strong>{" "}
+            : ces fonctions n&apos;ont pas été utilisées et consomment des
+            crédits.
           </>
         ),
       },
@@ -235,8 +372,14 @@ export const opusclipVsSubmagic: ComparatifData = {
         alt: "Éditeur de transcription Submagic affichant une précision annoncée de 98,58 %",
         caption: (
           <>
-            La transcription est éditable segment par segment. Le taux de «{" "}
-            précision des sous-titres : 98,58 % » affiché en haut est un chiffre
+            <strong className="text-amber-400">Submagic · </strong>
+            la transcription est éditable segment par segment, avec les
+            horodatages et les retours à la ligne.{" "}
+            <strong className="text-slate-200">
+              Fonction utilisée pendant le test
+            </strong>{" "}
+            (consultation, sans correction manuelle). Le taux de « précision
+            des sous-titres : 98,58 % » affiché en haut est un chiffre
             communiqué par Submagic :{" "}
             <strong className="text-slate-200">
               ce n&apos;est pas une mesure Filtrio
@@ -246,15 +389,19 @@ export const opusclipVsSubmagic: ComparatifData = {
         ),
       },
       {
-        src: "/tests/2026-08-21/submagic-export-abonnement.png",
-        alt: "Fenêtre Submagic demandant un abonnement payant au moment de l'export",
+        src: "/tests/2026-08-21/submagic-apercu-16-9.png",
+        alt: "Aperçu Submagic au format 16:9 avec sous-titres incrustés",
         caption: (
           <>
-            Le point de blocage. Le montage est prêt, mais «{" "}
-            <span className="text-slate-200">Exportez vos vidéos</span> »
-            figure parmi les fonctions payantes : sur le plan gratuit, nous
-            n&apos;avons obtenu aucun fichier. Capture recadrée sur la fenêtre
-            d&apos;abonnement.
+            <strong className="text-amber-400">Submagic · </strong>
+            l&apos;aperçu conserve le 16:9 de la source. Les sous-titres sont
+            générés et le bandeau nominatif de l&apos;intervenante reste
+            lisible.{" "}
+            <strong className="text-slate-200">
+              C&apos;est l&apos;état obtenu avec les réglages par défaut
+            </strong>{" "}
+            : aucun passage automatique en vertical n&apos;a eu lieu de notre
+            côté.
           </>
         ),
       },

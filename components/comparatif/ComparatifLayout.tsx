@@ -299,10 +299,21 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
                 <strong className="text-slate-300">Phase actuelle (V1) :</strong>{" "}
                 scores basés sur analyse documentaire et retours publics.
               </p>
-              <p>
-                <strong className="text-slate-300">Phase à venir :</strong>{" "}
-                protocole de test comparatif standardisé.
-              </p>
+              {/*
+                La mention "Phase à venir" n'a plus de sens sur un comparatif
+                qui publie déjà un test de première main : la section "On a
+                vraiment testé" est plus haut sur la page. On la masque donc
+                quand `testReel` est présent, sans rien mettre à la place.
+                La mention "Phase actuelle (V1)" reste affichée dans tous les
+                cas : les scores restent issus de l'analyse documentaire, un
+                test isolé ne les modifie pas.
+              */}
+              {!data.testReel && (
+                <p>
+                  <strong className="text-slate-300">Phase à venir :</strong>{" "}
+                  protocole de test comparatif standardisé.
+                </p>
+              )}
             </div>
           </div>
         </div>

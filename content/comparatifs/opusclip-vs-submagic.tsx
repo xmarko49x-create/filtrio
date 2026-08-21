@@ -310,7 +310,7 @@ export const opusclipVsSubmagic: ComparatifData = {
     {
       question: "Y a-t-il un plan gratuit durable ?",
       answer:
-        "Oui, les deux proposent une porte d'entrée gratuite, mais elles ne servent pas le même usage. OpusClip pousse davantage le clipping de vidéos longues avec une logique plus orientée volume, tandis que Submagic propose une formule gratuite plus limitée pour tester son rendu et son workflow.",
+        "Oui, les deux proposent une porte d'entrée gratuite, mais elles ne servent pas le même usage. OpusClip pousse davantage le clipping de vidéos longues avec une logique plus orientée volume, tandis que Submagic propose une formule gratuite plus limitée pour tester son rendu et son workflow. Lors de notre test du 21 août 2026, sur une vidéo et avec les réglages par défaut : chez Submagic, la génération des sous-titres et l'édition ont fonctionné sans aucun paiement, mais un abonnement a été demandé au moment de l'export et nous sommes repartis sans fichier ; chez OpusClip, le téléchargement du clip a fonctionné gratuitement, avec un filigrane incrusté. Ce constat vaut pour cette manipulation datée, pas comme règle générale sur les offres des deux éditeurs.",
     },
     {
       question: "Lequel est le plus crédible pour un workflow automatisé ?",

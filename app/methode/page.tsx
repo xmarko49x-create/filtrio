@@ -112,6 +112,71 @@ export default function MethodePage() {
             </p>
           </div>
 
+          <div className="bg-slate-900 border border-emerald-500/30 rounded-xl p-6">
+            <h3 className="font-semibold text-emerald-400 mb-2">
+              Tests de première main
+            </h3>
+            <div className="text-slate-300 leading-relaxed space-y-3">
+              <p>
+                Certaines pages, clairement identifiées comme telles, reposent
+                désormais sur des manipulations que nous avons réalisées
+                nous-mêmes. Le protocole est toujours le même : le même fichier
+                source pour tous les outils comparés, le même jour, les
+                paramètres par défaut et aucune retouche manuelle. Nous
+                chronométrons le temps de traitement, relevons les limites du
+                plan gratuit telles qu&apos;elles s&apos;affichent dans
+                l&apos;interface, et conservons les captures d&apos;écran, dont
+                celles que nous ne publions pas.
+              </p>
+              <p>
+                Chaque légende distingue trois statuts : ce qui a été utilisé
+                pendant le test, ce qui a seulement été observé dans
+                l&apos;interface, et ce qui est marqué payant ou consomme des
+                crédits. Une fonction visible n&apos;est ni une fonction testée,
+                ni une fonction gratuite.
+              </p>
+              <p>
+                Premier test publié :{" "}
+                <Link
+                  href="/comparatifs/opusclip-vs-submagic"
+                  className="text-emerald-400 hover:underline"
+                >
+                  OpusClip vs Submagic
+                </Link>
+                , avec la visite guidée détaillée sur les fiches{" "}
+                <Link
+                  href="/outils/opusclip"
+                  className="text-emerald-400 hover:underline"
+                >
+                  OpusClip
+                </Link>{" "}
+                et{" "}
+                <Link
+                  href="/outils/submagic"
+                  className="text-amber-400 hover:underline"
+                >
+                  Submagic
+                </Link>
+                .
+              </p>
+              <p className="text-slate-400">
+                Deux limites à garder en tête.{" "}
+                <strong className="text-slate-200">
+                  Cela ne concerne pas encore tous les outils
+                </strong>{" "}
+                : la majorité des fiches repose toujours sur l&apos;analyse
+                documentaire décrite ci-dessus. Et{" "}
+                <strong className="text-slate-200">
+                  un test isolé ne modifie pas automatiquement la note
+                  éditoriale
+                </strong>{" "}
+                : une manipulation sur une seule vidéo ne suffit pas à faire
+                bouger une grille de notation, et nous ne l&apos;utilisons
+                jamais pour justifier après coup une note déjà publiée.
+              </p>
+            </div>
+          </div>
+
           <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">
             <h3 className="font-semibold text-emerald-400 mb-2">
               Ce qui arrive (Phase V2)

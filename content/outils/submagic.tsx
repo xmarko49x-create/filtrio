@@ -140,7 +140,9 @@ export const submagicFiche: FicheData = {
             L&apos;économie réelle du plan gratuit
           </h3>
           <p className="mb-3">
-            Deux chiffres relevés à l&apos;écran. Générer les sous-titres
+            Submagic annonce son essai en nombre de vidéos, mais son interface
+            décompte des crédits : les chiffres ci-dessous sont ceux relevés à
+            l&apos;écran, en crédits. Générer les sous-titres
             d&apos;une vidéo est facturé{" "}
             <strong className="text-slate-100">3 crédits</strong>, coût affiché
             sur le bouton lui-même. Après cette génération, le compte affichait{" "}

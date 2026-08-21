@@ -1,6 +1,31 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
 import { SCORING_BY_SLUG } from "@/lib/scoring";
+
+/**
+ * Figure de preuve pour la visite guidée du test de première main.
+ * Local à cette fiche : aucun composant partagé n'est modifié.
+ */
+function FigureTest({
+  src,
+  alt,
+  caption,
+}: {
+  src: string;
+  alt: string;
+  caption: ReactNode;
+}) {
+  return (
+    <figure className="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden my-6">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={src} alt={alt} loading="lazy" className="w-full h-auto block" />
+      <figcaption className="text-sm text-slate-400 leading-relaxed p-5">
+        {caption}
+      </figcaption>
+    </figure>
+  );
+}
 
 export const opusclipFiche: FicheData = {
   slug: "opusclip",
@@ -17,7 +42,7 @@ export const opusclipFiche: FicheData = {
     origine: "USA",
     depuis: "2022",
     tempsLecture: 8,
-    lastCheck: "10/07/2026",
+    lastCheck: "21/08/2026",
   },
   verdict30s: [
     {
@@ -70,6 +95,252 @@ export const opusclipFiche: FicheData = {
       ),
     },
   ],
+  sectionApresVerdict: {
+    titre: "Ce qu'on a vu en testant OpusClip, capture par capture",
+    contenu: (
+      <>
+        <p>
+          Le 21 août 2026, nous avons fait passer une vidéo dans OpusClip avec
+          un compte gratuit et les réglages par défaut. La source est un
+          entretien de 1 min 17 en français, plan fixe, 720p, publié sous
+          licence libre :{" "}
+          <a
+            href="https://tubedu.org/videos/watch/9aba92da-0f91-44cf-9904-31a66a722413"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-emerald-400 hover:underline"
+          >
+            « Sciences ensemble »
+          </a>
+          , interview de Laure Turcati, MOOC Science Ouverte (Alliance Sorbonne
+          Université), 3 mars 2022, TubEdu, licence CC BY 4.0. Tu peux
+          télécharger le même fichier et refaire la manipulation.
+        </p>
+        <p>
+          Chaque légende distingue trois statuts, et cette distinction est la
+          règle de lecture de toute la section :{" "}
+          <strong className="text-slate-100">utilisé pendant le test</strong>,{" "}
+          <strong className="text-slate-100">
+            seulement observé dans l&apos;interface
+          </strong>
+          , et{" "}
+          <strong className="text-slate-100">
+            marqué Pro ou consommant des crédits
+          </strong>
+          . Une fonction visible n&apos;est ni une fonction testée, ni une
+          fonction gratuite.
+        </p>
+
+        <div className="bg-slate-900 border border-emerald-500/30 rounded-2xl p-6 my-8">
+          <h3 className="font-bold text-emerald-400 mb-3">
+            Ce que le plan gratuit a réellement livré
+          </h3>
+          <p className="mb-3">
+            Le constat principal tient en une phrase :{" "}
+            <strong className="text-slate-100">
+              nous sommes repartis avec un fichier vidéo, sans payer
+            </strong>
+            . Traitement de la vidéo : 1 crédit, coût affiché avant le
+            lancement. Le téléchargement HD a fonctionné. Le fichier obtenu fait
+            1080 × 1920, H.264/AAC, 24 i/s, 70 secondes, 52,1 Mo, avec le
+            filigrane OpusClip incrusté.
+          </p>
+          <p className="mb-3 text-slate-400">
+            Nuance technique importante : la source était en 720p. Un recadrage
+            9:16 y prélève environ 405 pixels de large, ensuite agrandis pour
+            atteindre 1080. Le « 1080 × 1920 » annoncé est donc{" "}
+            <strong className="text-slate-300">un agrandissement</strong>, pas
+            un gain de définition.
+          </p>
+          <p className="mb-0 text-slate-400">
+            Le forfait gratuit s&apos;annonce lui-même « avec filigrane et
+            fonctionnalités limitées ». Plusieurs actions portent la mention
+            Pro, et l&apos;option « Améliorer et télécharger » affiche un coût
+            de 82 crédits que nous n&apos;avons pas engagé.
+          </p>
+        </div>
+
+        <h3 className="text-xl font-bold text-slate-100 pt-4">
+          Avant le découpage
+        </h3>
+        <FigureTest
+          src="/tests/2026-08-21/opusclip-catalogue-outils.png"
+          alt="Catalogue des outils affichés sur l'accueil d'OpusClip"
+          caption={
+            <>
+              L&apos;accueil affiche treize entrées : conversion format long en
+              shorts, IA Sous-titres, éditeur vidéo, Producteur IA (bêta),
+              presets viraux (bêta), amélioration vocale, effets sonores
+              automatiques, IA Reframe, IA B-Roll, voix off d&apos;accroche,
+              améliorer, double vidéo, script vers vidéo. L&apos;import accepte
+              un fichier, Google Drive ou un lien Rumble.{" "}
+              <strong className="text-slate-200">
+                Seul le parcours « Obtenir des clips en 1 clic » a été utilisé.
+              </strong>{" "}
+              Les douze autres entrées sont uniquement observées : ni testées,
+              ni vérifiées, et rien n&apos;indique qu&apos;elles soient incluses
+              dans le forfait gratuit.
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-21/opusclip-import-plan-gratuit.png"
+          alt="Écran d'import d'OpusClip avec le bandeau du forfait gratuit et les réglages de découpage"
+          caption={
+            <>
+              Le bandeau supérieur annonce le forfait gratuit «{" "}
+              <span className="text-slate-200">
+                avec filigrane et fonctionnalités limitées
+              </span>{" "}
+              », et la ligne sous le bouton indique « utilisation des crédits :
+              1 » pour cette vidéo.{" "}
+              <strong className="text-slate-200">
+                Réglages laissés par défaut et utilisés tels quels
+              </strong>{" "}
+              : découpage par IA, modèle de clip Auto, genre Auto, durée de clip
+              Auto (0 à 3 min), titre automatique activé, plage de traitement
+              complète (0:00 à 1:18). OpusClip affiche aussi un avertissement
+              sur les droits d&apos;auteur — dans notre cas la source est sous
+              licence libre, ce qui règle la question.
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-21/opusclip-langue-francaise.png"
+          alt="Menu de langue d'OpusClip : langue d'origine et option de traduction"
+          caption={
+            <>
+              Le menu de langue sépare la langue d&apos;origine et la traduction.
+              La colonne de gauche liste de nombreuses langues, dont le
+              français ; la colonne de droite ne propose que « pas de traduction
+              » ou « anglais ».{" "}
+              <strong className="text-slate-200">
+                Réglage utilisé : origine sur Auto, aucune traduction.
+              </strong>{" "}
+              À noter pour un usage francophone : la traduction proposée ici va
+              vers l&apos;anglais uniquement.
+            </>
+          }
+        />
+
+        <h3 className="text-xl font-bold text-slate-100 pt-4">
+          Le résultat et les actions
+        </h3>
+        <FigureTest
+          src="/tests/2026-08-21/opusclip-resultat-actions.png"
+          alt="Écran de résultat d'OpusClip avec le clip généré, le titre automatique et les actions"
+          caption={
+            <>
+              Un clip de 1 min 10 a été produit à partir de la source de 1 min
+              18. Le titre automatique et le descriptif sont générés seuls, et
+              une analyse de scène accompagne la transcription horodatée. À
+              droite, huit actions.{" "}
+              <strong className="text-slate-200">
+                Seul « Télécharger en HD » a été utilisé
+              </strong>
+              , et il a fonctionné sans payer. Détail vérifiable sur
+              l&apos;image : le titre généré écrit « Science Ensemble » alors
+              que la vidéo source s&apos;intitule « Sciences ensemble ».
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-21/opusclip-transcription-actions.png"
+          alt="Transcription horodatée d'OpusClip et colonne des actions avec les mentions Pro et les crédits"
+          caption={
+            <>
+              Vue rapprochée des actions.{" "}
+              <strong className="text-slate-200">
+                Observées sans être testées
+              </strong>{" "}
+              : publier sur les réseaux sociaux, exporter en XML, dupliquer. «{" "}
+              Modifier le clip » et le bouton de ratio « 9:16 » portent la
+              mention <strong className="text-slate-200">Pro</strong> — à noter
+              que le clip livré gratuitement était déjà en 9:16 sans passer par
+              ce bouton, la mention Pro portant sur le réglage manuel du format.
+              « Améliorer et télécharger » affiche un coût de{" "}
+              <strong className="text-slate-200">82 crédits</strong> et
+              n&apos;a pas été déclenché.
+            </>
+          }
+        />
+
+        <h3 className="text-xl font-bold text-slate-100 pt-4">
+          Le rendu vertical livré
+        </h3>
+        <p>
+          Les trois images qui suivent sont extraites du fichier réellement
+          exporté, pas de l&apos;aperçu basse résolution affiché dans
+          l&apos;interface. C&apos;est le résultat concret du test.
+        </p>
+        <FigureTest
+          src="/tests/2026-08-21/opusclip-export-vertical.jpg"
+          alt="Image du clip exporté par OpusClip, sous-titre RECHERCHE ET D'ENSEIGNEMENT SUPÉRIEUR"
+          caption={
+            <>
+              Recadrage 9:16 automatique, visage centré, tête non coupée.
+              Filigrane OpusClip en haut à gauche. Sous-titres en capitales avec
+              le mot en cours surligné en vert.{" "}
+              <strong className="text-slate-200">
+                Le bandeau nominatif de la source a disparu du cadre
+              </strong>{" "}
+              : le recadrage vertical l&apos;a fait sortir de l&apos;image. Si
+              tu découpes des interviews, le nom et la fonction de la personne
+              filmée sautent avec.
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-21/opusclip-rendu-2.jpg"
+          alt="Image du clip exporté par OpusClip, sous-titre UNIVERSITÉ ET LE MUSÉUM sur deux lignes"
+          caption={
+            <>
+              Un autre passage, réparti automatiquement sur deux lignes. Le
+              découpage et le dimensionnement du texte se font seuls, et le
+              cadrage reste stable d&apos;un bout à l&apos;autre du clip. À
+              relativiser : la source est un plan fixe, donc le suivi de sujet
+              n&apos;a presque rien à faire ici.
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-21/opusclip-rendu-3.jpg"
+          alt="Image du clip exporté par OpusClip, sous-titre DES DISCIPLINES TRÈS VARIÉES sur trois lignes"
+          caption={
+            <>
+              Troisième passage, sur trois lignes cette fois, avec le mot clé
+              surligné au milieu. Le style est cohérent sur tout le clip sans
+              aucune intervention de notre part.{" "}
+              <a
+                href="/tests/2026-08-21/opusclip-export-720x1280.mp4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-400 hover:underline"
+              >
+                Le clip complet est consultable ici
+              </a>{" "}
+              — copie allégée en 720 × 1280 pour l&apos;hébergement, contenu et
+              filigrane identiques à l&apos;export d&apos;origine.
+            </>
+          }
+        />
+
+        <p className="text-slate-400 pt-4">
+          <strong className="text-slate-300">
+            Ce que cette visite ne prouve pas.
+          </strong>{" "}
+          Une seule vidéo, 1 min 17, un plan fixe, en français, un compte
+          gratuit, les réglages par défaut, un seul jour. Un plan fixe est un
+          exercice facile pour un recadrage automatique : n&apos;en conclus rien
+          sur des séquences avec mouvement ou plusieurs intervenants. Nous
+          n&apos;avons mesuré aucun taux d&apos;erreur de transcription et ne
+          publions donc aucun chiffre de précision. Les fonctions restées
+          inutilisées ne sont pas évaluées. Et ce test ne modifie aucune note de
+          la grille ci-dessus, qui repose sur notre analyse documentaire.
+        </p>
+      </>
+    ),
+  },
   porQui: [
     "Tu pars de sources longues (podcasts, lives, interviews 30 min+)",
     "Tu veux 100 % d'automatisation de la découpe",

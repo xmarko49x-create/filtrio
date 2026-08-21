@@ -10,7 +10,7 @@ export const opusclipVsSubmagic: ComparatifData = {
     tagline:
       "Les deux rois du short viral. Comparés sur la base de leurs fonctionnalités, de leurs plans et des retours utilisateurs publics. Le gagnant dépend de ton cas précis.",
     tempsLecture: 7,
-    lastCheck: "10/07/2026",
+    lastCheck: "21/08/2026",
   },
   verdictRapide: {
     headline: "OpusClip pour le volume. Submagic pour le rendu FR.",
@@ -134,6 +134,195 @@ export const opusclipVsSubmagic: ComparatifData = {
     ),
     ctaGagnant: "A",
     ctaText: "Essayer OpusClip →",
+  },
+  testReel: {
+    intro: (
+      <>
+        <p className="mb-4">
+          Le 21 août 2026, nous avons envoyé{" "}
+          <strong className="text-slate-100">la même vidéo</strong> dans les
+          deux outils, le même jour, avec un compte gratuit de chaque côté et
+          les réglages par défaut. Aucune retouche manuelle : ce qui est
+          comparé, c&apos;est le rendu automatique, pas notre montage.
+        </p>
+        <p className="mb-4">
+          La source est un entretien de 1 min 17 en français, plan fixe, 720p,
+          publié sous licence libre :{" "}
+          <a
+            href="https://tubedu.org/videos/watch/9aba92da-0f91-44cf-9904-31a66a722413"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-emerald-400 hover:underline"
+          >
+            « Sciences ensemble »
+          </a>
+          , interview de Laure Turcati, MOOC Science Ouverte (Alliance Sorbonne
+          Université), 3 mars 2022, TubEdu, licence CC BY 4.0. Nous la citons
+          pour que ce test soit reproductible : tu peux télécharger exactement
+          le même fichier et refaire la manipulation.
+        </p>
+      </>
+    ),
+    lignes: [
+      {
+        critere: "Temps de traitement",
+        a: "Environ 2 min 30, de l'envoi au résultat affiché.",
+        b: "Environ 2 min 30, de l'envoi au résultat affiché.",
+        gagnant: "egalite",
+      },
+      {
+        critere: "Format de sortie par défaut",
+        a: "Recadrage vertical 9:16 automatique. Visage centré et tête non coupée sur toute la durée contrôlée.",
+        b: "Aperçu resté au format 16:9 de la source. Aucun passage automatique en vertical dans nos réglages par défaut.",
+        gagnant: "A",
+      },
+      {
+        critere: "Personnalisation avant export",
+        a: "Titre automatique généré, transcription horodatée et analyse de scène consultables.",
+        b: "Nombreux styles de légendes, position et taille réglables, transcription éditable mot à mot, découpage en scènes.",
+        gagnant: "B",
+      },
+      {
+        critere: "Bandeau nominatif de la vidéo source",
+        a: "Le bandeau nominatif de l'intervenante disparaît : le recadrage 9:16 le fait sortir du cadre.",
+        b: "Bandeau nominatif conservé, l'aperçu gardant le cadre d'origine.",
+        gagnant: "B",
+      },
+      {
+        critere: "Export sur le plan gratuit",
+        a: "Téléchargement réussi sans payer. Fichier obtenu : 1080 × 1920, H.264/AAC, 24 i/s, 70 s, 52,1 Mo. Filigrane OpusClip présent.",
+        b: "Export refusé. Un abonnement payant est demandé à cette étape. Aucun fichier n'a été récupéré.",
+        gagnant: "A",
+      },
+    ],
+    images: [
+      {
+        src: "/tests/2026-08-21/opusclip-import-plan-gratuit.png",
+        alt: "Écran d'import d'OpusClip affichant le bandeau du forfait gratuit avec filigrane",
+        caption: (
+          <>
+            OpusClip annonce le forfait gratuit «{" "}
+            <span className="text-slate-200">avec filigrane et fonctionnalités limitées</span>{" "}
+            » dès l&apos;import. La source importée fait 1 min 18 en 720p.
+          </>
+        ),
+      },
+      {
+        src: "/tests/2026-08-21/opusclip-export-vertical.jpg",
+        alt: "Image extraite du fichier exporté par OpusClip, format vertical avec filigrane et sous-titres",
+        caption: (
+          <>
+            Image extraite du fichier réellement exporté, pas de l&apos;aperçu.
+            Recadrage 9:16 correct, filigrane en haut à gauche, sous-titres en
+            capitales avec le mot en cours surligné. Le bandeau nominatif de la
+            source a disparu du cadre.
+          </>
+        ),
+      },
+      {
+        src: "/tests/2026-08-21/submagic-apercu-16-9.png",
+        alt: "Aperçu Submagic au format 16:9 avec sous-titres incrustés",
+        caption: (
+          <>
+            Chez Submagic, l&apos;aperçu conserve le 16:9 de la source. Les
+            sous-titres sont générés, et le bandeau nominatif de
+            l&apos;intervenante reste lisible.
+          </>
+        ),
+      },
+      {
+        src: "/tests/2026-08-21/submagic-transcription.png",
+        alt: "Éditeur de transcription Submagic affichant une précision annoncée de 98,58 %",
+        caption: (
+          <>
+            La transcription est éditable segment par segment. Le taux de «{" "}
+            précision des sous-titres : 98,58 % » affiché en haut est un chiffre
+            communiqué par Submagic :{" "}
+            <strong className="text-slate-200">
+              ce n&apos;est pas une mesure Filtrio
+            </strong>
+            , et nous ne le reprenons pas à notre compte.
+          </>
+        ),
+      },
+      {
+        src: "/tests/2026-08-21/submagic-export-abonnement.png",
+        alt: "Fenêtre Submagic demandant un abonnement payant au moment de l'export",
+        caption: (
+          <>
+            Le point de blocage. Le montage est prêt, mais «{" "}
+            <span className="text-slate-200">Exportez vos vidéos</span> »
+            figure parmi les fonctions payantes : sur le plan gratuit, nous
+            n&apos;avons obtenu aucun fichier. Capture recadrée sur la fenêtre
+            d&apos;abonnement.
+          </>
+        ),
+      },
+    ],
+    verdict: (
+      <>
+        <p className="mb-4">
+          Sur ce test, la vitesse ne départage rien : les deux outils ont mis
+          environ 2 min 30. La différence décisive est ailleurs, et elle est
+          nette.{" "}
+          <strong className="text-emerald-400">
+            OpusClip nous a livré un fichier vertical exploitable sans payer
+          </strong>
+          , filigrane compris.{" "}
+          <strong className="text-amber-400">
+            Submagic nous a laissés préparer un montage plus personnalisable,
+            puis a demandé un abonnement au moment de l&apos;export
+          </strong>
+          , et nous sommes repartis sans fichier. Si ton objectif est de sortir
+          un short sans sortir la carte bancaire, l&apos;écart est là.
+        </p>
+        <p className="mb-4">
+          Un point technique à connaître avant de se réjouir du «{" "}
+          1080 × 1920 » : la source était en 720p. Un recadrage 9:16 y prélève
+          environ 405 pixels de large, ensuite agrandis. C&apos;est un
+          agrandissement, pas un gain de définition.
+        </p>
+        <p className="mb-4">
+          Un piège que personne ne mentionne, et qui compte si tu découpes des
+          interviews : le recadrage vertical automatique fait sortir du cadre
+          les bandeaux nominatifs incrustés. Le nom et la fonction de la
+          personne filmée disparaissent du clip.{" "}
+          <a
+            href="/tests/2026-08-21/opusclip-export-720x1280.mp4"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-emerald-400 hover:underline"
+          >
+            Le clip exporté est consultable ici
+          </a>{" "}
+          (copie allégée en 720 × 1280 pour l&apos;hébergement, contenu et
+          filigrane identiques).
+        </p>
+        <p className="mb-4 text-slate-400">
+          <strong className="text-slate-300">
+            Ce que ce test ne prouve pas.
+          </strong>{" "}
+          Une seule vidéo, 1 min 17, un plan fixe, en français, deux comptes
+          gratuits, les réglages par défaut, un seul jour. Un plan fixe est un
+          exercice facile pour un recadrage automatique : n&apos;en concluez
+          rien sur des séquences avec mouvement ou plusieurs intervenants. Nous
+          n&apos;avons pas mesuré de taux d&apos;erreur de transcription, et
+          nous ne publions donc aucun chiffre de précision. Les fonctions
+          repérées dans les deux interfaces mais non utilisées ne sont pas
+          évaluées ici, et rien n&apos;indique qu&apos;elles soient incluses
+          gratuitement.
+        </p>
+        <p className="text-slate-400">
+          <strong className="text-slate-300">
+            Ce test ne modifie aucune note.
+          </strong>{" "}
+          Les scores affichés plus haut restent ceux de notre analyse
+          documentaire. Un test unique sur une vidéo ne suffit pas à faire
+          bouger une grille de notation, et nous ne l&apos;utiliserons pas pour
+          justifier après coup une note déjà publiée.
+        </p>
+      </>
+    ),
   },
   faq: [
     {

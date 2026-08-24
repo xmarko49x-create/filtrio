@@ -121,8 +121,11 @@ export default function MethodePage() {
                 Certaines pages, clairement identifiées comme telles, reposent
                 désormais sur des manipulations que nous avons réalisées
                 nous-mêmes. Le protocole est toujours le même : le même fichier
-                source pour tous les outils comparés, le même jour, les
-                paramètres par défaut et aucune retouche manuelle. Nous
+                source pour tous les outils comparés, des dates de session
+                clairement indiquées et le même jour lorsque c&apos;est
+                possible, les paramètres par défaut et aucune retouche
+                manuelle. Submagic et OpusClip ont ainsi été testés le 21 août
+                2026, CapCut le 24 août 2026, sur le même fichier. Nous
                 chronométrons le temps de traitement, relevons les limites du
                 plan gratuit telles qu&apos;elles s&apos;affichent dans
                 l&apos;interface, et conservons les captures d&apos;écran, dont
@@ -136,12 +139,19 @@ export default function MethodePage() {
                 ni une fonction gratuite.
               </p>
               <p>
-                Premier test publié :{" "}
+                Tests publiés :{" "}
                 <Link
                   href="/comparatifs/opusclip-vs-submagic"
                   className="text-emerald-400 hover:underline"
                 >
                   OpusClip vs Submagic
+                </Link>{" "}
+                et{" "}
+                <Link
+                  href="/comparatifs/submagic-vs-capcut"
+                  className="text-sky-400 hover:underline"
+                >
+                  Submagic vs CapCut
                 </Link>
                 , avec la visite guidée détaillée sur les fiches{" "}
                 <Link
@@ -156,6 +166,13 @@ export default function MethodePage() {
                   className="text-amber-400 hover:underline"
                 >
                   Submagic
+                </Link>{" "}
+                et{" "}
+                <Link
+                  href="/outils/capcut"
+                  className="text-sky-400 hover:underline"
+                >
+                  CapCut
                 </Link>
                 .
               </p>

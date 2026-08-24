@@ -1,6 +1,31 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
 import { SCORING_BY_SLUG } from "@/lib/scoring";
+
+/**
+ * Figure de preuve pour la visite guidée du test de première main.
+ * Local à cette fiche : aucun composant partagé n'est modifié.
+ */
+function FigureTest({
+  src,
+  alt,
+  caption,
+}: {
+  src: string;
+  alt: string;
+  caption: ReactNode;
+}) {
+  return (
+    <figure className="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden my-6">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={src} alt={alt} loading="lazy" className="w-full h-auto block" />
+      <figcaption className="text-sm text-slate-400 leading-relaxed p-5">
+        {caption}
+      </figcaption>
+    </figure>
+  );
+}
 
 export const capcutFiche: FicheData = {
   slug: "capcut",
@@ -15,7 +40,7 @@ export const capcutFiche: FicheData = {
     ],
     origine: "Chine (ByteDance)",
     tempsLecture: 7,
-    lastCheck: "10/07/2026",
+    lastCheck: "24/08/2026",
   },
   verdict30s: [
     {
@@ -80,7 +105,7 @@ export const capcutFiche: FicheData = {
     },
   ],
   sectionApresVerdict: {
-    titre: "CapCut Desktop sur PC et Mac : notre avis",
+    titre: "CapCut Desktop : notre avis et notre test du 24 août 2026",
     contenu: (
       <>
         <p>
@@ -101,6 +126,574 @@ export const capcutFiche: FicheData = {
           l&apos;éditeur et l&apos;essentiel des fonctions sont accessibles sans
           payer. L&apos;abonnement Pro s&apos;adresse surtout à ceux qui ont besoin
           des ressources premium et des fonctions IA au quotidien.
+        </p>
+
+        <h3 className="text-2xl font-bold text-slate-100 pt-10">
+          Ce qu&apos;on a vu en testant CapCut, capture par capture
+        </h3>
+        <p>
+          Le 24 août 2026, nous avons ouvert CapCut Desktop en français, sans
+          nous connecter à un compte payant, et nous y avons fait passer une
+          vraie vidéo. La source est un entretien de 1 min 17 en français, filmé
+          en plan fixe, publié sous licence libre :{" "}
+          <a
+            href="https://tubedu.org/videos/watch/9aba92da-0f91-44cf-9904-31a66a722413"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sky-400 hover:underline"
+          >
+            « Sciences ensemble »
+          </a>
+          , interview de Laure Turcati, MOOC Science Ouverte (Alliance Sorbonne
+          Université), 3 mars 2022, TubEdu, licence CC BY 4.0. C&apos;est
+          exactement le même fichier que celui utilisé pour nos tests de
+          Submagic et d&apos;OpusClip : tu peux le télécharger et refaire la
+          manipulation toi-même.
+        </p>
+        <p>
+          Si tu débutes, lis d&apos;abord ces trois repères, ils reviennent dans
+          toutes les légendes :
+        </p>
+        <ul className="list-disc pl-6 space-y-2">
+          <li>
+            <strong className="text-slate-100">Testé</strong> — nous avons
+            réellement fait l&apos;action pendant la session.
+          </li>
+          <li>
+            <strong className="text-slate-100">Observé</strong> — la fonction
+            existe à l&apos;écran, mais nous ne l&apos;avons pas utilisée. Nous
+            ne portons donc aucun jugement dessus.
+          </li>
+          <li>
+            <strong className="text-slate-100">Diamant violet</strong> — le
+            petit losange mauve que CapCut affiche sur une fonction ou une
+            ressource. Il signifie « réservé à l&apos;abonnement Pro ».
+          </li>
+        </ul>
+        <p className="text-slate-400">
+          Une précision qui compte :{" "}
+          <strong className="text-slate-300">
+            l&apos;absence de diamant ne prouve pas qu&apos;une fonction est
+            gratuite
+          </strong>
+          . Elle prouve seulement qu&apos;aucun marquage Pro n&apos;apparaît sur
+          cette capture, à cette date. Les offres changent.
+        </p>
+
+        <h4 className="text-xl font-bold text-slate-100 pt-6">
+          1. C&apos;est quoi, CapCut, quand on l&apos;ouvre
+        </h4>
+        <FigureTest
+          src="/tests/2026-08-24/capcut-accueil.png"
+          alt="Écran d'accueil de CapCut Desktop avec le bouton Connexion et les outils IA"
+          caption={
+            <>
+              L&apos;écran d&apos;accueil. CapCut n&apos;est pas un simple
+              générateur de sous-titres : c&apos;est un logiciel de montage
+              complet, comparable à ce qu&apos;on installe sur un ordinateur
+              pour assembler des plans, ajouter du texte et de la musique. On y
+              trouve aussi une série d&apos;outils IA — transformer une vidéo
+              longue en vidéos courtes, générer une image, traduire une vidéo,
+              améliorer la qualité.{" "}
+              <strong className="text-slate-200">
+                Observé, aucun de ces outils IA n&apos;a été utilisé.
+              </strong>{" "}
+              En haut à gauche, le bouton « Connexion » confirme que nous
+              n&apos;étions connectés à aucun compte payant.
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-24/capcut-importer.png"
+          alt="Panneau Multimédia de CapCut, zone d'import de fichiers"
+          caption={
+            <>
+              La première étape de tout montage : faire entrer sa vidéo dans le
+              logiciel. On glisse le fichier dans cette zone, ou on enregistre
+              directement depuis sa webcam ou son écran.{" "}
+              <strong className="text-slate-200">
+                Testé : l&apos;import classique du fichier a fonctionné sans
+                payer et sans compte.
+              </strong>
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-24/capcut-timeline.png"
+          alt="Vidéo importée dans CapCut, visible dans le chutier et posée dans la timeline"
+          caption={
+            <>
+              La vidéo est entrée dans le logiciel. À gauche, la vignette dans
+              le « chutier », la réserve où atterrissent les fichiers importés.
+              En bas, la bande bleue est la{" "}
+              <strong className="text-slate-200">timeline</strong> : la ligne du
+              temps sur laquelle on pose les plans dans l&apos;ordre, et
+              l&apos;endroit où se fait tout le montage. À droite, la mise à
+              l&apos;échelle affiche 100 % :{" "}
+              <strong className="text-slate-200">
+                Testé — la vidéo est posée telle quelle, sans agrandissement,
+                sans recadrage, sans effet.
+              </strong>{" "}
+              Jusqu&apos;ici, rien n&apos;a été demandé ni payé.
+            </>
+          }
+        />
+
+        <h4 className="text-xl font-bold text-slate-100 pt-6">
+          2. Ce qu&apos;on peut ajouter à une vidéo
+        </h4>
+        <p className="text-slate-400">
+          Les neuf captures qui suivent montrent l&apos;étendue des
+          bibliothèques de CapCut. Nous n&apos;avons rien appliqué de tout
+          cela : elles sont là pour te montrer ce que contient le logiciel, pas
+          pour en juger la qualité. Repère le diamant violet sur les vignettes,
+          il revient partout.
+        </p>
+        <FigureTest
+          src="/tests/2026-08-24/capcut-musique.png"
+          alt="Bibliothèque musicale de CapCut classée par ambiance"
+          caption={
+            <>
+              Une bibliothèque de musiques libres de droits, rangée par ambiance
+              : été, vlog, fitness, voyage, anniversaire, romantique, triste.
+              Concrètement, ça sert à poser un fond sonore sans aller chercher
+              de la musique ailleurs ni risquer une réclamation de droits
+              d&apos;auteur.{" "}
+              <strong className="text-slate-200">
+                Observé, aucune musique ajoutée.
+              </strong>{" "}
+              Certains morceaux portent un diamant, d&apos;autres non.
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-24/capcut-texte.png"
+          alt="Menu Texte de CapCut avec les différentes options d'ajout de texte"
+          caption={
+            <>
+              Le menu Texte. Il sert à écrire par-dessus l&apos;image : un
+              titre, une mention, un nom. Il donne aussi accès aux légendes
+              automatiques — la transcription de la parole en sous-titres — et
+              aux sous-titres importés depuis un fichier.{" "}
+              <strong className="text-slate-200">
+                Observé, aucun texte écrit à la main pendant le test.
+              </strong>
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-24/capcut-effets-texte.png"
+          alt="Galerie d'effets de texte de CapCut"
+          caption={
+            <>
+              Des habillages tout faits pour le texte : contours, ombres,
+              néons, textures. Ça évite d&apos;avoir à régler soi-même la
+              typographie pour obtenir un rendu qui accroche l&apos;œil.{" "}
+              <strong className="text-slate-200">Observé.</strong> La galerie
+              mélange des ressources avec diamant et d&apos;autres sans.
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-24/capcut-modeles-texte.png"
+          alt="Modèles de texte prêts à l'emploi dans CapCut"
+          caption={
+            <>
+              Des blocs de texte animés prêts à poser : bandeau de
+              localisation, « Breaking news », fin de chapitre, appel à
+              l&apos;action. Utile quand on veut le look d&apos;une vidéo pro
+              sans savoir animer du texte.{" "}
+              <strong className="text-slate-200">Observé.</strong> Diamants
+              présents sur une partie des modèles.
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-24/capcut-stickers.png"
+          alt="Bibliothèque de stickers animés de CapCut"
+          caption={
+            <>
+              Des images animées à coller sur la vidéo : compte à rebours,
+              flammes, cœurs, boutons « Like » et « Subscribe ». C&apos;est le
+              vocabulaire visuel des vidéos courtes sur TikTok et YouTube
+              Shorts.{" "}
+              <strong className="text-slate-200">Observé.</strong>
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-24/capcut-effets-video.png"
+          alt="Galerie d'effets vidéo de CapCut"
+          caption={
+            <>
+              Des effets appliqués à l&apos;image elle-même : particules,
+              lumières, distorsions, rendus 3D. À la différence des stickers,
+              ils transforment le plan au lieu de se poser dessus.{" "}
+              <strong className="text-slate-200">Observé.</strong>
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-24/capcut-transitions.png"
+          alt="Galerie de transitions de CapCut"
+          caption={
+            <>
+              Les transitions gèrent le passage d&apos;un plan au suivant :
+              fondu, zoom, balayage, flash. Elles n&apos;ont d&apos;intérêt que
+              si ta vidéo contient plusieurs séquences — notre test n&apos;en
+              avait qu&apos;une.{" "}
+              <strong className="text-slate-200">Observé.</strong>
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-24/capcut-modeles-legendes.png"
+          alt="Galerie de modèles de légendes de CapCut"
+          caption={
+            <>
+              Les styles de sous-titres : couleurs, contours, mise en évidence
+              du mot prononcé, versions sur plusieurs lignes. C&apos;est ce qui
+              donne aux sous-titres l&apos;aspect « réseaux sociaux » plutôt
+              que le blanc neutre par défaut.{" "}
+              <strong className="text-slate-200">
+                Observé — nous avons délibérément gardé le style par défaut
+              </strong>{" "}
+              pour juger ce que l&apos;outil produit tout seul. Plusieurs
+              modèles portent un diamant.
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-24/capcut-filtres.png"
+          alt="Galerie de filtres colorimétriques de CapCut"
+          caption={
+            <>
+              Les filtres modifient l&apos;ambiance des couleurs, comme sur une
+              photo : rétro, noir et blanc, tons froids, tons chauds.{" "}
+              <strong className="text-slate-200">
+                Observé, aucun filtre appliqué.
+              </strong>
+            </>
+          }
+        />
+
+        <h4 className="text-xl font-bold text-slate-100 pt-6">
+          3. Les réglages disponibles sur un clip
+        </h4>
+        <FigureTest
+          src="/tests/2026-08-24/capcut-son.png"
+          alt="Panneau Son de CapCut, réglages de base et fonctions Pro marquées d'un diamant"
+          caption={
+            <>
+              C&apos;est la capture la plus parlante sur la frontière entre
+              gratuit et payant.{" "}
+              <strong className="text-slate-200">
+                Sans diamant : le volume et les fondus
+              </strong>{" "}
+              — monter ou baisser le son, le faire apparaître ou disparaître en
+              douceur.{" "}
+              <strong className="text-slate-200">
+                Avec diamant, donc Pro : normaliser le niveau sonore, améliorer
+                la voix, traduire la vidéo, réduire le bruit, séparer les
+                éléments audio.
+              </strong>{" "}
+              Dans les réglages de son et de couleur observés, les curseurs
+              manuels visibles ne portent pas de diamant, tandis que plusieurs
+              automatismes portent la marque Pro.{" "}
+              <strong className="text-slate-200">
+                Cette distinction n&apos;est pas universelle : d&apos;autres
+                ressources manuelles peuvent également être payantes.
+              </strong>{" "}
+              <strong className="text-slate-200">
+                Observé, rien n&apos;a été activé.
+              </strong>
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-24/capcut-vitesse.png"
+          alt="Panneau Vitesse de CapCut affichant 1,00x et une durée de 77,4 secondes"
+          caption={
+            <>
+              Accélérer ou ralentir la vidéo. L&apos;écran confirme au passage
+              deux données de notre test : vitesse laissée à{" "}
+              <strong className="text-slate-200">1,00x</strong>, donc aucune
+              modification, et durée de{" "}
+              <strong className="text-slate-200">77,4 secondes</strong>. Les
+              réglages avancés — courbe de vitesse et ralenti fluide — portent
+              un diamant.{" "}
+              <strong className="text-slate-200">Observé.</strong>
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-24/capcut-animations.png"
+          alt="Panneau Animation de CapCut avec Aucun sélectionné"
+          caption={
+            <>
+              Les animations font entrer ou sortir un plan avec un mouvement
+              plutôt qu&apos;une apparition sèche. La vignette « Aucun » est
+              sélectionnée à gauche :{" "}
+              <strong className="text-slate-200">
+                c&apos;est bien l&apos;état par défaut que nous avons conservé.
+              </strong>{" "}
+              La majorité des animations proposées portent un diamant.
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-24/capcut-ajustements.png"
+          alt="Panneau Ajustement de CapCut, réglages colorimétriques manuels et options Pro"
+          caption={
+            <>
+              Le panneau qui sert à retoucher les couleurs et la lumière de
+              l&apos;image — l&apos;équivalent des réglages d&apos;une photo.
+              Même partage que pour le son :{" "}
+              <strong className="text-slate-200">
+                les trois automatismes portent un diamant
+              </strong>{" "}
+              — ajustement automatique, ajustement des couleurs, correction des
+              couleurs — tandis que les curseurs manuels de température, teinte,
+              saturation et clarté, ainsi que les LUT et la protection des tons
+              de peau, n&apos;en portent pas. Même répartition que dans le
+              panneau Son, avec la même réserve :{" "}
+              <strong className="text-slate-200">
+                cette distinction n&apos;est pas universelle, d&apos;autres
+                ressources manuelles peuvent également être payantes
+              </strong>{" "}
+              — plusieurs effets de texte, stickers et transitions vus plus haut
+              portent d&apos;ailleurs un diamant.{" "}
+              <strong className="text-slate-200">
+                Observé, rien n&apos;a été modifié.
+              </strong>
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-24/capcut-stylisation-ia.png"
+          alt="Panneau Stylisation par l'IA de CapCut avec des styles génératifs et leur coût"
+          caption={
+            <>
+              Ici, l&apos;IA générative : on décrit ce qu&apos;on veut, ou on
+              choisit un style — surréaliste, cyberfutur, poupée, zoom 3D — et
+              CapCut retransforme l&apos;image. Plusieurs vignettes affichent un
+              coût en crédits, du type « 45 ».{" "}
+              <strong className="text-slate-200">
+                Observé, aucun effet généré
+              </strong>{" "}
+              : le vignette « Aucun » reste sélectionnée à gauche. Ça n&apos;a
+              rien à voir avec du sous-titrage, mais ça montre jusqu&apos;où va
+              le logiciel.
+            </>
+          }
+        />
+
+        <h4 className="text-xl font-bold text-slate-100 pt-6">
+          4. Le vrai test : les sous-titres français
+        </h4>
+        <FigureTest
+          src="/tests/2026-08-24/capcut-paroles-automatiques.png"
+          alt="Menu Paroles automatiques de CapCut, liste de langues sans le français"
+          caption={
+            <>
+              Attention au piège, et c&apos;est important si tu compares des
+              outils.{" "}
+              <strong className="text-slate-200">
+                « Paroles automatiques » n&apos;est pas la fonction de
+                sous-titrage
+              </strong>{" "}
+              : elle sert à transcrire les paroles d&apos;une chanson. La liste
+              de langues visible propose anglais, chinois, hindi, indonésien,
+              japonais, coréen — et{" "}
+              <strong className="text-slate-200">pas le français</strong>. La
+              génération porte un diamant.{" "}
+              <strong className="text-slate-200">Observé.</strong> Si tu
+              t&apos;arrêtais à cet écran, tu conclurais à tort que CapCut ne
+              transcrit pas le français. C&apos;est faux, et la capture
+              suivante le montre.
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-24/capcut-legendes-francais.png"
+          alt="Menu Légendes automatiques de CapCut avec le français en langue source"
+          caption={
+            <>
+              Voici la bonne fonction : « Légendes automatiques ». Elle écoute
+              la parole et écrit les sous-titres toute seule. La langue source
+              propose bien le{" "}
+              <strong className="text-slate-200">français</strong>. Les
+              « légendes bilingues », qui afficheraient deux langues en même
+              temps, portent un diamant : nous les avons laissées sur « Aucun ».{" "}
+              <strong className="text-slate-200">
+                Testé : génération simple en français, réglages par défaut.
+              </strong>{" "}
+              À noter, un badge Pro est accolé au bouton « Générer », et la
+              génération a pourtant abouti sans paiement — le blocage
+              n&apos;est intervenu qu&apos;à l&apos;export.
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-24/capcut-legendes-generees.png"
+          alt="Timeline CapCut avec la piste de sous-titres générée au-dessus de la vidéo"
+          caption={
+            <>
+              Le résultat. La bande rouge en haut est la piste de sous-titres :
+              chaque petit segment correspond à une phrase, calée sur le moment
+              où elle est prononcée. En dessous, la bande verte est la vidéo.{" "}
+              <strong className="text-slate-200">
+                Testé — le traitement a pris moins d&apos;une minute
+              </strong>
+              , contre environ 2 min 30 chez Submagic et OpusClip sur le même
+              fichier. Aucun style, aucune traduction et aucune correction
+              manuelle n&apos;ont été appliqués.
+            </>
+          }
+        />
+
+        <h4 className="text-xl font-bold text-slate-100 pt-6">
+          5. Ce que ça donne à l&apos;écran
+        </h4>
+        <FigureTest
+          src="/tests/2026-08-24/capcut-rendu-chevauchement.png"
+          alt="Aperçu CapCut où le sous-titre chevauche le bandeau nominatif de la vidéo source"
+          caption={
+            <>
+              Deux bonnes nouvelles et un vrai défaut. La vidéo reste au format
+              horizontal 16:9 d&apos;origine, sans recadrage automatique, et le
+              bandeau au nom de l&apos;intervenante reste visible — ce qui
+              n&apos;est pas le cas quand un outil recadre en vertical. En
+              revanche,{" "}
+              <strong className="text-slate-200">
+                le sous-titre blanc par défaut vient se poser par-dessus ce
+                bandeau
+              </strong>{" "}
+              et devient difficile à lire, et le mot « supérieur » est coupé en
+              deux entre les lignes.{" "}
+              <strong className="text-slate-200">Testé.</strong>
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-24/capcut-rendu-erreur-quarantaine.png"
+          alt="Sous-titre CapCut affichant 1 quarantaine de projets 1 p'tit peu plus"
+          caption={
+            <>
+              Une erreur de transcription visible à l&apos;œil nu. La personne
+              dit « une quarantaine de projets, un p&apos;tit peu plus », et le
+              sous-titre écrit{" "}
+              <strong className="text-slate-200">
+                « 1 quarantaine de projets 1 p&apos;tit peu plus »
+              </strong>{" "}
+              : le moteur a transformé les articles « une » et « un » en
+              chiffres.{" "}
+              <strong className="text-slate-200">Testé.</strong> C&apos;est un
+              exemple ponctuel que tu peux vérifier sur l&apos;image, pas un
+              taux d&apos;erreur calculé.
+            </>
+          }
+        />
+        <FigureTest
+          src="/tests/2026-08-24/capcut-rendu-erreur-de-des.png"
+          alt="Sous-titre CapCut affichant de des projets autour de la qualité de l'air"
+          caption={
+            <>
+              Deuxième erreur repérable :{" "}
+              <strong className="text-slate-200">
+                « de des projets autour de la qualité de l&apos;air »
+              </strong>
+              . Le doublon « de des » n&apos;existe pas en français.{" "}
+              <strong className="text-slate-200">Testé.</strong> Là encore, un
+              exemple isolé et vérifiable, pas une mesure globale.
+            </>
+          }
+        />
+
+        <h4 className="text-xl font-bold text-slate-100 pt-6">
+          6. Le moment où ça bloque
+        </h4>
+        <FigureTest
+          src="/tests/2026-08-24/capcut-export-bloque.png"
+          alt="Fenêtre CapCut indiquant que les légendes automatiques sont des fonctionnalités Pro"
+          caption={
+            <>
+              C&apos;est le point d&apos;arrêt du test. Au moment
+              d&apos;enregistrer la vidéo sur l&apos;ordinateur, CapCut affiche
+              « Tu es en train d&apos;utiliser les fonctionnalités Pro
+              suivantes » et liste les{" "}
+              <strong className="text-slate-200">légendes automatiques</strong>.
+              Sans abonnement,{" "}
+              <strong className="text-slate-200">
+                nous n&apos;avons récupéré aucun fichier contenant ces
+                sous-titres
+              </strong>
+              . La fenêtre proposait bien un essai Pro gratuit :{" "}
+              <strong className="text-slate-200">
+                nous ne l&apos;avons volontairement pas activé
+              </strong>
+              , pour que la comparaison porte sur les plans gratuits et rien
+              d&apos;autre.{" "}
+              <strong className="text-slate-200">Testé.</strong>
+            </>
+          }
+        />
+
+        <div className="bg-slate-900 border border-sky-500/30 rounded-2xl p-6 my-8">
+          <h4 className="font-bold text-sky-400 mb-3">
+            Ce qu&apos;il faut retenir, en clair
+          </h4>
+          <p className="mb-3">
+            Importer une vidéo, la placer dans le montage et générer des
+            sous-titres français a fonctionné sans payer, et vite : moins
+            d&apos;une minute de traitement. Mais{" "}
+            <strong className="text-slate-100">
+              au moment d&apos;enregistrer le résultat, les sous-titres
+              automatiques sont classés Pro
+            </strong>{" "}
+            et l&apos;export nous a été refusé. Sur cet essai, le sous-titrage
+            gratuit de CapCut permet de voir le rendu, pas de le publier.
+          </p>
+          <p className="mb-3">
+            <strong className="text-slate-100">
+              Et surtout : ça ne veut pas dire que CapCut est payant.
+            </strong>{" "}
+            L&apos;export nous a été refusé{" "}
+            <strong className="text-slate-100">
+              parce que notre montage contenait une fonction Pro
+            </strong>{" "}
+            — l&apos;écran de blocage la nomme lui-même, « légendes
+            automatiques », et ne liste rien d&apos;autre. Ce n&apos;est pas
+            l&apos;export qui est payant, c&apos;est cette fonction-là.
+          </p>
+          <p className="mb-0 text-slate-400">
+            <strong className="text-slate-300">
+              Précision issue de notre usage de CapCut en dehors de ce test
+            </strong>{" "}
+            : un montage que l&apos;on assemble soi-même, sans activer la
+            moindre option marquée d&apos;un diamant, s&apos;exporte et se
+            télécharge gratuitement. Nous le signalons parce que c&apos;est
+            l&apos;information utile pour un débutant, mais nous ne
+            l&apos;habillons pas en résultat de test :{" "}
+            <strong className="text-slate-300">
+              cette manipulation-là n&apos;a pas été refaite ni capturée le 24
+              août
+            </strong>
+            , et elle ne figure donc pas dans le tableau comparatif.
+          </p>
+        </div>
+
+        <p className="text-slate-400">
+          <strong className="text-slate-300">
+            Ce que cette visite ne prouve pas.
+          </strong>{" "}
+          Une seule vidéo, 1 min 17, un plan fixe, en français, un seul jour, les
+          réglages par défaut. Nous n&apos;avons mesuré aucun taux
+          d&apos;erreur : les deux fautes montrées sont des exemples
+          vérifiables, pas une statistique. Les effets, transitions, musiques,
+          filtres, outils audio et fonctions IA ont été montrés, jamais
+          utilisés, donc jamais évalués. Et ce test ne modifie aucune note de la
+          grille ci-dessus, qui repose sur notre analyse documentaire.
         </p>
       </>
     ),

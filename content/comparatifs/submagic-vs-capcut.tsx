@@ -10,7 +10,7 @@ export const submagicVsCapcut: ComparatifData = {
     tagline:
       "Le spécialiste payant des sous-titres FR (Submagic) contre l'éditeur vidéo gratuit leader (CapCut). Deux philosophies : qualité premium vs gratuité complète. Voici laquelle colle à ton profil et ton budget.",
     tempsLecture: 6,
-    lastCheck: "10/07/2026",
+    lastCheck: "24/08/2026",
   },
   verdictRapide: {
     headline:
@@ -134,6 +134,175 @@ export const submagicVsCapcut: ComparatifData = {
     ),
     ctaGagnant: "A",
     ctaText: "Essayer Submagic →",
+  },
+  testReel: {
+    intro: (
+      <>
+        <p className="mb-4">
+          Nous avons fait passer{" "}
+          <strong className="text-slate-100">la même vidéo</strong> dans les
+          deux outils, avec un compte gratuit de chaque côté et les réglages par
+          défaut, sans aucune retouche manuelle. Ce qui est comparé, c&apos;est
+          le rendu automatique.
+        </p>
+        <p className="mb-4">
+          La source est un entretien de 1 min 17 en français, plan fixe, 720p,
+          publié sous licence libre :{" "}
+          <a
+            href="https://tubedu.org/videos/watch/9aba92da-0f91-44cf-9904-31a66a722413"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-amber-400 hover:underline"
+          >
+            « Sciences ensemble »
+          </a>
+          , interview de Laure Turcati, MOOC Science Ouverte (Alliance Sorbonne
+          Université), 3 mars 2022, TubEdu, licence CC BY 4.0. Tu peux
+          télécharger le même fichier et refaire la manipulation.
+        </p>
+        <p className="text-base text-slate-400">
+          Une précision de méthode :{" "}
+          <strong className="text-slate-300">
+            les deux sessions n&apos;ont pas eu lieu le même jour
+          </strong>{" "}
+          — Submagic le 21 août 2026, CapCut le 24 août 2026. Le fichier source
+          et les réglages sont identiques, mais ce n&apos;est pas une
+          manipulation simultanée. Le détail complet, capture par capture, est
+          publié sur chaque fiche : les liens sont sous le verdict.
+        </p>
+      </>
+    ),
+    lignes: [
+      {
+        critere: "Nature de l'outil",
+        a: "Outil spécialisé : générer des sous-titres stylés pour vidéos courtes.",
+        b: "Logiciel de montage complet : timeline, texte, musique, transitions, effets, filtres, réglages audio et colorimétriques.",
+        gagnant: "B",
+      },
+      {
+        critere: "Temps de génération des sous-titres",
+        a: "Environ 2 min 30, de l'envoi au résultat affiché.",
+        b: "Moins d'une minute, sur le même fichier.",
+        gagnant: "B",
+      },
+      {
+        critere: "Format de sortie par défaut",
+        a: "Aperçu resté au format 16:9 de la source, aucun passage automatique en vertical.",
+        b: "Format 16:9 d'origine conservé également, aucun recadrage automatique.",
+        gagnant: "egalite",
+      },
+      {
+        critere: "Lisibilité du rendu par défaut",
+        a: "Sous-titres nets, mot en cours surligné, bandeau nominatif de la source resté lisible.",
+        b: "Le sous-titre blanc par défaut se pose sur le bandeau nominatif de la source et devient difficile à lire ; un mot coupé entre deux lignes.",
+        gagnant: "A",
+      },
+      {
+        critere: "Erreurs de transcription visibles",
+        a: "Non relevées sur les passages contrôlés lors de notre session.",
+        b: "Deux erreurs directement lisibles à l'image : « 1 quarantaine de projets 1 p'tit peu plus » et « de des projets ». Exemples ponctuels, aucun taux d'erreur calculé.",
+        gagnant: "A",
+      },
+      {
+        critere: "Export sur le plan gratuit",
+        a: "Export refusé. Un abonnement payant est demandé à cette étape. Aucun fichier récupéré.",
+        b: "Export refusé à cause d'une fonction précise : l'écran de blocage nomme les « légendes automatiques » comme seule fonctionnalité Pro utilisée, et ne liste rien d'autre. Un essai Pro gratuit était proposé, non activé volontairement. L'export d'un montage sans aucune fonction Pro n'a pas été testé ce jour-là.",
+        gagnant: "egalite",
+      },
+    ],
+    verdict: (
+      <>
+        <p className="mb-4">
+          Le constat qui compte pour quelqu&apos;un qui débute sans budget :{" "}
+          <strong className="text-slate-100">
+            aucun des deux ne nous a livré de fichier sous-titré gratuitement
+          </strong>
+          . Submagic demande un abonnement au moment de l&apos;export. CapCut
+          laisse tout faire, puis classe les sous-titres automatiques en
+          fonctionnalité Pro au moment d&apos;enregistrer. Dans les deux cas, le
+          plan gratuit sert à voir le rendu, pas à publier.
+        </p>
+        <p className="mb-4">
+          Mais les deux blocages n&apos;ont pas la même nature, et la nuance
+          change tout.{" "}
+          <strong className="text-sky-400">
+            Chez CapCut, ce n&apos;est pas l&apos;export qui est payant, c&apos;est
+            la fonction que nous avions utilisée
+          </strong>{" "}
+          : l&apos;écran de blocage nomme les « légendes automatiques » et ne
+          liste rien d&apos;autre. D&apos;après notre usage de CapCut en dehors
+          de ce test, un montage assemblé soi-même sans aucune option marquée
+          d&apos;un diamant s&apos;exporte gratuitement.{" "}
+          <strong className="text-slate-300">
+            Cette manipulation-là n&apos;a pas été refaite le 24 août
+          </strong>{" "}
+          : nous la signalons parce qu&apos;elle est utile, pas comme un
+          résultat mesuré, et elle ne compte donc pas dans le tableau
+          ci-dessus.
+        </p>
+        <p className="mb-4">
+          Sur la vitesse, CapCut prend l&apos;avantage : moins d&apos;une minute
+          contre environ 2 min 30. Sur la qualité du rendu par défaut,
+          c&apos;est l&apos;inverse — chez CapCut le sous-titre blanc vient
+          recouvrir le bandeau au nom de l&apos;intervenante, et deux fautes de
+          transcription sont lisibles à l&apos;image. Submagic livre un rendu
+          plus propre sans qu&apos;on ait à y toucher.
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-4 my-8">
+          <Link
+            href="/outils/submagic"
+            className="block bg-slate-950 border border-amber-500/30 hover:border-amber-500 rounded-xl p-6 transition"
+          >
+            <div className="text-lg font-bold text-amber-400 mb-2">
+              Voir le test complet de Submagic →
+            </div>
+            <p className="text-sm text-slate-400 leading-relaxed mb-0">
+              La visite guidée capture par capture : l&apos;écran de génération,
+              le rendu, l&apos;éditeur, les styles, les scènes, les outils
+              d&apos;IA avec leur coût en crédits, l&apos;audio, la miniature et
+              l&apos;export.
+            </p>
+          </Link>
+          <Link
+            href="/outils/capcut"
+            className="block bg-slate-950 border border-sky-500/30 hover:border-sky-500 rounded-xl p-6 transition"
+          >
+            <div className="text-lg font-bold text-sky-400 mb-2">
+              Voir le test complet de CapCut →
+            </div>
+            <p className="text-sm text-slate-400 leading-relaxed mb-0">
+              Vingt et une captures commentées en langage simple : ce
+              qu&apos;est chaque outil, à quoi il sert, et lesquels portent le
+              diamant violet qui signale une fonction réservée à
+              l&apos;abonnement Pro.
+            </p>
+          </Link>
+        </div>
+
+        <p className="mb-4 text-slate-400">
+          <strong className="text-slate-300">
+            Ce que ce test ne prouve pas.
+          </strong>{" "}
+          Une seule vidéo, 1 min 17, un plan fixe, en français, deux comptes
+          gratuits, les réglages par défaut, et deux sessions à trois jours
+          d&apos;intervalle. Nous n&apos;avons mesuré aucun taux d&apos;erreur
+          de transcription : les fautes citées sont des exemples vérifiables sur
+          les captures, pas une statistique. Les nombreuses fonctions repérées
+          dans les deux interfaces mais non utilisées ne sont pas évaluées, et
+          rien n&apos;indique qu&apos;elles soient incluses gratuitement.
+        </p>
+        <p className="text-slate-400">
+          <strong className="text-slate-300">
+            Ce test ne modifie aucune note.
+          </strong>{" "}
+          Les scores affichés plus haut restent ceux de notre analyse
+          documentaire. Un test unique sur une vidéo ne suffit pas à faire
+          bouger une grille de notation, et nous ne l&apos;utiliserons pas pour
+          justifier après coup une note déjà publiée.
+        </p>
+      </>
+    ),
   },
   faq: [
     {

@@ -227,9 +227,9 @@ export const OUTILS: Outil[] = [
     score: 7.8,
     color: "sky",
     tagline: "Éditeur gratuit",
-    metaTitle: "CapCut Desktop : avis sur la version PC et prix en 2026",
+    metaTitle: "CapCut Desktop : avis 2026, test complet, prix et limites",
     metaDescription:
-      "Avis sur CapCut Desktop en 2026 : version gratuite, prix de CapCut Pro, fonctions IA sur PC et Mac, points forts et limites pour un usage régulier.",
+      "CapCut Desktop testé sur une vraie vidéo française : 24 captures commentées, fonctions gratuites et Pro, prix 2026 et sous-titres bloqués à l'export.",
     category: "editeur",
     priceFrom: "Gratuit · Pro à 23,99 €/mois (App Store FR, variable selon plateforme)",
     freeTier: "Version gratuite disponible · essai Pro 7 jours selon l'appareil et l'éligibilité",

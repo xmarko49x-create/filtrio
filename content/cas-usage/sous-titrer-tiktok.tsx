@@ -29,7 +29,7 @@ export const sousTitrerTiktok: CasUsageData = {
       <>
         <strong className="text-slate-200">Alternative sérieuse :</strong>{" "}
         <Link href="/outils/capcut" className="text-sky-400 hover:underline">
-          CapCut
+          notre avis sur CapCut Desktop, testé
         </Link>{" "}
         si tu veux du gratuit. Acceptable mais demande plus de travail manuel
         pour approcher le rendu Submagic.

@@ -435,7 +435,7 @@ export default function AlternativesASubmagicPage() {
               <p className="text-slate-400 text-sm leading-relaxed">
                 Va sur{" "}
                 <Link href="/outils/capcut" className="text-sky-400 hover:underline">
-                  CapCut
+                  notre avis sur CapCut Desktop
                 </Link>
                 , l&apos;un des éditeurs gratuits les plus complets, avec sous-titres
                 automatiques inclus. Le compromis : un rendu moins stylé que

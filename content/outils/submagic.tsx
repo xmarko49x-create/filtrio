@@ -459,7 +459,7 @@ export const submagicFiche: FicheData = {
     <>
       Tu ne veux pas payer (→{" "}
       <Link href="/outils/capcut" className="text-sky-400 hover:underline">
-        CapCut
+        notre avis sur CapCut Desktop
       </Link>{" "}
       reste très correct en gratuit)
     </>,

@@ -30,9 +30,9 @@ function FigureTest({
 export const capcutFiche: FicheData = {
   slug: "capcut",
   hero: {
-    h1: "CapCut Desktop : notre avis complet en 2026",
+    h1: "CapCut Desktop : notre avis après un test complet en 2026",
     tagline:
-      "Le leader gratuit du montage vidéo mobile et desktop. Édition complète, sous-titres auto, fonctionnalités IA, bibliothèque massive. Voici pour qui c'est suffisant et pour qui c'est trop limité.",
+      "Le leader gratuit du montage vidéo mobile et desktop. Édition complète, sous-titres auto, fonctionnalités IA, bibliothèque massive. Nous l'avons testé le 24 août 2026 sur une vraie vidéo française : 24 captures commentées plus bas, ce qui est gratuit, ce qui est réservé au Pro, et où ça bloque.",
     badges: [
       { label: "Gratuit", tone: "primary" },
       { label: "Mobile-first", tone: "accent" },

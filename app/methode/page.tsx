@@ -139,7 +139,14 @@ export default function MethodePage() {
                 ni une fonction gratuite.
               </p>
               <p>
-                Tests publiés :{" "}
+                Tous les résultats sont réunis sur notre{" "}
+                <Link
+                  href="/banc-essai"
+                  className="text-emerald-400 hover:underline"
+                >
+                  banc d&apos;essai
+                </Link>
+                . Tests publiés :{" "}
                 <Link
                   href="/comparatifs/opusclip-vs-submagic"
                   className="text-emerald-400 hover:underline"

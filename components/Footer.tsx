@@ -62,6 +62,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/banc-essai" className="hover:text-slate-300">
+                  Banc d&apos;essai
+                </Link>
+              </li>
+              <li>
                 <Link href="/methode" className="hover:text-slate-300">
                   Notre méthode
                 </Link>

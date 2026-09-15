@@ -223,6 +223,40 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* BANC D'ESSAI, preuve de première main. Placé avant le bloc médias :
+          une donnée qu'on a produite nous-mêmes prime sur une mention externe. */}
+      <section className="max-w-5xl mx-auto px-6 pb-14">
+        <div className="bg-gradient-to-br from-emerald-500/10 to-slate-900/60 border border-emerald-500/30 rounded-xl p-5 md:p-6">
+          <div className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-2">
+            Nos tests de première main
+          </div>
+          <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">
+            Trois outils, la même vidéo, les mêmes réglages.
+          </h2>
+          <p className="text-slate-300 leading-relaxed mb-4">
+            Sur trois outils testés avec la même vidéo française,{" "}
+            <strong className="text-slate-100">
+              un seul a livré gratuitement un fichier sous-titré
+            </strong>{" "}
+            : OpusClip, avec filigrane. Submagic a demandé un abonnement à
+            l&apos;export et CapCut a classé les légendes automatiques comme
+            fonction Pro.
+          </p>
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
+            <Link
+              href="/banc-essai"
+              className="inline-block bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-4 py-2 rounded-lg transition"
+            >
+              Voir le banc d&apos;essai →
+            </Link>
+            <span className="text-slate-500">
+              Protocole public · vidéo source libre de droits · captures à
+              l&apos;appui
+            </span>
+          </div>
+        </div>
+      </section>
+
       {/* FILTRIO DANS LES MÉDIAS, bloc crédibilité */}
       <section className="max-w-5xl mx-auto px-6 pb-14">
         <div className="bg-slate-900/60 border border-slate-800 rounded-xl p-5 md:p-6">

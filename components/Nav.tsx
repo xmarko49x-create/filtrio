@@ -39,6 +39,12 @@ export default function Nav({ ctaHref = "#verdict" }: { ctaHref?: string }) {
             >
               Comparatifs
             </Link>
+            <Link
+              href="/banc-essai"
+              className="hover:text-slate-100 transition whitespace-nowrap"
+            >
+              Banc d&apos;essai
+            </Link>
             <Link href="/methode" className="hover:text-slate-100 transition">
               Méthode
             </Link>
@@ -133,6 +139,13 @@ export default function Nav({ ctaHref = "#verdict" }: { ctaHref?: string }) {
               className="py-3 text-slate-200 hover:text-emerald-400 transition border-b border-slate-800/60"
             >
               Comparatifs
+            </Link>
+            <Link
+              href="/banc-essai"
+              onClick={close}
+              className="py-3 text-slate-200 hover:text-emerald-400 transition border-b border-slate-800/60"
+            >
+              Banc d&apos;essai
             </Link>
             <Link
               href="/methode"

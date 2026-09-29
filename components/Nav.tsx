@@ -4,7 +4,19 @@ import Link from "next/link";
 import { useState } from "react";
 import { SearchBar } from "@/components/SearchBar";
 
-export default function Nav({ ctaHref = "#verdict" }: { ctaHref?: string }) {
+/**
+ * Le CTA du menu. Par défaut il pointe vers une page réelle : les pages
+ * éditoriales (fiche, comparatif, cas d'usage) passent leur propre ancre et
+ * leur propre libellé. Sans ce défaut, les pages sans ancre "#verdict"
+ * affichaient un bouton qui ne menait nulle part.
+ */
+export default function Nav({
+  ctaHref = "/outils",
+  ctaLabel = "Comparer les outils",
+}: {
+  ctaHref?: string;
+  ctaLabel?: string;
+}) {
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
 
@@ -62,7 +74,7 @@ export default function Nav({ ctaHref = "#verdict" }: { ctaHref?: string }) {
             onClick={close}
             className="text-sm bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-4 py-2 rounded-lg transition"
           >
-            Voir le verdict
+            {ctaLabel}
           </Link>
 
           {/* Hamburger, visible < lg (les liens du menu sont en lg:flex) */}

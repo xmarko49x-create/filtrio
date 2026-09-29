@@ -72,6 +72,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/lexique" className="hover:text-slate-300">
+                  Lexique
+                </Link>
+              </li>
+              <li>
                 <Link href="/observatoire-prix" className="hover:text-slate-300">
                   Observatoire des prix
                 </Link>

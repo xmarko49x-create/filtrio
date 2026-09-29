@@ -77,7 +77,7 @@ export default function CasUsageLayout({ data }: { data: CasUsageData }) {
   return (
     <>
       <JsonLd data={[faqSchema, breadcrumbSchema]} />
-      <Nav ctaHref="#gagnant" />
+      <Nav ctaHref="#gagnant" ctaLabel="Voir le verdict" />
 
       {/* HERO */}
       <section className="max-w-5xl mx-auto px-6 pt-12 pb-12">

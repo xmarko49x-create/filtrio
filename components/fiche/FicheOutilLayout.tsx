@@ -84,7 +84,7 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
   return (
     <>
       <JsonLd data={[reviewSchema, faqSchema, breadcrumbSchema]} />
-      <Nav ctaHref="#cta-final" />
+      <Nav ctaHref="#cta-final" ctaLabel="Voir le verdict" />
 
       {/* HERO */}
       <section className="max-w-5xl mx-auto px-6 pt-12 pb-12">

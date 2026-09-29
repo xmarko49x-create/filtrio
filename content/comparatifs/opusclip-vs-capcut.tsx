@@ -13,15 +13,26 @@ export const opusclipVsCapcut: ComparatifData = {
     lastCheck: "10/07/2026",
   },
   verdictRapide: {
-    headline: "OpusClip pour l'automatisation. CapCut pour la gratuité complète.",
+    headline: "OpusClip pour l'automatisation. CapCut pour démarrer sans payer.",
     paragraphs: [
       <>
         <strong className="text-emerald-400">OpusClip</strong>{" "}excelle sur un
         cas précis : prendre une vidéo longue et en sortir une série de shorts prêts à
         publier, automatiquement.{" "}
         <strong className="text-sky-400">CapCut</strong>{" "}est un éditeur complet
-        gratuit qui peut aussi découper, mais manuellement. Deux outils, deux
-        problèmes.
+        dont l&apos;essentiel s&apos;utilise sans payer, et qui peut aussi
+        découper, mais manuellement. Deux outils, deux problèmes.
+      </>,
+      <>
+        Une réserve sur le mot « gratuit » : lors de notre test du 24 août
+        2026, l&apos;import, le montage et la génération des sous-titres ont
+        fonctionné sans payer, mais CapCut a classé les légendes automatiques
+        en fonction Pro au moment de l&apos;export. Certaines ressources
+        portent aussi un marquage payant. Détail sur notre{" "}
+        <Link href="/banc-essai" className="text-emerald-400 hover:underline">
+          banc d&apos;essai
+        </Link>
+        .
       </>,
       <>
         Si ton goulot = la découpe de long format, prends OpusClip. Si tu veux

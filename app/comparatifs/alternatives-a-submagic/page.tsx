@@ -165,7 +165,7 @@ export default function AlternativesASubmagicPage() {
 
   return (
     <>
-      <Nav ctaHref="#classement" />
+      <Nav ctaHref="#classement" ctaLabel="Voir le verdict" />
 
       {/* HERO */}
       <section className="max-w-5xl mx-auto px-6 pt-16 pb-12">

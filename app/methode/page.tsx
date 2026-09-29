@@ -20,7 +20,7 @@ export default function MethodePage() {
       <section className="max-w-4xl mx-auto px-6 pt-16 pb-12">
         <div className="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 rounded-full px-4 py-1.5 text-xs text-slate-300 mb-6">
           <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-          Dernière mise à jour · juillet 2026
+          Dernière mise à jour · septembre 2026
         </div>
         <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-6 tracking-tight">
           Comment Filtrio évalue les outils IA.

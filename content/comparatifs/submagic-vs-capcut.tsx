@@ -8,7 +8,7 @@ export const submagicVsCapcut: ComparatifData = {
   hero: {
     h1: "lequel choisir ?",
     tagline:
-      "Le spécialiste payant des sous-titres FR (Submagic) contre l'éditeur vidéo gratuit leader (CapCut). Deux philosophies : qualité premium vs gratuité complète. Voici laquelle colle à ton profil et ton budget.",
+      "Le spécialiste payant des sous-titres FR (Submagic) contre l'éditeur vidéo gratuit leader (CapCut). Deux philosophies : qualité premium contre éditeur complet accessible sans payer. Voici laquelle colle à ton profil et ton budget.",
     tempsLecture: 6,
     lastCheck: "24/08/2026",
   },

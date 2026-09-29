@@ -144,7 +144,7 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
   return (
     <>
       <JsonLd data={[faqSchema, breadcrumbSchema]} />
-      <Nav ctaHref="#verdict" />
+      <Nav ctaHref="#verdict" ctaLabel="Voir le verdict" />
 
       {/* HERO */}
       <section className="max-w-5xl mx-auto px-6 pt-16 pb-12">

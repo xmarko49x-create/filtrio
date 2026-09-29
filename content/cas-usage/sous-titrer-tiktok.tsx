@@ -53,7 +53,7 @@ export const sousTitrerTiktok: CasUsageData = {
       label: "Rapidité de rendu",
       poids: 20,
       description:
-        "Du upload au fichier exportable : idéal en moins de 2 minutes pour une vidéo d'1 minute.",
+        "De l'envoi du fichier au fichier exportable : idéal en moins de 2 minutes pour une vidéo d'1 minute.",
     },
     {
       label: "Recadrage 9:16 automatique",

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -70,7 +71,12 @@ export default function OutilsPage() {
           pour cibler par catégorie, par plan gratuit ou par mot-clé. Nous ne
           proposons volontairement pas de tri par score : les critères notés
           varient d&apos;une catégorie à l&apos;autre, un classement par note
-          serait donc trompeur.
+          serait donc trompeur. Si un terme te bloque — B-roll, recadrage 9:16,
+          crédits —, notre{" "}
+          <Link href="/lexique" className="text-emerald-400 hover:underline">
+            lexique
+          </Link>{" "}
+          les explique en une phrase chacun.
         </p>
       </section>
 

@@ -16,17 +16,28 @@ export const sousTitresRapides: CasUsageData = {
     tag: "Le verdict en 30 secondes",
     headline: (
       <>
-        Pour la vitesse,{" "}
-        <span className="text-amber-400">Submagic</span>{" "}reste imbattable.
+        Pour aller vite du fichier au short publiable,{" "}
+        <span className="text-amber-400">Submagic</span>{" "}reste une référence.
       </>
     ),
     paragraphs: [
       <>
-        3 clics de l&apos;upload au rendu final : choix du template, génération
-        automatique, export. La qualité FR et les templates prêts à
-        l&apos;emploi évitent toute retouche manuelle sur la grande majorité
-        des vidéos. Sur une vidéo courte, le traitement est rapide : le short
-        ressort prêt à publier, sans passe de montage manuel.
+        3 clics de l&apos;envoi du fichier au rendu final : choix du template,
+        génération automatique, export. La qualité FR et les templates prêts à
+        l&apos;emploi limitent les retouches manuelles dans la plupart des cas.
+        Sur une vidéo courte, le traitement est rapide et le short ressort
+        prêt à publier.
+      </>,
+      <>
+        À nuancer sur la vitesse brute : lors de notre test du 21 août 2026 sur
+        une vidéo de 1 min 17, la génération a pris environ 2 min 30 chez
+        Submagic, contre moins d&apos;une minute chez CapCut sur le même
+        fichier. L&apos;avantage de Submagic tient au parcours complet, pas au
+        temps de calcul. Détail sur notre{" "}
+        <Link href="/banc-essai" className="text-emerald-400 hover:underline">
+          banc d&apos;essai
+        </Link>
+        .
       </>,
       <>
         <strong className="text-slate-200">Exception :</strong>{" "}si tu veux

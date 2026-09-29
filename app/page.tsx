@@ -68,11 +68,14 @@ const HOME_FAQ: { question: string; answer: React.ReactNode }[] = [
     question: "Vous testez vraiment les outils ?",
     answer: (
       <>
-        Phase actuelle (V1) : analyse documentaire approfondie + compilation
-        des retours utilisateurs publics (G2, Trustpilot, Reddit, doc
-        officielle) + prise en main des plans gratuits. Phase à venir (V2) :
-        protocole de test comparatif standardisé sur sources vidéo
-        identiques. Tout est dit sur la page Méthode.
+        Oui, pour une partie d&apos;entre eux. Trois outils ont déjà été
+        manipulés selon un protocole public, sur le même fichier vidéo et avec
+        les réglages par défaut : OpusClip, Submagic et CapCut. Les résultats
+        et les captures sont sur notre banc d&apos;essai. Pour les autres
+        outils, l&apos;évaluation repose encore sur l&apos;analyse documentaire
+        et la prise en main des plans gratuits, et l&apos;extension du
+        protocole aux autres catégories est en cours. Tout est détaillé sur la
+        page Méthode.
       </>
     ),
   },
@@ -167,7 +170,7 @@ export default function HomePage() {
           getFaqPageSchema(HOME_FAQ),
         ]}
       />
-      <Nav ctaHref="#recommandations" />
+      <Nav ctaHref="#recommandations" ctaLabel="Voir le verdict" />
 
       {/* HERO, direct, orienté utilité */}
       <section className="relative overflow-hidden">
@@ -261,7 +264,7 @@ export default function HomePage() {
       <section className="max-w-5xl mx-auto px-6 pb-14">
         <div className="bg-slate-900/60 border border-slate-800 rounded-xl p-5 md:p-6">
           <div className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-2">
-            Filtrio dans les médias
+            Nos publications dans la presse spécialisée
           </div>
           <p className="text-slate-300 leading-relaxed mb-3">
             Nos analyses sur les prix des outils IA ont été publiées par le
@@ -623,12 +626,18 @@ export default function HomePage() {
         </p>
 
         <p className="text-sm text-slate-400 mb-8 max-w-3xl">
-          <strong className="text-slate-200">Phase actuelle (V1) :</strong>{" "}
-          analyse documentaire approfondie + compilation des retours
-          utilisateurs publics (G2, Trustpilot, Reddit, doc officielle) +
-          prise en main des plans gratuits.{" "}
-          <strong className="text-slate-200">Phase à venir :</strong> protocole
-          de test comparatif standardisé.
+          <strong className="text-slate-200">D&apos;où viennent les notes :</strong>{" "}
+          analyse documentaire approfondie, compilation des retours utilisateurs
+          publics (G2, Trustpilot, Reddit, documentation officielle) et prise en
+          main des plans gratuits.{" "}
+          <strong className="text-slate-200">Depuis août 2026</strong>, trois
+          outils ont en plus été testés de première main sur un fichier vidéo
+          identique —{" "}
+          <Link href="/banc-essai" className="text-emerald-400 hover:underline">
+            voir le banc d&apos;essai
+          </Link>
+          . L&apos;extension de ce protocole aux autres catégories est en cours,
+          et un test isolé ne modifie pas une note publiée.
         </p>
 
         <Link

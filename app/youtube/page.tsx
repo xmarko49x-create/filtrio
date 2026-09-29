@@ -31,7 +31,7 @@ export default function YouTubePage() {
         </p>
         <p className="text-slate-400 leading-relaxed max-w-3xl">
           Pas une liste bâclée. Chaque outil est noté sur 6 critères pondérés
-          et vient avec une fiche analyse complète.
+          et vient avec une fiche d&apos;analyse complète.
         </p>
       </section>
 

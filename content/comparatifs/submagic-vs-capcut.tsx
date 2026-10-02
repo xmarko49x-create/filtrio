@@ -8,13 +8,14 @@ export const submagicVsCapcut: ComparatifData = {
   hero: {
     h1: "lequel choisir ?",
     tagline:
-      "Le spécialiste payant des sous-titres FR (Submagic) contre l'éditeur vidéo gratuit leader (CapCut). Deux philosophies : qualité premium contre éditeur complet accessible sans payer. Voici laquelle colle à ton profil et ton budget.",
+      "Le spécialiste payant des sous-titres FR (Submagic) contre l'éditeur vidéo gratuit leader (CapCut). Deux philosophies : qualité premium contre éditeur complet aux nombreuses fonctions gratuites. Voici laquelle colle à ton profil et ton budget.",
     tempsLecture: 6,
     lastCheck: "24/08/2026",
+    contentUpdate: "02/10/2026",
   },
   verdictRapide: {
     headline:
-      "Submagic pour qui veut des shorts léchés. CapCut pour qui veut tout faire sans payer.",
+      "Submagic pour qui veut des shorts léchés. CapCut pour qui veut monter sans payer.",
     paragraphs: [
       <>
         <strong className="text-amber-400">Submagic</strong>{" "}est une option
@@ -23,7 +24,8 @@ export const submagicVsCapcut: ComparatifData = {
         shorts. Ses styles animés font la différence visuellement.{" "}
         <strong className="text-sky-400">CapCut</strong>{" "}est un choix solide si
         tu débutes, si ton budget est zéro, ou si tu veux un éditeur vidéo
-        complet en plus du sous-titrage.
+        complet en plus du sous-titrage. Pour les sous-titres, limites du
+        plan gratuit à vérifier : voir notre test plus bas.
       </>,
       <>
         La question n&apos;est donc pas &quot;lequel est le meilleur&quot; mais
@@ -83,7 +85,7 @@ export const submagicVsCapcut: ComparatifData = {
     "Tu veux maximiser le rendement par short",
   ],
   porQuiB: [
-    "Ton budget est zéro (la version gratuite de CapCut couvre la majorité des besoins, un plan Pro existe pour les fonctionnalités avancées)",
+    "Ton budget est zéro et tu cherches surtout un éditeur (limites du plan gratuit à vérifier pour les sous-titres)",
     "Tu débutes et tu n'es pas sûr de ton engagement dans la création",
     "Tu veux aussi un éditeur vidéo complet (timeline, transitions, effets)",
     "Tu montes tes vidéos principalement sur mobile",
@@ -99,7 +101,7 @@ export const submagicVsCapcut: ComparatifData = {
     {
       profil: "Débutant qui teste avant de s'engager",
       description:
-        "CapCut permet de poster sans budget pendant plusieurs mois, le temps de savoir si la création t'intéresse vraiment. Tu basculeras sur Submagic plus tard si besoin.",
+        "CapCut permet d'apprendre le montage sans budget, le temps de savoir si la création t'intéresse vraiment. Limites du plan gratuit à vérifier si tu veux publier avec des légendes automatiques. Tu basculeras sur Submagic plus tard si besoin.",
       gagnant: "B",
     },
     {
@@ -126,7 +128,8 @@ export const submagicVsCapcut: ComparatifData = {
     paragraph: (
       <>
         Submagic pour un créateur régulier qui veut des shorts léchés en FR.
-        CapCut pour un débutant sans budget ou pour quelqu&apos;un qui veut
+        CapCut pour un débutant qui veut apprendre le montage sans payer ou
+        pour quelqu&apos;un qui veut
         aussi un éditeur vidéo complet. Beaucoup d&apos;utilisateurs avancés
         combinent les deux : CapCut pour le montage général, Submagic pour
         finaliser les sous-titres FR stylés.
@@ -223,22 +226,14 @@ export const submagicVsCapcut: ComparatifData = {
           plan gratuit sert à voir le rendu, pas à publier.
         </p>
         <p className="mb-4">
-          Mais les deux blocages n&apos;ont pas la même nature, et la nuance
-          change tout.{" "}
-          <strong className="text-sky-400">
-            Chez CapCut, ce n&apos;est pas l&apos;export qui est payant, c&apos;est
-            la fonction que nous avions utilisée
-          </strong>{" "}
-          : l&apos;écran de blocage nomme les « légendes automatiques » et ne
-          liste rien d&apos;autre. D&apos;après notre usage de CapCut en dehors
-          de ce test, un montage assemblé soi-même sans aucune option marquée
-          d&apos;un diamant s&apos;exporte gratuitement.{" "}
+          Les deux blocages n&apos;ont pas la même forme. Submagic demande un
+          abonnement dès l&apos;export. Chez CapCut, l&apos;écran de blocage
+          nomme une seule fonction Pro, les « légendes automatiques », et ne
+          liste rien d&apos;autre.{" "}
           <strong className="text-slate-300">
-            Cette manipulation-là n&apos;a pas été refaite le 24 août
-          </strong>{" "}
-          : nous la signalons parce qu&apos;elle est utile, pas comme un
-          résultat mesuré, et elle ne compte donc pas dans le tableau
-          ci-dessus.
+            L&apos;export sans cette fonction n&apos;a pas été testé
+          </strong>
+          , et les offres peuvent évoluer selon la version et la plateforme.
         </p>
         <p className="mb-4">
           Sur la vitesse, CapCut prend l&apos;avantage : moins d&apos;une minute
@@ -308,7 +303,7 @@ export const submagicVsCapcut: ComparatifData = {
     {
       question: "CapCut est-il vraiment gratuit sans limite ?",
       answer:
-        "Le plan gratuit couvre la majorité des besoins d'un créateur individuel : export HD, sous-titres auto, templates, effets de base. Certaines fonctionnalités premium (export 4K, stock premium, fonctionnalités IA avancées) nécessitent le plan Pro. Pour de la création de shorts classique, la version gratuite reste suffisante.",
+        "Non. Le plan gratuit donne accès à de nombreuses fonctions de montage, mais lors de notre essai du 24 août 2026, l'export avec les légendes automatiques a demandé un abonnement Pro. Nous n'avons pas testé l'export sans ces légendes. Les offres peuvent évoluer selon la version et la plateforme.",
     },
     {
       question:

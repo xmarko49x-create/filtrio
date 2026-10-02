@@ -10,6 +10,7 @@ import { AuthorBio } from "@/components/AuthorBio";
 import { TrackedAffiliateLink } from "@/components/TrackedAffiliateLink";
 import { getOutil, type TailwindColor } from "@/lib/outils";
 import { getFaqPageSchema, getBreadcrumbSchema } from "@/lib/schema";
+import { formatDateLongFR } from "@/lib/author";
 
 /** Permet de définir un "outil fantôme" quand la fiche n'existe pas encore (Pika, Pictory…). */
 export interface PhantomOutil {
@@ -31,7 +32,10 @@ export interface ComparatifData {
     h1: string;
     tagline: string;
     tempsLecture: number;
+    /** Date de vérification des données et des prix (DD/MM/YYYY). */
     lastCheck: string;
+    /** Dernière mise à jour éditoriale, distincte de la vérification des prix (DD/MM/YYYY). */
+    contentUpdate?: string;
   };
   verdictRapide: {
     headline: ReactNode;
@@ -166,7 +170,7 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
         </h1>
         <div className="mb-6">
           <AuthorByline
-            lastCheck={data.hero.lastCheck}
+            lastCheck={data.hero.contentUpdate ?? data.hero.lastCheck}
             subtitle="Comparateur indépendant · Méthodologie en 6 critères"
           />
         </div>
@@ -182,6 +186,12 @@ export default function ComparatifLayout({ data }: { data: ComparatifData }) {
             <span className="text-slate-400">Dernière vérification :</span>{" "}
             {data.hero.lastCheck}
           </div>
+          {data.hero.contentUpdate && (
+            <div>
+              <span className="text-slate-400">Contenu mis à jour le</span>{" "}
+              {formatDateLongFR(data.hero.contentUpdate)}
+            </div>
+          )}
         </div>
       </section>
 

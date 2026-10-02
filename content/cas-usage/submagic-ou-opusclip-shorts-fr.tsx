@@ -10,7 +10,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
       "C'est la question qui revient le plus chez les créateurs FR. Les deux outils sont excellents mais ne résolvent pas le même problème. Voici le choix guidé en 4 questions pour savoir lequel prendre, ou quand utiliser les deux.",
     tempsLecture: 5,
     outilsAnalyses: 2,
-    lastCheck: "10/07/2026",
+    lastCheck: "02/10/2026",
   },
   verdict: {
     tag: "La recommandation tout de suite",
@@ -150,7 +150,7 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
     {
       titre: "Ignorer le volume réel de production",
       description:
-        "Si tu publies quelques shorts par mois en occasionnel, CapCut gratuit suffit, ni Submagic ni OpusClip ne sont justifiés. Si tu publies plusieurs shorts par semaine pour construire une audience, le combo Submagic + OpusClip peut se rentabiliser rapidement.",
+        "Si tu publies quelques shorts par mois en occasionnel, ni Submagic ni OpusClip ne sont justifiés : un plan gratuit peut suffire, à condition de vérifier ses limites. Si tu publies plusieurs shorts par semaine pour construire une audience, le combo Submagic + OpusClip peut se rentabiliser rapidement.",
     },
     {
       titre: "Oublier que l'affiliation existe",
@@ -206,9 +206,11 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
       question: "Tu es débutant avec budget zéro ?",
       reponse: (
         <>
-          Plan gratuit OpusClip ou{" "}
-          <strong className="text-sky-400">CapCut</strong>{" "}gratuit.
-          L&apos;essai Submagic reste limité pour un vrai test.
+          Plan gratuit OpusClip (export obtenu avec filigrane lors de notre
+          essai) ou{" "}
+          <strong className="text-sky-400">CapCut</strong>{" "}pour le montage
+          (limites du plan gratuit à vérifier pour les sous-titres). L&apos;essai Submagic reste limité pour un
+          vrai test.
         </>
       ),
     },
@@ -247,11 +249,15 @@ export const submagicOuOpusclipShortsFr: CasUsageData = {
       question: "Peut-on remplacer Submagic par CapCut dans le combo ?",
       answer: (
         <>
-          Oui, possible si budget serré. Workflow : OpusClip pour découper,{" "}
+          Possible si budget serré, avec une limite. Workflow : OpusClip pour
+          découper,{" "}
           <Link href="/outils/capcut" className="text-sky-400 hover:underline">
             CapCut
           </Link>{" "}
-          (gratuit) pour finaliser. Tu économises le coût de Submagic, mais tu
+          pour finaliser le montage. Lors de notre essai du 24 août 2026,
+          l&apos;export avec les légendes automatiques de CapCut a demandé Pro :
+          vérifie les limites affichées avant de compter dessus pour les
+          sous-titres. Tu économises le coût de Submagic, mais tu
           perds du temps en personnalisation manuelle par short. Équation à
           faire selon ton volume de production.
         </>

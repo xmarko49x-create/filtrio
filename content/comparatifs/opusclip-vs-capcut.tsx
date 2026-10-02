@@ -11,6 +11,7 @@ export const opusclipVsCapcut: ComparatifData = {
       "Le spécialiste découpe IA (OpusClip) contre l'éditeur gratuit leader (CapCut). Deux philosophies opposées : automatisation premium vs éditeur manuel polyvalent. Voici laquelle convient à ton profil.",
     tempsLecture: 5,
     lastCheck: "10/07/2026",
+    contentUpdate: "02/10/2026",
   },
   verdictRapide: {
     headline: "OpusClip pour l'automatisation. CapCut pour démarrer sans payer.",
@@ -122,7 +123,7 @@ export const opusclipVsCapcut: ComparatifData = {
     {
       profil: "Étudiant ou créateur débutant sans budget",
       description:
-        "CapCut gratuit, complet, pas d'engagement. Ideal pour apprendre le montage et publier. OpusClip viendra plus tard si le volume augmente.",
+        "CapCut propose de nombreuses fonctions gratuites, sans engagement. Idéal pour apprendre le montage. Limites du plan gratuit à vérifier pour publier avec des légendes automatiques. OpusClip viendra plus tard si le volume augmente.",
       gagnant: "B",
     },
     {

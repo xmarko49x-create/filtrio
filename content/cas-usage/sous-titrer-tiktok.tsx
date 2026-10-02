@@ -10,7 +10,7 @@ export const sousTitrerTiktok: CasUsageData = {
       "Tu veux des sous-titres stylés en français sur tes TikTok, sans passer 30 minutes par vidéo à les ajuster. Voici notre classement des outils qui livrent le meilleur rendu FR, le gagnant, et les pièges à éviter.",
     tempsLecture: 5,
     outilsAnalyses: 5,
-    lastCheck: "10/07/2026",
+    lastCheck: "02/10/2026",
   },
   verdict: {
     tag: "Le verdict en 30 secondes",
@@ -31,8 +31,16 @@ export const sousTitrerTiktok: CasUsageData = {
         <Link href="/outils/capcut" className="text-sky-400 hover:underline">
           notre avis sur CapCut Desktop, testé
         </Link>{" "}
-        si tu veux du gratuit. Acceptable mais demande plus de travail manuel
-        pour approcher le rendu Submagic.
+        si tu veux commencer par un éditeur aux nombreuses fonctions gratuites.
+        Acceptable mais demande plus de travail manuel pour approcher le rendu
+        Submagic. Une limite à connaître : lors de notre essai du 24 août 2026,
+        CapCut a généré les légendes automatiques, mais leur export a demandé
+        Pro ; l&apos;export sans cette fonction n&apos;a pas été testé et les
+        offres peuvent évoluer. Détail sur notre{" "}
+        <Link href="/banc-essai" className="text-emerald-400 hover:underline">
+          banc d&apos;essai
+        </Link>
+        .
       </>,
     ],
   },
@@ -92,21 +100,22 @@ export const sousTitrerTiktok: CasUsageData = {
     {
       slug: "capcut",
       scoreCas: 8.0,
-      badge: "Gratuit",
+      badge: "Montage gratuit",
       pourquoiGagne: [
-        "Gratuit avec sous-titres FR automatiques de qualité correcte",
+        "Génération de sous-titres FR automatiques de qualité correcte",
         "Templates de sous-titres animés disponibles dans la bibliothèque intégrée",
         "Recadrage 9:16 et autres formats verticaux natifs",
         "Édition complète : tu peux finaliser ton TikTok dans la même app",
         "Disponible sur mobile (iOS/Android) pour éditer en déplacement",
       ],
       limites: [
+        "Export avec légendes automatiques classé Pro lors de notre essai",
         "Style viral TikTok moins prêt à l'emploi que Submagic, nécessite ajustement manuel",
         "Précision FR correcte mais légèrement en retrait sur les accents et le vocabulaire courant",
         "Templates de sous-titres animés moins variés que Submagic pour le format short",
       ],
       verdict:
-        "L'alternative gratuite la plus sérieuse. Sous-titres FR corrects, mais style viral à personnaliser manuellement. Compte 3-5 minutes de retouches par vidéo pour approcher le rendu Submagic.",
+        "Une alternative sérieuse pour le montage, avec de nombreuses fonctions gratuites. Sous-titres FR corrects, mais style viral à personnaliser manuellement et limites du plan gratuit à vérifier. Compte 3-5 minutes de retouches par vidéo pour approcher le rendu Submagic.",
       priceDisplay: { label: "Prix", value: "Gratuit" },
     },
     {
@@ -227,8 +236,14 @@ export const sousTitrerTiktok: CasUsageData = {
       question: "Budget zéro ?",
       reponse: (
         <>
-          Si oui → <strong className="text-sky-400">CapCut</strong>{" "}gratuit.
-          Personnalisation manuelle requise pour le rendu stylé.
+          Si oui → compare d&apos;abord les limites des plans gratuits :{" "}
+          <strong className="text-emerald-400">OpusClip</strong>{" "}et{" "}
+          <strong className="text-sky-400">CapCut</strong>{" "}n&apos;ont pas
+          les mêmes.{" "}
+          <Link href="/banc-essai" className="text-emerald-400 hover:underline">
+            Comparer nos trois essais
+          </Link>
+          .
         </>
       ),
     },
@@ -254,7 +269,7 @@ export const sousTitrerTiktok: CasUsageData = {
     {
       question: "CapCut gratuit suffit-il pour TikTok FR ?",
       answer:
-        "Pour 1-2 shorts par mois occasionnels, oui. Pour une publication régulière avec un rendu pro cohérent, Submagic fait gagner du temps et améliore le rendu. Calcul ROI : si tu postes 4+ shorts/mois, Submagic se rentabilise.",
+        "Pour le montage de 1-2 shorts par mois occasionnels, il peut suffire. Pour les sous-titres, attention : lors de notre essai du 24 août 2026, l'export avec les légendes automatiques a demandé Pro. Pour une publication régulière avec un rendu pro cohérent, Submagic fait gagner du temps et améliore le rendu. Calcul ROI : si tu postes 4+ shorts/mois, Submagic se rentabilise.",
     },
     {
       question: "Puis-je cumuler Submagic et OpusClip ?",

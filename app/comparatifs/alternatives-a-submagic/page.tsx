@@ -39,11 +39,11 @@ const ALTERNATIVES: Alternative[] = [
     positionnement: "Gratuit",
     scoreAlt: 7.8,
     pourquoi:
-      "Éditeur vidéo complet + sous-titres auto. Rapport qualité/prix imbattable (c'est gratuit). La référence pour qui ne peut ou ne veut pas payer.",
+      "CapCut Desktop propose un éditeur vidéo complet et permet de générer des légendes automatiques. Il reste utilisable gratuitement pour de nombreuses opérations de montage.",
     limites:
-      "Moins spécialisé sur les sous-titres viraux FR. Le rendu demande de la personnalisation manuelle. ByteDance (TikTok) = certaines entreprises bloquent.",
+      "Lors de notre essai du 24 août 2026, les légendes automatiques étaient signalées comme une fonction Pro au moment de l'export. Nous n'avons donc pas obtenu gratuitement le fichier sous-titré. Nous n'avons pas testé l'export après suppression de ces légendes. Le résultat dépend des fonctions utilisées et peut évoluer selon la version, la plateforme et les offres de CapCut.",
     verdict:
-      "Alternative n°1 si ton budget est zéro. Tu ne retrouveras pas les templates viraux prêts de Submagic, mais tu couvriras 80% des besoins.",
+      "CapCut reste une solution intéressante pour monter gratuitement une vidéo. En revanche, notre essai ne permet pas de le recommander comme solution gratuite garantie pour générer puis exporter des sous-titres automatiques.",
     priceLabel: "Gratuit · Pro à 23,99 €/mois",
   },
   {
@@ -139,7 +139,8 @@ const TABLE_ROWS: TableRow[] = [
   },
   {
     nom: "CapCut",
-    gratuit: "Oui (éditeur complet)",
+    gratuit:
+      "Oui pour le montage ; lors de notre test, l'export avec légendes automatiques a demandé Pro",
     prix: "Gratuit · Pro à 23,99 €/mois (App Store FR, variable selon plateforme)",
     meilleurPour: "Éditeur gratuit polyvalent",
     sousTitresFR: "Corrects, plus de réglage manuel",
@@ -157,6 +158,29 @@ const TABLE_ROWS: TableRow[] = [
     prix: "16 $/mois",
     meilleurPour: "Long format, podcasts, tutos",
     sousTitresFR: "Bons en long format, pas le short viral",
+  },
+];
+
+/**
+ * Résultats du banc d'essai (/banc-essai) repris tels quels :
+ * même fichier vidéo FR de 1 min 17, réglages par défaut, aucun essai payant.
+ */
+const ESSAIS_ROWS = [
+  {
+    outil: "OpusClip",
+    date: "21 août 2026",
+    resultat: "Export obtenu, avec un filigrane",
+  },
+  {
+    outil: "Submagic",
+    date: "21 août 2026",
+    resultat: "Abonnement demandé au moment de l'export",
+  },
+  {
+    outil: "CapCut Desktop",
+    date: "24 août 2026",
+    resultat:
+      "Export bloqué avec les légendes automatiques, indiquées comme une fonction Pro",
   },
 ];
 
@@ -180,7 +204,7 @@ export default function AlternativesASubmagicPage() {
         </div>
         <div className="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 rounded-full px-4 py-1.5 text-xs text-slate-300 mb-6">
           <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-          Mise à jour · juillet 2026
+          Mise à jour · octobre 2026
         </div>
         <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-6 tracking-tight">
           Alternative à <span className="text-amber-400">Submagic</span> : les
@@ -200,7 +224,7 @@ export default function AlternativesASubmagicPage() {
           </div>
           <div>
             <span className="text-slate-400">Dernière mise à jour :</span>{" "}
-            29/06/2026
+            02/10/2026
           </div>
         </div>
       </section>
@@ -294,8 +318,10 @@ export default function AlternativesASubmagicPage() {
                       </span>
                     )}
                   </td>
-                  <td className="px-4 py-3 text-slate-300">{row.gratuit}</td>
-                  <td className="px-4 py-3 text-slate-300 whitespace-nowrap">
+                  <td className="px-4 py-3 text-slate-300 min-w-[190px]">
+                    {row.gratuit}
+                  </td>
+                  <td className="px-4 py-3 text-slate-300 min-w-[200px]">
                     {row.prix}
                   </td>
                   <td className="px-4 py-3 text-slate-300">
@@ -317,6 +343,56 @@ export default function AlternativesASubmagicPage() {
           gratuite à l&apos;inscription, plan Max à 24,99 $/mois affiché en prix
           iOS USD, un plan Pro existe sans tarif affiché).
         </p>
+
+        {/* RÉSULTATS DU BANC D'ESSAI */}
+        <div className="mt-12">
+          <h3 className="text-2xl font-bold mb-4 tracking-tight">
+            Ce que nos essais gratuits ont réellement permis d&apos;exporter
+          </h3>
+          <p className="text-slate-400 leading-relaxed mb-6 max-w-3xl">
+            Nous avons essayé CapCut Desktop, OpusClip et Submagic avec le même
+            fichier vidéo en français et sans activer d&apos;essai payant.
+          </p>
+          <div className="overflow-x-auto rounded-2xl border border-slate-800">
+            <table className="w-full text-sm text-left border-collapse min-w-[520px]">
+              <thead>
+                <tr className="bg-slate-900 text-slate-300">
+                  <th className="px-4 py-3 font-semibold">Outil</th>
+                  <th className="px-4 py-3 font-semibold">Date du test</th>
+                  <th className="px-4 py-3 font-semibold">
+                    Résultat avec le plan gratuit
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {ESSAIS_ROWS.map((row) => (
+                  <tr key={row.outil} className="border-t border-slate-800 bg-slate-900/40">
+                    <td className="px-4 py-3 font-semibold text-slate-100 whitespace-nowrap">
+                      {row.outil}
+                    </td>
+                    <td className="px-4 py-3 text-slate-300 whitespace-nowrap">
+                      {row.date}
+                    </td>
+                    <td className="px-4 py-3 text-slate-300">{row.resultat}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-sm text-slate-400 mt-4 leading-relaxed max-w-3xl">
+            Ces résultats portent sur une seule vidéo de 1 minute 17, avec les
+            réglages par défaut. Pour CapCut, nous n&apos;avons pas testé
+            l&apos;export après suppression des légendes automatiques : notre
+            constat concerne uniquement l&apos;export avec cette fonction
+            activée.
+          </p>
+          <Link
+            href="/banc-essai"
+            className="inline-block mt-4 text-sm text-amber-400 hover:underline"
+          >
+            Voir le protocole et les résultats complets du banc d&apos;essai
+          </Link>
+        </div>
       </section>
 
       {/* FOCUS CAPTIONS */}
@@ -433,15 +509,20 @@ export default function AlternativesASubmagicPage() {
                 Budget zéro : tu ne veux rien payer
               </h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Va sur{" "}
                 <Link href="/outils/capcut" className="text-sky-400 hover:underline">
-                  notre avis sur CapCut Desktop
+                  CapCut Desktop
+                </Link>{" "}
+                permet d&apos;effectuer gratuitement de nombreuses opérations de
+                montage, mais notre essai du 24 août 2026 a demandé un
+                abonnement Pro au moment d&apos;exporter la vidéo avec les
+                légendes automatiques. OpusClip nous a permis d&apos;exporter
+                gratuitement le fichier testé, avec un filigrane. Si ton
+                objectif est précisément d&apos;obtenir gratuitement une vidéo
+                sous-titrée et exportable, vérifie les limites affichées par
+                chaque outil avant de commencer ton montage.{" "}
+                <Link href="/banc-essai" className="text-sky-400 hover:underline">
+                  Comparer nos trois essais gratuits
                 </Link>
-                , l&apos;un des éditeurs gratuits les plus complets, avec sous-titres
-                automatiques inclus. Le compromis : un rendu moins stylé que
-                Submagic et plus de réglage manuel pour approcher le même
-                résultat. Pour la plupart des besoins de base, ça suffit
-                largement.
               </p>
             </div>
           </li>
@@ -571,7 +652,12 @@ export default function AlternativesASubmagicPage() {
                 <span className="faq-chevron transition-transform text-amber-400">+</span>
               </summary>
               <div className="text-slate-400 mt-4 leading-relaxed">
-                Oui, le plan gratuit CapCut n&apos;a pas de limite de durée d&apos;utilisation. Certains assets sont watermarkés, mais l&apos;éditeur complet est accessible. La vraie limite est qualitative : le rendu demande plus de travail manuel pour approcher celui de Submagic.
+                Pas pour tout. Le plan gratuit permet de nombreuses opérations de
+                montage, mais lors de notre essai du 24 août 2026, l&apos;export
+                de la vidéo avec les légendes automatiques a demandé un
+                abonnement Pro. Nous n&apos;avons pas testé l&apos;export après
+                suppression de ces légendes. Les limites peuvent évoluer selon
+                la version, la plateforme et les offres de CapCut.
               </div>
             </details>
             <details className="group bg-slate-900 border border-slate-800 rounded-xl p-6 open:border-amber-500/30">

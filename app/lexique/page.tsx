@@ -13,6 +13,8 @@ import { AuthorByline } from "@/components/AuthorByline";
 import { AuthorBio } from "@/components/AuthorBio";
 
 const LAST_UPDATED = "26/05/2026";
+/** Date de la dernière révision éditoriale (distincte de la vérification des définitions). */
+const LAST_EDIT = "02/10/2026";
 
 export const metadata: Metadata = {
   title:
@@ -237,7 +239,9 @@ const TERMS: Term[] = [
         paroles, segmente en blocs lisibles. Étape avancée : il anime les
         mots un par un, met des emphases, ajoute des emojis, propose des
         styles visuels (templates). Référence du marché côté shorts FR :
-        Submagic. Côté gratuit/basique : CapCut. Toujours relire la
+        Submagic. Côté éditeur avec plan gratuit : CapCut, mais
+        l&apos;export avec légendes automatiques a demandé Pro lors de notre
+        essai du 24 août 2026. Toujours relire la
         transcription, surtout en français.
       </>
     ),
@@ -576,7 +580,7 @@ export default function LexiquePage() {
             avant de t&apos;abonner.
           </p>
           <AuthorByline
-            lastCheck={LAST_UPDATED}
+            lastCheck={LAST_EDIT}
             subtitle="Comparateur indépendant · Définitions neutres"
           />
         </div>

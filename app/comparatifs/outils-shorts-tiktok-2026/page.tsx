@@ -15,6 +15,8 @@ const TITLE = "Meilleur outil pour Shorts en 2026 : 6 solutions comparées";
 const SUBTITLE =
   "Submagic, OpusClip, CapCut, Descript, Veed et Kapwing comparés sur 12 critères : prix, sous-titres français, clipping, export et verdict par profil.";
 const LAST_CHECK = "10/07/2026";
+/** Date de la dernière révision éditoriale (distincte de la vérification des données). */
+const LAST_UPDATE = "02/10/2026";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -64,7 +66,8 @@ const OUTILS_COMPARES: OutilCard[] = [
     badge: "Le roi du gratuit",
     bestFor: "Débutants sans budget qui veulent un éditeur complet sans payer.",
     forceMajeure: "Gratuit avec une qualité largement suffisante. Communauté massive sur TikTok.",
-    faiblesseMajeure: "Sous-titres FR moins automatisés, plus manuels que Submagic.",
+    faiblesseMajeure:
+      "Sous-titres FR moins automatisés, plus manuels que Submagic ; export avec légendes auto classé Pro lors de notre essai.",
   },
   {
     slug: "veed",
@@ -124,7 +127,7 @@ const CRITERES_TABLEAU: CritereLine[] = [
       "Essai 3 vidéos",
       "60 crédits/mois",
       "Plan Free disponible",
-      "Oui, complet",
+      "Oui, mais légendes auto classées Pro à l'export lors de notre essai",
       "Plan Free disponible",
       "Plan Free disponible",
     ],
@@ -270,7 +273,7 @@ const FAQ = [
     question:
       "Quel outil choisir si je débute totalement sans budget ?",
     answer:
-      "CapCut sans hésiter. Sa version de base est gratuite, fonctionne sur PC et mobile, et la qualité est largement suffisante pour démarrer. La communauté FR est immense, tu trouveras un tuto pour tout. Tu pourras toujours upgrader vers Submagic ou OpusClip plus tard si tu deviens régulier et que tu sens un plafond.",
+      "CapCut sans hésiter. Sa version de base est gratuite, fonctionne sur PC et mobile, et la qualité est largement suffisante pour démarrer. Pour les sous-titres automatiques, limites du plan gratuit à vérifier. La communauté FR est immense, tu trouveras un tuto pour tout. Tu pourras toujours upgrader vers Submagic ou OpusClip plus tard si tu deviens régulier et que tu sens un plafond.",
   },
   {
     question:
@@ -292,9 +295,24 @@ const FAQ = [
   },
   {
     question:
-      "CapCut est gratuit, pourquoi prendre du payant ?",
-    answer:
-      "CapCut gratuit fait 80 % du job pour 0 €. Le payant a du sens uniquement si tu cherches un gain de temps précis : sous-titres FR ultra-rapides à corriger (Submagic), clipping automatique depuis une longue vidéo (OpusClip), ou collaboration équipe (Kapwing). Si tu publies 1-2 shorts par mois, CapCut suffit. Si tu publies 5+ par semaine, tu sentiras vite la limite.",
+      "CapCut a un plan gratuit, pourquoi prendre du payant ?",
+    answer: (
+      <>
+        CapCut propose de nombreuses fonctions gratuites, mais pas tout : lors
+        de notre essai du 24 août 2026, CapCut a généré les légendes
+        automatiques, mais leur export a demandé Pro. L&apos;export sans cette
+        fonction n&apos;a pas été testé, et les offres peuvent évoluer. Détail
+        sur notre{" "}
+        <Link href="/banc-essai" className="text-emerald-400 hover:underline">
+          banc d&apos;essai
+        </Link>
+        . Le payant a du sens si tu cherches un gain de temps précis :
+        sous-titres FR ultra-rapides à corriger (Submagic), clipping
+        automatique depuis une longue vidéo (OpusClip), ou collaboration équipe
+        (Kapwing). Si tu publies 1-2 shorts par mois, CapCut peut suffire pour
+        le montage. Si tu publies 5+ par semaine, tu sentiras vite la limite.
+      </>
+    ),
   },
   {
     question:
@@ -339,7 +357,7 @@ export default function GrandComparatifPage() {
         </div>
         <div className="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 rounded-full px-4 py-1.5 text-xs text-slate-300 mb-8">
           <span className="w-2 h-2 bg-amber-500 rounded-full animate-pulse" />
-          Page-pilier · Mise à jour {LAST_CHECK}
+          Page-pilier · Mise à jour {LAST_UPDATE}
         </div>
         <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-5 tracking-tight">
           Quel est le meilleur outil pour créer des{" "}
@@ -347,7 +365,7 @@ export default function GrandComparatifPage() {
         </h1>
         <div className="mb-6">
           <AuthorByline
-            lastCheck={LAST_CHECK}
+            lastCheck={LAST_UPDATE}
             subtitle="Comparateur indépendant · Méthodologie en 6 critères"
           />
         </div>

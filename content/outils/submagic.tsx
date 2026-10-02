@@ -41,6 +41,7 @@ export const submagicFiche: FicheData = {
     langue: "Interface disponible en français",
     tempsLecture: 8,
     lastCheck: "21/08/2026",
+    contentUpdate: "02/10/2026",
   },
   verdict30s: [
     {
@@ -572,7 +573,7 @@ export const submagicFiche: FicheData = {
     {
       question: "Submagic vaut-il son abonnement pour un créateur qui débute ?",
       answer:
-        "Oui si tu publies au moins 4-5 shorts par mois. Le temps gagné sur les sous-titres stylés compense rapidement le coût. Non si tu publies très occasionnellement, CapCut gratuit fera l'affaire.",
+        "Oui si tu publies au moins 4-5 shorts par mois. Le temps gagné sur les sous-titres stylés compense rapidement le coût. Non si tu publies très occasionnellement : un plan gratuit peut suffire, en vérifiant ses limites.",
     },
     {
       question: "La précision FR est-elle vraiment meilleure que les alternatives ?",
@@ -607,7 +608,9 @@ export const submagicFiche: FicheData = {
       question: "Quelles sont les meilleures alternatives à Submagic ?",
       answer: (
         <>
-          Ça dépend de ton usage : CapCut en gratuit, OpusClip pour découper du
+          Ça dépend de ton usage : CapCut pour un éditeur aux nombreuses fonctions
+          gratuites (lors de notre essai du 24 août 2026, l&apos;export avec les
+          légendes automatiques a demandé Pro), OpusClip pour découper du
           long format, Descript pour le long format, Veed en éditeur polyvalent,
           Captions pour la création tout-IA. On les compare dans un tableau et
           par cas d&apos;usage sur notre page{" "}

@@ -125,7 +125,7 @@ export const COMPARATIFS: ComparatifMeta[] = [
     slug: "alternatives-a-submagic",
     titre: "Alternatives à Submagic",
     description:
-      "5 alternatives sérieuses à Submagic, dont 2 gratuites qui tiennent la route.",
+      "5 alternatives sérieuses à Submagic, avec des plans gratuits aux limites différentes.",
     outilA: "submagic",
     outilB: "",
     tempsLecture: 7,

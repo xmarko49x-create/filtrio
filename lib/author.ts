@@ -48,3 +48,28 @@ export function formatDateFR(lastCheck: string): string {
   const monthIndex = parseInt(mm, 10) - 1;
   return `${day} ${months[monthIndex]} ${yyyy}`;
 }
+
+/**
+ * Convertit une date "02/10/2026" en "2 octobre 2026" (mois en toutes
+ * lettres), pour la mention « Contenu mis à jour le ».
+ */
+export function formatDateLongFR(date: string): string {
+  const match = date.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+  if (!match) return date;
+  const [, dd, mm, yyyy] = match;
+  const months = [
+    "janvier",
+    "février",
+    "mars",
+    "avril",
+    "mai",
+    "juin",
+    "juillet",
+    "août",
+    "septembre",
+    "octobre",
+    "novembre",
+    "décembre",
+  ];
+  return `${parseInt(dd, 10)} ${months[parseInt(mm, 10) - 1]} ${yyyy}`;
+}

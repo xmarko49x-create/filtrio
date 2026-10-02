@@ -41,6 +41,7 @@ export const capcutFiche: FicheData = {
     origine: "Chine (ByteDance)",
     tempsLecture: 7,
     lastCheck: "24/08/2026",
+    contentUpdate: "02/10/2026",
   },
   verdict30s: [
     {
@@ -97,8 +98,10 @@ export const capcutFiche: FicheData = {
       question: "Est-ce qu'on le recommande ?",
       answer: (
         <>
-          <strong className="text-sky-400">Oui, pour démarrer</strong>. Rapport
-          valeur/prix imbattable (c&apos;est gratuit). Mais pour un usage pro
+          <strong className="text-sky-400">Oui, pour démarrer</strong>. De
+          nombreuses fonctions de montage sont gratuites, avec des limites à
+          vérifier pour les sous-titres automatiques (voir notre test plus
+          bas). Mais pour un usage pro
           régulier, les outils spécialisés font mieux sur leur niche.
         </>
       ),
@@ -122,9 +125,9 @@ export const capcutFiche: FicheData = {
           utilises vraiment.
         </p>
         <p>
-          Pour démarrer, la version gratuite de CapCut Desktop suffit largement :
-          l&apos;éditeur et l&apos;essentiel des fonctions sont accessibles sans
-          payer. L&apos;abonnement Pro s&apos;adresse surtout à ceux qui ont besoin
+          Pour démarrer le montage, la version gratuite de CapCut Desktop donne
+          accès à de nombreuses fonctions de l&apos;éditeur, avec des limites à
+          vérifier pour les sous-titres automatiques (détail plus bas). L&apos;abonnement Pro s&apos;adresse surtout à ceux qui ont besoin
           des ressources premium et des fonctions IA au quotidien.
         </p>
 
@@ -654,32 +657,13 @@ export const capcutFiche: FicheData = {
             et l&apos;export nous a été refusé. Sur cet essai, le sous-titrage
             gratuit de CapCut permet de voir le rendu, pas de le publier.
           </p>
-          <p className="mb-3">
+          <p className="mb-0">
+            L&apos;écran de blocage nommait une seule fonction Pro, les
+            « légendes automatiques », et ne listait rien d&apos;autre.{" "}
             <strong className="text-slate-100">
-              Et surtout : ça ne veut pas dire que CapCut est payant.
-            </strong>{" "}
-            L&apos;export nous a été refusé{" "}
-            <strong className="text-slate-100">
-              parce que notre montage contenait une fonction Pro
-            </strong>{" "}
-            — l&apos;écran de blocage la nomme lui-même, « légendes
-            automatiques », et ne liste rien d&apos;autre. Ce n&apos;est pas
-            l&apos;export qui est payant, c&apos;est cette fonction-là.
-          </p>
-          <p className="mb-0 text-slate-400">
-            <strong className="text-slate-300">
-              Précision issue de notre usage de CapCut en dehors de ce test
-            </strong>{" "}
-            : un montage que l&apos;on assemble soi-même, sans activer la
-            moindre option marquée d&apos;un diamant, s&apos;exporte et se
-            télécharge gratuitement. Nous le signalons parce que c&apos;est
-            l&apos;information utile pour un débutant, mais nous ne
-            l&apos;habillons pas en résultat de test :{" "}
-            <strong className="text-slate-300">
-              cette manipulation-là n&apos;a pas été refaite ni capturée le 24
-              août
+              L&apos;export sans cette fonction n&apos;a pas été testé
             </strong>
-            , et elle ne figure donc pas dans le tableau comparatif.
+            , et les offres peuvent évoluer selon la version et la plateforme.
           </p>
         </div>
 
@@ -701,7 +685,7 @@ export const capcutFiche: FicheData = {
   porQui: [
     "Tu débutes et ton budget est zéro",
     "Tu montes principalement sur mobile (app iOS/Android leader du marché)",
-    "Tu veux un éditeur vidéo complet + sous-titres auto en un seul outil",
+    "Tu veux un éditeur vidéo complet qui génère aussi des sous-titres auto (limites du plan gratuit à vérifier)",
     "Tu publies ponctuellement plutôt que professionnellement",
     "Tu es TikTokeur (intégration native avec TikTok)",
     "Tu veux tester le montage vidéo sans t'engager",
@@ -736,7 +720,7 @@ export const capcutFiche: FicheData = {
     {
       titre: "Sous-titres automatiques",
       description:
-        "Génération automatique de sous-titres en français et autres langues. Précision correcte (moins fine que Submagic mais acceptable). Personnalisation manuelle du style possible.",
+        "Génération automatique de sous-titres en français et autres langues. Précision correcte (moins fine que Submagic mais acceptable). Personnalisation manuelle du style possible. Limites du plan gratuit à vérifier à l'export (voir notre test).",
     },
     {
       titre: "Fonctionnalités IA intégrées",
@@ -767,7 +751,7 @@ export const capcutFiche: FicheData = {
       cible: "Créateurs solo et débutants",
       features: [
         "Éditeur vidéo complet (desktop, mobile, web)",
-        "Sous-titres auto",
+        "Génération de sous-titres auto (export avec ces légendes classé Pro lors de notre essai)",
         "Bibliothèque d'assets de base",
         "Fonctionnalités IA de base",
         "Export standard",
@@ -834,7 +818,7 @@ export const capcutFiche: FicheData = {
     {
       question: "Le plan CapCut Pro vaut-il son prix ?",
       answer:
-        "Dépend de ton usage. Si tu utilises régulièrement les fonctionnalités IA avancées et le stock premium, le Pro à 23,99 €/mois (tarif App Store France, variable selon la plateforme et les promotions) peut se justifier. Sinon le plan gratuit couvre largement la majorité des créateurs solo. Un combo à envisager : CapCut gratuit pour monter + Submagic (à partir de 12 €/mois) pour le rendu sous-titres stylés FR.",
+        "Dépend de ton usage. Si tu utilises régulièrement les fonctionnalités IA avancées et le stock premium, le Pro à 23,99 €/mois (tarif App Store France, variable selon la plateforme et les promotions) peut se justifier. Sinon le plan gratuit peut suffire pour le montage, à condition de vérifier les fonctions marquées Pro (voir notre test plus haut). Un combo à envisager : CapCut gratuit pour monter + Submagic (à partir de 12 €/mois) pour le rendu sous-titres stylés FR.",
     },
     {
       question: "La question ByteDance pose-t-elle problème ?",

@@ -569,7 +569,7 @@ export const SCORING_BY_SLUG: Record<string, ScoringCriterion[]> = {
       poids: 20,
       score: 9.8,
       commentaire:
-        "Le point fort absolu. Rapport qualité/prix imbattable puisque le plan gratuit couvre 90% des besoins d'un créateur solo. Aucun concurrent ne propose un éditeur aussi complet gratuitement.",
+        "De nombreuses fonctions de montage sont accessibles gratuitement. Lors de notre essai du 24 août 2026, l'export avec les légendes automatiques a toutefois demandé Pro. L'export sans cette fonction n'a pas été testé, et les offres peuvent évoluer selon la version et la plateforme.",
     },
     {
       label: "Profondeur des fonctionnalités IA",

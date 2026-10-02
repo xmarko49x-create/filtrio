@@ -10,7 +10,7 @@ export const sousTitresRapides: CasUsageData = {
       "Tu veux des sous-titres automatiques en français en moins de 2 minutes par vidéo, sans sacrifier la qualité. Voici notre classement des outils qui livrent le rendu le plus rapide, le gagnant, et les pièges à éviter.",
     tempsLecture: 5,
     outilsAnalyses: 5,
-    lastCheck: "10/07/2026",
+    lastCheck: "02/10/2026",
   },
   verdict: {
     tag: "Le verdict en 30 secondes",
@@ -41,19 +41,21 @@ export const sousTitresRapides: CasUsageData = {
       </>,
       <>
         <strong className="text-slate-200">Exception :</strong>{" "}si tu veux
-        tester en gratuit avant de payer,{" "}
-        <Link href="/outils/capcut" className="text-sky-400 hover:underline">
-          CapCut
-        </Link>{" "}
-        ou{" "}
+        tester en gratuit avant de payer, regarde{" "}
         <Link
           href="/outils/opusclip"
           className="text-emerald-400 hover:underline"
         >
           OpusClip
+        </Link>
+        , qui nous a livré un export gratuit avec filigrane, ou{" "}
+        <Link href="/outils/capcut" className="text-sky-400 hover:underline">
+          CapCut
         </Link>{" "}
-        sont tes alternatives. La vitesse sera comparable, la qualité visuelle
-        légèrement en retrait.
+        pour le montage : lors de notre essai du 24 août 2026, CapCut a généré
+        les légendes automatiques mais a demandé Pro pour les exporter ;
+        l&apos;export sans cette fonction n&apos;a pas été testé et les offres
+        peuvent évoluer. La vitesse sera comparable, la qualité visuelle légèrement en retrait.
       </>,
     ],
   },
@@ -112,21 +114,22 @@ export const sousTitresRapides: CasUsageData = {
     {
       slug: "capcut",
       scoreCas: 8.5,
-      badge: "Gratuit",
+      badge: "Montage gratuit",
       pourquoiGagne: [
-        "Gratuit, sans limite de vidéos sur la version gratuite",
+        "Nombreuses fonctions de montage gratuites",
         "Sous-titres automatiques en français avec qualité correcte",
         "Recadrage 9:16 natif et autres formats verticaux",
         "Disponible sur desktop et mobile (iOS, Android)",
         "Édition complète intégrée pour finaliser dans la même app",
       ],
       limites: [
+        "Export avec légendes automatiques classé Pro lors de notre essai",
         "Personnalisation manuelle nécessaire pour approcher le rendu Submagic",
         "Templates de sous-titres animés moins variés que les outils spécialisés shorts",
         "Workflow plus long si tu vises un style viral spécifique",
       ],
       verdict:
-        "Tu passeras 2-3 minutes de plus par vidéo qu'avec Submagic pour personnaliser le style manuellement. Acceptable si le budget est la priorité.",
+        "Tu passeras 2-3 minutes de plus par vidéo qu'avec Submagic pour personnaliser le style manuellement. Si le budget est la priorité, limites du plan gratuit à vérifier avant de commencer.",
       priceDisplay: { label: "Prix", value: "Gratuit" },
     },
     {
@@ -240,7 +243,8 @@ export const sousTitresRapides: CasUsageData = {
           >
             OpusClip
           </Link>{" "}
-          (plan gratuit récurrent) ou CapCut.
+          (plan gratuit récurrent, export obtenu avec filigrane lors de notre
+          essai) ou CapCut, dont les limites du plan gratuit sont à vérifier.
         </>
       ),
     },
@@ -259,9 +263,14 @@ export const sousTitresRapides: CasUsageData = {
       question: "Ton budget est zéro ?",
       reponse: (
         <>
-          Si oui → <strong className="text-sky-400">CapCut</strong>. Rapide,
-          gratuit, qualité FR correcte. Tu personnaliseras manuellement pour le
-          style.
+          Si oui → compare d&apos;abord les limites des plans gratuits :{" "}
+          <strong className="text-emerald-400">OpusClip</strong>{" "}et{" "}
+          <strong className="text-sky-400">CapCut</strong>{" "}n&apos;ont pas
+          les mêmes.{" "}
+          <Link href="/banc-essai" className="text-emerald-400 hover:underline">
+            Comparer nos trois essais
+          </Link>
+          .
         </>
       ),
     },
@@ -291,7 +300,7 @@ export const sousTitresRapides: CasUsageData = {
     {
       question: "Submagic mérite-t-il son abonnement juste pour la vitesse ?",
       answer:
-        "Dépend de ton volume. Si tu fais 1 short par mois, clairement non, CapCut suffit. Si tu fais 1 short par semaine, le calcul devient intéressant : 4 shorts × 10 min gagnées = 40 min/mois. Si tu fais 3+ shorts par semaine, Submagic se paie tout seul en temps gagné.",
+        "Dépend de ton volume. Si tu fais 1 short par mois, clairement non : un plan gratuit peut suffire, limites à vérifier selon l'outil. Si tu fais 1 short par semaine, le calcul devient intéressant : 4 shorts × 10 min gagnées = 40 min/mois. Si tu fais 3+ shorts par semaine, Submagic se paie tout seul en temps gagné.",
     },
     {
       question: "Peut-on accélérer encore plus avec l'API Submagic ?",
@@ -319,8 +328,20 @@ export const sousTitresRapides: CasUsageData = {
     },
     {
       question: "Y a-t-il un outil vraiment 100% gratuit sans limite ?",
-      answer:
-        "CapCut est le plus proche de ça : version gratuite avec sous-titres auto sans limite de vidéos. Contrainte : il faut personnaliser manuellement le style pour approcher le rendu Submagic, ce qui ralentit. Pour de la vitesse pure en gratuit, CapCut est l'option la plus réaliste.",
+      answer: (
+        <>
+          Pas parmi les trois outils de notre banc d&apos;essai. Sur la même
+          vidéo française de 1 min 17, avec les réglages par défaut, CapCut a
+          généré les légendes automatiques, mais leur export a demandé Pro (24
+          août 2026). OpusClip nous a livré un export gratuit avec filigrane, et
+          Submagic a demandé un abonnement à l&apos;export. Un seul fichier a
+          été testé et les offres peuvent évoluer :{" "}
+          <Link href="/banc-essai" className="text-emerald-400 hover:underline">
+            voir le protocole et les résultats
+          </Link>
+          .
+        </>
+      ),
     },
   ],
   ctaFinal: {

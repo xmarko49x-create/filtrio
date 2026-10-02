@@ -10,7 +10,7 @@ export const videoLongueEnShorts: CasUsageData = {
       "Tu as un podcast, un live ou une conférence d'une à deux heures à recycler en shorts verticaux pour TikTok, Reels ou YouTube Shorts. Voici notre classement des outils qui livrent le meilleur résultat, le gagnant, et les pièges à éviter.",
     tempsLecture: 6,
     outilsAnalyses: 5,
-    lastCheck: "10/07/2026",
+    lastCheck: "02/10/2026",
   },
   verdict: {
     tag: "Le verdict en 30 secondes",
@@ -134,9 +134,9 @@ export const videoLongueEnShorts: CasUsageData = {
     {
       slug: "capcut",
       scoreCas: 7.0,
-      badge: "Gratuit",
+      badge: "Montage gratuit",
       pourquoiGagne: [
-        "Gratuit, sans limite de vidéos sur la version gratuite",
+        "Nombreuses fonctions de montage gratuites",
         "Sous-titres automatiques FR corrects",
         "Édition complète intégrée pour finaliser les clips dans la même app",
         "Disponible sur desktop et mobile (iOS, Android)",
@@ -145,9 +145,10 @@ export const videoLongueEnShorts: CasUsageData = {
         "Pas de détection IA des moments forts : la découpe reste manuelle",
         "Workflow beaucoup plus long sur une source d'une heure",
         "Pas d'import direct par URL YouTube",
+        "Lors de notre essai du 24 août 2026, l'export avec les légendes automatiques a demandé Pro (offres susceptibles d'évoluer)",
       ],
       verdict:
-        "Gratuit, sous-titres auto corrects, mais découpe manuelle. Ne remplace pas OpusClip pour qui veut automatiser. OK pour un créateur occasionnel qui a du temps.",
+        "Nombreuses fonctions gratuites et sous-titres auto corrects, mais découpe manuelle, et limites du plan gratuit à vérifier pour les sous-titres. Ne remplace pas OpusClip pour qui veut automatiser. OK pour un créateur occasionnel qui a du temps.",
       priceDisplay: { label: "Prix", value: "Gratuit" },
     },
     {
@@ -276,7 +277,12 @@ export const videoLongueEnShorts: CasUsageData = {
       answer: (
         <>
           Une fois tes clips découpés, plusieurs outils peuvent prendre le
-          relais sur les sous-titres et le rendu : CapCut en gratuit, Veed en
+          relais sur les sous-titres et le rendu : CapCut (limites du plan gratuit à
+          vérifier, voir notre{" "}
+          <Link href="/banc-essai" className="text-emerald-400 hover:underline">
+            banc d&apos;essai
+          </Link>
+          ), Veed en
           polyvalent, Captions pour la création tout-IA. On les compare dans un
           tableau sur notre page{" "}
           <Link

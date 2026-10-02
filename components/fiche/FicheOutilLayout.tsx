@@ -8,7 +8,7 @@ import { TrackedAffiliateLink } from "@/components/TrackedAffiliateLink";
 import { JsonLd } from "@/components/JsonLd";
 import { AuthorByline } from "@/components/AuthorByline";
 import { AuthorBio } from "@/components/AuthorBio";
-import { formatDateFR } from "@/lib/author";
+import { formatDateFR, formatDateLongFR } from "@/lib/author";
 import { getOutil, getOutilOrThrow, type TailwindColor } from "@/lib/outils";
 import type { ScoringCriterion } from "@/lib/scoring";
 import {
@@ -27,7 +27,10 @@ export interface FicheData {
     depuis?: string;
     langue?: string;
     tempsLecture: number;
+    /** Date de vérification des prix officiels (DD/MM/YYYY). */
     lastCheck: string;
+    /** Dernière mise à jour éditoriale, distincte de la vérification des prix (DD/MM/YYYY). */
+    contentUpdate?: string;
   };
   /** Visuel illustratif optionnel affiché entre le hero et le verdict (mockup interface ou capture d'écran). */
   apercuVisuel?: ReactNode;
@@ -72,7 +75,7 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
     tagline: outil.tagline,
     score: outil.score,
     priceFrom: outil.priceFrom,
-    lastCheck: data.hero.lastCheck,
+    lastCheck: data.hero.contentUpdate ?? data.hero.lastCheck,
   });
   const faqSchema = getFaqPageSchema(data.faq);
   const breadcrumbSchema = getBreadcrumbSchema([
@@ -120,7 +123,7 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
             </h1>
             <div className="mb-5">
               <AuthorByline
-                lastCheck={data.hero.lastCheck}
+                lastCheck={data.hero.contentUpdate ?? data.hero.lastCheck}
                 subtitle="Comparateur indépendant · Méthodologie en 6 critères"
               />
             </div>
@@ -192,6 +195,11 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
               Vérifié le {formatDateFR(data.hero.lastCheck)} · Prix officiels
             </span>
           </div>
+          {data.hero.contentUpdate && (
+            <div className="text-xs text-slate-500">
+              Contenu mis à jour le {formatDateLongFR(data.hero.contentUpdate)}
+            </div>
+          )}
           <div className="text-xs text-slate-500">
             Temps de lecture : {data.hero.tempsLecture} min
           </div>

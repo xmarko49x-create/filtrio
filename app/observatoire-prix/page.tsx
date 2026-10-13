@@ -124,6 +124,8 @@ export default function ObservatoirePrixPage() {
             description:
               "Prix d'entrée, devise, offre gratuite et date de vérification de 18 outils IA pour créateurs vidéo, relevés sur les pages tarifaires officielles.",
             url: "https://www.filtrio.fr/observatoire-prix",
+            sameAs:
+              "https://www.data.gouv.fr/datasets/prix-et-conditions-des-outils-ia-video-releve-de-juillet-2026",
             keywords: [
               "outils IA vidéo",
               "prix outils IA",
@@ -286,7 +288,17 @@ export default function ObservatoirePrixPage() {
           </a>
           <span className="block text-xs text-slate-500 mt-2">
             Données librement réutilisables avec attribution et lien vers
-            filtrio.fr/observatoire-prix.
+            filtrio.fr/observatoire-prix. Ce jeu de données est également publié
+            sur{" "}
+            <a
+              href="https://www.data.gouv.fr/datasets/prix-et-conditions-des-outils-ia-video-releve-de-juillet-2026"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-emerald-400 hover:underline"
+            >
+              data.gouv.fr
+            </a>{" "}
+            sous Licence Ouverte 2.0.
           </span>
         </div>
       </section>

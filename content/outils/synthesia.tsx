@@ -15,7 +15,7 @@ export const synthesiaFiche: FicheData = {
     ],
     origine: "UK",
     tempsLecture: 8,
-    lastCheck: "20/08/2026",
+    lastCheck: "06/11/2026",
   },
   verdict30s: [
     {
@@ -48,7 +48,7 @@ export const synthesiaFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan Basic gratuit (1 200 crédits/mois, jusqu'à 10 minutes de vidéo/mois, sans carte bancaire). Starter à 12 €/mois en annuel (19 €/mois en mensuel) avec assistant vidéo, doublage IA et avatars Synthesia. Creator (populaire) à 49 €/mois en annuel (79 €/mois en mensuel) avec 5 avatars personnels, API et vidéos interactives. Enterprise sur mesure pour les équipes (minutes illimitées, 140+ langues, SSO). Facturation EUR, vérifié le 20/08/2026.",
+        "Plan Basic gratuit (500 crédits/mois, jusqu'à 10 minutes de vidéo/mois, sans carte bancaire). Starter à 12 €/mois en annuel (19 €/mois en mensuel) avec assistant vidéo, doublage IA et avatars Synthesia. Creator (populaire) à 49 €/mois en annuel (79 €/mois en mensuel) avec 5 avatars personnels, API et vidéos interactives. Enterprise sur mesure pour les équipes (minutes illimitées, 140+ langues, SSO). Facturation EUR, vérifié le 06/11/2026.",
     },
     {
       question: "Meilleure alternative ?",
@@ -151,7 +151,7 @@ export const synthesiaFiche: FicheData = {
       prixSub: "Aucune carte de crédit nécessaire",
       cible: "Pour démarrer gratuitement",
       features: [
-        "1 200 crédits/mois",
+        "500 crédits/mois",
         "Jusqu'à 10 minutes de vidéo/mois",
       ],
     },

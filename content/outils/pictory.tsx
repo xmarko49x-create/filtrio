@@ -15,7 +15,7 @@ export const pictoryFiche: FicheData = {
     ],
     origine: "USA",
     tempsLecture: 6,
-    lastCheck: "10/07/2026",
+    lastCheck: "06/11/2026",
   },
   verdict30s: [
     {
@@ -52,7 +52,7 @@ export const pictoryFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan Starter à 25 $/mois en annuel (29 $/mois mensuel) avec 200 minutes de vidéo. Plan Professional à 35 $/mois en annuel (59 $/mois mensuel) avec 600 minutes. Plan Team à 119 $/mois en annuel pour 3+ utilisateurs avec 1 800 minutes. Enterprise sur devis. Essai gratuit disponible. Facturation USD.",
+        "Plan Starter à 25 $/mois en annuel (29 $/mois mensuel) avec 30 minutes de vidéo par mois (360 par an). Plan Professional à 35 $/mois en annuel (59 $/mois mensuel) avec 90 minutes par mois (1 080 par an). Plan Teams à 119 $/mois en annuel (199 $ mensuel) avec 300 minutes par mois (3 600 par an). Enterprise sur devis. Essai gratuit disponible. Facturation USD.",
     },
     {
       question: "Meilleure alternative ?",
@@ -150,7 +150,7 @@ export const pictoryFiche: FicheData = {
       prixSub: "Annuel (300 $/an) · 1 utilisateur",
       cible: "Créateurs qui démarrent en script-to-video",
       features: [
-        "200 minutes de vidéo",
+        "30 minutes de vidéo/mois (360/an)",
         "5 Go de stockage",
         "1 Brand Kit",
         "60 minutes de voix ElevenLabs (29 langues)",
@@ -166,7 +166,7 @@ export const pictoryFiche: FicheData = {
       prixSub: "Annuel (420 $/an) · 1 utilisateur",
       cible: "Créateurs qui produisent en volume",
       features: [
-        "600 minutes de vidéo",
+        "90 minutes de vidéo/mois (1 080/an)",
         "20 Go de stockage",
         "5 Brand Kits",
         "Voix standard illimitées (7 langues)",
@@ -177,12 +177,12 @@ export const pictoryFiche: FicheData = {
       ],
     },
     {
-      nom: "Team",
+      nom: "Teams",
       prix: "119 $/mois",
       prixSub: "Annuel (1 428 $/an) · 3+ utilisateurs",
       cible: "Équipes marketing et agences",
       features: [
-        "1 800 minutes de vidéo",
+        "300 minutes de vidéo/mois (3 600/an)",
         "100 Go de stockage",
         "10 Brand Kits",
         "Voix standard illimitées (7 langues)",
@@ -271,7 +271,7 @@ export const pictoryFiche: FicheData = {
   ],
   ctaFinal: {
     headline: "Prêt à tester Pictory ?",
-    sub: "Essai gratuit disponible sur les plans payants. Plan Starter à 25 $/mois en annuel pour 200 minutes de vidéo, voix ElevenLabs et stock Getty inclus.",
+    sub: "Essai gratuit disponible sur les plans payants. Plan Starter à 25 $/mois en annuel pour 30 minutes de vidéo par mois, voix ElevenLabs et stock Getty inclus.",
     buttonText: "Essayer Pictory",
   },
 };

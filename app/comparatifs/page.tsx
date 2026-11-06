@@ -15,6 +15,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.filtrio.fr/comparatifs",
   },
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    siteName: "Filtrio",
+    title: "Tous les comparatifs d'outils IA vidéo, duels et verdicts 2026, Filtrio",
+    description:
+      "11 duels 1 contre 1 (OpusClip vs Submagic, VidIQ vs TubeBuddy, ElevenLabs vs HeyGen...), les alternatives à Submagic et le grand comparatif shorts. Un verdict clair par profil, à chaque fois.",
+    url: "/comparatifs",
+  },
 };
 
 export default function ComparatifsIndexPage() {

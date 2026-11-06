@@ -10,6 +10,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.filtrio.fr/contact",
   },
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    siteName: "Filtrio",
+    title: "Contact, Filtrio",
+    description:
+      "Une question sur un outil, un prix à corriger, une demande presse ou partenariat ? Écris à contact@filtrio.fr, réponse généralement sous 24h.",
+    url: "/contact",
+  },
 };
 
 export default function ContactPage() {

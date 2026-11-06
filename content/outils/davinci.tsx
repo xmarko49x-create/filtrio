@@ -7,7 +7,7 @@ export const davinciFiche: FicheData = {
   hero: {
     h1: "DaVinci Resolve : l'avis complet en 2026",
     tagline:
-      "Éditeur vidéo pro utilisé par Hollywood. Version gratuite quasi illimitée, Studio à 295 $ en licence à vie (pas d'abonnement). Color grading de référence, Fusion VFX intégré. Voici pour qui c'est un investissement qui paie.",
+      "Éditeur vidéo pro utilisé par Hollywood. Version gratuite quasi illimitée, Studio à 255 € (295 $) en licence à vie (pas d'abonnement). Color grading de référence, Fusion VFX intégré. Voici pour qui c'est un investissement qui paie.",
     badges: [
       { label: "Pro gratuit", tone: "primary" },
       { label: "Licence à vie", tone: "accent" },
@@ -15,13 +15,13 @@ export const davinciFiche: FicheData = {
     ],
     origine: "Australie (Blackmagic)",
     tempsLecture: 8,
-    lastCheck: "10/07/2026",
+    lastCheck: "06/11/2026",
   },
   verdict30s: [
     {
       question: "C'est quoi ?",
       answer:
-        "Éditeur vidéo pro développé par Blackmagic Design (désormais en version 21). Version gratuite quasiment illimitée qui inclut montage, color grading, effets visuels, audio. Version Studio payante à 295 $ en licence unique (pas d'abonnement, mises à jour incluses). Outil utilisé par les studios Hollywood.",
+        "Éditeur vidéo pro développé par Blackmagic Design (désormais en version 21). Version gratuite quasiment illimitée qui inclut montage, color grading, effets visuels, audio. Version Studio payante à 255 € (295 $) en licence unique (pas d'abonnement, mises à jour incluses). Outil utilisé par les studios Hollywood.",
     },
     {
       question: "Pour qui ?",
@@ -48,7 +48,7 @@ export const davinciFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Deux options officielles Blackmagic : DaVinci Resolve 21 en téléchargement gratuit (déjà très complet) ou DaVinci Resolve Studio à 295 $ en achat unique (licence perpétuelle, mises à jour majeures incluses, pas d'abonnement). Studio débloque HDR, 4K-8K, effets IA avancés (Neural Engine), collaboration multi-user et plugins tiers. Facturation USD côté Blackmagic Design.",
+        "Deux options officielles Blackmagic : DaVinci Resolve 21 en téléchargement gratuit (déjà très complet) ou DaVinci Resolve Studio à 255 € (295 $) en achat unique (licence perpétuelle, mises à jour majeures incluses, pas d'abonnement). Studio débloque HDR, 4K-8K, effets IA avancés (Neural Engine), collaboration multi-user et plugins tiers. Facturation USD côté Blackmagic Design.",
     },
     {
       question: "Meilleure alternative ?",
@@ -150,8 +150,8 @@ export const davinciFiche: FicheData = {
     },
     {
       nom: "DaVinci Resolve Studio",
-      prix: "295 $",
-      prixSub: "Achat unique · licence perpétuelle · pas d'abonnement",
+      prix: "255 €",
+      prixSub: "Achat unique · licence perpétuelle · en promotion à 205 € au 06/11/2026",
       cible: "Vidéastes et studios pros",
       features: [
         "Tout DaVinci Resolve inclus",
@@ -200,17 +200,17 @@ export const davinciFiche: FicheData = {
     {
       question: "DaVinci vs Premiere Pro, lequel choisir en 2026 ?",
       answer:
-        "Si tu veux l'écosystème Adobe (After Effects, Audition, Photoshop intégrés) et tu acceptes un abonnement mensuel : Premiere. Si tu veux un éditeur au moins aussi puissant en achat unique : DaVinci Studio à 295 $. Les deux sont pro, le choix se fait sur le modèle économique et l'écosystème.",
+        "Si tu veux l'écosystème Adobe (After Effects, Audition, Photoshop intégrés) et tu acceptes un abonnement mensuel : Premiere. Si tu veux un éditeur au moins aussi puissant en achat unique : DaVinci Studio à 255 € (295 $). Les deux sont pro, le choix se fait sur le modèle économique et l'écosystème.",
     },
     {
       question: "Y a-t-il un programme affilié DaVinci ?",
       answer:
-        "Non, Blackmagic ne propose pas de programme affilié grand public pour DaVinci Resolve. Le modèle économique (gratuit + licence unique à 295 $) ne laisse pas de marge pour de l'affiliation récurrente. À considérer vs les outils payants à commission si la monétisation est importante pour toi.",
+        "Non, Blackmagic ne propose pas de programme affilié grand public pour DaVinci Resolve. Le modèle économique (gratuit + licence unique à 255 € (295 $)) ne laisse pas de marge pour de l'affiliation récurrente. À considérer vs les outils payants à commission si la monétisation est importante pour toi.",
     },
   ],
   ctaFinal: {
     headline: "Prêt à passer au pro ?",
-    sub: "La version gratuite te laisse tout tester sans limite de durée. 10-15h pour te faire une idée de la puissance, puis décider si Studio à 295 $ vaut l'investissement.",
+    sub: "La version gratuite te laisse tout tester sans limite de durée. 10-15h pour te faire une idée de la puissance, puis décider si Studio à 255 € (295 $) vaut l'investissement.",
     buttonText: "Télécharger DaVinci Resolve",
   },
 };

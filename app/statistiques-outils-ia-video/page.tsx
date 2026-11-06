@@ -17,7 +17,7 @@ import {
   compareOutilsByCategoryThenName,
 } from "@/lib/outils";
 
-const LAST_UPDATED = "10/07/2026";
+const LAST_UPDATED = "06/11/2026";
 const SAMPLE_SIZE = 18;
 
 export const metadata: Metadata = {
@@ -100,7 +100,7 @@ const STATS = [
     chiffre: "1 sur 18",
     titre: "seul outil propose sa version payante en achat unique",
     detail:
-      "DaVinci Resolve Studio est affiché à 295 $ en achat unique. Pour les 17 autres outils du panel, l'accès payant repose sur au moins une formule d'abonnement.",
+      "DaVinci Resolve Studio est affiché à 255 € (295 $ aux États-Unis) en achat unique. Pour les 17 autres outils du panel, l'accès payant repose sur au moins une formule d'abonnement.",
   },
 ];
 

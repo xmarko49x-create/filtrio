@@ -24,6 +24,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.filtrio.fr/lexique",
   },
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    siteName: "Filtrio",
+    title: "Lexique IA vidéo, termes essentiels expliqués sans jargon, Filtrio",
+    description:
+      "Définitions des termes clés de l'IA appliquée à la vidéo pour créateurs : prompt, modèle de fondation, hallucination, text-to-video, avatar IA, clonage vocal, lip-sync, deepfake, watermark, AI Act européen. 22 termes expliqués sans jargon.",
+    url: "/lexique",
+  },
 };
 
 interface Term {
@@ -492,7 +501,7 @@ const FAQ_TERMS = [
     question: "Les définitions sont-elles à jour ?",
     answer: (
       <>
-        Vérifiées en {LAST_UPDATED}. Le vocabulaire IA évolue vite, surtout
+        Vérifiées le {LAST_UPDATED}. Le vocabulaire IA évolue vite, surtout
         autour du cadre légal européen (AI Act) et des nouvelles capacités
         des modèles (Sora, Veo, Gen-4, etc.). Si tu repères une définition
         obsolète, écris à contact@filtrio.fr.

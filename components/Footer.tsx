@@ -42,6 +42,21 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/cas-usage/sous-titrer-tiktok" className="hover:text-slate-300">
+                  Sous-titres TikTok
+                </Link>
+              </li>
+              <li>
+                <Link href="/cas-usage/submagic-ou-opusclip-shorts-fr" className="hover:text-slate-300">
+                  Submagic ou OpusClip
+                </Link>
+              </li>
+              <li>
+                <Link href="/cas-usage/podcast-enregistrement-distant" className="hover:text-slate-300">
+                  Podcast à distance
+                </Link>
+              </li>
+              <li>
                 <Link href="/cas-usage/miniatures-youtube-ia" className="hover:text-slate-300">
                   Miniatures
                 </Link>
@@ -79,6 +94,11 @@ export default function Footer() {
               <li>
                 <Link href="/observatoire-prix" className="hover:text-slate-300">
                   Observatoire des prix
+                </Link>
+              </li>
+              <li>
+                <Link href="/statistiques-outils-ia-video" className="hover:text-slate-300">
+                  Statistiques des prix
                 </Link>
               </li>
               <li>

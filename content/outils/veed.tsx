@@ -15,7 +15,7 @@ export const veedFiche: FicheData = {
     ],
     origine: "Royaume-Uni",
     tempsLecture: 7,
-    lastCheck: "10/07/2026",
+    lastCheck: "06/11/2026",
   },
   verdict30s: [
     {
@@ -51,7 +51,7 @@ export const veedFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan Free (0 €, 10 min d'export, 720p, 2 Go de stockage). Creator à 11 €/mois par editor (annuel, taxes incluses, 6 000 credits/an) pour des vidéos sociales sans watermark. Pro (populaire) à 23 €/mois par editor (annuel, taxes incluses, 30 000 credits/an) pour du pro-level avec Brand Kits multiples et 4K. Studio à 37 €/mois par editor (annuel, taxes incluses, 180 000 credits/an) avec Project Analytics. Enterprise sur devis. Facturation EUR, vérifié le 10/07/2026.",
+        "Plan Free (0 €, 10 min d'export, 720p, 2 Go de stockage). Creator à 11 €/mois par editor (annuel, taxes incluses, 6 000 credits/an) pour des vidéos sociales sans watermark. Pro (recommandé) à 23 €/mois par utilisateur (annuel, 18 000 crédits) pour du pro-level avec Brand Kits multiples, traduction en 50+ langues et 4K. Enterprise sur devis. Facturation EUR, vérifié le 06/11/2026.",
     },
     {
       question: "Meilleure alternative ?",
@@ -179,30 +179,16 @@ export const veedFiche: FicheData = {
     {
       nom: "Pro",
       prix: "23 €/mois",
-      prixSub: "Par editor · facturation annuelle · taxes incluses · 30 000 credits/an · Populaire",
+      prixSub: "Par editor · facturation annuelle · taxes incluses · 18 000 crédits · Recommandé",
       cible: "Créateurs réguliers on-brand",
       features: [
         "Tout Creator inclus",
         "Multiple Brand Kits",
-        "6h/an de traductions",
+        "Traduction en 50+ langues",
         "Jusqu'à 144h/an de voix IA",
         "Vidéos illimitées dans Gen-AI Studio",
         "AI Image Generations illimitées",
         "4K · 50 Go de stockage",
-      ],
-    },
-    {
-      nom: "Studio",
-      prix: "37 €/mois",
-      prixSub: "Par editor · facturation annuelle · taxes incluses · 180 000 credits/an",
-      cible: "Agences et équipes pros",
-      features: [
-        "Tout Pro inclus",
-        "Project Analytics",
-        "Quotas vidéos et images étendus",
-        "Jusqu'à 960h/an de voix IA",
-        "AI Dubbing Proofread",
-        "4K · stockage illimité",
       ],
     },
     {
@@ -264,7 +250,7 @@ export const veedFiche: FicheData = {
     {
       question: "Peut-on monter une vidéo longue sur Veed ?",
       answer:
-        "Oui jusqu'à plusieurs heures sur le plan Basic+. Pour du vrai long format avec beaucoup de pistes, l'expérience reste plus fluide sur un éditeur desktop (DaVinci, Premiere). Veed est optimal sur le court à moyen format (2-60 min).",
+        "Oui jusqu'à plusieurs heures sur les plans payants. Pour du vrai long format avec beaucoup de pistes, l'expérience reste plus fluide sur un éditeur desktop (DaVinci, Premiere). Veed est optimal sur le court à moyen format (2-60 min).",
     },
     {
       question: "L'enregistrement webcam et screen est-il utilisable pro ?",
@@ -279,7 +265,7 @@ export const veedFiche: FicheData = {
   ],
   ctaFinal: {
     headline: "Prêt à tester Veed ?",
-    sub: "Le plan gratuit (10 min max par vidéo) permet de tester l'interface et les sous-titres auto. Bon compromis avant de s'engager sur le Basic.",
+    sub: "Le plan gratuit (10 min max par vidéo) permet de tester l'interface et les sous-titres auto. Bon compromis avant de s'engager sur le plan Creator.",
     buttonText: "Essayer Veed",
   },
 };

@@ -15,7 +15,7 @@ export const riversideFiche: FicheData = {
     ],
     origine: "Israël",
     tempsLecture: 8,
-    lastCheck: "10/07/2026",
+    lastCheck: "06/11/2026",
   },
   verdict30s: [
     {
@@ -45,7 +45,7 @@ export const riversideFiche: FicheData = {
       question: "Combien ?",
       answer: (
         <>
-          À partir de 24 €/mois en annuel (29 €/mois en mensuel). Riverside
+          À partir de 29 €/mois en annuel (35 €/mois en mensuel). Riverside
           propose aussi un plan gratuit pour découvrir l&apos;outil et un essai
           gratuit de 14 jours sur les plans payants. Les prix sont affichés en
           euros pour les visiteurs européens. Pour les besoins avancés ou
@@ -159,8 +159,8 @@ export const riversideFiche: FicheData = {
     },
     {
       nom: "Pro",
-      prix: "29 €/mois",
-      prixSub: "Mensuel · ou 24 €/mois en annuel",
+      prix: "35 €/mois",
+      prixSub: "Mensuel · ou 29 €/mois en annuel",
       cible: "Podcasteurs et créateurs réguliers",
       features: [
         "Essai gratuit 14 jours",
@@ -174,8 +174,8 @@ export const riversideFiche: FicheData = {
     },
     {
       nom: "Grow",
-      prix: "39 €/mois",
-      prixSub: "Mensuel · ou 34 €/mois en annuel (anciennement plan Live)",
+      prix: "45 €/mois",
+      prixSub: "Mensuel · ou 36 €/mois en annuel",
       cible: "Créateurs live qui développent leur audience",
       features: [
         "Tout Pro inclus · 2 studios · 20 heures multi-pistes/mois",
@@ -274,7 +274,7 @@ export const riversideFiche: FicheData = {
   ],
   ctaFinal: {
     headline: "Prêt à enregistrer en qualité studio ?",
-    sub: "Le plan gratuit permet de tester la qualité d'enregistrement distant avec un invité avant de t'engager. Plans payants à partir de 24 €/mois en annuel, essai gratuit 14 jours.",
+    sub: "Le plan gratuit permet de tester la qualité d'enregistrement distant avec un invité avant de t'engager. Plans payants à partir de 29 €/mois en annuel, essai gratuit 14 jours.",
     buttonText: "Essayer Riverside",
   },
 };

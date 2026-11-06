@@ -10,6 +10,15 @@ export const metadata: Metadata = {
   description:
     "Sélection 2026 des meilleurs outils IA pour créateurs TikTok/Shorts/Reels : sous-titres viraux FR, découpe auto, éditeur gratuit, voix IA.",
   alternates: { canonical: "/tiktok-shorts" },
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    siteName: "Filtrio",
+    title: "Outils IA pour TikTok en 2026 : sous-titres, clips et voix, Filtrio",
+    description:
+      "Sélection 2026 des meilleurs outils IA pour créateurs TikTok/Shorts/Reels : sous-titres viraux FR, découpe auto, éditeur gratuit, voix IA.",
+    url: "/tiktok-shorts",
+  },
 };
 
 export default function TikTokShortsPage() {

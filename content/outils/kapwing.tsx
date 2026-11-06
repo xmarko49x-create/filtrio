@@ -15,7 +15,7 @@ export const kapwingFiche: FicheData = {
     ],
     origine: "USA",
     tempsLecture: 7,
-    lastCheck: "10/07/2026",
+    lastCheck: "06/11/2026",
   },
   verdict30s: [
     {
@@ -249,7 +249,7 @@ export const kapwingFiche: FicheData = {
     {
       question: "Le plan gratuit est-il utilisable pour une démo ?",
       answer:
-        "Oui pour tester l'interface, la collaboration (avec un collègue sur le même lien), les fonctionnalités IA. Les limites (4 min max, filigrane, 7 min export/jour) te pousseront vite vers le Pro mais c'est suffisant pour se faire une idée.",
+        "Oui pour tester l'interface, la collaboration (avec un collègue sur le même lien), les fonctionnalités IA. Les limites (exports de 4 min max, 30 min d'export par mois, 720p, filigrane) te pousseront vite vers le Pro mais c'est suffisant pour se faire une idée.",
     },
     {
       question: "Compatible avec les workflows Slack/Notion ?",

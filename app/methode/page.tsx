@@ -9,6 +9,15 @@ export const metadata: Metadata = {
   description:
     "6 critères d'évaluation, prix vérifiés, analyse des fonctionnalités, transparence affiliation et mises à jour régulières pour comparer les outils IA vidéo.",
   alternates: { canonical: "/methode" },
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    siteName: "Filtrio",
+    title: "Notre méthode sans langue de bois, Filtrio",
+    description:
+      "6 critères d'évaluation, prix vérifiés, analyse des fonctionnalités, transparence affiliation et mises à jour régulières pour comparer les outils IA vidéo.",
+    url: "/methode",
+  },
 };
 
 export default function MethodePage() {
@@ -20,7 +29,7 @@ export default function MethodePage() {
       <section className="max-w-4xl mx-auto px-6 pt-16 pb-12">
         <div className="inline-flex items-center gap-2 bg-slate-800/50 border border-slate-700 rounded-full px-4 py-1.5 text-xs text-slate-300 mb-6">
           <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-          Dernière mise à jour · septembre 2026
+          Dernière mise à jour · novembre 2026
         </div>
         <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-6 tracking-tight">
           Comment Filtrio évalue les outils IA.
@@ -199,6 +208,22 @@ export default function MethodePage() {
                 jamais pour justifier après coup une note déjà publiée.
               </p>
             </div>
+          </div>
+
+          <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">
+            <h3 className="font-semibold text-emerald-400 mb-2">
+              Note globale et note pour un usage
+            </h3>
+            <p className="text-slate-300 leading-relaxed">
+              Chaque outil a une seule note globale, calculée sur les six
+              critères de cette page. C&apos;est elle qui apparaît sur sa
+              fiche, dans le catalogue et dans les duels. Nos pages par usage
+              (par exemple transformer une vidéo longue en shorts) affichent en
+              plus une note pour ce cas précis, calculée sur des critères
+              propres à cet usage. Un outil peut donc avoir 8,7 de note globale
+              et 9,4 pour un usage où il excelle. Les deux notes sont toujours
+              affichées côte à côte pour éviter toute confusion.
+            </p>
           </div>
 
           <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">

@@ -90,7 +90,7 @@ const ALTERNATIVES: Alternative[] = [
     pourquoi:
       "Création vidéo entièrement assistée par IA : acteurs IA, génération de B-roll, voix off, montage piloté au chat. Le sous-titrage gère plus de 100 langues.",
     limites:
-      "Interface en anglais. Plan payant qui démarre plus haut (Max à 24,99 $/mois affiché côté iOS, vérifié le 29/06/2026). Moins localisé FR que Submagic pour le sous-titrage pur.",
+      "Interface en anglais. Plan payant qui démarre plus haut (Max à 24,99 $/mois affiché côté iOS, vérifié le 06/11/2026). Moins localisé FR que Submagic pour le sous-titrage pur.",
     verdict:
       "Vraie alternative si tu veux générer des vidéos complètes avec l'IA. Pour du simple sous-titrage de shorts en français, Submagic reste plus direct.",
     priceLabel: "Max à 24,99 $/mois (iOS)",
@@ -100,9 +100,9 @@ const ALTERNATIVES: Alternative[] = [
 /**
  * Tableau comparatif d'entrée de page.
  * Prix d'entrée alignés sur lib/outils.ts (vérifiés au fil des sessions).
- * Prix Captions vérifiés en LIVE le 29/06/2026 depuis captions.ai/pricing :
+ * Prix Captions vérifiés le 06/11/2026 depuis captions.ai/pricing :
  * inscription gratuite (version Free), plan payant le moins cher affiché =
- * Max à 24,99 $/mois (prix iOS, USD), un plan Pro existe sans tarif affiché.
+ * Max à 24,99 $/mois (prix iOS, USD), puis plans Frontier plus chers.
  * Captions n'a pas encore de fiche complète sur Filtrio (lien direct, non affilié).
  */
 interface TableRow {
@@ -224,7 +224,7 @@ export default function AlternativesASubmagicPage() {
           </div>
           <div>
             <span className="text-slate-400">Dernière mise à jour :</span>{" "}
-            02/10/2026
+            06/11/2026
           </div>
         </div>
       </section>
@@ -339,9 +339,9 @@ export default function AlternativesASubmagicPage() {
           Prix d&apos;entrée relevés sur les pages officielles. Le détail et la
           date de vérification figurent sur chaque fiche outil. Captions
           n&apos;a pas encore de fiche complète sur Filtrio ; les prix indiqués
-          ont été vérifiés le 29/06/2026 depuis les pages publiques (version
+          ont été vérifiés le 06/11/2026 depuis les pages publiques (version
           gratuite à l&apos;inscription, plan Max à 24,99 $/mois affiché en prix
-          iOS USD, un plan Pro existe sans tarif affiché).
+          iOS USD, puis plans Frontier plus chers).
         </p>
 
         {/* RÉSULTATS DU BANC D'ESSAI */}
@@ -418,7 +418,7 @@ export default function AlternativesASubmagicPage() {
             Captions devient une vraie option, à un prix plus élevé (plan Max à
             24,99 $/mois affiché côté iOS). Captions n&apos;a pas encore de
             fiche complète sur Filtrio, donc pas de score éditorial pour
-            l&apos;instant ; les prix indiqués ont été vérifiés le 29/06/2026
+            l&apos;instant ; les prix indiqués ont été vérifiés le 06/11/2026
             depuis les pages publiques.
           </p>
           <a
@@ -471,7 +471,7 @@ export default function AlternativesASubmagicPage() {
             >
               enregistrer un podcast à distance
             </Link>{" "}
-            en qualité studio (à partir de 24 €/mois en annuel, plan gratuit
+            en qualité studio (à partir de 29 €/mois en annuel, plan gratuit
             disponible). Si ton besoin est de sous-titrer ou monter des shorts,
             ce n&apos;est pas le bon outil. Si tu cherches un enregistreur
             distant, voir la{" "}

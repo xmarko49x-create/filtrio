@@ -10,7 +10,7 @@ export const podcastEnregistrementDistant: CasUsageData = {
       "Tu veux enregistrer un podcast ou une interview avec un invité à distance, en qualité studio, sans Zoom qui compresse l'audio. Voici notre classement des outils qui livrent la meilleure qualité, le gagnant, et les pièges à éviter.",
     tempsLecture: 6,
     outilsAnalyses: 5,
-    lastCheck: "10/07/2026",
+    lastCheck: "06/11/2026",
   },
   verdict: {
     tag: "La recommandation tout de suite",
@@ -53,7 +53,7 @@ export const podcastEnregistrementDistant: CasUsageData = {
         ),
         meilleurPour: "Qualité studio audio + vidéo (enregistrement local)",
         gratuit: "Oui, plan gratuit",
-        prixEntree: "24 €/mois en annuel · 29 €/mois en mensuel",
+        prixEntree: "29 €/mois en annuel · 35 €/mois en mensuel",
         verdict: "Notre gagnant (9,2/10 pour ce cas)",
       },
       {
@@ -71,7 +71,7 @@ export const podcastEnregistrementDistant: CasUsageData = {
         outil: "Zencastr",
         meilleurPour: "Podcast 100 % audio",
         gratuit: "Oui, plan gratuit",
-        prixEntree: "20 $/mois",
+        prixEntree: "Gratuit · Enterprise sur devis",
         verdict: "Solide en audio pur (8,2/10 pour ce cas)",
       },
       {
@@ -143,8 +143,8 @@ export const podcastEnregistrementDistant: CasUsageData = {
         "Si tu produis régulièrement un podcast ou une série d'interviews à distance, Riverside est l'investissement le plus logique. La qualité fait la différence à l'écoute, et ton invité n'a rien à installer.",
       priceDisplay: {
         label: "À partir de",
-        value: "24 €/mois",
-        note: "En annuel · 29 €/mois en mensuel · Plan gratuit disponible",
+        value: "29 €/mois",
+        note: "En annuel · 35 €/mois en mensuel · Plan gratuit disponible",
       },
     },
     {
@@ -192,8 +192,8 @@ export const podcastEnregistrementDistant: CasUsageData = {
         "Solide pour du podcast 100 % audio. Si tu as besoin de vidéo en qualité pro, Riverside reste devant. Fiche Filtrio à venir.",
       priceDisplay: {
         label: "À partir de",
-        value: "20 $/mois",
-        note: "Plan gratuit",
+        value: "Gratuit",
+        note: "Offre Enterprise sur devis",
       },
     },
     {

@@ -148,8 +148,8 @@ export const miniaturesYoutubeIa: CasUsageData = {
         "Firefly intégré, très bon pour les utilisateurs Adobe. Plus pro sur la finition, moins intuitif que Canva. Choix pertinent si tu as déjà un abonnement Creative Cloud.",
       priceDisplay: {
         label: "À partir de",
-        value: "11 €/mois",
-        note: "Inclus dans CC",
+        value: "11,99 €/mois",
+        note: "Premium, TTC, sans engagement",
       },
     },
     {

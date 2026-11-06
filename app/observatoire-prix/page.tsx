@@ -22,11 +22,20 @@ import {
 } from "@/lib/observatoire";
 
 export const metadata: Metadata = {
-  title: "Observatoire des prix des outils IA vidéo, édition juillet 2026",
+  title: "Observatoire des prix des outils IA vidéo, édition novembre 2026",
   description:
     "Les prix réels de 18 outils IA vidéo (Submagic, OpusClip, ElevenLabs, HeyGen, Runway...) relevés sur les pages officielles et datés. Devises, pièges mensuel vs annuel, modèles à crédits : ce que les pages tarifaires ne montrent pas.",
   alternates: {
     canonical: "https://www.filtrio.fr/observatoire-prix",
+  },
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    siteName: "Filtrio",
+    title: "Observatoire des prix des outils IA vidéo, édition novembre 2026, Filtrio",
+    description:
+      "Les prix réels de 18 outils IA vidéo (Submagic, OpusClip, ElevenLabs, HeyGen, Runway...) relevés sur les pages officielles et datés. Devises, pièges mensuel vs annuel, modèles à crédits : ce que les pages tarifaires ne montrent pas.",
+    url: "/observatoire-prix",
   },
 };
 
@@ -98,8 +107,8 @@ const ECARTS_MENSUEL_ANNUEL = [
   {
     outil: "Riverside",
     plan: "Pro",
-    annuel: "24 €/mois",
-    mensuel: "29 €/mois",
+    annuel: "29 €/mois",
+    mensuel: "35 €/mois",
     ecart: "+21 %",
   },
 ];
@@ -160,7 +169,7 @@ export default function ObservatoirePrixPage() {
         <div className="pointer-events-none absolute -top-24 left-1/2 -translate-x-[60%] w-[560px] h-[560px] bg-emerald-500/10 rounded-full blur-3xl" />
         <div className="relative max-w-5xl mx-auto px-6 pt-16 pb-10">
           <div className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-3">
-            Données vérifiées · Édition juillet 2026
+            Données vérifiées · Édition novembre 2026
           </div>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-5">
             Observatoire des prix des outils IA vidéo.
@@ -290,7 +299,7 @@ export default function ObservatoirePrixPage() {
           </a>
           <span className="block text-xs text-slate-500 mt-2">
             Données librement réutilisables avec attribution et lien vers
-            filtrio.fr/observatoire-prix. Ce jeu de données est également publié
+            filtrio.fr/observatoire-prix. Le relevé de juillet 2026 est également publié
             sur{" "}
             <a
               href="https://www.data.gouv.fr/datasets/prix-et-conditions-des-outils-ia-video-releve-de-juillet-2026"
@@ -371,8 +380,9 @@ export default function ObservatoirePrixPage() {
               3. Le modèle à crédits remplace peu à peu l&apos;illimité.
             </h3>
             <p className="text-slate-300 leading-relaxed">
-              Au moins 6 outils du panel (ElevenLabs, Runway, Synthesia,
-              InVideo, Pika, et Submagic pour ses fonctions IA avancées)
+              Au moins 8 outils du panel (ElevenLabs, Runway, Synthesia,
+              InVideo, Pika, OpusClip, Pictory, et Submagic pour ses fonctions
+              IA avancées)
               fonctionnent partiellement ou totalement avec des crédits
               mensuels ou annuels. Conséquence : le prix d&apos;abonnement ne
               suffit plus à prévoir le coût réel, qui dépend de ton volume de

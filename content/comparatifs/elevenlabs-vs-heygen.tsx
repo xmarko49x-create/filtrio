@@ -10,7 +10,7 @@ export const elevenlabsVsHeygen: ComparatifData = {
     tagline:
       "Deux outils souvent comparés mais qui répondent à des besoins différents. ElevenLabs est une voix IA pure, HeyGen produit des avatars vidéo complets. Pas vraiment des concurrents frontaux, mais ils sont régulièrement mis en balance. Voici comment trancher selon ton profil.",
     tempsLecture: 6,
-    lastCheck: "10/07/2026",
+    lastCheck: "06/11/2026",
   },
   verdictRapide: {
     headline:

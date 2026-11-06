@@ -10,7 +10,7 @@ export const veedVsKapwing: ComparatifData = {
     tagline:
       "Les deux éditeurs vidéo web les plus matures pour les équipes et les freelances. Veed couvre mieux le solo, Kapwing domine sur la collaboration temps réel. La bonne question : tu travailles seul ou en équipe de 3+ ?",
     tempsLecture: 5,
-    lastCheck: "10/07/2026",
+    lastCheck: "06/11/2026",
   },
   verdictRapide: {
     headline:
@@ -162,7 +162,7 @@ export const veedVsKapwing: ComparatifData = {
     {
       question: "Coûts totaux sur un an ?",
       answer:
-        "Veed Creator : 11 €/mois TTC en annuel, soit environ 132 €/an pour 1 user. Kapwing Business : 600 $/user/an. L'écart est énorme mais n'a de sens qu'en comparant équipe vs solo. En équipe de 5 monteurs, Kapwing ressort à 3 000 $/an là où Veed Studio (37 €/mois TTC par user) reste nettement moins cher : la différence se justifie uniquement si tu utilises vraiment la collaboration temps réel.",
+        "Veed Creator : 11 €/mois TTC en annuel, soit environ 132 €/an pour 1 user. Kapwing Business : 600 $/user/an. L'écart est énorme mais n'a de sens qu'en comparant équipe vs solo. En équipe de 5 monteurs, Kapwing ressort à 3 000 $/an là où Veed Pro (23 €/mois TTC par user en annuel) reste nettement moins cher : la différence se justifie uniquement si tu utilises vraiment la collaboration temps réel.",
     },
   ],
 };

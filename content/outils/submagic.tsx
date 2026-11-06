@@ -40,7 +40,7 @@ export const submagicFiche: FicheData = {
     ],
     langue: "Interface disponible en français",
     tempsLecture: 8,
-    lastCheck: "21/08/2026",
+    lastCheck: "06/11/2026",
     contentUpdate: "02/10/2026",
   },
   verdict30s: [

@@ -15,7 +15,7 @@ export const heygenFiche: FicheData = {
     ],
     origine: "USA",
     tempsLecture: 8,
-    lastCheck: "10/07/2026",
+    lastCheck: "06/11/2026",
   },
   verdict30s: [
     {
@@ -48,7 +48,7 @@ export const heygenFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan Free disponible (3 vidéos/mois, vidéos jusqu'à 1 min). Creator à 29 $/mois en mensuel ou 24 $/mois en annuel (600 crédits/mois, vidéos jusqu'à 30 min, voice cloning, 175+ langues, 1080p, sans watermark). Pro à partir de 49 $/mois (1 000 crédits/mois, export 4K, paliers de crédits ajustables). Business à 149 $/mois (+ 20 $ par siège supplémentaire). Enterprise sur devis. Facturation en USD.",
+        "Plan Free disponible (3 vidéos/mois avec watermark, vidéos jusqu'à 1 min). Creator à 29 $/mois en mensuel ou 24 $/mois en annuel (600 crédits/mois, vidéos jusqu'à 30 min, voice cloning, 175+ langues, 1080p, sans watermark). Pro à partir de 49 $/mois (1 000 crédits/mois, export 4K, paliers de crédits ajustables). Business à 149 $/mois (+ 20 $ par siège supplémentaire). Enterprise sur devis. Facturation en USD.",
     },
     {
       question: "Meilleure alternative ?",
@@ -203,7 +203,7 @@ export const heygenFiche: FicheData = {
         "Vidéos jusqu'à 60 minutes",
         "Export vidéo 4K",
         "Traitement vidéo accéléré",
-        "Génération vidéo étendue avec Avatar IV",
+        "Avatar V, le modèle d'avatar le plus récent (inclus dès le plan Pro)",
         "5× plus de quota de génération IA",
         "5 jumeaux numériques personnalisés (Custom Digital Twins)",
         "Édition et relecture des scripts de traduction",

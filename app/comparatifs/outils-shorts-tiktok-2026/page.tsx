@@ -14,7 +14,7 @@ const SLUG = "outils-shorts-tiktok-2026";
 const TITLE = "Meilleur outil pour Shorts en 2026 : 6 solutions comparées";
 const SUBTITLE =
   "Submagic, OpusClip, CapCut, Descript, Veed et Kapwing comparés sur 12 critères : prix, sous-titres français, clipping, export et verdict par profil.";
-const LAST_CHECK = "10/07/2026";
+const LAST_CHECK = "06/11/2026";
 /** Date de la dernière révision éditoriale (distincte de la vérification des données). */
 const LAST_UPDATE = "02/10/2026";
 
@@ -161,7 +161,7 @@ const CRITERES_TABLEAU: CritereLine[] = [
   },
   {
     label: "Export 4K",
-    values: ["Pro+ uniquement", "Plan Pro", "Plan Pro", "Avec Pro", "Plan Pro", "Plan Pro"],
+    values: ["Business uniquement", "Plan Pro", "Plan Creator", "Avec Pro", "Plan Pro", "Plan Pro"],
   },
   {
     label: "App mobile",

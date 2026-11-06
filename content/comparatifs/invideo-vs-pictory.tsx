@@ -18,7 +18,7 @@ export const invideoVsPictory: ComparatifData = {
     tagline:
       "Le générateur polyvalent (InVideo) contre le spécialiste article-to-video (Pictory). InVideo couvre beaucoup plus de cas. Pictory n'a de sens que sur un workflow précis : articles et webinaires à transformer en vidéos courtes.",
     tempsLecture: 5,
-    lastCheck: "10/07/2026",
+    lastCheck: "06/11/2026",
   },
   verdictRapide: {
     headline: "InVideo prend clairement l'avantage pour la plupart des créateurs.",

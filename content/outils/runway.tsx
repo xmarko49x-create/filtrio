@@ -15,7 +15,7 @@ export const runwayFiche: FicheData = {
     ],
     origine: "USA",
     tempsLecture: 8,
-    lastCheck: "20/08/2026",
+    lastCheck: "06/11/2026",
   },
   verdict30s: [
     {

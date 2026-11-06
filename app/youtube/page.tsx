@@ -9,6 +9,15 @@ export const metadata: Metadata = {
   description:
     "Les meilleurs outils IA pour YouTube en 2026 : VidIQ, TubeBuddy, Canva, OpusClip et alternatives comparés pour le SEO, les miniatures et les Shorts.",
   alternates: { canonical: "/youtube" },
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    siteName: "Filtrio",
+    title: "Outils IA pour YouTube en 2026 : SEO, miniatures et Shorts, Filtrio",
+    description:
+      "Les meilleurs outils IA pour YouTube en 2026 : VidIQ, TubeBuddy, Canva, OpusClip et alternatives comparés pour le SEO, les miniatures et les Shorts.",
+    url: "/youtube",
+  },
 };
 
 export default function YouTubePage() {

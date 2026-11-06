@@ -4,6 +4,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Newsletter from "@/components/Newsletter";
 import { JsonLd } from "@/components/JsonLd";
+import { OUTILS } from "@/lib/outils";
 import {
   getOrganizationSchema,
   getWebsiteSchema,
@@ -178,9 +179,31 @@ export default function AProposPage() {
             Filtrio peut utiliser des liens affiliés sur certaines pages. Quand
             c&apos;est le cas, cela est indiqué clairement.
           </p>
-          <p className="text-slate-400 leading-relaxed">
+          <p className="text-slate-400 leading-relaxed mb-6">
             L&apos;affiliation ne change pas le classement. Un outil
             n&apos;est pas mieux noté parce qu&apos;il rémunère davantage.
+          </p>
+          <h3 className="text-lg font-semibold mb-3 text-slate-200">
+            Programmes d&apos;affiliation actifs
+          </h3>
+          <ul className="space-y-2 text-slate-400 leading-relaxed list-disc list-inside marker:text-emerald-400">
+            {OUTILS.filter((o) => /^https?:\/\//.test(o.affiliateLink)).map(
+              (o) => (
+                <li key={o.slug}>
+                  <Link
+                    href={`/outils/${o.slug}`}
+                    className="text-emerald-400 hover:text-emerald-300"
+                  >
+                    {o.name}
+                  </Link>
+                  {o.commission ? ` : ${o.commission}` : ""}
+                </li>
+              ),
+            )}
+          </ul>
+          <p className="text-slate-500 text-sm leading-relaxed mt-4">
+            Les autres outils du comparatif n&apos;ont aucun lien affilié de
+            notre côté. Aucun placement payant, jamais.
           </p>
         </div>
       </section>

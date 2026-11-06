@@ -349,7 +349,7 @@ export const SCORING_BY_SLUG: Record<string, ScoringCriterion[]> = {
       poids: 20,
       score: 9.8,
       commentaire:
-        "Le point fort absolu. Éditeur pro gratuit quasi illimité, ou Studio à 295 $ en achat unique (licence perpétuelle, aucun abonnement à vie). Un éditeur à abonnement mensuel s'amortit vs DaVinci Studio en ~1 an selon le tarif retenu. Aucun concurrent ne propose ce rapport qualité/prix.",
+        "Le point fort absolu. Éditeur pro gratuit quasi illimité, ou Studio à 255 € (295 $) en achat unique (licence perpétuelle, aucun abonnement à vie). Un éditeur à abonnement mensuel s'amortit vs DaVinci Studio en ~1 an selon le tarif retenu. Aucun concurrent ne propose ce rapport qualité/prix.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
@@ -437,7 +437,7 @@ export const SCORING_BY_SLUG: Record<string, ScoringCriterion[]> = {
       poids: 20,
       score: 7.5,
       commentaire:
-        "Plan gratuit disponible pour tester, essai 14 jours sur les plans payants. Point d'entrée payant affiché à partir de 24 €/mois en annuel sur le site officiel (affichage en euros pour les visiteurs européens). Positionnement dans la fourchette haute de sa catégorie, avec une spécialisation forte sur l'enregistrement distant pro.",
+        "Plan gratuit disponible pour tester, essai 14 jours sur les plans payants. Point d'entrée payant affiché à partir de 29 €/mois en annuel sur le site officiel (affichage en euros pour les visiteurs européens). Positionnement dans la fourchette haute de sa catégorie, avec une spécialisation forte sur l'enregistrement distant pro.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
@@ -532,7 +532,7 @@ export const SCORING_BY_SLUG: Record<string, ScoringCriterion[]> = {
       poids: 20,
       score: 9.0,
       commentaire:
-        "Point fort. Génération vidéo par avatar à partir d'un script, Custom Digital Twins (1 à 5 selon le plan), Video Translation avec sync labiale, 500+ stock photo avatars sur Free et 700+ Stock Video Avatars sur Creator, voice cloning sur Creator+. Avatar IV pour générations étendues sur plans supérieurs.",
+        "Point fort. Génération vidéo par avatar à partir d'un script, Custom Digital Twins (1 à 5 selon le plan), Video Translation avec sync labiale, 500+ stock photo avatars sur Free et 700+ Stock Video Avatars sur Creator, voice cloning sur Creator+. Avatar V, le modèle le plus récent, sur les plans Pro et supérieurs.",
     },
     {
       label: "Interface et prise en main",
@@ -745,7 +745,7 @@ export const SCORING_BY_SLUG: Record<string, ScoringCriterion[]> = {
       poids: 20,
       score: 7.0,
       commentaire:
-        "25 $/mois en annuel pour 200 minutes de vidéo, c'est correct mais pas donné. Le stock Getty/Storyblocks et 60 minutes de voix IA ElevenLabs inclus améliorent la valeur. InVideo démarre moins cher (10 $/mois par siège en annuel) mais facture au crédit.",
+        "25 $/mois en annuel pour 30 minutes de vidéo par mois, c'est cher à la minute. Le stock Getty/Storyblocks et 60 minutes de voix IA ElevenLabs inclus améliorent la valeur. InVideo démarre moins cher (10 $/mois par siège en annuel) mais facture au crédit.",
     },
     {
       label: "Profondeur IA",

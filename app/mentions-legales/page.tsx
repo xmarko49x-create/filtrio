@@ -8,6 +8,15 @@ export const metadata: Metadata = {
     "Informations légales du site Filtrio : éditeur, hébergeur, propriété intellectuelle, données personnelles, affiliation.",
   alternates: { canonical: "/mentions-legales" },
   robots: { index: true, follow: false },
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    siteName: "Filtrio",
+    title: "Mentions légales, Filtrio",
+    description:
+      "Informations légales du site Filtrio : éditeur, hébergeur, propriété intellectuelle, données personnelles, affiliation.",
+    url: "/mentions-legales",
+  },
 };
 
 export default function MentionsLegalesPage() {

@@ -158,7 +158,7 @@ export const invideoVsPictory: ComparatifData = {
     {
       question: "Lequel offre le meilleur rapport qualité/prix ?",
       answer:
-        "InVideo est devenu plus généraliste avec son modèle à crédits (plan gratuit, puis point d'entrée à 17 $/mois en annuel sur le plan Plus, jusqu'à 900 $/mois pour Elite). Pictory garde un positionnement plus étroit mais plus prévisible sur le forfait mensuel. Le choix dépend surtout de la prévisibilité recherchée : InVideo sur usage en volume, Pictory sur forfait simple.",
+        "InVideo est devenu plus généraliste avec son modèle à crédits par siège (point d'entrée à 10 $/mois en annuel sur le plan Starter, jusqu'à 250 $/mois pour Max, sans plan gratuit affiché). Pictory garde un positionnement plus étroit mais plus prévisible sur le forfait mensuel. Le choix dépend surtout de la prévisibilité recherchée : InVideo sur usage en volume, Pictory sur forfait simple.",
     },
     {
       question: "Peut-on les combiner dans un workflow ?",

@@ -21,7 +21,7 @@ export const synthesiaFiche: FicheData = {
     {
       question: "C'est quoi ?",
       answer:
-        "Plateforme d'avatars IA vidéo lancée en 2017, positionnée B2B. Tu écris un script, tu choisis un avatar parmi 240+ préconçus (ou tu clones un dirigeant), Synthesia génère une vidéo formation ou communication. Spécialité : multilingue 140+ langues + conformité entreprise.",
+        "Plateforme d'avatars IA vidéo lancée en 2017, positionnée B2B. Tu écris un script, tu choisis un avatar préconçu (de 9 sur le plan gratuit à 240+ sur Enterprise) (ou tu clones un dirigeant), Synthesia génère une vidéo formation ou communication. Spécialité : multilingue 140+ langues + conformité entreprise.",
     },
     {
       question: "Pour qui ?",
@@ -48,7 +48,7 @@ export const synthesiaFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan Basic gratuit (1 200 crédits/mois, jusqu'à 10 minutes de vidéo/mois, sans carte bancaire). Starter à 12 €/mois en annuel (19 €/mois en mensuel) avec assistant vidéo, doublage IA et avatars Synthesia. Creator (populaire) à 49 €/mois en annuel (79 €/mois en mensuel) avec 5 avatars personnels, API et vidéos interactives. Enterprise sur mesure pour les équipes (minutes illimitées, 80+ langues, SSO). Facturation EUR, vérifié le 20/08/2026.",
+        "Plan Basic gratuit (1 200 crédits/mois, jusqu'à 10 minutes de vidéo/mois, sans carte bancaire). Starter à 12 €/mois en annuel (19 €/mois en mensuel) avec assistant vidéo, doublage IA et avatars Synthesia. Creator (populaire) à 49 €/mois en annuel (79 €/mois en mensuel) avec 5 avatars personnels, API et vidéos interactives. Enterprise sur mesure pour les équipes (minutes illimitées, 140+ langues, SSO). Facturation EUR, vérifié le 20/08/2026.",
     },
     {
       question: "Meilleure alternative ?",
@@ -197,8 +197,8 @@ export const synthesiaFiche: FicheData = {
       features: [
         "Tout Creator inclus",
         "Nombre illimité de minutes de vidéo",
-        "Traductions en un clic dans plus de 80 langues",
-        "Plus de 230 avatars IA libres de droits",
+        "Traductions en un clic dans plus de 140 langues",
+        "Plus de 240 avatars IA libres de droits",
         "Nombre illimité d'avatars personnels",
         "SAML/SSO",
         "Collaboration en temps réel",

@@ -657,7 +657,7 @@ export const SCORING_BY_SLUG: Record<string, ScoringCriterion[]> = {
       poids: 20,
       score: 7.0,
       commentaire:
-        "Modèle à crédits qui peut devenir coûteux selon les modèles IA sollicités (Veo 3.1, Sora 2 pro tarifés à leur prix API d'origine). Rentable pour un usage régulier et industrialisé. Pas adapté à un usage occasionnel sans maîtrise de la consommation de crédits.",
+        "Modèle à crédits par siège (Starter 10 $/mois en annuel, 400 crédits) qui peut devenir coûteux selon les modèles IA sollicités. Rentable pour un usage régulier et industrialisé. Pas adapté à un usage occasionnel sans maîtrise de la consommation de crédits.",
     },
     {
       label: "Profondeur des fonctionnalités IA",
@@ -745,7 +745,7 @@ export const SCORING_BY_SLUG: Record<string, ScoringCriterion[]> = {
       poids: 20,
       score: 7.0,
       commentaire:
-        "25 $/mois en annuel pour 200 minutes de vidéo, c'est correct mais pas donné. Le stock Getty/Storyblocks et 60 minutes de voix IA ElevenLabs inclus améliorent la valeur. Plus cher qu'InVideo qui propose un Free Forever.",
+        "25 $/mois en annuel pour 200 minutes de vidéo, c'est correct mais pas donné. Le stock Getty/Storyblocks et 60 minutes de voix IA ElevenLabs inclus améliorent la valeur. InVideo démarre moins cher (10 $/mois par siège en annuel) mais facture au crédit.",
     },
     {
       label: "Profondeur IA",
@@ -789,7 +789,7 @@ export const SCORING_BY_SLUG: Record<string, ScoringCriterion[]> = {
       poids: 25,
       score: 9.0,
       commentaire:
-        "Point fort majeur. Plan Standard à 8 $/mois en annuel = quasi-imbattable pour découvrir sérieusement la génération vidéo IA. Plan gratuit récurrent (80 credits/mois) permet de tester sans payer. Vs Runway à 12 $/mois : Pika est sensiblement moins cher pour démarrer.",
+        "Point fort. Plan Starter à 8 $/mois en annuel (600 crédits) = l'une des entrées les moins chères de la génération vidéo IA. Le plan Free n'inclut plus de crédits mensuels (packs payants). Vs Runway à 12 $/mois : Pika reste moins cher pour démarrer.",
     },
     {
       label: "Qualité de la génération vidéo",

@@ -511,20 +511,9 @@ export default function HomePage() {
                     ) : (
                       // Méta-page : visuel "alternatives groupées"
                       <>
-                        <span className="text-xs text-slate-500 font-bold">
-                          vs
+                        <span className="text-xs text-slate-300 font-semibold bg-slate-800 border border-slate-700 rounded-full px-3 py-1">
+                          vs 5 alternatives
                         </span>
-                        <div className="flex -space-x-3">
-                          <div className="w-9 h-9 rounded-full bg-slate-700 border-2 border-slate-900 flex items-center justify-center text-[10px] text-slate-400 font-bold">
-                            1
-                          </div>
-                          <div className="w-9 h-9 rounded-full bg-slate-600 border-2 border-slate-900 flex items-center justify-center text-[10px] text-slate-400 font-bold">
-                            2
-                          </div>
-                          <div className="w-9 h-9 rounded-full bg-slate-500 border-2 border-slate-900 flex items-center justify-center text-[10px] text-slate-300 font-bold">
-                            3+
-                          </div>
-                        </div>
                       </>
                     )}
                     <span className="ml-auto text-xs text-slate-500">

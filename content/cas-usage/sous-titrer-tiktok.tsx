@@ -116,7 +116,11 @@ export const sousTitrerTiktok: CasUsageData = {
       ],
       verdict:
         "Une alternative sérieuse pour le montage, avec de nombreuses fonctions gratuites. Sous-titres FR corrects, mais style viral à personnaliser manuellement et limites du plan gratuit à vérifier. Compte 3-5 minutes de retouches par vidéo pour approcher le rendu Submagic.",
-      priceDisplay: { label: "Prix", value: "Gratuit" },
+      priceDisplay: {
+        label: "Prix",
+        value: "Montage gratuit",
+        note: "Export avec légendes auto : Pro lors de notre essai",
+      },
     },
     {
       slug: "opusclip",

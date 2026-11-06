@@ -7,7 +7,7 @@ export const invideoFiche: FicheData = {
   hero: {
     h1: "InVideo : l'avis complet en 2026",
     tagline:
-      "Générateur script-to-video IA désormais pivoté sur un modèle à crédits et 200+ modèles intégrés (Veo, Sora, Kling, Nano Banana). Templates marketing, voix off multilingue, stock massif, API. Voici pour qui il a du sens en 2026.",
+      "Plateforme vidéo IA qui se présente désormais comme un « éditeur vidéo agentique » : des agents IA génèrent et montent la vidéo à partir de ton script ou de ton prompt. Modèle à crédits par siège, voix off multilingue, stock, API. Voici pour qui il a du sens en 2026.",
     badges: [
       { label: "Script-to-video IA", tone: "primary" },
       { label: "API disponible", tone: "accent" },
@@ -15,13 +15,13 @@ export const invideoFiche: FicheData = {
     ],
     origine: "Inde",
     tempsLecture: 8,
-    lastCheck: "10/07/2026",
+    lastCheck: "06/11/2026",
   },
   verdict30s: [
     {
       question: "C'est quoi ?",
       answer:
-        "Plateforme IA de génération vidéo indienne. Tu écris un script ou un prompt, l'agent invideo v4 produit une vidéo complète avec voix off, images stock pertinentes, sous-titres, transitions. Depuis 2025-2026, la plateforme agrège 200+ modèles tiers (Veo 3.1, Sora 2 pro, Kling 3.0, Nano Banana Pro, ElevenLabs music) dans un modèle à crédits. Positionné marketing B2B et créateurs faceless en volume.",
+        "Plateforme IA de création vidéo d'origine indienne. Tu écris un script ou un prompt, les agents IA d'invideo produisent une vidéo complète (voix off, images, sous-titres, transitions) que tu peux ensuite retoucher dans l'éditeur. La plateforme donne accès à plusieurs modèles IA tiers (la liste évolue, voir invideo.io) dans un modèle à crédits. Positionnée marketing et créateurs faceless en volume.",
     },
     {
       question: "Pour qui ?",
@@ -45,7 +45,7 @@ export const invideoFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan gratuit disponible. Modèle à crédits en USD, 4 plans en facturation annuelle : Plus à 17 $/mois (200 $ facturés par an, 75 crédits/mois), Max à 85 $/mois (1 000 $/an, 390 crédits/mois), Generative à 170 $/mois (2 000 $/an), Elite à 900 $/mois (10 800 $/an, 4 250 crédits/mois). Offre Team & Enterprise sur devis. Les crédits inclus sont renouvelés chaque mois et les crédits inutilisés ne sont pas reportés. Chaque génération consomme des crédits selon le modèle IA utilisé.",
+        "Pas de plan gratuit affiché sur la page tarifs officielle (vérifié le 06/11/2026). Modèle à crédits en USD, prix par siège : Starter à 10 $/mois en annuel (20 $ en mensuel, 400 crédits/mois), Plus à 30 $/mois en annuel (60 $ en mensuel, 2 000 crédits/mois), Max à 250 $/mois (même prix en annuel et en mensuel, 8 000 crédits/mois). Les crédits inutilisés ne sont pas reportés au mois suivant. Chaque génération consomme des crédits selon le modèle IA utilisé.",
     },
     {
       question: "Meilleure alternative ?",
@@ -132,68 +132,35 @@ export const invideoFiche: FicheData = {
   ],
   plans: [
     {
-      nom: "Gratuit",
-      prix: "0 $",
-      prixSub: "Plan gratuit récurrent",
-      cible: "Pour tester avant de s'engager",
+      nom: "Starter",
+      prix: "10 $/mois",
+      prixSub: "Par siège, en annuel · 20 $ en mensuel",
+      cible: "Pour explorer",
       features: [
-        "Permet de tester la génération IA avant de payer",
-        "Quotas et limitations détaillés sur invideo.io",
+        "400 crédits/mois par siège",
+        "Crédits inutilisés non reportés",
       ],
     },
     {
       nom: "Plus",
-      prix: "17 $/mois",
-      prixSub: "Facturation annuelle (200 $ facturés par an)",
-      cible: "Pour explorer",
+      prix: "30 $/mois",
+      prixSub: "Par siège, en annuel · 60 $ en mensuel",
+      cible: "Pour un usage régulier",
       features: [
-        "75 crédits/mois, renouvelés chaque mois",
+        "2 000 crédits/mois par siège",
+        "10 sièges invités gratuits (190 crédits chacun)",
         "Crédits inutilisés non reportés",
-        "Exportations sans watermark",
       ],
     },
     {
       nom: "Max",
-      prix: "85 $/mois",
-      prixSub: "Facturation annuelle (1 000 $ facturés par an)",
-      cible: "Pour un usage régulier",
-      features: [
-        "390 crédits/mois, renouvelés chaque mois",
-        "Crédits inutilisés non reportés",
-        "Exportations sans watermark",
-      ],
-    },
-    {
-      nom: "Generative",
-      prix: "170 $/mois",
-      prixSub: "Facturation annuelle (2 000 $ facturés par an)",
-      cible: "Pour un usage quotidien",
-      features: [
-        "Quota de crédits mensuel supérieur (détail sur invideo.io)",
-        "Crédits inutilisés non reportés",
-        "Exportations sans watermark",
-      ],
-    },
-    {
-      nom: "Elite",
-      prix: "900 $/mois",
-      prixSub: "Facturation annuelle (10 800 $ facturés par an)",
+      prix: "250 $/mois",
+      prixSub: "Par siège · même prix en annuel et en mensuel",
       cible: "Pour la production en gros volume",
       features: [
-        "4 250 crédits/mois, renouvelés chaque mois",
+        "8 000 crédits/mois par siège",
+        "20 sièges invités gratuits",
         "Crédits inutilisés non reportés",
-        "Exportations sans watermark",
-      ],
-    },
-    {
-      nom: "Team & Enterprise",
-      prix: "Sur devis",
-      prixSub: "Équipes centralisées",
-      cible: "Organisations et groupes",
-      features: [
-        "Offre dédiée équipes",
-        "Quotas de crédits et seats négociables",
-        "Facturation consolidée",
       ],
     },
   ],
@@ -218,7 +185,7 @@ export const invideoFiche: FicheData = {
     {
       question: "invideo AI et invideo Studio, quelle différence ?",
       answer:
-        "Deux produits distincts sous la même marque. invideo AI = plateforme de génération vidéo à crédits (200+ modèles IA intégrés, plans Plus à 17 $/mo annuel jusqu'à Elite à 900 $/mo, plus un plan gratuit). invideo Studio = éditeur vidéo traditionnel avec bibliothèque de modèles et générateur de scripts IA. Cette fiche couvre principalement invideo AI (l'offre mise en avant sur la page Tarification principale).",
+        "La marque a longtemps séparé invideo AI (génération vidéo par IA) et invideo Studio (éditeur à modèles). En 2026, l'offre mise en avant sur invideo.io est un éditeur unique avec agents IA, facturé par siège (Starter, Plus, Max). Cette fiche couvre cette offre principale.",
     },
     {
       question: "InVideo ou HeyGen pour du contenu IA ?",
@@ -241,12 +208,12 @@ export const invideoFiche: FicheData = {
         "Correcte pour des contenus marketing standards. Moins naturelle qu'ElevenLabs. Pour du contenu premium ou où la voix porte l'émotion, envisager d'importer une piste audio ElevenLabs plutôt que d'utiliser la voix native InVideo.",
     },
     {
-      question: "Le plan Plus à 17 $/mois suffit-il pour démarrer ?",
+      question: "Le plan Starter à 10 $/mois suffit-il pour démarrer ?",
       answer:
-        "Oui pour explorer sérieusement le workflow script-to-video et évaluer la qualité sur ton cas d'usage réel (75 crédits/mois, renouvelés mensuellement et non reportés, suffisent à plusieurs générations selon les modèles choisis). Pour un usage récurrent en volume, il faut passer au Max ou au Generative.",
+        "Oui pour explorer le workflow script-to-video et évaluer la qualité sur ton cas d'usage réel (400 crédits/mois, non reportés ; le nombre de vidéos dépend des modèles choisis). Pour un usage récurrent en volume, il faut passer au Plus ou au Max.",
     },
     {
-      question: "L'API vaut-elle le coût d'un plan Individual ?",
+      question: "L'API vaut-elle le coût d'un plan payant ?",
       answer:
         "Si tu automatises vraiment (Make, Zapier, scripts custom), oui. Permet de générer une vidéo par article de blog, par fiche produit, par événement CRM. ROI clair pour les agences et équipes marketing pros. Pour un créateur solo qui fait 2-3 vidéos par semaine manuellement, pas nécessaire.",
     },
@@ -258,7 +225,7 @@ export const invideoFiche: FicheData = {
   ],
   ctaFinal: {
     headline: "Prêt à automatiser ta prod vidéo ?",
-    sub: "Le plan gratuit permet de tester, puis le plan Plus à 17 $/mois (annuel, 75 crédits/mois) est le point d'entrée pour un usage sérieux du script-to-video. Pour un usage en volume, passer au Max ou au Generative.",
+    sub: "Le plan Starter à 10 $/mois par siège (annuel, 400 crédits/mois) est le point d'entrée. Pour un usage régulier, le plan Plus à 30 $/mois ; pour la production en volume, le Max.",
     buttonText: "Essayer InVideo",
   },
 };

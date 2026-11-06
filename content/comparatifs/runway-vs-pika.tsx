@@ -27,8 +27,8 @@ export const runwayVsPika: ComparatifData = {
         <strong className="text-purple-400">Runway</strong>{" "}reste la référence
         du marché avec Gen-4 et Gen-4.5, Aleph, Act-Two, ses applications
         d&apos;édition dédiées (Edit Video, Video Backdrop, Color Grade Video)
-        et l&apos;intégration de modèles tiers majeurs (Veo 3.1, Kling 3.0
-        Pro). Crédibilité studio.{" "}
+        et l&apos;intégration de modèles tiers (Kling, Seedance, etc., la
+        liste évolue régulièrement). Crédibilité studio.{" "}
         <strong className="text-rose-400">Pika</strong>{" "}est plus abordable,
         plus simple à prendre en main, mais propose une qualité qui progresse
         rapidement sans atteindre le niveau Runway.
@@ -155,7 +155,7 @@ export const runwayVsPika: ComparatifData = {
     {
       question: "Longueur maximale des vidéos générées ?",
       answer:
-        "Quelques secondes par génération avec Gen-4 et Gen-4.5 de Runway, 3 à 5 secondes pour Pika selon la version. Limitation inhérente aux modèles de génération vidéo IA actuels. Pour des vidéos plus longues, il faut enchaîner plusieurs générations.",
+        "Quelques secondes par génération avec Gen-4 et Gen-4.5 de Runway, clips de 5 secondes chez Pika. Limitation inhérente aux modèles de génération vidéo IA actuels. Pour des vidéos plus longues, il faut enchaîner plusieurs générations.",
     },
     {
       question: "Lequel est le plus utilisé par les pros ?",

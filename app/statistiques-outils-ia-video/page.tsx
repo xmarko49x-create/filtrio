@@ -55,10 +55,10 @@ const STATS = [
       "Sur ces quatre plans, le prix mensuel mis en avant correspondait à un engagement annuel, tandis que le paiement sans engagement coûtait en moyenne 57 % plus cher.",
   },
   {
-    chiffre: "83 %",
+    chiffre: "72 %",
     titre: "proposent une version gratuite utilisable dans la durée",
     detail:
-      "15 outils sur 18 proposent un plan gratuit durable. Submagic et Pictory proposent seulement un essai limité, tandis que Runway fournit une allocation gratuite unique de crédits qui ne se renouvelle pas.",
+      "13 outils sur 18 proposent un plan gratuit durable. Submagic et Pictory proposent seulement un essai limité, Runway fournit une allocation gratuite unique de crédits qui ne se renouvelle pas, Pika garde un plan gratuit sans crédits inclus et InVideo n'affiche pas de plan gratuit.",
   },
   {
     chiffre: "de 3,99 $ à 29 $",

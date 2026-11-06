@@ -207,11 +207,13 @@ export default function ObservatoirePrixPage() {
             </p>
           </div>
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-            <div className="text-3xl font-bold text-emerald-400 mb-1">15 / 18</div>
+            <div className="text-3xl font-bold text-emerald-400 mb-1">13 / 18</div>
             <p className="text-sm text-slate-300 leading-relaxed">
               outils proposent une <strong className="text-slate-100">version gratuite durable</strong>.
               2 n&apos;offrent qu&apos;un essai limité, 1 fournit une
-              allocation unique de crédits (Runway).
+              allocation unique de crédits (Runway), 1 a un plan gratuit
+              sans crédits inclus (Pika) et 1 n&apos;affiche pas de plan
+              gratuit (InVideo).
             </p>
           </div>
         </div>
@@ -385,12 +387,14 @@ export default function ObservatoirePrixPage() {
               4. « Gratuit » recouvre trois réalités différentes.
             </h3>
             <p className="text-slate-300 leading-relaxed">
-              Sur les 18 outils : 15 proposent un plan gratuit durable (dont 2
+              Sur les 18 outils : 13 proposent un plan gratuit durable (dont 2
               outils intégralement gratuits dans leur version de base, CapCut
               et DaVinci Resolve), 2 n&apos;offrent qu&apos;un essai limité qui
               se consomme vite (Submagic, Pictory), et 1 fournit une allocation
               gratuite unique de crédits qui ne se renouvelle pas (Runway, 125
-              crédits). Si tu veux tester sérieusement avant de payer, cette
+              crédits). Pika garde un plan gratuit mais sans crédits inclus
+              (packs payants), et InVideo n&apos;affiche plus de plan gratuit
+              sur sa page tarifs. Si tu veux tester sérieusement avant de payer, cette
               distinction change tout. Pour Submagic en particulier, des options gratuites
               ou moins chères existent : on les compare sur notre page{" "}
               <Link

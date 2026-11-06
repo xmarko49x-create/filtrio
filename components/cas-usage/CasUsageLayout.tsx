@@ -94,7 +94,7 @@ export default function CasUsageLayout({ data }: { data: CasUsageData }) {
         <div className="mb-6">
           <AuthorByline
             lastCheck={data.hero.lastCheck}
-            subtitle="Comparateur indépendant · Méthodologie en 6 critères"
+            subtitle={`Comparateur indépendant · Note pour cet usage sur ${data.criteres.length} critères`}
           />
         </div>
         <p className="text-xl text-slate-400 leading-relaxed mb-8 max-w-3xl">
@@ -197,9 +197,18 @@ export default function CasUsageLayout({ data }: { data: CasUsageData }) {
         <div className={`text-sm font-semibold text-${c}-400 uppercase tracking-wider mb-3`}>
           Classement pour ce cas
         </div>
-        <h2 className="text-3xl font-bold mb-10 tracking-tight">
+        <h2 className="text-3xl font-bold mb-4 tracking-tight">
           Les {data.classement.length} outils retenus, notés.
         </h2>
+        <p className="text-sm text-slate-400 leading-relaxed mb-10 max-w-3xl">
+          La note affichée ici est la note pour ce cas précis, calculée sur les{" "}
+          {data.criteres.length} critères ci-dessus. Elle peut différer de la
+          note globale de l&apos;outil, calculée sur notre{" "}
+          <Link href="/methode" className="underline hover:text-slate-200">
+            méthode en 6 critères
+          </Link>{" "}
+          et indiquée sous chaque score.
+        </p>
         <div className="space-y-4">
           {data.classement.map((item, i) => (
             <OutilCard
@@ -426,7 +435,18 @@ function OutilCard({
               {isWinner && <span className="text-xs text-slate-500">/ 10</span>}
             </div>
           </div>
-          <div className="text-xs text-slate-500 mt-2">Score pour ce cas</div>
+          <div className="text-xs text-slate-500 mt-2">Note pour ce cas</div>
+          {outil && (
+            <div className="text-xs text-slate-500 mt-1">
+              {outil.ficheAvailable ? (
+                <Link href={`/outils/${outil.slug}`} className="hover:underline">
+                  Note globale : {outil.score.toFixed(1)}
+                </Link>
+              ) : (
+                <>Note globale : {outil.score.toFixed(1)}</>
+              )}
+            </div>
+          )}
         </div>
 
         <div className="flex-1">

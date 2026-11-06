@@ -130,7 +130,11 @@ export const sousTitresRapides: CasUsageData = {
       ],
       verdict:
         "Tu passeras 2-3 minutes de plus par vidéo qu'avec Submagic pour personnaliser le style manuellement. Si le budget est la priorité, limites du plan gratuit à vérifier avant de commencer.",
-      priceDisplay: { label: "Prix", value: "Gratuit" },
+      priceDisplay: {
+        label: "Prix",
+        value: "Montage gratuit",
+        note: "Export avec légendes auto : Pro lors de notre essai",
+      },
     },
     {
       slug: "opusclip",

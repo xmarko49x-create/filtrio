@@ -15,13 +15,13 @@ export const pikaFiche: FicheData = {
     ],
     origine: "USA",
     tempsLecture: 6,
-    lastCheck: "10/07/2026",
+    lastCheck: "06/11/2026",
   },
   verdict30s: [
     {
       question: "C'est quoi ?",
       answer:
-        "Plateforme de génération vidéo IA. Modèle Pika 2.5 (text-to-video, image-to-video) avec les effets propriétaires Pikaffects (Pikaframes, Pikascenes, Pikadditions, Pikaswaps, Pikatwists). Plan Basic gratuit avec 80 credits/mois, plans payants à partir de 8 $/mois en annuel.",
+        "Plateforme de génération vidéo IA. Modèle Pika 2.5 (text-to-video, image-to-video) avec les effets propriétaires Pikaffects (Pikaframes, Pikascenes, Pikadditions, Pikaswaps, Pikatwists). Plan gratuit sans crédits inclus (crédits à acheter en packs), plans payants à partir de 8 $/mois en annuel.",
     },
     {
       question: "Pour qui ?",
@@ -46,7 +46,7 @@ export const pikaFiche: FicheData = {
     {
       question: "Combien ?",
       answer:
-        "Plan Basic gratuit (80 credits/mois, Pika 2.5 480p uniquement). Standard à 8 $/mois en annuel (700 credits, toutes résolutions, sans watermark). Pro à 28 $/mois en annuel (2 300 credits, générations plus rapides). Fancy à 76 $/mois en annuel (6 000 credits, générations les plus rapides). D'après la page tarifs actuelle, le téléchargement sans watermark et l'usage commercial sont listés sur tous les plans, y compris le gratuit. Facturation USD.",
+        "Plan Free à 0 $ sans crédits mensuels (crédits à acheter en packs, sans usage commercial). Starter à 8 $/mois en annuel ou 10 $ en mensuel (600 crédits/mois). Creator à 28 $/mois en annuel ou 35 $ en mensuel (2 600 crédits/mois). Fancy à 76 $/mois en annuel ou 95 $ en mensuel (8 550 crédits/mois, file prioritaire). Tous les plans donnent accès à tous les modèles et téléchargent sans watermark. Facturation USD, vérifié le 06/11/2026.",
     },
     {
       question: "Meilleure alternative ?",
@@ -100,14 +100,14 @@ export const pikaFiche: FicheData = {
     "Tu produis pour des clients premium qui exigent une qualité référence",
     "Tu as besoin d'API robuste pour automatiser (Runway plus mature)",
     "Tu fais du long format ou de l'éducatif linéaire",
-    "Tu veux monter en volume ou en vitesse de génération (plans Pro et Fancy)",
+    "Tu veux monter en volume ou en vitesse de génération (plans Creator et Fancy)",
   ],
   scoring: SCORING_BY_SLUG.pika,
   fonctionnalites: [
     {
       titre: "Pika 2.5 (text-to-video, image-to-video)",
       description:
-        "Modèle propriétaire pour générer des vidéos courtes (jusqu'à 10 secondes) à partir d'un prompt texte ou d'une image fixe. Disponible en 480p sur le plan Basic, toutes résolutions à partir du Standard.",
+        "Modèle propriétaire pour générer des vidéos courtes (clips de 5 secondes dans la grille de tarifs) à partir d'un prompt texte ou d'une image fixe. Tous les plans donnent accès à tous les modèles, le coût en crédits dépend du modèle et de la résolution.",
     },
     {
       titre: "Pikaffects (effets signature)",
@@ -117,76 +117,69 @@ export const pikaFiche: FicheData = {
     {
       titre: "Image-to-video",
       description:
-        "Anime une image fixe en clip vidéo. Disponible dès le plan Basic (Pikaffects Image-to-Video uniquement). Accès à Pika 2.5 Image-to-Video sur Standard et plus.",
+        "Anime une image fixe en clip vidéo avec Pika 2.5 ou les autres modèles proposés. Disponible sur tous les plans, chaque génération consomme des crédits.",
     },
     {
       titre: "Text-to-video Pika 2.5",
       description:
-        "Génération de vidéo à partir d'un prompt texte. Toutes résolutions disponibles à partir du plan Standard (8 $/mois). Qualité solide pour des concepts créatifs courts.",
+        "Génération de vidéo à partir d'un prompt texte. Accessible dès le plan Starter (8 $/mois en annuel). Qualité solide pour des concepts créatifs courts.",
     },
     {
-      titre: "Système à crédits avec rollover",
+      titre: "Système à crédits",
       description:
-        "Les crédits non utilisés se reportent au mois suivant (rollover). Achat de crédits supplémentaires possible sur tous les plans payants. 80 (Basic) / 700 (Standard) / 2300 (Pro) / 6000 (Fancy) credits/mois.",
+        "Crédits renouvelés chaque mois : 0 (Free) / 600 (Starter) / 2 600 (Creator) / 8 550 (Fancy). Packs de crédits supplémentaires vendus à part (environ 60 crédits par dollar). Le report des crédits non utilisés n'est pas précisé sur la page tarifs.",
     },
   ],
   plans: [
     {
-      nom: "Basic",
+      nom: "Free",
       prix: "0 $",
-      prixSub: "Gratuit · 80 credits/mois",
-      cible: "Pour découvrir l'outil sans engagement",
+      prixSub: "Gratuit · aucun crédit mensuel",
+      cible: "Pour découvrir l'interface",
       features: [
-        "80 credits mensuels",
-        "Pika 2.5 (480p uniquement)",
-        "Pikascenes, Pikadditions, Pikaswaps, Pikatwists",
-        "Pikaffects Image-to-Video uniquement",
+        "Aucun crédit inclus : crédits à acheter en packs",
+        "Accès à tous les modèles",
         "Téléchargements sans watermark",
-        "Usage commercial listé sur la page tarifs",
-        "Rollover des crédits achetés",
+        "Pas d'usage commercial",
       ],
     },
     {
-      nom: "Standard",
+      nom: "Starter",
       prix: "8 $/mois",
-      prixSub: "Annuel (96 $/an, -20% vs mensuel)",
+      prixSub: "Annuel (96 $/an) · 10 $ en mensuel",
       cible: "Créateurs réguliers découvrant la génération vidéo IA",
       features: [
-        "700 credits mensuels",
-        "Pika 2.5 toutes résolutions",
-        "Tous les Pikaffects (Pikaframes inclus)",
-        "Génération rapide",
+        "600 crédits mensuels",
+        "Accès à tous les modèles",
         "Téléchargements sans watermark",
+        "Usage commercial inclus",
         "Achat de crédits supplémentaires",
-        "Usage commercial listé sur la page tarifs",
       ],
     },
     {
-      nom: "Pro",
+      nom: "Creator",
       prix: "28 $/mois",
-      prixSub: "Annuel (336 $/an) · Best value",
+      prixSub: "Annuel (336 $/an) · 35 $ en mensuel",
       cible: "Créateurs et freelances pro",
       features: [
-        "2 300 credits mensuels",
-        "Tout Standard inclus",
-        "Génération plus rapide (faster generations)",
+        "2 600 crédits mensuels",
+        "Tout Starter inclus",
+        "Plus de générations en parallèle",
         "Téléchargements sans watermark",
-        "Usage commercial autorisé",
-        "Achat de crédits supplémentaires",
+        "Usage commercial inclus",
       ],
     },
     {
       nom: "Fancy",
       prix: "76 $/mois",
-      prixSub: "Annuel (912 $/an)",
+      prixSub: "Annuel (912 $/an) · 95 $ en mensuel",
       cible: "Studios et créateurs intensifs",
       features: [
-        "6 000 credits mensuels",
-        "Tout Pro inclus",
-        "Génération la plus rapide (fastest)",
+        "8 550 crédits mensuels",
+        "Tout Creator inclus",
+        "File de génération prioritaire",
         "Téléchargements sans watermark",
-        "Usage commercial autorisé",
-        "Achat de crédits supplémentaires",
+        "Usage commercial inclus",
       ],
     },
   ],
@@ -228,12 +221,12 @@ export const pikaFiche: FicheData = {
     {
       question: "Le plan gratuit Pika est-il vraiment utilisable ?",
       answer:
-        "Pour découvrir l'outil oui : 80 credits/mois en récurrent (vs 125 credits one-time chez Runway), accès aux Pikaffects de base, mais limité à Pika 2.5 480p et avec watermark. Pour un usage régulier sans watermark, le plan Standard à 8 $/mois est nécessaire.",
+        "Peu : le plan Free n'inclut aucun crédit mensuel, il faut acheter des packs de crédits pour générer, et l'usage commercial n'est pas inclus. Pour un usage régulier, le plan Starter à 8 $/mois en annuel (600 crédits/mois) est le vrai point d'entrée.",
     },
     {
       question: "Usage commercial autorisé ?",
       answer:
-        "D'après la page tarifs actuelle de Pika, l'usage commercial est listé sur tous les plans, y compris Basic (gratuit) et Standard (8 $/mois). Les conditions exactes peuvent évoluer : vérifie les CGU officielles avant de vendre des vidéos ou de les utiliser pour un client.",
+        "D'après la page tarifs de Pika (vérifiée le 06/11/2026), la licence commerciale est incluse sur les plans payants (Starter, Creator, Fancy) mais pas sur le plan Free. Les conditions exactes peuvent évoluer : vérifie les CGU officielles avant de vendre des vidéos ou de les utiliser pour un client.",
     },
     {
       question: "Prompts en français fonctionnent-ils ?",
@@ -243,17 +236,17 @@ export const pikaFiche: FicheData = {
     {
       question: "Combien de temps fait une vidéo générée ?",
       answer:
-        "Quelques secondes par génération avec Pika 2.5 (5 à 10 secondes typique). Pour des vidéos plus longues, il faut enchaîner plusieurs générations et les monter ensemble. Limitation inhérente à la génération vidéo IA, tous outils confondus.",
+        "Quelques secondes par génération (clips de 5 secondes dans la grille de tarifs de Pika). Pour des vidéos plus longues, il faut enchaîner plusieurs générations et les monter ensemble. Limitation inhérente à la génération vidéo IA, tous outils confondus.",
     },
     {
       question: "Les crédits non utilisés expirent-ils ?",
       answer:
-        "Non, Pika fait du rollover sur tous les plans : les credits non utilisés se reportent au mois suivant. Pratique pour les usages irréguliers. Cumul possible sans limite annoncée mais à vérifier dans les CGU pour les plans intensifs.",
+        "La page tarifs indique que les crédits des plans sont renouvelés chaque mois, sans préciser si les crédits non utilisés sont reportés. À vérifier dans les CGU avant de compter dessus.",
     },
   ],
   ctaFinal: {
     headline: "Prêt à tester Pika ?",
-    sub: "Plan Basic gratuit (80 credits/mois récurrent) pour découvrir. Plan Standard à 8 $/mois en annuel (700 credits, toutes résolutions, sans watermark) pour un usage régulier.",
+    sub: "Plan Free pour découvrir l'interface (crédits à acheter en packs). Plan Starter à 8 $/mois en annuel (600 crédits/mois, usage commercial, sans watermark) pour un usage régulier.",
     buttonText: "Essayer Pika",
   },
 };

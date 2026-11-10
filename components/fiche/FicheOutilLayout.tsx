@@ -68,6 +68,31 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
   // Détermine si on peut afficher des CTA trackés inline (hero + après verdict).
   const hasRealAffiliateLink = /^https?:\/\//.test(outil.affiliateLink);
 
+  // Sommaire : une entrée par section réellement présente sur la fiche.
+  const sommaire: { href: string; label: string }[] = [
+    { href: "#verdict", label: "Verdict" },
+    ...(data.sectionApresVerdict
+      ? [
+          {
+            href: "#test",
+            label: /test/i.test(data.sectionApresVerdict.titre)
+              ? "Notre test"
+              : "En détail",
+          },
+        ]
+      : []),
+    { href: "#pour-qui", label: "Pour qui" },
+    { href: "#note", label: "La note" },
+    ...(data.fonctionnalites && data.fonctionnalites.length > 0
+      ? [{ href: "#fonctionnalites", label: "Fonctionnalités" }]
+      : []),
+    ...(data.plans && data.plans.length > 0
+      ? [{ href: "#prix", label: "Prix" }]
+      : []),
+    { href: "#alternatives", label: "Alternatives" },
+    { href: "#faq", label: "Questions" },
+  ];
+
   // JSON-LD pour rich snippets Google
   const reviewSchema = getReviewSchema({
     outilSlug: outil.slug,
@@ -204,6 +229,25 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
             Temps de lecture : {data.hero.tempsLecture} min
           </div>
         </div>
+
+        {/* SOMMAIRE : accès direct à chaque partie de la fiche */}
+        <nav aria-label="Sommaire de la fiche" className="mt-6">
+          <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">
+            Dans cette fiche
+          </div>
+          <ul className="flex flex-wrap gap-2">
+            {sommaire.map((s) => (
+              <li key={s.href}>
+                <a
+                  href={s.href}
+                  className={`inline-block text-sm text-slate-300 bg-slate-900 border border-slate-800 hover:border-${c}-500/50 hover:text-${c}-400 rounded-full px-3 py-1.5 transition`}
+                >
+                  {s.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </section>
 
       {/* APERÇU VISUEL, optionnel */}
@@ -217,7 +261,7 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
       )}
 
       {/* VERDICT 30S */}
-      <section id="verdict" className="max-w-5xl mx-auto px-6 pb-16">
+      <section id="verdict" className="max-w-5xl mx-auto px-6 pb-16 scroll-mt-24">
         <div
           className={`bg-gradient-to-br from-${c}-500/10 to-emerald-500/5 border border-${c}-500/20 rounded-2xl p-8 md:p-10`}
         >
@@ -258,7 +302,7 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
 
       {/* SECTION ÉDITORIALE APRÈS VERDICT, optionnelle */}
       {data.sectionApresVerdict && (
-        <section className="max-w-5xl mx-auto px-6 pb-16">
+        <section id="test" className="max-w-5xl mx-auto px-6 pb-16 scroll-mt-24">
           <h2 className="text-3xl font-bold mb-6 tracking-tight">
             {data.sectionApresVerdict.titre}
           </h2>
@@ -269,7 +313,7 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
       )}
 
       {/* POUR QUI / PAS POUR QUI */}
-      <section className="max-w-5xl mx-auto px-6 pb-20">
+      <section id="pour-qui" className="max-w-5xl mx-auto px-6 pb-20 scroll-mt-24">
         <div className={`text-sm font-semibold text-${c}-400 uppercase tracking-wider mb-3`}>
           Recommandation directe
         </div>
@@ -305,7 +349,7 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
       </section>
 
       {/* SCORING */}
-      <section className="border-y border-slate-800 bg-slate-900/40">
+      <section id="note" className="border-y border-slate-800 bg-slate-900/40 scroll-mt-16">
         <div className="max-w-5xl mx-auto px-6 py-20">
           <div className={`text-sm font-semibold text-${c}-400 uppercase tracking-wider mb-3`}>
             Scoring éditorial Filtrio
@@ -350,7 +394,7 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
 
       {/* FONCTIONNALITÉS (optionnel) */}
       {data.fonctionnalites && data.fonctionnalites.length > 0 && (
-        <section className="max-w-5xl mx-auto px-6 py-20">
+        <section id="fonctionnalites" className="max-w-5xl mx-auto px-6 py-20 scroll-mt-16">
           <div className={`text-sm font-semibold text-${c}-400 uppercase tracking-wider mb-3`}>
             Fonctionnalités principales
           </div>
@@ -373,7 +417,7 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
 
       {/* PLANS (optionnel) */}
       {data.plans && data.plans.length > 0 && (
-        <section className="border-y border-slate-800 bg-slate-900/40">
+        <section id="prix" className="border-y border-slate-800 bg-slate-900/40 scroll-mt-16">
           <div className="max-w-5xl mx-auto px-6 py-20">
             <div className={`text-sm font-semibold text-${c}-400 uppercase tracking-wider mb-3`}>
               Plans &amp; tarifs
@@ -429,7 +473,7 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
       )}
 
       {/* ALTERNATIVES */}
-      <section className="max-w-5xl mx-auto px-6 py-20">
+      <section id="alternatives" className="max-w-5xl mx-auto px-6 py-20 scroll-mt-16">
         <div className={`text-sm font-semibold text-${c}-400 uppercase tracking-wider mb-3`}>
           Alternatives
         </div>
@@ -481,7 +525,7 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
       </section>
 
       {/* FAQ */}
-      <section className="border-y border-slate-800 bg-slate-900/40">
+      <section id="faq" className="border-y border-slate-800 bg-slate-900/40 scroll-mt-16">
         <div className="max-w-4xl mx-auto px-6 py-20">
           <div className={`text-sm font-semibold text-${c}-400 uppercase tracking-wider mb-3`}>
             FAQ

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -13,6 +14,37 @@ import {
   getWebsiteSchema,
   getFaqPageSchema,
 } from "@/lib/schema";
+
+export const metadata: Metadata = {
+  title: {
+    absolute:
+      "Filtrio : comparateur d'outils IA vidéo, outils Shorts et TikTok testés",
+  },
+  description:
+    "Les outils de sous-titres et de découpe en shorts testés sur la même vidéo française, et 19 outils IA pour créateurs vidéo comparés : prix vérifiés, forces, limites et verdict par usage.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    siteName: "Filtrio",
+    title: "Filtrio : les outils IA pour Shorts et TikTok, testés pour de vrai",
+    description:
+      "Les outils de sous-titres et de découpe en shorts testés sur la même vidéo française, et 19 outils IA pour créateurs vidéo comparés.",
+    url: "/",
+  },
+};
+
+/**
+ * Les outils Shorts testés de première main, dans l'ordre du banc d'essai.
+ * Résultat = ce qui s'est passé à l'export sur le compte gratuit, tel que
+ * publié sur /banc-essai. Aucune valeur estimée.
+ */
+const TESTS_SHORTS: { slug: string; date: string; resultat: string; exportOk: boolean }[] = [
+  { slug: "opusclip", date: "21/08/2026", resultat: "Export gratuit, avec filigrane", exportOk: true },
+  { slug: "gpt-video", date: "10/11/2026", resultat: "Export gratuit sans logo, avec un essai limité", exportOk: true },
+  { slug: "submagic", date: "21/08/2026", resultat: "Abonnement demandé à l'export", exportOk: false },
+  { slug: "capcut", date: "24/08/2026", resultat: "Légendes automatiques classées Pro à l'export", exportOk: false },
+];
 
 // Mini-FAQ home, questions classiques de visiteur lambda
 const HOME_FAQ: { question: string; answer: React.ReactNode }[] = [
@@ -121,7 +153,7 @@ const RECOMMANDATIONS: {
     slug: "opusclip",
     besoin: "Découper une vidéo longue en shorts",
     justification:
-      "Le seul outil du catalogue dont c'est la fonction principale : détection automatique des passages forts et recadrage vertical.",
+      "En tête de notre comparatif « vidéo longue en shorts » : détection automatique des passages forts, recadrage vertical et plan gratuit récurrent.",
     href: "/cas-usage/video-longue-en-shorts",
     hrefLabel: "Voir le guide découpe en shorts",
   },
@@ -160,6 +192,10 @@ export default function HomePage() {
     const outil = OUTILS.find((o) => o.slug === reco.slug);
     return outil ? [{ ...reco, outil }] : [];
   });
+  const testsShorts = TESTS_SHORTS.flatMap((t) => {
+    const outil = OUTILS.find((o) => o.slug === t.slug);
+    return outil ? [{ ...t, outil }] : [];
+  });
 
   return (
     <>
@@ -170,7 +206,7 @@ export default function HomePage() {
           getFaqPageSchema(HOME_FAQ),
         ]}
       />
-      <Nav ctaHref="#recommandations" ctaLabel="Voir le verdict" />
+      <Nav ctaHref="/banc-essai" ctaLabel="Voir nos tests" />
 
       {/* HERO, direct, orienté utilité */}
       <section className="relative overflow-hidden">
@@ -201,26 +237,28 @@ export default function HomePage() {
           })}
         </div>
         <h1 className="text-5xl md:text-6xl font-bold leading-[1.05] mb-6 tracking-tight">
-          Quel outil IA pour{" "}
-          <span className="text-emerald-400">tes vidéos</span> ?
+          Les outils IA pour{" "}
+          <span className="text-emerald-400">Shorts et TikTok</span>, testés
+          pour de vrai.
         </h1>
         <p className="text-xl text-slate-300 leading-relaxed mb-10 max-w-3xl">
-          Filtrio est un comparateur indépendant pour créateurs vidéo.
-          Tu nous dis ton besoin, on te dit quel outil prendre.
-          Avec ses forces, ses limites et son prix.
+          Sous-titres, découpe d&apos;une vidéo longue en shorts : nous testons
+          les outils nous-mêmes, sur la même vidéo française, et nous montrons
+          les captures. Pour chaque outil, ses forces, ses limites et son prix
+          vérifié.
         </p>
         <div className="flex flex-wrap gap-4">
           <Link
-            href="#recommandations"
+            href="/banc-essai"
             className="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-6 py-3 rounded-lg transition"
           >
-            Voir nos recommandations
+            Voir nos tests
           </Link>
           <Link
-            href="/methode"
+            href="/comparatifs/outils-shorts-tiktok-2026"
             className="border border-slate-700 hover:border-slate-600 px-6 py-3 rounded-lg transition"
           >
-            Notre méthode
+            Comparer les outils Shorts
           </Link>
         </div>
         </div>
@@ -234,18 +272,37 @@ export default function HomePage() {
             Nos tests de première main
           </div>
           <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">
-            Quatre outils, la même vidéo, la même méthode.
+            Quatre outils Shorts, la même vidéo, la même méthode.
           </h2>
           <p className="text-slate-300 leading-relaxed mb-4">
-            Sur quatre outils testés avec la même vidéo française,{" "}
+            Même vidéo française, compte gratuit, captures à l&apos;appui. Sur
+            les quatre outils testés,{" "}
             <strong className="text-slate-100">
               deux ont livré gratuitement un fichier sous-titré
-            </strong>{" "}
-            : OpusClip, avec filigrane, et GPT-Video, sans logo mais avec un
-            accès d&apos;essai limité. Submagic a demandé un abonnement à
-            l&apos;export et CapCut a classé les légendes automatiques comme
-            fonction Pro.
+            </strong>
+            . Le résultat de chacun :
           </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-5">
+            {testsShorts.map((t) => (
+              <Link
+                key={t.slug}
+                href={`/outils/${t.slug}`}
+                className={`block bg-slate-950/60 border border-slate-800 hover:border-${t.outil.color}-500/50 rounded-lg p-4 transition`}
+              >
+                <div className={`font-bold text-${t.outil.color}-400 mb-1`}>
+                  {t.outil.name}
+                </div>
+                <div className="text-xs text-slate-500 mb-2">
+                  Testé le {t.date}
+                </div>
+                <div
+                  className={`text-sm leading-snug ${t.exportOk ? "text-emerald-400" : "text-slate-300"}`}
+                >
+                  {t.resultat}
+                </div>
+              </Link>
+            ))}
+          </div>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
             <Link
               href="/banc-essai"
@@ -259,6 +316,15 @@ export default function HomePage() {
             </span>
           </div>
         </div>
+        <p className="text-sm text-slate-400 leading-relaxed mt-5">
+          Filtrio compare aussi des outils pour YouTube, les voix IA, les
+          avatars, le montage et le design, à partir des pages officielles et
+          des plans gratuits :{" "}
+          <Link href="/outils" className="text-emerald-400 hover:underline">
+            voir le catalogue des 19 outils
+          </Link>
+          .
+        </p>
       </section>
 
       {/* FILTRIO DANS LES MÉDIAS, bloc crédibilité */}

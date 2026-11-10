@@ -36,14 +36,14 @@ export default function Nav({
             <Link href="/outils" className="hover:text-slate-100 transition">
               Outils
             </Link>
-            <Link href="/youtube" className="hover:text-slate-100 transition">
-              YouTube
-            </Link>
             <Link
               href="/tiktok-shorts"
               className="hover:text-slate-100 transition"
             >
               TikTok / Shorts
+            </Link>
+            <Link href="/youtube" className="hover:text-slate-100 transition">
+              YouTube
             </Link>
             <Link
               href="/comparatifs"
@@ -132,18 +132,18 @@ export default function Nav({
               Outils
             </Link>
             <Link
-              href="/youtube"
-              onClick={close}
-              className="py-3 text-slate-200 hover:text-emerald-400 transition border-b border-slate-800/60"
-            >
-              YouTube
-            </Link>
-            <Link
               href="/tiktok-shorts"
               onClick={close}
               className="py-3 text-slate-200 hover:text-emerald-400 transition border-b border-slate-800/60"
             >
               TikTok / Shorts
+            </Link>
+            <Link
+              href="/youtube"
+              onClick={close}
+              className="py-3 text-slate-200 hover:text-emerald-400 transition border-b border-slate-800/60"
+            >
+              YouTube
             </Link>
             <Link
               href="/comparatifs"

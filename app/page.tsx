@@ -46,6 +46,14 @@ const TESTS_SHORTS: { slug: string; date: string; resultat: string; exportOk: bo
   { slug: "capcut", date: "24/08/2026", resultat: "Légendes automatiques classées Pro à l'export", exportOk: false },
 ];
 
+/** Les 4 comparatifs mis en avant sur l'accueil (les autres sont sur /comparatifs). */
+const DUELS_ACCUEIL = [
+  "opusclip-vs-submagic",
+  "submagic-vs-capcut",
+  "opusclip-vs-capcut",
+  "alternatives-a-submagic",
+];
+
 // Mini-FAQ home, questions classiques de visiteur lambda
 const HOME_FAQ: { question: string; answer: React.ReactNode }[] = [
   {
@@ -358,77 +366,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3 ENTRÉES ACTIONNABLES */}
-      <section className="max-w-6xl mx-auto px-6 pb-20">
-        <div className="mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight">
-            Tu ne sais pas par où commencer ?
-          </h2>
-          <p className="text-lg text-slate-400 max-w-2xl">
-            Trois façons rapides de trouver l&apos;outil qu&apos;il te faut.
-            Pas besoin de tout lire.
-          </p>
-        </div>
-        <div className="grid md:grid-cols-3 gap-4">
-          <Link
-            href="#comparatifs"
-            className="group p-6 bg-slate-900 border border-slate-800 rounded-xl hover:border-emerald-500/40 transition"
-          >
-            <div className="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-3">
-              Entrée 1
-            </div>
-            <h3 className="text-xl font-bold mb-2 group-hover:text-emerald-400 transition">
-              Comparer deux outils
-            </h3>
-            <p className="text-sm text-slate-400 leading-relaxed mb-4">
-              Duels 1 contre 1 : OpusClip vs Submagic, VidIQ vs TubeBuddy,
-              etc. Verdict clair par profil.
-            </p>
-            <div className="text-xs text-emerald-400 font-medium">
-              Voir les comparatifs →
-            </div>
-          </Link>
-
-          <Link
-            href="#cas-usage"
-            className="group p-6 bg-slate-900 border border-slate-800 rounded-xl hover:border-emerald-500/40 transition"
-          >
-            <div className="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-3">
-              Entrée 2
-            </div>
-            <h3 className="text-xl font-bold mb-2 group-hover:text-emerald-400 transition">
-              Choisir par besoin
-            </h3>
-            <p className="text-sm text-slate-400 leading-relaxed mb-4">
-              Tu sais ce que tu veux faire (sous-titrer, clipper un podcast,
-              générer une miniature). On te dit quel outil.
-            </p>
-            <div className="text-xs text-emerald-400 font-medium">
-              Voir les cas d&apos;usage →
-            </div>
-          </Link>
-
-          <Link
-            href="#recommandations"
-            className="group p-6 bg-slate-900 border border-slate-800 rounded-xl hover:border-emerald-500/40 transition"
-          >
-            <div className="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-3">
-              Entrée 3
-            </div>
-            <h3 className="text-xl font-bold mb-2 group-hover:text-emerald-400 transition">
-              Aller droit au but
-            </h3>
-            <p className="text-sm text-slate-400 leading-relaxed mb-4">
-              Un outil recommandé pour chacun des cinq besoins les plus
-              courants. Pas un palmarès, une réponse par usage.
-            </p>
-            <div className="text-xs text-emerald-400 font-medium">
-              Voir nos recommandations →
-            </div>
-          </Link>
-        </div>
-      </section>
-
       {/* RECOMMANDATIONS PAR BESOIN */}
       <section
         id="recommandations"
@@ -440,7 +377,7 @@ export default function HomePage() {
               Recommandations par besoin
             </div>
             <h2 className="text-4xl font-bold mb-3 tracking-tight">
-              Dis-nous ce que tu veux faire.
+              Que veux-tu faire ?
             </h2>
             <p className="text-slate-400 text-lg max-w-3xl">
               Un outil recommandé par usage, pas un palmarès général. Comparer
@@ -520,6 +457,23 @@ export default function HomePage() {
               },
             )}
           </div>
+          <div className="mt-10 pt-8 border-t border-slate-800">
+            <div className="text-sm font-semibold text-slate-300 mb-4">
+              Tous nos guides par usage
+            </div>
+            <ul className="grid md:grid-cols-2 gap-x-8 gap-y-3 text-sm">
+              {CAS_USAGE.map((c) => (
+                <li key={c.slug}>
+                  <Link
+                    href={`/cas-usage/${c.slug}`}
+                    className="text-emerald-400 hover:text-emerald-300 hover:underline"
+                  >
+                    {c.titre} →
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -527,17 +481,20 @@ export default function HomePage() {
       <section id="comparatifs" className="max-w-6xl mx-auto px-6 py-24">
         <div className="mb-12">
           <div className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-3">
-            Comparatifs populaires
+            Comparatifs Shorts
           </div>
           <h2 className="text-4xl font-bold mb-3 tracking-tight">
-            Les duels que tu cherchais.
+            Les duels les plus utiles.
           </h2>
           <p className="text-slate-400 text-lg max-w-3xl">
-            Pour chaque combat, un verdict clair : qui gagne, pour qui, pourquoi.
+            Pour chaque duel, un verdict clair : qui gagne, pour qui, pourquoi.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-4">
-          {COMPARATIFS.map((c) => {
+          {DUELS_ACCUEIL.flatMap((slug) => {
+            const c = COMPARATIFS.find((x) => x.slug === slug);
+            return c ? [c] : [];
+          }).map((c) => {
             const outilA = OUTILS.find((o) => o.slug === c.outilA);
             const outilB = OUTILS.find((o) => o.slug === c.outilB);
             return (
@@ -601,37 +558,19 @@ export default function HomePage() {
             );
           })}
         </div>
-      </section>
-
-      {/* CAS D'USAGE */}
-      <section id="cas-usage" className="border-y border-slate-800 bg-slate-900/40">
-        <div className="max-w-6xl mx-auto px-6 py-24">
-          <div className="mb-12">
-            <div className="text-sm font-semibold text-emerald-400 uppercase tracking-wider mb-3">
-              Je veux faire ça, maintenant
-            </div>
-            <h2 className="text-4xl font-bold mb-3 tracking-tight">
-              Tu sais ce que tu veux faire. On te dit quoi prendre.
-            </h2>
-            <p className="text-slate-400 text-lg max-w-3xl">
-              Pas de tutos à rallonge. Juste : voici le besoin, voici
-              l&apos;outil, voici pourquoi.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-4">
-            {CAS_USAGE.map((c) => (
-              <Link
-                key={c.slug}
-                href={`/cas-usage/${c.slug}`}
-                className="p-6 bg-slate-900 border border-slate-800 rounded-xl hover:border-emerald-500/40 transition group"
-              >
-                <h3 className="text-lg font-bold mb-2 group-hover:text-emerald-400 transition">
-                  {c.titre}
-                </h3>
-                <p className="text-slate-400 text-sm">{c.description}</p>
-              </Link>
-            ))}
-          </div>
+        <div className="flex flex-wrap gap-x-8 gap-y-3 mt-8 text-sm">
+          <Link
+            href="/comparatifs/outils-shorts-tiktok-2026"
+            className="text-emerald-400 hover:text-emerald-300 font-medium"
+          >
+            Le grand comparatif : 7 outils Shorts sur 12 critères →
+          </Link>
+          <Link
+            href="/comparatifs"
+            className="text-emerald-400 hover:text-emerald-300 font-medium"
+          >
+            Tous les comparatifs →
+          </Link>
         </div>
       </section>
 

@@ -12,7 +12,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.filtrio.fr";
  * ignore les lastmod qui changent à chaque build.
  */
 const DATES = {
-  hubs: "06/11/2026", // accueil, catalogue, comparatifs, YouTube, TikTok (prix repris des fiches)
+  hubs: "10/11/2026", // accueil, catalogue, comparatifs, YouTube, TikTok (prix repris des fiches)
   statistiques: "06/11/2026",
   bancEssai: "24/08/2026",
   methode: "06/11/2026",

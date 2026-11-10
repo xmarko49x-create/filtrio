@@ -17,6 +17,7 @@ import { davinciFiche } from "./davinci";
 import { invideoFiche } from "./invideo";
 import { pictoryFiche } from "./pictory";
 import { pikaFiche } from "./pika";
+import { gptVideoFiche } from "./gpt-video";
 
 /**
  * Registre des fiches outils publiées. Les 16 sont portées en Next.js.
@@ -44,6 +45,7 @@ export const FICHE_REGISTRY: Record<string, FicheData> = {
   invideo: invideoFiche,
   pictory: pictoryFiche,
   pika: pikaFiche,
+  "gpt-video": gptVideoFiche,
 };
 
 export function getFiche(slug: string): FicheData | undefined {

@@ -817,7 +817,51 @@ export const SCORING_BY_SLUG: Record<string, ScoringCriterion[]> = {
       poids: 5,
       score: 6.0,
       commentaire:
-        "Bonne nouvelle : d'après la page tarifs actuelle de Pika, l'usage commercial est listé sur tous les plans, y compris le gratuit. Les conditions exactes peuvent évoluer, vérifie les CGU avant de vendre des prestations vidéo basées sur Pika.",
+        "D'après la page tarifs de Pika (vérifiée le 06/11/2026), la licence commerciale est incluse sur les plans payants (Starter et plus) mais pas sur le plan Free. Les conditions exactes peuvent évoluer, vérifie les CGU avant de vendre des prestations vidéo basées sur Pika.",
+    },
+  ],
+  "gpt-video": [
+    {
+      label: "Qualité en français",
+      poids: 20,
+      score: 8.0,
+      commentaire:
+        "Sur notre test du 10/11/2026, sous-titres français justes, accents corrects, mot prononcé surligné au bon moment, explications des clips rédigées en français. Interface majoritairement en français, mais certains noms d'outils, les descriptions des styles de sous-titres et les réponses de l'assistant sont en anglais.",
+    },
+    {
+      label: "Rapport qualité/prix",
+      poids: 20,
+      score: 7.5,
+      commentaire:
+        "Starter à 19 $/mois pour 250 crédits, soit environ 4 heures de vidéo envoyée par mois. Pas de plan gratuit durable, seulement un accès d'essai (50 crédits, 3 exports, durée limitée), mais l'export d'essai est sans logo. Moins généreux qu'OpusClip pour démarrer sans payer, facturation en dollars.",
+    },
+    {
+      label: "Profondeur des fonctionnalités IA",
+      poids: 20,
+      score: 8.5,
+      commentaire:
+        "Point fort : chaque clip est expliqué en français et noté sur huit critères, ce qui rend la sélection compréhensible. Suivi du visage, assistant qui modifie le projet en écrivant, légendes prêtes à publier. Testé sur une seule vidéo courte : la détection sur des sources longues reste à confirmer.",
+    },
+    {
+      label: "Interface et prise en main",
+      poids: 15,
+      score: 8.0,
+      commentaire:
+        "Traitement très rapide (environ 40 secondes hors envoi du fichier sur notre test) et éditeur de clip clair. Mais six réglages à faire avant de lancer, ou à confier à l'IA, et le cadrage centré retenu par l'IA demande parfois un clic sur « Suivre le visage ». L'assistant affiche des termes techniques en anglais.",
+    },
+    {
+      label: "Support & confort FR",
+      poids: 15,
+      score: 7.0,
+      commentaire:
+        "Interface en français, messages d'erreur clairs. Aucune documentation ou communauté francophone repérée à date, et support non évalué. Outil jeune : l'écosystème de tutoriels reste à construire.",
+    },
+    {
+      label: "Intégrations",
+      poids: 10,
+      score: 7.5,
+      commentaire:
+        "API et connexion aux assistants IA compatibles MCP, accessibles dès l'essai (observé, non testé). Import par fichier (MP4, MOV, WebM). Pas de publication directe sur les réseaux repérée lors de notre test, contrairement à OpusClip.",
     },
   ],
 };

@@ -66,6 +66,12 @@ export interface Outil {
   metaTitle?: string;
   /** Override de la meta description SEO. Sinon description générée (prix + score + tagline). */
   metaDescription?: string;
+  /**
+   * true = outil absent du panel de l'Observatoire des prix (page, CSV et
+   * statistiques). Le panel reste figé à chaque édition ; un outil ajouté au
+   * catalogue entre deux éditions rejoint l'édition suivante.
+   */
+  horsObservatoire?: boolean;
 }
 
 export const OUTILS: Outil[] = [
@@ -296,7 +302,25 @@ export const OUTILS: Outil[] = [
     affiliateLink: "#aff-pika",
     ficheAvailable: true,
   },
+  {
+    slug: "gpt-video",
+    name: "GPT-Video",
+    score: 7.8,
+    color: "orange",
+    tagline: "Clips expliqués par l'IA",
+    category: "shorts",
+    priceFrom: "À partir de 19 $/mois",
+    freeTier: "Essai gratuit limité (50 crédits, 3 exports)",
+    affiliateLink: "#aff-gpt-video",
+    ficheAvailable: true,
+    horsObservatoire: true,
+  },
 ];
+
+/** Outils du panel de l'Observatoire des prix (édition en cours). */
+export const OUTILS_OBSERVATOIRE: Outil[] = OUTILS.filter(
+  (o) => !o.horsObservatoire,
+);
 
 export function getOutil(slug: string): Outil | undefined {
   return OUTILS.find((o) => o.slug === slug);

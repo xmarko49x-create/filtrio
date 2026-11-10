@@ -10,20 +10,20 @@ export const metadata: Metadata = {
     template: "%s, Filtrio",
   },
   description:
-    "Comparateur indépendant de 18 outils IA pour créateurs vidéo : prix vérifiés, forces, limites et verdicts selon l'usage.",
+    "Comparateur indépendant de 19 outils IA pour créateurs vidéo : prix vérifiés, forces, limites et verdicts selon l'usage.",
   openGraph: {
     type: "website",
     locale: "fr_FR",
     siteName: "Filtrio",
     title: "Filtrio, Comparateur d'outils IA pour créateurs vidéo",
     description:
-      "Comparateur indépendant de 18 outils IA pour créateurs vidéo : prix vérifiés, forces, limites et verdicts selon l'usage.",
+      "Comparateur indépendant de 19 outils IA pour créateurs vidéo : prix vérifiés, forces, limites et verdicts selon l'usage.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Filtrio",
     description:
-      "Comparateur indépendant de 18 outils IA pour créateurs vidéo : prix vérifiés, forces, limites et verdicts selon l'usage.",
+      "Comparateur indépendant de 19 outils IA pour créateurs vidéo : prix vérifiés, forces, limites et verdicts selon l'usage.",
   },
   alternates: {
     canonical: "/",

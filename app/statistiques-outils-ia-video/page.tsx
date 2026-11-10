@@ -12,7 +12,7 @@ import {
 import { AuthorByline } from "@/components/AuthorByline";
 import { AuthorBio } from "@/components/AuthorBio";
 import {
-  OUTILS,
+  OUTILS_OBSERVATOIRE,
   CATEGORIE_LABELS,
   compareOutilsByCategoryThenName,
 } from "@/lib/outils";
@@ -146,7 +146,7 @@ const FAQ = [
 ];
 
 export default function StatistiquesPage() {
-  const outilsTries = [...OUTILS].sort(compareOutilsByCategoryThenName);
+  const outilsTries = [...OUTILS_OBSERVATOIRE].sort(compareOutilsByCategoryThenName);
 
   return (
     <>

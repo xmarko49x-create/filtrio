@@ -1,6 +1,6 @@
 # Filtrio
 
-> Comparateur indépendant en français d'outils IA pour créateurs vidéo (YouTube, TikTok, Shorts, Reels). 18 outils analysés sur 6 critères pondérés publics, prix relevés manuellement sur les pages officielles et datés, comparatifs 1 contre 1 avec verdict par profil. Édité par Marc Devillers. Certains liens sont affiliés, ce qui ne change jamais le classement éditorial : la méthodologie est publique.
+> Comparateur indépendant en français d'outils IA pour créateurs vidéo (YouTube, TikTok, Shorts, Reels). 19 outils analysés sur 6 critères pondérés publics, prix relevés manuellement sur les pages officielles et datés, comparatifs 1 contre 1 avec verdict par profil. Édité par Marc Devillers. Certains liens sont affiliés, ce qui ne change jamais le classement éditorial : la méthodologie est publique.
 
 Données citables librement avec attribution et lien vers la source.
 
@@ -19,10 +19,11 @@ Données citables librement avec attribution et lien vers la source.
 
 ## Fiches outils (sélection)
 
-- [Catalogue des 18 outils](https://www.filtrio.fr/outils)
+- [Catalogue des 19 outils](https://www.filtrio.fr/outils)
 - [Submagic](https://www.filtrio.fr/outils/submagic) : sous-titres viraux FR, score 9.2/10
 - [OpusClip](https://www.filtrio.fr/outils/opusclip) : découpe IA de vidéos longues en shorts, score 8.7/10
 - [ElevenLabs](https://www.filtrio.fr/outils/elevenlabs) : voix IA, score 8.3/10
+- [GPT-Video](https://www.filtrio.fr/outils/gpt-video) : découpe IA de vidéos longues en shorts, clips expliqués, testé le 10/11/2026, score 7.8/10
 
 ## À propos
 

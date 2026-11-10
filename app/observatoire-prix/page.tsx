@@ -12,7 +12,7 @@ import {
 import { AuthorByline } from "@/components/AuthorByline";
 import { AuthorBio } from "@/components/AuthorBio";
 import {
-  OUTILS,
+  OUTILS_OBSERVATOIRE,
   CATEGORIE_LABELS,
   compareOutilsByCategoryThenName,
 } from "@/lib/outils";
@@ -114,7 +114,7 @@ const ECARTS_MENSUEL_ANNUEL = [
 ];
 
 export default function ObservatoirePrixPage() {
-  const outilsTries = [...OUTILS].sort(compareOutilsByCategoryThenName);
+  const outilsTries = [...OUTILS_OBSERVATOIRE].sort(compareOutilsByCategoryThenName);
 
   return (
     <>
@@ -238,7 +238,9 @@ export default function ObservatoirePrixPage() {
           officielle (généralement en facturation annuelle). Outils présentés
           par catégorie puis par ordre alphabétique. Les scores éditoriaux
           servent surtout à comparer des outils d&apos;une même catégorie.
-          Chaque fiche détaille tous les plans.
+          Chaque fiche détaille tous les plans. Le panel reste le même pendant
+          toute l&apos;édition : GPT-Video, ajouté au catalogue le 10/11/2026,
+          rejoindra la prochaine édition.
         </p>
         <div className="overflow-x-auto rounded-2xl border border-slate-800">
           <table className="w-full text-sm">

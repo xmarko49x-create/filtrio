@@ -1,5 +1,5 @@
 import {
-  OUTILS,
+  OUTILS_OBSERVATOIRE,
   CATEGORIE_LABELS,
   compareOutilsByCategoryThenName,
 } from "@/lib/outils";
@@ -23,7 +23,7 @@ export async function GET() {
   const header =
     "outil;categorie;prix_entree;offre_gratuite;score_editorial_dans_categorie;verifie_le;fiche";
 
-  const rows = [...OUTILS]
+  const rows = [...OUTILS_OBSERVATOIRE]
     .sort(compareOutilsByCategoryThenName)
     .map((o) =>
       [

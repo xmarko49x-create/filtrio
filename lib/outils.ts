@@ -313,7 +313,6 @@ export const OUTILS: Outil[] = [
     freeTier: "Essai gratuit limité (50 crédits, 3 exports)",
     affiliateLink: "#aff-gpt-video",
     ficheAvailable: true,
-    horsObservatoire: true,
   },
 ];
 

@@ -51,7 +51,7 @@ export default function TikTokShortsPage() {
               href="/comparatifs/outils-shorts-tiktok-2026"
               className="text-amber-400 hover:underline font-semibold"
             >
-              comparatif de 6 outils IA pour Shorts et TikTok
+              comparatif de 7 outils IA pour Shorts et TikTok
             </Link>
             .
           </p>

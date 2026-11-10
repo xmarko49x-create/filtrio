@@ -18,29 +18,29 @@ import {
 } from "@/lib/outils";
 
 const LAST_UPDATED = "06/11/2026";
-const SAMPLE_SIZE = 18;
+const SAMPLE_SIZE = 19;
 
 export const metadata: Metadata = {
   title: "Statistiques outils IA vidéo 2026 : prix, devises, crédits",
   description:
-    "11 statistiques vérifiées sur les prix de 18 outils IA vidéo : 61 % affichés ou facturés en dollars, jusqu'à +100 % d'écart entre mensuel et annuel, montée du modèle à crédits. Données datées, méthodologie publique, CSV téléchargeable, librement citables.",
+    "11 statistiques vérifiées sur les prix de 19 outils IA vidéo : 58 % affichés ou facturés en dollars, jusqu'à +100 % d'écart entre mensuel et annuel, montée du modèle à crédits. Données datées, méthodologie publique, CSV téléchargeable, librement citables.",
   alternates: {
     canonical: "https://www.filtrio.fr/statistiques-outils-ia-video",
   },
   openGraph: {
     title: "Statistiques outils IA vidéo 2026, Filtrio",
     description:
-      "11 statistiques vérifiées sur les prix de 18 outils IA vidéo. Données datées, librement citables avec lien.",
+      "11 statistiques vérifiées sur les prix de 19 outils IA vidéo. Données datées, librement citables avec lien.",
   },
 };
 
 /** Les 11 statistiques citables. Chaque chiffre est recalculable depuis l'observatoire. */
 const STATS = [
   {
-    chiffre: "61 %",
+    chiffre: "58 %",
     titre: "affichent ou facturent leurs abonnements en dollars US",
     detail:
-      "11 outils sur 18 affichaient ou facturaient leurs abonnements en dollars lors de notre vérification effectuée depuis la France. Pour un acheteur français, le montant réellement débité peut dépendre du taux de change et d'éventuels frais bancaires.",
+      "11 outils sur 19 affichaient ou facturaient leurs abonnements en dollars lors de notre vérification effectuée depuis la France. Pour un acheteur français, le montant réellement débité peut dépendre du taux de change et d'éventuels frais bancaires.",
   },
   {
     chiffre: "+21 % à +100 %",
@@ -55,10 +55,10 @@ const STATS = [
       "Sur ces quatre plans, le prix mensuel mis en avant correspondait à un engagement annuel, tandis que le paiement sans engagement coûtait en moyenne 57 % plus cher.",
   },
   {
-    chiffre: "72 %",
+    chiffre: "68 %",
     titre: "proposent une version gratuite utilisable dans la durée",
     detail:
-      "13 outils sur 18 proposent un plan gratuit durable. Submagic et Pictory proposent seulement un essai limité, Runway fournit une allocation gratuite unique de crédits qui ne se renouvelle pas, Pika garde un plan gratuit sans crédits inclus et InVideo n'affiche pas de plan gratuit.",
+      "13 outils sur 19 proposent un plan gratuit durable. Submagic, Pictory et GPT-Video proposent seulement un essai limité, Runway fournit une allocation gratuite unique de crédits qui ne se renouvelle pas, Pika garde un plan gratuit sans crédits inclus et InVideo n'affiche pas de plan gratuit.",
   },
   {
     chiffre: "de 3,99 $ à 29 $",
@@ -67,40 +67,40 @@ const STATS = [
       "Parmi les outils facturés en dollars, le premier palier payant relevé va de 3,99 $/mois (TubeBuddy Pro, paiement annuel) à 29 $/mois (HeyGen Creator, paiement mensuel).",
   },
   {
-    chiffre: "≥ 44 %",
+    chiffre: "≥ 47 %",
     titre: "fonctionnent partiellement ou totalement avec des crédits",
     detail:
-      "Au moins 8 outils sur 18 : ElevenLabs, Runway, Synthesia, InVideo, Pika, OpusClip, Pictory, et Submagic pour certaines fonctionnalités IA. Le prix d'abonnement ne suffit plus à prévoir le coût réel, qui dépend du volume de production.",
+      "Au moins 9 outils sur 19 : ElevenLabs, Runway, Synthesia, InVideo, Pika, OpusClip, Pictory, GPT-Video, et Submagic pour certaines fonctionnalités IA. Le prix d'abonnement ne suffit plus à prévoir le coût réel, qui dépend du volume de production.",
   },
   {
     chiffre: "22 %",
     titre: "ont modifié leurs plans ou leur affichage en un seul mois",
     detail:
-      "4 outils sur 18 entre juin et juillet 2026 : Runway a remplacé son plan Illimité par un plan à crédits (Max), Riverside est passé à l'affichage en euros, HeyGen a ajouté un plan Pro, Veed a arrondi ses prix TTC.",
+      "4 outils sur les 18 suivis à l'époque, entre juin et juillet 2026 : Runway a remplacé son plan Illimité par un plan à crédits (Max), Riverside est passé à l'affichage en euros, HeyGen a ajouté un plan Pro, Veed a arrondi ses prix TTC.",
   },
   {
-    chiffre: "2 sur 18",
+    chiffre: "3 sur 19",
     titre: "n'offrent qu'un essai gratuit limité, qui se consomme une fois",
     detail:
-      "Submagic (essai de 3 vidéos) et Pictory (essai de 14 jours). Un point d'entrée à ne pas confondre avec un plan gratuit durable : une fois l'essai consommé, il faut payer pour continuer.",
+      "Submagic (essai de 3 vidéos), Pictory (essai de 14 jours) et GPT-Video (50 crédits et 3 exports, pour une durée limitée). Un point d'entrée à ne pas confondre avec un plan gratuit durable : une fois l'essai consommé, il faut payer pour continuer.",
   },
   {
-    chiffre: "39 %",
+    chiffre: "42 %",
     titre: "affichent des prix en euros pour les visiteurs français",
     detail:
-      "7 outils sur 18 (Submagic, Synthesia, VidIQ, Veed, Canva, CapCut, Riverside). Un élément utile pour comparer son budget en euros et limiter les écarts liés à la conversion monétaire.",
+      "8 outils sur 19 (Submagic, Synthesia, VidIQ, Veed, Canva, CapCut, Riverside, DaVinci Resolve). Un élément utile pour comparer son budget en euros et limiter les écarts liés à la conversion monétaire.",
   },
   {
     chiffre: "1 sur 18",
-    titre: "seul outil indique explicitement que les taxes sont incluses",
+    titre: "seul outil indiquait explicitement que les taxes sont incluses",
     detail:
-      "Veed est le seul outil de notre relevé dont la page tarifs affichait explicitement la mention « incl. tax ». Pour les autres, le traitement des taxes n'était pas clairement précisé sur la page consultée : le montant final est à vérifier avant paiement.",
+      "Lors de notre relevé de juillet 2026, Veed était le seul des 18 outils suivis dont la page tarifs affichait explicitement la mention « incl. tax ». Pour les autres, le traitement des taxes n'était pas clairement précisé sur la page consultée : le montant final est à vérifier avant paiement.",
   },
   {
-    chiffre: "1 sur 18",
+    chiffre: "1 sur 19",
     titre: "seul outil propose sa version payante en achat unique",
     detail:
-      "DaVinci Resolve Studio est affiché à 255 € (295 $ aux États-Unis) en achat unique. Pour les 17 autres outils du panel, l'accès payant repose sur au moins une formule d'abonnement.",
+      "DaVinci Resolve Studio est affiché à 255 € (295 $ aux États-Unis) en achat unique. Pour les 18 autres outils du panel, l'accès payant repose sur au moins une formule d'abonnement.",
   },
 ];
 
@@ -126,7 +126,7 @@ const FAQ = [
   {
     question: "D'où viennent ces statistiques ?",
     answer:
-      "Chaque chiffre est calculé à partir d'un relevé manuel des pages tarifaires officielles de 18 outils IA vidéo, avec trois contrôles systématiques par prix : montant exact, devise et cycle de facturation. Le détail outil par outil, daté, est publié dans l'Observatoire des prix de Filtrio.",
+      "Chaque chiffre est calculé à partir d'un relevé manuel des pages tarifaires officielles de 19 outils IA vidéo, avec trois contrôles systématiques par prix : montant exact, devise et cycle de facturation. Le détail outil par outil, daté, est publié dans l'Observatoire des prix de Filtrio.",
   },
   {
     question: "Puis-je réutiliser ces chiffres dans un article, une newsletter ou une vidéo ?",
@@ -136,12 +136,12 @@ const FAQ = [
   {
     question: "À quelle fréquence ces statistiques sont-elles mises à jour ?",
     answer:
-      "À chaque édition de l'Observatoire des prix, environ une fois par mois. La date de dernière vérification est affichée en haut de page. Les tarifs SaaS évoluent vite : 4 outils sur 18 ont modifié leurs plans ou leur affichage rien qu'entre juin et juillet 2026.",
+      "À chaque édition de l'Observatoire des prix, environ une fois par mois. La date de dernière vérification est affichée en haut de page. Les tarifs SaaS évoluent vite : 4 des 18 outils suivis à l'époque ont modifié leurs plans ou leur affichage rien qu'entre juin et juillet 2026.",
   },
   {
     question: "Quel est l'échantillon exact ?",
     answer:
-      "18 outils IA pour créateurs vidéo, couvrant 9 catégories : sous-titres et shorts (Submagic, OpusClip), SEO YouTube (TubeBuddy, VidIQ), voix IA (ElevenLabs), avatars IA (HeyGen, Synthesia), long format (Descript, Riverside), éditeurs (CapCut, Veed, Kapwing, DaVinci Resolve), génération vidéo (Runway, Pika), script-to-video (InVideo, Pictory) et design (Canva).",
+      "19 outils IA pour créateurs vidéo, couvrant 9 catégories : sous-titres et shorts (Submagic, OpusClip, GPT-Video), SEO YouTube (TubeBuddy, VidIQ), voix IA (ElevenLabs), avatars IA (HeyGen, Synthesia), long format (Descript, Riverside), éditeurs (CapCut, Veed, Kapwing, DaVinci Resolve), génération vidéo (Runway, Pika), script-to-video (InVideo, Pictory) et design (Canva).",
   },
 ];
 
@@ -163,7 +163,7 @@ export default function StatistiquesPage() {
             "@type": "Dataset",
             name: "Statistiques 2026 sur les prix des outils IA vidéo",
             description:
-              "11 statistiques vérifiées sur les prix, devises et modèles de facturation de 18 outils IA pour créateurs vidéo, calculées à partir d'un relevé manuel des pages tarifaires officielles.",
+              "11 statistiques vérifiées sur les prix, devises et modèles de facturation de 19 outils IA pour créateurs vidéo, calculées à partir d'un relevé manuel des pages tarifaires officielles.",
             url: "https://www.filtrio.fr/statistiques-outils-ia-video",
             creator: {
               "@type": "Organization",
@@ -216,7 +216,7 @@ export default function StatistiquesPage() {
           Les 11 statistiques.
         </h2>
         <p className="text-slate-400 mb-8 max-w-3xl">
-          Chiffres arrondis pour la lisibilité. Le détail outil par outil (18
+          Chiffres arrondis pour la lisibilité. Le détail outil par outil (19
           lignes, avec devise et date de vérification par prix) est publié
           dans l&apos;
           <Link

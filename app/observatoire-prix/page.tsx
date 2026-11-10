@@ -24,7 +24,7 @@ import {
 export const metadata: Metadata = {
   title: "Observatoire des prix des outils IA vidéo, édition novembre 2026",
   description:
-    "Les prix réels de 18 outils IA vidéo (Submagic, OpusClip, ElevenLabs, HeyGen, Runway...) relevés sur les pages officielles et datés. Devises, pièges mensuel vs annuel, modèles à crédits : ce que les pages tarifaires ne montrent pas.",
+    "Les prix réels de 19 outils IA vidéo (Submagic, OpusClip, ElevenLabs, HeyGen, Runway...) relevés sur les pages officielles et datés. Devises, pièges mensuel vs annuel, modèles à crédits : ce que les pages tarifaires ne montrent pas.",
   alternates: {
     canonical: "https://www.filtrio.fr/observatoire-prix",
   },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "Filtrio",
     title: "Observatoire des prix des outils IA vidéo, édition novembre 2026, Filtrio",
     description:
-      "Les prix réels de 18 outils IA vidéo (Submagic, OpusClip, ElevenLabs, HeyGen, Runway...) relevés sur les pages officielles et datés. Devises, pièges mensuel vs annuel, modèles à crédits : ce que les pages tarifaires ne montrent pas.",
+      "Les prix réels de 19 outils IA vidéo (Submagic, OpusClip, ElevenLabs, HeyGen, Runway...) relevés sur les pages officielles et datés. Devises, pièges mensuel vs annuel, modèles à crédits : ce que les pages tarifaires ne montrent pas.",
     url: "/observatoire-prix",
   },
 };
@@ -131,7 +131,7 @@ export default function ObservatoirePrixPage() {
             "@type": "Dataset",
             name: "Observatoire des prix des outils IA vidéo",
             description:
-              "Prix d'entrée, devise, offre gratuite et date de vérification de 18 outils IA pour créateurs vidéo, relevés sur les pages tarifaires officielles.",
+              "Prix d'entrée, devise, offre gratuite et date de vérification de 19 outils IA pour créateurs vidéo, relevés sur les pages tarifaires officielles.",
             url: "https://www.filtrio.fr/observatoire-prix",
             sameAs:
               "https://www.data.gouv.fr/datasets/prix-et-conditions-des-outils-ia-video-releve-de-juillet-2026",
@@ -177,7 +177,7 @@ export default function ObservatoirePrixPage() {
           <p className="text-lg text-slate-300 leading-relaxed max-w-3xl mb-6">
             Le prix affiché sur une page tarifaire n&apos;est pas toujours le prix
             réellement payé. Devises en dollars, engagement annuel par défaut,
-            modèles à crédits : voici les tarifs réels de 18 outils IA vidéo,
+            modèles à crédits : voici les tarifs réels de 19 outils IA vidéo,
             relevés un par un sur les pages officielles, avec leur date de
             vérification. Pour les chiffres clés prêts à citer, voir aussi la
             page{" "}
@@ -200,7 +200,7 @@ export default function ObservatoirePrixPage() {
       <section className="max-w-5xl mx-auto px-6 py-10">
         <div className="grid md:grid-cols-3 gap-5">
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-            <div className="text-3xl font-bold text-emerald-400 mb-1">11 / 18</div>
+            <div className="text-3xl font-bold text-emerald-400 mb-1">11 / 19</div>
             <p className="text-sm text-slate-300 leading-relaxed">
               outils facturent en <strong className="text-slate-100">dollars US</strong>.
               Le montant débité en euros dépend du taux de change et des
@@ -216,10 +216,10 @@ export default function ObservatoirePrixPage() {
             </p>
           </div>
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-            <div className="text-3xl font-bold text-emerald-400 mb-1">13 / 18</div>
+            <div className="text-3xl font-bold text-emerald-400 mb-1">13 / 19</div>
             <p className="text-sm text-slate-300 leading-relaxed">
               outils proposent une <strong className="text-slate-100">version gratuite durable</strong>.
-              2 n&apos;offrent qu&apos;un essai limité, 1 fournit une
+              3 n&apos;offrent qu&apos;un essai limité, 1 fournit une
               allocation unique de crédits (Runway), 1 a un plan gratuit
               sans crédits inclus (Pika) et 1 n&apos;affiche pas de plan
               gratuit (InVideo).
@@ -231,16 +231,14 @@ export default function ObservatoirePrixPage() {
       {/* TABLEAU PRINCIPAL */}
       <section className="max-w-5xl mx-auto px-6 py-10">
         <h2 className="text-3xl font-bold tracking-tight mb-3">
-          Les prix d&apos;entrée des 18 outils.
+          Les prix d&apos;entrée des 19 outils.
         </h2>
         <p className="text-slate-400 mb-6 max-w-3xl">
           Prix d&apos;entrée de gamme tel qu&apos;affiché sur la page tarifaire
           officielle (généralement en facturation annuelle). Outils présentés
           par catégorie puis par ordre alphabétique. Les scores éditoriaux
           servent surtout à comparer des outils d&apos;une même catégorie.
-          Chaque fiche détaille tous les plans. Le panel reste le même pendant
-          toute l&apos;édition : GPT-Video, ajouté au catalogue le 10/11/2026,
-          rejoindra la prochaine édition.
+          Chaque fiche détaille tous les plans.
         </p>
         <div className="overflow-x-auto rounded-2xl border border-slate-800">
           <table className="w-full text-sm">
@@ -361,7 +359,7 @@ export default function ObservatoirePrixPage() {
 
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-7">
             <h3 className="text-xl font-bold mb-3 text-emerald-400">
-              2. 61 % des outils affichent ou facturent leurs abonnements en
+              2. 58 % des outils affichent ou facturent leurs abonnements en
               dollars.
             </h3>
             <p className="text-slate-300 leading-relaxed">
@@ -369,7 +367,7 @@ export default function ObservatoirePrixPage() {
               US. Pour un créateur qui paie en euros, le montant réellement
               débité dépend du taux de change du jour et des éventuels frais de
               ta banque. Quelques outils affichent directement des prix en euros
-              depuis la France, comme Submagic, Synthesia, VidIQ, Veed, Canva et Riverside.
+              depuis la France, comme Submagic, Synthesia, VidIQ, Veed, Canva, Riverside et DaVinci Resolve.
               CapCut fait exception : l&apos;offre gratuite est visible, mais le
               tarif Pro peut varier selon le pays, l&apos;appareil ou le canal
               d&apos;abonnement. À budget serré, c&apos;est un critère de choix
@@ -382,9 +380,9 @@ export default function ObservatoirePrixPage() {
               3. Le modèle à crédits remplace peu à peu l&apos;illimité.
             </h3>
             <p className="text-slate-300 leading-relaxed">
-              Au moins 8 outils du panel (ElevenLabs, Runway, Synthesia,
-              InVideo, Pika, OpusClip, Pictory, et Submagic pour ses fonctions
-              IA avancées)
+              Au moins 9 outils du panel (ElevenLabs, Runway, Synthesia,
+              InVideo, Pika, OpusClip, Pictory, GPT-Video, et Submagic pour ses
+              fonctions IA avancées)
               fonctionnent partiellement ou totalement avec des crédits
               mensuels ou annuels. Conséquence : le prix d&apos;abonnement ne
               suffit plus à prévoir le coût réel, qui dépend de ton volume de
@@ -399,10 +397,10 @@ export default function ObservatoirePrixPage() {
               4. « Gratuit » recouvre trois réalités différentes.
             </h3>
             <p className="text-slate-300 leading-relaxed">
-              Sur les 18 outils : 13 proposent un plan gratuit durable (dont 2
+              Sur les 19 outils : 13 proposent un plan gratuit durable (dont 2
               outils intégralement gratuits dans leur version de base, CapCut
-              et DaVinci Resolve), 2 n&apos;offrent qu&apos;un essai limité qui
-              se consomme vite (Submagic, Pictory), et 1 fournit une allocation
+              et DaVinci Resolve), 3 n&apos;offrent qu&apos;un essai limité qui
+              se consomme vite (Submagic, Pictory, GPT-Video), et 1 fournit une allocation
               gratuite unique de crédits qui ne se renouvelle pas (Runway, 125
               crédits). Pika garde un plan gratuit mais sans crédits inclus
               (packs payants), et InVideo n&apos;affiche plus de plan gratuit

@@ -8,15 +8,15 @@ import { getBreadcrumbSchema } from "@/lib/schema";
 import { AuthorByline } from "@/components/AuthorByline";
 import { AuthorBio } from "@/components/AuthorBio";
 
-const LAST_UPDATED = "24/08/2026";
+const LAST_UPDATED = "10/11/2026";
 
 export const metadata: Metadata = {
-  title: "Banc d'essai : 3 outils vidéo IA testés sur le même fichier",
+  title: "Banc d'essai : 4 outils vidéo IA testés sur le même fichier",
   description:
-    "OpusClip, Submagic et CapCut passés au même fichier vidéo français, réglages par défaut, comptes gratuits. Temps, format affiché, export gratuit : les résultats en un tableau.",
+    "OpusClip, Submagic, CapCut et GPT-Video passés au même fichier vidéo français, réglages par défaut, comptes gratuits. Temps, format affiché, export gratuit : les résultats en un tableau.",
   alternates: { canonical: "https://www.filtrio.fr/banc-essai" },
   openGraph: {
-    title: "Banc d'essai Filtrio : 3 outils vidéo IA sur le même fichier",
+    title: "Banc d'essai Filtrio : 4 outils vidéo IA sur le même fichier",
     description:
       "Résultats bruts de nos tests de première main, sur une vidéo source libre que tu peux retélécharger.",
     type: "article",
@@ -58,6 +58,17 @@ const RESULTATS = [
     exportOk: false,
     erreurs: "2 erreurs visibles à l'image, non quantifiées",
   },
+  {
+    outil: "GPT-Video",
+    slug: "gpt-video",
+    couleur: "orange",
+    date: "10/11/2026",
+    temps: "≈ 17 s, hors envoi du fichier",
+    format: "9:16 vertical, cadrage centré par défaut, suivi du visage en un clic",
+    export: "Oui, fichier livré sans logo",
+    exportOk: true,
+    erreurs: "Aucune erreur relevée sur les passages contrôlés",
+  },
 ];
 
 export default function BancEssaiPage() {
@@ -81,7 +92,7 @@ export default function BancEssaiPage() {
           <span className="text-slate-300">Banc d&apos;essai</span>
         </div>
         <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-5 tracking-tight">
-          Banc d&apos;essai Filtrio : 3 outils vidéo IA testés sur le même
+          Banc d&apos;essai Filtrio : 4 outils vidéo IA testés sur le même
           fichier
         </h1>
         <div className="mb-6">
@@ -110,7 +121,7 @@ export default function BancEssaiPage() {
                 <strong className="text-slate-100">
                   Le même fichier source
                 </strong>{" "}
-                pour les trois outils : un entretien de 1 min 17 en français,
+                pour tous les outils : un entretien de 1 min 17 en français,
                 plan fixe, 720p, sous licence libre.
               </span>
             </li>
@@ -130,7 +141,8 @@ export default function BancEssaiPage() {
                   Les réglages par défaut
                 </strong>{" "}
                 et aucune retouche manuelle : ce qui est comparé, c&apos;est le
-                rendu automatique.
+                rendu automatique. GPT-Video n&apos;a pas de réglages par
+                défaut : nous avons laissé son IA les choisir.
               </span>
             </li>
             <li className="flex gap-3">
@@ -157,10 +169,11 @@ export default function BancEssaiPage() {
             <strong className="text-slate-300">
               Une précision de date qui compte.
             </strong>{" "}
-            Les trois outils ont reçu le même fichier, mais pas le même jour :
+            Les quatre outils ont reçu le même fichier, mais pas le même jour :
             OpusClip et Submagic ont été testés le 21 août 2026 lors d&apos;une
-            même session, CapCut le 24 août 2026, soit trois jours plus tard. Ce
-            n&apos;est donc pas une manipulation simultanée.
+            même session, CapCut le 24 août 2026, et GPT-Video le 10 novembre
+            2026. Ce n&apos;est donc pas une manipulation simultanée, et les
+            offres ont pu évoluer entre deux tests.
           </p>
         </div>
       </section>
@@ -171,8 +184,8 @@ export default function BancEssaiPage() {
           Les résultats.
         </h2>
         <p className="text-slate-400 mb-8">
-          Trois outils manipulés à ce jour. Le tableau s&apos;allongera à chaque
-          nouveau test, à cette même adresse.
+          Quatre outils manipulés à ce jour. Le tableau s&apos;allongera à
+          chaque nouveau test, à cette même adresse.
         </p>
 
         <div className="overflow-x-auto -mx-6 px-6">
@@ -244,8 +257,17 @@ export default function BancEssaiPage() {
                 « Format affiché par défaut »
               </strong>{" "}
               désigne ce que l&apos;outil montrait à l&apos;écran après
-              traitement. Seul OpusClip nous a livré un fichier : pour les deux
-              autres, c&apos;est un aperçu, pas un export.
+              traitement. OpusClip et GPT-Video nous ont livré un fichier : pour
+              Submagic et CapCut, c&apos;est un aperçu, pas un export.
+            </li>
+            <li>
+              <strong className="text-slate-300">
+                Le temps de GPT-Video ne compte pas l&apos;envoi du fichier.
+              </strong>{" "}
+              Il vient de la page de suivi de l&apos;outil (choix des réglages
+              et analyse). Pour les trois autres outils, le temps a été
+              chronométré de l&apos;envoi au résultat affiché. Les deux mesures
+              ne sont donc pas strictement comparables.
             </li>
             <li>
               <strong className="text-slate-300">
@@ -329,12 +351,14 @@ export default function BancEssaiPage() {
           </p>
           <p>
             <strong className="text-slate-100">
-              Ces tests ne modifient aucune note.
+              Ces tests ne modifient aucune note déjà publiée.
             </strong>{" "}
-            Les scores publiés sur les fiches restent issus de notre analyse
-            documentaire. Une manipulation sur une vidéo ne suffit pas à faire
-            bouger une grille de notation, et nous ne l&apos;utilisons jamais
-            pour justifier après coup une note déjà publiée.
+            Les scores d&apos;OpusClip, Submagic et CapCut restent issus de
+            notre analyse documentaire : une manipulation sur une vidéo ne
+            suffit pas à faire bouger une grille, et nous ne l&apos;utilisons
+            jamais pour justifier après coup une note déjà publiée. GPT-Video
+            a été noté pour la première fois après son test : sa grille tient
+            compte de ce test et de l&apos;analyse de ses pages officielles.
           </p>
         </div>
       </section>
@@ -351,7 +375,7 @@ export default function BancEssaiPage() {
             observé, et ce qui est payant.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-4 mb-6">
+          <div className="grid md:grid-cols-2 gap-4 mb-6">
             <Link
               href="/outils/opusclip"
               className="block bg-slate-950 border border-emerald-500/30 hover:border-emerald-500 rounded-xl p-6 transition"
@@ -387,6 +411,18 @@ export default function BancEssaiPage() {
               <p className="text-sm text-slate-400 leading-relaxed mb-0">
                 Vingt-quatre captures commentées en langage simple, et le
                 diamant violet qui signale les fonctions réservées au Pro.
+              </p>
+            </Link>
+            <Link
+              href="/outils/gpt-video"
+              className="block bg-slate-950 border border-orange-500/30 hover:border-orange-500 rounded-xl p-6 transition"
+            >
+              <div className="font-bold text-orange-400 mb-2">
+                Test GPT-Video →
+              </div>
+              <p className="text-sm text-slate-400 leading-relaxed mb-0">
+                Réglages choisis par l&apos;IA, clips notés et expliqués,
+                cadrage sur le visage et export gratuit sans logo.
               </p>
             </Link>
           </div>

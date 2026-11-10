@@ -29,4 +29,5 @@ export const VERIF_DATES: Record<string, string> = {
   kapwing: "06/11/2026",
   pictory: "06/11/2026",
   pika: "06/11/2026",
+  "gpt-video": "10/11/2026",
 };

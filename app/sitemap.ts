@@ -14,11 +14,11 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.filtrio.fr";
 const DATES = {
   hubs: "10/11/2026", // accueil, catalogue, comparatifs, YouTube, TikTok (prix repris des fiches)
   statistiques: "06/11/2026",
-  bancEssai: "24/08/2026",
-  methode: "06/11/2026",
+  bancEssai: "10/11/2026",
+  methode: "10/11/2026",
   lexique: "02/10/2026",
   alternativesSubmagic: "06/11/2026",
-  outilsShorts: "06/11/2026",
+  outilsShorts: "10/11/2026",
 };
 
 /** "06/11/2026" -> Date. */

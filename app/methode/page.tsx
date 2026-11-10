@@ -134,7 +134,8 @@ export default function MethodePage() {
                 clairement indiquées et le même jour lorsque c&apos;est
                 possible, les paramètres par défaut et aucune retouche
                 manuelle. Submagic et OpusClip ont ainsi été testés le 21 août
-                2026, CapCut le 24 août 2026, sur le même fichier. Nous
+                2026, CapCut le 24 août 2026 et GPT-Video le 10 novembre 2026,
+                sur le même fichier. Nous
                 chronométrons le temps de traitement, relevons les limites du
                 plan gratuit telles qu&apos;elles s&apos;affichent dans
                 l&apos;interface, et conservons les captures d&apos;écran, dont
@@ -190,6 +191,13 @@ export default function MethodePage() {
                 >
                   CapCut
                 </Link>
+                , et le test complet de{" "}
+                <Link
+                  href="/outils/gpt-video"
+                  className="text-orange-400 hover:underline"
+                >
+                  GPT-Video
+                </Link>
                 .
               </p>
               <p className="text-slate-400">
@@ -205,7 +213,10 @@ export default function MethodePage() {
                 </strong>{" "}
                 : une manipulation sur une seule vidéo ne suffit pas à faire
                 bouger une grille de notation, et nous ne l&apos;utilisons
-                jamais pour justifier après coup une note déjà publiée.
+                jamais pour justifier après coup une note déjà publiée. Seule
+                exception : un outil noté pour la première fois après son test,
+                comme GPT-Video, dont la grille tient compte de ce test et de
+                l&apos;analyse de ses pages officielles.
               </p>
             </div>
           </div>

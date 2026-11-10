@@ -11,12 +11,12 @@ import { getOutilOrThrow, type Outil } from "@/lib/outils";
 import { getFaqPageSchema, getBreadcrumbSchema } from "@/lib/schema";
 
 const SLUG = "outils-shorts-tiktok-2026";
-const TITLE = "Meilleur outil pour Shorts en 2026 : 6 solutions comparées";
+const TITLE = "Meilleur outil pour Shorts en 2026 : 7 solutions comparées";
 const SUBTITLE =
-  "Submagic, OpusClip, CapCut, Descript, Veed et Kapwing comparés sur 12 critères : prix, sous-titres français, clipping, export et verdict par profil.";
-const LAST_CHECK = "06/11/2026";
+  "Submagic, OpusClip, CapCut, Descript, Veed, Kapwing et GPT-Video comparés sur 12 critères : prix, sous-titres français, clipping, export et verdict par profil.";
+const LAST_CHECK = "10/11/2026";
 /** Date de la dernière révision éditoriale (distincte de la vérification des données). */
-const LAST_UPDATE = "02/10/2026";
+const LAST_UPDATE = "10/11/2026";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -83,6 +83,13 @@ const OUTILS_COMPARES: OutilCard[] = [
     forceMajeure: "Édition en temps réel à plusieurs, comme Google Docs pour la vidéo.",
     faiblesseMajeure: "Sous-titres et templates moins avancés que les spécialistes.",
   },
+  {
+    slug: "gpt-video",
+    badge: "Le clippeur transparent",
+    bestFor: "Créateurs qui recyclent interviews et podcasts en shorts et veulent comprendre le choix de l'IA.",
+    forceMajeure: "Chaque clip est noté et expliqué en français ; sur notre test, sous-titres justes et export gratuit sans logo.",
+    faiblesseMajeure: "Pas de plan gratuit durable, seulement un essai limité, et six réglages à faire avant de lancer.",
+  },
 ];
 
 interface CritereLine {
@@ -95,7 +102,7 @@ interface CritereLine {
 const CRITERES_TABLEAU: CritereLine[] = [
   {
     label: "Score éditorial Filtrio",
-    values: ["9.2 / 10", "8.7 / 10", "8.4 / 10", "7.8 / 10", "7.8 / 10", "7.2 / 10"],
+    values: ["9.2 / 10", "8.7 / 10", "8.4 / 10", "7.8 / 10", "7.8 / 10", "7.2 / 10", "7.8 / 10"],
     highlight: 0,
   },
   {
@@ -107,6 +114,7 @@ const CRITERES_TABLEAU: CritereLine[] = [
       "Éditeur tout-en-un",
       "Éditeur web",
       "Édition collab",
+      "Clipping IA expliqué",
     ],
   },
   {
@@ -118,6 +126,7 @@ const CRITERES_TABLEAU: CritereLine[] = [
       "Gratuit (Pro variable selon plateforme)",
       "11 €/mois (annuel, TTC)",
       "16 $/mois (annuel)",
+      "19 $/mois",
     ],
     highlight: 3,
   },
@@ -130,17 +139,18 @@ const CRITERES_TABLEAU: CritereLine[] = [
       "Oui, mais légendes auto classées Pro à l'export lors de notre essai",
       "Plan Free disponible",
       "Plan Free disponible",
+      "Non, essai limité (50 crédits, 3 exports)",
     ],
     highlight: 3,
   },
   {
     label: "Qualité sous-titres FR",
-    values: ["Excellente", "Correcte", "Très bonne", "Bonne", "Bonne", "Correcte"],
+    values: ["Excellente", "Correcte", "Très bonne", "Bonne", "Bonne", "Correcte", "Bonne"],
     highlight: 0,
   },
   {
     label: "Templates animés",
-    values: ["Excellents", "Limités", "Bons", "Excellents", "Très bons", "Bons"],
+    values: ["Excellents", "Limités", "Bons", "Excellents", "Très bons", "Bons", "4 styles"],
   },
   {
     label: "Clipping IA depuis longue vidéo",
@@ -151,31 +161,32 @@ const CRITERES_TABLEAU: CritereLine[] = [
       "Manuel",
       "Limité",
       "Manuel",
+      "Cœur du produit",
     ],
     highlight: 1,
   },
   {
     label: "Édition textuelle (transcript-based)",
-    values: ["Non", "Non", "Excellente", "Non", "Limitée", "Limitée"],
+    values: ["Non", "Non", "Excellente", "Non", "Limitée", "Limitée", "Non"],
     highlight: 2,
   },
   {
     label: "Export 4K",
-    values: ["Business uniquement", "Plan Pro", "Plan Creator", "Avec Pro", "Plan Pro", "Plan Pro"],
+    values: ["Business uniquement", "Plan Pro", "Plan Creator", "Avec Pro", "Plan Pro", "Plan Pro", "Non précisé"],
   },
   {
     label: "App mobile",
-    values: ["Web", "Web", "Web + macOS", "iOS + Android", "Web", "Web"],
+    values: ["Web", "Web", "Web + macOS", "iOS + Android", "Web", "Web", "Web"],
     highlight: 3,
   },
   {
     label: "Collaboration équipe",
-    values: ["Limitée", "Limitée", "Bonne", "Limitée", "Correcte", "Excellente"],
+    values: ["Limitée", "Limitée", "Bonne", "Limitée", "Correcte", "Excellente", "Non évaluée"],
     highlight: 5,
   },
   {
     label: "Programme affilié actif chez Filtrio",
-    values: ["Oui", "Oui", "Non (PartnerStack)", "Non", "Non (sélectif)", "Non (Tapfiliate)"],
+    values: ["Oui", "Oui", "Non (PartnerStack)", "Non", "Non (sélectif)", "Non (Tapfiliate)", "Non"],
   },
 ];
 
@@ -316,6 +327,12 @@ const FAQ = [
   },
   {
     question:
+      "Où se place GPT-Video face à OpusClip ?",
+    answer:
+      "Les deux transforment une vidéo longue en shorts. OpusClip garde l'avantage d'un plan gratuit récurrent et de la publication directe sur les réseaux. GPT-Video se distingue par la transparence : chaque clip est noté et expliqué sur huit critères. Sur notre test du 10 novembre 2026, il a livré des sous-titres français justes et un export gratuit sans logo, mais il n'offre qu'un essai limité avant de payer.",
+  },
+  {
+    question:
       "Quel est le combo le plus puissant pour un créateur sérieux ?",
     answer:
       "Pour un créateur shorts régulier qui fait aussi du long format : OpusClip + Submagic. OpusClip découpe les meilleurs moments de ta vidéo longue en shorts bruts, Submagic finalise les sous-titres et l'animation. Le coût total dépend des plans choisis (voir les pages tarifs officielles), mais le combo reste défendable pour un usage régulier. C'est aussi le combo qu'on recommande dans notre cas d'usage Submagic ou OpusClip pour des shorts en français.",
@@ -422,15 +439,15 @@ export default function GrandComparatifPage() {
             Tableau côte à côte
           </div>
           <h2 className="text-3xl font-bold mb-3 tracking-tight">
-            Les 6 outils sur 12 critères.
+            Les 7 outils sur 12 critères.
           </h2>
           <p className="text-slate-400 leading-relaxed mb-10 max-w-3xl">
-            Toutes les données vérifiées sur les pages officielles au {LAST_CHECK}.
+            Toutes les données vérifiées sur les pages officielles entre le 06/11/2026 et le {LAST_CHECK}.
             Score éditorial Filtrio basé sur la méthodologie publique en 6 critères pondérés.
           </p>
 
           <div className="overflow-x-auto -mx-6 px-6 pb-2">
-            <table className="w-full min-w-[1000px] text-sm border-separate border-spacing-0">
+            <table className="w-full min-w-[1150px] text-sm border-separate border-spacing-0">
               <thead>
                 <tr className="text-left text-xs uppercase tracking-wider text-slate-400">
                   <th className="sticky left-0 bg-slate-950/90 backdrop-blur z-10 py-4 pr-4 border-b border-slate-800 font-semibold">

@@ -6,8 +6,8 @@ Données citables librement avec attribution et lien vers la source.
 
 ## Données et références
 
-- [Statistiques outils IA vidéo 2026](https://www.filtrio.fr/statistiques-outils-ia-video) : 11 statistiques citables sur les prix de 18 outils (61 % facturés en dollars, +21 % à +100 % d'écart mensuel/annuel, montée du modèle à crédits), CSV téléchargeable, librement réutilisables avec lien
-- [Observatoire des prix des outils IA vidéo](https://www.filtrio.fr/observatoire-prix) : prix d'entrée, devises et dates de vérification des 18 outils ; 11/18 facturés en dollars US ; le même plan coûte de +21 % à +100 % de plus en facturation mensuelle qu'annuelle (exemples vérifiés)
+- [Statistiques outils IA vidéo 2026](https://www.filtrio.fr/statistiques-outils-ia-video) : 11 statistiques citables sur les prix de 19 outils (58 % facturés en dollars, +21 % à +100 % d'écart mensuel/annuel, montée du modèle à crédits), CSV téléchargeable, librement réutilisables avec lien
+- [Observatoire des prix des outils IA vidéo](https://www.filtrio.fr/observatoire-prix) : prix d'entrée, devises et dates de vérification des 19 outils ; 11/19 facturés en dollars US ; le même plan coûte de +21 % à +100 % de plus en facturation mensuelle qu'annuelle (exemples vérifiés)
 - [Méthodologie de notation](https://www.filtrio.fr/methode) : 6 critères pondérés, grille publique
 - [Lexique IA vidéo](https://www.filtrio.fr/lexique) : 22 termes définis (text-to-video, clonage vocal, deepfake, AI Act...)
 
@@ -15,7 +15,7 @@ Données citables librement avec attribution et lien vers la source.
 
 - [Tous les comparatifs](https://www.filtrio.fr/comparatifs) : 11 duels 1 contre 1 + méga-comparatif shorts
 - [OpusClip vs Submagic](https://www.filtrio.fr/comparatifs/opusclip-vs-submagic) : le duel le plus consulté, verdict par profil
-- [Grand comparatif outils shorts 2026](https://www.filtrio.fr/comparatifs/outils-shorts-tiktok-2026) : 6 outils, 12 critères
+- [Grand comparatif outils shorts 2026](https://www.filtrio.fr/comparatifs/outils-shorts-tiktok-2026) : 7 outils, 12 critères
 
 ## Fiches outils (sélection)
 

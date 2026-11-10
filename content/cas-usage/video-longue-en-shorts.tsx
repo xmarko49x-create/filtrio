@@ -5,12 +5,12 @@ export const videoLongueEnShorts: CasUsageData = {
   slug: "video-longue-en-shorts",
   gagnantSlug: "opusclip",
   hero: {
-    h1: "Transformer une vidéo longue en shorts : 5 outils comparés en 2026",
+    h1: "Transformer une vidéo longue en shorts : 6 outils comparés en 2026",
     tagline:
       "Tu as un podcast, un live ou une conférence d'une à deux heures à recycler en shorts verticaux pour TikTok, Reels ou YouTube Shorts. Voici notre classement des outils qui livrent le meilleur résultat, le gagnant, et les pièges à éviter.",
     tempsLecture: 6,
-    outilsAnalyses: 5,
-    lastCheck: "02/10/2026",
+    outilsAnalyses: 6,
+    lastCheck: "10/11/2026",
   },
   verdict: {
     tag: "Le verdict en 30 secondes",
@@ -111,6 +111,26 @@ export const videoLongueEnShorts: CasUsageData = {
       verdict:
         "Excellent sur le rendu final FR et les sous-titres stylés. Moins adapté à la découpe automatique de longs contenus. Idéal en complément d'OpusClip.",
       priceDisplay: { label: "À partir de", value: "12 €/mois" },
+    },
+    {
+      slug: "gpt-video",
+      scoreCas: 8.0,
+      badge: "Clips expliqués",
+      pourquoiGagne: [
+        "Chaque clip est noté et expliqué en français, avec le détail de la note sur huit critères",
+        "Testé par Filtrio le 10/11/2026 : sous-titres français justes et export gratuit sans logo",
+        "Traitement très rapide sur notre vidéo de test (environ 17 secondes hors envoi du fichier)",
+        "Suivi du visage disponible en un clic pour le format vertical",
+        "API et connexion aux assistants IA disponibles (observées, non testées)",
+      ],
+      limites: [
+        "Pas de plan gratuit durable : seulement un accès d'essai (50 crédits, 3 exports, durée limitée)",
+        "Six réglages à faire avant de lancer, ou à confier à l'IA",
+        "Testé sur une seule vidéo courte : la détection sur des sources d'une heure reste à confirmer",
+      ],
+      verdict:
+        "Le plus transparent sur le choix des clips : tu sais pourquoi chaque passage est retenu. Une vraie alternative à OpusClip si tu acceptes de payer après l'essai.",
+      priceDisplay: { label: "À partir de", value: "19 $/mois", note: "Essai gratuit limité" },
     },
     {
       slug: "descript",

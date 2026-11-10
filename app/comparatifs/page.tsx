@@ -82,7 +82,7 @@ export default function ComparatifsIndexPage() {
             Le grand comparatif
           </div>
           <h2 className="text-2xl font-bold mb-2">
-            Outils shorts et TikTok 2026 : 6 outils, 12 critères, côte à côte.
+            Outils shorts et TikTok 2026 : 7 outils, 12 critères, côte à côte.
           </h2>
           <p className="text-slate-300 text-sm leading-relaxed mb-3">
             Submagic, OpusClip, Descript, CapCut, Veed et Kapwing comparés

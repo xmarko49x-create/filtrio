@@ -68,9 +68,9 @@ const HOME_FAQ: { question: string; answer: React.ReactNode }[] = [
     question: "Vous testez vraiment les outils ?",
     answer: (
       <>
-        Oui, pour une partie d&apos;entre eux. Trois outils ont déjà été
+        Oui, pour une partie d&apos;entre eux. Quatre outils ont déjà été
         manipulés selon un protocole public, sur le même fichier vidéo et avec
-        les réglages par défaut : OpusClip, Submagic et CapCut. Les résultats
+        les réglages par défaut : OpusClip, Submagic, CapCut et GPT-Video. Les résultats
         et les captures sont sur notre banc d&apos;essai. Pour les autres
         outils, l&apos;évaluation repose encore sur l&apos;analyse documentaire
         et la prise en main des plans gratuits, et l&apos;extension du
@@ -234,14 +234,15 @@ export default function HomePage() {
             Nos tests de première main
           </div>
           <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">
-            Trois outils, la même vidéo, les mêmes réglages.
+            Quatre outils, la même vidéo, la même méthode.
           </h2>
           <p className="text-slate-300 leading-relaxed mb-4">
-            Sur trois outils testés avec la même vidéo française,{" "}
+            Sur quatre outils testés avec la même vidéo française,{" "}
             <strong className="text-slate-100">
-              un seul a livré gratuitement un fichier sous-titré
+              deux ont livré gratuitement un fichier sous-titré
             </strong>{" "}
-            : OpusClip, avec filigrane. Submagic a demandé un abonnement à
+            : OpusClip, avec filigrane, et GPT-Video, sans logo mais avec un
+            accès d&apos;essai limité. Submagic a demandé un abonnement à
             l&apos;export et CapCut a classé les légendes automatiques comme
             fonction Pro.
           </p>
@@ -619,7 +620,7 @@ export default function HomePage() {
           analyse documentaire approfondie, compilation des retours utilisateurs
           publics (G2, Trustpilot, Reddit, documentation officielle) et prise en
           main des plans gratuits.{" "}
-          <strong className="text-slate-200">Depuis août 2026</strong>, trois
+          <strong className="text-slate-200">Depuis août 2026</strong>, quatre
           outils ont en plus été testés de première main sur un fichier vidéo
           identique —{" "}
           <Link href="/banc-essai" className="text-emerald-400 hover:underline">

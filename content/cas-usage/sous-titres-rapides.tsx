@@ -334,11 +334,13 @@ export const sousTitresRapides: CasUsageData = {
       question: "Y a-t-il un outil vraiment 100% gratuit sans limite ?",
       answer: (
         <>
-          Pas parmi les trois outils de notre banc d&apos;essai. Sur la même
+          Pas parmi les quatre outils de notre banc d&apos;essai. Sur la même
           vidéo française de 1 min 17, avec les réglages par défaut, CapCut a
           généré les légendes automatiques, mais leur export a demandé Pro (24
           août 2026). OpusClip nous a livré un export gratuit avec filigrane, et
-          Submagic a demandé un abonnement à l&apos;export. Un seul fichier a
+          Submagic a demandé un abonnement à l&apos;export. GPT-Video a livré
+          un export sans logo, mais avec un accès d&apos;essai limité à 3
+          exports et dans le temps (10 novembre 2026). Un seul fichier a
           été testé et les offres peuvent évoluer :{" "}
           <Link href="/banc-essai" className="text-emerald-400 hover:underline">
             voir le protocole et les résultats

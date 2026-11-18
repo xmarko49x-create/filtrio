@@ -54,52 +54,9 @@ export const gptVideoFiche: FicheData = {
         "Créateurs qui recyclent des interviews, des podcasts ou des cours en shorts et qui veulent comprendre pourquoi un passage est retenu. Ceux qui veulent un traitement rapide et la possibilité de tout ajuster ensuite.",
     },
     {
-      question: "À éviter si ?",
-      answer: (
-        <>
-          Tu veux un plan gratuit utilisable dans la durée (→{" "}
-          <Link href="/outils/opusclip" className="text-emerald-400 hover:underline">
-            OpusClip
-          </Link>
-          ). Tu cherches surtout des sous-titres stylés sur des vidéos déjà
-          courtes (→{" "}
-          <Link href="/outils/submagic" className="text-amber-400 hover:underline">
-            Submagic
-          </Link>
-          ). Tu veux un logiciel de montage complet (→{" "}
-          <Link href="/outils/capcut" className="text-sky-400 hover:underline">
-            CapCut
-          </Link>
-          ).
-        </>
-      ),
-    },
-    {
       question: "Combien ?",
       answer:
         "Pas de plan gratuit durable : un accès d'essai est offert à l'inscription (50 crédits et 3 exports, avec 14 jours restants le jour de notre test). Starter à 19 $/mois (250 crédits), Creator à 49 $/mois (800 crédits), Studio à 199 $/mois (6 000 crédits). En paiement annuel : 190 $, 490 $ et 1 990 $ par an. 1 crédit = 1 minute de vidéo envoyée. Facturation en dollars, vérifié le 10/11/2026.",
-    },
-    {
-      question: "Meilleure alternative ?",
-      answer: (
-        <>
-          <Link href="/outils/opusclip" className="text-emerald-400 hover:underline">
-            OpusClip
-          </Link>{" "}
-          pour un plan gratuit récurrent et plus d&apos;intégrations.{" "}
-          <Link href="/outils/submagic" className="text-amber-400 hover:underline">
-            Submagic
-          </Link>{" "}
-          pour des sous-titres français très stylés. Voir aussi notre{" "}
-          <Link
-            href="/cas-usage/video-longue-en-shorts"
-            className="text-orange-400 hover:underline"
-          >
-            comparatif vidéo longue en shorts
-          </Link>
-          .
-        </>
-      ),
     },
     {
       question: "Est-ce qu'on le recommande ?",
@@ -201,7 +158,8 @@ export const gptVideoFiche: FicheData = {
               automatique, un cadrage centré et le style de sous-titres
               « Boxed ». Ce bouton passe par l&apos;assistant, qui nous a
               répondu en anglais. Coût de l&apos;analyse : 2 crédits pour notre
-              vidéo de 1 min 17.{" "}
+              vidéo de 1 min 17, l&apos;outil arrondissant à la minute
+              supérieure.{" "}
               <strong className="text-slate-200">Testé.</strong>
             </>
           }
@@ -498,6 +456,6 @@ export const gptVideoFiche: FicheData = {
     href: "https://gpt-video.com",
     label: "Tester GPT-Video gratuitement",
     mention:
-      "Lien direct vers le site de GPT-Video. L'accès d'essai donnait 50 crédits et 3 exports le jour de notre test.",
+      "Lien direct, non affilié à ce jour : Filtrio n'est pas rémunéré sur les inscriptions GPT-Video. L'accès d'essai donnait 50 crédits et 3 exports le jour de notre test.",
   },
 };

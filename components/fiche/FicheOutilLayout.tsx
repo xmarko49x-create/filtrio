@@ -685,7 +685,8 @@ function MethodologyNote({ aTeste = false }: { aTeste?: boolean }) {
         <p>
           <strong className="text-slate-300">Test de première main :</strong>{" "}
           cet outil a été manipulé par Filtrio sur le même fichier vidéo que les
-          autres outils testés, réglages par défaut, captures à l&apos;appui. Le
+          autres outils testés, dans les conditions décrites plus haut sur cette
+          page, captures à l&apos;appui. Le
           détail est plus haut sur cette page, et les résultats sont réunis sur
           notre{" "}
           <Link href="/banc-essai" className="text-emerald-400 hover:underline">

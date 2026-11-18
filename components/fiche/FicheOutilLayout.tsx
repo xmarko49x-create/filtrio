@@ -52,6 +52,12 @@ export interface FicheData {
   alternatives: { slug: string; comment: string }[];
   faq: { question: string; answer: ReactNode }[];
   ctaFinal: { headline: string; sub: string; buttonText: string };
+  /**
+   * Lien direct vers le site de l'outil, pour les outils SANS programme
+   * d'affiliation. Rendu sans suivi affilié et avec une mention explicite,
+   * pour ne jamais présenter comme affilié un lien qui ne l'est pas.
+   */
+  lienDirect?: { href: string; label: string; mention: string };
 }
 
 function badgeClasses(color: TailwindColor, tone: "primary" | "accent" | "neutral") {
@@ -185,6 +191,15 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
                 >
                   Essayer {outil.name}
                 </TrackedAffiliateLink>
+              ) : data.lienDirect ? (
+                <a
+                  href={data.lienDirect.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`bg-${c}-500 hover:bg-${c}-400 text-slate-950 font-semibold px-6 py-3 rounded-lg transition`}
+                >
+                  {data.lienDirect.label}
+                </a>
               ) : (
                 <Link
                   href="#cta-final"
@@ -387,7 +402,7 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
                 </div>
               ))}
             </div>
-            <MethodologyNote />
+            <MethodologyNote aTeste={!!data.sectionApresVerdict} />
           </div>
         </div>
       </section>
@@ -586,6 +601,20 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
                 commission, sans que cela change jamais notre classement.
               </p>
             </>
+          ) : data.lienDirect ? (
+            <>
+              <a
+                href={data.lienDirect.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-block bg-${c}-500 hover:bg-${c}-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg`}
+              >
+                {data.lienDirect.label} →
+              </a>
+              <p className="text-xs text-slate-500 mt-6 max-w-lg mx-auto">
+                {data.lienDirect.mention}
+              </p>
+            </>
           ) : (
             <>
               <Link
@@ -634,20 +663,43 @@ function FactCell({ label, value }: { label: string; value: string }) {
   );
 }
 
-function MethodologyNote() {
+/**
+ * Note de méthode sous la grille de notation.
+ *
+ * `aTeste` vaut vrai quand la fiche publie une visite guidée de première main.
+ * Dans ce cas la mention "Phase à venir" n'a plus de sens — le protocole a été
+ * appliqué sur cette page — et elle est remplacée par ce qui a réellement eu
+ * lieu. La mention "Phase actuelle" reste dans tous les cas : les notes
+ * viennent de l'analyse documentaire, un test isolé ne les modifie pas.
+ */
+function MethodologyNote({ aTeste = false }: { aTeste?: boolean }) {
   return (
     <div className="mt-8 pt-6 border-t border-slate-800 text-xs text-slate-500 space-y-2">
       <p>
-        <strong className="text-slate-300">Phase actuelle (V1) :</strong>{" "}
-        scores basés sur analyse documentaire approfondie, compilation de retours
-        utilisateurs publics (G2, Trustpilot, Reddit, doc officielle) et prise
-        en main des plans gratuits.
+        <strong className="text-slate-300">D&apos;où viennent les notes :</strong>{" "}
+        analyse documentaire approfondie, compilation de retours utilisateurs
+        publics (G2, Trustpilot, Reddit, documentation officielle) et prise en
+        main des plans gratuits.
       </p>
-      <p>
-        <strong className="text-slate-300">Phase à venir :</strong>{" "}protocole de
-        test comparatif standardisé avec sources vidéo identiques selon les cas
-        d&apos;usage.
-      </p>
+      {aTeste ? (
+        <p>
+          <strong className="text-slate-300">Test de première main :</strong>{" "}
+          cet outil a été manipulé par Filtrio sur le même fichier vidéo que les
+          autres outils testés, réglages par défaut, captures à l&apos;appui. Le
+          détail est plus haut sur cette page, et les résultats sont réunis sur
+          notre{" "}
+          <Link href="/banc-essai" className="text-emerald-400 hover:underline">
+            banc d&apos;essai
+          </Link>
+          . Un test isolé ne modifie pas la note publiée.
+        </p>
+      ) : (
+        <p>
+          <strong className="text-slate-300">Phase à venir :</strong>{" "}protocole de
+          test comparatif standardisé avec sources vidéo identiques selon les cas
+          d&apos;usage, déjà appliqué à une partie du catalogue.
+        </p>
+      )}
     </div>
   );
 }

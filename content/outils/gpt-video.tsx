@@ -140,11 +140,10 @@ export const gptVideoFiche: FicheData = {
           toi-même.
         </p>
         <p className="text-slate-400">
-          <strong className="text-slate-300">Transparence.</strong> GPT-Video
-          nous a contactés et nous a proposé un accès Creator temporaire pour
-          notre banc d&apos;essai. Le test ci-dessous a été fait avec le compte
-          gratuit standard, avant toute activation. Nous n&apos;avons reçu aucun
-          paiement, et nous n&apos;avons pas de lien affilié GPT-Video.
+          <strong className="text-slate-300">Conditions du test.</strong> Le
+          test ci-dessous a été fait avec le compte gratuit standard, celui que
+          tout le monde obtient à l&apos;inscription : 50 crédits et 3 exports.
+          Nous n&apos;avons reçu aucun paiement pour ce test.
         </p>
         <p>Deux repères reviennent dans les légendes :</p>
         <ul className="list-disc pl-6 space-y-2">
@@ -493,6 +492,12 @@ export const gptVideoFiche: FicheData = {
   ctaFinal: {
     headline: "Prêt à tester GPT-Video ?",
     sub: "L'accès d'essai offert à l'inscription suffit pour tester une vidéo courte comme la nôtre : 50 crédits et 3 exports. Compare d'abord avec OpusClip et Submagic, les deux références de la catégorie.",
-    buttonText: "Essayer GPT-Video",
+    buttonText: "Tester GPT-Video gratuitement",
+  },
+  lienDirect: {
+    href: "https://gpt-video.com",
+    label: "Tester GPT-Video gratuitement",
+    mention:
+      "Lien direct vers le site de GPT-Video. L'accès d'essai donnait 50 crédits et 3 exports le jour de notre test.",
   },
 };

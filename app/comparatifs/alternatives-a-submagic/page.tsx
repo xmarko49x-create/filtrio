@@ -719,14 +719,60 @@ export default function AlternativesASubmagicPage() {
             Prêt à choisir ?
           </div>
           <h2 className="text-4xl font-bold mb-4 tracking-tight">
-            Dans la plupart des cas, reste sur Submagic.
+            L&apos;alternative dépend de ce qui te bloque.
           </h2>
           <p className="text-xl text-slate-400 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Les alternatives ci-dessus ne battent Submagic que sur des cas
-            précis (gratuit, découpe de long format, création tout-IA). Pour le
-            short viral FR, Submagic reste l&apos;option la plus complète de
-            notre sélection.
+            Il n&apos;y a pas un remplaçant unique à Submagic. Choisis selon la
+            raison qui te fait chercher ailleurs.
           </p>
+
+          <div className="max-w-2xl mx-auto text-left space-y-3 mb-10">
+            {[
+              {
+                slug: "opusclip",
+                besoin: "Tu pars de vidéos longues à découper",
+                reco: "OpusClip",
+                couleur: "emerald",
+              },
+              {
+                slug: "capcut",
+                besoin: "Tu veux monter toi-même, sans abonnement",
+                reco: "CapCut",
+                couleur: "sky",
+              },
+              {
+                slug: "descript",
+                besoin: "Tu préfères travailler depuis la transcription",
+                reco: "Descript",
+                couleur: "violet",
+              },
+              {
+                slug: "veed",
+                besoin: "Tu veux un éditeur complet dans le navigateur",
+                reco: "Veed",
+                couleur: "yellow",
+              },
+            ].map((l) => (
+              <Link
+                key={l.slug}
+                href={`/outils/${l.slug}`}
+                className="flex items-baseline justify-between gap-4 bg-slate-900 border border-slate-800 hover:border-slate-600 rounded-xl px-5 py-4 transition"
+              >
+                <span className="text-slate-300">{l.besoin}</span>
+                <span className={`font-bold text-${l.couleur}-400 whitespace-nowrap`}>
+                  {l.reco} →
+                </span>
+              </Link>
+            ))}
+          </div>
+
+          <p className="text-slate-400 leading-relaxed mb-8 max-w-2xl mx-auto">
+            Et si ton besoin reste l&apos;habillage rapide de shorts en
+            français, avec des sous-titres soignés sans réglage manuel, alors
+            Submagic garde l&apos;avantage. C&apos;est le seul cas où nous te
+            disons de rester.
+          </p>
+
           <div className="flex flex-wrap justify-center gap-4">
             <TrackedAffiliateLink
               href={submagic.affiliateLink}
@@ -736,13 +782,13 @@ export default function AlternativesASubmagicPage() {
               position="verdict_bas"
               className="inline-block bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition text-lg"
             >
-              Tester Submagic →
+              Rester sur Submagic →
             </TrackedAffiliateLink>
             <Link
-              href="/outils/submagic"
+              href="/banc-essai"
               className="inline-block border border-slate-700 hover:border-slate-600 text-slate-200 font-semibold px-8 py-4 rounded-xl transition text-lg"
             >
-              Lire la fiche Submagic
+              Voir nos tests comparés
             </Link>
           </div>
         </div>

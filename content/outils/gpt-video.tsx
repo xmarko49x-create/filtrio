@@ -456,6 +456,6 @@ export const gptVideoFiche: FicheData = {
     href: "https://gpt-video.com",
     label: "Tester GPT-Video gratuitement",
     mention:
-      "Lien direct, non affilié à ce jour : Filtrio n'est pas rémunéré sur les inscriptions GPT-Video. L'accès d'essai donnait 50 crédits et 3 exports le jour de notre test.",
+      "Lien direct vers le site de GPT-Video. L'accès d'essai donnait 50 crédits et 3 exports le jour de notre test.",
   },
 };

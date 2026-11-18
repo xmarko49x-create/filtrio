@@ -1,5 +1,11 @@
 import Link from "next/link";
 import type { CasUsageData } from "@/components/cas-usage/CasUsageLayout";
+import { TrackedAffiliateLink } from "@/components/TrackedAffiliateLink";
+import { getOutilOrThrow } from "@/lib/outils";
+
+// GPT-Video : CTA affilié unique dans « Comment choisir », là où il est recommandé.
+const gptVideo = getOutilOrThrow("gpt-video");
+const hasGptVideoAffiliate = /^https?:\/\//.test(gptVideo.affiliateLink);
 
 export const videoLongueEnShorts: CasUsageData = {
   slug: "video-longue-en-shorts",
@@ -262,6 +268,44 @@ export const videoLongueEnShorts: CasUsageData = {
           Combo <strong className="text-emerald-400">OpusClip</strong>{" "}pour la découpe +{" "}
           <strong className="text-amber-400">Submagic</strong>{" "}pour le polish final. Un combo
           économique pour un rendu pro complet.
+        </>
+      ),
+    },
+    {
+      question: "Tu veux savoir pourquoi l'IA a choisi ce passage ?",
+      reponse: (
+        <>
+          Oui → <strong className="text-orange-400">GPT-Video</strong>. Chaque
+          clip est noté et expliqué sur huit critères, en français. Testé le
+          10/11/2026 : sous-titres français justes et export gratuit sans logo,
+          mais pas de plan gratuit durable (50 crédits et 3 exports sur le
+          compte d&apos;essai).{" "}
+          <Link
+            href="/outils/gpt-video"
+            className="text-orange-400 hover:underline"
+          >
+            Notre test complet
+          </Link>
+          {hasGptVideoAffiliate && (
+            <>
+              {" · "}
+              <TrackedAffiliateLink
+                href={gptVideo.affiliateLink}
+                outilSlug={gptVideo.slug}
+                outilName={gptVideo.name}
+                source="cas-usage"
+                position="comment_choisir"
+                className="font-semibold text-orange-400 hover:underline"
+              >
+                Tester GPT-Video →
+              </TrackedAffiliateLink>
+              <span className="block text-xs text-slate-500 mt-2">
+                Ce lien est affilié. Si tu t&apos;abonnes, on touche une
+                commission, sans surcoût pour toi. Cela ne change pas son
+                classement ci-dessus.
+              </span>
+            </>
+          )}
         </>
       ),
     },

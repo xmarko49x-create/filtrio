@@ -452,10 +452,4 @@ export const gptVideoFiche: FicheData = {
     sub: "L'accès d'essai offert à l'inscription suffit pour tester une vidéo courte comme la nôtre : 50 crédits et 3 exports. Compare d'abord avec OpusClip et Submagic, les deux références de la catégorie.",
     buttonText: "Tester GPT-Video gratuitement",
   },
-  lienDirect: {
-    href: "https://gpt-video.com",
-    label: "Tester GPT-Video gratuitement",
-    mention:
-      "Lien direct vers le site de GPT-Video. L'accès d'essai donnait 50 crédits et 3 exports le jour de notre test.",
-  },
 };

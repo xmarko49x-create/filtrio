@@ -311,7 +311,7 @@ export const OUTILS: Outil[] = [
     category: "shorts",
     priceFrom: "À partir de 19 $/mois",
     freeTier: "Essai gratuit limité (50 crédits, 3 exports)",
-    affiliateLink: "#aff-gpt-video",
+    affiliateLink: "https://www.gpt-video.com/r/filtrio",
     ficheAvailable: true,
   },
 ];

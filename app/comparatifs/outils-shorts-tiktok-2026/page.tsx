@@ -348,6 +348,10 @@ export default function GrandComparatifPage() {
     outil: getOutilOrThrow(c.slug),
   }));
 
+  // GPT-Video : recommandé hors des six profils (cas particulier).
+  const gptVideo = getOutilOrThrow("gpt-video");
+  const hasGptVideoAffiliate = /^https?:\/\//.test(gptVideo.affiliateLink);
+
   // Schemas
   const faqSchema = getFaqPageSchema(FAQ);
   const breadcrumbSchema = getBreadcrumbSchema([
@@ -571,6 +575,58 @@ export default function GrandComparatifPage() {
               </div>
             );
           })}
+        </div>
+
+        {/* CAS PARTICULIER, hors des six profils : GPT-Video */}
+        <div className="mt-6 bg-slate-900 border border-orange-500/30 rounded-2xl p-6 md:p-8">
+          <div className="inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/30 rounded-lg px-4 py-2 mb-4">
+            <span className="text-xs text-slate-300">Cas particulier :</span>
+            <Link
+              href="/outils/gpt-video"
+              className="text-orange-400 font-bold hover:underline"
+            >
+              GPT-Video
+            </Link>
+          </div>
+          <p className="text-slate-300 leading-relaxed mb-5">
+            Aucun des six profils ne colle si ton besoin est de{" "}
+            <strong className="text-slate-100">
+              comprendre pourquoi l&apos;IA a retenu ce passage plutôt
+              qu&apos;un autre
+            </strong>
+            . C&apos;est le seul des sept à noter et expliquer chaque clip sur
+            huit critères, en français. Sur notre test du 10 novembre 2026, les
+            sous-titres français étaient justes et l&apos;export gratuit sans
+            logo. En revanche, pas de plan gratuit durable : le compte d&apos;essai
+            donnait 50 crédits et 3 exports.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href="/outils/gpt-video"
+              className="text-sm font-medium border border-slate-700 hover:border-slate-500 text-slate-200 px-4 py-2 rounded-lg transition"
+            >
+              Voir notre test de GPT-Video
+            </Link>
+            {hasGptVideoAffiliate && (
+              <TrackedAffiliateLink
+                href={gptVideo.affiliateLink}
+                outilSlug={gptVideo.slug}
+                outilName={gptVideo.name}
+                source="comparatif"
+                position="cas_particulier"
+                className="text-sm font-semibold bg-orange-500 hover:bg-orange-400 text-slate-950 px-4 py-2 rounded-lg transition"
+              >
+                Tester GPT-Video →
+              </TrackedAffiliateLink>
+            )}
+          </div>
+          {hasGptVideoAffiliate && (
+            <p className="text-xs text-slate-500 mt-3">
+              Ce lien est affilié. Si tu t&apos;abonnes, on touche une
+              commission, sans surcoût pour toi. Cela ne change ni sa note ni sa
+              place dans le tableau.
+            </p>
+          )}
         </div>
       </section>
 

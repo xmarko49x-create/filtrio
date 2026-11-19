@@ -144,7 +144,9 @@ export default function PlateformeSection({
                         href={`/outils/${o.slug}`}
                         className={`flex-1 text-center text-sm font-semibold bg-${o.color}-500 hover:bg-${o.color}-400 text-slate-950 px-3 py-2.5 rounded-lg transition whitespace-nowrap`}
                       >
-                        Voir {o.name}
+                        {o.testeLe
+                          ? `Notre test de ${o.name}`
+                          : `Notre avis sur ${o.name}`}
                       </Link>
                     )}
                     {showTester && (

@@ -507,14 +507,37 @@ function OutilCard({
           </div>
 
           {outil && (
-            <div className="flex gap-3 mt-5">
-              <Link
-                href={`/outils/${outil.slug}`}
-                className="border border-slate-700 hover:border-slate-600 px-5 py-2.5 rounded-lg text-sm transition"
-              >
-                Voir la fiche complète
-              </Link>
-            </div>
+            <>
+              <div className="flex flex-wrap gap-3 mt-5">
+                <Link
+                  href={`/outils/${outil.slug}`}
+                  className="border border-slate-700 hover:border-slate-600 px-5 py-2.5 rounded-lg text-sm transition"
+                >
+                  Voir la fiche complète
+                </Link>
+                {/^https?:\/\//.test(outil.affiliateLink) && (
+                  <TrackedAffiliateLink
+                    href={outil.affiliateLink}
+                    outilSlug={outil.slug}
+                    outilName={name}
+                    source="cas-usage"
+                    position={
+                      isWinner ? "classement_gagnant" : `classement_${rank}`
+                    }
+                    className={`bg-${color}-500 hover:bg-${color}-400 text-slate-950 font-semibold px-5 py-2.5 rounded-lg text-sm transition`}
+                  >
+                    Tester {name} →
+                  </TrackedAffiliateLink>
+                )}
+              </div>
+              {/^https?:\/\//.test(outil.affiliateLink) && (
+                <p className="text-xs text-slate-500 mt-3">
+                  Ce lien est affilié. Si tu t&apos;abonnes, on touche une
+                  commission, sans surcoût pour toi. Cela ne change pas sa note
+                  ci-dessus.
+                </p>
+              )}
+            </>
           )}
         </div>
       </div>

@@ -29,52 +29,9 @@ export const veedFiche: FicheData = {
         "Créateurs qui veulent un éditeur web fiable, marketeurs qui font des vidéos B2B, équipes qui travaillent depuis plusieurs machines, freelances qui alternent entre plusieurs clients sans logiciel dédié.",
     },
     {
-      question: "À éviter si ?",
-      answer: (
-        <>
-          Créateurs de shorts viraux FR (→{" "}
-          <Link href="/outils/submagic" className="text-amber-400 hover:underline">
-            Submagic
-          </Link>
-          ). Vidéastes qui veulent du montage pro (→{" "}
-          <Link href="/outils/davinci" className="text-red-400 hover:underline">
-            DaVinci
-          </Link>
-          ). Budgets zéro (→{" "}
-          <Link href="/outils/capcut" className="text-sky-400 hover:underline">
-            CapCut
-          </Link>
-          ).
-        </>
-      ),
-    },
-    {
       question: "Combien ?",
       answer:
         "Plan Free (0 €, 10 min d'export, 720p, 2 Go de stockage). Creator à 11 €/mois par editor (annuel, taxes incluses, 6 000 credits/an) pour des vidéos sociales sans watermark. Pro (recommandé) à 23 €/mois par utilisateur (annuel, 18 000 crédits) pour du pro-level avec Brand Kits multiples, traduction en 50+ langues et 4K. Enterprise sur devis. Facturation EUR, vérifié le 06/11/2026.",
-    },
-    {
-      question: "Meilleure alternative ?",
-      answer: (
-        <>
-          <Link href="/outils/kapwing" className="text-green-400 hover:underline">
-            Kapwing
-          </Link>{" "}
-          pour un usage collaboratif équivalent.{" "}
-          <Link href="/outils/capcut" className="text-sky-400 hover:underline">
-            CapCut
-          </Link>{" "}
-          si budget zéro. Spécialistes pour chaque tâche spécifique (
-          <Link href="/outils/submagic" className="text-amber-400 hover:underline">
-            Submagic
-          </Link>
-          ,{" "}
-          <Link href="/outils/descript" className="text-violet-400 hover:underline">
-            Descript
-          </Link>
-          ).
-        </>
-      ),
     },
     {
       question: "Est-ce qu'on le recommande ?",

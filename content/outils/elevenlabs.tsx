@@ -29,41 +29,9 @@ export const elevenlabsFiche: FicheData = {
         "Créateurs vidéo qui ont besoin de voix off sans enregistrer, YouTubeurs sans face cam, podcasteurs qui veulent doubler leurs épisodes, marques qui produisent du contenu multilingue, auteurs audiobook.",
     },
     {
-      question: "À éviter si ?",
-      answer: (
-        <>
-          Créateurs qui font déjà du face cam et parlent eux-mêmes. Ceux qui
-          veulent un avatar vidéo complet (→{" "}
-          <Link href="/outils/heygen" className="text-cyan-400 hover:underline">
-            HeyGen
-          </Link>
-          ). Budgets très serrés qui vont consommer beaucoup de credits.
-        </>
-      ),
-    },
-    {
       question: "Combien ?",
       answer:
         "Plan gratuit avec 10 000 credits/mois. Starter à 6 $/mois (30k credits, commercial license, voice cloning), Creator à 22 $/mois (121k credits, Professional Voice Cloning), Pro à 99 $/mois (600k credits, audio 192kbps). Scale à 299 $/mois et Business à 990 $/mois pour les équipes. Enterprise sur devis. Facturation en USD, hors taxes.",
-    },
-    {
-      question: "Meilleure alternative ?",
-      answer: (
-        <>
-          <Link href="/outils/heygen" className="text-cyan-400 hover:underline">
-            HeyGen
-          </Link>{" "}
-          si tu veux aussi un avatar vidéo. Murf ou Play.ht pour des
-          alternatives voix plus abordables sur du volume.{" "}
-          <Link
-            href="/comparatifs/elevenlabs-vs-heygen"
-            className="text-teal-400 hover:underline"
-          >
-            Comparatif ElevenLabs vs HeyGen
-          </Link>
-          .
-        </>
-      ),
     },
     {
       question: "Est-ce qu'on le recommande ?",

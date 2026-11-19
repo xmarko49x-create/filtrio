@@ -29,52 +29,9 @@ export const pictoryFiche: FicheData = {
         "Marketers de contenu, créateurs de vidéos éducatives, agences qui industrialisent du contenu vidéo à partir de blog posts existants. Pour un usage où le rendu propre suffit, sans recherche d'effet créatif premium.",
     },
     {
-      question: "À éviter si ?",
-      answer: (
-        <>
-          Tu fais des shorts viraux personnels (→{" "}
-          <Link href="/outils/submagic" className="text-amber-400 hover:underline">
-            Submagic
-          </Link>{" "}
-          ou{" "}
-          <Link href="/outils/opusclip" className="text-emerald-400 hover:underline">
-            OpusClip
-          </Link>
-          ). Tu cherches une qualité visuelle premium ou créative (→{" "}
-          <Link href="/outils/runway" className="text-purple-400 hover:underline">
-            Runway
-          </Link>
-          ). Tu veux contrôler manuellement chaque plan (préfère un éditeur
-          timeline classique).
-        </>
-      ),
-    },
-    {
       question: "Combien ?",
       answer:
         "Plan Starter à 25 $/mois en annuel (29 $/mois mensuel) avec 30 minutes de vidéo par mois (360 par an). Plan Professional à 35 $/mois en annuel (59 $/mois mensuel) avec 90 minutes par mois (1 080 par an). Plan Teams à 119 $/mois en annuel (199 $ mensuel) avec 300 minutes par mois (3 600 par an). Enterprise sur devis. Essai gratuit disponible. Facturation USD.",
-    },
-    {
-      question: "Meilleure alternative ?",
-      answer: (
-        <>
-          <Link href="/outils/invideo" className="text-fuchsia-400 hover:underline">
-            InVideo
-          </Link>{" "}
-          pour un script-to-video plus polyvalent et moins cher.{" "}
-          <Link href="/outils/synthesia" className="text-blue-400 hover:underline">
-            Synthesia
-          </Link>{" "}
-          si tu veux un avatar humain à la place du stock. Voir le{" "}
-          <Link
-            href="/comparatifs/invideo-vs-pictory"
-            className="text-rose-400 hover:underline"
-          >
-            comparatif InVideo vs Pictory
-          </Link>
-          .
-        </>
-      ),
     },
     {
       question: "Est-ce qu'on le recommande ?",

@@ -30,37 +30,9 @@ export const canvaFiche: FicheData = {
         "Créateurs de contenu qui font aussi du design (miniatures, posts, stories), solopreneurs, marketeurs sans équipe design, formateurs, tous ceux qui veulent un rendu pro sans skills design avancés.",
     },
     {
-      question: "À éviter si ?",
-      answer: (
-        <>
-          Designers pros qui ont besoin d&apos;Illustrator/Photoshop. Monteurs
-          vidéo qui veulent un vrai éditeur (→{" "}
-          <Link href="/outils/capcut" className="text-sky-400 hover:underline">
-            CapCut
-          </Link>{" "}
-          ou DaVinci Resolve). Ceux qui veulent de l&apos;IA générative
-          d&apos;images purement avancée (→ Midjourney).
-        </>
-      ),
-    },
-    {
       question: "Combien ?",
       answer:
         "Plan Gratuit (0 €/an). Pro à 110 €/an par personne (facturation annuelle, environ 9 €/mois), débloque Magic Design, Brand Kit, contenu premium et suppression d'arrière-plan. Pro+ à 170 €/an par personne (plan populaire) pour les particuliers et petites équipes. Offre Entreprise dédiée via contact. Économisez 16 % et plus avec l'annuel.",
-    },
-    {
-      question: "Meilleure alternative ?",
-      answer: (
-        <>
-          Adobe Express si tu es déjà chez Adobe. Figma si tu veux du design
-          web/app.{" "}
-          <Link href="/outils/capcut" className="text-sky-400 hover:underline">
-            CapCut
-          </Link>{" "}
-          si tu veux un éditeur vidéo dédié. Cas par cas selon ton usage
-          dominant.
-        </>
-      ),
     },
     {
       question: "Est-ce qu'on le recommande ?",

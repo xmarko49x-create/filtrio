@@ -56,33 +56,9 @@ export const opusclipFiche: FicheData = {
         "Podcasters, streamers Twitch, YouTubeurs long-format, agences social media, marques qui recyclent du contenu existant en masse. Toute personne qui part d'une source longue pour faire des shorts.",
     },
     {
-      question: "À éviter si ?",
-      answer:
-        "Créateurs qui tournent déjà au format court (face cam 30-60 sec). Ceux qui visent la qualité visuelle maximale des sous-titres en français. Ceux qui veulent éditer finement chaque clip.",
-    },
-    {
       question: "Combien ?",
       answer:
         "Plan gratuit disponible · Plans payants à partir de 15 $/mois · Business sur devis. Détail des quotas et fonctionnalités sur la page Tarifs d'OpusClip.",
-    },
-    {
-      question: "Meilleure alternative ?",
-      answer: (
-        <>
-          <Link href="/outils/submagic" className="text-amber-400 hover:underline">
-            Submagic
-          </Link>{" "}
-          pour la qualité FR des sous-titres et les sources courtes. CapCut si
-          budget zéro mais sans détection IA automatique.{" "}
-          <Link
-            href="/comparatifs/opusclip-vs-submagic"
-            className="text-emerald-400 hover:underline"
-          >
-            Comparatif complet ici
-          </Link>
-          .
-        </>
-      ),
     },
     {
       question: "Est-ce qu'on le recommande ?",

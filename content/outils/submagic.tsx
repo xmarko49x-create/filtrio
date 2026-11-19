@@ -50,27 +50,6 @@ export const submagicFiche: FicheData = {
         "Créateurs de contenu, freelances, agences et petites équipes qui veulent produire des shorts propres rapidement, avec un rendu visuel fort et une interface simple.",
     },
     {
-      question: "À éviter si ?",
-      answer:
-        "Équipes qui ont besoin d'automatisations avancées, de gros volumes API dès le départ, ou d'un workflow orienté clipping massif de longues vidéos.",
-    },
-    {
-      question: "Meilleure alternative ?",
-      answer: (
-        <>
-          OpusClip si ton besoin principal est de découper automatiquement de
-          longues vidéos en extraits courts à grande échelle.{" "}
-          <Link
-            href="/comparatifs/opusclip-vs-submagic"
-            className="text-emerald-400 hover:underline"
-          >
-            Comparatif complet ici
-          </Link>
-          .
-        </>
-      ),
-    },
-    {
       question: "Est-ce qu'on le recommande ?",
       answer:
         "Oui, pour beaucoup de créateurs qui veulent un outil rapide, simple et efficace pour produire des shorts plus propres visuellement.",

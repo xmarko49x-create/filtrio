@@ -29,42 +29,9 @@ export const runwayFiche: FicheData = {
         "Motion designers, filmmakers indépendants, créateurs visuels premium, agences publicitaires. Pros de la création visuelle qui veulent explorer ce que la génération vidéo IA peut faire en 2026.",
     },
     {
-      question: "À éviter si ?",
-      answer: (
-        <>
-          Créateurs long format classique (→{" "}
-          <Link href="/outils/descript" className="text-violet-400 hover:underline">
-            Descript
-          </Link>{" "}
-          ou éditeurs timeline). YouTubeurs éducatifs linéaires (→{" "}
-          <Link href="/outils/invideo" className="text-fuchsia-400 hover:underline">
-            InVideo
-          </Link>{" "}
-          plus adapté). Budgets serrés. Ceux qui veulent du rendu "réaliste
-          cinéma" parfait (encore des limites techniques).
-        </>
-      ),
-    },
-    {
       question: "Combien ?",
       answer:
         "Plan Free (0 $) avec 125 credits one-time et 3 projets. Standard à 12 $/user/mois en annuel (144 $/an) avec 625 credits mensuels. Pro à 28 $/user/mois en annuel (336 $/an) avec 2250 credits. Max à 76 $/user/mois en annuel (912 $/an) avec 9 500 credits mensuels et report des crédits non utilisés sur 1 mois. Enterprise sur devis. Facturation USD.",
-    },
-    {
-      question: "Meilleure alternative ?",
-      answer: (
-        <>
-          Pika pour une alternative plus abordable. Sora (OpenAI), à utiliser
-          directement chez OpenAI. Kling pour utilisateurs Chine.{" "}
-          <Link
-            href="/comparatifs/runway-vs-pika"
-            className="text-purple-400 hover:underline"
-          >
-            Comparatif Runway vs Pika
-          </Link>
-          .
-        </>
-      ),
     },
     {
       question: "Est-ce qu'on le recommande ?",

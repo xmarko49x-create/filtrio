@@ -29,40 +29,9 @@ export const davinciFiche: FicheData = {
         "Créateurs vidéo sérieux qui veulent un rendu pro, vidéastes freelance, monteurs qui font du color grading, YouTubeurs haut de gamme, documentaristes, étudiants cinéma. Pour ceux qui investissent du temps pour un résultat pro.",
     },
     {
-      question: "À éviter si ?",
-      answer: (
-        <>
-          Débutants qui veulent monter vite (→{" "}
-          <Link href="/outils/capcut" className="text-sky-400 hover:underline">
-            CapCut
-          </Link>
-          ). Créateurs de shorts/TikTok (→{" "}
-          <Link href="/outils/submagic" className="text-amber-400 hover:underline">
-            Submagic
-          </Link>
-          ). Ceux qui montent principalement sur mobile (DaVinci est desktop
-          only).
-        </>
-      ),
-    },
-    {
       question: "Combien ?",
       answer:
         "Deux options officielles Blackmagic : DaVinci Resolve 21 en téléchargement gratuit (déjà très complet) ou DaVinci Resolve Studio à 255 € (295 $) en achat unique (licence perpétuelle, mises à jour majeures incluses, pas d'abonnement). Studio débloque HDR, 4K-8K, effets IA avancés (Neural Engine), collaboration multi-user et plugins tiers. Facturation USD côté Blackmagic Design.",
-    },
-    {
-      question: "Meilleure alternative ?",
-      answer: (
-        <>
-          Adobe Premiere Pro si tu veux l&apos;écosystème Adobe complet. Final
-          Cut Pro si tu es Mac only.{" "}
-          <Link href="/outils/capcut" className="text-sky-400 hover:underline">
-            CapCut
-          </Link>{" "}
-          si tu veux simple et rapide. DaVinci reste le meilleur rapport
-          puissance/prix.
-        </>
-      ),
     },
     {
       question: "Est-ce qu'on le recommande ?",

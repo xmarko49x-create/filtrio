@@ -29,48 +29,9 @@ export const vidiqFiche: FicheData = {
         "YouTubeurs qui veulent un outil SEO moderne avec une forte dimension IA générative. Créateurs qui recherchent leurs prochains sujets via l'analyse de tendances. Agences qui ont besoin d'analytics data-driven.",
     },
     {
-      question: "À éviter si ?",
-      answer: (
-        <>
-          Créateurs hors YouTube. YouTubeurs qui préfèrent une approche plus
-          manuelle et analytique (→{" "}
-          <Link
-            href="/outils/tubebuddy"
-            className="text-orange-400 hover:underline"
-          >
-            TubeBuddy
-          </Link>{" "}
-          plus adapté). Ceux qui veulent des tests A/B de miniatures avancés
-          (moins développés ici).
-        </>
-      ),
-    },
-    {
       question: "Combien ?",
       answer:
         "Plan Gratuit disponible pour démarrer (meilleur que TubeBuddy sur ce point). Boost à 16,58 €/mois en annuel, Max à 31 €/mois en annuel. Offre Enterprise dédiée via contact. Facturation en EUR (FR geo-pricing), tarification fixe.",
-    },
-    {
-      question: "Meilleure alternative ?",
-      answer: (
-        <>
-          <Link
-            href="/outils/tubebuddy"
-            className="text-orange-400 hover:underline"
-          >
-            TubeBuddy
-          </Link>
-          , le concurrent direct. Plus fort sur tests A/B, moins sur l&apos;IA
-          générative. Voir le{" "}
-          <Link
-            href="/comparatifs/vidiq-vs-tubebuddy"
-            className="text-sky-400 hover:underline"
-          >
-            comparatif direct
-          </Link>
-          .
-        </>
-      ),
     },
     {
       question: "Est-ce qu'on le recommande ?",

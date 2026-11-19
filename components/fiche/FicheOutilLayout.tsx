@@ -10,6 +10,7 @@ import { AuthorByline } from "@/components/AuthorByline";
 import { AuthorBio } from "@/components/AuthorBio";
 import { formatDateFR, formatDateLongFR } from "@/lib/author";
 import { getOutil, getOutilOrThrow, type TailwindColor } from "@/lib/outils";
+import { getComparatifsPourOutil } from "@/lib/comparatifs";
 import type { ScoringCriterion } from "@/lib/scoring";
 import {
   getReviewSchema,
@@ -73,6 +74,8 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
   // Vrai lien affilié vs placeholder type "#aff-...".
   // Détermine si on peut afficher des CTA trackés inline (hero + après verdict).
   const hasRealAffiliateLink = /^https?:\/\//.test(outil.affiliateLink);
+  // Comparatifs 1 contre 1 publiés qui citent cet outil, pour le maillage.
+  const comparatifsLies = getComparatifsPourOutil(outil.slug);
 
   // Sommaire : une entrée par section réellement présente sur la fiche.
   const sommaire: { href: string; label: string }[] = [
@@ -537,6 +540,26 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
             );
           })}
         </div>
+
+        {/* Maillage vers les comparatifs 1 contre 1 publiés qui citent cet outil. */}
+        {comparatifsLies.length > 0 && (
+          <div className="mt-8 text-sm text-slate-400">
+            <span className="text-slate-300 font-semibold">
+              Comparatifs détaillés :
+            </span>{" "}
+            {comparatifsLies.map((cmp, i) => (
+              <span key={cmp.slug}>
+                {i > 0 && <span className="text-slate-600"> · </span>}
+                <Link
+                  href={`/comparatifs/${cmp.slug}`}
+                  className={`text-${c}-400 hover:underline`}
+                >
+                  {cmp.titre}
+                </Link>
+              </span>
+            ))}
+          </div>
+        )}
       </section>
 
       {/* FAQ */}

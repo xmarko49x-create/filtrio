@@ -29,42 +29,9 @@ export const pikaFiche: FicheData = {
         "Créateurs visuels qui veulent tester la génération vidéo IA sans payer 30 $+/mois. Étudiants, créateurs indépendants, makers qui aiment l'expérimentation visuelle. Pour découvrir le format avant éventuellement passer sur Runway.",
     },
     {
-      question: "À éviter si ?",
-      answer: (
-        <>
-          Tu fais du contenu pro premium qui demande la qualité maximum (→{" "}
-          <Link href="/outils/runway" className="text-purple-400 hover:underline">
-            Runway
-          </Link>
-          ). Tu veux des applications d&apos;édition dédiées (Edit Video, Video
-          Backdrop, Color Grade Video) ou la capture de performance Act-Two, où
-          Runway domine. Tu produis du contenu linéaire long format classique
-          (génération vidéo IA pas adaptée).
-        </>
-      ),
-    },
-    {
       question: "Combien ?",
       answer:
         "Plan Free à 0 $ sans crédits mensuels (crédits à acheter en packs, sans usage commercial). Starter à 8 $/mois en annuel ou 10 $ en mensuel (600 crédits/mois). Creator à 28 $/mois en annuel ou 35 $ en mensuel (2 600 crédits/mois). Fancy à 76 $/mois en annuel ou 95 $ en mensuel (8 550 crédits/mois, file prioritaire). Tous les plans donnent accès à tous les modèles et téléchargent sans watermark. Facturation USD, vérifié le 06/11/2026.",
-    },
-    {
-      question: "Meilleure alternative ?",
-      answer: (
-        <>
-          <Link href="/outils/runway" className="text-purple-400 hover:underline">
-            Runway
-          </Link>{" "}
-          pour la qualité maximale et l'écosystème VFX. Voir le{" "}
-          <Link
-            href="/comparatifs/runway-vs-pika"
-            className="text-purple-400 hover:underline"
-          >
-            comparatif Runway vs Pika
-          </Link>
-          .
-        </>
-      ),
     },
     {
       question: "Est-ce qu'on le recommande ?",

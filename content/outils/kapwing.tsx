@@ -29,48 +29,9 @@ export const kapwingFiche: FicheData = {
         "Équipes qui travaillent à plusieurs sur des vidéos : agences sociales, équipes marketing, médias, scale-ups. Tous ceux qui en ont marre d'envoyer des exports par email et de commenter par Slack.",
     },
     {
-      question: "À éviter si ?",
-      answer: (
-        <>
-          Créateurs solo (
-          <Link href="/outils/veed" className="text-yellow-400 hover:underline">
-            Veed
-          </Link>{" "}
-          ou{" "}
-          <Link href="/outils/capcut" className="text-sky-400 hover:underline">
-            CapCut
-          </Link>{" "}
-          sont meilleurs). Shorts viraux (
-          <Link href="/outils/submagic" className="text-amber-400 hover:underline">
-            Submagic
-          </Link>
-          ). Montage pro (DaVinci ou Premiere).
-        </>
-      ),
-    },
-    {
       question: "Combien ?",
       answer:
         "Plan Free (0 $) limité. Pro à 16 $/mois par utilisateur en annuel (192 $/an) ou 24 $/mois en mensuel : projets et édition illimités, exports jusqu'à 2h. Business à 50 $/mois par utilisateur en annuel (600 $/an) ou 64 $/mois en mensuel pour booster la création en équipe. Enterprise sur devis. Facturation USD.",
-    },
-    {
-      question: "Meilleure alternative ?",
-      answer: (
-        <>
-          <Link href="/outils/veed" className="text-yellow-400 hover:underline">
-            Veed
-          </Link>{" "}
-          pour solo ou petite équipe.{" "}
-          <Link href="/outils/capcut" className="text-sky-400 hover:underline">
-            CapCut
-          </Link>{" "}
-          pour usage solo gratuit.{" "}
-          <Link href="/outils/descript" className="text-violet-400 hover:underline">
-            Descript
-          </Link>{" "}
-          pour équipes podcast/long format.
-        </>
-      ),
     },
     {
       question: "Est-ce qu'on le recommande ?",

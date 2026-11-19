@@ -135,3 +135,15 @@ export const COMPARATIFS: ComparatifMeta[] = [
 export function getComparatif(slug: string): ComparatifMeta | undefined {
   return COMPARATIFS.find((c) => c.slug === slug);
 }
+
+/**
+ * Les comparatifs 1 contre 1 publiés qui impliquent cet outil.
+ * Sert au bloc de maillage en bas des fiches : sans lui, le lien vers le
+ * comparatif dépendait d'une phrase écrite à la main dans chaque fiche.
+ * Les comparatifs collectifs (outilA ou outilB vide) sont exclus.
+ */
+export function getComparatifsPourOutil(slug: string): ComparatifMeta[] {
+  return COMPARATIFS.filter(
+    (c) => c.outilA && c.outilB && (c.outilA === slug || c.outilB === slug),
+  );
+}

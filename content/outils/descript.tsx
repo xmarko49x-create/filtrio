@@ -29,42 +29,9 @@ export const descriptFiche: FicheData = {
         "Podcasteurs, intervieweurs, formateurs, YouTubeurs long format. Créateurs qui font beaucoup de montage conversationnel et veulent supprimer les silences, hésitations, répétitions sans passer des heures dans une timeline.",
     },
     {
-      question: "À éviter si ?",
-      answer: (
-        <>
-          Créateurs 100% shorts (→{" "}
-          <Link href="/outils/submagic" className="text-amber-400 hover:underline">
-            Submagic
-          </Link>{" "}
-          plus adapté). Monteurs qui font beaucoup d&apos;effets visuels avancés
-          (Premiere, DaVinci plus puissants). Budgets zéro sur le long terme
-          (le plan gratuit est limité).
-        </>
-      ),
-    },
-    {
       question: "Combien ?",
       answer:
         "Plan gratuit (Free) disponible. Hobbyist à 16 $/mois en annuel (24 $/mois en mensuel) avec 10h de media. Creator à 24 $/mois en annuel (35 $ mensuel) avec 30h + 5 bonus et export 4K. Business à 50 $/mois en annuel (65 $ mensuel) avec 40h + 10 bonus, Brand Studio et traduction 30+ langues. Enterprise sur devis. Facturation USD, jusqu'à 35 % d'économie en annuel.",
-    },
-    {
-      question: "Meilleure alternative ?",
-      answer: (
-        <>
-          <Link href="/outils/riverside" className="text-indigo-400 hover:underline">
-            Riverside.fm
-          </Link>{" "}
-          si tu veux surtout enregistrer à distance avec qualité pro. Adobe
-          Podcast pour du nettoyage audio gratuit.{" "}
-          <Link
-            href="/comparatifs/descript-vs-riverside"
-            className="text-violet-400 hover:underline"
-          >
-            Comparatif Descript vs Riverside
-          </Link>
-          .
-        </>
-      ),
     },
     {
       question: "Est-ce qu'on le recommande ?",

@@ -29,19 +29,6 @@ export const riversideFiche: FicheData = {
         "Podcasteurs qui reçoivent des invités à distance, intervieweurs, équipes qui font du contenu conversationnel multi-intervenants. Tous ceux qui trouvent Zoom insuffisant pour un rendu pro.",
     },
     {
-      question: "À éviter si ?",
-      answer: (
-        <>
-          Créateurs solo qui enregistrent seuls. Ceux qui éditent beaucoup en
-          post-prod (→{" "}
-          <Link href="/outils/descript" className="text-violet-400 hover:underline">
-            Descript
-          </Link>{" "}
-          plus adapté). Créateurs 100% shorts (pas du tout le bon outil).
-        </>
-      ),
-    },
-    {
       question: "Combien ?",
       answer: (
         <>
@@ -51,24 +38,6 @@ export const riversideFiche: FicheData = {
           euros pour les visiteurs européens. Pour les besoins avancés ou
           équipe, il faut passer par une offre plus élevée ou une prise de
           contact commerciale.
-        </>
-      ),
-    },
-    {
-      question: "Meilleure alternative ?",
-      answer: (
-        <>
-          <Link href="/outils/descript" className="text-violet-400 hover:underline">
-            Descript
-          </Link>{" "}
-          qui intègre désormais l&apos;enregistrement à distance.{" "}
-          <Link
-            href="/comparatifs/descript-vs-riverside"
-            className="text-indigo-400 hover:underline"
-          >
-            Comparatif Descript vs Riverside
-          </Link>
-          .
         </>
       ),
     },

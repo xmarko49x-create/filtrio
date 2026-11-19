@@ -29,33 +29,9 @@ export const tubebuddyFiche: FicheData = {
         "YouTubeurs qui veulent optimiser leur SEO, comprendre leur concurrence, tester différentes miniatures et titres, et gérer leur chaîne plus efficacement. Particulièrement utile pour les chaînes entre 1 000 et 100 000 abonnés.",
     },
     {
-      question: "À éviter si ?",
-      answer:
-        "Créateurs 100% TikTok/Reels (pas utile hors YouTube). YouTubeurs gros qui ont déjà des équipes SEO. Ceux qui cherchent un outil de montage ou de sous-titrage (ce n'est pas son rôle).",
-    },
-    {
       question: "Combien ?",
       answer:
         "Démarrage gratuit possible, sans carte bancaire, avec certaines fonctionnalités accessibles sur le plan gratuit. Côté payant : Pro à 4,99 $/mois en mensuel ou 3,99 $/mois en paiement annuel. Legend à 31,50 $/mois en mensuel ou 25,20 $/mois en paiement annuel. La facturation réelle est effectuée en dollars : les montants éventuellement affichés en euros sont des estimations.",
-    },
-    {
-      question: "Meilleure alternative ?",
-      answer: (
-        <>
-          <Link href="/outils/vidiq" className="text-sky-400 hover:underline">
-            VidIQ
-          </Link>
-          , son concurrent direct. Fonctionnalités très proches, avec quelques
-          différences d&apos;approche. Voir le{" "}
-          <Link
-            href="/comparatifs/vidiq-vs-tubebuddy"
-            className="text-emerald-400 hover:underline"
-          >
-            comparatif complet VidIQ vs TubeBuddy
-          </Link>
-          .
-        </>
-      ),
     },
     {
       question: "Est-ce qu'on le recommande ?",

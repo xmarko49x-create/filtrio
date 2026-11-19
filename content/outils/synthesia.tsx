@@ -29,48 +29,9 @@ export const synthesiaFiche: FicheData = {
         "Équipes L&D (Learning & Development), communication interne d'entreprise, formation client SaaS, onboarding multilingue. Entreprises qui ont des exigences de conformité et qui produisent beaucoup de contenu formation/corporate.",
     },
     {
-      question: "À éviter si ?",
-      answer: (
-        <>
-          Créateurs solo ou YouTubeurs (→{" "}
-          <Link href="/outils/heygen" className="text-cyan-400 hover:underline">
-            HeyGen
-          </Link>{" "}
-          plus adapté). Social media grand public. Ceux qui veulent juste de la
-          voix off (→{" "}
-          <Link href="/outils/elevenlabs" className="text-teal-400 hover:underline">
-            ElevenLabs
-          </Link>
-          ). Budgets solo serrés.
-        </>
-      ),
-    },
-    {
       question: "Combien ?",
       answer:
         "Plan Basic gratuit (500 crédits/mois, jusqu'à 10 minutes de vidéo/mois, sans carte bancaire). Starter à 12 €/mois en annuel (19 €/mois en mensuel) avec assistant vidéo, doublage IA et avatars Synthesia. Creator (populaire) à 49 €/mois en annuel (79 €/mois en mensuel) avec 5 avatars personnels, API et vidéos interactives. Enterprise sur mesure pour les équipes (minutes illimitées, 140+ langues, SSO). Facturation EUR, vérifié le 06/11/2026.",
-    },
-    {
-      question: "Meilleure alternative ?",
-      answer: (
-        <>
-          <Link href="/outils/heygen" className="text-cyan-400 hover:underline">
-            HeyGen
-          </Link>{" "}
-          pour usage créateur ou B2C.{" "}
-          <Link href="/outils/elevenlabs" className="text-teal-400 hover:underline">
-            ElevenLabs
-          </Link>{" "}
-          si tu veux juste la voix IA sans avatar.{" "}
-          <Link
-            href="/comparatifs/synthesia-vs-heygen"
-            className="text-blue-400 hover:underline"
-          >
-            Comparatif Synthesia vs HeyGen
-          </Link>
-          .
-        </>
-      ),
     },
     {
       question: "Est-ce qu'on le recommande ?",

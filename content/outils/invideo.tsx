@@ -29,38 +29,9 @@ export const invideoFiche: FicheData = {
         "Marketeurs qui produisent des pubs vidéo en série, créateurs faceless, YouTubeurs qui diffusent du contenu éducatif automatisé, agences qui industrialisent la production. Pour qui a besoin de volume et de scripts texte comme point de départ.",
     },
     {
-      question: "À éviter si ?",
-      answer: (
-        <>
-          Créateurs qui veulent du contenu authentique face cam. Shorts viraux
-          (→{" "}
-          <Link href="/outils/submagic" className="text-amber-400 hover:underline">
-            Submagic
-          </Link>
-          ). Montage fin (→ DaVinci). Ceux qui préfèrent garder 100% du contrôle
-          créatif.
-        </>
-      ),
-    },
-    {
       question: "Combien ?",
       answer:
         "Pas de plan gratuit affiché sur la page tarifs officielle (vérifié le 06/11/2026). Modèle à crédits en USD, prix par siège : Starter à 10 $/mois en annuel (20 $ en mensuel, 400 crédits/mois), Plus à 30 $/mois en annuel (60 $ en mensuel, 2 000 crédits/mois), Max à 250 $/mois (même prix en annuel et en mensuel, 8 000 crédits/mois). Les crédits inutilisés ne sont pas reportés au mois suivant. Chaque génération consomme des crédits selon le modèle IA utilisé.",
-    },
-    {
-      question: "Meilleure alternative ?",
-      answer: (
-        <>
-          <Link href="/outils/heygen" className="text-cyan-400 hover:underline">
-            HeyGen
-          </Link>{" "}
-          pour avatars IA complets. Pictory pour text-to-video similaire.{" "}
-          <Link href="/outils/veed" className="text-yellow-400 hover:underline">
-            Veed
-          </Link>{" "}
-          pour un éditeur polyvalent moins IA-first.
-        </>
-      ),
     },
     {
       question: "Est-ce qu'on le recommande ?",

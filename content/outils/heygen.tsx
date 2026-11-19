@@ -29,54 +29,9 @@ export const heygenFiche: FicheData = {
         "Marques qui produisent du contenu marketing multilingue, équipes formation interne qui veulent scaler, marketeurs qui produisent des pubs personnalisées, créateurs de contenu pédagogique. Pas un outil de créateur solo classique.",
     },
     {
-      question: "À éviter si ?",
-      answer: (
-        <>
-          YouTubeurs qui font du contenu authentique face cam. Créateurs qui
-          veulent juste de la voix off (→{" "}
-          <Link
-            href="/outils/elevenlabs"
-            className="text-teal-400 hover:underline"
-          >
-            ElevenLabs
-          </Link>
-          ). Budgets serrés (minimum 29 $/mois). Ceux qui veulent un rendu 100%
-          indiscernable (visage avatar encore perceptible).
-        </>
-      ),
-    },
-    {
       question: "Combien ?",
       answer:
         "Plan Free disponible (3 vidéos/mois avec watermark, vidéos jusqu'à 1 min). Creator à 29 $/mois en mensuel ou 24 $/mois en annuel (600 crédits/mois, vidéos jusqu'à 30 min, voice cloning, 175+ langues, 1080p, sans watermark). Pro à partir de 49 $/mois (1 000 crédits/mois, export 4K, paliers de crédits ajustables). Business à 149 $/mois (+ 20 $ par siège supplémentaire). Enterprise sur devis. Facturation en USD.",
-    },
-    {
-      question: "Meilleure alternative ?",
-      answer: (
-        <>
-          <Link
-            href="/outils/elevenlabs"
-            className="text-teal-400 hover:underline"
-          >
-            ElevenLabs
-          </Link>{" "}
-          si tu veux juste la voix.{" "}
-          <Link
-            href="/outils/synthesia"
-            className="text-blue-400 hover:underline"
-          >
-            Synthesia
-          </Link>{" "}
-          pour un concurrent plus orienté corporate/formation.{" "}
-          <Link
-            href="/comparatifs/elevenlabs-vs-heygen"
-            className="text-cyan-400 hover:underline"
-          >
-            Comparatif ElevenLabs vs HeyGen
-          </Link>
-          .
-        </>
-      ),
     },
     {
       question: "Est-ce qu'on le recommande ?",

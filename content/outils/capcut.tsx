@@ -55,44 +55,9 @@ export const capcutFiche: FicheData = {
         "Débutants sans budget, créateurs mobile-first, TikTokeurs qui éditent sur smartphone, créateurs occasionnels qui ne veulent pas s'engager sur un abonnement, étudiants, tous ceux qui découvrent le montage vidéo.",
     },
     {
-      question: "À éviter si ?",
-      answer: (
-        <>
-          Créateurs sérieux qui veulent un style signature (→{" "}
-          <Link href="/outils/submagic" className="text-amber-400 hover:underline">
-            Submagic
-          </Link>
-          ). Agences qui ont besoin d&apos;API ou d&apos;automatisation.
-          Professionnels sensibles à la question ByteDance/données personnelles.
-        </>
-      ),
-    },
-    {
       question: "Combien ?",
       answer:
         "Plan gratuit très complet (éditeur et la plupart des fonctionnalités). Abonnements relevés sur l'App Store France : Standard à 11,99 €/mois et Pro à 23,99 €/mois. Une formule annuelle à 109,99 € apparaît également, sans que l'App Store précise clairement à quel niveau elle correspond. Attention : les prix CapCut peuvent varier selon la plateforme (Web, Android, ordinateur), la région et les promotions en cours. Facturation en EUR en France.",
-    },
-    {
-      question: "Meilleure alternative ?",
-      answer: (
-        <>
-          <Link href="/outils/submagic" className="text-amber-400 hover:underline">
-            Submagic
-          </Link>{" "}
-          si tu veux des sous-titres stylés FR pros.{" "}
-          <Link href="/outils/davinci" className="text-red-400 hover:underline">
-            DaVinci Resolve
-          </Link>{" "}
-          si tu veux un éditeur pro gratuit.{" "}
-          <Link
-            href="/comparatifs/submagic-vs-capcut"
-            className="text-sky-400 hover:underline"
-          >
-            Comparatif Submagic vs CapCut
-          </Link>
-          .
-        </>
-      ),
     },
     {
       question: "Est-ce qu'on le recommande ?",

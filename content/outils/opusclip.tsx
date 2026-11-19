@@ -1,31 +1,12 @@
 import Link from "next/link";
-import type { ReactNode } from "react";
 import type { FicheData } from "@/components/fiche/FicheOutilLayout";
 import { SCORING_BY_SLUG } from "@/lib/scoring";
+import FigureTest from "@/components/FigureTest";
 
 /**
  * Figure de preuve pour la visite guidée du test de première main.
  * Local à cette fiche : aucun composant partagé n'est modifié.
  */
-function FigureTest({
-  src,
-  alt,
-  caption,
-}: {
-  src: string;
-  alt: string;
-  caption: ReactNode;
-}) {
-  return (
-    <figure className="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden my-6">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={src} alt={alt} loading="lazy" className="w-full h-auto block" />
-      <figcaption className="text-sm text-slate-400 leading-relaxed p-5">
-        {caption}
-      </figcaption>
-    </figure>
-  );
-}
 
 export const opusclipFiche: FicheData = {
   slug: "opusclip",

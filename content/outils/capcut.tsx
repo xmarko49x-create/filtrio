@@ -22,7 +22,7 @@ export const capcutFiche: FicheData = {
     origine: "Chine (ByteDance)",
     tempsLecture: 7,
     lastCheck: "24/08/2026",
-    contentUpdate: "02/10/2026",
+    contentUpdate: "19/11/2026",
   },
   verdict30s: [
     {
@@ -57,18 +57,103 @@ export const capcutFiche: FicheData = {
     titre: "CapCut Desktop : notre avis et notre test du 24 août 2026",
     contenu: (
       <>
+        <h3 className="text-2xl font-bold text-slate-100">
+          Desktop, mobile ou web : ce qui change, et ce que CapCut ne dit pas
+        </h3>
         <p>
-          CapCut Desktop existe en application dédiée sur Windows et macOS, en plus
-          des versions mobile et web. Si tu montes régulièrement, c&apos;est la
-          version la plus confortable : timeline plus lisible sur grand écran,
-          raccourcis clavier, et une gestion bien plus sereine des projets longs ou
-          multi-pistes qu&apos;un montage au doigt sur smartphone.
+          CapCut existe en trois versions distinctes, présentées séparément sur
+          le site officiel : l&apos;application Desktop pour Windows et macOS,
+          l&apos;éditeur en ligne dans le navigateur, et l&apos;application
+          mobile. C&apos;est la question qui revient le plus souvent avant de
+          télécharger, alors autant la traiter tout de suite.
         </p>
         <p>
-          Un point à garder en tête : les fonctionnalités et les prix ne sont pas
-          strictement identiques entre le Web, le mobile et Desktop. Avant de
-          t&apos;abonner, vérifie ce qui est inclus sur la plateforme que tu
-          utilises vraiment.
+          <strong className="text-slate-100">
+            Le constat le plus utile est celui-ci : CapCut ne publie aucun
+            tableau comparatif de ses trois versions.
+          </strong>{" "}
+          Nous avons relevé ses pages officielles le 19/11/2026, dont la page
+          dédiée à l&apos;éditeur Desktop. Les trois produits y sont listés
+          côte à côte, sans aucune liste de fonctions réservées à l&apos;un ou
+          à l&apos;autre. Si tu lis ailleurs que la version PC « débloque » telle
+          fonction, c&apos;est une affirmation, pas une information sourcée chez
+          l&apos;éditeur.
+        </p>
+        <div className="overflow-x-auto rounded-xl border border-slate-800 my-6">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="bg-slate-900 text-left text-slate-300">
+                <th className="px-4 py-3 font-semibold">Question</th>
+                <th className="px-4 py-3 font-semibold">
+                  Ce qu&apos;on peut affirmer au 19/11/2026
+                </th>
+              </tr>
+            </thead>
+            <tbody className="text-slate-300">
+              <tr className="border-t border-slate-800">
+                <td className="px-4 py-3 font-medium text-slate-200">
+                  Systèmes compatibles
+                </td>
+                <td className="px-4 py-3">
+                  Windows 7 ou plus récent, Windows 10 recommandé, et macOS
+                  10.14 ou plus récent. Chiffres repris de la FAQ officielle de
+                  la page Desktop.
+                </td>
+              </tr>
+              <tr className="border-t border-slate-800">
+                <td className="px-4 py-3 font-medium text-slate-200">
+                  Mémoire vive, disque, processeur
+                </td>
+                <td className="px-4 py-3">
+                  Non précisé. Aucune configuration minimale chiffrée
+                  n&apos;apparaît sur la page officielle. Nous ne reprenons pas
+                  les chiffres qui circulent ailleurs, faute de source
+                  vérifiable.
+                </td>
+              </tr>
+              <tr className="border-t border-slate-800">
+                <td className="px-4 py-3 font-medium text-slate-200">
+                  Fonctions réservées à une version
+                </td>
+                <td className="px-4 py-3">
+                  Aucune liste officielle. L&apos;éditeur présente ses trois
+                  versions sans en comparer les fonctions.
+                </td>
+              </tr>
+              <tr className="border-t border-slate-800">
+                <td className="px-4 py-3 font-medium text-slate-200">
+                  Prix selon la plateforme
+                </td>
+                <td className="px-4 py-3">
+                  Les tarifs ne sont pas identiques partout. Ceux du tableau
+                  plus bas sont relevés sur l&apos;App Store France. La page
+                  tarifaire du site officiel n&apos;était pas accessible lors de
+                  notre vérification du 19/11/2026 : les prix web et Android
+                  restent donc non vérifiés de notre côté.
+                </td>
+              </tr>
+              <tr className="border-t border-slate-800">
+                <td className="px-4 py-3 font-medium text-slate-200">
+                  Sous-titrage français gratuit
+                </td>
+                <td className="px-4 py-3">
+                  Testé sur Desktop uniquement, le 24/08/2026 : génération
+                  réussie sans payer, export du fichier refusé. Détail capture
+                  par capture plus bas. Nous n&apos;avons testé ni le mobile ni
+                  le web, nous n&apos;en disons donc rien.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Notre avis, et c&apos;est un avis, pas un relevé : si tu montes
+          régulièrement, l&apos;application Desktop est la plus confortable des
+          trois. Timeline plus lisible sur grand écran, raccourcis clavier, et
+          une gestion plus sereine des projets longs ou multi-pistes
+          qu&apos;un montage au doigt sur smartphone. Avant de t&apos;abonner,
+          vérifie en revanche ce qui est inclus sur la plateforme où tu paies
+          réellement.
         </p>
         <p>
           Pour démarrer le montage, la version gratuite de CapCut Desktop donne

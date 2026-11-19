@@ -12,7 +12,7 @@ export function AuthorBio() {
     <section className="border-t border-slate-800 bg-slate-900/40">
       <div className="max-w-4xl mx-auto px-6 py-12">
         <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-5">
-          À propos de l&apos;auteur
+          Qui écrit ces pages
         </div>
         <div className="flex items-start gap-5">
           <div

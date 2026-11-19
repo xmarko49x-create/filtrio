@@ -13,7 +13,6 @@ import {
 } from "@/lib/schema";
 
 const AUTEUR = {
-  nomComplet: "Marc Devillers",
   email: "contact@filtrio.fr",
 };
 
@@ -23,13 +22,12 @@ const PROFILE_SCHEMAS = [
     "@context": "https://schema.org",
     "@type": "ProfilePage",
     mainEntity: {
-      "@type": "Person",
+      "@type": "Organization",
       "@id": PERSON_ID,
-      name: "Marc Devillers",
+      name: "Filtrio",
       url: "https://www.filtrio.fr/a-propos",
-      jobTitle: "Éditeur de Filtrio",
       email: "mailto:contact@filtrio.fr",
-      worksFor: {
+      parentOrganization: {
         "@type": "Organization",
         "@id": ORG_ID,
         name: "Filtrio",
@@ -111,11 +109,9 @@ export default function AProposPage() {
           comparatifs utiles et une méthode de notation claire.
         </p>
         <p className="text-slate-400 leading-relaxed">
-          Je m&apos;appelle{" "}
-          <strong className="text-slate-100">{AUTEUR.nomComplet}</strong>{" "}
-          et j&apos;ai créé Filtrio pour proposer un site plus lisible, plus
-          honnête et plus utile que les listes génériques ou les comparatifs
-          trop vagues.
+          <strong className="text-slate-100">Filtrio</strong> a été créé pour
+          proposer un site plus lisible, plus honnête et plus utile que les
+          listes génériques ou les comparatifs trop vagues.
         </p>
       </section>
 
@@ -214,9 +210,9 @@ export default function AProposPage() {
           Qui est derrière Filtrio
         </h2>
         <p className="text-slate-300 leading-relaxed mb-4">
-          Filtrio est un projet indépendant créé par{" "}
-          <strong className="text-slate-100">{AUTEUR.nomComplet}</strong>,
-          éditeur de Filtrio.
+          <strong className="text-slate-100">Filtrio</strong> est un projet
+          éditorial indépendant. Les tests, les avis et les notes publiés ici
+          sont produits par la rédaction de Filtrio.
         </p>
         <h3 className="text-xl font-bold mt-8 mb-4 tracking-tight">
           Publications et contributions externes
@@ -293,7 +289,7 @@ export default function AProposPage() {
           </li>
         </ul>
         <p className="text-slate-400 leading-relaxed">
-          Pour me contacter :{" "}
+          Pour nous contacter :{" "}
           <a
             href={`mailto:${AUTEUR.email}`}
             className="text-emerald-400 hover:text-emerald-300"

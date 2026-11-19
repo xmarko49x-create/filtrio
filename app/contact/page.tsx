@@ -106,7 +106,7 @@ export default function ContactPage() {
           </ul>
 
           <p className="text-sm text-slate-500">
-            Filtrio est édité par Marc Devillers.{" "}
+            Filtrio est un projet éditorial indépendant.{" "}
             <Link href="/a-propos" className="text-emerald-400 hover:underline">
               En savoir plus sur le site et sa ligne éditoriale
             </Link>

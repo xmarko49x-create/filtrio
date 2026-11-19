@@ -5,11 +5,11 @@
  */
 
 export const AUTHOR = {
-  name: "Marc Devillers",
-  initials: "MD",
+  name: "Filtrio",
+  initials: "F",
   url: "/a-propos",
-  role: "Éditeur de Filtrio",
-  bio: "Marc Devillers est l'éditeur de Filtrio. Il analyse les outils IA pour créateurs vidéo à partir des pages officielles, des plans disponibles, des retours publics et d'une méthodologie en 6 critères publiée.",
+  role: "Rédaction de Filtrio",
+  bio: "Filtrio est un comparateur indépendant d'outils IA pour créateurs vidéo. Chaque outil est analysé à partir des pages officielles, des plans réellement disponibles, des retours publics et d'une méthodologie en 6 critères publiée.",
 } as const;
 
 /**

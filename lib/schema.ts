@@ -20,7 +20,7 @@ const AUTHOR_URL = `${SITE_URL}${AUTHOR.url}`;
  * PERSON_ID relie l'auteur des 18 avis, le fondateur de l'Organization et
  * le Person de la page À propos à une seule entité pour Google.
  */
-export const PERSON_ID = `${SITE_URL}/a-propos#marc-devillers`;
+export const PERSON_ID = `${SITE_URL}/a-propos#filtrio-redaction`;
 export const ORG_ID = `${SITE_URL}/#organization`;
 
 /* ---------- Utilitaires ---------- */
@@ -52,12 +52,6 @@ export function getOrganizationSchema() {
     logo: `${SITE_URL}/icon`,
     description:
       "Comparateur indépendant d'outils IA pour créateurs vidéo. Analysés sans langue de bois, notés sur 6 critères concrets.",
-    founder: {
-      "@type": "Person",
-      "@id": PERSON_ID,
-      name: AUTHOR_NAME,
-      url: AUTHOR_URL,
-    },
     foundingDate: "2026",
     inLanguage: "fr-FR",
   };
@@ -112,7 +106,7 @@ export function getReviewSchema(params: {
       worstRating: "0",
     },
     author: {
-      "@type": "Person",
+      "@type": "Organization",
       "@id": PERSON_ID,
       name: AUTHOR_NAME,
       url: AUTHOR_URL,

@@ -35,7 +35,7 @@ export default function MentionsLegalesPage() {
         <section className="mb-10">
           <h2 className="text-2xl font-bold mb-4">Éditeur du site</h2>
           <p className="text-slate-300 leading-relaxed">
-            Filtrio est un projet indépendant édité par Marc Devillers.
+            Filtrio est un projet éditorial indépendant.
           </p>
           <p className="text-slate-300 leading-relaxed mt-2">
             Contact :{" "}

@@ -96,17 +96,33 @@ export default function PlateformeSection({
                       {labelTop3(i)}
                     </span>
                   </div>
-                  <div className="flex items-center gap-3 mb-3">
+                  {/* Le nom et le logo mènent à notre fiche : sans ça, le seul
+                      lien cliquable de la carte était le bouton affilié. */}
+                  <Link
+                    href={`/outils/${o.slug}`}
+                    className="flex items-center gap-3 mb-3 group/nom"
+                  >
                     <div
                       className={`w-12 h-12 rounded-xl bg-${o.color}-500/10 border border-${o.color}-500/30 flex items-center justify-center text-${o.color}-400 font-bold text-xl flex-shrink-0`}
                     >
                       {o.name.charAt(0)}
                     </div>
-                    <h3 className="text-xl font-bold">{o.name}</h3>
-                  </div>
+                    <h3
+                      className={`text-xl font-bold group-hover/nom:text-${o.color}-400 transition`}
+                    >
+                      {o.name}
+                    </h3>
+                  </Link>
                   <p className="text-sm text-slate-400 mb-3 flex-1">
                     {o.tagline}
                   </p>
+                  {o.testeLe && (
+                    <p
+                      className={`text-xs text-${o.color}-400 mb-2 font-medium`}
+                    >
+                      Testé par Filtrio le {o.testeLe}
+                    </p>
+                  )}
                   {o.priceFrom && (
                     <p className="text-xs text-slate-500 mb-4">
                       {o.priceFrom}
@@ -119,14 +135,14 @@ export default function PlateformeSection({
                         outilSlug={o.slug}
                         outilName={o.name}
                         source="plateforme"
-                        className={`flex-1 text-center text-sm font-semibold bg-${o.color}-500 hover:bg-${o.color}-400 text-slate-950 px-4 py-2.5 rounded-lg transition`}
+                        className={`flex-1 text-center text-sm font-semibold bg-${o.color}-500 hover:bg-${o.color}-400 text-slate-950 px-3 py-2.5 rounded-lg transition whitespace-nowrap`}
                       >
                         Tester {o.name}
                       </TrackedAffiliateLink>
                     ) : (
                       <Link
                         href={`/outils/${o.slug}`}
-                        className={`flex-1 text-center text-sm font-semibold bg-${o.color}-500 hover:bg-${o.color}-400 text-slate-950 px-4 py-2.5 rounded-lg transition`}
+                        className={`flex-1 text-center text-sm font-semibold bg-${o.color}-500 hover:bg-${o.color}-400 text-slate-950 px-3 py-2.5 rounded-lg transition whitespace-nowrap`}
                       >
                         Voir {o.name}
                       </Link>
@@ -134,9 +150,9 @@ export default function PlateformeSection({
                     {showTester && (
                       <Link
                         href={`/outils/${o.slug}`}
-                        className="text-sm font-medium border border-slate-700 hover:border-slate-500 text-slate-200 px-4 py-2.5 rounded-lg transition"
+                        className="flex-1 text-center text-sm font-medium border border-slate-700 hover:border-slate-500 text-slate-200 px-3 py-2.5 rounded-lg transition whitespace-nowrap"
                       >
-                        Fiche
+                        {o.testeLe ? "Notre test" : "Notre avis"}
                       </Link>
                     )}
                   </div>
@@ -205,9 +221,13 @@ export default function PlateformeSection({
                 >
                   {/* Idem : liste multi-catégories, pas de note alignée. */}
                   <div className="mb-3">
-                    <h3 className={`text-xl font-bold text-${o.color}-400`}>
-                      {o.name}
-                    </h3>
+                    <Link href={`/outils/${o.slug}`}>
+                      <h3
+                        className={`text-xl font-bold text-${o.color}-400 hover:underline`}
+                      >
+                        {o.name}
+                      </h3>
+                    </Link>
                   </div>
                   <div className="text-sm text-slate-400 mb-4">{o.tagline}</div>
                   <div className="flex flex-wrap gap-2 text-xs text-slate-500 mb-5">
@@ -227,7 +247,7 @@ export default function PlateformeSection({
                       href={`/outils/${o.slug}`}
                       className="text-sm font-medium border border-slate-700 hover:border-slate-500 text-slate-200 px-4 py-2 rounded-lg transition"
                     >
-                      Voir la fiche
+                      {o.testeLe ? "Notre test" : "Notre avis"}
                     </Link>
                     {showTester && (
                       <TrackedAffiliateLink

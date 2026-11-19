@@ -62,6 +62,12 @@ export interface Outil {
   ficheAvailable: boolean;
   /** Commission affilié connue (pour tri / badge "tier 1"). */
   commission?: string;
+  /**
+   * Date du test de première main publié sur la fiche (JJ/MM/AAAA).
+   * Absent = la fiche repose sur l'analyse documentaire, pas sur un test.
+   * Sert à annoncer "Notre test" plutôt que "Notre avis" dans les cartes.
+   */
+  testeLe?: string;
   /** Override du <title> SEO. Sinon template "{name} avis 2026 : prix, fonctionnalités, alternatives". */
   metaTitle?: string;
   /** Override de la meta description SEO. Sinon description générée (prix + score + tagline). */
@@ -77,6 +83,7 @@ export interface Outil {
 export const OUTILS: Outil[] = [
   {
     slug: "submagic",
+    testeLe: "21/08/2026",
     name: "Submagic",
     score: 9.2,
     color: "amber",
@@ -90,6 +97,7 @@ export const OUTILS: Outil[] = [
   },
   {
     slug: "opusclip",
+    testeLe: "21/08/2026",
     name: "OpusClip",
     score: 8.7,
     color: "emerald",
@@ -229,6 +237,7 @@ export const OUTILS: Outil[] = [
   },
   {
     slug: "capcut",
+    testeLe: "24/08/2026",
     name: "CapCut",
     score: 7.8,
     color: "sky",
@@ -304,6 +313,7 @@ export const OUTILS: Outil[] = [
   },
   {
     slug: "gpt-video",
+    testeLe: "10/11/2026",
     name: "GPT-Video",
     score: 7.8,
     color: "orange",

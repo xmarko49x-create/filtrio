@@ -8,15 +8,15 @@ import { getBreadcrumbSchema } from "@/lib/schema";
 import { AuthorByline } from "@/components/AuthorByline";
 import { AuthorBio } from "@/components/AuthorBio";
 
-const LAST_UPDATED = "10/11/2026";
+const LAST_UPDATED = "23/11/2026";
 
 export const metadata: Metadata = {
-  title: "Banc d'essai : 4 outils vidéo IA testés sur le même fichier",
+  title: "Banc d'essai : 5 outils vidéo IA testés sur le même fichier",
   description:
-    "OpusClip, Submagic, CapCut et GPT-Video passés au même fichier vidéo français, réglages par défaut, comptes gratuits. Temps, format affiché, export gratuit : les résultats en un tableau.",
+    "OpusClip, Submagic, CapCut, GPT-Video et Klap passés au même fichier vidéo français, réglages par défaut, comptes gratuits. Temps, format affiché, export gratuit : les résultats en un tableau.",
   alternates: { canonical: "https://www.filtrio.fr/banc-essai" },
   openGraph: {
-    title: "Banc d'essai Filtrio : 4 outils vidéo IA sur le même fichier",
+    title: "Banc d'essai Filtrio : 5 outils vidéo IA sur le même fichier",
     description:
       "Résultats bruts de nos tests de première main, sur une vidéo source libre que tu peux retélécharger.",
     type: "article",
@@ -69,6 +69,18 @@ const RESULTATS = [
     exportOk: true,
     erreurs: "Aucune erreur relevée sur les passages contrôlés",
   },
+  {
+    outil: "Klap",
+    slug: "klap",
+    couleur: "indigo",
+    date: "23/11/2026",
+    temps: "≈ 1 min",
+    format:
+      "9:16 vertical, suivi du visage ; incrustation du bas de l'image tronquée",
+    export: "Non, abonnement demandé à l'export",
+    exportOk: false,
+    erreurs: "Aucune erreur relevée sur les passages contrôlés",
+  },
 ];
 
 export default function BancEssaiPage() {
@@ -92,7 +104,7 @@ export default function BancEssaiPage() {
           <span className="text-slate-300">Banc d&apos;essai</span>
         </div>
         <h1 className="text-4xl md:text-5xl font-bold leading-[1.1] mb-5 tracking-tight">
-          Banc d&apos;essai Filtrio : 4 outils vidéo IA testés sur le même
+          Banc d&apos;essai Filtrio : 5 outils vidéo IA testés sur le même
           fichier
         </h1>
         <div className="mb-6">
@@ -169,11 +181,11 @@ export default function BancEssaiPage() {
             <strong className="text-slate-300">
               Une précision de date qui compte.
             </strong>{" "}
-            Les quatre outils ont reçu le même fichier, mais pas le même jour :
+            Les cinq outils ont reçu le même fichier, mais pas le même jour :
             OpusClip et Submagic ont été testés le 21 août 2026 lors d&apos;une
-            même session, CapCut le 24 août 2026, et GPT-Video le 10 novembre
-            2026. Ce n&apos;est donc pas une manipulation simultanée, et les
-            offres ont pu évoluer entre deux tests.
+            même session, CapCut le 24 août 2026, GPT-Video le 10 novembre 2026
+            et Klap le 23 novembre 2026. Ce n&apos;est donc pas une manipulation
+            simultanée, et les offres ont pu évoluer entre deux tests.
           </p>
         </div>
       </section>
@@ -258,14 +270,14 @@ export default function BancEssaiPage() {
               </strong>{" "}
               désigne ce que l&apos;outil montrait à l&apos;écran après
               traitement. OpusClip et GPT-Video nous ont livré un fichier : pour
-              Submagic et CapCut, c&apos;est un aperçu, pas un export.
+              Submagic, CapCut et Klap, c&apos;est un aperçu, pas un export.
             </li>
             <li>
               <strong className="text-slate-300">
                 Le temps de GPT-Video ne compte pas l&apos;envoi du fichier.
               </strong>{" "}
               Il vient de la page de suivi de l&apos;outil (choix des réglages
-              et analyse). Pour les trois autres outils, le temps a été
+              et analyse). Pour les quatre autres outils, le temps a été
               chronométré de l&apos;envoi au résultat affiché. Les deux mesures
               ne sont donc pas strictement comparables.
             </li>
@@ -357,8 +369,9 @@ export default function BancEssaiPage() {
             notre analyse documentaire : une manipulation sur une vidéo ne
             suffit pas à faire bouger une grille, et nous ne l&apos;utilisons
             jamais pour justifier après coup une note déjà publiée. GPT-Video
-            a été noté pour la première fois après son test : sa grille tient
-            compte de ce test et de l&apos;analyse de ses pages officielles.
+            et Klap ont été notés pour la première fois après leur test : leur
+            grille tient compte de ce test et de l&apos;analyse de leurs pages
+            officielles.
           </p>
         </div>
       </section>
@@ -423,6 +436,18 @@ export default function BancEssaiPage() {
               <p className="text-sm text-slate-400 leading-relaxed mb-0">
                 Réglages choisis par l&apos;IA, clips notés et expliqués,
                 cadrage sur le visage et export gratuit sans logo.
+              </p>
+            </Link>
+            <Link
+              href="/outils/klap"
+              className="block bg-slate-950 border border-indigo-500/30 hover:border-indigo-500 rounded-xl p-6 transition"
+            >
+              <div className="font-bold text-indigo-400 mb-2">
+                Test Klap →
+              </div>
+              <p className="text-sm text-slate-400 leading-relaxed mb-0">
+                Dix-neuf captures : score de viralité, édition par le texte,
+                recadrage vertical, et le mur de paiement à l&apos;export.
               </p>
             </Link>
           </div>

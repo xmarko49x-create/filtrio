@@ -323,6 +323,9 @@ export const OUTILS: Outil[] = [
     freeTier: "Essai sur 1 vidéo, aperçu seulement, aucun téléchargement",
     affiliateLink: "#aff-klap",
     ficheAvailable: true,
+    // Entré au catalogue après l'édition de novembre 2026 de l'Observatoire.
+    // Le panel reste figé par édition : Klap rejoindra la prochaine.
+    horsObservatoire: true,
     metaTitle:
       "Klap : avis 2026, test du plan gratuit, prix et limites",
     metaDescription:

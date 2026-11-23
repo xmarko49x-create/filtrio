@@ -13,10 +13,10 @@ import { getFaqPageSchema, getBreadcrumbSchema } from "@/lib/schema";
 const SLUG = "outils-shorts-tiktok-2026";
 const TITLE = "Meilleur outil pour Shorts en 2026 : 7 solutions comparées";
 const SUBTITLE =
-  "Submagic, OpusClip, CapCut, Descript, Veed, Kapwing et GPT-Video comparés sur 12 critères : prix, sous-titres français, clipping, export et verdict par profil.";
-const LAST_CHECK = "10/11/2026";
+  "Submagic, OpusClip, CapCut, Descript, Veed, Kapwing, GPT-Video et Klap comparés sur 12 critères : prix, sous-titres français, clipping, export et verdict par profil.";
+const LAST_CHECK = "23/11/2026";
 /** Date de la dernière révision éditoriale (distincte de la vérification des données). */
-const LAST_UPDATE = "10/11/2026";
+const LAST_UPDATE = "23/11/2026";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -90,6 +90,13 @@ const OUTILS_COMPARES: OutilCard[] = [
     forceMajeure: "Chaque clip est noté et expliqué en français ; sur notre test, sous-titres justes et export gratuit sans logo.",
     faiblesseMajeure: "Pas de plan gratuit durable, seulement un essai limité, et six réglages à faire avant de lancer.",
   },
+  {
+    slug: "klap",
+    badge: "Le clippeur français",
+    bestFor: "Créateurs qui veulent découper, sous-titrer et programmer leurs shorts dans un seul outil français.",
+    forceMajeure: "Sur notre test, transcription française juste, sous-titres lisibles et édition par le texte accessible sans payer.",
+    faiblesseMajeure: "L'essai ne livre aucun fichier : l'export demande un abonnement, facturé en dollars.",
+  },
 ];
 
 interface CritereLine {
@@ -102,7 +109,7 @@ interface CritereLine {
 const CRITERES_TABLEAU: CritereLine[] = [
   {
     label: "Score éditorial Filtrio",
-    values: ["9.2 / 10", "8.7 / 10", "8.4 / 10", "7.8 / 10", "7.8 / 10", "7.2 / 10", "7.8 / 10"],
+    values: ["9.2 / 10", "8.7 / 10", "8.4 / 10", "7.8 / 10", "7.8 / 10", "7.2 / 10", "7.8 / 10", "8.0 / 10"],
     highlight: 0,
   },
   {
@@ -115,6 +122,7 @@ const CRITERES_TABLEAU: CritereLine[] = [
       "Éditeur web",
       "Édition collab",
       "Clipping IA expliqué",
+      "Clipping IA + publication",
     ],
   },
   {
@@ -127,6 +135,7 @@ const CRITERES_TABLEAU: CritereLine[] = [
       "11 €/mois (annuel, TTC)",
       "16 $/mois (annuel)",
       "19 $/mois",
+      "14,50 $/mois (annuel)",
     ],
     highlight: 3,
   },
@@ -140,17 +149,18 @@ const CRITERES_TABLEAU: CritereLine[] = [
       "Plan Free disponible",
       "Plan Free disponible",
       "Non, essai limité (50 crédits, 3 exports)",
+      "Non, essai sur 1 vidéo sans export",
     ],
     highlight: 3,
   },
   {
     label: "Qualité sous-titres FR",
-    values: ["Excellente", "Correcte", "Très bonne", "Bonne", "Bonne", "Correcte", "Bonne"],
+    values: ["Excellente", "Correcte", "Très bonne", "Bonne", "Bonne", "Correcte", "Bonne", "Très bonne"],
     highlight: 0,
   },
   {
     label: "Templates animés",
-    values: ["Excellents", "Limités", "Bons", "Excellents", "Très bons", "Bons", "4 styles"],
+    values: ["Excellents", "Limités", "Bons", "Excellents", "Très bons", "Bons", "4 styles", "9 styles"],
   },
   {
     label: "Clipping IA depuis longue vidéo",
@@ -162,31 +172,32 @@ const CRITERES_TABLEAU: CritereLine[] = [
       "Limité",
       "Manuel",
       "Cœur du produit",
+      "Cœur du produit",
     ],
     highlight: 1,
   },
   {
     label: "Édition textuelle (transcript-based)",
-    values: ["Non", "Non", "Excellente", "Non", "Limitée", "Limitée", "Non"],
+    values: ["Non", "Non", "Excellente", "Non", "Limitée", "Limitée", "Non", "Oui, dès le gratuit"],
     highlight: 2,
   },
   {
     label: "Export 4K",
-    values: ["Business uniquement", "Plan Pro", "Plan Creator", "Avec Pro", "Plan Pro", "Plan Pro", "Non précisé"],
+    values: ["Business uniquement", "Plan Pro", "Plan Creator", "Avec Pro", "Plan Pro", "Plan Pro", "Non précisé", "Non précisé"],
   },
   {
     label: "App mobile",
-    values: ["Web", "Web", "Web + macOS", "iOS + Android", "Web", "Web", "Web"],
+    values: ["Web", "Web", "Web + macOS", "iOS + Android", "Web", "Web", "Web", "Web"],
     highlight: 3,
   },
   {
     label: "Collaboration équipe",
-    values: ["Limitée", "Limitée", "Bonne", "Limitée", "Correcte", "Excellente", "Non évaluée"],
+    values: ["Limitée", "Limitée", "Bonne", "Limitée", "Correcte", "Excellente", "Non évaluée", "Non évaluée"],
     highlight: 5,
   },
   {
     label: "Programme affilié actif chez Filtrio",
-    values: ["Oui", "Oui", "Non (PartnerStack)", "Non", "Non (sélectif)", "Non (Tapfiliate)", "Non"],
+    values: ["Oui", "Oui", "Non (PartnerStack)", "Non", "Non (sélectif)", "Non (Tapfiliate)", "Non", "Non"],
   },
 ];
 
@@ -443,7 +454,7 @@ export default function GrandComparatifPage() {
             Tableau côte à côte
           </div>
           <h2 className="text-3xl font-bold mb-3 tracking-tight">
-            Les 7 outils sur 12 critères.
+            Les 8 outils sur 12 critères.
           </h2>
           <p className="text-slate-400 leading-relaxed mb-10 max-w-3xl">
             Toutes les données vérifiées sur les pages officielles entre le 06/11/2026 et le {LAST_CHECK}.
@@ -451,7 +462,7 @@ export default function GrandComparatifPage() {
           </p>
 
           <div className="overflow-x-auto -mx-6 px-6 pb-2">
-            <table className="w-full min-w-[1150px] text-sm border-separate border-spacing-0">
+            <table className="w-full min-w-[1320px] text-sm border-separate border-spacing-0">
               <thead>
                 <tr className="text-left text-xs uppercase tracking-wider text-slate-400">
                   <th className="sticky left-0 bg-slate-950/90 backdrop-blur z-10 py-4 pr-4 border-b border-slate-800 font-semibold">

@@ -312,6 +312,23 @@ export const OUTILS: Outil[] = [
     ficheAvailable: true,
   },
   {
+    slug: "klap",
+    testeLe: "23/11/2026",
+    name: "Klap",
+    score: 8.0,
+    color: "indigo",
+    tagline: "Clipper IA français, sous-titres soignés",
+    category: "shorts",
+    priceFrom: "À partir de 14,50 $/mois (engagement annuel)",
+    freeTier: "Essai sur 1 vidéo, aperçu seulement, aucun téléchargement",
+    affiliateLink: "#aff-klap",
+    ficheAvailable: true,
+    metaTitle:
+      "Klap : avis 2026, test du plan gratuit, prix et limites",
+    metaDescription:
+      "Nous avons testé Klap le 23/11/2026 sur une vidéo française, plan gratuit : sous-titres justes, recadrage 9:16, mais aucun fichier téléchargeable sans abonnement.",
+  },
+  {
     slug: "gpt-video",
     testeLe: "10/11/2026",
     name: "GPT-Video",

@@ -864,4 +864,48 @@ export const SCORING_BY_SLUG: Record<string, ScoringCriterion[]> = {
         "API et connexion aux assistants IA compatibles MCP, accessibles dès l'essai (observé, non testé). Import par fichier (MP4, MOV, WebM). Pas de publication directe sur les réseaux repérée lors de notre test, contrairement à OpusClip.",
     },
   ],
+  klap: [
+    {
+      label: "Qualité en français",
+      poids: 20,
+      score: 8.8,
+      commentaire:
+        "Sur notre test du 23/11/2026, la transcription française est juste sur tous les passages contrôlés, y compris les deux où CapCut s'était trompé sur le même fichier. Sous-titres lisibles, deux lignes, mot prononcé surligné, placés sans mordre sur le visage. Le titre et l'analyse du clip sont rédigés dans un français correct. L'interface, en revanche, comporte plusieurs traductions automatiques fautives.",
+    },
+    {
+      label: "Rapport qualité/prix",
+      poids: 20,
+      score: 6.8,
+      commentaire:
+        "L'essai gratuit porte sur une seule vidéo et ne permet aucun téléchargement : l'aperçu reste en ligne, rien ne sort. Premier plan payant à 14,50 $/mois avec engagement annuel, 29 $/mois sans engagement. Facturation en dollars alors que l'interface est en français et l'éditeur une société française.",
+    },
+    {
+      label: "Profondeur des fonctionnalités IA",
+      poids: 20,
+      score: 8.8,
+      commentaire:
+        "Découpe automatique, recadrage 9:16 avec suivi du visage, sous-titres, score de viralité accompagné d'une analyse argumentée, édition par le texte, trois modes de génération. Sur notre source de 1 min 17, l'outil a jugé qu'il n'y avait pas matière à plusieurs extraits : son comportement sur une vidéo longue reste à vérifier.",
+    },
+    {
+      label: "Interface et prise en main",
+      poids: 15,
+      score: 8.2,
+      commentaire:
+        "Parcours court : dépôt du fichier, un bouton, résultat en une minute. Éditeur clair et accessible sans payer. Le recadrage vertical a tronqué l'incrustation en bas d'image de notre source.",
+    },
+    {
+      label: "Support & confort FR",
+      poids: 15,
+      score: 6.5,
+      commentaire:
+        "Interface en français par défaut, mais traduite à la machine : « Supprimer un fichier » pour déposer un fichier, « Reformuler » pour recadrer, aperçus de styles de sous-titres illisibles. Contact par Discord et chat, aucune adresse e-mail publiée, aucune documentation francophone repérée. Support non évalué.",
+    },
+    {
+      label: "Intégrations",
+      poids: 10,
+      score: 9.2,
+      commentaire:
+        "Import par fichier ou par lien, calendrier de publication et suivi des performances intégrés, API disponible. L'écran de connexion propose cinq réseaux (Facebook, LinkedIn, Instagram, YouTube, TikTok) là où le site en annonce sept. Observé, aucun compte connecté.",
+    },
+  ],
 };

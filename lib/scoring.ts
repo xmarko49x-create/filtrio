@@ -898,7 +898,7 @@ export const SCORING_BY_SLUG: Record<string, ScoringCriterion[]> = {
       poids: 15,
       score: 6.5,
       commentaire:
-        "Interface en français par défaut, mais traduite à la machine : « Supprimer un fichier » pour déposer un fichier, « Reformuler » pour recadrer, aperçus de styles de sous-titres illisibles. Contact par Discord et chat, aucune adresse e-mail publiée, aucune documentation francophone repérée. Support non évalué.",
+        "Interface en français par défaut, mais traduite à la machine : « Supprimer un fichier » pour déposer un fichier, « Reformuler » pour recadrer, aperçus de styles de sous-titres illisibles. Contact par Discord, chat en direct et l'adresse support@klap.app. Nous n'avons pas sollicité le support : sa réactivité et sa langue de réponse ne sont donc pas évaluées. Aucune documentation francophone repérée.",
     },
     {
       label: "Intégrations",

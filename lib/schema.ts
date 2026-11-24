@@ -85,6 +85,8 @@ export function getReviewSchema(params: {
   score: number;
   priceFrom?: string;
   lastCheck: string;
+  /** Date de première publication de la fiche (ISO). Défaut : lancement du site. */
+  publishedAt?: string;
 }) {
   // ratingValue doit être entre 1 et 10 (bestRating = 10)
   const parsedOffer = buildOfferFromPriceFrom(params.priceFrom);
@@ -117,7 +119,7 @@ export function getReviewSchema(params: {
       name: SITE_NAME,
       url: SITE_URL,
     },
-    datePublished: SITE_LAUNCH_DATE,
+    datePublished: params.publishedAt ?? SITE_LAUNCH_DATE,
     dateModified: lastCheckToIso(params.lastCheck),
   };
 }

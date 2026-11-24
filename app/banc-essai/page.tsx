@@ -163,8 +163,9 @@ export default function BancEssaiPage() {
                 <strong className="text-slate-100">
                   Temps chronométré
                 </strong>{" "}
-                de l&apos;envoi au résultat affiché, et limites du plan gratuit
-                relevées telles qu&apos;elles s&apos;affichent à l&apos;écran.
+                de l&apos;envoi au résultat affiché, et limites de
+                l&apos;offre gratuite relevées telles qu&apos;elles
+                s&apos;affichent à l&apos;écran.
               </span>
             </li>
             <li className="flex gap-3">
@@ -217,7 +218,7 @@ export default function BancEssaiPage() {
                   Format affiché par défaut
                 </th>
                 <th className="text-left py-3 px-3 font-semibold text-slate-400">
-                  Export sur le plan gratuit
+                  Export sans payer
                 </th>
                 <th className="text-left py-3 pl-3 font-semibold text-slate-400">
                   Erreurs de transcription

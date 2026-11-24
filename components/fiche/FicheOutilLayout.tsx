@@ -32,6 +32,12 @@ export interface FicheData {
     lastCheck: string;
     /** Dernière mise à jour éditoriale, distincte de la vérification des prix (DD/MM/YYYY). */
     contentUpdate?: string;
+    /**
+     * Date de première publication de la fiche, au format ISO (AAAA-MM-JJ).
+     * Sans elle, le JSON-LD retombe sur la date de lancement du site, ce qui
+     * est faux pour une fiche publiée longtemps après.
+     */
+    publishedAt?: string;
   };
   /** Visuel illustratif optionnel affiché entre le hero et le verdict (mockup interface ou capture d'écran). */
   apercuVisuel?: ReactNode;
@@ -110,11 +116,12 @@ export default function FicheOutilLayout({ data }: { data: FicheData }) {
     score: outil.score,
     priceFrom: outil.priceFrom,
     lastCheck: data.hero.contentUpdate ?? data.hero.lastCheck,
+    publishedAt: data.hero.publishedAt,
   });
   const faqSchema = getFaqPageSchema(data.faq);
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: "Accueil", url: "/" },
-    { name: "Outils", url: "/" },
+    { name: "Outils", url: "/outils" },
     { name: outil.name },
   ]);
 

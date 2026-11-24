@@ -21,7 +21,7 @@ export const metadata: Metadata = {
       "Filtrio : comparateur d'outils IA vidéo, outils Shorts et TikTok testés",
   },
   description:
-    "Les outils de sous-titres et de découpe en shorts testés sur la même vidéo française, et 19 outils IA pour créateurs vidéo comparés : prix vérifiés, forces, limites et verdict par usage.",
+    "Les outils de sous-titres et de découpe en shorts testés sur la même vidéo française, et 20 outils IA pour créateurs vidéo comparés : prix vérifiés, forces, limites et verdict par usage.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "Filtrio",
     title: "Filtrio : les outils IA pour Shorts et TikTok, testés pour de vrai",
     description:
-      "Les outils de sous-titres et de découpe en shorts testés sur la même vidéo française, et 19 outils IA pour créateurs vidéo comparés.",
+      "Les outils de sous-titres et de découpe en shorts testés sur la même vidéo française, et 20 outils IA pour créateurs vidéo comparés.",
     url: "/",
   },
 };
@@ -44,6 +44,7 @@ const TESTS_SHORTS: { slug: string; date: string; resultat: string; exportOk: bo
   { slug: "gpt-video", date: "10/11/2026", resultat: "Export gratuit sans logo, avec un essai limité", exportOk: true },
   { slug: "submagic", date: "21/08/2026", resultat: "Abonnement demandé à l'export", exportOk: false },
   { slug: "capcut", date: "24/08/2026", resultat: "Légendes automatiques classées Pro à l'export", exportOk: false },
+  { slug: "klap", date: "23/11/2026", resultat: "Abonnement demandé à l'export", exportOk: false },
 ];
 
 /** Les 4 comparatifs mis en avant sur l'accueil (les autres sont sur /comparatifs). */
@@ -108,9 +109,10 @@ const HOME_FAQ: { question: string; answer: React.ReactNode }[] = [
     question: "Vous testez vraiment les outils ?",
     answer: (
       <>
-        Oui, pour une partie d&apos;entre eux. Quatre outils ont déjà été
+        Oui, pour une partie d&apos;entre eux. Cinq outils ont déjà été
         manipulés selon un protocole public, sur le même fichier vidéo et avec
-        les réglages par défaut : OpusClip, Submagic, CapCut et GPT-Video. Les résultats
+        les réglages par défaut : OpusClip, Submagic, CapCut, GPT-Video et
+        Klap. Les résultats
         et les captures sont sur notre banc d&apos;essai. Pour les autres
         outils, l&apos;évaluation repose encore sur l&apos;analyse documentaire
         et la prise en main des plans gratuits, et l&apos;extension du
@@ -280,17 +282,17 @@ export default function HomePage() {
             Nos tests de première main
           </div>
           <h2 className="text-xl md:text-2xl font-bold mb-3 tracking-tight">
-            Quatre outils Shorts, la même vidéo, la même méthode.
+            Cinq outils Shorts, la même vidéo, la même méthode.
           </h2>
           <p className="text-slate-300 leading-relaxed mb-4">
             Même vidéo française, compte gratuit, captures à l&apos;appui. Sur
-            les quatre outils testés,{" "}
+            les cinq outils testés,{" "}
             <strong className="text-slate-100">
               deux ont livré gratuitement un fichier sous-titré
             </strong>
             . Le résultat de chacun :
           </p>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 mb-5">
             {testsShorts.map((t) => (
               <Link
                 key={t.slug}
@@ -329,7 +331,7 @@ export default function HomePage() {
           avatars, le montage et le design, à partir des pages officielles et
           des plans gratuits :{" "}
           <Link href="/outils" className="text-emerald-400 hover:underline">
-            voir le catalogue des 19 outils
+            voir le catalogue des 20 outils
           </Link>
           .
         </p>

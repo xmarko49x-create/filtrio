@@ -6,9 +6,9 @@ import FigureTest from "@/components/FigureTest";
 export const klapFiche: FicheData = {
   slug: "klap",
   hero: {
-    h1: "Klap : notre avis après un test du plan gratuit en 2026",
+    h1: "Klap : notre avis après un test de l'essai gratuit en 2026",
     tagline:
-      "Le clipper IA français qui transforme une vidéo longue en shorts avec de bons sous-titres et des intégrations poussées, mais un plan gratuit très limité. Nous l'avons testé le 23 novembre 2026 sur la même vidéo française que les autres outils de notre banc d'essai.",
+      "Le clipper IA français qui transforme une vidéo longue en shorts avec de bons sous-titres et des intégrations poussées, mais un essai gratuit très limité. Nous l'avons testé le 23 novembre 2026 sur la même vidéo française que les autres outils de notre banc d'essai.",
     badges: [
       { label: "Shorts & clips", tone: "primary" },
       { label: "Testé par Filtrio", tone: "accent" },
@@ -17,6 +17,7 @@ export const klapFiche: FicheData = {
     origine: "France",
     tempsLecture: 8,
     lastCheck: "23/11/2026",
+    publishedAt: "2026-11-23",
   },
   verdict30s: [
     {
@@ -43,7 +44,7 @@ export const klapFiche: FicheData = {
           </strong>
           . Sur notre test, la transcription française était juste là où
           CapCut se trompait, les sous-titres étaient lisibles et le recadrage
-          vertical propre. Mais aucun fichier ne sort du plan gratuit : pour
+          vertical propre. Mais aucun fichier ne sort de l'essai gratuit : pour
           juger le rendu final, il faut s&apos;abonner.
         </>
       ),
@@ -57,8 +58,8 @@ export const klapFiche: FicheData = {
           Klap transforme une vidéo longue en clips verticaux sous-titrés, note
           chaque clip et propose de les programmer sur les réseaux. Le pied de
           page du site indique <strong>ZIGG SAS</strong> comme éditeur, une
-          forme juridique française, et deux fondateurs qui signent @theo et
-          @victor.
+          forme juridique française, fondée par Théo Champion et Victor
+          Timsit.
         </p>
         <p>
           Le 23 novembre 2026, nous avons créé un compte sans carte bancaire et
@@ -393,7 +394,7 @@ export const klapFiche: FicheData = {
           alt="Éditeur de Klap, transcription découpée en segments cliquables"
           caption={
             <>
-              L&apos;éditeur complet s&apos;ouvre sur le plan gratuit. À
+              L&apos;éditeur complet s&apos;ouvre dès l&apos;essai gratuit. À
               droite, la transcription découpée en segments cliquables : on
               supprime une phrase et le montage se coupe tout seul. C&apos;est
               le principe de l&apos;édition par le texte, celui de{" "}
@@ -580,7 +581,7 @@ export const klapFiche: FicheData = {
   },
   porQui: [
     "Tu recycles des podcasts, interviews ou cours en shorts verticaux",
-    "Tu veux de bons sous-titres français sans avoir à les retoucher",
+    "Tu veux des sous-titres français lisibles sur les passages contrôlés, à vérifier avant publication",
     "Tu préfères monter en supprimant du texte plutôt qu'en coupant une timeline",
     "Tu veux programmer tes publications depuis le même outil",
     "Tu acceptes de payer dès le départ pour récupérer tes fichiers",
@@ -633,12 +634,12 @@ export const klapFiche: FicheData = {
     {
       titre: "Recadrage 9:16 avec suivi du visage",
       description:
-        "La vidéo horizontale est recadrée en vertical et le sujet reste centré. Testé : le suivi fonctionne, mais les incrustations latérales de la source sont tronquées.",
+        "La vidéo horizontale est recadrée en vertical et le sujet reste centré. Testé : le suivi fonctionne, mais l'incrustation située en bas de l'image est tronquée.",
     },
     {
       titre: "Édition par le texte",
       description:
-        "La transcription s'affiche en segments cliquables : supprimer une phrase coupe le montage correspondant. Accessible sur le plan gratuit. Observé, aucune coupe appliquée.",
+        "La transcription s'affiche en segments cliquables : supprimer une phrase coupe le montage correspondant. Accessible dès l'essai gratuit. Observé, aucune coupe appliquée.",
     },
     {
       titre: "Calendrier et analyses de performance",
@@ -712,7 +713,7 @@ export const klapFiche: FicheData = {
     {
       question: "Klap propose-t-il un plan gratuit ?",
       answer:
-        "Un essai sur une seule vidéo, sans carte bancaire. Lors de notre test du 23/11/2026, il permettait de générer un clip, de le prévisualiser et d'ouvrir l'éditeur, mais pas de télécharger le fichier : l'export affiche un mur de paiement.",
+        "Non, pas de plan gratuit durable : seulement un essai sur une seule vidéo, sans carte bancaire. Lors de notre test du 23/11/2026, il permettait de générer un clip, de le prévisualiser et d'ouvrir l'éditeur, mais pas de télécharger le fichier : l'export affiche un mur de paiement.",
     },
     {
       question: "Les sous-titres français sont-ils fiables ?",
@@ -722,7 +723,7 @@ export const klapFiche: FicheData = {
     {
       question: "Klap est-il un outil français ?",
       answer:
-        "Le pied de page du site indique ZIGG SAS comme éditeur, une forme juridique française, et deux fondateurs identifiés par leurs pseudonymes. L'interface est en français par défaut, mais les tarifs sont affichés et facturés en dollars.",
+        "Le pied de page du site indique ZIGG SAS comme éditeur, une forme juridique française, fondée par Théo Champion et Victor Timsit. L'interface est en français par défaut, mais les tarifs sont affichés et facturés en dollars.",
     },
     {
       question: "Klap ou OpusClip ?",

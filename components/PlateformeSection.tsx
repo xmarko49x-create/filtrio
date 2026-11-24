@@ -185,7 +185,7 @@ export default function PlateformeSection({
               >
                 catalogue complet
               </Link>{" "}
-              liste les 19 outils par ordre alphabétique.
+              liste les {OUTILS.length} outils par ordre alphabétique.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">

@@ -327,9 +327,9 @@ export const OUTILS: Outil[] = [
     // Le panel reste figé par édition : Klap rejoindra la prochaine.
     horsObservatoire: true,
     metaTitle:
-      "Klap : avis 2026, test du plan gratuit, prix et limites",
+      "Klap : avis 2026, test de l'essai gratuit, prix et limites",
     metaDescription:
-      "Nous avons testé Klap le 23/11/2026 sur une vidéo française, plan gratuit : sous-titres justes, recadrage 9:16, mais aucun fichier téléchargeable sans abonnement.",
+      "Nous avons testé Klap le 23/11/2026 sur une vidéo française, essai gratuit : sous-titres justes, recadrage 9:16, mais aucun fichier téléchargeable sans abonnement.",
   },
   {
     slug: "gpt-video",

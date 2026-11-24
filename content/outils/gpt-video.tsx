@@ -22,6 +22,7 @@ export const gptVideoFiche: FicheData = {
     origine: "Italie",
     tempsLecture: 7,
     lastCheck: "10/11/2026",
+    publishedAt: "2026-11-10",
   },
   verdict30s: [
     {

@@ -571,11 +571,28 @@ export const klapFiche: FicheData = {
             Klap nous a contactés et nous a proposé gratuitement 30 jours
             d&apos;accès Pro, sans obligation de publication ni droit de regard
             sur notre verdict. Nous n&apos;avons pas activé cet accès : le test
-            présenté sur cette page a été réalisé exclusivement avec le plan
+            présenté sur cette page a été réalisé exclusivement avec l&apos;essai
             gratuit. Nos liens vers Klap sont affiliés : ils sont signalés
             sous chaque bouton et portent l&apos;attribut{" "}
             <code>rel=&quot;sponsored&quot;</code>. Ils n&apos;entrent pas dans
             la note.
+          </p>
+        </div>
+
+        <div className="mt-4 bg-indigo-500/5 border border-indigo-500/30 rounded-xl p-6">
+          <p className="text-slate-300 leading-relaxed">
+            <strong className="text-slate-100">
+              Un code de réduction, et ce qu&apos;il vaut.
+            </strong>{" "}
+            Klap nous a fourni le code{" "}
+            <code className="text-indigo-400 font-semibold">BD5OAWOD</code>, qui
+            donne <strong className="text-slate-100">30 % de remise sur le
+            premier paiement</strong>. Il ne s&apos;applique qu&apos;à ce
+            premier paiement, pas aux renouvellements. Nous ne nous sommes pas
+            abonnés, donc nous ne l&apos;avons pas utilisé : il est publié tel
+            que l&apos;éditeur nous l&apos;a transmis, vérifie-le au moment de
+            payer. C&apos;est un code lié à notre programme partenaire : si tu
+            t&apos;en sers, tu paies moins cher et nous touchons une commission.
           </p>
         </div>
       </>
@@ -713,6 +730,11 @@ export const klapFiche: FicheData = {
   ],
   faq: [
     {
+      question: "Existe-t-il un code promo Klap ?",
+      answer:
+        "Oui. Klap nous a transmis le code BD5OAWOD, qui donne 30 % de remise sur le premier paiement, sans effet sur les renouvellements. Nous ne nous sommes pas abonnés et ne l'avons donc pas utilisé nous-mêmes : vérifie-le au moment de payer. C'est un code lié à notre programme partenaire, et nous touchons une commission si tu t'en sers.",
+    },
+    {
       question: "Klap propose-t-il un plan gratuit ?",
       answer:
         "Non, pas de plan gratuit durable : seulement un essai sur une seule vidéo, sans carte bancaire. Lors de notre test du 23/11/2026, il permettait de générer un clip, de le prévisualiser et d'ouvrir l'éditeur, mais pas de télécharger le fichier : l'export affiche un mur de paiement.",
@@ -740,7 +762,7 @@ export const klapFiche: FicheData = {
   ],
   ctaFinal: {
     headline: "Passer à l'action",
-    sub: "Klap se teste sur une vidéo sans carte bancaire. Garde en tête que le téléchargement du fichier demande un abonnement.",
+    sub: "Klap se teste sur une vidéo sans carte bancaire. Le téléchargement du fichier demande un abonnement : le code BD5OAWOD donne 30 % sur le premier paiement, hors renouvellements.",
     buttonText: "Voir Klap",
   },
 };

@@ -627,7 +627,7 @@ export default function HomePage() {
           analyse documentaire approfondie, compilation des retours utilisateurs
           publics (G2, Trustpilot, Reddit, documentation officielle) et prise en
           main des plans gratuits.{" "}
-          <strong className="text-slate-200">Depuis août 2026</strong>, quatre
+          <strong className="text-slate-200">Depuis août 2026</strong>, cinq
           outils ont en plus été testés de première main sur un fichier vidéo
           identique —{" "}
           <Link href="/banc-essai" className="text-emerald-400 hover:underline">

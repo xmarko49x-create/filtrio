@@ -12,9 +12,10 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.filtrio.fr";
  * ignore les lastmod qui changent à chaque build.
  */
 const DATES = {
-  hubs: "10/11/2026", // accueil, catalogue, comparatifs, YouTube, TikTok (prix repris des fiches)
+  accueil: "24/11/2026",
+  hubs: "10/11/2026", // catalogue, comparatifs, YouTube, TikTok (prix repris des fiches)
   statistiques: "06/11/2026",
-  bancEssai: "10/11/2026",
+  bancEssai: "24/11/2026",
   methode: "10/11/2026",
   lexique: "02/10/2026",
   alternativesSubmagic: "06/11/2026",
@@ -37,7 +38,7 @@ function latest(...dates: (string | undefined)[]): Date {
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
-    { url: `${SITE_URL}/`, lastModified: d(DATES.hubs), changeFrequency: "weekly", priority: 1 },
+    { url: `${SITE_URL}/`, lastModified: d(DATES.accueil), changeFrequency: "weekly", priority: 1 },
     { url: `${SITE_URL}/outils`, lastModified: d(DATES.hubs), changeFrequency: "weekly", priority: 0.9 },
     { url: `${SITE_URL}/comparatifs`, lastModified: d(DATES.hubs), changeFrequency: "weekly", priority: 0.9 },
     { url: `${SITE_URL}/contact`, changeFrequency: "yearly", priority: 0.4 },

@@ -197,7 +197,7 @@ export default function BancEssaiPage() {
           Les résultats.
         </h2>
         <p className="text-slate-400 mb-8">
-          Quatre outils manipulés à ce jour. Le tableau s&apos;allongera à
+          Cinq outils manipulés à ce jour. Le tableau s&apos;allongera à
           chaque nouveau test, à cette même adresse.
         </p>
 

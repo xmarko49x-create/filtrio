@@ -97,7 +97,7 @@ const HOME_FAQ: { question: string; answer: React.ReactNode }[] = [
     answer: (
       <>
         Certains liens vers les outils sont affiliés (Submagic, OpusClip,
-        ElevenLabs, VidIQ, GPT-Video). Les scores et les recommandations sont établis
+        ElevenLabs, VidIQ, GPT-Video, Klap). Les scores et les recommandations sont établis
         selon nos critères éditoriaux, <strong>jamais</strong> selon la
         commission. Nos recommandations par besoin incluent d&apos;ailleurs
         des outils qui ne nous rémunèrent pas, comme TubeBuddy et Canva.

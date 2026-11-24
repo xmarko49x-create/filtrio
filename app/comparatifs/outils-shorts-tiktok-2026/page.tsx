@@ -197,7 +197,7 @@ const CRITERES_TABLEAU: CritereLine[] = [
   },
   {
     label: "Programme affilié actif chez Filtrio",
-    values: ["Oui", "Oui", "Non (PartnerStack)", "Non", "Non (sélectif)", "Non (Tapfiliate)", "Non", "Non"],
+    values: ["Oui", "Oui", "Non (PartnerStack)", "Non", "Non (sélectif)", "Non (Tapfiliate)", "Non", "Oui"],
   },
 ];
 

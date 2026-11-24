@@ -572,8 +572,10 @@ export const klapFiche: FicheData = {
             d&apos;accès Pro, sans obligation de publication ni droit de regard
             sur notre verdict. Nous n&apos;avons pas activé cet accès : le test
             présenté sur cette page a été réalisé exclusivement avec le plan
-            gratuit. Les éventuels liens affiliés sont signalés et portent
-            l&apos;attribut <code>rel=&quot;sponsored&quot;</code>.
+            gratuit. Nos liens vers Klap sont affiliés : ils sont signalés
+            sous chaque bouton et portent l&apos;attribut{" "}
+            <code>rel=&quot;sponsored&quot;</code>. Ils n&apos;entrent pas dans
+            la note.
           </p>
         </div>
       </>
@@ -740,11 +742,5 @@ export const klapFiche: FicheData = {
     headline: "Passer à l'action",
     sub: "Klap se teste sur une vidéo sans carte bancaire. Garde en tête que le téléchargement du fichier demande un abonnement.",
     buttonText: "Voir Klap",
-  },
-  lienDirect: {
-    href: "https://klap.app",
-    label: "Tester Klap gratuitement",
-    mention:
-      "Lien direct non affilié — essai sur 1 vidéo, sans téléchargement, lors de notre test du 23/11/2026.",
   },
 };

@@ -321,7 +321,8 @@ export const OUTILS: Outil[] = [
     category: "shorts",
     priceFrom: "À partir de 14,50 $/mois (engagement annuel)",
     freeTier: "Essai sur 1 vidéo, aperçu seulement, aucun téléchargement",
-    affiliateLink: "#aff-klap",
+    affiliateLink: "https://klap.app?via=filtrio",
+    commission: "30 % récurrent sur tous les paiements",
     ficheAvailable: true,
     // Entré au catalogue après l'édition de novembre 2026 de l'Observatoire.
     // Le panel reste figé par édition : Klap rejoindra la prochaine.

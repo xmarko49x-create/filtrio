@@ -16,7 +16,7 @@ const DATES = {
   hubs: "10/11/2026", // catalogue, comparatifs, YouTube, TikTok (prix repris des fiches)
   statistiques: "06/11/2026",
   bancEssai: "24/11/2026",
-  methode: "10/11/2026",
+  methode: "26/11/2026",
   lexique: "02/10/2026",
   alternativesSubmagic: "06/11/2026",
   outilsShorts: "10/11/2026",

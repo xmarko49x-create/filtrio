@@ -117,7 +117,8 @@ export default function MethodePage() {
               Analyse documentaire approfondie de chaque outil : pages
               officielles, pricing, changelog. Compilation des retours
               utilisateurs publics (G2, Trustpilot, Reddit, documentation
-              officielle). Prise en main des plans gratuits quand ils existent.
+              officielle). Prise en main des plans ou essais gratuits quand ils
+              existent.
             </p>
           </div>
 
@@ -134,8 +135,8 @@ export default function MethodePage() {
                 clairement indiquées et le même jour lorsque c&apos;est
                 possible, les paramètres par défaut et aucune retouche
                 manuelle. Submagic et OpusClip ont ainsi été testés le 21 août
-                2026, CapCut le 24 août 2026 et GPT-Video le 10 novembre 2026,
-                sur le même fichier. Nous
+                2026, CapCut le 24 août 2026, GPT-Video le 10 novembre 2026 et
+                Klap le 23 novembre 2026, sur le même fichier. Nous
                 chronométrons le temps de traitement, relevons les limites du
                 plan gratuit telles qu&apos;elles s&apos;affichent dans
                 l&apos;interface, et conservons les captures d&apos;écran, dont
@@ -191,12 +192,19 @@ export default function MethodePage() {
                 >
                   CapCut
                 </Link>
-                , et le test complet de{" "}
+                , et les tests complets de{" "}
                 <Link
                   href="/outils/gpt-video"
                   className="text-orange-400 hover:underline"
                 >
                   GPT-Video
+                </Link>{" "}
+                et de{" "}
+                <Link
+                  href="/outils/klap"
+                  className="text-indigo-400 hover:underline"
+                >
+                  Klap
                 </Link>
                 .
               </p>
@@ -215,8 +223,8 @@ export default function MethodePage() {
                 bouger une grille de notation, et nous ne l&apos;utilisons
                 jamais pour justifier après coup une note déjà publiée. Seule
                 exception : un outil noté pour la première fois après son test,
-                comme GPT-Video, dont la grille tient compte de ce test et de
-                l&apos;analyse de ses pages officielles.
+                comme GPT-Video et Klap, dont la grille tient compte de ce test
+                et de l&apos;analyse de leurs pages officielles.
               </p>
             </div>
           </div>
@@ -239,13 +247,15 @@ export default function MethodePage() {
 
           <div className="bg-slate-900 border border-slate-800 rounded-xl p-6">
             <h3 className="font-semibold text-emerald-400 mb-2">
-              Ce qui arrive (Phase V2)
+              Prochaine étape
             </h3>
             <p className="text-slate-300 leading-relaxed">
-              Un protocole de tests comparatifs standardisés avec les mêmes
-              sources vidéo pour tous les outils d&apos;une même catégorie. Les
-              résultats détaillés seront publiés dès que le
-              protocole est en place.
+              Le protocole décrit plus haut est en place et sera étendu
+              progressivement aux autres outils, puis aux autres catégories que
+              les shorts et les sous-titres. Il sera également répété sur un
+              outil déjà testé lorsque son produit évolue fortement, afin que la
+              page reflète ce que l&apos;outil fait aujourd&apos;hui et non ce
+              qu&apos;il faisait le jour du premier test.
             </p>
           </div>
 

@@ -246,7 +246,7 @@ export const OUTILS: Outil[] = [
     metaDescription:
       "CapCut Desktop testé sur une vraie vidéo française : 24 captures commentées, fonctions gratuites et Pro, prix 2026 et sous-titres bloqués à l'export.",
     category: "editeur",
-    priceFrom: "Gratuit · Pro à 23,99 €/mois (App Store FR, variable selon plateforme)",
+    priceFrom: "Gratuit · payant à partir de 23,99 €/mois (application Desktop, variable selon le canal)",
     freeTier: "Version gratuite disponible · essai Pro 7 jours selon l'appareil et l'éligibilité",
     affiliateLink: "#aff-capcut",
     ficheAvailable: true,

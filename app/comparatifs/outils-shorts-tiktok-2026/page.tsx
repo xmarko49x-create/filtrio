@@ -511,8 +511,16 @@ export default function GrandComparatifPage() {
           </div>
 
           <p className="text-xs text-slate-500 mt-6 max-w-3xl">
-            <strong className="text-slate-300">Phase actuelle (V1) :</strong>{" "}
-            les évaluations qualitatives (Excellent / Bon / Limité) sont basées sur l&apos;analyse documentaire et les retours utilisateurs publics. Une phase de test comparatif standardisé est prévue.
+            <strong className="text-slate-300">D&apos;où viennent ces évaluations.</strong>{" "}
+            Les appréciations qualitatives (Excellent / Bon / Limité) reposent
+            sur l&apos;analyse documentaire et les retours utilisateurs publics.
+            Cinq des huit outils de ce tableau, Submagic, OpusClip, CapCut,
+            GPT-Video et Klap, ont en plus été testés de première main sur le
+            même fichier vidéo :{" "}
+            <Link href="/banc-essai" className="text-amber-400 hover:underline">
+              voir le banc d&apos;essai
+            </Link>
+            . Un test isolé ne modifie pas ces appréciations.
           </p>
         </div>
       </section>

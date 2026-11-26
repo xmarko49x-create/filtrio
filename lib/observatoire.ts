@@ -23,7 +23,7 @@ export const VERIF_DATES: Record<string, string> = {
   riverside: "06/11/2026",
   vidiq: "06/11/2026",
   heygen: "06/11/2026",
-  capcut: "24/08/2026",
+  capcut: "26/11/2026",
   veed: "06/11/2026",
   invideo: "06/11/2026",
   kapwing: "06/11/2026",
